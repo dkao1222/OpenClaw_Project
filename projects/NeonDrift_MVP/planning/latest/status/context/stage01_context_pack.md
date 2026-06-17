@@ -1,26 +1,25 @@
 # Project Goal
-Develop a mobile-first arcade racing game MVP named NeonDrift to validate a core, high-retention loop based on short-session, skilled neon drift racing.
+To validate a minimal viable core loop for a mobile arcade neon drift racing game (NeonDrift MVP) designed for short, highly engaging sessions.
 
 # Target Audience
-16-35 year old mobile players (students, commuters, casual competitive gamers) seeking fast, style-driven racing experiences over deep simulation complexity.
+16-35 y/o mobile gamers seeking fast-paced, stylish arcade racing with immediate skill feedback, avoiding complex simulation overhead.
 
 # Core Value
-Precise, one-thumb drift controls; short, score-based challenge tracks; and a compelling neon cyber-racing aesthetic with upgrade hooks.
+Precision, immediate mastery feel via one-thumb drift control, and short-run, high-style neon cyber racing experiences.
 
 # Locked Decisions
-- Platform: Mobile-first.
-- Core Mechanic: Drift racing, easily controllable by one thumb.
-- Goal: Validate retention/repeat play loop, not build a complete game.
+- The core mechanic must be arcade drift racing.
+- Sessions must be short enough for casual play (under 5 minutes).
+- The initial focus is on the core loop validation, not feature completeness.
 
 # Open Questions
-1. What is the ideal difficulty curve for the initial set of tracks?
-2. What specific monetization hooks (e.g., customization, booster types) will best support short-session spending?
-3. How will the "mastery" feedback be visualized to keep the player engaged across multiple sessions?
+1. Specific progression mechanics for skill/score retention across multiple sessions.
+2. Definition of the initial set of distinct track types/environments to test variety.
+3. Monetization hook integration points (if applicable later).
 
 # Next Stage Input Policy
-The next stage requires consuming the validated outputs from the OpenClaw game planning pipeline (Stages 0-2). Inputs must be artifacts proving the *design* of the core loop (e.g., mechanics documentation, initial art concepts, basic flow charts) rather than just text requirements.
+The next stage must receive the validated core gameplay loop specifications, ideally in a structured format suitable for the Game Designer/Level Designer to flesh out initial assets and challenges. Input must define gameplay parameters (e.g., drift multiplier rules, track geometry constraints).
 
 # Source Paths
-- Project Goal/Vision Context: Initial_Request.md
-- Current Status Summary: Current_Status_Summary.md
-- Context Index: Project_Context_Index.md
+- Project_Context_Index.md
+- Current_Status_Summary.md

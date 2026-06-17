@@ -1,43 +1,45 @@
 # MVP PRD
 
 ## 繁體中文
+
 ### 產品目標:
-- 提供短時間、高重複性、即時刺激的漂移競賽體驗。
-- 建立玩家對遊戲內容的投入與重複遊玩的習慣。
+- 提供極簡、高沉浸感的霓虹風格漂移賽車體驗
+- 讓玩家在短時間內獲得即時的技能成就感
 
 ### 目標使用者:
-- 16至35歲的行動裝置玩家，特別是學生與休閒競技遊戲愛好者。
-- 喜歡快速、刺激且易於操作的遊戲體驗。
+- 16-35歲的行動遊戲愛好者
+- 喜歡快節奏、時尚風格的街機賽車遊戲
 
 ### MVP 範圍:
-- 包含三關挑戰賽道與基本的漂移控制系統。
-- 玩家可透過完成關卡獲得分數與遊戲幣，用於解鎖新車輛與關卡。
+- 核心漂移機制驗證
+- 短時間內可完成的賽道體驗
 
 ### 非目標:
-- 不包含複雜的多人線上競技功能。
-- 不包含深度的車輛自訂與模擬系統。
+- 複雜的多人模式
+- 精細的自訂選項
 
 ### 驗收條件:
-- 玩家能在遊戲中完成至少一關挑戰。
-- 玩家能透過遊戲內商店解鎖至少一個新車輛或關卡。
+- 玩家能在3分鐘內完成至少3次完整賽道
+- 漂移精確度達標率超過70%
 
 ## English
+
 ### Product Goal:
-- Deliver short, high-retention, fast-paced drift racing gameplay.
-- Build player engagement and habit formation around the game content.
+- Deliver a minimal, highly immersive neon-themed drift racing experience
+- Provide immediate skill mastery feedback within short play sessions
 
 ### Target User:
-- Mobile players aged 16-35, including students and casual competitive gamers.
-- Players seeking fast-paced, thrilling, and easy-to-use gameplay.
+- Mobile gamers aged 16-35
+- Fans of fast-paced, stylish arcade racing games
 
 ### MVP Scope:
-- Includes three challenge tracks and a basic drift control system.
-- Players earn scores and in-game currency by completing tracks, which can be used to unlock new vehicles and levels.
+- Core drift mechanics validation
+- Short-session, complete track experience
 
 ### Non-goals:
-- Does not include complex multiplayer online competition features.
-- Does not include deep vehicle customization or simulation systems.
+- Complex multiplayer modes
+- Detailed customization options
 
 ### Acceptance Criteria:
-- Players can complete at least one challenge track in the game.
-- Players can unlock at least one new vehicle or level through the in-game store.
+- Players complete at least 3 full laps within 3 minutes
+- Drift accuracy threshold achieved in over 70% of attempts

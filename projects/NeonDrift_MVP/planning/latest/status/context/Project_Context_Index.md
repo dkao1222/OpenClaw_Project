@@ -1,8 +1,7 @@
-# Project Context Index for NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727
+# Project Context Index
 
 ## Source of Product Request
-The initial request details are derived from:
-- File: Initial_Request.md
+See Initial_Request.md
 
 ## Product Vision and Purpose
 NeonDrift MVP is a mobile-first arcade racing app that helps short-session players experience skillful neon drift racing without long tutorials or complex setup. The service goal is to validate whether a focused core loop can drive repeat play, retention, and future premium content opportunities.

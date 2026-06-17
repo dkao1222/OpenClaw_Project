@@ -1,5 +1,7 @@
-project_name: NeonDrift MVP
-channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
-blockers: none
-status: clear
-next_required_action: Review the Decision_Log.md and Project_Context_Index.md to align on the next immediate step for the planning pipeline (Stage 01).
+# NeonDrift MVP Governance State
+
+**Project Name:** NeonDrift MVP
+**Channel ID:** 382b9e33-8429-81ec-9dab-da7d22dd4ef6
+**Blockers:** None
+**Status:** Clear
+**Next Required Action:** Initiate Stage 02 planning (e.g., Game Designer/Product Director review).

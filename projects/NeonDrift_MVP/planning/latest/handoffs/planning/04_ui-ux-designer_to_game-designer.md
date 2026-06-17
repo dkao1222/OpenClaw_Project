@@ -1,25 +1,28 @@
+Every Stage 04 source path below must be copied exactly as written, character for character. Do not correct, normalize, shorten, or retype any path from memory.
 # Handoff: ui-ux-designer to game-designer
 
 from_agent: ui-ux-designer
 to_agent: game-designer
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727
-project_channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
-output_folder: /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
+project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
+output_folder: /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/
 requires_user_confirmation: true
 operation flow path: docs/design/Operation_Flow_Diagram.md
 input-to-feedback flow: controls, HUD response, failure feedback, restart response
 screen-to-screen flow: start, run, pause, failure, retry
+prototype canvas artifact: docs/design/Prototype_Flow_Canvas.html
 HUD/control assumptions: keyboard steering, boost, restart, visible speed/readability HUD
 UI constraints that gameplay must obey: fair readable hazards, immediate input feedback, no hidden critical state
 suggested_next_slack_prompt: Please confirm Stage 04 and start game-designer for Stage 05.
 
 ## Stage 04 source paths
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/docs/design/Operation_Flow_Diagram.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/docs/design/Controls_and_Operation_Spec.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/docs/design/UI_Wireframes.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/docs/design/Prototype_Flow.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/docs/design/UI_State_Annotations.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/docs/design/UX_Flow_Draft.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/status/agent_heartbeats/ui-ux-designer.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/Operation_Flow_Diagram.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/Controls_and_Operation_Spec.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/UI_Wireframes.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/Prototype_Flow.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/Prototype_Flow_Canvas.html
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/UI_State_Annotations.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/UX_Flow_Draft.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/status/agent_heartbeats/ui-ux-designer.md
 
 Do not start game-designer in this micro-stage.

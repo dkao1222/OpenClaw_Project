@@ -1,11 +1,11 @@
 # Validation Report: planning_stage_07
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727
-- project_channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
+- project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
 
 ## Checks
 - PASS file.readable.docs/business/Monetization_and_Retention_Draft.md
-- PASS file.size_limit.docs/business/Monetization_and_Retention_Draft.md: 897<=8000
+- PASS file.size_limit.docs/business/Monetization_and_Retention_Draft.md: 1289<=8000
 - PASS file.no_prompt_constraints.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.bilingual_order.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.bilingual_distinct.docs/business/Monetization_and_Retention_Draft.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.schema.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.readable.docs/business/Progression_and_Rewards_Draft.md
-- PASS file.size_limit.docs/business/Progression_and_Rewards_Draft.md: 877<=8000
+- PASS file.size_limit.docs/business/Progression_and_Rewards_Draft.md: 1263<=8000
 - PASS file.no_prompt_constraints.docs/business/Progression_and_Rewards_Draft.md
 - PASS file.bilingual_order.docs/business/Progression_and_Rewards_Draft.md
 - PASS file.bilingual_distinct.docs/business/Progression_and_Rewards_Draft.md

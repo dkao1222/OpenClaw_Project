@@ -22,6 +22,6 @@
 - No multiplayer, accounts, long quests, complex progression, or UI layout ownership in Stage 03.
 
 ## source paths
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/docs/design/Core_Experience_Direction.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/docs/design/Creative_Pillars.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81e5-b017-e72d6bcabc4d/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727/project/docs/design/Player_Promise.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/Core_Experience_Direction.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/Creative_Pillars.md
+- /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/design/Player_Promise.md

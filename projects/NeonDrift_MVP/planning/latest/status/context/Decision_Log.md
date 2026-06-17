@@ -1,6 +1,8 @@
-project_name: NeonDrift MVP
-channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
-decision: Planning Stage 01 context initialized
-owner: agents-orchestrator
-locked_decisions: []
-open_questions: [Need to confirm exact sprint goals and required acceptance criteria for Stage 01 tasks.]
+# NeonDrift MVP Governance State
+
+**Project Name:** NeonDrift MVP
+**Channel ID:** 382b9e33-8429-81ec-9dab-da7d22dd4ef6
+**Decision:** Planning Stage 01 context initialized.
+**Owner:** agents-orchestrator
+**Locked Decisions:** Initial MVP focus set (short-session, mobile-first drift).
+**Open Questions:** Specific mechanics for drift scoring, opponent behavior definition, and initial monetization hook implementation plan.

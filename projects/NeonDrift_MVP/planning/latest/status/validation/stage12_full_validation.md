@@ -1,11 +1,11 @@
 # Validation Report: planning_stage_12
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727
-- project_channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
+- project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
 
 ## Checks
 - PASS file.readable.docs/review/Planning_Final_Decision.md
-- PASS file.size_limit.docs/review/Planning_Final_Decision.md: 856<=8000
+- PASS file.size_limit.docs/review/Planning_Final_Decision.md: 1203<=8000
 - PASS file.no_prompt_constraints.docs/review/Planning_Final_Decision.md
 - PASS file.bilingual_order.docs/review/Planning_Final_Decision.md
 - PASS file.bilingual_distinct.docs/review/Planning_Final_Decision.md
@@ -13,11 +13,11 @@
 - PASS file.required_sections.docs/review/Planning_Final_Decision.md
 - PASS file.schema.docs/review/Planning_Final_Decision.md
 - PASS file.readable.handoffs/planning/handoff_to_spec_review.md
-- PASS file.size_limit.handoffs/planning/handoff_to_spec_review.md: 1826<=2500
+- PASS file.size_limit.handoffs/planning/handoff_to_spec_review.md: 1870<=2500
 - PASS file.no_prompt_constraints.handoffs/planning/handoff_to_spec_review.md
 - PASS file.schema.handoffs/planning/handoff_to_spec_review.md
 - PASS file.readable.handoffs/planning/handoff_to_development.md
-- PASS file.size_limit.handoffs/planning/handoff_to_development.md: 1117<=2500
+- PASS file.size_limit.handoffs/planning/handoff_to_development.md: 1283<=2500
 - PASS file.no_prompt_constraints.handoffs/planning/handoff_to_development.md
 - PASS file.schema.handoffs/planning/handoff_to_development.md
 - PASS file.readable.status/agent_heartbeats/judge.md

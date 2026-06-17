@@ -7,23 +7,23 @@ Document contract: this file records only the current stage decision surface for
 required keywords: game, systems, overview
 
 ### 範圍
-- 系統範圍包含操控、速度、危險、分數、失敗、重試與基礎回饋，不加入帳號或多人功能。
+- 系統範圍鎖定六個 MVP 系統：Control System、Speed System、Hazard System、Scoring System、Failure/Retry System、Feedback System；不加入帳號、多人、商店或長線任務。
 
 ### 決策
-- 速度與危險必須互相拉扯：加速提高得分潛力，也提高判讀壓力。
+- 每個系統必須定義 input、state、rule、output、dependency：Control 讀取左右觸控並輸出 drift intent；Speed 依存活時間與 boost state 提升速度；Hazard 依速度調整生成密度；Scoring 依 survival、near miss、combo 累積分數；Failure/Retry 依 collision/off-line state 進入結果畫面；Feedback 依 scoring/failure event 觸發 HUD、SFX、haptics。
 
 ### 交接重點
-- 分數系統應支援短局比較，讓玩家願意再次挑戰同一條路線。
+- 驗收標準是開發者可逐一實作並測試六個系統：每個系統都有明確成功條件、失敗條件、跨系統依賴、可觀察 UI/HUD 輸出與 spec review 待細化項。
 
 ## English
 
 required keywords: game, systems, overview
 
 ### Scope
-- The system set covers controls, speed, hazards, scoring, failure, retry, and basic feedback without accounts or multiplayer scope.
+- The MVP system scope is limited to six systems: Control System, Speed System, Hazard System, Scoring System, Failure/Retry System, and Feedback System; accounts, multiplayer, shop, and long-term quest systems are out of scope.
 
 ### Decisions
-- Speed and danger should create a clear tradeoff: higher pace improves score potential while increasing readability pressure.
+- Each system must define input, state, rule, output, and dependency: Control reads left/right touch and outputs drift intent; Speed increases from survival time and boost state; Hazard adjusts spawn density from speed; Scoring accumulates survival, near miss, and combo points; Failure/Retry enters results from collision/off-line state; Feedback triggers HUD, SFX, and haptics from scoring/failure events.
 
 ### Handoff Notes
-- Scoring must support short-run comparison so the player has a concrete reason to retry the same route.
+- Acceptance requires developers to implement and test the six systems independently: each system has explicit success conditions, failure conditions, cross-system dependencies, observable UI/HUD output, and spec review items that still need detail.

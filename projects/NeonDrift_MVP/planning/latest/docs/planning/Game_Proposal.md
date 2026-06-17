@@ -2,26 +2,26 @@
 
 ## 繁體中文
 ### 遊戲目標:
-- 建立一個以短時間、高重複性為核心的街頭賽車遊戲，讓玩家在每次遊玩中都能體驗到即時、刺激的漂移競賽。
-- 驗證玩家對「漂移」玩法的熱愛與重複遊玩意願，作為後續擴展的基礎。
+- 驗證一款極簡版霓虹漂移賽車遊戲的核心玩法循環
+- 提供短時間內高沉浸感的賽車體驗
 
 ### 核心玩法:
-- 玩家透過簡單的一隻手指操作，控制車輛進行漂移，以獲得高分。
-- 玩家需要在短時間內完成一系列挑戰關卡，以獲得最佳成績。
+- 以單手操控為主的霓虹風格漂移賽車
+- 基於精確度和連擊數的分數計算系統
 
 ### 成功條件:
-- 玩家在遊戲中達到一定的重複遊玩次數，表示核心玩法受到歡迎。
-- 玩家在遊戲中進行消費行為（如購買道具、解鎖關卡），顯示出對遊戲內容的投入。
+- 玩家能在3分鐘內完成至少3次完整賽道
+- 漂移精確度達標率超過70%
 
 ## English
 ### Game Goal:
-- Establish a mobile arcade racing game centered on short, high-retention loops where players experience fast-paced, thrilling drift racing in each session.
-- Validate player interest and repeat play behavior around the "drift" mechanic for future expansion.
+- Validate the core gameplay loop for a minimal viable neon drift racing game
+- Provide a highly immersive racing experience within short sessions
 
 ### Core Gameplay:
-- Players control a vehicle with one-thumb gestures to perform drifts and achieve high scores.
-- Players complete a series of timed challenge tracks to earn the best possible score.
+- One-thumb drift control in a neon-themed racing environment
+- Score system based on precision and combo multipliers
 
 ### Success Criteria:
-- Players engage in repeated sessions, indicating a strong appeal of the core gameplay.
-- Players spend in-game currency (e.g., purchasing items, unlocking tracks), showing investment in the content.
+- Players complete at least 3 full laps within 3 minutes
+- Drift accuracy threshold achieved in over 70% of attempts

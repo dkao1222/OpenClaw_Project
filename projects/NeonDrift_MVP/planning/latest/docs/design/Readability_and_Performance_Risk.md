@@ -7,23 +7,23 @@ Document contract: this file records only the current stage decision surface for
 required keywords: readability, and, performance, risk
 
 ### 範圍
-- readability: 本階段的 readability 設計責任為確保視覺元素清晰易讀，限制為在高動態場景下保持可讀性，交付用途為支援玩家對賽道與車輛資訊的即時理解。
+- readability、and、performance、risk: 本文件將 NeonDrift MVP 的相關決策整理成下一階段可驗收的交付範圍，不新增未批准平台或功能。
 
 ### 決策
-- and: 本階段的 and 設計責任為協調視覺效果與遊戲玩法的平衡，限制為在不影響性能的前提下實現視覺一致性，交付用途為確保所有視覺元素能有效服務於遊戲體驗。
+- readability、and、performance、risk: 本階段決策必須保留 iPhone-first、短局、立即重試、可讀 HUD 與清楚失敗原因，並標出仍需 spec review 細化的項目。
 
 ### 交接重點
-- performance: 本階段的 performance 設計責任為優化視覺資源使用以維持流暢遊戲體驗，限制為在移動設備上控制記憶體與處理器負載，交付用途為提供可擴展的視覺實現方案。
+- readability、and、performance、risk: 交接時必須列出來源依據、已鎖定決策、限制、風險與下一位 owner 需要驗證的 acceptance criteria。
 
 ## English
 
 required keywords: readability, and, performance, risk
 
 ### Scope
-- readability: The readability design responsibility for this stage is to ensure visual elements are clear and legible, with the limitation of maintaining readability under high-dynamic scenarios, and the handoff purpose is to support players' real-time understanding of track and vehicle information.
+- readability, and, performance, risk: this document packages the relevant NeonDrift MVP decisions into a verifiable handoff scope without adding unapproved platforms or features.
 
 ### Decisions
-- and: The and design responsibility for this stage is to coordinate visual effects with gameplay balance, with the limitation of achieving visual consistency without impacting performance, and the handoff purpose is to ensure all visual elements effectively serve the game experience.
+- readability, and, performance, risk: this stage must preserve iPhone-first, short-session play, immediate retry, readable HUD, and clear failure reasons while marking items that still need spec review detail.
 
 ### Handoff Notes
-- performance: The performance design responsibility for this stage is to optimize visual resource usage to maintain smooth gameplay, with the limitation of controlling memory and processor load on mobile devices, and the handoff purpose is to provide scalable visual implementation solutions.
+- readability, and, performance, risk: the handoff must list source basis, locked decisions, constraints, risks, and acceptance criteria for the next owner to verify.

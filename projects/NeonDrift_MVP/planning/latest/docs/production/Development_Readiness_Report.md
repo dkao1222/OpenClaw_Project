@@ -7,23 +7,23 @@ Document contract: this file records only the current stage decision surface for
 required keywords: development, readiness, report
 
 ### 範圍
-- development: 以繁體中文描述 development 在本階段的設計責任、限制與交付用途。
+- development、readiness、report: 本文件將 NeonDrift MVP 的相關決策整理成下一階段可驗收的交付範圍，不新增未批准平台或功能。
 
 ### 決策
-- readiness: 以繁體中文描述 readiness 在本階段的設計責任、限制與交付用途。
+- development、readiness、report: 本階段決策必須保留 iPhone-first、短局、立即重試、可讀 HUD 與清楚失敗原因，並標出仍需 spec review 細化的項目。
 
 ### 交接重點
-- report: 以繁體中文描述 report 在本階段的設計責任、限制與交付用途。
+- development、readiness、report: 交接時必須列出來源依據、已鎖定決策、限制、風險與下一位 owner 需要驗證的 acceptance criteria。
 
 ## English
 
 required keywords: development, readiness, report
 
 ### Scope
-- development: describe the development design responsibility, limitation, and handoff purpose for this stage.
+- development, readiness, report: this document packages the relevant NeonDrift MVP decisions into a verifiable handoff scope without adding unapproved platforms or features.
 
 ### Decisions
-- readiness: describe the readiness design responsibility, limitation, and handoff purpose for this stage.
+- development, readiness, report: this stage must preserve iPhone-first, short-session play, immediate retry, readable HUD, and clear failure reasons while marking items that still need spec review detail.
 
 ### Handoff Notes
-- report: describe the report design responsibility, limitation, and handoff purpose for this stage.
+- development, readiness, report: the handoff must list source basis, locked decisions, constraints, risks, and acceptance criteria for the next owner to verify.

@@ -1,11 +1,11 @@
 # Validation Report: planning_stage_06
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727
-- project_channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
+- project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
 
 ## Checks
 - PASS file.readable.docs/design/Content_Design_Draft.md
-- PASS file.size_limit.docs/design/Content_Design_Draft.md: 836<=8000
+- PASS file.size_limit.docs/design/Content_Design_Draft.md: 1177<=8000
 - PASS file.no_prompt_constraints.docs/design/Content_Design_Draft.md
 - PASS file.bilingual_order.docs/design/Content_Design_Draft.md
 - PASS file.bilingual_distinct.docs/design/Content_Design_Draft.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/design/Content_Design_Draft.md
 - PASS file.schema.docs/design/Content_Design_Draft.md
 - PASS file.readable.docs/design/Level_and_Tutorial_Pacing.md
-- PASS file.size_limit.docs/design/Level_and_Tutorial_Pacing.md: 845<=8000
+- PASS file.size_limit.docs/design/Level_and_Tutorial_Pacing.md: 1226<=8000
 - PASS file.no_prompt_constraints.docs/design/Level_and_Tutorial_Pacing.md
 - PASS file.bilingual_order.docs/design/Level_and_Tutorial_Pacing.md
 - PASS file.bilingual_distinct.docs/design/Level_and_Tutorial_Pacing.md
