@@ -2,19 +2,17 @@
 
 from_agent: product-planner
 to_agent: game-director
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
-project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
-output_folder: /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
+project_channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
 requires_user_confirmation: true
-product_goal: Deliver a focused NeonDrift MVP with a clear arcade racing loop.
-platform_direction: Desktop browser first, keyboard controls, lightweight web build.
-target_user: Players who want short neon racing sessions with immediate feedback.
-mvp_scope: Core driving loop, scoring, hazards, restart flow, and readable UI.
-non_goals: Multiplayer, account system, monetization, and large content pipeline.
-locked_decisions: Use the Stage 02 docs as the source of truth for MVP scope.
-open_questions: Tune difficulty, control feel, and visual density during implementation.
+product_goal: NeonDrift MVP is a mobile-first arcade drift game focused on short readable runs, one-finger control, scoring clarity, and instant restart.
+platform_direction: Unity 6000.0.71f1 mobile build for iOS and Android with touch-first UX, safe-area handling, performance budget, and device compatibility review.
+target_user: Mobile players age 16-35 who want fast neon racing sessions, immediate feedback, and visible mastery without simulator complexity.
+mvp_scope: Core drift loop, basic track set, scoring, restart flow, mobile UI, local metrics hooks, privacy and ads readiness notes, and local Unity build preparation.
+non_goals: Multiplayer, account system, live operations, large content pipeline, external controller support, and final store-submission assets.
+locked_decisions: Use Stage 02 docs, this handoff, and the compact context pack as the source of truth for product scope and mobile platform direction.
+open_questions: Tune drift feel, scoring thresholds, frame-rate targets, supported device floor, ad placement timing, and App Store / Google Play compliance details.
 
-source_paths: /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/planning/Game_Proposal.md; /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/planning/One_Page_Game_Concept.md; /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/planning/MVP_Hypothesis.md; /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/planning/Platform_Direction.md; /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/docs/product/MVP_PRD.md; /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/status/agent_heartbeats/product-planner.md
+source_paths: docs/planning/Game_Proposal.md; docs/planning/One_Page_Game_Concept.md; docs/planning/MVP_Hypothesis.md; docs/planning/Platform_Direction.md; docs/product/MVP_PRD.md; status/agent_heartbeats/product-planner.md
 next_stage_input_policy: read this handoff first, then read the compact context pack. Open listed source paths only if a required detail is missing.
-context_pack_path: /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/status/context/stage02_context_pack.md
-Do not write the product-planner heartbeat in this micro-stage. Do not start game-director.
+context_pack_path: status/context/stage02_context_pack.md

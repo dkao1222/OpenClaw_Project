@@ -1,25 +1,36 @@
-# Project Goal
-To validate a minimal viable core loop for a mobile arcade neon drift racing game (NeonDrift MVP) designed for short, highly engaging sessions.
+# Stage 01 Context Pack
 
-# Target Audience
-16-35 y/o mobile gamers seeking fast-paced, stylish arcade racing with immediate skill feedback, avoiding complex simulation overhead.
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
+channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
 
-# Core Value
-Precision, immediate mastery feel via one-thumb drift control, and short-run, high-style neon cyber racing experiences.
+## project goal
 
-# Locked Decisions
-- The core mechanic must be arcade drift racing.
-- Sessions must be short enough for casual play (under 5 minutes).
-- The initial focus is on the core loop validation, not feature completeness.
+NeonDrift MVP is a short-session neon racing game concept built to validate a fast, readable, repeatable mobile gameplay loop before full production. The planning pipeline must produce documents that can actually feed spec review, Unity development, local build, App Store/Google Play privacy and ads preparation, and future multi-platform expansion.
 
-# Open Questions
-1. Specific progression mechanics for skill/score retention across multiple sessions.
-2. Definition of the initial set of distinct track types/environments to test variety.
-3. Monetization hook integration points (if applicable later).
+## target audience
 
-# Next Stage Input Policy
-The next stage must receive the validated core gameplay loop specifications, ideally in a structured format suitable for the Game Designer/Level Designer to flesh out initial assets and challenges. Input must define gameplay parameters (e.g., drift multiplier rules, track geometry constraints).
+Mobile players aged 16 to 35 who enjoy fast retry loops, stylish arcade racing, clear controls, visible mastery, and short play sessions. Also includes the development team that needs precise planning artifacts small enough for downstream agents to consume without context overflow.
 
-# Source Paths
-- Project_Context_Index.md
-- Current_Status_Summary.md
+## core value
+
+1. Readable high-speed neon drift gameplay with immediate restart. 2. Concrete production-ready planning handoffs with bounded context size. 3. Mobile-first UX, compatibility, monetization, privacy, and store-readiness considerations.
+
+## locked decisions
+
+- Notion watcher controls pipeline progression.
+- Each downstream OpenClaw agent uses its configured model.
+- Unity 6000.0.71f1 mobile direction is locked for planning.
+
+## open questions
+
+- Confirm final device compatibility and store policy details in downstream stages.
+
+## next stage input policy
+
+Read the Stage 01 handoff first, then this context pack. Open source paths only if details are missing.
+
+## source paths
+
+- /home/node/.openclaw/workspace/385b9e33-8429-8143-b8b3-ef455491bfc7/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925/project/status/context/Initial_Request.md
+- status/context/Project_Context_Index.md
+- status/context/Current_Status_Summary.md

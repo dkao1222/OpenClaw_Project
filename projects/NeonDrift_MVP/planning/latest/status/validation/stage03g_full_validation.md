@@ -1,9 +1,9 @@
 # Validation Report: planning_stage_03
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
-- project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
+- project_channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
 - status: passed
-- checked_at: 2026-06-17T18:49:01.535862+00:00
+- checked_at: 2026-06-20T17:05:00.361874+00:00
 
 ## Failed Checks
 - none
@@ -79,7 +79,7 @@
 - stage_03.handoff.core_input_promise
 - stage_03.handoff.required_operation_flow_scope
 - stage_03.handoff.experience_boundaries
-- stage_03.handoff.suggested_next_slack_prompt
+- stage_03.handoff.suggested_next_action
 - stage_03.handoff.source_path.docs/design/Core_Experience_Direction.md
 - stage_03.handoff.source_path.docs/design/Creative_Pillars.md
 - stage_03.handoff.source_path.docs/design/Player_Promise.md

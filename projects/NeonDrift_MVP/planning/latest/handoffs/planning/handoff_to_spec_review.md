@@ -2,10 +2,10 @@
 
 ```yaml
 handoff_type: planning_to_spec_review
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
-project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
-slack_delivery_target: channel:382b9e33-8429-81ec-9dab-da7d22dd4ef6
-output_folder: /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
+project_channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
+notion_delivery_target: page:385b9e33-8429-8143-b8b3-ef455491bfc7
+output_folder: /home/node/.openclaw/workspace/385b9e33-8429-8143-b8b3-ef455491bfc7/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925/project/
 target_department: GAME_SPEC_REVIEW_DEPARTMENT.md
 required_public_documents:
   - /home/node/.openclaw/workspace/public_document/OPENCLAW_PUBLIC_RULES.md
@@ -40,3 +40,7 @@ spec_review_allowed: false
 development_allowed: false
 requires_user_confirmation: true
 ```
+
+## Next Prompt
+
+Please confirm and start Spec Review from this planning handoff. Do not start development.

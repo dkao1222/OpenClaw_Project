@@ -53,3 +53,11 @@ required keywords: operation flow, input, feedback, screen flow, fail, retry
 ### fail and retry path
 - fail must name the reason: hit hazard, left racing line, or boost over-risk; Game Over alone is not acceptable.
 - retry has the strongest visual weight and lets the player replay without returning to the main menu.
+## Apple HIG Alignment
+
+- HIG cards read: ROUTING.md, CORE_PRINCIPLES.md, GAME_UI_CHECKLIST.md, ACCESSIBILITY_LOCALIZATION.md, VALIDATION_GATES.md.
+- platform assumptions: iPhone-first Unity game UI with later Android/WebGL adaptation; safe area avoids notch, Dynamic Island, and home indicator.
+- alignment decisions: preserve clarity for HUD/readability, defer decoration behind gameplay content, keep restart under user control, and support reduced motion/readable contrast.
+- accessibility: every icon/action needs a semantic label, visible state, 44x44 pt touch target when touch is used, and non-motion fallback for critical feedback.
+- intentional deviations: fast neon motion and camera shake are allowed only when lane, hazard, HUD, and failure reason remain readable.
+- open questions: final orientation, device tier floor, and exact haptics availability require confirmation during development QA.

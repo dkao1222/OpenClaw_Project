@@ -2,10 +2,10 @@
 
 ```yaml
 handoff_type: planning_to_development_draft
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
-project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
-slack_delivery_target: channel:382b9e33-8429-81ec-9dab-da7d22dd4ef6
-output_folder: /home/node/.openclaw/workspace/382b9e33-8429-81ec-9dab-da7d22dd4ef6/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
+project_channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
+notion_delivery_target: page:385b9e33-8429-8143-b8b3-ef455491bfc7
+output_folder: /home/node/.openclaw/workspace/385b9e33-8429-8143-b8b3-ef455491bfc7/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925/project/
 target_department: GAME_DEVELOPMENT_DEPARTMENT.md
 source_documents:
   - docs/planning/Game_Proposal.md
@@ -23,12 +23,10 @@ source_documents:
   - docs/design/Audio_Direction.md
   - docs/production/Development_Readiness_Report.md
 spec_review_recommended_first: true
-ddevelopment_allowed: false
+development_allowed: false
 requires_user_confirmation: true
 ```
 
 ## Boundary
 
 This is not a development-ready handoff. Development must wait for Spec Review output.
-
-END_HANDOFF_CONTENT

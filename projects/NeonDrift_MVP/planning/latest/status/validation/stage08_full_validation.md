@@ -1,11 +1,11 @@
 # Validation Report: planning_stage_08
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
-- project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
+- project_channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
 
 ## Checks
 - PASS file.readable.docs/design/Visual_Direction.md
-- PASS file.size_limit.docs/design/Visual_Direction.md: 1135<=8000
+- PASS file.size_limit.docs/design/Visual_Direction.md: 1136<=8000
 - PASS file.no_prompt_constraints.docs/design/Visual_Direction.md
 - PASS file.bilingual_order.docs/design/Visual_Direction.md
 - PASS file.bilingual_distinct.docs/design/Visual_Direction.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/design/Visual_Direction.md
 - PASS file.schema.docs/design/Visual_Direction.md
 - PASS file.readable.docs/design/Readability_and_Performance_Risk.md
-- PASS file.size_limit.docs/design/Readability_and_Performance_Risk.md: 1289<=8000
+- PASS file.size_limit.docs/design/Readability_and_Performance_Risk.md: 1290<=8000
 - PASS file.no_prompt_constraints.docs/design/Readability_and_Performance_Risk.md
 - PASS file.bilingual_order.docs/design/Readability_and_Performance_Risk.md
 - PASS file.bilingual_distinct.docs/design/Readability_and_Performance_Risk.md
@@ -21,7 +21,7 @@
 - PASS file.required_sections.docs/design/Readability_and_Performance_Risk.md
 - PASS file.schema.docs/design/Readability_and_Performance_Risk.md
 - PASS file.readable.status/agent_heartbeats/technical-artist.md
-- PASS file.size_limit.status/agent_heartbeats/technical-artist.md: 426<=1200
+- PASS file.size_limit.status/agent_heartbeats/technical-artist.md: 427<=1200
 - PASS file.no_prompt_constraints.status/agent_heartbeats/technical-artist.md
 - PASS file.schema.status/agent_heartbeats/technical-artist.md
 - PASS file.readable.handoffs/planning/08_technical-artist_to_audio-designer.md

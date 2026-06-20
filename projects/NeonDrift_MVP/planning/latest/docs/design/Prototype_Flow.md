@@ -19,3 +19,12 @@ required keywords: prototype flow, transition, start, run, failure, restart, can
 - run state keeps HUD visible while score, speed, danger feedback, camera response, and haptics cue update together.
 - failure state names the crash reason and gives Retry the strongest primary-action weight.
 - canvas artifact: docs/design/Prototype_Flow_Canvas.html uses HTML canvas to communicate input feel and state rhythm.
+
+## Apple HIG Alignment
+
+- HIG cards read: ROUTING.md, CORE_PRINCIPLES.md, GAME_UI_CHECKLIST.md, ACCESSIBILITY_LOCALIZATION.md, VALIDATION_GATES.md.
+- platform assumptions: iPhone-first Unity game UI with later Android/WebGL adaptation; safe area avoids notch, Dynamic Island, and home indicator.
+- alignment decisions: preserve clarity for HUD/readability, defer decoration behind gameplay content, keep restart under user control, and support reduced motion/readable contrast.
+- accessibility: every icon/action needs a semantic label, visible state, 44x44 pt touch target when touch is used, and non-motion fallback for critical feedback.
+- intentional deviations: fast neon motion and camera shake are allowed only when lane, hazard, HUD, and failure reason remain readable.
+- open questions: final orientation, device tier floor, and exact haptics availability require confirmation during development QA.

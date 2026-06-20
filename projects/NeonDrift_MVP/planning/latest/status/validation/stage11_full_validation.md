@@ -1,7 +1,7 @@
 # Validation Report: planning_stage_11
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617173343
-- project_channel_id: 382b9e33-8429-81ec-9dab-da7d22dd4ef6
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
+- project_channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
 
 ## Checks
 - PASS file.readable.docs/review/Planning_Gap_Review.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/review/Planning_Gap_Review.md
 - PASS file.schema.docs/review/Planning_Gap_Review.md
 - PASS file.readable.docs/review/Planning_Risk_Register.md
-- PASS file.size_limit.docs/review/Planning_Risk_Register.md: 1194<=8000
+- PASS file.size_limit.docs/review/Planning_Risk_Register.md: 1195<=8000
 - PASS file.no_prompt_constraints.docs/review/Planning_Risk_Register.md
 - PASS file.bilingual_order.docs/review/Planning_Risk_Register.md
 - PASS file.bilingual_distinct.docs/review/Planning_Risk_Register.md

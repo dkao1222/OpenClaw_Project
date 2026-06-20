@@ -1,29 +1,27 @@
-# MVP Hypothesis
-
 ## 繁體中文
 
 ### 假設:
-- 玩家會被單手操控的霓虹風格漂移賽車體驗所吸引
-- 短時間內的高沉浸感體驗能帶來高用戶留存率
+- 霓虹漂移的核心玩法在簡化賽道與直覺控制下，能提供快速、重複且令人滿意的遊戲體驗。
+- 可測試的遊戲原型能有效驗證核心玩法並為後續 Unity 開發提供具體規劃文件。
 
 ### 驗證方式:
-- 記錄玩家在3分鐘內完成賽道的次數與平均精確度
-- 分析玩家在遊戲中持續時間與重複遊玩意願
+- 透過內部測試與反饋收集，評估遊戲體驗是否符合預期目標。
+- 檢查規劃文件是否清晰、完整且可直接用於後續開發階段。
 
 ### 成功指標:
-- 玩家在3分鐘內完成至少3次完整賽道
-- 漂移精確度達標率超過70%
+- 內部測試中，玩家能快速上手並享受遊戲體驗。
+- 規劃文件能有效支援後續 Unity 開發的進行。
 
 ## English
 
 ### Hypothesis:
-- Players will be attracted to the one-handed neon-themed drift racing experience
-- High-immersion short-session gameplay will lead to high user retention
+- The core neon drift gameplay, simplified on clean tracks with intuitive controls, delivers a fast, repeatable, and satisfying gaming experience.
+- A testable game prototype effectively validates core mechanics and provides clear planning documents for subsequent Unity development.
 
 ### Validation Method:
-- Track the number of laps completed and average accuracy within 3 minutes
-- Analyze player session duration and intent to replay
+- Evaluate gameplay experience through internal testing and feedback collection to ensure it meets expected goals.
+- Review planning documents for clarity, completeness, and direct usability in downstream development phases.
 
 ### Success Metrics:
-- Players complete at least 3 full laps within 3 minutes
-- Drift accuracy threshold achieved in over 70% of attempts
+- Internal testing shows players can quickly grasp and enjoy the game experience.
+- Planning documents effectively support the progression into subsequent Unity development.

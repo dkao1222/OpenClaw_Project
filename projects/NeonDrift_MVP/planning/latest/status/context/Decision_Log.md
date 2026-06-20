@@ -1,8 +1,18 @@
-# NeonDrift MVP Governance State
+# Decision Log
 
-**Project Name:** NeonDrift MVP
-**Channel ID:** 382b9e33-8429-81ec-9dab-da7d22dd4ef6
-**Decision:** Planning Stage 01 context initialized.
-**Owner:** agents-orchestrator
-**Locked Decisions:** Initial MVP focus set (short-session, mobile-first drift).
-**Open Questions:** Specific mechanics for drift scoring, opponent behavior definition, and initial monetization hook implementation plan.
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
+channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
+
+## locked_decisions
+
+- decision: Planning Stage 01 context initialized
+- owner: agents-orchestrator
+- pipeline_controller: Notion watcher
+- agent_model_policy: per-agent-config
+- downstream_target: Unity 6000.0.71f1 mobile project
+- output_quality_policy: no placeholders, no repeated bilingual filler, concrete downstream specs required
+
+## open_questions
+
+- Tune exact device compatibility matrix during platform and technical review.
+- Confirm store compliance and ad/privacy implementation details during later stages.
