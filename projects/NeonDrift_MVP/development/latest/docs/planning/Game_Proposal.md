@@ -1,27 +1,29 @@
-# Game Proposal
+# Game Proposal for NeonDrift MVP
 
 ## 繁體中文
+
 ### 遊戲目標:
-- 建立一個以短時間、高重複性為核心的街頭賽車遊戲，讓玩家在每次遊玩中都能體驗到即時、刺激的漂移競賽。
-- 驗證玩家對「漂移」玩法的熱愛與重複遊玩意願，作為後續擴展的基礎。
+- 提供快速、清晰且重複可玩的霓虹漂移遊戲體驗，讓玩家能立即上手並享受短時間內的競速快感。
+- 建立明確的產品與體驗規劃邊界，以支持後續的遊戲方向、MVP 界限和成功標準。
 
 ### 核心玩法:
-- 玩家透過簡單的一隻手指操作，控制車輛進行漂移，以獲得高分。
-- 玩家需要在短時間內完成一系列挑戰關卡，以獲得最佳成績。
+- 玩家控制一輛霓虹風格的賽車，在充滿光線效果的道路上進行高速漂移，並盡可能地完成關卡。
+- 遊戲採用簡單直觀的操作方式，支持即時重試機制與清晰的進度追蹤。
 
 ### 成功條件:
-- 玩家在遊戲中達到一定的重複遊玩次數，表示核心玩法受到歡迎。
-- 玩家在遊戲中進行消費行為（如購買道具、解鎖關卡），顯示出對遊戲內容的投入。
+- 達成可玩性高的遊戲原型，能在短時間內展示核心玩法並吸引目標受眾。
+- 產生具備實作性的產品規劃文件，為後續 Unity 開發和應用商店準備提供明確指引。
 
 ## English
+
 ### Game Goal:
-- Establish a mobile arcade racing game centered on short, high-retention loops where players experience fast-paced, thrilling drift racing in each session.
-- Validate player interest and repeat play behavior around the "drift" mechanic for future expansion.
+- Deliver a fast, clear, and replayable neon drift gaming experience that players can pick up instantly and enjoy in short bursts.
+- Establish clear product and experience boundaries for future game direction, MVP scope, and success criteria.
 
 ### Core Gameplay:
-- Players control a vehicle with one-thumb gestures to perform drifts and achieve high scores.
-- Players complete a series of timed challenge tracks to earn the best possible score.
+- Players control a neon-style racing car on a luminous track, performing high-speed drifts and completing levels.
+- The gameplay supports intuitive controls, instant retries, and clear progress tracking.
 
 ### Success Criteria:
-- Players engage in repeated sessions, indicating a strong appeal of the core gameplay.
-- Players spend in-game currency (e.g., purchasing items, unlocking tracks), showing investment in the content.
+- Achieve a playable prototype that showcases core mechanics within short play sessions to engage the target audience.
+- Produce actionable planning artifacts for downstream Unity development and app store readiness.

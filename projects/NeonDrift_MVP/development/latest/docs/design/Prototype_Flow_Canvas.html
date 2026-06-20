@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeonDrift Prototype Flow Canvas</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #080a12; color: #eef6ff; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { height: 100%; display: grid; grid-template-rows: auto 1fr auto; }
+    header, footer { padding: 12px 16px; background: #101521; border-bottom: 1px solid #263143; }
+    footer { border-top: 1px solid #263143; border-bottom: 0; color: #aebbd0; font-size: 13px; }
+    h1 { margin: 0; font-size: 18px; font-weight: 700; }
+    canvas { width: 100%; height: 100%; display: block; background: radial-gradient(circle at 50% 35%, #192235 0, #090c14 58%, #05070c 100%); }
+  </style>
+</head>
+<body>
+  <main>
+    <header><h1>NeonDrift Prototype Flow Canvas</h1></header>
+    <canvas id="flow" width="1280" height="720" aria-label="Interactive prototype flow showing Start Run, Drift, Boost, Crash, and Retry states"></canvas>
+    <footer>Flow: Start Run -> Drift -> Boost -> Crash -> Retry. The animation visualizes input feel, camera response, HUD feedback, failure clarity, and retry momentum.</footer>
+  </main>
+  <script>
+    const canvas = document.getElementById('flow');
+    const ctx = canvas.getContext('2d');
+    const states = ['Start Run', 'Drift', 'Boost', 'Crash', 'Retry'];
+    const details = {
+      'Start Run': 'Tap primary action. Camera settles, HUD appears, road line becomes readable.',
+      Drift: 'Hold left/right. Vehicle leans within 80 ms, trail bends, lane remains readable.',
+      Boost: 'Press boost. Speed lines intensify, HUD danger rises, score pulse accelerates.',
+      Crash: 'Collision/off-line. Camera bump, red edge flash, haptic hit, reason shown.',
+      Retry: 'Tap retry. Failure clears, road recenters, control returns immediately.'
+    };
+    function resize() {
+      const dpr = Math.max(1, window.devicePixelRatio || 1);
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.floor(rect.width * dpr);
+      canvas.height = Math.floor(rect.height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    window.addEventListener('resize', resize);
+    resize();
+    function draw(now) {
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      ctx.clearRect(0, 0, w, h);
+      const cycle = (now / 1600) % states.length;
+      const active = Math.floor(cycle);
+      const t = cycle - active;
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = '#2ff6ff';
+      ctx.fillStyle = '#101827';
+      const y = h * 0.34;
+      const gap = w / (states.length + 1);
+      const points = states.map((s, i) => ({ label: s, x: gap * (i + 1), y }));
+      ctx.beginPath();
+      points.forEach((p, i) => i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y));
+      ctx.stroke();
+      points.forEach((p, i) => {
+        const isActive = i === active;
+        ctx.beginPath();
+        ctx.fillStyle = isActive ? '#29f5a6' : '#131c2b';
+        ctx.strokeStyle = isActive ? '#ecff7a' : '#3a4b62';
+        ctx.arc(p.x, p.y, isActive ? 34 + Math.sin(t * Math.PI) * 6 : 28, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
+        ctx.fillStyle = isActive ? '#06100c' : '#d9e7ff';
+        ctx.font = '700 14px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(p.label, p.x, p.y + 5);
+      });
+      const carX = points[active].x + (points[Math.min(active + 1, points.length - 1)].x - points[active].x) * t;
+      const shake = states[active] === 'Crash' ? Math.sin(now / 25) * 8 : 0;
+      ctx.save();
+      ctx.translate(carX + shake, h * 0.62);
+      ctx.rotate(states[active] === 'Drift' ? -0.25 : states[active] === 'Boost' ? 0.08 : 0);
+      ctx.fillStyle = states[active] === 'Crash' ? '#ff4d6d' : '#7df9ff';
+      ctx.fillRect(-28, -14, 56, 28);
+      ctx.restore();
+      ctx.fillStyle = '#eef6ff';
+      ctx.font = '700 22px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(states[active], w / 2, h * 0.76);
+      ctx.font = '15px Inter, sans-serif';
+      ctx.fillStyle = '#aebbd0';
+      wrapText(details[states[active]], w / 2, h * 0.82, Math.min(720, w - 48), 22);
+      requestAnimationFrame(draw);
+    }
+    function wrapText(text, x, y, maxWidth, lineHeight) {
+      const words = text.split(' ');
+      let line = '';
+      for (const word of words) {
+        const test = line ? line + ' ' + word : word;
+        if (ctx.measureText(test).width > maxWidth && line) {
+          ctx.fillText(line, x, y);
+          line = word;
+          y += lineHeight;
+        } else {
+          line = test;
+        }
+      }
+      ctx.fillText(line, x, y);
+    }
+    requestAnimationFrame(draw);
+  </script>
+</body>
+</html>

@@ -2,25 +2,25 @@
 
 from_agent: game-director
 to_agent: ui-ux-designer
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727
-project_channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
-output_folder: /home/node/.openclaw/workspace/382b9e33-8429-81eb-8b07-d003aa8d5f58/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260617145810/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
+project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
+output_folder: /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/
 requires_user_confirmation: true
 creative pillars: speed readability, neon focus, instant retry confidence
 player promise: every short run feels fast, readable, and worth retrying
 core input promise: steering, drift, boost, and restart must feel immediate and predictable
 required operation flow scope: start, active run, scoring, failure, and fast retry
 experience boundaries: no UI layout ownership, no gameplay rule rewrite, no implementation backlog
-suggested_next_slack_prompt: Please confirm Stage 03 and start ui-ux-designer for Stage 04.
+suggested_next_action: Confirm Stage 03 and start ui-ux-designer for Stage 04 from Notion.
 
 next_stage_input_policy: read this handoff first, read status/context/stage03_context_pack.md second.
-context_pack_path: /home/node/.openclaw/workspace/382b9e33-8429-81eb-8b07-d003aa8d5f58/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260617145810/project/status/context/stage03_context_pack.md
+context_pack_path: /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/status/context/stage03_context_pack.md
 
 ## Stage 03 source paths
-- /home/node/.openclaw/workspace/382b9e33-8429-81eb-8b07-d003aa8d5f58/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260617145810/project/status/context/stage03_context_pack.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81eb-8b07-d003aa8d5f58/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260617145810/project/docs/design/Core_Experience_Direction.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81eb-8b07-d003aa8d5f58/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260617145810/project/docs/design/Creative_Pillars.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81eb-8b07-d003aa8d5f58/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260617145810/project/docs/design/Player_Promise.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81eb-8b07-d003aa8d5f58/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260617145810/project/status/agent_heartbeats/game-director.md
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/status/context/stage03_context_pack.md
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Core_Experience_Direction.md
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Creative_Pillars.md
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Player_Promise.md
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/status/agent_heartbeats/game-director.md
 
 Do not start ui-ux-designer in this micro-stage.

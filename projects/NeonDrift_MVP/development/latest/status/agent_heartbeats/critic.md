@@ -1,8 +1,8 @@
 # Agent Heartbeat: critic
 
 agent_id: critic
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727
-channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
+channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
 stage: planning_stage_11
 status: completed
 handoff_to: judge

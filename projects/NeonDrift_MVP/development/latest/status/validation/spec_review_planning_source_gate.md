@@ -1,0 +1,74 @@
+# Spec Review Planning Source Gate
+
+## Checks
+- PASS source_output_folder_exists: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project
+- PASS required_planning_source_doc:docs/design/Operation_Flow_Diagram.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/docs/design/Operation_Flow_Diagram.md
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:player intent: player intent
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:system response: system response
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:feel target: feel target
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:latency target: latency target
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:camera response: camera response
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:haptics: haptics
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:Apple HIG Alignment: Apple HIG Alignment
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:HIG cards read: HIG cards read
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:platform assumptions: platform assumptions
+- PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:accessibility: accessibility
+- PASS required_planning_source_doc:docs/design/Prototype_Flow.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/docs/design/Prototype_Flow.md
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:canvas artifact: canvas artifact
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:transition: transition
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:start: start
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:run: run
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:failure: failure
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:restart: restart
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:Apple HIG Alignment: Apple HIG Alignment
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:HIG cards read: HIG cards read
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:platform assumptions: platform assumptions
+- PASS planning_source_marker:docs/design/Prototype_Flow.md:accessibility: accessibility
+- PASS required_planning_source_doc:docs/design/Prototype_Flow_Canvas.html: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/docs/design/Prototype_Flow_Canvas.html
+- PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:<canvas: <canvas
+- PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:requestAnimationFrame: requestAnimationFrame
+- PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Start Run: Start Run
+- PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Drift: Drift
+- PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Boost: Boost
+- PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Crash: Crash
+- PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Retry: Retry
+- PASS required_planning_source_doc:docs/design/Game_Systems_Overview.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/docs/design/Game_Systems_Overview.md
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Control System: Control System
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Speed System: Speed System
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Hazard System: Hazard System
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Scoring System: Scoring System
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Failure/Retry System: Failure/Retry System
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Feedback System: Feedback System
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:input: input
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:state: state
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:rule: rule
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:output: output
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:dependency: dependency
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:UI/HUD: UI/HUD
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:acceptance: acceptance
+- PASS required_planning_source_doc:docs/design/Game_Design_Document.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/docs/design/Game_Design_Document.md
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:MVP: MVP
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:iPhone-first: iPhone-first
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:core loop: core loop
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Start Run: Start Run
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:drift: drift
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:score: score
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:failure: failure
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Retry: Retry
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:HUD: HUD
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:safe area: safe area
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:touch target: touch target
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:visual readability: visual readability
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:audio/haptics: audio/haptics
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Compatibility Matrix: Compatibility Matrix
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:iOS 15+: iOS 15+
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:iPhone SE: iPhone SE
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:iPhone 15: iPhone 15
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Android 10+: Android 10+
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:WebGL: WebGL
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:aspect ratio: aspect ratio
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:performance budget: performance budget
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:acceptance criteria: acceptance criteria
+
+## Result
+- status: passed

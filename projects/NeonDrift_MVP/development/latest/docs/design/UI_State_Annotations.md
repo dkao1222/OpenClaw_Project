@@ -21,3 +21,11 @@ required keywords: state, default, active, disabled, feedback, transition
 - disabled: unavailable actions are muted and cannot steal focus.
 - feedback: danger, failure, and scoring changes are readable without covering the lane.
 - transition: start, pause, failure, and restart transitions are direct and predictable.
+## Apple HIG Alignment
+
+- HIG cards read: ROUTING.md, CORE_PRINCIPLES.md, GAME_UI_CHECKLIST.md, ACCESSIBILITY_LOCALIZATION.md, VALIDATION_GATES.md.
+- platform assumptions: iPhone-first Unity game UI with later Android/WebGL adaptation; safe area avoids notch, Dynamic Island, and home indicator.
+- alignment decisions: preserve clarity for HUD/readability, defer decoration behind gameplay content, keep restart under user control, and support reduced motion/readable contrast.
+- accessibility: every icon/action needs a semantic label, visible state, 44x44 pt touch target when touch is used, and non-motion fallback for critical feedback.
+- intentional deviations: fast neon motion and camera shake are allowed only when lane, hazard, HUD, and failure reason remain readable.
+- open questions: final orientation, device tier floor, and exact haptics availability require confirmation during development QA.

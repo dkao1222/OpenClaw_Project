@@ -2,7 +2,7 @@
 
 agent_id: qa-playtester
 project_name: NeonDrift_MVP
-channel_id: 382b9e33-8429-8147-bc5c-f31fd79a628d
+channel_id: 385b9e33-8429-8168-ae2e-fe508ac46b4a
 stage: development
 status: completed
 progress_percent: 100
