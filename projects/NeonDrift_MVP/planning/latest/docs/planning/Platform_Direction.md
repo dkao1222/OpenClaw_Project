@@ -1,27 +1,27 @@
 ## 繁體中文
 
 ### 平台範圍:
-- 單機版遊戲，支援 iOS 17 及以上版本。
-- 使用 Unity 6000.0.71f1 開發，專注於高節奏的賽道體驗與直覺式控制。
+- 單機遊戲，專注於手機平台，提供短時間內的沉浸式霓虹漂移體驗。
+- 遊戲玩法為重複可玩的核心機制，支持即時重試與進度追蹤。
 
 ### 控制方式:
-- 支援觸控螢幕操作與搖桿控制，以適應不同玩家習慣。
-- 操作需簡潔且即時反饋，符合手機遊戲的直覺性需求。
+- 簡單直觀的手勢控制，適應手機平台操作習慣。
+- 支援即時重試與進度記錄，提升遊戲體驗流暢度。
 
 ### 技術限制:
-- 為確保效能與穩定性，開發過程中將嚴格控制資源使用量。
-- 針對 Unity 6000.0.71f1 的特性進行最佳化，避免過度複雜的渲染或計算邏輯。
+- 使用 Unity 6000.0.71f1 開發，確保穩定且最新的引擎功能。
+- 優化遊戲效能以適應中階手機設備，保障流暢遊戲體驗。
 
 ## English
 
 ### Platform Scope:
-- Standalone game supporting iOS 17 and above.
-- Built with Unity 6000.0.71f1, focusing on high-tempo track experiences and intuitive controls.
+- Single-player game focused on mobile platforms, delivering an immersive neon drift experience in short bursts.
+- Core gameplay is replayable with instant retries and progress tracking.
 
 ### Control Model:
-- Supports touch screen and joystick controls to accommodate different player preferences.
-- Operations must be simple with immediate feedback, aligning with mobile game intuitiveness.
+- Intuitive gesture-based controls tailored for mobile platform interaction.
+- Support for instant retries and progress logging to enhance the overall gaming flow.
 
 ### Technical Constraints:
-- To ensure performance and stability, resource usage will be strictly controlled during development.
-- Optimization for Unity 6000.0.71f1 features is required to avoid overly complex rendering or computational logic.
+- Development using Unity 6000.0.71f1 to leverage stable and up-to-date engine features.
+- Optimize game performance for mid-range mobile devices to ensure a smooth experience.

@@ -1,9 +1,9 @@
 # Validation Report: planning_stage_01
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
-- project_channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
+- project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
 - status: passed
-- checked_at: 2026-06-20T16:59:27.148592+00:00
+- checked_at: 2026-06-20T17:14:18.513724+00:00
 
 ## Failed Checks
 - none

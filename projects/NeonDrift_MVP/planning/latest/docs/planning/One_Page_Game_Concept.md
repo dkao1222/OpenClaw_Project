@@ -1,26 +1,26 @@
 ## 繁體中文
 
 ### 產品願景:
-- 提供快速、易讀且可重複的霓虹漂移遊戲體驗，驗證核心玩法。
-- 建立明確的產品與體驗規劃邊界，為後續 Unity 開發提供具體方向。
+- 提供快速、清晰且重複可玩的霓虹漂移遊戲體驗，讓玩家能立即上手並享受短時間內的競速快感。
+- 建立明確的產品與體驗規劃邊界，以支持後續的遊戲方向、MVP 界限和成功標準。
 
 ### 目標受眾:
-- 移動玩家，年齡 16 至 35 歲，喜愛快速重試循環、時尚街頭賽車、清晰控制、可見的技巧表現以及短時間遊戲會話。
-- 開發團隊需要精確規劃工件，以避免上下文過載。
+- 移動平台玩家年齡介於 16 到 35 歲之間，喜愛快速重試循環、時尚街頭賽車、明確控制方式、可見的精通感以及短時間遊戲階段。
+- 開發團隊需要具備精確規劃文件，使其能以小規模、易於消耗的內容進行後續處理，避免資訊過載。
 
 ### 核心價值:
-- 可讀的高速霓虹漂移遊戲玩法，支援即時重新開始。
-- 具體且可執行的生產規劃交接文件，具有明確的上下文大小限制。
+- 高速霓虹漂移玩法清晰易懂，可立即重新開始。
+- 具備明確生產準備的規劃交接文件，具備有限的上下文大小。
 
 ### MVP 摘要:
-- 開發一個可測試的遊戲原型，有效傳達核心玩法。
-- 提供清晰且具備實作性的規劃文件，以供後續 Unity 開發使用。
+- 建立可玩原型，於短時間內展示核心機制以吸引目標受眾。
+- 產生具備實作性的產品規劃文件，為後續 Unity 開發和應用商店準備提供明確指引。
 
 ## English
 
 ### Product Vision:
-- Deliver a fast, readable, and repeatable neon drift gameplay experience to validate core mechanics.
-- Establish clear product and experience planning boundaries for downstream Unity development.
+- Deliver a fast, clear, and replayable neon drift gaming experience that players can pick up instantly and enjoy in short bursts.
+- Establish clear product and experience boundaries for future game direction, MVP scope, and success criteria.
 
 ### Target Audience:
 - Mobile players aged 16 to 35 who enjoy fast retry loops, stylish arcade racing, clear controls, visible mastery, and short play sessions.
@@ -31,5 +31,5 @@
 - Concrete production-ready planning handoffs with bounded context size.
 
 ### MVP Summary:
-- Achieve a testable gameplay prototype that effectively communicates core mechanics.
-- Provide clear and implementable planning documents for subsequent Unity development.
+- Achieve a playable prototype that showcases core mechanics within short play sessions to engage the target audience.
+- Produce actionable planning artifacts for downstream Unity development and app store readiness.

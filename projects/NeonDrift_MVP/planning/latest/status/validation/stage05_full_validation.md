@@ -1,7 +1,7 @@
 # Validation Report: planning_stage_05
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
-- project_channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
+- project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
 
 ## Checks
 - PASS file.readable.docs/design/Core_Gameplay_Loop.md

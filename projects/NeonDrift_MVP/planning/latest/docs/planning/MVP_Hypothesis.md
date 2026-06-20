@@ -1,27 +1,27 @@
 ## 繁體中文
 
 ### 假設:
-- 霓虹漂移的核心玩法在簡化賽道與直覺控制下，能提供快速、重複且令人滿意的遊戲體驗。
-- 可測試的遊戲原型能有效驗證核心玩法並為後續 Unity 開發提供具體規劃文件。
+- 霓虹風格的高速漂移玩法能吸引目標受眾，並在短時間內提供清晰、重複可玩的遊戲體驗。
+- 簡單直觀的控制方式與即時重試機制有助於玩家快速上手並持續參與。
 
 ### 驗證方式:
-- 透過內部測試與反饋收集，評估遊戲體驗是否符合預期目標。
-- 檢查規劃文件是否清晰、完整且可直接用於後續開發階段。
+- 透過原型測試收集使用者反饋，評估核心玩法的吸引力與易用性。
+- 分析遊戲原型中的進度追蹤與重新開始功能，確認其是否能有效提升玩家參與度。
 
 ### 成功指標:
-- 內部測試中，玩家能快速上手並享受遊戲體驗。
-- 規劃文件能有效支援後續 Unity 開發的進行。
+- 玩家在短時間內完成至少一個關卡且願意重複遊玩。
+- 使用者反饋顯示對核心玩法的滿意度高，並認為遊戲易於理解與操作。
 
 ## English
 
 ### Hypothesis:
-- The core neon drift gameplay, simplified on clean tracks with intuitive controls, delivers a fast, repeatable, and satisfying gaming experience.
-- A testable game prototype effectively validates core mechanics and provides clear planning documents for subsequent Unity development.
+- The neon-style high-speed drift gameplay can attract the target audience and provide a clear, replayable gaming experience within short play sessions.
+- Simple and intuitive controls with instant retry mechanisms help players quickly pick up the game and stay engaged.
 
 ### Validation Method:
-- Evaluate gameplay experience through internal testing and feedback collection to ensure it meets expected goals.
-- Review planning documents for clarity, completeness, and direct usability in downstream development phases.
+- Collect user feedback through prototype testing to evaluate the吸引力 and usability of core gameplay.
+- Analyze progress tracking and restart features in the game prototype to confirm their effectiveness in enhancing player engagement.
 
 ### Success Metrics:
-- Internal testing shows players can quickly grasp and enjoy the game experience.
-- Planning documents effectively support the progression into subsequent Unity development.
+- Players complete at least one level within a short play session and are willing to replay.
+- User feedback indicates high satisfaction with core gameplay and ease of understanding and operation.

@@ -1,43 +1,43 @@
 ## 繁體中文
 
 ### 產品目標:
-- 提供快速、易讀且可重複的霓虹漂移遊戲體驗，驗證核心玩法。
-- 建立明確的產品與體驗規劃邊界，為後續 Unity 開發提供具體方向。
+- 提供快速、清晰且重複可玩的霓虹漂移遊戲體驗，讓玩家能立即上手並享受短時間內的競速快感。
+- 建立明確的產品與體驗規劃邊界，以支持後續的遊戲方向、MVP 界限和成功標準。
 
 ### 目標使用者:
-- 移動玩家，年齡 16 至 35 歲，喜愛快速重試循環、時尚街頭賽車、清晰控制、可見的技巧表現以及短時間遊戲會話。
-- 開發團隊需要精確規劃工件，以避免上下文過載。
+- 移動平台玩家年齡介於 16 到 35 歲之間，喜愛快速重試循環、時尚街頭賽車、明確控制方式、可見的精通感以及短時間遊戲階段。
+- 開發團隊需要具備精確規劃文件，使其能以小規模、易於消耗的內容進行後續處理，避免資訊過載。
 
 ### MVP 範圍:
-- 開發一個可測試的遊戲原型，有效傳達核心玩法。
-- 提供清晰且具備實作性的規劃文件，以供後續 Unity 開發使用。
+- 建立可玩原型，於短時間內展示核心機制以吸引目標受眾。
+- 產生具備實作性的產品規劃文件，為後續 Unity 開發和應用商店準備提供明確指引。
 
 ### 非目標:
-- 複雜的劇情敘事或長時間遊戲會話設計。
-- 多人線上功能或社交互動機制。
+- 暫不包含複雜的劇情或角色發展。
+- 不支援多人遊戲模式或社交功能。
 
 ### 驗收條件:
-- 內部測試中，玩家能快速上手並享受遊戲體驗。
-- 規劃文件能有效支援後續 Unity 開發的進行。
+- 玩家在短時間內完成至少一個關卡且願意重複遊玩。
+- 使用者反饋顯示對核心玩法的滿意度高，並認為遊戲易於理解與操作。
 
 ## English
 
 ### Product Goal:
-- Deliver a fast, readable, and repeatable neon drift gameplay experience to validate core mechanics.
-- Establish clear product and experience planning boundaries for downstream Unity development.
+- Deliver a fast, clear, and replayable neon drift gaming experience that players can pick up instantly and enjoy in short bursts.
+- Establish clear product and experience boundaries for future game direction, MVP scope, and success criteria.
 
 ### Target User:
 - Mobile players aged 16 to 35 who enjoy fast retry loops, stylish arcade racing, clear controls, visible mastery, and short play sessions.
 - The development team that needs precise planning artifacts small enough for downstream agents to consume without context overflow.
 
 ### MVP Scope:
-- Achieve a testable gameplay prototype that effectively communicates core mechanics.
-- Provide clear and implementable planning documents for subsequent Unity development.
+- Achieve a playable prototype that showcases core mechanics within short play sessions to engage the target audience.
+- Produce actionable planning artifacts for downstream Unity development and app store readiness.
 
 ### Non-goals:
-- Complex narrative storytelling or extended gameplay sessions.
-- Multiplayer online features or social interaction mechanisms.
+- Complex narrative or character development is not included at this stage.
+- Multiplayer modes or social features are not supported.
 
 ### Acceptance Criteria:
-- Internal testing shows players can quickly grasp and enjoy the game experience.
-- Planning documents effectively support the progression into subsequent Unity development.
+- Players complete at least one level within a short play session and are willing to replay.
+- User feedback indicates high satisfaction with core gameplay and ease of understanding and operation.

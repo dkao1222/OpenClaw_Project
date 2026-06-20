@@ -1,12 +1,12 @@
 # Project Context Index
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
-channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
-source_path: /home/node/.openclaw/workspace/385b9e33-8429-8143-b8b3-ef455491bfc7/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925/project/status/context/Initial_Request.md
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
+channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
+source_path: /home/node/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/status/context/Initial_Request.md
 
 ## Product Vision and Purpose
 
-- snippet: NeonDrift MVP is a short-session neon racing game concept built to validate a fast, readable, repeatable mobile gameplay loop before full production. The planning pipeline must produce documents that can actually feed spec review, Unity development, local buil
+- snippet: NeonDrift MVP is a short-session neon racing game concept built to validate a fast, readable, repeatable mobile gameplay loop before full production. Planning outputs must feed spec review, Unity development, local build, App Store and Google Play privacy/ads 
 
 ## Target Audience
 
@@ -18,4 +18,4 @@ source_path: /home/node/.openclaw/workspace/385b9e33-8429-8143-b8b3-ef455491bfc7
 
 ## Development Request
 
-- snippet: Run the OpenClaw game planning pipeline from Stage 00 through Stage 12 from Notion. Use per-agent model configuration. Enforce strict output/process constraints: BLOCKED, NO_REPLY, handoff failure, heartbeat failure, path truncation, tool error, missing read-back, oversized context, repeated bilingual filler, and generic placeholder content all make the whole run fail. Planning outputs must target Unity 6000.0.71f1 m
+- snippet: Run the OpenClaw game planning pipeline from Stage 00 through Stage 12 for NeonDrift MVP. Validate stable handoff, heartbeat, output format, Notion sync, and Git publish. Do not allow spec review or development to start until planning is finished and passed.

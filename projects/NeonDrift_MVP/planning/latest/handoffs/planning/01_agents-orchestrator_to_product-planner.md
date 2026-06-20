@@ -2,16 +2,16 @@
 
 from_agent: agents-orchestrator
 to_agent: product-planner
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925
-project_channel_id: 385b9e33-8429-8143-b8b3-ef455491bfc7
-output_folder: /home/node/.openclaw/workspace/385b9e33-8429-8143-b8b3-ef455491bfc7/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
+project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
+output_folder: /home/node/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/
 requires_user_confirmation: true
 status: ready_for_user_confirmation
 do not start product-planner
 suggested_next_action: Confirm Stage 01 and start product-planner for Stage 02 from Notion.
 
 next_stage_input_policy: read this handoff first, then read status/context/stage01_context_pack.md.
-context_pack_path: /home/node/.openclaw/workspace/385b9e33-8429-8143-b8b3-ef455491bfc7/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620165925/project/status/context/stage01_context_pack.md
+context_pack_path: /home/node/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/status/context/stage01_context_pack.md
 
 ## Required public docs
 
