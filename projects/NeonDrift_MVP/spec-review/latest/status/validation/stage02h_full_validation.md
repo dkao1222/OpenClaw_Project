@@ -1,0 +1,113 @@
+# Validation Report: planning_stage_02
+
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
+- project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
+- status: passed
+- checked_at: 2026-06-20T17:18:52.776781+00:00
+
+## Failed Checks
+- none
+
+## Passed Checks
+- stage_02.output_folder.exists
+- stage_02.output_folder.canonical_channel_project
+- stage_02.file.exists.docs/planning/Game_Proposal.md
+- stage_02.file.readable.docs/planning/Game_Proposal.md
+- stage_02.file.no_placeholders.docs/planning/Game_Proposal.md
+- stage_02.file.no_prompt_constraints.docs/planning/Game_Proposal.md
+- stage_02.file.size_limit.docs/planning/Game_Proposal.md
+- stage_02.file.content_specificity.docs/planning/Game_Proposal.md
+- stage_02.file.exists.docs/planning/One_Page_Game_Concept.md
+- stage_02.file.readable.docs/planning/One_Page_Game_Concept.md
+- stage_02.file.no_placeholders.docs/planning/One_Page_Game_Concept.md
+- stage_02.file.no_prompt_constraints.docs/planning/One_Page_Game_Concept.md
+- stage_02.file.size_limit.docs/planning/One_Page_Game_Concept.md
+- stage_02.file.content_specificity.docs/planning/One_Page_Game_Concept.md
+- stage_02.file.exists.docs/planning/MVP_Hypothesis.md
+- stage_02.file.readable.docs/planning/MVP_Hypothesis.md
+- stage_02.file.no_placeholders.docs/planning/MVP_Hypothesis.md
+- stage_02.file.no_prompt_constraints.docs/planning/MVP_Hypothesis.md
+- stage_02.file.size_limit.docs/planning/MVP_Hypothesis.md
+- stage_02.file.content_specificity.docs/planning/MVP_Hypothesis.md
+- stage_02.file.exists.docs/planning/Platform_Direction.md
+- stage_02.file.readable.docs/planning/Platform_Direction.md
+- stage_02.file.no_placeholders.docs/planning/Platform_Direction.md
+- stage_02.file.no_prompt_constraints.docs/planning/Platform_Direction.md
+- stage_02.file.size_limit.docs/planning/Platform_Direction.md
+- stage_02.file.content_specificity.docs/planning/Platform_Direction.md
+- stage_02.file.exists.docs/product/MVP_PRD.md
+- stage_02.file.readable.docs/product/MVP_PRD.md
+- stage_02.file.no_placeholders.docs/product/MVP_PRD.md
+- stage_02.file.no_prompt_constraints.docs/product/MVP_PRD.md
+- stage_02.file.size_limit.docs/product/MVP_PRD.md
+- stage_02.file.content_specificity.docs/product/MVP_PRD.md
+- stage_02.file.exists.status/context/stage02_context_pack.md
+- stage_02.file.readable.status/context/stage02_context_pack.md
+- stage_02.file.no_placeholders.status/context/stage02_context_pack.md
+- stage_02.file.no_prompt_constraints.status/context/stage02_context_pack.md
+- stage_02.file.size_limit.status/context/stage02_context_pack.md
+- stage_02.file.content_specificity.status/context/stage02_context_pack.md
+- stage_02.file.exists.handoffs/planning/02_product-planner_to_game-director.md
+- stage_02.file.readable.handoffs/planning/02_product-planner_to_game-director.md
+- stage_02.file.no_placeholders.handoffs/planning/02_product-planner_to_game-director.md
+- stage_02.file.no_prompt_constraints.handoffs/planning/02_product-planner_to_game-director.md
+- stage_02.file.size_limit.handoffs/planning/02_product-planner_to_game-director.md
+- stage_02.file.content_specificity.handoffs/planning/02_product-planner_to_game-director.md
+- stage_02.file.exists.status/agent_heartbeats/product-planner.md
+- stage_02.file.readable.status/agent_heartbeats/product-planner.md
+- stage_02.file.no_placeholders.status/agent_heartbeats/product-planner.md
+- stage_02.file.no_prompt_constraints.status/agent_heartbeats/product-planner.md
+- stage_02.file.size_limit.status/agent_heartbeats/product-planner.md
+- stage_02.file.content_specificity.status/agent_heartbeats/product-planner.md
+- stage_02.formal_doc.zh_heading.docs/planning/Game_Proposal.md
+- stage_02.formal_doc.english_heading.docs/planning/Game_Proposal.md
+- stage_02.formal_doc.zh_before_english.docs/planning/Game_Proposal.md
+- stage_02.formal_doc.bilingual_distinct.docs/planning/Game_Proposal.md
+- stage_02.formal_doc.required_sections.docs/planning/Game_Proposal.md
+- stage_02.formal_doc.zh_heading.docs/planning/One_Page_Game_Concept.md
+- stage_02.formal_doc.english_heading.docs/planning/One_Page_Game_Concept.md
+- stage_02.formal_doc.zh_before_english.docs/planning/One_Page_Game_Concept.md
+- stage_02.formal_doc.bilingual_distinct.docs/planning/One_Page_Game_Concept.md
+- stage_02.formal_doc.required_sections.docs/planning/One_Page_Game_Concept.md
+- stage_02.formal_doc.zh_heading.docs/planning/MVP_Hypothesis.md
+- stage_02.formal_doc.english_heading.docs/planning/MVP_Hypothesis.md
+- stage_02.formal_doc.zh_before_english.docs/planning/MVP_Hypothesis.md
+- stage_02.formal_doc.bilingual_distinct.docs/planning/MVP_Hypothesis.md
+- stage_02.formal_doc.required_sections.docs/planning/MVP_Hypothesis.md
+- stage_02.formal_doc.zh_heading.docs/planning/Platform_Direction.md
+- stage_02.formal_doc.english_heading.docs/planning/Platform_Direction.md
+- stage_02.formal_doc.zh_before_english.docs/planning/Platform_Direction.md
+- stage_02.formal_doc.bilingual_distinct.docs/planning/Platform_Direction.md
+- stage_02.formal_doc.required_sections.docs/planning/Platform_Direction.md
+- stage_02.formal_doc.zh_heading.docs/product/MVP_PRD.md
+- stage_02.formal_doc.english_heading.docs/product/MVP_PRD.md
+- stage_02.formal_doc.zh_before_english.docs/product/MVP_PRD.md
+- stage_02.formal_doc.bilingual_distinct.docs/product/MVP_PRD.md
+- stage_02.formal_doc.required_sections.docs/product/MVP_PRD.md
+- stage_02.heartbeat.agent_id
+- stage_02.heartbeat.project_name
+- stage_02.heartbeat.channel_id
+- stage_02.heartbeat.status
+- stage_02.heartbeat.handoff_to
+- stage_02.heartbeat.output_handoff_status
+- stage_02.heartbeat.progress_percent
+- stage_02.handoff.from_agent
+- stage_02.handoff.to_agent
+- stage_02.handoff.project_name
+- stage_02.handoff.project_channel_id
+- stage_02.handoff.requires_user_confirmation
+- stage_02.handoff.product_goal
+- stage_02.handoff.platform_direction
+- stage_02.handoff.target_user
+- stage_02.handoff.mvp_scope
+- stage_02.handoff.non_goals
+- stage_02.handoff.locked_decisions
+- stage_02.handoff.open_questions
+- stage_02.handoff.platform_direction_obsolete
+- stage_02.platform_direction.unity_version
+- stage_02.handoff.source_path.docs/planning/Game_Proposal.md
+- stage_02.handoff.source_path.docs/planning/One_Page_Game_Concept.md
+- stage_02.handoff.source_path.docs/planning/MVP_Hypothesis.md
+- stage_02.handoff.source_path.docs/planning/Platform_Direction.md
+- stage_02.handoff.source_path.docs/product/MVP_PRD.md
+- stage_02.handoff.source_path.status/agent_heartbeats/product-planner.md

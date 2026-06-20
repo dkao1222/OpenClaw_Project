@@ -1,35 +1,35 @@
-# One-Page Game Concept
-
 ## 繁體中文
+
 ### 產品願景:
-- 創造一款以漂移為核心玩法的街頭賽車遊戲，讓玩家在短時間內體驗到極致的操控感與成就感。
-- 打造一個充滿未來感與霓虹風格的賽車世界，吸引年輕玩家投入其中。
+- 提供快速、清晰且重複可玩的霓虹漂移遊戲體驗，讓玩家能立即上手並享受短時間內的競速快感。
+- 建立明確的產品與體驗規劃邊界，以支持後續的遊戲方向、MVP 界限和成功標準。
 
 ### 目標受眾:
-- 16至35歲的行動裝置玩家，特別是學生、通勤族以及喜愛競技遊戲的休閒玩家。
-- 對快速、刺激的遊戲體驗有興趣，而非深度模擬的玩家。
+- 移動平台玩家年齡介於 16 到 35 歲之間，喜愛快速重試循環、時尚街頭賽車、明確控制方式、可見的精通感以及短時間遊戲階段。
+- 開發團隊需要具備精確規劃文件，使其能以小規模、易於消耗的內容進行後續處理，避免資訊過載。
 
 ### 核心價值:
-- 精準、易於操作的漂移控制，只需一隻手指即可完成複雜的操控。
-- 短時間內完成挑戰關卡，提供即時的成就感與回饋。
+- 高速霓虹漂移玩法清晰易懂，可立即重新開始。
+- 具備明確生產準備的規劃交接文件，具備有限的上下文大小。
 
 ### MVP 摘要:
-- 初期版本包含簡單的漂移控制、三關挑戰賽道與基本的升級系統。
-- 玩家可透過完成關卡獲得分數與遊戲幣，用於解鎖新車輛與關卡。
+- 建立可玩原型，於短時間內展示核心機制以吸引目標受眾。
+- 產生具備實作性的產品規劃文件，為後續 Unity 開發和應用商店準備提供明確指引。
 
 ## English
+
 ### Product Vision:
-- Create a street racing game centered on drift mechanics, offering players a fast-paced, skill-driven experience in short sessions.
-- Build a futuristic, neon-themed racing world that attracts young players into the game.
+- Deliver a fast, clear, and replayable neon drift gaming experience that players can pick up instantly and enjoy in short bursts.
+- Establish clear product and experience boundaries for future game direction, MVP scope, and success criteria.
 
 ### Target Audience:
-- Mobile players aged 16-35, including students, commuters, and casual competitive gamers.
-- Players seeking fast-paced, exciting gameplay over deep simulation complexity.
+- Mobile players aged 16 to 35 who enjoy fast retry loops, stylish arcade racing, clear controls, visible mastery, and short play sessions.
+- The development team that needs precise planning artifacts small enough for downstream agents to consume without context overflow.
 
 ### Core Value:
-- Precise, one-thumb drift controls for easy, skill-based gameplay.
-- Short, score-based challenge tracks for immediate feedback and gratification.
+- Readable high-speed neon drift gameplay with immediate restart.
+- Concrete production-ready planning handoffs with bounded context size.
 
 ### MVP Summary:
-- The initial version includes simple drift controls, three challenge tracks, and a basic upgrade system.
-- Players earn scores and in-game currency by completing tracks, which can be used to unlock new vehicles and levels.
+- Achieve a playable prototype that showcases core mechanics within short play sessions to engage the target audience.
+- Produce actionable planning artifacts for downstream Unity development and app store readiness.

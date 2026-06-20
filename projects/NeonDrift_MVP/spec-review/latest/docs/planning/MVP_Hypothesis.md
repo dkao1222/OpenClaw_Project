@@ -1,27 +1,27 @@
-# MVP Hypothesis
-
 ## 繁體中文
+
 ### 假設:
-- 玩家會重複遊玩以獲得更高分數，並樂於解鎖新關卡與車輛。
-- 玩家願意為遊戲內的道具或功能進行消費。
+- 霓虹風格的高速漂移玩法能吸引目標受眾，並在短時間內提供清晰、重複可玩的遊戲體驗。
+- 簡單直觀的控制方式與即時重試機制有助於玩家快速上手並持續參與。
 
 ### 驗證方式:
-- 追蹤玩家的重複遊玩次數與平均遊戲時長。
-- 分析玩家在遊戲內的消費行為與金錢轉換率。
+- 透過原型測試收集使用者反饋，評估核心玩法的吸引力與易用性。
+- 分析遊戲原型中的進度追蹤與重新開始功能，確認其是否能有效提升玩家參與度。
 
 ### 成功指標:
-- 玩家在首週內重複遊玩次數達5次以上。
-- 玩家在首週內完成至少一項遊戲內消費行為。
+- 玩家在短時間內完成至少一個關卡且願意重複遊玩。
+- 使用者反饋顯示對核心玩法的滿意度高，並認為遊戲易於理解與操作。
 
 ## English
+
 ### Hypothesis:
-- Players will replay to achieve higher scores and enjoy unlocking new levels and vehicles.
-- Players are willing to spend in-game currency on items or features.
+- The neon-style high-speed drift gameplay can attract the target audience and provide a clear, replayable gaming experience within short play sessions.
+- Simple and intuitive controls with instant retry mechanisms help players quickly pick up the game and stay engaged.
 
 ### Validation Method:
-- Track player retention and average session duration.
-- Analyze in-game spending behavior and conversion rates.
+- Collect user feedback through prototype testing to evaluate the吸引力 and usability of core gameplay.
+- Analyze progress tracking and restart features in the game prototype to confirm their effectiveness in enhancing player engagement.
 
 ### Success Metrics:
-- Players replay at least 5 times within the first week.
-- Players complete at least one in-game purchase within the first week.
+- Players complete at least one level within a short play session and are willing to replay.
+- User feedback indicates high satisfaction with core gameplay and ease of understanding and operation.

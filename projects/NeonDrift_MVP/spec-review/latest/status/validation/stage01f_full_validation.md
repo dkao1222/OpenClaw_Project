@@ -1,9 +1,9 @@
 # Validation Report: planning_stage_01
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727
-- project_channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
+- project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
 - status: passed
-- checked_at: 2026-06-17T14:01:48.649508+00:00
+- checked_at: 2026-06-20T17:14:18.513724+00:00
 
 ## Failed Checks
 - none
@@ -64,10 +64,9 @@
 - stage_01.handoff.to_agent
 - stage_01.handoff.project_name
 - stage_01.handoff.project_channel_id
-- stage_01.handoff.slack_delivery_target
 - stage_01.handoff.output_folder
 - stage_01.handoff.requires_user_confirmation
-- stage_01.handoff.suggested_next_slack_prompt
+- stage_01.handoff.suggested_next_action
 - stage_01.handoff.required_public_docs
 - stage_01.handoff.do_not_start_product_planner
 - stage_01.handoff.suggested_next_is_slack_prompt

@@ -1,7 +1,7 @@
 # Validation Report: planning_stage_04
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260617135727
-- project_channel_id: 382b9e33-8429-81e5-b017-e72d6bcabc4d
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
+- project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
 
 ## Checks
 - PASS file.readable.docs/design/Operation_Flow_Diagram.md
@@ -24,6 +24,9 @@
 - PASS file.bilingual_order.docs/design/Prototype_Flow.md
 - PASS file.bilingual_distinct.docs/design/Prototype_Flow.md
 - PASS file.schema.docs/design/Prototype_Flow.md
+- PASS file.readable.docs/design/Prototype_Flow_Canvas.html
+- PASS file.no_prompt_constraints.docs/design/Prototype_Flow_Canvas.html
+- PASS file.schema.docs/design/Prototype_Flow_Canvas.html
 - PASS file.readable.docs/design/UI_State_Annotations.md
 - PASS file.no_prompt_constraints.docs/design/UI_State_Annotations.md
 - PASS file.bilingual_order.docs/design/UI_State_Annotations.md

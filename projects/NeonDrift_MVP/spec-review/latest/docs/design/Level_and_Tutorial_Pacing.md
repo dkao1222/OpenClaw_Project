@@ -7,23 +7,23 @@ Document contract: this file records only the current stage decision surface for
 required keywords: level, and, tutorial, pacing
 
 ### 範圍
-- level: 以繁體中文描述 level 在本階段的設計責任、限制與交付用途。
+- level、and、tutorial、pacing: 本文件將 NeonDrift MVP 的相關決策整理成下一階段可驗收的交付範圍，不新增未批准平台或功能。
 
 ### 決策
-- and: 以繁體中文描述 and 在本階段的設計責任、限制與交付用途。
+- level、and、tutorial、pacing: 本階段決策必須保留 iPhone-first、短局、立即重試、可讀 HUD 與清楚失敗原因，並標出仍需 spec review 細化的項目。
 
 ### 交接重點
-- tutorial: 以繁體中文描述 tutorial 在本階段的設計責任、限制與交付用途。
+- level、and、tutorial、pacing: 交接時必須列出來源依據、已鎖定決策、限制、風險與下一位 owner 需要驗證的 acceptance criteria。
 
 ## English
 
 required keywords: level, and, tutorial, pacing
 
 ### Scope
-- level: describe the level design responsibility, limitation, and handoff purpose for this stage.
+- level, and, tutorial, pacing: this document packages the relevant NeonDrift MVP decisions into a verifiable handoff scope without adding unapproved platforms or features.
 
 ### Decisions
-- and: describe the and design responsibility, limitation, and handoff purpose for this stage.
+- level, and, tutorial, pacing: this stage must preserve iPhone-first, short-session play, immediate retry, readable HUD, and clear failure reasons while marking items that still need spec review detail.
 
 ### Handoff Notes
-- tutorial: describe the tutorial design responsibility, limitation, and handoff purpose for this stage.
+- level, and, tutorial, pacing: the handoff must list source basis, locked decisions, constraints, risks, and acceptance criteria for the next owner to verify.

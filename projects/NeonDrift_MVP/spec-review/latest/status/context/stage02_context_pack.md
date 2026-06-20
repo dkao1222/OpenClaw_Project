@@ -1,27 +1,38 @@
 # Stage 02 Context Pack
 
-## Product Goal
-Deliver short, high-retention, fast-paced drift racing gameplay that builds player engagement and habit formation.
+## product goal
 
-## Target User
-Mobile players aged 16-35, including students and casual competitive gamers seeking fast-paced, thrilling, and easy-to-use gameplay.
+NeonDrift MVP targets a mobile-first arcade drift loop: enter a short neon track, steer with one-finger touch, drift through readable turns, score clean lines, and restart immediately after failure or finish.
 
-## MVP Scope
-Initial version includes three challenge tracks, basic drift controls, and a simple upgrade system. Players earn scores and in-game currency to unlock new vehicles and levels.
+## target user
 
-## Non-goals
-- Complex multiplayer online competition features
-- Deep vehicle customization or simulation systems
+Players age 16-35 who want short high-feedback racing sessions, clear mastery signals, stylish neon presentation, and controls that feel usable within the first minute on iPhone and Android phones.
 
-## Locked Decisions
-- Core gameplay centered on drift mechanics
-- Short challenge sessions for immediate feedback
-- Neon-themed futuristic racing world
+## MVP scope
 
-## Open Questions
-- Optimal drift physics balance for skill vs. accessibility
-- Monetization approach for in-game currency and unlocks
+- Core loop: launch race, steer, drift, score, finish or crash, restart within two taps.
+- Product surface: mobile UI, simple progression, local metrics hooks, Unity 6000.0.71f1 direction, and compatibility notes for mid-range devices.
 
-## Source Paths
-- /home/node/.openclaw/workspace/382b9e33-8429-81eb-8b07-d003aa8d5f58/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260617145810/project/docs/planning/One_Page_Game_Concept.md
-- /home/node/.openclaw/workspace/382b9e33-8429-81eb-8b07-d003aa8d5f58/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260617145810/project/docs/product/MVP_PRD.md
+## non-goals
+
+- Multiplayer, account system, live operations, large car roster, external controller support, and long narrative campaign.
+- Final monetization tuning, store submission copy, and production art pipeline beyond planning handoff requirements.
+
+## locked decisions
+
+- Mobile-first Unity project direction is locked to Unity 6000.0.71f1.
+- The next planning owner must preserve short-session readability, touch-first controls, fast restart, and concrete downstream documents.
+- HIG-informed mobile UX, icon identity, device compatibility, privacy, ads, and local build readiness remain required review topics.
+
+## open questions
+
+- Exact drift tuning, scoring thresholds, frame-rate target per device class, and final ad placement policy need downstream validation.
+- Spec review must confirm UI/icon sizes, readable contrast, safe areas, and platform compliance before development.
+
+## source paths
+
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/planning/Game_Proposal.md
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/planning/One_Page_Game_Concept.md
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/planning/MVP_Hypothesis.md
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/planning/Platform_Direction.md
+- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/product/MVP_PRD.md
