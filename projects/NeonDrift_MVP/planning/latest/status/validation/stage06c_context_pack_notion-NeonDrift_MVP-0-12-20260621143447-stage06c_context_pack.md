@@ -1,0 +1,19 @@
+# Micro Validation Report: stage06c_context_pack
+
+- stage: planning_stage_06c
+- agent_id: level-designer
+- session_id: notion-NeonDrift_MVP-0-12-20260621143447-stage06c_context_pack
+- output_folder: /home/node/.openclaw/workspace/386b9e33-8429-8189-8eaa-e181b7c82cc8/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447/project/
+
+## Checks
+- PASS file.readable.status/context/stage06_context_pack.md
+- PASS file.deterministic_content.status/context/stage06_context_pack.md
+- PASS file.size_limit.status/context/stage06_context_pack.md: 2292<=3000
+- PASS file.no_prompt_constraints.status/context/stage06_context_pack.md
+- PASS file.context_pack_contract.status/context/stage06_context_pack.md
+- PASS file.context_pack_policy.status/context/stage06_context_pack.md
+- PASS file.schema.status/context/stage06_context_pack.md
+- PASS process.deterministic_writer
+
+## Result
+- status: passed

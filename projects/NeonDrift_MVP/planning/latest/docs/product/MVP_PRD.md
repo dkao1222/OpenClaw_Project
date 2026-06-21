@@ -1,43 +1,37 @@
+# MVP PRD
+
 ## 繁體中文
 
-### 產品目標:
-- 提供短局高重玩性的霓虹閃避遊戲體驗，滿足玩家碎片時間快速進入、失敗與重試的需求。
-- 建立可驗證的留存、廣告變現與跨平台發布基礎，先以 iOS simulator/local build 驗證。
+### 產品目標
+- 交付一個可本機 build、可 QA 驗證、可在 Notion/Git 追蹤的 NeonDrift Unity MVP 基礎版本。
 
-### 目標使用者:
-- 13-35 歲喜歡 arcade、runner、reaction game 的手機玩家；常在通勤、排隊或短休息時間遊玩。
-- 痛點是多數手機遊戲開局太慢、廣告干擾太早、操作不夠即時。需要單手可玩、HUD 清楚、立即重試、低學習成本與穩定效能。
+### 目標使用者
+- 喜歡短局 arcade/reaction/racing 的手機玩家，需要單手可玩、立即回饋、快速 retry 與清楚 HUD。
 
-### MVP 範圍:
-- 快速驗證短局高重玩性玩法與廣告變現前置規劃，使用 Unity 開發並支援 iOS simulator/local build。
-- 支援 rewarded ads 優先且不破壞短局節奏，為後續擴展到 Android/WebGL 做準備。
+### MVP 範圍
+- 主選單、Start/Settings/Best Score、遊戲 HUD、左右觸控、pause、障礙、分數/boost/combo、失敗結果、retry、safe area、基本隱私/廣告準備、本機 iOS simulator build 與 QA evidence。
 
-### 非目標:
-- 複雜的遊戲劇情或角色發展系統。
-- 多人連線或社交互動功能。
+### 非目標
+- 多人、帳號、雲端同步、商城、liveops、大型車輛/關卡內容、最終商店素材與正式廣告調參。
 
-### 驗收條件:
-- 玩家能快速進入遊戲並享受高重玩性，達到良好的留存率。
-- 達成廣告變現前置規劃目標，保留 rewarded ads 優先且不破壞短局節奏。
+### 驗收條件
+- Planning、spec review、development、build、QA 都必須產生可讀 Markdown/JSON/XML evidence，QA 需 0 failed / 0 blocked。
+- iOS simulator app 可安裝與啟動，截圖非空白，runtime probe 顯示 Start/Pause/Retry/左右控制/safe area/frame pacing 通過。
 
 ## English
 
-### Product Goal:
-- Deliver a short-session, highly replayable neon dodge game experience that meets players' needs for quick entry, failure, and retry during fragmented time.
-- Establish a verifiable foundation for retention, ad monetization, and cross-platform deployment, initially validated with iOS simulator/local build.
+### Product Goal
+- Deliver a NeonDrift Unity MVP foundation that can be locally built, QA-verified, and tracked through Notion/Git.
 
-### Target User:
-- Mobile players aged 13-35 who enjoy arcade, runner, and reaction games; often play during commutes, queues, or short breaks.
-- Their pain points include slow game start-ups, early ad interruptions, and insufficient immediacy. They need one-handed gameplay, clear HUD, instant retry, low learning curve, and stable performance.
+### Target User
+- Mobile players who like short arcade/reaction/racing sessions and need one-handed play, immediate feedback, fast retry, and readable HUD.
 
-### MVP Scope:
-- Quickly validate short-session replayability gameplay and pre-planned ad monetization using Unity development with iOS simulator/local build support.
-- Prioritize rewarded ads without disrupting the short-session rhythm, preparing for future expansion to Android/WebGL.
+### MVP Scope
+- Main menu, Start/Settings/Best Score, run HUD, left/right touch, pause, hazards, score/boost/combo, failure result, retry, safe area, basic privacy/ads readiness, local iOS simulator build, and QA evidence.
 
-### Non-goals:
-- Complex game narratives or character development systems.
-- Multiplayer or social interaction features.
+### Non-goals
+- Multiplayer, accounts, cloud sync, shop, liveops, large car/level content, final store assets, and production ad tuning.
 
-### Acceptance Criteria:
-- Players can quickly enter the game and enjoy high replayability, achieving good retention rates.
-- Meet pre-planned ad monetization goals, prioritizing rewarded ads without disrupting the short-session rhythm.
+### Acceptance Criteria
+- Planning, spec review, development, build, and QA must produce readable Markdown/JSON/XML evidence, and QA must report 0 failed / 0 blocked.
+- The iOS simulator app installs and launches, screenshot is nonblank, and runtime probe verifies Start/Pause/Retry/left-right controls/safe area/frame pacing.

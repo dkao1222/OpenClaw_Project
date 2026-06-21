@@ -1,7 +1,7 @@
 # Stage 12 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931
-channel_id: 386b9e33-8429-8113-beff-e8722834f903
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447
+channel_id: 386b9e33-8429-8189-8eaa-e181b7c82cc8
 stage_agent: judge
 next_agent: user_confirmation_required
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/status/context/stage12_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/docs/review/Planning_Final_Decision.md
-- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/handoffs/planning/handoff_to_spec_review.md
-- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/handoffs/planning/handoff_to_development.md
-- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/status/agent_heartbeats/judge.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8189-8eaa-e181b7c82cc8/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447/project/status/context/stage12_context_pack.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8189-8eaa-e181b7c82cc8/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447/project/docs/review/Planning_Final_Decision.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8189-8eaa-e181b7c82cc8/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447/project/handoffs/planning/handoff_to_spec_review.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8189-8eaa-e181b7c82cc8/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447/project/handoffs/planning/handoff_to_development.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8189-8eaa-e181b7c82cc8/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447/project/status/agent_heartbeats/judge.md
