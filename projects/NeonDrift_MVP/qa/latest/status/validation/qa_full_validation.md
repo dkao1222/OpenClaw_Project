@@ -1,7 +1,7 @@
 # Game QA Validation Report
 
-- session_id: ios-delivery-qa-20260622-qa-full
-- output_folder: /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__ios-delivery-qa-20260622/project/
+- session_id: notion-NeonDrift_MVP-qa-qa-full-20260621170354-qa-full
+- output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 
 ## Checks
 - PASS file_exists.status/qa/full_qa_report.md
