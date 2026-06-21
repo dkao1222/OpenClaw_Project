@@ -2,9 +2,9 @@
 
 from_agent: technical-artist
 to_agent: audio-designer
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
-project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
-output_folder: /home/node/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
+project_channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81f8-a049-ff681ccc7b90/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900/project/
 requires_user_confirmation: true
 visual mood: defined for next owner
 readability constraints: defined for next owner
@@ -14,8 +14,8 @@ audio feedback opportunities: defined for next owner
 suggested_next_action: Confirm Stage 08 and start audio-designer from Notion.
 
 ## Stage 08 source paths
-- /home/node/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/docs/design/Visual_Direction.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/docs/design/Readability_and_Performance_Risk.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/status/agent_heartbeats/technical-artist.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81f8-a049-ff681ccc7b90/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900/project/docs/design/Visual_Direction.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81f8-a049-ff681ccc7b90/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900/project/docs/design/Readability_and_Performance_Risk.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81f8-a049-ff681ccc7b90/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900/project/status/agent_heartbeats/technical-artist.md
 
 Do not start audio-designer in this micro-stage.

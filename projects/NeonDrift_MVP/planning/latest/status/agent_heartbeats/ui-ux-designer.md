@@ -1,8 +1,8 @@
 # Agent Heartbeat: ui-ux-designer
 
 agent_id: ui-ux-designer
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
-channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
+channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
 stage: planning_stage_04
 status: completed
 handoff_to: game-designer

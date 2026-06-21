@@ -1,19 +1,19 @@
 # Stage 01 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
-channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
+channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
 
 ## project goal
 
-NeonDrift MVP is a short-session neon racing game concept built to validate a fast, readable, repeatable mobile gameplay loop before full production. Planning outputs must feed spec review, Unity development, local build, App Store and Google Play privacy/ads preparation, and future multi-platform expansion.
+NeonDrift MVP is a short-session neon drift racing game used to validate a readable, repeatable mobile gameplay loop before full production and store submission.
 
 ## target audience
 
-Mobile players aged 16 to 35 who enjoy fast retry loops, stylish arcade racing, clear controls, visible mastery, and short play sessions. Also includes the development team that needs precise planning artifacts small enough for downstream agents to consume without context overflow.
+Mobile players aged 16 to 35 who like fast retries, stylish arcade racing, clear touch controls, visible mastery, and short play sessions.
 
 ## core value
 
-1. Readable high-speed neon drift gameplay with immediate restart. 2. Concrete production-ready planning handoffs with bounded context size. 3. Mobile-first UX, compatibility, monetization, privacy, and store-readiness considerations.
+1. Readable high-speed neon drift gameplay. 2. Immediate retry loop. 3. Production-ready handoffs for spec review, Unity development, privacy, ads, store readiness, and local build monitoring.
 
 ## locked decisions
 
@@ -31,6 +31,6 @@ Read the Stage 01 handoff first, then this context pack. Open source paths only 
 
 ## source paths
 
-- /home/node/.openclaw/workspace/385b9e33-8429-81ca-80ce-e475781e06b2/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416/project/status/context/Initial_Request.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81f8-a049-ff681ccc7b90/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900/project/status/context/Initial_Request.md
 - status/context/Project_Context_Index.md
 - status/context/Current_Status_Summary.md
