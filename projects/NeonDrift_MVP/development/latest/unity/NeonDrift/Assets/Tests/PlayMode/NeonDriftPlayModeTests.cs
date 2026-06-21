@@ -31,6 +31,38 @@ public sealed class NeonDriftPlayModeTests
         Assert.That(json, Does.Contain("\"safeArea\""));
     }
 
+    [Test]
+    public void ButtonPositionsAndSizesAreVerified()
+    {
+        SceneManager.LoadScene("Main");
+        string json = InvokeRuntimeQaProbeCaptureJson();
+        Assert.That(json, Does.Contain("\"startButtonRect\""));
+        Assert.That(json, Does.Contain("\"settingsButtonRect\""));
+        Assert.That(json, Does.Contain("\"pauseButtonRect\""));
+        Assert.That(json, Does.Contain("\"retryButtonRect\""));
+        Assert.That(json, Does.Contain("\"leftControlZoneRect\""));
+        Assert.That(json, Does.Contain("\"rightControlZoneRect\""));
+        Assert.That(json, Does.Contain("\"buttonLayoutVerified\": true"));
+        Assert.That(json, Does.Contain("\"menuButtonSizeVerified\": true"));
+        Assert.That(json, Does.Contain("\"pauseRetryButtonSizeVerified\": true"));
+        Assert.That(json, Does.Contain("\"controlZoneSizeVerified\": true"));
+        Assert.That(json, Does.Contain("\"controlsInsideSafeArea\": true"));
+        Assert.That(json, Does.Contain("\"controlsDoNotOverlap\": true"));
+    }
+
+    [Test]
+    public void CoreGameplayFunctionsAreVerified()
+    {
+        SceneManager.LoadScene("Main");
+        string json = InvokeRuntimeQaProbeCaptureJson();
+        Assert.That(json, Does.Contain("\"coreGameplayObjectsVerified\": true"));
+        Assert.That(json, Does.Contain("\"scoringSystemVerified\": true"));
+        Assert.That(json, Does.Contain("\"pauseSystemVerified\": true"));
+        Assert.That(json, Does.Contain("\"failureRetrySystemVerified\": true"));
+        Assert.That(json, Does.Contain("\"hasPlayer\": true"));
+        Assert.That(json, Does.Contain("\"hasHazardSpawner\": true"));
+    }
+
     private static UnityEngine.Object FindObjectByTypeName(string typeName)
     {
         Type type = FindType(typeName);
