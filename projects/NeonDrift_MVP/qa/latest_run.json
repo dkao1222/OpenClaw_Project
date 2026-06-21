@@ -1,8 +1,8 @@
 {
   "project_name": "NeonDrift_MVP",
   "pipeline": "qa",
-  "run_id": "fix-ui-buttons-qa2-20260622",
+  "run_id": "ios-delivery-qa-20260622",
   "status": "Passed",
-  "source_folder": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project",
-  "published_at": "2026-06-21T16:08:07.359Z"
+  "source_folder": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__ios-delivery-qa-20260622/project",
+  "published_at": "2026-06-21T16:26:21.415Z"
 }

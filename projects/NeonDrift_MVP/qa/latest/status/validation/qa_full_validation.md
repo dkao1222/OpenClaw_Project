@@ -1,12 +1,14 @@
 # Game QA Validation Report
 
-- session_id: fix-ui-buttons-qa2-20260622-qa-full
-- output_folder: /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/
+- session_id: ios-delivery-qa-20260622-qa-full
+- output_folder: /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__ios-delivery-qa-20260622/project/
 
 ## Checks
 - PASS file_exists.status/qa/full_qa_report.md
 - PASS file_exists.status/qa/qa_result.json
 - PASS file_exists.status/qa/evidence_index.md
+- PASS file_exists.status/delivery/qa_delivery_manifest.json
+- PASS file_exists.docs/delivery/iOS_QA_Delivery.md
 - PASS file_exists.status/agent_heartbeats/qa-playtester.md
 - PASS qa_result.valid_json
 - PASS qa_result.checks_present: 41
@@ -21,5 +23,5 @@
 ## Result
 - status: passed
 - qa_overall_status: passed
-- checks_total: 13
+- checks_total: 15
 - checks_failed: 0

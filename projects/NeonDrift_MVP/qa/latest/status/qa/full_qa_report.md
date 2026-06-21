@@ -1,7 +1,7 @@
 # Full QA Report
 
 - 專案: NeonDrift_MVP
-- run_id: fix-ui-buttons-qa2-20260622
+- run_id: ios-delivery-qa-20260622
 - QA 結果: passed
 - Release candidate: ready
 - checks_total: 41
@@ -44,11 +44,11 @@
 | playmode_ui_event_system_contract | UI/UX | PASS | UiEventSystemPresent found in PlayMode XML. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml |
 | playmode_menu_buttons_clickable_contract | UI/UX | PASS | MenuButtonsClickable found in PlayMode XML. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml |
 | playmode_pause_retry_buttons_clickable_contract | UI/UX | PASS | PauseRetryButtonsClickable found in PlayMode XML. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml |
-| simulator_app_binary_arm64 | Build | PASS | /Users/dragonkao/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64 | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/app_binary_file.txt |
-| simulator_appinfo_available | Install | PASS | appinfo contains CFBundleIdentifier. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/appinfo.txt |
-| simulator_launch_attempted | Launch | PASS | com.DefaultCompany.NeonDrift: 81467 | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/launch.txt |
-| screenshot_nonblank | UI/UX | PASS | {'exists': True, 'bytes': 156545, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 224} | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/screenshots/ios_simulator_initial_run.png |
-| runtime_log_no_fatal_exception | Runtime | PASS | No fatal signature found. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/logs/ios_simulator_runtime.log |
+| simulator_app_binary_arm64 | Build | PASS | /Users/dragonkao/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64 | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__ios-delivery-qa-20260622/project/status/qa/evidence/app_binary_file.txt |
+| simulator_appinfo_available | Install | PASS | appinfo contains CFBundleIdentifier. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__ios-delivery-qa-20260622/project/status/qa/evidence/appinfo.txt |
+| simulator_launch_attempted | Launch | PASS | com.DefaultCompany.NeonDrift: 82702 | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__ios-delivery-qa-20260622/project/status/qa/evidence/launch.txt |
+| screenshot_nonblank | UI/UX | PASS | {'exists': True, 'bytes': 165388, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 217} | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__ios-delivery-qa-20260622/project/status/qa/screenshots/ios_simulator_initial_run.png |
+| runtime_log_no_fatal_exception | Runtime | PASS | No fatal signature found. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__ios-delivery-qa-20260622/project/status/qa/logs/ios_simulator_runtime.log |
 | compact_iphone_safe_area_compatibility | Compatibility | PASS | screen=640x480, safeAreaApplied=True. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json |
 | hud_score_contract_present | UI/UX | PASS | hasScoreText=True, hasPulseText=True. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json |
 | failure_retry_state_contract_present | UI/UX | PASS | hasGameOverPanel=True, hasRetryButton=True. | /home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json |
