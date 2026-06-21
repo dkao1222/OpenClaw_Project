@@ -10,7 +10,9 @@
 - PASS unity/NeonDrift/Assets/Scripts/NeonDriftHud.cs
 - PASS unity/NeonDrift/Assets/Scripts/RuntimeQaProbe.cs
 - PASS unity/NeonDrift/Assets/Tests/EditMode/NeonDriftEditModeTests.cs
+- PASS unity/NeonDrift/Assets/Tests/EditMode/NeonDrift.EditModeTests.asmdef
 - PASS unity/NeonDrift/Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs
+- PASS unity/NeonDrift/Assets/Tests/PlayMode/NeonDrift.PlayModeTests.asmdef
 - PASS unity/NeonDrift/Assets/Editor/BuildPipelineRunner.cs
 - PASS docs/engineering/MVP_Implementation_Backlog.md
 - PASS docs/development/Build_Run_Instructions.md

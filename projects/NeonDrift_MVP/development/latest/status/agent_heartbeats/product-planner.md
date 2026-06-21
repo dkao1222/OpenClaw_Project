@@ -1,8 +1,8 @@
 # Agent Heartbeat: product-planner
 
 agent_id: product-planner
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435
-channel_id: 386b9e33-8429-81d3-9ecd-cb103dcf7fa9
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931
+channel_id: 386b9e33-8429-8113-beff-e8722834f903
 stage: planning_stage_02
 status: completed
 handoff_to: game-director

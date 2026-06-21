@@ -2,11 +2,11 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-project_channel_id: 386b9e33-8429-81b8-9083-ec59d62a38d7
-output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81b8-9083-ec59d62a38d7/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621130146/project/
+project_channel_id: 386b9e33-8429-81c3-926d-fb9fb6795dd6
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81c3-926d-fb9fb6795dd6/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621131701/project/
 delivery_status: passed
 engine: Unity
-unity_project_path: /home/node/.openclaw/workspace/386b9e33-8429-81b8-9083-ec59d62a38d7/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621130146/project/unity/NeonDrift/
+unity_project_path: /home/node/.openclaw/workspace/386b9e33-8429-81c3-926d-fb9fb6795dd6/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621131701/project/unity/NeonDrift/
 target_platforms:
   - iOS
   - Android
@@ -19,7 +19,10 @@ source_code:
   - unity/NeonDrift/Assets/Scripts/RuntimeQaProbe.cs
 qa_automation:
   - unity/NeonDrift/Assets/Tests/EditMode/NeonDriftEditModeTests.cs
+  - unity/NeonDrift/Assets/Tests/EditMode/NeonDrift.EditModeTests.asmdef
   - unity/NeonDrift/Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs
+  - unity/NeonDrift/Assets/Tests/PlayMode/NeonDrift.PlayModeTests.asmdef
+  - Test assemblies are Editor-only and must not be included in iOS/Android/WebGL player builds.
   - Unity Test Framework EditMode results: status/validation/unity_editmode_test_results.xml
   - Unity Test Framework PlayMode results: status/validation/unity_playmode_test_results.xml
   - Runtime QA probe JSON: status/qa/evidence/runtime_probe.json

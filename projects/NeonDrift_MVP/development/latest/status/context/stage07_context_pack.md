@@ -1,7 +1,7 @@
 # Stage 07 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435
-channel_id: 386b9e33-8429-81d3-9ecd-cb103dcf7fa9
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931
+channel_id: 386b9e33-8429-8113-beff-e8722834f903
 stage_agent: economy-liveops-designer
 next_agent: technical-artist
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/status/context/stage07_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/handoffs/planning/07_economy-liveops-designer_to_technical-artist.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/docs/business/Monetization_and_Retention_Draft.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/docs/business/Progression_and_Rewards_Draft.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/status/agent_heartbeats/economy-liveops-designer.md
+- /home/node/.openclaw/workspace/386b9e33-8429-819d-be5f-ee711273bb32/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621131633/project/status/context/stage07_context_pack.md
+- /home/node/.openclaw/workspace/386b9e33-8429-819d-be5f-ee711273bb32/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621131633/project/handoffs/planning/07_economy-liveops-designer_to_technical-artist.md
+- /home/node/.openclaw/workspace/386b9e33-8429-819d-be5f-ee711273bb32/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621131633/project/docs/business/Monetization_and_Retention_Draft.md
+- /home/node/.openclaw/workspace/386b9e33-8429-819d-be5f-ee711273bb32/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621131633/project/docs/business/Progression_and_Rewards_Draft.md
+- /home/node/.openclaw/workspace/386b9e33-8429-819d-be5f-ee711273bb32/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621131633/project/status/agent_heartbeats/economy-liveops-designer.md

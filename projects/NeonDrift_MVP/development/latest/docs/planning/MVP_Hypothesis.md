@@ -1,27 +1,27 @@
 ## 繁體中文
 
 ### 假設:
-- 玩家會喜歡簡單直覺的觸控漂移操作，並在短時間內體驗到遊戲樂趣。
-- 玩家會被高分挑戰與即時反饋機制所吸引，持續遊玩以提升自己的分數。
+- 玩家會因短局高重玩性與即時反饋而持續遊玩，並在遊戲中接受 rewarded ads。
+- 單手滑動操作與清晰 HUD 能有效降低學習門檻，提升遊戲易用性。
 
 ### 驗證方式:
-- 透過早期測試收集玩家對操作流暢度與遊戲循環的反饋。
-- 分析遊戲數據，觀察玩家是否會重複遊玩並嘗試刷新高分。
+- 透過玩家留存率與廣告點擊數據評估遊戲重玩性與變現可行性。
+- 使用 A/B 測試驗證不同 HUD 設計對玩家操作流暢度的影響。
 
 ### 成功指標:
-- 玩家在遊戲中平均停留時間超過30秒。
-- 玩家在首日內至少嘗試一次遊戲並重複遊玩。
+- 玩家次日留存率達 30% 以上，且每名玩家平均觀看 rewarded ad 數量達 2 次。
+- 遊戲內操作流暢度評分達 4.5/5 以上，玩家反饋顯示易用性提升。
 
 ## English
 
 ### Hypothesis:
-- Players will enjoy simple and intuitive touch-based drifting controls and experience immediate fun within a short playtime.
-- Players will be attracted to high-score challenges and instant feedback mechanisms, continuing to play to improve their scores.
+- Players will continue playing due to short-session replayability and immediate feedback, and accept rewarded ads within the game.
+- One-handed swipe controls and clear HUD effectively lower the learning curve, enhancing game usability.
 
 ### Validation Method:
-- Gather player feedback on control responsiveness and game loop engagement through early testing.
-- Analyze gameplay data to observe if players replay the game and attempt to beat their high scores.
+- Evaluate game replayability and monetization feasibility through player retention rates and ad click data.
+- Conduct A/B testing to validate how different HUD designs affect player operational fluency.
 
 ### Success Metrics:
-- Average player session duration exceeds 30 seconds within the game.
-- Players attempt the game at least once and replay it within the first day.
+- Player day-1 retention rate exceeds 30%, with an average of 2 rewarded ads viewed per player.
+- In-game operational fluency rating reaches 4.5/5 or higher, with player feedback indicating improved usability.

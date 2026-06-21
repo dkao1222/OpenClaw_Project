@@ -22,6 +22,6 @@
 - No multiplayer, accounts, long quests, complex progression, or UI layout ownership in Stage 03.
 
 ## source paths
-- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/docs/design/Core_Experience_Direction.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/docs/design/Creative_Pillars.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/docs/design/Player_Promise.md
+- /home/node/.openclaw/workspace/386b9e33-8429-819d-be5f-ee711273bb32/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621131633/project/docs/design/Core_Experience_Direction.md
+- /home/node/.openclaw/workspace/386b9e33-8429-819d-be5f-ee711273bb32/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621131633/project/docs/design/Creative_Pillars.md
+- /home/node/.openclaw/workspace/386b9e33-8429-819d-be5f-ee711273bb32/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621131633/project/docs/design/Player_Promise.md
