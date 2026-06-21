@@ -1,26 +1,25 @@
 # Project Context Index
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
-channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
-source_path: /home/node/.openclaw/workspace/386b9e33-8429-81f8-a049-ff681ccc7b90/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900/project/status/context/Initial_Request.md
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857
+channel_id: 386b9e33-8429-815b-a8f3-c43fc218eef4
+source_path: /home/node/.openclaw/workspace/386b9e33-8429-815b-a8f3-c43fc218eef4/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857/project/status/context/Initial_Request.md
 
 ## Product Vision and Purpose
 
-- snippet: NeonDrift MVP is a short-session neon drift racing game used to validate a readable, repeatable mobile gameplay loop before full production and store submission.
+- snippet: NeonDrift is a short-session mobile arcade drifting game. It should solve the pain point of players wanting a fast, readable, one-hand friendly skill game that can be played in under one minute, while creating a reusable Unity MVP pipeline for iOS-first releas
 
 ## Target Audience
 
-- snippet: Mobile players aged 16 to 35 who like fast retries, stylish arcade racing, clear touch controls, visible mastery, and short play sessions.
+- snippet: Mobile casual and arcade players age 13+, especially commuters and short-break players who like reflex, near-miss, and score-chasing games but dislike long tutorials or complex progression.
 
 ## Core Value
 
-- snippet: 1. Readable high-speed neon drift gameplay. 2. Immediate retry loop. 3. Production-ready handoffs for spec review, Unity development, privacy, ads, store readiness, and local build monitoring.
+- snippet: One-hand drift control with immediate readable feedback; fast failure and instant retry loop; mobile-safe HUD and compatibility across iPhone SE 2/3, iPhone 15, Android 10+, and WebGL desktop browser.
 
 ## Development Request
 
-- snippet: Normalize the NeonDrift MVP request before planning. If passed, create a Stage 00-12 planning run from the canonical fields only.
+- snippet: Run the full OpenClaw game pipeline from Define to Planning stage 0-12, Spec Review, Development, and build handoff. Use local context compressor, split documents, Notion-readable output, Git-ready project output, and local Unity build watcher policy.
 
 Define source:
-- define_run_id: notion-NeonDrift_MVP-define-20260621052852
-- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-8100-ac9b-ee504f6de1f0/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621052852/project/
-- define_handoff_path: /home/node/.openclaw/wor
+- define_run_id: notion-NeonDrift_MVP-define-20260621091846
+- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81ad-9628-d88a9a0d76f4/

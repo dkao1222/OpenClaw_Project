@@ -1,27 +1,27 @@
 ## 繁體中文
 
 ### 平台範圍:
-- 單機遊戲，專注於手機平台的沉浸式霓虹漂移體驗。
-- 遊戲循環設計簡潔，強調快速重試與即時反饋。
+- iOS首發，專注於iPhone設備的單手持玩體驗。
+- 後續擴展至Android與WebGL平台，確保跨平台一致性。
 
 ### 控制方式:
-- 以觸控為主的控制方式，支援滑動與點擊操作。
-- 玩家透過簡單直觀的觸控控制進行漂移與加速。
+- 單手控制漂移操作，透過觸控螢幕即時調整方向與速度。
+- 快速失敗與瞬間重試機制，鼓勵持續挑戰高分。
 
 ### 技術限制:
-- 使用 Unity 6000.0.71f1 開發，確保穩定性與效能。
-- 優化遊戲性能以適應不同手機硬體配置。
+- 使用Unity 6000.0.71f1版本進行開發，確保技術穩定性與未來擴展性。
+- 優化遊戲效能以適應iOS設備的硬體限制，並提供流暢的遊戲體驗。
 
 ## English
 
 ### Platform Scope:
-- Single-player game focusing on an immersive neon drift experience on mobile platforms.
-- Game loop design is streamlined, emphasizing fast retries and immediate feedback.
+- iOS-first release, focusing on single-handed gameplay experience on iPhone devices.
+- Subsequent expansion to Android and WebGL platforms to ensure cross-platform consistency.
 
 ### Control Model:
-- Touch-based control system supporting swipe and tap interactions.
-- Players use simple and intuitive touch controls for drifting and acceleration.
+- One-hand drift control via touch screen for real-time direction and speed adjustment.
+- Quick failure and instant retry loop to encourage continuous play and score chasing.
 
 ### Technical Constraints:
-- Developed using Unity 6000.0.71f1 to ensure stability and performance.
-- Game performance is optimized to accommodate various mobile hardware configurations.
+- Development using Unity 6000.0.71f1 version to ensure technical stability and future scalability.
+- Optimize game performance to meet iOS device hardware limitations for a smooth gaming experience.
