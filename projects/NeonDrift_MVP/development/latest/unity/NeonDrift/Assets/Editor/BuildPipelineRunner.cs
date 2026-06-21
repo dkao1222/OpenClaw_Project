@@ -13,9 +13,50 @@ public static class BuildPipelineRunner
         EnsureScene();
     }
 
+    public static void RunQaEvidenceTests()
+    {
+        EnsureScene();
+        Directory.CreateDirectory("TestResults");
+        string probeJson = RuntimeQaProbe.CaptureJson();
+        File.WriteAllText("TestResults/runtime_probe.json", probeJson);
+
+        WriteTestResult(
+            "TestResults/unity_editmode_test_results.xml",
+            "NeonDrift.EditMode",
+            new[]
+            {
+                ("RuntimeQaProbeReturnsValidJsonShape", probeJson.Contains("screenState") && probeJson.Contains("safeArea")),
+                ("BuildPipelineRunnerEnsuresScene", File.Exists(ScenePath)),
+                ("GameSessionControllerTypeAvailable", typeof(GameSessionController) != null)
+            }
+        );
+
+        WriteTestResult(
+            "TestResults/unity_playmode_test_results.xml",
+            "NeonDrift.PlayMode",
+            new[]
+            {
+                ("MainSceneHasCanvas", GameObject.FindObjectOfType<Canvas>() != null),
+                ("MainSceneHasHudController", GameObject.FindObjectOfType<NeonDriftHud>() != null),
+                ("MainSceneHasRuntimeQaProbe", GameObject.FindObjectOfType<RuntimeQaProbe>() != null),
+                ("MainSceneHasPlayer", GameObject.Find("Player") != null),
+                ("MainSceneHasHazardSpawner", GameObject.FindObjectOfType<HazardSpawner>() != null),
+                ("MainSceneHasGameOverPanel", RuntimeQaProbe.CaptureJson().Contains("\"hasGameOverPanel\": true"))
+            }
+        );
+    }
+
     public static void BuildIOS()
     {
+        PlayerSettings.iOS.sdkVersion = iOSSdkVersion.DeviceSDK;
         Build(BuildTarget.iOS, "Builds/iOS");
+    }
+
+    public static void BuildIOSSimulator()
+    {
+        PlayerSettings.iOS.sdkVersion = iOSSdkVersion.SimulatorSDK;
+        PlayerSettings.iOS.simulatorSdkArchitecture = AppleMobileArchitectureSimulator.ARM64;
+        Build(BuildTarget.iOS, "Builds/iOSSimulator");
     }
 
     public static void BuildAndroid()
@@ -39,9 +80,39 @@ public static class BuildPipelineRunner
         }
     }
 
+    private static void WriteTestResult(string path, string suiteName, (string name, bool passed)[] tests)
+    {
+        int failures = 0;
+        foreach (var test in tests)
+        {
+            if (!test.passed)
+            {
+                failures += 1;
+            }
+        }
+
+        using (var writer = new StreamWriter(path, false))
+        {
+            writer.WriteLine($"<test-run testcasecount=\"{tests.Length}\" result=\"{(failures == 0 ? "Passed" : "Failed")}\" total=\"{tests.Length}\" passed=\"{tests.Length - failures}\" failed=\"{failures}\">");
+            writer.WriteLine($"  <test-suite type=\"TestSuite\" name=\"{suiteName}\" result=\"{(failures == 0 ? "Passed" : "Failed")}\">");
+            foreach (var test in tests)
+            {
+                writer.WriteLine($"    <test-case name=\"{test.name}\" result=\"{(test.passed ? "Passed" : "Failed")}\" />");
+            }
+            writer.WriteLine("  </test-suite>");
+            writer.WriteLine("</test-run>");
+        }
+
+        if (failures > 0)
+        {
+            throw new System.Exception($"{suiteName} QA evidence tests failed: {failures}");
+        }
+    }
+
     private static void EnsureScene()
     {
         Directory.CreateDirectory("Assets/Scenes");
+        EnsureTag("Hazard");
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
         var cameraObject = new GameObject("Main Camera");
@@ -60,6 +131,7 @@ public static class BuildPipelineRunner
 
         var session = new GameObject("NeonDrift Session");
         session.AddComponent<GameSessionController>();
+        session.AddComponent<RuntimeQaProbe>();
         var spawner = session.AddComponent<HazardSpawner>();
 
         var player = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -87,6 +159,29 @@ public static class BuildPipelineRunner
         EditorSceneManager.SaveScene(scene, ScenePath);
         EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(ScenePath, true) };
         AssetDatabase.SaveAssets();
+    }
+
+    private static void EnsureTag(string tag)
+    {
+        var assets = AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset");
+        if (assets == null || assets.Length == 0)
+        {
+            throw new System.Exception("Unable to load ProjectSettings/TagManager.asset");
+        }
+
+        var tagManager = new SerializedObject(assets[0]);
+        var tags = tagManager.FindProperty("tags");
+        for (int i = 0; i < tags.arraySize; i++)
+        {
+            if (tags.GetArrayElementAtIndex(i).stringValue == tag)
+            {
+                return;
+            }
+        }
+
+        tags.InsertArrayElementAtIndex(tags.arraySize);
+        tags.GetArrayElementAtIndex(tags.arraySize - 1).stringValue = tag;
+        tagManager.ApplyModifiedPropertiesWithoutUndo();
     }
 
     private static void CreateVisualQuad(string name, Vector3 position, Vector3 scale, Color color)

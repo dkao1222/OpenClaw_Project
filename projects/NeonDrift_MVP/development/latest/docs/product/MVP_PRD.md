@@ -1,43 +1,43 @@
 ## 繁體中文
 
 ### 產品目標:
-- 提供快速、易於上手的單手持玩漂移遊戲體驗，讓玩家能在短時間內享受刺激感。
-- 建立可重複使用的 Unity MVP 開發流程，專注於 iOS 首次發布，並為未來 Android/WebGL 扩展做準備。
+- 提供快速、直覺的漂移控制體驗，讓玩家能立即上手並享受遊戲。
+- 建立一個重複性高的遊戲循環，透過簡單的分數系統與失敗/重試機制來吸引玩家持續遊玩。
 
 ### 目標使用者:
-- 移動休閒與街機玩家，年齡 13 歲以上。
-- 喜歡反射、即時衝突和分數競賽遊戲的通勤者與短暫休息玩家。
+- 主要針對13歲以上的手機休閒射擊遊戲愛好者，特別是喜歡快速反應遊戲與霓虹風格賽車畫面的玩家。
+- 對於那些希望在短時間內體驗樂趣、不需要長時間投入的玩家有強烈吸引力。
 
 ### MVP 範圍:
-- 玩家能在 30 秒內掌握遊戲基本操作並體驗到樂趣。
-- MVP 版本能成功在 iOS 平台上發布，具備可擴展的架構以支持後續平台。
+- 在iOS平台上推出一款輕量級、可快速上手的漂移遊戲，並透過獎勵廣告實現商業化。
+- 遊戲流程控制在一分鐘內，提供即時反饋與高分挑戰，吸引玩家持續遊玩。
 
 ### 非目標:
-- 複雜的劇情敘事或角色發展。
-- 多人合作或競技模式。
+- 不包含複雜的多人模式或社交功能。
+- 不設計長期任務或角色成長系統。
 
 ### 驗收條件:
-- 玩家在 30 秒內完成首次漂移操作並繼續遊戲。
-- MVP 成功上架 iOS App Store。
+- 玩家在遊戲中平均停留時間超過30秒。
+- 玩家在首日內至少嘗試一次遊戲並重複遊玩。
 
 ## English
 
 ### Product Goal:
-- Deliver a fast, easy-to-pick-up single-handed drifting game experience that players can enjoy in a short time.
-- Establish a reusable Unity MVP development pipeline focused on iOS first release and prepare for future Android/WebGL expansion.
+- Deliver a fast, intuitive drifting control experience that players can pick up and enjoy immediately.
+- Establish a highly replayable game loop with a simple scoring system and failure/retry mechanics to keep players engaged.
 
 ### Target User:
-- Mobile casual and arcade players age 13+.
-- Commuters and short-break players who like reflex, near-miss, and score-chasing games but dislike long tutorials or complex progression.
+- Primarily targeting mobile casual arcade players aged 13+, especially those who enjoy quick reflex games and neon racing visuals.
+- Strong appeal for players seeking immediate fun without long-term commitment.
 
 ### MVP Scope:
-- Players can grasp the core mechanics and have fun within 30 seconds.
-- The MVP version successfully launches on iOS with an extensible architecture for future platforms.
+- Launch a lightweight, instantly playable drifting game on iOS, monetized through rewarded ads after proving gameplay quality.
+- Game flow controlled within one minute, offering instant feedback and high-score challenges to encourage continued play.
 
 ### Non-goals:
-- Complex narrative or character development.
-- Multiplayer cooperative or competitive modes.
+- No complex multiplayer modes or social features included.
+- No long-term quests or character progression systems designed.
 
 ### Acceptance Criteria:
-- Player completes first drift maneuver and continues playing within 30 seconds.
-- MVP successfully launches on iOS App Store.
+- Average player session duration exceeds 30 seconds within the game.
+- Players attempt the game at least once and replay it within the first day.

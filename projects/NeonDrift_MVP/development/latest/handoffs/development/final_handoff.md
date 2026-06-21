@@ -2,11 +2,11 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-project_channel_id: 386b9e33-8429-81cf-b934-c921a1167a52
-output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81cf-b934-c921a1167a52/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621100917/project/
+project_channel_id: 386b9e33-8429-81b8-9083-ec59d62a38d7
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81b8-9083-ec59d62a38d7/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621130146/project/
 delivery_status: passed
 engine: Unity
-unity_project_path: /home/node/.openclaw/workspace/386b9e33-8429-81cf-b934-c921a1167a52/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621100917/project/unity/NeonDrift/
+unity_project_path: /home/node/.openclaw/workspace/386b9e33-8429-81b8-9083-ec59d62a38d7/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621130146/project/unity/NeonDrift/
 target_platforms:
   - iOS
   - Android
@@ -16,6 +16,13 @@ source_code:
   - unity/NeonDrift/Assets/Scripts/HazardSpawner.cs
   - unity/NeonDrift/Assets/Scripts/GameSessionController.cs
   - unity/NeonDrift/Assets/Scripts/NeonDriftHud.cs
+  - unity/NeonDrift/Assets/Scripts/RuntimeQaProbe.cs
+qa_automation:
+  - unity/NeonDrift/Assets/Tests/EditMode/NeonDriftEditModeTests.cs
+  - unity/NeonDrift/Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs
+  - Unity Test Framework EditMode results: status/validation/unity_editmode_test_results.xml
+  - Unity Test Framework PlayMode results: status/validation/unity_playmode_test_results.xml
+  - Runtime QA probe JSON: status/qa/evidence/runtime_probe.json
 build_runner:
   - unity/NeonDrift/Assets/Editor/BuildPipelineRunner.cs
 icon_assets:
