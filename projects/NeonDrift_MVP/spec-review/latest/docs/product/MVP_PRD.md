@@ -1,43 +1,43 @@
 ## 繁體中文
 
 ### 產品目標:
-- 提供快速、清晰且重複可玩的霓虹漂移遊戲體驗，讓玩家能立即上手並享受短時間內的競速快感。
-- 建立明確的產品與體驗規劃邊界，以支持後續的遊戲方向、MVP 界限和成功標準。
+- 提供高速、風格化的霓虹漂移競速體驗，強調可讀性和重複性。
+- 建立快速反覆挑戰的遊戲循環，適合短時間內多次游玩。
 
 ### 目標使用者:
-- 移動平台玩家年齡介於 16 到 35 歲之間，喜愛快速重試循環、時尚街頭賽車、明確控制方式、可見的精通感以及短時間遊戲階段。
-- 開發團隊需要具備精確規劃文件，使其能以小規模、易於消耗的內容進行後續處理，避免資訊過載。
+- 移動玩家年齡層為16至35歲，喜愛快速重試、時尚街機賽車、清晰觸控控制、可見的掌握感與短時間遊玩。
+- 適用於希望在短時間內快速體驗高節奏遊戲內容的使用者。
 
 ### MVP 範圍:
-- 建立可玩原型，於短時間內展示核心機制以吸引目標受眾。
-- 產生具備實作性的產品規劃文件，為後續 Unity 開發和應用商店準備提供明確指引。
+- 遊戲核心為簡潔明瞭的霓虹漂移機制，強調即時反饋與快速重試。
+- 建立可驗證的遊戲循環指標，如平均遊戲時間與重試次數，確保符合目標受眾喜好。
 
 ### 非目標:
-- 暫不包含複雜的劇情或角色發展。
-- 不支援多人遊戲模式或社交功能。
+- 不包含複雜的故事情節或角色發展。
+- 不包含多人遊戲或社交功能。
 
 ### 驗收條件:
-- 玩家在短時間內完成至少一個關卡且願意重複遊玩。
-- 使用者反饋顯示對核心玩法的滿意度高，並認為遊戲易於理解與操作。
+- 平均每場遊戲時間超過5分鐘，並有高頻率的即時重試行為。
+- 玩家在關卡中成功通過率穩定於60%至70%，顯示遊戲平衡性良好。
 
 ## English
 
 ### Product Goal:
-- Deliver a fast, clear, and replayable neon drift gaming experience that players can pick up instantly and enjoy in short bursts.
-- Establish clear product and experience boundaries for future game direction, MVP scope, and success criteria.
+- Deliver a high-speed, stylized neon drift racing experience that emphasizes readability and repeatability.
+- Establish a quick retry loop gameplay cycle suitable for short, multiple play sessions.
 
 ### Target User:
-- Mobile players aged 16 to 35 who enjoy fast retry loops, stylish arcade racing, clear controls, visible mastery, and short play sessions.
-- The development team that needs precise planning artifacts small enough for downstream agents to consume without context overflow.
+- Mobile players aged 16 to 35 who like fast retries, stylish arcade racing, clear touch controls, visible mastery, and short play sessions.
+- Suitable for users seeking quick, high-paced gameplay content in short timeframes.
 
 ### MVP Scope:
-- Achieve a playable prototype that showcases core mechanics within short play sessions to engage the target audience.
-- Produce actionable planning artifacts for downstream Unity development and app store readiness.
+- The core of the game is a clean and clear neon drift mechanic emphasizing immediate feedback and fast retries.
+- Establish quantifiable game loop metrics such as average session time and retry frequency, ensuring alignment with target audience preferences.
 
 ### Non-goals:
-- Complex narrative or character development is not included at this stage.
-- Multiplayer modes or social features are not supported.
+- Does not include complex storylines or character development.
+- Does not include multiplayer or social features.
 
 ### Acceptance Criteria:
-- Players complete at least one level within a short play session and are willing to replay.
-- User feedback indicates high satisfaction with core gameplay and ease of understanding and operation.
+- Average session time exceeds 5 minutes with high-frequency immediate retries.
+- Player success rates in levels remain stable between 60% and 70%, indicating good game balance.

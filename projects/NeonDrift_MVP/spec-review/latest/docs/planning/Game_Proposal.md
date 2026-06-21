@@ -3,27 +3,27 @@
 ## 繁體中文
 
 ### 遊戲目標:
-- 提供快速、清晰且重複可玩的霓虹漂移遊戲體驗，讓玩家能立即上手並享受短時間內的競速快感。
-- 建立明確的產品與體驗規劃邊界，以支持後續的遊戲方向、MVP 界限和成功標準。
+- 提供高速、風格化的霓虹漂移競速體驗，強調可讀性和重複性。
+- 建立快速反覆挑戰的遊戲循環，適合短時間內多次游玩。
 
 ### 核心玩法:
-- 玩家控制一輛霓虹風格的賽車，在充滿光線效果的道路上進行高速漂移，並盡可能地完成關卡。
-- 遊戲採用簡單直觀的操作方式，支持即時重試機制與清晰的進度追蹤。
+- 玩家需在彎道中進行精準的霓虹漂移，以獲得更高分數。
+- 提供即時重試機制，讓玩家能快速重新嘗試挑戰。
 
 ### 成功條件:
-- 達成可玩性高的遊戲原型，能在短時間內展示核心玩法並吸引目標受眾。
-- 產生具備實作性的產品規劃文件，為後續 Unity 開發和應用商店準備提供明確指引。
+- 達成可量化的遊戲循環指標，如平均每場遊戲時間與重試次數。
+- 確保遊戲內容符合目標受眾喜好，並具備良好的用戶體驗與易用性。
 
 ## English
 
 ### Game Goal:
-- Deliver a fast, clear, and replayable neon drift gaming experience that players can pick up instantly and enjoy in short bursts.
-- Establish clear product and experience boundaries for future game direction, MVP scope, and success criteria.
+- Deliver a high-speed, stylized neon drift racing experience that emphasizes readability and repeatability.
+- Establish a quick retry loop gameplay cycle suitable for short, multiple play sessions.
 
 ### Core Gameplay:
-- Players control a neon-style racing car on a luminous track, performing high-speed drifts and completing levels.
-- The gameplay supports intuitive controls, instant retries, and clear progress tracking.
+- Players perform precise neon drifts in corners to achieve higher scores.
+- Implement an immediate retry mechanism allowing players to quickly attempt challenges again.
 
 ### Success Criteria:
-- Achieve a playable prototype that showcases core mechanics within short play sessions to engage the target audience.
-- Produce actionable planning artifacts for downstream Unity development and app store readiness.
+- Achieve quantifiable game loop metrics such as average session time and retry frequency.
+- Ensure the game content aligns with the target audience's preferences and offers a solid user experience and usability.
