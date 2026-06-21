@@ -2,9 +2,9 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-define_page_id: 386b9e33-8429-8193-b121-d3369c54bae8
-define_run_id: notion-NeonDrift_MVP-define-20260621164357
-output_folder: /home/node/.openclaw/workspace/386b9e33-8429-8193-b121-d3369c54bae8/NeonDrift_MVP/project/
+define_page_id: 386b9e33-8429-81ad-9c1c-d273f9fd979d
+define_run_id: notion-NeonDrift_MVP-define-20260621164548
+output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 handoff_type: define_to_planning
 ready_for_planning: true
 planning_stage_range: 0-12
