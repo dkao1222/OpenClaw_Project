@@ -11,8 +11,9 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 核心是短局霓虹漂移/閃避操作，玩家用手機觸控控制飛行器或光軌在高可讀性的賽道中生存、收集、累積分數。
 需要從 raw idea 經 define、planning、spec review、development、local build、QA。
 設計要考慮 iOS Human Interface Guidelines、icon、字體、背景、特效、相容機種、廣告收益但不能破壞核心體驗。
+QA 必須包含按鍵位置、按鍵尺寸、可點擊性、安全區、控制不重疊、核心遊戲物件、分數、暫停、失敗與重試功能。
 最終交付要包含 Unity 專案、iOS simulator 可測 build、QA 報告、交付文件與 Notion 可讀文件。
-Define 階段需補齊痛點、服務目標、MVP 邊界與可驗證成功條件；若資訊不足，必須保留為 open questions。
+Define 階段需補齊痛點、服務目標、MVP 邊界與可驗證成功條件；若資訊不足，必須
 
 ## Target Audience
 
@@ -34,4 +35,4 @@ Raw idea:
 核心是短局霓虹漂移/閃避操作，玩家用手機觸控控制飛行器或光軌在高可讀性的賽道中生存、收集、累積分數。
 需要從 raw idea 經 define、planning、spec review、development、local build、QA。
 設計要考慮 iOS Human Interface Guidelines、icon、字體、背景、特效、相容機種、廣告收益但不能破壞核心體驗。
-最終交付要包含 Unity 專案、i
+QA 必須包含按鍵位置、按鍵尺寸、可

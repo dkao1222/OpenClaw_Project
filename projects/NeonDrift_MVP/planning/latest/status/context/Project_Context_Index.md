@@ -10,7 +10,7 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 核心是短局霓虹漂移/閃避操作，玩家用手機觸控控制飛行器或光軌在高可讀性的賽道中生存、收集、累積分數。
 需要從 raw idea 經 define、planning、spec review、development、local build、QA。
 設計要考慮 iOS Human Interface Guidelines、icon、字體、背景、特效、相容機種、廣告收益但不能破壞核心體驗。
-最終
+QA
 
 ## Target Audience
 
