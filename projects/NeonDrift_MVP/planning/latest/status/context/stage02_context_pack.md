@@ -31,8 +31,8 @@ Players age 16-35 who want short high-feedback racing sessions, clear mastery si
 
 ## source paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-815b-a8f3-c43fc218eef4/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857/project/docs/planning/Game_Proposal.md
-- /home/node/.openclaw/workspace/386b9e33-8429-815b-a8f3-c43fc218eef4/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857/project/docs/planning/One_Page_Game_Concept.md
-- /home/node/.openclaw/workspace/386b9e33-8429-815b-a8f3-c43fc218eef4/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857/project/docs/planning/MVP_Hypothesis.md
-- /home/node/.openclaw/workspace/386b9e33-8429-815b-a8f3-c43fc218eef4/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857/project/docs/planning/Platform_Direction.md
-- /home/node/.openclaw/workspace/386b9e33-8429-815b-a8f3-c43fc218eef4/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857/project/docs/product/MVP_PRD.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/docs/planning/Game_Proposal.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/docs/planning/One_Page_Game_Concept.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/docs/planning/MVP_Hypothesis.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/docs/planning/Platform_Direction.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/docs/product/MVP_PRD.md

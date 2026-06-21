@@ -1,7 +1,7 @@
 # Validation Report: planning_stage_07
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857
-- project_channel_id: 386b9e33-8429-815b-a8f3-c43fc218eef4
+- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302
+- project_channel_id: 386b9e33-8429-8124-8e56-cc9bbf59a698
 
 ## Checks
 - PASS file.readable.docs/business/Monetization_and_Retention_Draft.md

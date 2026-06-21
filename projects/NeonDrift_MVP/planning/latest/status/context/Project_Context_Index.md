@@ -1,8 +1,8 @@
 # Project Context Index
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857
-channel_id: 386b9e33-8429-815b-a8f3-c43fc218eef4
-source_path: /home/node/.openclaw/workspace/386b9e33-8429-815b-a8f3-c43fc218eef4/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857/project/status/context/Initial_Request.md
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302
+channel_id: 386b9e33-8429-8124-8e56-cc9bbf59a698
+source_path: /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/status/context/Initial_Request.md
 
 ## Product Vision and Purpose
 
@@ -18,8 +18,7 @@ source_path: /home/node/.openclaw/workspace/386b9e33-8429-815b-a8f3-c43fc218eef4
 
 ## Development Request
 
-- snippet: Run the full OpenClaw game pipeline from Define to Planning stage 0-12, Spec Review, Development, and build handoff. Use local context compressor, split documents, Notion-readable output, Git-ready project output, and local Unity build watcher policy.
+- snippet: Run the full OpenClaw game pipeline from Define to Planning stage 0-12, Spec Review, Development, and build handoff. Use local context compressor, split documents, Notion-readable output, Git-ready project output, local Unity build watcher policy, and generate required app icon, typography/font, background, and VFX assets through local scripts.
 
 Define source:
-- define_run_id: notion-NeonDrift_MVP-define-20260621091846
-- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81ad-9628-d88a9a0d76f4/
+- define_run_id: notion-NeonDrift_MVP-define-202606211002

@@ -1,7 +1,7 @@
 # Stage 01 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857
-channel_id: 386b9e33-8429-815b-a8f3-c43fc218eef4
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302
+channel_id: 386b9e33-8429-8124-8e56-cc9bbf59a698
 
 ## project goal
 
@@ -31,6 +31,6 @@ Read the Stage 01 handoff first, then this context pack. Open source paths only 
 
 ## source paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-815b-a8f3-c43fc218eef4/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857/project/status/context/Initial_Request.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/status/context/Initial_Request.md
 - status/context/Project_Context_Index.md
 - status/context/Current_Status_Summary.md
