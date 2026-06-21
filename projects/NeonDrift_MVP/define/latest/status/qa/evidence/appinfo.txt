@@ -1,0 +1,16 @@
+{
+    ApplicationType = User;
+    Bundle = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/C9F946AE-A020-4A7D-BD32-A46AC516D761/NeonDrift.app/";
+    BundleContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/C9F946AE-A020-4A7D-BD32-A46AC516D761/";
+    CFBundleDisplayName = NeonDrift;
+    CFBundleExecutable = NeonDrift;
+    CFBundleIdentifier = "com.DefaultCompany.NeonDrift";
+    CFBundleName = NeonDrift;
+    CFBundleVersion = 0;
+    DataContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/DD303C34-AAB7-42B2-901B-0370C285045A/";
+    GroupContainers =     {
+    };
+    Path = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/C9F946AE-A020-4A7D-BD32-A46AC516D761/NeonDrift.app";
+    SBAppTags =     (
+    );
+}
