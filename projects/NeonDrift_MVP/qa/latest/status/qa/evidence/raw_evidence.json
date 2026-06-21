@@ -6,10 +6,10 @@
       "label": "app_binary_file",
       "command": [
         "file",
-        "/Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift"
+        "/Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
+      "stdout_tail": "/Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
       "stderr_tail": ""
     },
     {
@@ -32,7 +32,7 @@
         "simctl",
         "install",
         "booted",
-        "/Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app"
+        "/Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app"
       ],
       "exit_code": 0,
       "stdout_tail": "",
@@ -48,17 +48,17 @@
         "com.DefaultCompany.NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "ry/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/383BE57A-00C1-4A4C-A607-034F12B4EB2F/NeonDrift.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/383BE57A-00C1-4A4C-A607-034F12B4EB2F/\";\n    CFBundleDisplayName = NeonDrift;\n    CFBundleExecutable = NeonDrift;\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift\";\n    CFBundleName = NeonDrift;\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/CB083C81-97AD-4EE6-97AD-8D5571E079C6/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/383BE57A-00C1-4A4C-A607-034F12B4EB2F/NeonDrift.app\";\n    SBAppTags =     (\n    );\n}\n",
+      "stdout_tail": "ry/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/489CF72F-5A83-4F30-8509-235F697AE14C/NeonDrift.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/489CF72F-5A83-4F30-8509-235F697AE14C/\";\n    CFBundleDisplayName = NeonDrift;\n    CFBundleExecutable = NeonDrift;\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift\";\n    CFBundleName = NeonDrift;\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/61C90196-E177-49FF-91EF-29DC9D132349/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/489CF72F-5A83-4F30-8509-235F697AE14C/NeonDrift.app\";\n    SBAppTags =     (\n    );\n}\n",
       "stderr_tail": ""
     },
     {
       "label": "installed_app_binary_file",
       "command": [
         "file",
-        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/383BE57A-00C1-4A4C-A607-034F12B4EB2F/NeonDrift.app/NeonDrift"
+        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/489CF72F-5A83-4F30-8509-235F697AE14C/NeonDrift.app/NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/383BE57A-00C1-4A4C-A607-034F12B4EB2F/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/489CF72F-5A83-4F30-8509-235F697AE14C/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
       "stderr_tail": ""
     },
     {
@@ -84,7 +84,7 @@
         "com.DefaultCompany.NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "com.DefaultCompany.NeonDrift: 73054\n",
+      "stdout_tail": "com.DefaultCompany.NeonDrift: 75705\n",
       "stderr_tail": ""
     },
     {
@@ -96,11 +96,11 @@
         "booted",
         "screenshot",
         "--type=png",
-        "/Users/dragonkao/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/screenshots/ios_simulator_initial_run.png"
+        "/Users/dragonkao/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/screenshots/ios_simulator_initial_run.png"
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: 8B518F0E-3007-4375-A149-E086849F3948 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/screenshots/ios_simulator_initial_run.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 8B518F0E-3007-4375-A149-E086849F3948 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/screenshots/ios_simulator_initial_run.png\n"
     },
     {
       "label": "runtime_log",
@@ -119,26 +119,26 @@
         "compact"
       ],
       "exit_code": 0,
-      "stdout_tail": "\"com.apple.Preferences.InternationalSettingsExtension\", \"com.apple.GeneralSettingsIntents\", \"com.apple.AccountAuthenticationDialog\", \"com.apple.PeopleMessageService\", \"com.apple.Stickers.UserGenerated\", \"com.apple.AuthKitUIService\", \"com.apple.Home.HomeControlService\", \"com.apple.Pa<…>, priority: <decode: missing data>\n2026-06-21 22:49:27.593 Df BackgroundShortcutRunner[73071:44ee6d] [com.apple.shortcuts:AppIntentsMetadata] Loading LNEntityMetadata for bundle identifier com.DefaultCompany.NeonDrift\n2026-06-21 22:49:27.593 Df BackgroundShortcutRunner[73071:44ee6d] [com.apple.shortcuts:AppIntentsMetadata] Loading LNActionMetadata for bundle identifier com.DefaultCompany.NeonDrift\n2026-06-21 22:49:28.837 Df log[73079:0] [com.apple.log:] log run noninteractively, parent: 50184 (launchd_sim), args: 'log' 'show' '--last' '3m' '--predicate' 'process == \"com.DefaultCompany.NeonDrift\" OR process == \"NeonDrift\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift\" OR eventMessage CONTAINS \"Ne\n",
+      "stdout_tail": "date for 75705 (app<com.DefaultCompany.NeonDrift((null))>, running-active-Visible\n2026-06-21 23:04:21.186 Df mediaremoted[56231:45afef] [com.apple.runningboard:monitor] Received state update for 75705 (app<com.DefaultCompany.NeonDrift((null))>, running-active-Visible\n2026-06-21 23:04:21.186 Df locationd[50216:458488] [com.apple.runningboard:monitor] Received state update for 75705 (app<com.DefaultCompany.NeonDrift((null))>, running-active-Visible\n2026-06-21 23:04:21.571 Df SpringBoard[50190:45b00d] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x12b132580> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-21 23:04:25.196 Df log[75719:0] [com.apple.log:] log run noninteractively, parent: 50184 (launchd_sim), args: 'log' 'show' '--last' '3m' '--predicate' 'process == \"com.DefaultCompany.NeonDrift\" OR process == \"NeonDrift\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift\" OR eventMessage CONTAINS \"Ne\n",
       "stderr_tail": "getpwuid_r did not find a match for uid 501\n"
     }
   ],
   "files": {
-    "build_full_validation": "/home/node/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/build_full_validation.md",
-    "unity_editmode_test_results": "/home/node/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/unity_editmode_test_results.xml",
-    "unity_playmode_test_results": "/home/node/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/unity_playmode_test_results.xml",
-    "runtime_probe": "/home/node/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/qa/evidence/runtime_probe.json",
-    "simulator_app": "/home/node/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app",
-    "app_binary_file": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/evidence/app_binary_file.txt",
-    "booted_devices": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/evidence/booted_devices.txt",
-    "install": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/evidence/install.txt",
-    "appinfo": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/evidence/appinfo.txt",
-    "installed_app_binary_file": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/evidence/installed_app_binary_file.txt",
-    "launch": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/evidence/launch.txt",
-    "initial_screenshot": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/screenshots/ios_simulator_initial_run.png",
-    "runtime_log": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/logs/ios_simulator_runtime.log",
-    "raw_evidence": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/evidence/raw_evidence.json",
-    "evidence_summary_json": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/evidence/evidence_summary.json",
-    "evidence_summary_md": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/status/qa/evidence/evidence_summary.md"
+    "build_full_validation": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/build_full_validation.md",
+    "unity_editmode_test_results": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_editmode_test_results.xml",
+    "unity_playmode_test_results": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_playmode_test_results.xml",
+    "runtime_probe": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+    "simulator_app": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app",
+    "app_binary_file": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/app_binary_file.txt",
+    "booted_devices": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/booted_devices.txt",
+    "install": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/install.txt",
+    "appinfo": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/appinfo.txt",
+    "installed_app_binary_file": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/installed_app_binary_file.txt",
+    "launch": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/launch.txt",
+    "initial_screenshot": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/screenshots/ios_simulator_initial_run.png",
+    "runtime_log": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/logs/ios_simulator_runtime.log",
+    "raw_evidence": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/raw_evidence.json",
+    "evidence_summary_json": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/evidence_summary.json",
+    "evidence_summary_md": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/evidence_summary.md"
   }
 }

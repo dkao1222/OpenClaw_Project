@@ -1,8 +1,8 @@
 {
   "project_name": "NeonDrift_MVP",
   "pipeline": "qa",
-  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260621144918",
+  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260621150418",
   "status": "Passed",
-  "source_folder": "/home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project",
-  "published_at": "2026-06-21T14:49:43.743Z"
+  "source_folder": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project",
+  "published_at": "2026-06-21T15:04:39.135Z"
 }

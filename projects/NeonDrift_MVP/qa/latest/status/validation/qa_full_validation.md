@@ -1,7 +1,7 @@
 # Game QA Validation Report
 
-- session_id: notion-NeonDrift_MVP-qa-qa-full-20260621144918-qa-full
-- output_folder: /home/node/.openclaw/workspace/386b9e33-8429-812e-aea5-c0a0cde76485/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621144918/project/
+- session_id: notion-NeonDrift_MVP-qa-qa-full-20260621150418-qa-full
+- output_folder: /home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/
 
 ## Checks
 - PASS file_exists.status/qa/full_qa_report.md
