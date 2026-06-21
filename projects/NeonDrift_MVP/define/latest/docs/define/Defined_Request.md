@@ -3,8 +3,8 @@
 ## Canonical Fields
 
 - project_name: NeonDrift_MVP
-- define_page_id: 386b9e33-8429-819c-b771-ef92781c57e6
-- define_run_id: notion-NeonDrift_MVP-define-20260621143440
+- define_page_id: 386b9e33-8429-8199-abd2-fcb1304fc85c
+- define_run_id: notion-NeonDrift_MVP-define-20260621150007
 - agent_model_policy: per-agent-config
 - thinking: off
 
@@ -22,7 +22,7 @@ NeonDrift MVP 是一款可快速迭代的 Unity 手機霓虹閃避遊戲，用�
 
 ## Platform Target
 
-Unity 6000.0.71f1, iOS-first, Android and WebGL as secondary targets.
+Unity 6000.0.71f1 preferred, compatible Unity 6000 LTS local editor allowed when project imports and build validation passes; iOS-first, Android and WebGL as secondary targets.
 
 ## Monetization Direction
 
@@ -38,4 +38,4 @@ Planning must produce bounded Markdown handoffs, Notion-readable documents, Git 
 
 ## Development Request
 
-Run the full pipeline from Define through Planning, Spec Review, Development, local Unity Build, and QA. Use deterministic evidence validation for QA and keep all outputs Notion-readable and Git-publishable.
+Restart the full pipeline from Define through Planning, Spec Review, Development, local Unity Build, and QA. Do not manually edit agent outputs during the run. Use pipeline validators, deterministic context compression, local Unity build evidence, and deterministic QA finalizer.

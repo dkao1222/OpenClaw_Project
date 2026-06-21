@@ -10,7 +10,7 @@
 
 ## Locked Decisions
 
-- platform_target: Unity 6000.0.71f1, iOS-first, Android and WebGL as secondary targets.
+- platform_target: Unity 6000.0.71f1 preferred, compatible Unity 6000 LTS local editor allowed when project imports and build validation passes; iOS-first, Android and WebGL as secondary targets.
 - monetization_direction: Rewarded ads first; interstitial ads only after retention and user experience review. AdMob account is available.
 - compatibility_target: iOS 15+, iPhone SE 2/3, iPhone 12/13 mini, iPhone 15/15 Pro, Android 10+ representative devices, WebGL desktop browser.
 - local_unity_build: manual start, watcher monitors only
