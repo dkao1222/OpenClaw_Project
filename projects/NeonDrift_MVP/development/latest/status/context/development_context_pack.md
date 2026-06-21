@@ -1,14 +1,14 @@
 # Development Context Pack
 
 project_name: NeonDrift_MVP
-channel_id: 386b9e33-8429-814a-a5ab-cf5e3e39660d
+channel_id: 386b9e33-8429-815b-b132-fb63e00fe3a9
 stage: development
 policy: compressed context pack
 
 ## Decisions
 
 - Development delivery is Passed and build is monitor-only until the user confirms local Unity editor readiness.
-- Unity project path is /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/unity/NeonDrift/ and target platforms remain iOS, Android, and WebGL.
+- Unity project path is /home/node/.openclaw/workspace/386b9e33-8429-815b-b132-fb63e00fe3a9/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621150132/project/unity/NeonDrift/ and target platforms remain iOS, Android, and WebGL.
 - MVP source includes drift controller, hazard spawner, session controller, HUD, build runner, app icon assets, font/background/VFX visual assets, legal/privacy docs, QA docs, and final handoff.
 
 ## Constraints
@@ -25,10 +25,10 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/handoffs/development/final_handoff.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/status/context/development_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/unity/NeonDrift/Packages/manifest.json
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/unity/NeonDrift/ProjectSettings/ProjectVersion.txt
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/unity/NeonDrift/Assets/Editor/BuildPipelineRunner.cs
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/unity/NeonDrift/Assets/Branding/AppIcon.png
+- /home/node/.openclaw/workspace/386b9e33-8429-815b-b132-fb63e00fe3a9/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621150132/project/handoffs/development/final_handoff.md
+- /home/node/.openclaw/workspace/386b9e33-8429-815b-b132-fb63e00fe3a9/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621150132/project/status/context/development_context_pack.md
+- /home/node/.openclaw/workspace/386b9e33-8429-815b-b132-fb63e00fe3a9/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621150132/project/unity/NeonDrift/Packages/manifest.json
+- /home/node/.openclaw/workspace/386b9e33-8429-815b-b132-fb63e00fe3a9/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621150132/project/unity/NeonDrift/ProjectSettings/ProjectVersion.txt
+- /home/node/.openclaw/workspace/386b9e33-8429-815b-b132-fb63e00fe3a9/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621150132/project/unity/NeonDrift/Assets/Editor/BuildPipelineRunner.cs
+- /home/node/.openclaw/workspace/386b9e33-8429-815b-b132-fb63e00fe3a9/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621150132/project/unity/NeonDrift/Assets/Branding/AppIcon.png
 - Additional source docs stay in Notion/Git; open only if required detail is missing.

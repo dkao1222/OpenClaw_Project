@@ -2,7 +2,7 @@
 
 agent_id: agents-orchestrator
 project_name: NeonDrift_MVP
-channel_id: 386b9e33-8429-814a-a5ab-cf5e3e39660d
+channel_id: 386b9e33-8429-815b-b132-fb63e00fe3a9
 stage: development
 status: completed
 progress_percent: 100

@@ -2,10 +2,10 @@
 
 ```yaml
 handoff_type: planning_to_spec_review
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447
-project_channel_id: 386b9e33-8429-8189-8eaa-e181b7c82cc8
-notion_delivery_target: page:386b9e33-8429-8189-8eaa-e181b7c82cc8
-output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81ba-ad07-da5d580a4b79/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621144303/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
+project_channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+notion_delivery_target: page:386b9e33-8429-814a-a247-c06c57f54b13
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/
 target_department: GAME_SPEC_REVIEW_DEPARTMENT.md
 required_public_documents:
   - /home/node/.openclaw/workspace/public_document/OPENCLAW_PUBLIC_RULES.md

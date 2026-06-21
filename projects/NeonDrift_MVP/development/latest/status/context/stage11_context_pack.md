@@ -1,7 +1,7 @@
 # Stage 11 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447
-channel_id: 386b9e33-8429-8189-8eaa-e181b7c82cc8
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
+channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
 stage_agent: critic
 next_agent: judge
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-81ba-ad07-da5d580a4b79/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621144303/project/status/context/stage11_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81ba-ad07-da5d580a4b79/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621144303/project/handoffs/planning/11_critic_to_judge.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81ba-ad07-da5d580a4b79/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621144303/project/docs/review/Planning_Gap_Review.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81ba-ad07-da5d580a4b79/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621144303/project/docs/review/Planning_Risk_Register.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81ba-ad07-da5d580a4b79/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621144303/project/status/agent_heartbeats/critic.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/status/context/stage11_context_pack.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/handoffs/planning/11_critic_to_judge.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/docs/review/Planning_Gap_Review.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/docs/review/Planning_Risk_Register.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/status/agent_heartbeats/critic.md
