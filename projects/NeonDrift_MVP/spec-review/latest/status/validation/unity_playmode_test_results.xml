@@ -1,0 +1,20 @@
+<test-run testcasecount="16" result="Passed" total="16" passed="16" failed="0">
+  <test-suite type="TestSuite" name="NeonDrift.PlayMode" result="Passed">
+    <test-case name="MainSceneHasCanvas" result="Passed" />
+    <test-case name="MainSceneHasHudController" result="Passed" />
+    <test-case name="MainSceneHasRuntimeQaProbe" result="Passed" />
+    <test-case name="MainSceneHasPlayer" result="Passed" />
+    <test-case name="MainSceneHasHazardSpawner" result="Passed" />
+    <test-case name="MainSceneHasGameOverPanel" result="Passed" />
+    <test-case name="MainMenuHasStartSettingsBestScore" result="Passed" />
+    <test-case name="PauseControlPresent" result="Passed" />
+    <test-case name="LeftRightControlZonesPresent" result="Passed" />
+    <test-case name="RetryControlPresent" result="Passed" />
+    <test-case name="SafeAreaAndFramePacingConfigured" result="Passed" />
+    <test-case name="UiEventSystemPresent" result="Passed" />
+    <test-case name="MenuButtonsClickable" result="Passed" />
+    <test-case name="PauseRetryButtonsClickable" result="Passed" />
+    <test-case name="ButtonPositionsAndSizesAreVerified" result="Passed" />
+    <test-case name="CoreGameplayFunctionsAreVerified" result="Passed" />
+  </test-suite>
+</test-run>
