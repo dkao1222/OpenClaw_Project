@@ -1,7 +1,7 @@
 # Stage 08 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+project_name: NeonDrift_MVP
+channel_id: 382b9e3384298039b171c9b2a60ae644
 stage_agent: technical-artist
 next_agent: audio-designer
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/status/context/stage08_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/handoffs/planning/08_technical-artist_to_audio-designer.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/docs/design/Visual_Direction.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/docs/design/Readability_and_Performance_Risk.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/status/agent_heartbeats/technical-artist.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage08_context_pack.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/08_technical-artist_to_audio-designer.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Visual_Direction.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Readability_and_Performance_Risk.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/agent_heartbeats/technical-artist.md

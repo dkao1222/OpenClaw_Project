@@ -1,7 +1,7 @@
 # Stage 11 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+project_name: NeonDrift_MVP
+channel_id: 382b9e3384298039b171c9b2a60ae644
 stage_agent: critic
 next_agent: judge
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/status/context/stage11_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/handoffs/planning/11_critic_to_judge.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/docs/review/Planning_Gap_Review.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/docs/review/Planning_Risk_Register.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/status/agent_heartbeats/critic.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage11_context_pack.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/11_critic_to_judge.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/review/Planning_Gap_Review.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/review/Planning_Risk_Register.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/agent_heartbeats/critic.md

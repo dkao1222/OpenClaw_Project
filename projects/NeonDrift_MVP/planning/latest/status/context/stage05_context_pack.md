@@ -1,7 +1,7 @@
 # Stage 05 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+project_name: NeonDrift_MVP
+channel_id: 382b9e3384298039b171c9b2a60ae644
 stage_agent: game-designer
 next_agent: level-designer
 policy: compressed context pack
@@ -25,10 +25,10 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/status/context/stage05_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/handoffs/planning/05_game-designer_to_level-designer.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/docs/design/Core_Gameplay_Loop.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/docs/design/Game_Systems_Overview.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/docs/design/Control_System_Spec.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/docs/design/Speed_System_Spec.md
-- /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/status/agent_heartbeats/game-designer.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage05_context_pack.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/05_game-designer_to_level-designer.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Core_Gameplay_Loop.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Systems_Overview.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Control_System_Spec.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Speed_System_Spec.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/agent_heartbeats/game-designer.md

@@ -1,7 +1,7 @@
 # Validation Report: planning_stage_10
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-- project_channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+- project_name: NeonDrift_MVP
+- project_channel_id: 382b9e3384298039b171c9b2a60ae644
 
 ## Checks
 - PASS file.readable.docs/design/Game_Design_Document.md
@@ -77,15 +77,15 @@
 - PASS file.required_sections.docs/production/Planning_Delivery_Checklist.md
 - PASS file.schema.docs/production/Planning_Delivery_Checklist.md
 - PASS file.readable.status/context/stage10_context_pack.md
-- PASS file.size_limit.status/context/stage10_context_pack.md: 2856<=3000
+- PASS file.size_limit.status/context/stage10_context_pack.md: 2440<=3000
 - PASS file.no_prompt_constraints.status/context/stage10_context_pack.md
 - PASS file.schema.status/context/stage10_context_pack.md
 - PASS file.readable.status/agent_heartbeats/game-producer.md
-- PASS file.size_limit.status/agent_heartbeats/game-producer.md: 413<=1200
+- PASS file.size_limit.status/agent_heartbeats/game-producer.md: 361<=1200
 - PASS file.no_prompt_constraints.status/agent_heartbeats/game-producer.md
 - PASS file.schema.status/agent_heartbeats/game-producer.md
 - PASS file.readable.handoffs/planning/10_game-producer_to_critic.md
-- PASS file.size_limit.handoffs/planning/10_game-producer_to_critic.md: 2130<=2500
+- PASS file.size_limit.handoffs/planning/10_game-producer_to_critic.md: 1714<=2500
 - PASS file.no_prompt_constraints.handoffs/planning/10_game-producer_to_critic.md
 - PASS file.schema.handoffs/planning/10_game-producer_to_critic.md
 - PASS handoff.context_pack_path.status/context/stage10_context_pack.md

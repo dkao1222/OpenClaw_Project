@@ -1,26 +1,37 @@
 # Current Status Summary
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+project_name: NeonDrift_MVP
+channel_id: 382b9e3384298039b171c9b2a60ae644
 status: planning_stage_01_initialized
-source_path: /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/status/context/Initial_Request.md
+source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/Initial_Request.md
 
 ## Product Vision and Purpose
 
-NeonDrift MVP 是一款可快速迭代的 Unity 手機霓虹閃避遊戲，用短局高重玩性解決玩家碎片時間想快速進入、快速失敗、快速重試的需求。商業目標是建立可驗證的留存、廣告變現與跨平台發布基礎，先以 iOS simulator/local build 驗證，再擴展到 Android/WebGL。
+由 Raw Idea 正規化：建立一個 iOS first 的 Unity 手機遊戲 MVP，名稱 NeonDrift_MVP。
+核心是短局霓虹漂移/閃避操作，玩家用手機觸控控制飛行器或光軌在高可讀性的賽道中生存、收集、累積分數。
+需要從 raw idea 經 define、planning、spec review、development、local build、QA。
+設計要考慮 iOS Human Interface Guidelines、icon、字體、背景、特效、相容機種、廣告收益但不能破壞核心體驗。
+最終交付要包含 Unity 專案、iOS simulator 可測 build、QA 報告、交付文件與 Notion 可讀文件。
+Define 階段需補齊痛點、服務目標、MVP 邊界與可驗證成功條件；若資訊不足，必須保留為 open questions。
 
 ## Target Audience
 
-目標使用者是 13-35 歲喜歡 arcade、runner、reaction game 的手機玩家；常在通勤、排隊或短休息時間遊玩；痛點是多數手機遊戲開局太慢、廣告干擾太早、操作不夠即時。需要單手可玩、HUD 清楚、立即重試、低學習成本與穩定效能。
+由 Raw Idea 推導目標受眾；若原始想法未指定，先假設為 iOS 手機端使用者/玩家，並在 Define 階段標記需驗證。
 
 ## Core Value
 
-1. 單手左右 drift 操作立即有回饋。2. 60 FPS 目標下保持清楚 HUD、safe area、碰撞與重試流程。3. 支援廣告變現前置規劃，保留 rewarded ads 優先且不破壞短局節奏。
+由 Raw Idea 提煉 1-3 個核心價值；初始假設是操作/使用流程清楚、短時間可驗證、iOS 交付可測。
 
 ## Development Request
 
-Restart the full pipeline from Define through Planning, Spec Review, Development, local Unity Build, and QA. Do not manually edit agent outputs during the run. Use pipeline validators, deterministic context compression, local Unity build evidence, and deterministic QA finalizer.
+Normalize this raw idea into canonical product definition for the OpenClaw pipeline.
+Preserve the original idea, infer only conservative assumptions, and mark unresolved items as open questions in Define outputs.
+Raw idea type: game
+Priority: high
 
-Define source:
-- define_run_id: notion-NeonDrift_MVP-define-20260621150007
-- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-8199-abd2-fcb1304fc85c/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621150007/projec
+Raw idea:
+建立一個 iOS first 的 Unity 手機遊戲 MVP，名稱 NeonDrift_MVP。
+核心是短局霓虹漂移/閃避操作，玩家用手機觸控控制飛行器或光軌在高可讀性的賽道中生存、收集、累積分數。
+需要從 raw idea 經 define、planning、spec review、development、local build、QA。
+設計要考慮 iOS Human Interface Guidelines、icon、字體、背景、特效、相容機種、廣告收益但不能破壞核心體驗。
+最終交付要包含 Unity 專案、i

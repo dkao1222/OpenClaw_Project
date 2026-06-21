@@ -1,7 +1,7 @@
 # Validation Report: planning_stage_06
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-- project_channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+- project_name: NeonDrift_MVP
+- project_channel_id: 382b9e3384298039b171c9b2a60ae644
 
 ## Checks
 - PASS file.readable.docs/design/Content_Design_Draft.md
@@ -21,15 +21,15 @@
 - PASS file.required_sections.docs/design/Level_and_Tutorial_Pacing.md
 - PASS file.schema.docs/design/Level_and_Tutorial_Pacing.md
 - PASS file.readable.status/context/stage06_context_pack.md
-- PASS file.size_limit.status/context/stage06_context_pack.md: 2292<=3000
+- PASS file.size_limit.status/context/stage06_context_pack.md: 1980<=3000
 - PASS file.no_prompt_constraints.status/context/stage06_context_pack.md
 - PASS file.schema.status/context/stage06_context_pack.md
 - PASS file.readable.status/agent_heartbeats/level-designer.md
-- PASS file.size_limit.status/agent_heartbeats/level-designer.md: 433<=1200
+- PASS file.size_limit.status/agent_heartbeats/level-designer.md: 381<=1200
 - PASS file.no_prompt_constraints.status/agent_heartbeats/level-designer.md
 - PASS file.schema.status/agent_heartbeats/level-designer.md
 - PASS file.readable.handoffs/planning/06_level-designer_to_economy-liveops-designer.md
-- PASS file.size_limit.handoffs/planning/06_level-designer_to_economy-liveops-designer.md: 1858<=2500
+- PASS file.size_limit.handoffs/planning/06_level-designer_to_economy-liveops-designer.md: 1546<=2500
 - PASS file.no_prompt_constraints.handoffs/planning/06_level-designer_to_economy-liveops-designer.md
 - PASS file.schema.handoffs/planning/06_level-designer_to_economy-liveops-designer.md
 - PASS handoff.context_pack_path.status/context/stage06_context_pack.md
