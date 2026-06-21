@@ -1,13 +1,13 @@
 # Initial Request
 
 project_name: NeonDrift_MVP
-workspace_key: 386b9e33-8429-8189-8eaa-e181b7c82cc8
-run_id: notion-NeonDrift_MVP-0-12-20260621143447
+workspace_key: 386b9e33-8429-814a-a247-c06c57f54b13
+run_id: notion-NeonDrift_MVP-0-12-20260621150037
 stage_range: 0-12
 agent_model_policy: per-agent-config
 legacy_model_field_ignored: per-agent-config
 thinking: off
-requested_by: define:notion-NeonDrift_MVP-define-20260621143440
+requested_by: define:notion-NeonDrift_MVP-define-20260621150007
 
 ## Pipeline Execution Policy
 
@@ -27,15 +27,15 @@ NeonDrift MVP 是一款可快速迭代的 Unity 手機霓虹閃避遊戲，用�
 
 ## Development Request
 
-Run the full pipeline from Define through Planning, Spec Review, Development, local Unity Build, and QA. Use deterministic evidence validation for QA and keep all outputs Notion-readable and Git-publishable.
+Restart the full pipeline from Define through Planning, Spec Review, Development, local Unity Build, and QA. Do not manually edit agent outputs during the run. Use pipeline validators, deterministic context compression, local Unity build evidence, and deterministic QA finalizer.
 
 Define source:
-- define_run_id: notion-NeonDrift_MVP-define-20260621143440
-- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-819c-b771-ef92781c57e6/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621143440/project/
-- define_handoff_path: /home/node/.openclaw/workspace/386b9e33-8429-819c-b771-ef92781c57e6/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621143440/project/handoffs/define/handoff_to_planning.md
+- define_run_id: notion-NeonDrift_MVP-define-20260621150007
+- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-8199-abd2-fcb1304fc85c/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621150007/project/
+- define_handoff_path: /home/node/.openclaw/workspace/386b9e33-8429-8199-abd2-fcb1304fc85c/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621150007/project/handoffs/define/handoff_to_planning.md
 
 Locked define constraints:
-- platform_target: Unity 6000.0.71f1, iOS-first, Android and WebGL as secondary targets.
+- platform_target: Unity 6000.0.71f1 preferred, compatible Unity 6000 LTS local editor allowed when project imports and build validation passes; iOS-first, Android and WebGL as secondary targets.
 - monetization_direction: Rewarded ads first; interstitial ads only after retention and user experience review. AdMob account is available.
 - compatibility_target: iOS 15+, iPhone SE 2/3, iPhone 12/13 mini, iPhone 15/15 Pro, Android 10+ representative devices, WebGL desktop browser.
 - output_expectation: Planning must produce bounded Markdown handoffs, Notion-readable documents, Git publish output, downstream-ready spec review and development handoffs, local Unity build evidence, and deterministic QA result files.

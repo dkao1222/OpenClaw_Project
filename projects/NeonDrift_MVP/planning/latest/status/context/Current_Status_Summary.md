@@ -1,9 +1,9 @@
 # Current Status Summary
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447
-channel_id: 386b9e33-8429-8189-8eaa-e181b7c82cc8
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
+channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
 status: planning_stage_01_initialized
-source_path: /home/node/.openclaw/workspace/386b9e33-8429-8189-8eaa-e181b7c82cc8/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621143447/project/status/context/Initial_Request.md
+source_path: /home/node/.openclaw/workspace/386b9e33-8429-814a-a247-c06c57f54b13/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037/project/status/context/Initial_Request.md
 
 ## Product Vision and Purpose
 
@@ -19,9 +19,8 @@ NeonDrift MVP 是一款可快速迭代的 Unity 手機霓虹閃避遊戲，用�
 
 ## Development Request
 
-Run the full pipeline from Define through Planning, Spec Review, Development, local Unity Build, and QA. Use deterministic evidence validation for QA and keep all outputs Notion-readable and Git-publishable.
+Restart the full pipeline from Define through Planning, Spec Review, Development, local Unity Build, and QA. Do not manually edit agent outputs during the run. Use pipeline validators, deterministic context compression, local Unity build evidence, and deterministic QA finalizer.
 
 Define source:
-- define_run_id: notion-NeonDrift_MVP-define-20260621143440
-- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-819c-b771-ef92781c57e6/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621143440/project/
-- define_handoff_path: /home/node/.openclaw/workspace/386b9e33-8429-8
+- define_run_id: notion-NeonDrift_MVP-define-20260621150007
+- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-8199-abd2-fcb1304fc85c/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621150007/projec
