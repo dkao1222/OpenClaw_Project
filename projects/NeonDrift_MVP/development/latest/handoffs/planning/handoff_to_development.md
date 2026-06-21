@@ -2,10 +2,10 @@
 
 ```yaml
 handoff_type: planning_to_development_draft
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
-project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
-notion_delivery_target: page:385b9e33-8429-81ca-80ce-e475781e06b2
-output_folder: /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
+project_channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
+notion_delivery_target: page:386b9e33-8429-81f8-a049-ff681ccc7b90
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/
 target_department: GAME_DEVELOPMENT_DEPARTMENT.md
 source_documents:
   - docs/planning/Game_Proposal.md

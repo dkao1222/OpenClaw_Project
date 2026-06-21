@@ -1,12 +1,12 @@
 # Game Development Source Gate
 
 ## Checks
-- PASS source_handoff_exists: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/handoffs/spec_review/handoff_to_game_development.md
-- PASS source_output_folder_exists: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project
+- PASS source_handoff_exists: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/handoffs/spec_review/handoff_to_game_development.md
+- PASS source_output_folder_exists: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project
 - PASS source_handoff_marker:development_ready: true: development_ready: true
 - PASS source_handoff_marker:development_allowed: false: development_allowed: false
-- PASS required_source_doc:docs/review/Development_Ready_Spec_Package.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/review/Development_Ready_Spec_Package.md
-- PASS required_source_doc:docs/review/UI_UX_Detail_Spec.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/review/UI_UX_Detail_Spec.md
+- PASS required_source_doc:docs/review/Development_Ready_Spec_Package.md: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/review/Development_Ready_Spec_Package.md
+- PASS required_source_doc:docs/review/UI_UX_Detail_Spec.md: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/review/UI_UX_Detail_Spec.md
 - PASS source_doc_marker:docs/review/UI_UX_Detail_Spec.md:Icon contract: Icon contract
 - PASS source_doc_marker:docs/review/UI_UX_Detail_Spec.md:lucide:Play: lucide:Play
 - PASS source_doc_marker:docs/review/UI_UX_Detail_Spec.md:lucide:Settings: lucide:Settings
@@ -22,24 +22,24 @@
 - PASS source_doc_marker:docs/review/UI_UX_Detail_Spec.md:safe area: safe area
 - PASS source_doc_marker:docs/review/UI_UX_Detail_Spec.md:accessibility: accessibility
 - PASS source_doc_marker:docs/review/UI_UX_Detail_Spec.md:intentional deviations: intentional deviations
-- PASS required_source_doc:docs/review/Gameplay_Detail_Spec.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/review/Gameplay_Detail_Spec.md
-- PASS required_source_doc:docs/review/Visual_Audio_Detail_Spec.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/review/Visual_Audio_Detail_Spec.md
-- PASS required_source_doc:docs/review/Implementation_Readiness_Checklist.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/review/Implementation_Readiness_Checklist.md
-- PASS required_source_doc:docs/design/Operation_Flow_Diagram.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Operation_Flow_Diagram.md
+- PASS required_source_doc:docs/review/Gameplay_Detail_Spec.md: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/review/Gameplay_Detail_Spec.md
+- PASS required_source_doc:docs/review/Visual_Audio_Detail_Spec.md: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/review/Visual_Audio_Detail_Spec.md
+- PASS required_source_doc:docs/review/Implementation_Readiness_Checklist.md: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/review/Implementation_Readiness_Checklist.md
+- PASS required_source_doc:docs/design/Operation_Flow_Diagram.md: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Operation_Flow_Diagram.md
 - PASS source_doc_marker:docs/design/Operation_Flow_Diagram.md:player intent: player intent
 - PASS source_doc_marker:docs/design/Operation_Flow_Diagram.md:system response: system response
 - PASS source_doc_marker:docs/design/Operation_Flow_Diagram.md:feel target: feel target
 - PASS source_doc_marker:docs/design/Operation_Flow_Diagram.md:latency target: latency target
 - PASS source_doc_marker:docs/design/Operation_Flow_Diagram.md:camera response: camera response
 - PASS source_doc_marker:docs/design/Operation_Flow_Diagram.md:haptics: haptics
-- PASS required_source_doc:docs/design/Prototype_Flow.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Prototype_Flow.md
+- PASS required_source_doc:docs/design/Prototype_Flow.md: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Prototype_Flow.md
 - PASS source_doc_marker:docs/design/Prototype_Flow.md:canvas artifact: canvas artifact
 - PASS source_doc_marker:docs/design/Prototype_Flow.md:transition: transition
 - PASS source_doc_marker:docs/design/Prototype_Flow.md:start: start
 - PASS source_doc_marker:docs/design/Prototype_Flow.md:run: run
 - PASS source_doc_marker:docs/design/Prototype_Flow.md:failure: failure
 - PASS source_doc_marker:docs/design/Prototype_Flow.md:restart: restart
-- PASS required_source_doc:docs/design/Prototype_Flow_Canvas.html: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Prototype_Flow_Canvas.html
+- PASS required_source_doc:docs/design/Prototype_Flow_Canvas.html: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Prototype_Flow_Canvas.html
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:<canvas: <canvas
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:requestAnimationFrame: requestAnimationFrame
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Start Run: Start Run
@@ -47,7 +47,7 @@
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Boost: Boost
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Crash: Crash
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Retry: Retry
-- PASS required_source_doc:docs/design/Game_Systems_Overview.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Game_Systems_Overview.md
+- PASS required_source_doc:docs/design/Game_Systems_Overview.md: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Game_Systems_Overview.md
 - PASS source_doc_marker:docs/design/Game_Systems_Overview.md:Control System: Control System
 - PASS source_doc_marker:docs/design/Game_Systems_Overview.md:Speed System: Speed System
 - PASS source_doc_marker:docs/design/Game_Systems_Overview.md:Hazard System: Hazard System
@@ -61,7 +61,7 @@
 - PASS source_doc_marker:docs/design/Game_Systems_Overview.md:dependency: dependency
 - PASS source_doc_marker:docs/design/Game_Systems_Overview.md:UI/HUD: UI/HUD
 - PASS source_doc_marker:docs/design/Game_Systems_Overview.md:acceptance: acceptance
-- PASS required_source_doc:docs/design/Game_Design_Document.md: /Users/dragonkao/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Game_Design_Document.md
+- PASS required_source_doc:docs/design/Game_Design_Document.md: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Game_Design_Document.md
 - PASS source_doc_marker:docs/design/Game_Design_Document.md:MVP: MVP
 - PASS source_doc_marker:docs/design/Game_Design_Document.md:iPhone-first: iPhone-first
 - PASS source_doc_marker:docs/design/Game_Design_Document.md:core loop: core loop

@@ -2,8 +2,8 @@
 
 from_agent: product-planner
 to_agent: game-director
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
-project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
+project_channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
 requires_user_confirmation: true
 product_goal: NeonDrift MVP is a mobile-first arcade drift game focused on short readable runs, one-finger control, scoring clarity, and instant restart.
 platform_direction: Unity 6000.0.71f1 mobile build for iOS and Android with touch-first UX, safe-area handling, performance budget, and device compatibility review.

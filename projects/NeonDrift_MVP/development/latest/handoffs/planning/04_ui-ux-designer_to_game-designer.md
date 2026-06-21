@@ -3,9 +3,9 @@ Every Stage 04 source path below must be copied exactly as written, character fo
 
 from_agent: ui-ux-designer
 to_agent: game-designer
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260620171416
-project_channel_id: 385b9e33-8429-81ca-80ce-e475781e06b2
-output_folder: /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
+project_channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/
 requires_user_confirmation: true
 operation flow path: docs/design/Operation_Flow_Diagram.md
 input-to-feedback flow: controls, HUD response, failure feedback, restart response
@@ -16,13 +16,13 @@ UI constraints that gameplay must obey: fair readable hazards, immediate input f
 suggested_next_action: Confirm Stage 04 and start game-designer for Stage 05 from Notion.
 
 ## Stage 04 source paths
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Operation_Flow_Diagram.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Controls_and_Operation_Spec.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/UI_Wireframes.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Prototype_Flow.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/Prototype_Flow_Canvas.html
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/UI_State_Annotations.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/design/UX_Flow_Draft.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/status/agent_heartbeats/ui-ux-designer.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Operation_Flow_Diagram.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Controls_and_Operation_Spec.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/UI_Wireframes.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Prototype_Flow.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Prototype_Flow_Canvas.html
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/UI_State_Annotations.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/UX_Flow_Draft.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/status/agent_heartbeats/ui-ux-designer.md
 
 Do not start game-designer in this micro-stage.

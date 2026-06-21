@@ -2,9 +2,9 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-project_channel_id: 385b9e33-8429-81d0-a12e-e867f5744b3b
-output_folder: /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/
-notion_delivery_target: page:385b9e33-8429-81d0-a12e-e867f5744b3b
+project_channel_id: 386b9e33-8429-81c9-958f-c5abdb8ec9b5
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/
+notion_delivery_target: page:386b9e33-8429-81c9-958f-c5abdb8ec9b5
 source_documents:
   - docs/review/Spec_Gap_Analysis.md
   - docs/review/Development_Ready_Spec_Package.md

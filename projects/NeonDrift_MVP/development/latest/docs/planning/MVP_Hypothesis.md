@@ -1,27 +1,27 @@
 ## 繁體中文
 
 ### 假設:
-- 霓虹風格的高速漂移玩法能吸引目標受眾，並在短時間內提供清晰、重複可玩的遊戲體驗。
-- 簡單直觀的控制方式與即時重試機制有助於玩家快速上手並持續參與。
+- 玩家喜愛高速、風格化的霓虹漂移競速體驗，並樂於快速反覆挑戰。
+- 即時重試機制能有效提升玩家的參與度與遊戲循環指標。
 
 ### 驗證方式:
-- 透過原型測試收集使用者反饋，評估核心玩法的吸引力與易用性。
-- 分析遊戲原型中的進度追蹤與重新開始功能，確認其是否能有效提升玩家參與度。
+- 通過遊戲內數據監控平均遊戲時間與重試次數來驗證玩家參與度。
+- 分析玩家在不同難度關卡中的行為模式，評估即時重試機制的有效性。
 
 ### 成功指標:
-- 玩家在短時間內完成至少一個關卡且願意重複遊玩。
-- 使用者反饋顯示對核心玩法的滿意度高，並認為遊戲易於理解與操作。
+- 平均每場遊戲時間超過5分鐘，並有高頻率的即時重試行為。
+- 玩家在關卡中成功通過率穩定於60%至70%，顯示遊戲平衡性良好。
 
 ## English
 
 ### Hypothesis:
-- The neon-style high-speed drift gameplay can attract the target audience and provide a clear, replayable gaming experience within short play sessions.
-- Simple and intuitive controls with instant retry mechanisms help players quickly pick up the game and stay engaged.
+- Players enjoy high-speed, stylized neon drift racing experiences and are willing to quickly retry challenges.
+- An immediate retry mechanism effectively increases player engagement and game loop metrics.
 
 ### Validation Method:
-- Collect user feedback through prototype testing to evaluate the吸引力 and usability of core gameplay.
-- Analyze progress tracking and restart features in the game prototype to confirm their effectiveness in enhancing player engagement.
+- Monitor average session time and retry frequency through in-game data to validate player engagement.
+- Analyze player behavior patterns across different difficulty levels to evaluate the effectiveness of the immediate retry system.
 
 ### Success Metrics:
-- Players complete at least one level within a short play session and are willing to replay.
-- User feedback indicates high satisfaction with core gameplay and ease of understanding and operation.
+- Average session time exceeds 5 minutes with high-frequency immediate retries.
+- Player success rates in levels remain stable between 60% and 70%, indicating good game balance.

@@ -31,8 +31,8 @@ Players age 16-35 who want short high-feedback racing sessions, clear mastery si
 
 ## source paths
 
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/planning/Game_Proposal.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/planning/One_Page_Game_Concept.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/planning/MVP_Hypothesis.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/planning/Platform_Direction.md
-- /home/node/.openclaw/workspace/385b9e33-8429-81d0-a12e-e867f5744b3b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260620172442/project/docs/product/MVP_PRD.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/planning/Game_Proposal.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/planning/One_Page_Game_Concept.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/planning/MVP_Hypothesis.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/planning/Platform_Direction.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/product/MVP_PRD.md
