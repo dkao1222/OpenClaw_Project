@@ -1,7 +1,7 @@
 # Spec Review Context Pack
 
 project_name: NeonDrift_MVP
-channel_id: 386b9e33-8429-816f-89bf-dc593e216fba
+channel_id: 382b9e3384298039b171c9b2a60ae644
 stage: spec_review
 policy: compressed context pack
 

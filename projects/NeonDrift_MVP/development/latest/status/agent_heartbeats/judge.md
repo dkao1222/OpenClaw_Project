@@ -2,7 +2,7 @@
 
 agent_id: judge
 project_name: NeonDrift_MVP
-channel_id: 386b9e33-8429-815b-b132-fb63e00fe3a9
+channel_id: 382b9e3384298039b171c9b2a60ae644
 stage: development
 status: completed
 progress_percent: 100

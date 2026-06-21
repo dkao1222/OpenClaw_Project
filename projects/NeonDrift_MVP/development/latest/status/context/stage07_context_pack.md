@@ -1,7 +1,7 @@
 # Stage 07 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+project_name: NeonDrift_MVP
+channel_id: 382b9e3384298039b171c9b2a60ae644
 stage_agent: economy-liveops-designer
 next_agent: technical-artist
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/status/context/stage07_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/handoffs/planning/07_economy-liveops-designer_to_technical-artist.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/docs/business/Monetization_and_Retention_Draft.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/docs/business/Progression_and_Rewards_Draft.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/status/agent_heartbeats/economy-liveops-designer.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage07_context_pack.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/07_economy-liveops-designer_to_technical-artist.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/business/Monetization_and_Retention_Draft.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/business/Progression_and_Rewards_Draft.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/agent_heartbeats/economy-liveops-designer.md

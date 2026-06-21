@@ -9,6 +9,7 @@
 - PASS unity/NeonDrift/Assets/Scripts/GameSessionController.cs
 - PASS unity/NeonDrift/Assets/Scripts/NeonDriftHud.cs
 - PASS unity/NeonDrift/Assets/Scripts/RuntimeQaProbe.cs
+- PASS unity/NeonDrift/Assets/Scripts/NeonDriftUiActions.cs
 - PASS unity/NeonDrift/Assets/Tests/EditMode/NeonDriftEditModeTests.cs
 - PASS unity/NeonDrift/Assets/Tests/EditMode/NeonDrift.EditModeTests.asmdef
 - PASS unity/NeonDrift/Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs
