@@ -2,9 +2,9 @@
 
 from_agent: technical-artist
 to_agent: audio-designer
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-project_channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
-output_folder: /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/
+project_name: NeonDrift_MVP
+project_channel_id: 382b9e3384298039b171c9b2a60ae644
+output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 requires_user_confirmation: true
 visual mood: defined for next owner
 readability constraints: defined for next owner
@@ -12,14 +12,14 @@ VFX and feedback moments: defined for next owner
 performance budget assumptions: defined for next owner
 audio feedback opportunities: defined for next owner
 context_policy: compressed_context_first
-context_pack_path: /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/status/context/stage08_context_pack.md
+context_pack_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage08_context_pack.md
 next_stage_input_policy: read this handoff first, then read the compact context pack. Open full source paths only if a required detail is missing.
 suggested_next_action: Confirm Stage 08 and start audio-designer from Notion.
 
 ## Stage 08 source paths
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/status/context/stage08_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/docs/design/Visual_Direction.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/docs/design/Readability_and_Performance_Risk.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage08_context_pack.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Visual_Direction.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Readability_and_Performance_Risk.md
 - Additional formal docs are available in Notion/Git; open only if compact context is missing a required detail.
 
 Do not start audio-designer in this micro-stage.

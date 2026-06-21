@@ -1,7 +1,7 @@
 # Validation Report: planning_stage_05
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-- project_channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+- project_name: NeonDrift_MVP
+- project_channel_id: 382b9e3384298039b171c9b2a60ae644
 
 ## Checks
 - PASS file.readable.docs/design/Core_Gameplay_Loop.md
@@ -77,15 +77,15 @@
 - PASS file.required_sections.docs/design/GDD_Mechanics_Draft.md
 - PASS file.schema.docs/design/GDD_Mechanics_Draft.md
 - PASS file.readable.status/context/stage05_context_pack.md
-- PASS file.size_limit.status/context/stage05_context_pack.md: 2877<=3000
+- PASS file.size_limit.status/context/stage05_context_pack.md: 2461<=3000
 - PASS file.no_prompt_constraints.status/context/stage05_context_pack.md
 - PASS file.schema.status/context/stage05_context_pack.md
 - PASS file.readable.status/agent_heartbeats/game-designer.md
-- PASS file.size_limit.status/agent_heartbeats/game-designer.md: 421<=1200
+- PASS file.size_limit.status/agent_heartbeats/game-designer.md: 369<=1200
 - PASS file.no_prompt_constraints.status/agent_heartbeats/game-designer.md
 - PASS file.schema.status/agent_heartbeats/game-designer.md
 - PASS file.readable.handoffs/planning/05_game-designer_to_level-designer.md
-- PASS file.size_limit.handoffs/planning/05_game-designer_to_level-designer.md: 2183<=2500
+- PASS file.size_limit.handoffs/planning/05_game-designer_to_level-designer.md: 1767<=2500
 - PASS file.no_prompt_constraints.handoffs/planning/05_game-designer_to_level-designer.md
 - PASS file.schema.handoffs/planning/05_game-designer_to_level-designer.md
 - PASS handoff.context_pack_path.status/context/stage05_context_pack.md

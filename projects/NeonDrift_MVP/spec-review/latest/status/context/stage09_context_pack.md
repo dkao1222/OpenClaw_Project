@@ -1,7 +1,7 @@
 # Stage 09 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+project_name: NeonDrift_MVP
+channel_id: 382b9e3384298039b171c9b2a60ae644
 stage_agent: audio-designer
 next_agent: game-producer
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/status/context/stage09_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/handoffs/planning/09_audio-designer_to_game-producer.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/docs/design/Audio_Direction.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/docs/design/Audio_Haptics_Event_Map.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-89bf-dc593e216fba/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621150114/project/status/agent_heartbeats/audio-designer.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage09_context_pack.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/09_audio-designer_to_game-producer.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Audio_Direction.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Audio_Haptics_Event_Map.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/agent_heartbeats/audio-designer.md

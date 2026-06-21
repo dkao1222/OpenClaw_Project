@@ -1,7 +1,7 @@
 # Validation Report: planning_stage_11
 
-- project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621150037
-- project_channel_id: 386b9e33-8429-814a-a247-c06c57f54b13
+- project_name: NeonDrift_MVP
+- project_channel_id: 382b9e3384298039b171c9b2a60ae644
 
 ## Checks
 - PASS file.readable.docs/review/Planning_Gap_Review.md
@@ -21,15 +21,15 @@
 - PASS file.required_sections.docs/review/Planning_Risk_Register.md
 - PASS file.schema.docs/review/Planning_Risk_Register.md
 - PASS file.readable.status/context/stage11_context_pack.md
-- PASS file.size_limit.status/context/stage11_context_pack.md: 2199<=3000
+- PASS file.size_limit.status/context/stage11_context_pack.md: 1887<=3000
 - PASS file.no_prompt_constraints.status/context/stage11_context_pack.md
 - PASS file.schema.status/context/stage11_context_pack.md
 - PASS file.readable.status/agent_heartbeats/critic.md
-- PASS file.size_limit.status/agent_heartbeats/critic.md: 398<=1200
+- PASS file.size_limit.status/agent_heartbeats/critic.md: 346<=1200
 - PASS file.no_prompt_constraints.status/agent_heartbeats/critic.md
 - PASS file.schema.status/agent_heartbeats/critic.md
 - PASS file.readable.handoffs/planning/11_critic_to_judge.md
-- PASS file.size_limit.handoffs/planning/11_critic_to_judge.md: 1766<=2500
+- PASS file.size_limit.handoffs/planning/11_critic_to_judge.md: 1454<=2500
 - PASS file.no_prompt_constraints.handoffs/planning/11_critic_to_judge.md
 - PASS file.schema.handoffs/planning/11_critic_to_judge.md
 - PASS handoff.context_pack_path.status/context/stage11_context_pack.md
