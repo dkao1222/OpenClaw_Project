@@ -8,7 +8,7 @@
 - PASS platform_target_present: chars=69
 - PASS monetization_direction_present: chars=113
 - PASS compatibility_target_present: chars=119
-- PASS output_expectation_present: chars=154
+- PASS output_expectation_present: chars=213
 - PASS stage_range_supported: define-full
 
 ## Result

@@ -3,8 +3,8 @@
 ## Canonical Fields
 
 - project_name: NeonDrift_MVP
-- define_page_id: 386b9e33-8429-81be-8866-d5946af90b79
-- define_run_id: notion-NeonDrift_MVP-define-20260621130921
+- define_page_id: 386b9e33-8429-819c-b771-ef92781c57e6
+- define_run_id: notion-NeonDrift_MVP-define-20260621143440
 - agent_model_policy: per-agent-config
 - thinking: off
 
@@ -34,8 +34,8 @@ iOS 15+, iPhone SE 2/3, iPhone 12/13 mini, iPhone 15/15 Pro, Android 10+ represe
 
 ## Output Expectation
 
-Planning must produce bounded Markdown handoffs, Notion-readable documents, Git publish output, and downstream-ready spec review and development handoffs.
+Planning must produce bounded Markdown handoffs, Notion-readable documents, Git publish output, downstream-ready spec review and development handoffs, local Unity build evidence, and deterministic QA result files.
 
 ## Development Request
 
-Normalize the game request before planning. Create canonical planning input only if required fields are present.
+Run the full pipeline from Define through Planning, Spec Review, Development, local Unity Build, and QA. Use deterministic evidence validation for QA and keep all outputs Notion-readable and Git-publishable.
