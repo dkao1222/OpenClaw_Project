@@ -1,7 +1,7 @@
 # Stage 06 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435
-channel_id: 386b9e33-8429-81d3-9ecd-cb103dcf7fa9
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931
+channel_id: 386b9e33-8429-8113-beff-e8722834f903
 stage_agent: level-designer
 next_agent: economy-liveops-designer
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/status/context/stage06_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/handoffs/planning/06_level-designer_to_economy-liveops-designer.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/docs/design/Content_Design_Draft.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/docs/design/Level_and_Tutorial_Pacing.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/status/agent_heartbeats/level-designer.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/status/context/stage06_context_pack.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/handoffs/planning/06_level-designer_to_economy-liveops-designer.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/docs/design/Content_Design_Draft.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/docs/design/Level_and_Tutorial_Pacing.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/status/agent_heartbeats/level-designer.md

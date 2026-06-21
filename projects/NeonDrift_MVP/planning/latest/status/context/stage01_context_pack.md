@@ -1,19 +1,19 @@
 # Stage 01 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435
-channel_id: 386b9e33-8429-81d3-9ecd-cb103dcf7fa9
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931
+channel_id: 386b9e33-8429-8113-beff-e8722834f903
 
 ## project goal
 
-NeonDrift MVP is a fast mobile arcade drifting game built in Unity. The product goal is to validate a lightweight, replayable one-minute game loop that can ship first to iOS, then Android and WebGL, with monetization through rewarded ads after gameplay quality is proven.
+NeonDrift MVP 是一款可快速迭代的 Unity 手機霓虹閃避遊戲，用短局高重玩性解決玩家碎片時間想快速進入、快速失敗、快速重試的需求。商業目標是建立可驗證的留存、廣告變現與跨平台發布基礎，先以 iOS simulator/local build 驗證，再擴展到 Android/WebGL。
 
 ## target audience
 
-Mobile casual arcade players age 13+, especially players who enjoy quick reflex games, score chasing, neon racing visuals, and short sessions during breaks. Key pain points are slow onboarding, bloated progression systems, and games that require too much commitment before fun starts.
+目標使用者是 13-35 歲喜歡 arcade、runner、reaction game 的手機玩家；常在通勤、排隊或短休息時間遊玩；痛點是多數手機遊戲開局太慢、廣告干擾太早、操作不夠即時。需要單手可玩、HUD 清楚、立即重試、低學習成本與穩定效能。
 
 ## core value
 
-1. Instant one-tap/one-touch drift control with readable feedback. 2. Clear score, boost/combo, failure, and retry loop for fast replay. 3. Mobile-safe UI with icon, font, background, VFX, safe-area, and compatibility evidence suitable for App Store and Google Play preparation.
+1. 單手左右 drift 操作立即有回饋。2. 60 FPS 目標下保持清楚 HUD、safe area、碰撞與重試流程。3. 支援廣告變現前置規劃，保留 rewarded ads 優先且不破壞短局節奏。
 
 ## locked decisions
 
@@ -31,6 +31,6 @@ Read the Stage 01 handoff first, then this context pack. Open source paths only 
 
 ## source paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/status/context/Initial_Request.md
+- /home/node/.openclaw/workspace/386b9e33-8429-8113-beff-e8722834f903/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621130931/project/status/context/Initial_Request.md
 - status/context/Project_Context_Index.md
 - status/context/Current_Status_Summary.md
