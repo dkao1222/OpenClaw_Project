@@ -3,7 +3,7 @@
 pipeline: Game Build
 project_name: NeonDrift_MVP
 source_project_name: NeonDrift_MVP
-run_id: notion-NeonDrift_MVP-build-build-ios-simulator-20260621165655
+run_id: notion-NeonDrift_MVP-build-build-ios-simulator-20260621171524
 stage_range: build-ios-simulator
 source_output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/development/final_handoff.md
@@ -11,6 +11,6 @@ source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60a
 ## Pipeline Request
 
 Start Game Build only after Game Development has passed.
-Game Development run id: notion-NeonDrift_MVP-development-dev-full-20260621165152
+Game Development run id: notion-NeonDrift_MVP-development-dev-full-20260621171407
 Source pipeline: development
-This build row is monitor-only. Keep Status as not start until the user confirms local Unity is ready, then manually change Status to processing.
+Build row starts as not start. Change Status to processing after Unity is ready; watcher will run the local build runner.
