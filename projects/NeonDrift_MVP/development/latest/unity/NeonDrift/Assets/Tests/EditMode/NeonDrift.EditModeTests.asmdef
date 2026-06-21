@@ -1,9 +1,7 @@
 {
   "name": "NeonDrift.EditModeTests",
   "rootNamespace": "",
-  "references": [
-    "Assembly-CSharp"
-  ],
+  "references": [],
   "includePlatforms": [
     "Editor"
   ],

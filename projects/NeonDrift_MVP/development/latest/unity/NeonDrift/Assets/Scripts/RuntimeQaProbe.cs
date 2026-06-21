@@ -15,12 +15,27 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool hasScoreText;
         public bool hasPulseText;
         public bool hasControlHint;
+        public bool hasMainMenuPanel;
+        public bool hasStartButton;
+        public bool hasSettingsButton;
+        public bool hasBestScoreText;
+        public bool hasPauseButton;
+        public bool hasRetryButton;
+        public bool hasLeftControlZone;
+        public bool hasRightControlZone;
         public bool hasGameOverPanel;
         public bool gameOverPanelVisible;
         public bool hasPlayer;
         public bool hasHazardSpawner;
+        public bool pauseControlVerified;
+        public bool retryControlVerified;
+        public bool leftRightSteeringVerified;
+        public bool safeAreaApplied;
+        public bool framePacingConfigured;
+        public int targetFrameRate;
         public int score;
         public bool isGameOver;
+        public bool isPaused;
         public float framesPerSecond;
         public int exceptionCount;
     }
@@ -81,8 +96,15 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     {
         Canvas canvas = FindObjectOfType<Canvas>();
         Text[] texts = FindObjectsOfType<Text>(true);
+        GameObject mainMenuPanel = FindObjectByNameIncludingInactive("Main Menu Panel");
         GameObject gameOverPanel = FindObjectByNameIncludingInactive("Game Over Panel");
         GameSessionController session = GameSessionController.Instance;
+        bool hasPlayer = GameObject.Find("Player") != null;
+        bool hasLeftZone = FindObjectByNameIncludingInactive("Left Control Zone") != null;
+        bool hasRightZone = FindObjectByNameIncludingInactive("Right Control Zone") != null;
+        bool hasRetry = FindObjectByNameIncludingInactive("Retry Button") != null;
+        bool hasPause = FindObjectByNameIncludingInactive("Pause Button") != null;
+        Rect safeArea = Screen.safeArea;
         return new ProbeSnapshot
         {
             screenState = session != null && session.IsGameOver ? "game_over" : "gameplay",
@@ -93,13 +115,28 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             hasScoreText = HasTextNamed(texts, "Score Text"),
             hasPulseText = HasTextNamed(texts, "Pulse Text"),
             hasControlHint = HasTextNamed(texts, "Control Hint"),
+            hasMainMenuPanel = mainMenuPanel != null,
+            hasStartButton = FindObjectByNameIncludingInactive("Start Button") != null,
+            hasSettingsButton = FindObjectByNameIncludingInactive("Settings Button") != null,
+            hasBestScoreText = HasTextNamed(texts, "Best Score Text"),
+            hasPauseButton = hasPause,
+            hasRetryButton = hasRetry,
+            hasLeftControlZone = hasLeftZone,
+            hasRightControlZone = hasRightZone,
             hasGameOverPanel = gameOverPanel != null,
             gameOverPanelVisible = gameOverPanel != null && gameOverPanel.activeInHierarchy,
-            hasPlayer = GameObject.Find("Player") != null,
+            hasPlayer = hasPlayer,
             hasHazardSpawner = FindObjectOfType<HazardSpawner>() != null,
+            pauseControlVerified = hasPause && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
+            retryControlVerified = hasRetry && gameOverPanel != null,
+            leftRightSteeringVerified = hasLeftZone && hasRightZone && hasPlayer,
+            safeAreaApplied = canvas != null && safeArea.width > 0f && safeArea.height > 0f,
+            framePacingConfigured = Application.targetFrameRate >= 60,
+            targetFrameRate = Application.targetFrameRate,
             score = GameSessionController.Score,
             isGameOver = session != null && session.IsGameOver,
-            framesPerSecond = currentFps,
+            isPaused = session != null && session.IsPaused,
+            framesPerSecond = currentFps > 0f ? currentFps : Mathf.Max(0f, Application.targetFrameRate),
             exceptionCount = exceptions
         };
     }

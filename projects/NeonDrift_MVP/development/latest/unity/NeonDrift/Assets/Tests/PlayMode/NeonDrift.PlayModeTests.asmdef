@@ -1,9 +1,7 @@
 {
   "name": "NeonDrift.PlayModeTests",
   "rootNamespace": "",
-  "references": [
-    "Assembly-CSharp"
-  ],
+  "references": [],
   "includePlatforms": [
     "Editor"
   ],

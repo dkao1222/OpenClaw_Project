@@ -7,15 +7,18 @@ public sealed class GameSessionController : MonoBehaviour
     public static GameSessionController Instance { get; private set; }
 
     private bool gameOver;
+    private bool paused;
     private float scoreTimer;
 
     public bool IsGameOver => gameOver;
+    public bool IsPaused => paused;
 
     private void Awake()
     {
         Instance = this;
         Score = 0;
         Time.timeScale = 1f;
+        Application.targetFrameRate = 60;
     }
 
     private void Update()
@@ -24,8 +27,18 @@ public sealed class GameSessionController : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0) || Input.touchCount > 0 || Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                Retry();
             }
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TogglePause();
+        }
+
+        if (paused)
+        {
             return;
         }
 
@@ -46,5 +59,22 @@ public sealed class GameSessionController : MonoBehaviour
 
         gameOver = true;
         Time.timeScale = 0f;
+    }
+
+    public void TogglePause()
+    {
+        if (gameOver)
+        {
+            return;
+        }
+
+        paused = !paused;
+        Time.timeScale = paused ? 0f : 1f;
+    }
+
+    public void Retry()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

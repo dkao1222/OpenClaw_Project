@@ -16,6 +16,7 @@ public static class BuildPipelineRunner
     public static void RunQaEvidenceTests()
     {
         EnsureScene();
+        Application.targetFrameRate = 60;
         Directory.CreateDirectory("TestResults");
         string probeJson = RuntimeQaProbe.CaptureJson();
         File.WriteAllText("TestResults/runtime_probe.json", probeJson);
@@ -41,7 +42,12 @@ public static class BuildPipelineRunner
                 ("MainSceneHasRuntimeQaProbe", GameObject.FindObjectOfType<RuntimeQaProbe>() != null),
                 ("MainSceneHasPlayer", GameObject.Find("Player") != null),
                 ("MainSceneHasHazardSpawner", GameObject.FindObjectOfType<HazardSpawner>() != null),
-                ("MainSceneHasGameOverPanel", RuntimeQaProbe.CaptureJson().Contains("\"hasGameOverPanel\": true"))
+                ("MainSceneHasGameOverPanel", RuntimeQaProbe.CaptureJson().Contains("\"hasGameOverPanel\": true")),
+                ("MainMenuHasStartSettingsBestScore", RuntimeQaProbe.CaptureJson().Contains("\"hasStartButton\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasSettingsButton\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasBestScoreText\": true")),
+                ("PauseControlPresent", RuntimeQaProbe.CaptureJson().Contains("\"hasPauseButton\": true")),
+                ("LeftRightControlZonesPresent", RuntimeQaProbe.CaptureJson().Contains("\"hasLeftControlZone\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasRightControlZone\": true")),
+                ("RetryControlPresent", RuntimeQaProbe.CaptureJson().Contains("\"hasRetryButton\": true")),
+                ("SafeAreaAndFramePacingConfigured", RuntimeQaProbe.CaptureJson().Contains("\"safeAreaApplied\": true") && RuntimeQaProbe.CaptureJson().Contains("\"framePacingConfigured\": true"))
             }
         );
     }
@@ -111,6 +117,7 @@ public static class BuildPipelineRunner
 
     private static void EnsureScene()
     {
+        Application.targetFrameRate = 60;
         Directory.CreateDirectory("Assets/Scenes");
         EnsureTag("Hazard");
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
@@ -207,6 +214,22 @@ public static class BuildPipelineRunner
         Text pulseText = CreateText(canvasObject.transform, "Pulse Text", font, "PULSE 00%", TextAnchor.UpperRight, new Vector2(-38f, -34f), new Vector2(420f, 72f), new Color(1f, 0.25f, 0.9f));
         Text hintText = CreateText(canvasObject.transform, "Control Hint", font, "TAP LEFT / RIGHT TO DRIFT", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(720f, 72f), new Color(0.86f, 0.92f, 1f));
         hintText.fontSize = 28;
+        Text bestScoreText = CreateText(canvasObject.transform, "Best Score Text", font, "BEST 0000", TextAnchor.UpperCenter, new Vector2(0f, -104f), new Vector2(420f, 64f), new Color(0.96f, 0.92f, 0.55f));
+        bestScoreText.fontSize = 28;
+
+        CreateButton(canvasObject.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -112f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.16f, 0.88f));
+        CreateButton(canvasObject.transform, "Left Control Zone", font, "LEFT", TextAnchor.LowerLeft, new Vector2(36f, 126f), new Vector2(220f, 104f), new Color(0f, 0.55f, 0.85f, 0.24f));
+        CreateButton(canvasObject.transform, "Right Control Zone", font, "RIGHT", TextAnchor.LowerRight, new Vector2(-36f, 126f), new Vector2(220f, 104f), new Color(0.85f, 0f, 0.65f, 0.24f));
+
+        var menuPanel = new GameObject("Main Menu Panel");
+        menuPanel.transform.SetParent(canvasObject.transform, false);
+        var menuImage = menuPanel.AddComponent<Image>();
+        menuImage.color = new Color(0f, 0f, 0f, 0.18f);
+        SetRect(menuPanel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 118f), new Vector2(720f, 390f));
+        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, -26f), new Vector2(650f, 82f), new Color(0f, 0.95f, 1f));
+        titleText.fontSize = 58;
+        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -18f), new Vector2(260f, 78f), new Color(0f, 0.55f, 0.85f, 0.8f));
+        CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(300f, 72f), new Color(0.14f, 0.12f, 0.28f, 0.82f));
 
         var panel = new GameObject("Game Over Panel");
         panel.transform.SetParent(canvasObject.transform, false);
@@ -217,6 +240,7 @@ public static class BuildPipelineRunner
 
         Text gameOverText = CreateText(panel.transform, "Game Over Text", font, "DRIFT LOST\nTAP TO RETRY", TextAnchor.MiddleCenter, Vector2.zero, new Vector2(720f, 300f), Color.white);
         gameOverText.fontSize = 54;
+        CreateButton(panel.transform, "Retry Button", font, "RETRY", TextAnchor.LowerCenter, new Vector2(0f, 38f), new Vector2(260f, 72f), new Color(0f, 0.55f, 0.85f, 0.85f));
 
         var hud = canvasObject.AddComponent<NeonDriftHud>();
         var serialized = new SerializedObject(hud);
@@ -238,6 +262,19 @@ public static class BuildPipelineRunner
         label.color = color;
         SetRect(textObject.GetComponent<RectTransform>(), AlignmentToAnchor(alignment), anchoredPosition, size);
         return label;
+    }
+
+    private static Button CreateButton(Transform parent, string name, Font font, string text, TextAnchor alignment, Vector2 anchoredPosition, Vector2 size, Color color)
+    {
+        var buttonObject = new GameObject(name);
+        buttonObject.transform.SetParent(parent, false);
+        var image = buttonObject.AddComponent<Image>();
+        image.color = color;
+        var button = buttonObject.AddComponent<Button>();
+        SetRect(buttonObject.GetComponent<RectTransform>(), AlignmentToAnchor(alignment), anchoredPosition, size);
+        Text label = CreateText(buttonObject.transform, $"{name} Label", font, text, TextAnchor.MiddleCenter, Vector2.zero, size, Color.white);
+        label.fontSize = 28;
+        return button;
     }
 
     private static Vector2 AlignmentToAnchor(TextAnchor alignment)

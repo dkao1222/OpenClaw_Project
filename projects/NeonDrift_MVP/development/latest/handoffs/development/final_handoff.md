@@ -2,11 +2,11 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-project_channel_id: 386b9e33-8429-81c3-926d-fb9fb6795dd6
-output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81c3-926d-fb9fb6795dd6/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621131701/project/
+project_channel_id: 386b9e33-8429-814a-a5ab-cf5e3e39660d
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/
 delivery_status: passed
 engine: Unity
-unity_project_path: /home/node/.openclaw/workspace/386b9e33-8429-81c3-926d-fb9fb6795dd6/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621131701/project/unity/NeonDrift/
+unity_project_path: /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/unity/NeonDrift/
 target_platforms:
   - iOS
   - Android

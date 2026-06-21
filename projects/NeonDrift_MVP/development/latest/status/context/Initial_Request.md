@@ -1,13 +1,13 @@
 # Initial Request
 
 project_name: NeonDrift_MVP
-workspace_key: 386b9e33-8429-8113-beff-e8722834f903
-run_id: notion-NeonDrift_MVP-0-12-20260621130931
+workspace_key: 386b9e33-8429-8189-8eaa-e181b7c82cc8
+run_id: notion-NeonDrift_MVP-0-12-20260621143447
 stage_range: 0-12
 agent_model_policy: per-agent-config
 legacy_model_field_ignored: per-agent-config
 thinking: off
-requested_by: define:notion-NeonDrift_MVP-define-20260621130921
+requested_by: define:notion-NeonDrift_MVP-define-20260621143440
 
 ## Pipeline Execution Policy
 
@@ -27,15 +27,15 @@ NeonDrift MVP 是一款可快速迭代的 Unity 手機霓虹閃避遊戲，用�
 
 ## Development Request
 
-Normalize the game request before planning. Create canonical planning input only if required fields are present.
+Run the full pipeline from Define through Planning, Spec Review, Development, local Unity Build, and QA. Use deterministic evidence validation for QA and keep all outputs Notion-readable and Git-publishable.
 
 Define source:
-- define_run_id: notion-NeonDrift_MVP-define-20260621130921
-- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81be-8866-d5946af90b79/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621130921/project/
-- define_handoff_path: /home/node/.openclaw/workspace/386b9e33-8429-81be-8866-d5946af90b79/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621130921/project/handoffs/define/handoff_to_planning.md
+- define_run_id: notion-NeonDrift_MVP-define-20260621143440
+- define_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-819c-b771-ef92781c57e6/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621143440/project/
+- define_handoff_path: /home/node/.openclaw/workspace/386b9e33-8429-819c-b771-ef92781c57e6/NeonDrift_MVP__define__notion-NeonDrift_MVP-define-20260621143440/project/handoffs/define/handoff_to_planning.md
 
 Locked define constraints:
 - platform_target: Unity 6000.0.71f1, iOS-first, Android and WebGL as secondary targets.
 - monetization_direction: Rewarded ads first; interstitial ads only after retention and user experience review. AdMob account is available.
 - compatibility_target: iOS 15+, iPhone SE 2/3, iPhone 12/13 mini, iPhone 15/15 Pro, Android 10+ representative devices, WebGL desktop browser.
-- output_expectation: Planning must produce bounded Markdown handoffs, Notion-readable documents, Git publish output, and downstream-ready spec review and development handoffs.
+- output_expectation: Planning must produce bounded Markdown handoffs, Notion-readable documents, Git publish output, downstream-ready spec review and development handoffs, local Unity build evidence, and deterministic QA result files.
