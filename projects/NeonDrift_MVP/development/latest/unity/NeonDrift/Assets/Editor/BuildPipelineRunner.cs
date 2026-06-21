@@ -51,7 +51,9 @@ public static class BuildPipelineRunner
                 ("SafeAreaAndFramePacingConfigured", RuntimeQaProbe.CaptureJson().Contains("\"safeAreaApplied\": true") && RuntimeQaProbe.CaptureJson().Contains("\"framePacingConfigured\": true")),
                 ("UiEventSystemPresent", RuntimeQaProbe.CaptureJson().Contains("\"hasEventSystem\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasGraphicRaycaster\": true")),
                 ("MenuButtonsClickable", RuntimeQaProbe.CaptureJson().Contains("\"startButtonClickable\": true") && RuntimeQaProbe.CaptureJson().Contains("\"settingsButtonClickable\": true")),
-                ("PauseRetryButtonsClickable", RuntimeQaProbe.CaptureJson().Contains("\"pauseButtonClickable\": true") && RuntimeQaProbe.CaptureJson().Contains("\"retryButtonClickable\": true"))
+                ("PauseRetryButtonsClickable", RuntimeQaProbe.CaptureJson().Contains("\"pauseButtonClickable\": true") && RuntimeQaProbe.CaptureJson().Contains("\"retryButtonClickable\": true")),
+                ("ButtonPositionsAndSizesAreVerified", RuntimeQaProbe.CaptureJson().Contains("\"buttonLayoutVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"startButtonRect\"") && RuntimeQaProbe.CaptureJson().Contains("\"rightControlZoneRect\"")),
+                ("CoreGameplayFunctionsAreVerified", RuntimeQaProbe.CaptureJson().Contains("\"coreGameplayObjectsVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"scoringSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"pauseSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"failureRetrySystemVerified\": true"))
             }
         );
     }
@@ -226,8 +228,8 @@ public static class BuildPipelineRunner
         bestScoreText.fontSize = 28;
 
         CreateButton(canvasObject.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -112f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.16f, 0.88f));
-        CreateButton(canvasObject.transform, "Left Control Zone", font, "LEFT", TextAnchor.LowerLeft, new Vector2(36f, 126f), new Vector2(220f, 104f), new Color(0f, 0.55f, 0.85f, 0.24f));
-        CreateButton(canvasObject.transform, "Right Control Zone", font, "RIGHT", TextAnchor.LowerRight, new Vector2(-36f, 126f), new Vector2(220f, 104f), new Color(0.85f, 0f, 0.65f, 0.24f));
+        CreateButton(canvasObject.transform, "Left Control Zone", font, "LEFT", TextAnchor.LowerLeft, new Vector2(36f, 126f), new Vector2(220f, 140f), new Color(0f, 0.55f, 0.85f, 0.24f));
+        CreateButton(canvasObject.transform, "Right Control Zone", font, "RIGHT", TextAnchor.LowerRight, new Vector2(-36f, 126f), new Vector2(220f, 140f), new Color(0.85f, 0f, 0.65f, 0.24f));
 
         var menuPanel = new GameObject("Main Menu Panel");
         menuPanel.transform.SetParent(canvasObject.transform, false);
@@ -295,6 +297,8 @@ public static class BuildPipelineRunner
     {
         if (alignment == TextAnchor.UpperLeft) return new Vector2(0f, 1f);
         if (alignment == TextAnchor.UpperRight) return new Vector2(1f, 1f);
+        if (alignment == TextAnchor.LowerLeft) return new Vector2(0f, 0f);
+        if (alignment == TextAnchor.LowerRight) return new Vector2(1f, 0f);
         if (alignment == TextAnchor.LowerCenter) return new Vector2(0.5f, 0f);
         return new Vector2(0.5f, 0.5f);
     }

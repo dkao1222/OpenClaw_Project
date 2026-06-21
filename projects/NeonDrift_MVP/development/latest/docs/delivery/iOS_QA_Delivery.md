@@ -3,12 +3,12 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: qa-new-gate-smoke
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260621171618
 - 交付狀態: blocked
 - QA 狀態: failed
 - Release candidate: blocked
 - checks_total: 59
-- checks_failed: 18
+- checks_failed: 8
 - checks_blocked: 0
 - bundle_id: com.DefaultCompany.NeonDrift
 
@@ -42,24 +42,14 @@ xcrun simctl launch booted com.DefaultCompany.NeonDrift
 
 ## Required Fixes
 
-- runtime_probe_button_layout_verified: buttonLayoutVerified=None in runtime_probe.json.
-- runtime_probe_menu_button_size_verified: menuButtonSizeVerified=None in runtime_probe.json.
-- runtime_probe_pause_retry_button_size_verified: pauseRetryButtonSizeVerified=None in runtime_probe.json.
-- runtime_probe_control_zone_size_verified: controlZoneSizeVerified=None in runtime_probe.json.
-- runtime_probe_controls_inside_safe_area: controlsInsideSafeArea=None in runtime_probe.json.
-- runtime_probe_controls_do_not_overlap: controlsDoNotOverlap=None in runtime_probe.json.
-- runtime_probe_core_gameplay_objects_verified: coreGameplayObjectsVerified=None in runtime_probe.json.
-- runtime_probe_scoring_system_verified: scoringSystemVerified=None in runtime_probe.json.
-- runtime_probe_pause_system_verified: pauseSystemVerified=None in runtime_probe.json.
-- runtime_probe_failure_retry_system_verified: failureRetrySystemVerified=None in runtime_probe.json.
+- runtime_probe_button_layout_verified: buttonLayoutVerified=False in runtime_probe.json.
+- runtime_probe_control_zone_size_verified: controlZoneSizeVerified=False in runtime_probe.json.
+- runtime_probe_controls_do_not_overlap: controlsDoNotOverlap=False in runtime_probe.json.
+- runtime_probe_core_gameplay_objects_verified: coreGameplayObjectsVerified=False in runtime_probe.json.
+- runtime_probe_scoring_system_verified: scoringSystemVerified=False in runtime_probe.json.
+- runtime_probe_pause_system_verified: pauseSystemVerified=False in runtime_probe.json.
 - playmode_button_position_size_contract: ButtonPositionsAndSizesAreVerified not found in PlayMode XML.
 - playmode_core_gameplay_function_contract: CoreGameplayFunctionsAreVerified not found in PlayMode XML.
-- runtime_probe_start_button_rect_present: startButtonRect=None.
-- runtime_probe_settings_button_rect_present: settingsButtonRect=None.
-- runtime_probe_pause_button_rect_present: pauseButtonRect=None.
-- runtime_probe_retry_button_rect_present: retryButtonRect=None.
-- runtime_probe_left_control_zone_rect_present: leftControlZoneRect=None.
-- runtime_probe_right_control_zone_rect_present: rightControlZoneRect=None.
 
 ## English Summary
 

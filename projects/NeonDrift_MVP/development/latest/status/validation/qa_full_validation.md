@@ -1,6 +1,6 @@
 # Game QA Validation Report
 
-- session_id: qa-new-gate-smoke-qa-full
+- session_id: notion-NeonDrift_MVP-qa-qa-full-20260621171618-qa-full
 - output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 
 ## Checks
@@ -16,7 +16,7 @@
 - PASS qa_result.valid_check_statuses
 - PASS qa_result.evidence_paths_exist: 69 checked
 - PASS qa_result.checks_total_matches: 59
-- PASS qa_result.checks_failed_matches: 18
+- PASS qa_result.checks_failed_matches: 8
 - PASS qa_result.checks_blocked_matches: 0
 - PASS qa_result.no_pass_with_fail_or_blocked
 - PASS process.deterministic_finalizer_complete
