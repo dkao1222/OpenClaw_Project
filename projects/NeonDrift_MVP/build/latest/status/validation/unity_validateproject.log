@@ -8,7 +8,7 @@ Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        65536 MB
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao" at "2026-06-21T14:46:43.503839Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao" at "2026-06-21T15:03:08.491269Z"
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Resources/PackageManager/Server/UnityPackageManager
 
 COMMAND LINE ARGUMENTS:
@@ -16,13 +16,13 @@ COMMAND LINE ARGUMENTS:
 -batchmode
 -quit
 -projectPath
-/Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift
+/Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift
 -executeMethod
 BuildPipelineRunner.ValidateProject
 -logFile
-/Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/unity_validateproject.log
-Successfully changed project path to: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift
-/Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift
+/Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_validateproject.log
+Successfully changed project path to: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift
+/Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -60,11 +60,11 @@ Successfully changed project path to: /Users/dragonkao/.openclaw/workspace/386b9
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8459132544]  Target information:
 
-Player connection [8459132544]  * "[IP] 192.168.1.101 [Port] 55505 [Flags] 2 [Guid] 461794206 [EditorId] 461794206 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8459132544]  * "[IP] 192.168.1.101 [Port] 55505 [Flags] 2 [Guid] 2275977912 [EditorId] 2275977912 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8459132544]  * "[IP] 169.254.237.5 [Port] 55505 [Flags] 2 [Guid] 461794206 [EditorId] 461794206 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8459132544]  * "[IP] 169.254.237.5 [Port] 55505 [Flags] 2 [Guid] 2275977912 [EditorId] 2275977912 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8459132544]  * "[IP] 192.168.0.80 [Port] 55505 [Flags] 2 [Guid] 461794206 [EditorId] 461794206 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8459132544]  * "[IP] 192.168.0.80 [Port] 55505 [Flags] 2 [Guid] 2275977912 [EditorId] 2275977912 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8459132544] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8459132544] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -73,12 +73,12 @@ Input System module state changed to: Initialized.
 [Physics::Module] Id: 0xdecafbad
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              74424cd1d4eb4ef9a51cbbfa5a5c6b9d
+  Session Id:              ae10ca60b6d14d05b3998e9375ea45eb
   Correlation Id:          a0d49acc4b7f7257555066953618c9cd
-  External correlation Id: 487229182479131333
+  External correlation Id: 6237176041675719118
   Machine Id:              343h8f5nRUn5G/ld0aThqc7/4NA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-dragonkao" (connect: 0.00s, validation: 0.00s, handshake: 0.20s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao-notifications" at "2026-06-21T14:46:43.703506Z"
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-dragonkao" (connect: 0.00s, validation: 0.00s, handshake: 0.19s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao-notifications" at "2026-06-21T15:03:08.677913Z"
 [Licensing::Module] Error: Access token is unavailable; failed to update
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -88,8 +88,8 @@ Input System module state changed to: Initialized.
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 0.21s
-[Package Manager] Connected to IPC stream "Upm-71910" after 0.2 seconds.
+[Licensing::Module] Licensing Background thread has ended after 0.19s
+[Package Manager] Connected to IPC stream "Upm-74684" after 0.2 seconds.
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -101,7 +101,7 @@ Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.77f1 (88f89d0d8b31)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Assets
+[Subsystems] Discovering subsystems at path /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
  preferred device: Apple M4 Pro (high power)
 Metal devices available: 1
@@ -112,7 +112,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56910
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56684
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 ImportWorker Server TCP listen port: 0
@@ -122,8 +122,8 @@ Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.77f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.001390 seconds.
-- Loaded All Assemblies, in  0.162 seconds
+Registered in 0.001170 seconds.
+- Loaded All Assemblies, in  0.156 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
@@ -131,35 +131,35 @@ Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.196 seconds
-Domain Reload Profiling: 358ms
-	BeginReloadAssembly (39ms)
+- Finished resetting the current domain, in  0.193 seconds
+Domain Reload Profiling: 349ms
+	BeginReloadAssembly (37ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (76ms)
-		LoadAssemblies (38ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (74ms)
+		LoadAssemblies (37ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (75ms)
-			TypeCache.Refresh (74ms)
-				TypeCache.ScanAssembly (67ms)
+		AnalyzeDomain (73ms)
+			TypeCache.Refresh (72ms)
+				TypeCache.ScanAssembly (66ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (196ms)
+	FinalizeReload (194ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (178ms)
+		SetupLoadedEditorAssemblies (176ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (54ms)
+			InitializePlatformSupportModulesInManaged (53ms)
 			SetLoadedEditorAssemblies (2ms)
 			BeforeProcessingInitializeOnLoad (31ms)
-			ProcessInitializeOnLoadAttributes (66ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
+			ProcessInitializeOnLoadAttributes (63ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -170,31 +170,31 @@ Application.AssetDatabase Initial Refresh Start
 [Licensing::Client] Successfully resolved entitlement details
 [Package Manager] Registered 15 packages:
   Built-in packages:
-    com.unity.2d.sprite@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.2d.sprite@0eb6ea2c7181)
-    com.unity.multiplayer.center@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546)
-    com.unity.test-framework@1.6.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.test-framework@082c24152fd4)
-    com.unity.ugui@2.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.ugui@92256ab62536)
-    com.unity.modules.accessibility@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.accessibility)
-    com.unity.modules.ai@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.ai)
-    com.unity.modules.audio@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.audio)
-    com.unity.modules.imageconversion@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.imageconversion)
-    com.unity.modules.jsonserialize@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.jsonserialize)
-    com.unity.modules.physics2d@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.physics2d)
-    com.unity.modules.ui@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.ui)
-    com.unity.modules.uielements@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.uielements)
-    com.unity.modules.imgui@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.imgui)
-    com.unity.modules.hierarchycore@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.hierarchycore)
-    com.unity.ext.nunit@2.0.5 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.ext.nunit@031a54704bff)
+    com.unity.2d.sprite@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.2d.sprite@0eb6ea2c7181)
+    com.unity.multiplayer.center@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546)
+    com.unity.test-framework@1.6.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.test-framework@082c24152fd4)
+    com.unity.ugui@2.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.ugui@92256ab62536)
+    com.unity.modules.accessibility@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.accessibility)
+    com.unity.modules.ai@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.ai)
+    com.unity.modules.audio@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.audio)
+    com.unity.modules.imageconversion@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.imageconversion)
+    com.unity.modules.jsonserialize@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.jsonserialize)
+    com.unity.modules.physics2d@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.physics2d)
+    com.unity.modules.ui@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.uielements)
+    com.unity.modules.imgui@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.imgui)
+    com.unity.modules.hierarchycore@1.0.0 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.0.5 (location: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.ext.nunit@031a54704bff)
 [Subsystems] No new subsystems found in resolved package list.
-[Package Manager] Done registering packages in 0.01 seconds
+[Package Manager] Done registering packages in 0.00 seconds
 [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
-      Now listening on: http://unix:/tmp/ilpp.sock-cdfbd06c53dd8210f3f05b1d435bf229
+      Now listening on: http://unix:/tmp/ilpp.sock-9082d946a9be7ed863a2ebbc77ef7ac6
 [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
 [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Production
 [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
-      Content root path: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift/
+      Content root path: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift/
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -202,44 +202,44 @@ Application.AssetDatabase Initial Refresh Start
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 18.6644ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 18.7820ms
 Starting: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/200b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
-WorkingDir: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift
+WorkingDir: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/unity_build_workspace/NeonDrift
 DisplayProgressbar: Compiling Scripts
-ExitCode: 0 Duration: 0s43ms
+ExitCode: 0 Duration: 0s42ms
 *** Tundra build success (0.03 seconds), 0 items updated, 252 evaluated
-AssetDatabase: script compilation time: 0.363474s
+AssetDatabase: script compilation time: 0.357957s
 Total cache size 17653056
-Total cache size after purge 17653056, took 00:00:00.0119310
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.176 seconds
+Total cache size after purge 17653056, took 00:00:00.0128331
+- Loaded All Assemblies, in  0.182 seconds
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.174 seconds
-Domain Reload Profiling: 350ms
-	BeginReloadAssembly (86ms)
+- Finished resetting the current domain, in  0.173 seconds
+Domain Reload Profiling: 355ms
+	BeginReloadAssembly (91ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (31ms)
+		DisableScriptedObjects (36ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
+		CreateAndSetChildDomain (14ms)
 	RebuildCommonClasses (17ms)
 	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (9ms)
-	LoadAllAssembliesAndSetupDomain (57ms)
-		LoadAssemblies (67ms)
+	LoadAllAssembliesAndSetupDomain (58ms)
+		LoadAssemblies (69ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (16ms)
-			TypeCache.Refresh (12ms)
+			TypeCache.Refresh (11ms)
 				TypeCache.ScanAssembly (8ms)
 			BuildScriptInfoCaches (3ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (174ms)
+	FinalizeReload (173ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (126ms)
+		SetupLoadedEditorAssemblies (125ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (14ms)
 			SetLoadedEditorAssemblies (1ms)
@@ -250,64 +250,65 @@ Domain Reload Profiling: 350ms
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
-Asset Pipeline Refresh (id=2f5ca500c931b4a29b84cbc73839214d): Total: 0.846 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=2fccb769e8d6e4e58ae501bc505b4c76): Total: 0.835 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	Summary:
 		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=287 ms
-		Asset DB Callback time: managed=7 ms, native=5 ms
-		Scripting: domain reloads=1, domain reload time=176 ms, compile time=364 ms, other=4 ms
+		Asset DB Process Time: managed=0 ms, native=278 ms
+		Asset DB Callback time: managed=7 ms, native=3 ms
+		Scripting: domain reloads=1, domain reload time=182 ms, compile time=360 ms, other=4 ms
 		Project Asset Count: scripts=228, non-scripts=154
 		Asset File Changes: new=0, changed=0, moved=0, deleted=0
 		Scan Filter Count: 1
 	InvokeCustomDependenciesCallbacks: 0.001ms
-	InvokePackagesCallback: 6.417ms
-	ApplyChangesToAssetFolders: 0.103ms
-	Scan: 58.620ms
-	OnSourceAssetsModified: 0.001ms
-	CategorizeAssetsWithTransientArtifact: 2.658ms
-	ProcessAssetsWithTransientArtifactChanges: 4.733ms
-	CategorizeAssets: 2.559ms
-	ImportOutOfDateAssets: 174.885ms (-189.768ms without children)
-		CompileScripts: 364.384ms
-		ReloadNativeAssets: 0.000ms
-		UnloadImportedAssets: 0.125ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.039ms
+	InvokePackagesCallback: 3.739ms
+	ApplyChangesToAssetFolders: 0.106ms
+	Scan: 50.950ms
+	OnSourceAssetsModified: 0.000ms
+	CategorizeAssetsWithTransientArtifact: 2.546ms
+	ProcessAssetsWithTransientArtifactChanges: 4.778ms
+	CategorizeAssets: 2.417ms
+	ImportOutOfDateAssets: 173.966ms (-185.844ms without children)
+		CompileScripts: 359.564ms
+		ReloadNativeAssets: 0.001ms
+		UnloadImportedAssets: 0.119ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.038ms
 		InitializingProgressBar: 0.000ms
-		OnDemandSchedulerStart: 0.104ms
-	PostProcessAllAssets: 7.553ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.088ms
+	PostProcessAllAssets: 7.092ms
 	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
-	UnloadStreamsBegin: 0.099ms
+	UnloadStreamsBegin: 0.112ms
 	PersistCurrentRevisions: 0.008ms
 	UnloadStreamsEnd: 0.000ms
-	GenerateScriptTypeHashes: 0.676ms
-	Untracked: 588.605ms
+	GenerateScriptTypeHashes: 0.611ms
+	Untracked: 589.632ms
 
 Application.AssetDatabase Initial Refresh End
-Scanning for USB devices : 0.211ms
+Scanning for USB devices : 0.225ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-NeonDrift
-2026-06-21 22:46:45.297 Unity[71910:4504879] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0xb138a1cc0 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-06-21 23:03:10.252 Unity[74684:4559375] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x86a009d60 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 860 unused Assets / (0.8 MB). Loaded Objects now: 1365.
-Memory consumption went from 100.4 MB to 99.6 MB.
-Total: 3.460000 ms (FindLiveObjects: 0.070958 ms CreateObjectMapping: 0.015167 ms MarkObjects: 3.014916 ms  DeleteObjects: 0.358125 ms)
+Unloading 860 unused Assets / (1.1 MB). Loaded Objects now: 1365.
+Memory consumption went from 100.2 MB to 99.1 MB.
+Total: 3.238666 ms (FindLiveObjects: 0.065875 ms CreateObjectMapping: 0.017042 ms MarkObjects: 2.775583 ms  DeleteObjects: 0.379750 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (1.0 MB). Loaded Objects now: 1371.
-Memory consumption went from 97.6 MB to 96.6 MB.
-Total: 2.856625 ms (FindLiveObjects: 0.024166 ms CreateObjectMapping: 0.008458 ms MarkObjects: 2.811750 ms  DeleteObjects: 0.012000 ms)
+Unloading 1 unused Assets / (186.9 KB). Loaded Objects now: 1371.
+Memory consumption went from 97.4 MB to 97.2 MB.
+Total: 2.427083 ms (FindLiveObjects: 0.019375 ms CreateObjectMapping: 0.008250 ms MarkObjects: 2.393792 ms  DeleteObjects: 0.005250 ms)
 
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Start importing Assets/Scenes/Main.unity using Guid(0ea3028ccdb124ad38c18069f5670ebf) (DefaultImporter) -> (artifact id: '23ae169f5afc1739cd246163858f1d2e') in 0.002322709 seconds
+Start importing Assets/Scenes/Main.unity using Guid(a1a3f3a4cea6448eb81538b0a9315d53) (DefaultImporter) -> (artifact id: '71ec83e8b379fe51ecb2ccb361429f26') in 0.002165666 seconds
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=af11de569f3da4dc5b1bd22fd985a080): Total: 0.029 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=ccd379fcded5a47a491793393a1f1b4b): Total: 0.027 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
 Batchmode quit successfully invoked - shutting down!
+Thread 0x1762a7000 may have been prematurely finalized
 Curl error 42: Callback aborted
-Thread 0x175557000 may have been prematurely finalized
 Input System module state changed to: ShutdownInProgress.
 Input System polling thread exited.
 Input System module state changed to: Shutdown.
@@ -315,8 +316,8 @@ Input System module state changed to: Shutdown.
 [Physics::Module] Id: 0xf2b8ea05
 [Licensing::IpcConnector] LicenseClient-dragonkao-notifications channel disconnected successfully.
 [Licensing::IpcConnector] LicenseClient-dragonkao channel disconnected successfully.
-Thread 0x170e57000 may have been prematurely finalized
-Thread 0x170ee3000 may have been prematurely finalized
+Thread 0x1705eb000 may have been prematurely finalized
+Thread 0x170677000 may have been prematurely finalized
 AcceleratorClientConnectionCallback - disconnected - :0
 [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
