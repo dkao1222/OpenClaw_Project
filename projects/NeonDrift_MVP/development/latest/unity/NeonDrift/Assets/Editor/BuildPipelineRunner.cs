@@ -2,6 +2,7 @@ using System.IO;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public static class BuildPipelineRunner
@@ -47,7 +48,10 @@ public static class BuildPipelineRunner
                 ("PauseControlPresent", RuntimeQaProbe.CaptureJson().Contains("\"hasPauseButton\": true")),
                 ("LeftRightControlZonesPresent", RuntimeQaProbe.CaptureJson().Contains("\"hasLeftControlZone\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasRightControlZone\": true")),
                 ("RetryControlPresent", RuntimeQaProbe.CaptureJson().Contains("\"hasRetryButton\": true")),
-                ("SafeAreaAndFramePacingConfigured", RuntimeQaProbe.CaptureJson().Contains("\"safeAreaApplied\": true") && RuntimeQaProbe.CaptureJson().Contains("\"framePacingConfigured\": true"))
+                ("SafeAreaAndFramePacingConfigured", RuntimeQaProbe.CaptureJson().Contains("\"safeAreaApplied\": true") && RuntimeQaProbe.CaptureJson().Contains("\"framePacingConfigured\": true")),
+                ("UiEventSystemPresent", RuntimeQaProbe.CaptureJson().Contains("\"hasEventSystem\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasGraphicRaycaster\": true")),
+                ("MenuButtonsClickable", RuntimeQaProbe.CaptureJson().Contains("\"startButtonClickable\": true") && RuntimeQaProbe.CaptureJson().Contains("\"settingsButtonClickable\": true")),
+                ("PauseRetryButtonsClickable", RuntimeQaProbe.CaptureJson().Contains("\"pauseButtonClickable\": true") && RuntimeQaProbe.CaptureJson().Contains("\"retryButtonClickable\": true"))
             }
         );
     }
@@ -135,6 +139,10 @@ public static class BuildPipelineRunner
         CreateVisualQuad("Left Track Rail", new Vector3(-3.35f, 0f, 0f), new Vector3(0.04f, 12f, 1f), new Color(0.0f, 0.9f, 1f));
         CreateVisualQuad("Right Track Rail", new Vector3(3.35f, 0f, 0f), new Vector3(0.04f, 12f, 1f), new Color(1f, 0.1f, 0.9f));
         CreateVisualQuad("Center Pulse Lane", new Vector3(0f, 0f, 0f), new Vector3(0.025f, 12f, 1f), new Color(0.18f, 0.25f, 0.5f));
+
+        var eventSystemObject = new GameObject("EventSystem");
+        eventSystemObject.AddComponent<EventSystem>();
+        eventSystemObject.AddComponent<StandaloneInputModule>();
 
         var session = new GameObject("NeonDrift Session");
         session.AddComponent<GameSessionController>();
@@ -229,7 +237,7 @@ public static class BuildPipelineRunner
         Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, -26f), new Vector2(650f, 82f), new Color(0f, 0.95f, 1f));
         titleText.fontSize = 58;
         CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -18f), new Vector2(260f, 78f), new Color(0f, 0.55f, 0.85f, 0.8f));
-        CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(300f, 72f), new Color(0.14f, 0.12f, 0.28f, 0.82f));
+        Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(300f, 72f), new Color(0.14f, 0.12f, 0.28f, 0.82f));
 
         var panel = new GameObject("Game Over Panel");
         panel.transform.SetParent(canvasObject.transform, false);
@@ -248,6 +256,12 @@ public static class BuildPipelineRunner
         serialized.FindProperty("pulseText").objectReferenceValue = pulseText;
         serialized.FindProperty("gameOverPanel").objectReferenceValue = panel;
         serialized.ApplyModifiedPropertiesWithoutUndo();
+
+        var uiActions = canvasObject.AddComponent<NeonDriftUiActions>();
+        var uiActionsSerialized = new SerializedObject(uiActions);
+        uiActionsSerialized.FindProperty("mainMenuPanel").objectReferenceValue = menuPanel;
+        uiActionsSerialized.FindProperty("settingsButtonLabel").objectReferenceValue = settingsButton.GetComponentInChildren<Text>(true);
+        uiActionsSerialized.ApplyModifiedPropertiesWithoutUndo();
     }
 
     private static Text CreateText(Transform parent, string name, Font font, string text, TextAnchor alignment, Vector2 anchoredPosition, Vector2 size, Color color)

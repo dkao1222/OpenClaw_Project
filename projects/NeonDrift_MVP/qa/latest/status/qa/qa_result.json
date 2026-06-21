@@ -1,6 +1,6 @@
 {
   "overall_status": "passed",
-  "checks_total": 31,
+  "checks_total": 41,
   "checks_failed": 0,
   "checks_blocked": 0,
   "release_candidate_status": "ready",
@@ -11,7 +11,7 @@
       "status": "PASS",
       "expected": "Build validation report status is passed with zero failed checks.",
       "actual": "build_full_validation.md contains status: passed.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/build_full_validation.md",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/build_full_validation.md",
       "severity": "none"
     },
     {
@@ -20,7 +20,7 @@
       "status": "PASS",
       "expected": "iOS simulator Xcode build succeeds.",
       "actual": "Build report contains PASS xcodebuild_ios_simulator.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/build_full_validation.md",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/build_full_validation.md",
       "severity": "none"
     },
     {
@@ -29,7 +29,7 @@
       "status": "PASS",
       "expected": "Unity EditMode tests exist and have zero failures.",
       "actual": "3 total, 0 failed.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_editmode_test_results.xml",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_editmode_test_results.xml",
       "severity": "none"
     },
     {
@@ -37,8 +37,8 @@
       "area": "Regression",
       "status": "PASS",
       "expected": "Unity PlayMode tests exist and have zero failures.",
-      "actual": "11 total, 0 failed.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_playmode_test_results.xml",
+      "actual": "14 total, 0 failed.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
     {
@@ -47,7 +47,7 @@
       "status": "PASS",
       "expected": "Main menu Start button exists.",
       "actual": "hasStartButton=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -56,7 +56,7 @@
       "status": "PASS",
       "expected": "Main menu Settings button exists.",
       "actual": "hasSettingsButton=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -65,7 +65,7 @@
       "status": "PASS",
       "expected": "Main menu Best Score text exists.",
       "actual": "hasBestScoreText=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -74,7 +74,7 @@
       "status": "PASS",
       "expected": "Pause button exists.",
       "actual": "hasPauseButton=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -83,7 +83,7 @@
       "status": "PASS",
       "expected": "Retry button exists.",
       "actual": "hasRetryButton=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -92,7 +92,7 @@
       "status": "PASS",
       "expected": "Left steering zone exists.",
       "actual": "hasLeftControlZone=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -101,7 +101,7 @@
       "status": "PASS",
       "expected": "Right steering zone exists.",
       "actual": "hasRightControlZone=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -110,7 +110,7 @@
       "status": "PASS",
       "expected": "Pause control contract is verified.",
       "actual": "pauseControlVerified=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -119,7 +119,7 @@
       "status": "PASS",
       "expected": "Retry control contract is verified.",
       "actual": "retryControlVerified=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -128,7 +128,7 @@
       "status": "PASS",
       "expected": "Left/right steering contract is verified.",
       "actual": "leftRightSteeringVerified=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -137,7 +137,7 @@
       "status": "PASS",
       "expected": "Safe area is applied.",
       "actual": "safeAreaApplied=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -146,7 +146,70 @@
       "status": "PASS",
       "expected": "Frame pacing is configured.",
       "actual": "framePacingConfigured=True in runtime_probe.json.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_has_event_system",
+      "area": "Interaction",
+      "status": "PASS",
+      "expected": "Unity EventSystem exists for UI input.",
+      "actual": "hasEventSystem=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_has_graphic_raycaster",
+      "area": "Interaction",
+      "status": "PASS",
+      "expected": "Canvas has GraphicRaycaster for UI input.",
+      "actual": "hasGraphicRaycaster=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_has_ui_actions",
+      "area": "Interaction",
+      "status": "PASS",
+      "expected": "Runtime UI action binder exists.",
+      "actual": "hasUiActions=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_start_button_clickable",
+      "area": "Interaction",
+      "status": "PASS",
+      "expected": "Start button is interactable and raycast-targeted.",
+      "actual": "startButtonClickable=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_settings_button_clickable",
+      "area": "Interaction",
+      "status": "PASS",
+      "expected": "Settings button is interactable and raycast-targeted.",
+      "actual": "settingsButtonClickable=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_pause_button_clickable",
+      "area": "Interaction",
+      "status": "PASS",
+      "expected": "Pause button is interactable and raycast-targeted.",
+      "actual": "pauseButtonClickable=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_retry_button_clickable",
+      "area": "Interaction",
+      "status": "PASS",
+      "expected": "Retry button is interactable and raycast-targeted.",
+      "actual": "retryButtonClickable=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -155,7 +218,7 @@
       "status": "PASS",
       "expected": "Target frame rate is at least 60.",
       "actual": "targetFrameRate=60.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -164,7 +227,7 @@
       "status": "PASS",
       "expected": "Runtime probe reports zero exceptions.",
       "actual": "exceptionCount=0.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -173,7 +236,7 @@
       "status": "PASS",
       "expected": "Main menu Start/Settings/Best Score contract passes.",
       "actual": "MainMenuHasStartSettingsBestScore found in PlayMode XML.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_playmode_test_results.xml",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
     {
@@ -182,7 +245,7 @@
       "status": "PASS",
       "expected": "Pause control contract passes.",
       "actual": "PauseControlPresent found in PlayMode XML.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_playmode_test_results.xml",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
     {
@@ -191,7 +254,7 @@
       "status": "PASS",
       "expected": "Left/right control zones contract passes.",
       "actual": "LeftRightControlZonesPresent found in PlayMode XML.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_playmode_test_results.xml",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
     {
@@ -200,7 +263,7 @@
       "status": "PASS",
       "expected": "Retry control contract passes.",
       "actual": "RetryControlPresent found in PlayMode XML.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_playmode_test_results.xml",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
     {
@@ -209,7 +272,34 @@
       "status": "PASS",
       "expected": "Safe area and frame pacing contract passes.",
       "actual": "SafeAreaAndFramePacingConfigured found in PlayMode XML.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_playmode_test_results.xml",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
+      "severity": "none"
+    },
+    {
+      "id": "playmode_ui_event_system_contract",
+      "area": "UI/UX",
+      "status": "PASS",
+      "expected": "UI EventSystem and GraphicRaycaster contract passes.",
+      "actual": "UiEventSystemPresent found in PlayMode XML.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
+      "severity": "none"
+    },
+    {
+      "id": "playmode_menu_buttons_clickable_contract",
+      "area": "UI/UX",
+      "status": "PASS",
+      "expected": "Start and Settings clickable contract passes.",
+      "actual": "MenuButtonsClickable found in PlayMode XML.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
+      "severity": "none"
+    },
+    {
+      "id": "playmode_pause_retry_buttons_clickable_contract",
+      "area": "UI/UX",
+      "status": "PASS",
+      "expected": "Pause and Retry clickable contract passes.",
+      "actual": "PauseRetryButtonsClickable found in PlayMode XML.",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
     {
@@ -217,8 +307,8 @@
       "area": "Build",
       "status": "PASS",
       "expected": "Simulator app binary exists and is arm64.",
-      "actual": "/Users/dragonkao/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/app_binary_file.txt",
+      "actual": "/Users/dragonkao/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/app_binary_file.txt",
       "severity": "none"
     },
     {
@@ -227,7 +317,7 @@
       "status": "PASS",
       "expected": "Simulator appinfo is available for installed app.",
       "actual": "appinfo contains CFBundleIdentifier.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/appinfo.txt",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/appinfo.txt",
       "severity": "none"
     },
     {
@@ -235,8 +325,8 @@
       "area": "Launch",
       "status": "PASS",
       "expected": "Simulator launch command ran and returned launch information.",
-      "actual": "com.DefaultCompany.NeonDrift: 75705",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/launch.txt",
+      "actual": "com.DefaultCompany.NeonDrift: 81467",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/launch.txt",
       "severity": "none"
     },
     {
@@ -244,8 +334,8 @@
       "area": "UI/UX",
       "status": "PASS",
       "expected": "Initial simulator screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 155719, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 222}",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/screenshots/ios_simulator_initial_run.png",
+      "actual": "{'exists': True, 'bytes': 156545, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 224}",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/screenshots/ios_simulator_initial_run.png",
       "severity": "none"
     },
     {
@@ -254,7 +344,7 @@
       "status": "PASS",
       "expected": "Runtime log has no fatal exception or crash signature.",
       "actual": "No fatal signature found.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/logs/ios_simulator_runtime.log",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/logs/ios_simulator_runtime.log",
       "severity": "none"
     },
     {
@@ -263,7 +353,7 @@
       "status": "PASS",
       "expected": "Compact simulator screen has a valid safe-area-aware runtime probe.",
       "actual": "screen=640x480, safeAreaApplied=True.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -272,7 +362,7 @@
       "status": "PASS",
       "expected": "Gameplay HUD exposes score and pulse text.",
       "actual": "hasScoreText=True, hasPulseText=True.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
     {
@@ -281,21 +371,21 @@
       "status": "PASS",
       "expected": "Failure/retry UI contract exists in scene hierarchy.",
       "actual": "hasGameOverPanel=True, hasRetryButton=True.",
-      "evidence": "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
+      "evidence": "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     }
   ],
   "required_fixes": [],
   "evidence_files": [
-    "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/app_binary_file.txt",
-    "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/appinfo.txt",
-    "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/evidence_summary.json",
-    "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/evidence/launch.txt",
-    "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/logs/ios_simulator_runtime.log",
-    "/home/node/.openclaw/workspace/386b9e33-8429-8163-b2aa-c87831e36c20/NeonDrift_MVP__qa__notion-NeonDrift_MVP-qa-qa-full-20260621150418/project/status/qa/screenshots/ios_simulator_initial_run.png",
-    "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/qa/evidence/runtime_probe.json",
-    "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/build_full_validation.md",
-    "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_editmode_test_results.xml",
-    "/home/node/.openclaw/workspace/386b9e33-8429-817f-84c3-d7f2769adc34/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621150245/project/status/validation/unity_playmode_test_results.xml"
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/qa/evidence/runtime_probe.json",
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/build_full_validation.md",
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_editmode_test_results.xml",
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__build__fix-ui-buttons-ios-simulator-20260622/project/status/validation/unity_playmode_test_results.xml",
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/app_binary_file.txt",
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/appinfo.txt",
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/evidence_summary.json",
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/evidence/launch.txt",
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/logs/ios_simulator_runtime.log",
+    "/home/node/.openclaw/workspace/codex-ui-button-fix/NeonDrift_MVP__qa__fix-ui-buttons-qa2-20260622/project/status/qa/screenshots/ios_simulator_initial_run.png"
   ]
 }

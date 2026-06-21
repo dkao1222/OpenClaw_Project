@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public sealed class RuntimeQaProbe : MonoBehaviour
@@ -27,6 +28,13 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool gameOverPanelVisible;
         public bool hasPlayer;
         public bool hasHazardSpawner;
+        public bool hasEventSystem;
+        public bool hasGraphicRaycaster;
+        public bool hasUiActions;
+        public bool startButtonClickable;
+        public bool pauseButtonClickable;
+        public bool retryButtonClickable;
+        public bool settingsButtonClickable;
         public bool pauseControlVerified;
         public bool retryControlVerified;
         public bool leftRightSteeringVerified;
@@ -102,8 +110,15 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         bool hasPlayer = GameObject.Find("Player") != null;
         bool hasLeftZone = FindObjectByNameIncludingInactive("Left Control Zone") != null;
         bool hasRightZone = FindObjectByNameIncludingInactive("Right Control Zone") != null;
-        bool hasRetry = FindObjectByNameIncludingInactive("Retry Button") != null;
-        bool hasPause = FindObjectByNameIncludingInactive("Pause Button") != null;
+        Button startButton = FindButtonByName("Start Button");
+        Button settingsButton = FindButtonByName("Settings Button");
+        Button retryButton = FindButtonByName("Retry Button");
+        Button pauseButton = FindButtonByName("Pause Button");
+        bool hasRetry = retryButton != null;
+        bool hasPause = pauseButton != null;
+        bool hasEventSystem = FindObjectOfType<EventSystem>() != null;
+        bool hasGraphicRaycaster = canvas != null && canvas.GetComponent<GraphicRaycaster>() != null;
+        bool hasUiActions = FindObjectOfType<NeonDriftUiActions>() != null;
         Rect safeArea = Screen.safeArea;
         return new ProbeSnapshot
         {
@@ -116,8 +131,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             hasPulseText = HasTextNamed(texts, "Pulse Text"),
             hasControlHint = HasTextNamed(texts, "Control Hint"),
             hasMainMenuPanel = mainMenuPanel != null,
-            hasStartButton = FindObjectByNameIncludingInactive("Start Button") != null,
-            hasSettingsButton = FindObjectByNameIncludingInactive("Settings Button") != null,
+            hasStartButton = startButton != null,
+            hasSettingsButton = settingsButton != null,
             hasBestScoreText = HasTextNamed(texts, "Best Score Text"),
             hasPauseButton = hasPause,
             hasRetryButton = hasRetry,
@@ -127,8 +142,15 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             gameOverPanelVisible = gameOverPanel != null && gameOverPanel.activeInHierarchy,
             hasPlayer = hasPlayer,
             hasHazardSpawner = FindObjectOfType<HazardSpawner>() != null,
-            pauseControlVerified = hasPause && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
-            retryControlVerified = hasRetry && gameOverPanel != null,
+            hasEventSystem = hasEventSystem,
+            hasGraphicRaycaster = hasGraphicRaycaster,
+            hasUiActions = hasUiActions,
+            startButtonClickable = IsClickable(startButton),
+            pauseButtonClickable = IsClickable(pauseButton),
+            retryButtonClickable = IsClickable(retryButton),
+            settingsButtonClickable = IsClickable(settingsButton),
+            pauseControlVerified = hasPause && IsClickable(pauseButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
+            retryControlVerified = hasRetry && IsClickable(retryButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && gameOverPanel != null,
             leftRightSteeringVerified = hasLeftZone && hasRightZone && hasPlayer,
             safeAreaApplied = canvas != null && safeArea.width > 0f && safeArea.height > 0f,
             framePacingConfigured = Application.targetFrameRate >= 60,
@@ -151,6 +173,24 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             }
         }
         return false;
+    }
+
+    private static Button FindButtonByName(string name)
+    {
+        Button[] buttons = Resources.FindObjectsOfTypeAll<Button>();
+        foreach (Button button in buttons)
+        {
+            if (button != null && button.name == name)
+            {
+                return button;
+            }
+        }
+        return null;
+    }
+
+    private static bool IsClickable(Button button)
+    {
+        return button != null && button.interactable && button.targetGraphic != null;
     }
 
     private static GameObject FindObjectByNameIncludingInactive(string name)
