@@ -1,9 +1,9 @@
 # Initial Define Request
 
 project_name: NeonDrift_MVP
-define_page_id: 386b9e33-8429-81eb-88e9-c892fc5b31cd
-define_run_id: notion-NeonDrift_MVP-define-20260621125426
+define_page_id: 386b9e33-8429-81be-8866-d5946af90b79
+define_run_id: notion-NeonDrift_MVP-define-20260621130921
 
 ## Pipeline Request
 
-Run the full OpenClaw game pipeline from Define through Planning, Spec Review, Development, Local Unity Build, and local-agent QA. Use Unity QA probe and Unity-generated QA evidence; Codex must not decide QA pass/fail.
+Normalize the game request before planning. Create canonical planning input only if required fields are present.
