@@ -21,6 +21,7 @@
 - PASS docs/qa/Phase1_MVP_QA_Report.md
 - PASS docs/development/Phase1_MVP_Completion_Report.md
 - PASS handoffs/development/final_handoff.md
+- PASS status/context/development_context_pack.md
 - PASS status/context/Project_Context_Index.md
 - PASS status/context/Current_Status_Summary.md
 - PASS status/context/Decision_Log.md
