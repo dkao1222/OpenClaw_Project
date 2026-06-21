@@ -1,7 +1,7 @@
 # Stage 12 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857
-channel_id: 386b9e33-8429-815b-a8f3-c43fc218eef4
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302
+channel_id: 386b9e33-8429-8124-8e56-cc9bbf59a698
 stage_agent: judge
 next_agent: user_confirmation_required
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/status/context/stage12_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/docs/review/Planning_Final_Decision.md
-- /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/handoffs/planning/handoff_to_spec_review.md
-- /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/handoffs/planning/handoff_to_development.md
-- /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/status/agent_heartbeats/judge.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/status/context/stage12_context_pack.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/docs/review/Planning_Final_Decision.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/handoffs/planning/handoff_to_spec_review.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/handoffs/planning/handoff_to_development.md
+- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/status/agent_heartbeats/judge.md

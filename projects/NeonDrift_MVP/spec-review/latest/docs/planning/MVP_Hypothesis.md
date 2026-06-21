@@ -1,27 +1,27 @@
 ## 繁體中文
 
 ### 假設:
-- 玩家能在30秒內掌握遊戲核心操作並享受遊戲。
-- 單手控制與即時反饋能有效提升遊戲的易上手性與沉浸感。
+- 玩家能在 30 秒內掌握遊戲基本操作並體驗到樂趣。
+- MVP 版本能成功在 iOS 平台上發布，具備可擴展的架構以支持後續平台。
 
 ### 驗證方式:
-- 通過新玩家在30秒內完成基礎操作測試來驗證。
-- 收集玩家對遊戲操作流暢度與反饋即時性的使用數據與評價。
+- 玩家在 30 秒內完成首次漂移操作並繼續遊戲。
+- MVP 成功上架 iOS App Store。
 
 ### 成功指標:
-- 新玩家在30秒內能成功進行至少一次漂移操作。
-- 玩家在遊戲中平均停留時間超過1分鐘，並主動嘗試挑戰更高分數。
+- 玩家在 30 秒內完成首次漂移操作並繼續遊戲。
+- MVP 成功上架 iOS App Store。
 
 ## English
 
 ### Hypothesis:
-- Players can grasp core game mechanics and enjoy the game within 30 seconds.
-- One-hand control with real-time feedback effectively improves game accessibility and immersion.
+- Players can grasp the core mechanics and have fun within 30 seconds.
+- The MVP version successfully launches on iOS with an extensible architecture for future platforms.
 
 ### Validation Method:
-- Validate through new player tests completing basic operations within 30 seconds.
-- Collect usage data and reviews on gameplay fluidity and feedback timeliness from players.
+- Player completes first drift maneuver and continues playing within 30 seconds.
+- MVP successfully launches on iOS App Store.
 
 ### Success Metrics:
-- New players successfully perform at least one drift operation within 30 seconds.
-- Players spend an average of over 1 minute in the game and actively attempt to beat higher scores.
+- Player completes first drift maneuver and continues playing within 30 seconds.
+- MVP successfully launches on iOS App Store.
