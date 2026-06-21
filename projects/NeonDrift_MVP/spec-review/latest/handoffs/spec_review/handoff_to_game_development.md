@@ -2,9 +2,9 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-project_channel_id: 386b9e33-8429-819d-be5f-ee711273bb32
-output_folder: /home/node/.openclaw/workspace/386b9e33-8429-819d-be5f-ee711273bb32/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621131633/project/
-notion_delivery_target: page:386b9e33-8429-819d-be5f-ee711273bb32
+project_channel_id: 386b9e33-8429-81ba-ad07-da5d580a4b79
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81ba-ad07-da5d580a4b79/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621144303/project/
+notion_delivery_target: page:386b9e33-8429-81ba-ad07-da5d580a4b79
 context_policy: compressed_context_first
 context_pack_path: status/context/spec_review_context_pack.md
 next_stage_input_policy: read this handoff first, then read the compact context pack. Open full source paths only if a required implementation detail is missing.
