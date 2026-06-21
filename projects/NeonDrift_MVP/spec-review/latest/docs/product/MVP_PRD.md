@@ -1,43 +1,43 @@
 ## 繁體中文
 
 ### 產品目標:
-- 提供高速、風格化的霓虹漂移競速體驗，強調可讀性和重複性。
-- 建立快速反覆挑戰的遊戲循環，適合短時間內多次游玩。
+- 提供快速、易上手的單手持玩漂移遊戲體驗，讓玩家能在30秒內掌握核心樂趣。
+- 建立可重複使用的Unity MVP開發流程，專注於iOS首發，後續擴展至Android/WebGL平台。
 
 ### 目標使用者:
-- 移動玩家年齡層為16至35歲，喜愛快速重試、時尚街機賽車、清晰觸控控制、可見的掌握感與短時間遊玩。
-- 適用於希望在短時間內快速體驗高節奏遊戲內容的使用者。
+- 移動休閒與街機玩家，年齡13歲以上，特別是通勤族與短暫休息時段的玩家。
+- 喜歡反應、即時逼近感和分數競賽遊戲，但不喜歡冗長教學或複雜進度系統的玩家。
 
 ### MVP 範圍:
-- 遊戲核心為簡潔明瞭的霓虹漂移機制，強調即時反饋與快速重試。
-- 建立可驗證的遊戲循環指標，如平均遊戲時間與重試次數，確保符合目標受眾喜好。
+- 在30秒內讓新玩家掌握基本操作並享受遊戲。
+- 成功建立iOS首發所需的全部開發流程與技術基礎。
 
 ### 非目標:
-- 不包含複雜的故事情節或角色發展。
-- 不包含多人遊戲或社交功能。
+- 複雜的進度系統與多層級成就。
+- 多人連線或社交功能。
 
 ### 驗收條件:
-- 平均每場遊戲時間超過5分鐘，並有高頻率的即時重試行為。
-- 玩家在關卡中成功通過率穩定於60%至70%，顯示遊戲平衡性良好。
+- 新玩家在30秒內能成功進行至少一次漂移操作。
+- 玩家在遊戲中平均停留時間超過1分鐘，並主動嘗試挑戰更高分數。
 
 ## English
 
 ### Product Goal:
-- Deliver a high-speed, stylized neon drift racing experience that emphasizes readability and repeatability.
-- Establish a quick retry loop gameplay cycle suitable for short, multiple play sessions.
+- Deliver a fast, easy-to-pick-up drifting game experience that players can enjoy within 30 seconds.
+- Establish a reusable Unity MVP development pipeline focused on iOS-first release with later expansion to Android/WebGL.
 
 ### Target User:
-- Mobile players aged 16 to 35 who like fast retries, stylish arcade racing, clear touch controls, visible mastery, and short play sessions.
-- Suitable for users seeking quick, high-paced gameplay content in short timeframes.
+- Mobile casual and arcade players age 13+, especially commuters and short-break players who like reflex, near-miss, and score-chasing games but dislike long tutorials or complex progression.
+- Players who enjoy reaction-based gameplay, immediate tension, and score-chasing mechanics but dislike lengthy tutorials or intricate progression systems.
 
 ### MVP Scope:
-- The core of the game is a clean and clear neon drift mechanic emphasizing immediate feedback and fast retries.
-- Establish quantifiable game loop metrics such as average session time and retry frequency, ensuring alignment with target audience preferences.
+- New players can grasp core mechanics and enjoy the game within 30 seconds.
+- The MVP version successfully establishes all necessary development processes and technical foundations for iOS-first release.
 
 ### Non-goals:
-- Does not include complex storylines or character development.
-- Does not include multiplayer or social features.
+- Complex progression systems and multi-tier achievements.
+- Multiplayer or social features.
 
 ### Acceptance Criteria:
-- Average session time exceeds 5 minutes with high-frequency immediate retries.
-- Player success rates in levels remain stable between 60% and 70%, indicating good game balance.
+- New players successfully perform at least one drift operation within 30 seconds.
+- Players spend an average of over 1 minute in the game and actively attempt to beat higher scores.

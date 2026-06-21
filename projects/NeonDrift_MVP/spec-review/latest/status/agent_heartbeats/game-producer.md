@@ -1,8 +1,8 @@
 # Agent Heartbeat: game-producer
 
 agent_id: game-producer
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
-channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857
+channel_id: 386b9e33-8429-815b-a8f3-c43fc218eef4
 stage: planning_stage_10
 status: completed
 handoff_to: critic

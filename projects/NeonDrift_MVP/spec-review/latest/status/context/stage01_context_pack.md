@@ -1,19 +1,19 @@
 # Stage 01 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
-channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857
+channel_id: 386b9e33-8429-815b-a8f3-c43fc218eef4
 
 ## project goal
 
-NeonDrift MVP is a short-session neon drift racing game used to validate a readable, repeatable mobile gameplay loop before full production and store submission.
+NeonDrift is a short-session mobile arcade drifting game. It should solve the pain point of players wanting a fast, readable, one-hand friendly skill game that can be played in under one minute, while creating a reusable Unity MVP pipeline for iOS-first release and later Android/WebGL expansion.
 
 ## target audience
 
-Mobile players aged 16 to 35 who like fast retries, stylish arcade racing, clear touch controls, visible mastery, and short play sessions.
+Mobile casual and arcade players age 13+, especially commuters and short-break players who like reflex, near-miss, and score-chasing games but dislike long tutorials or complex progression.
 
 ## core value
 
-1. Readable high-speed neon drift gameplay. 2. Immediate retry loop. 3. Production-ready handoffs for spec review, Unity development, privacy, ads, store readiness, and local build monitoring.
+One-hand drift control with immediate readable feedback; fast failure and instant retry loop; mobile-safe HUD and compatibility across iPhone SE 2/3, iPhone 15, Android 10+, and WebGL desktop browser.
 
 ## locked decisions
 
@@ -31,6 +31,6 @@ Read the Stage 01 handoff first, then this context pack. Open source paths only 
 
 ## source paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/status/context/Initial_Request.md
+- /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/status/context/Initial_Request.md
 - status/context/Project_Context_Index.md
 - status/context/Current_Status_Summary.md

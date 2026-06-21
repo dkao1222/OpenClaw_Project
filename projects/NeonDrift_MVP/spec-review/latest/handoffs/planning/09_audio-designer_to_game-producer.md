@@ -2,19 +2,23 @@
 
 from_agent: audio-designer
 to_agent: game-producer
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
-project_channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
-output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621091857
+project_channel_id: 386b9e33-8429-815b-a8f3-c43fc218eef4
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/
 requires_user_confirmation: true
 audio direction: defined for next owner
 haptic trigger conditions: defined for next owner
 feedback event map: defined for next owner
 dependencies and risks: defined for next owner
+context_policy: compressed_context_first
+context_pack_path: /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/status/context/stage09_context_pack.md
+next_stage_input_policy: read this handoff first, then read the compact context pack. Open full source paths only if a required detail is missing.
 suggested_next_action: Confirm Stage 09 and start game-producer from Notion.
 
 ## Stage 09 source paths
-- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Audio_Direction.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/docs/design/Audio_Haptics_Event_Map.md
-- /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/status/agent_heartbeats/audio-designer.md
+- /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/status/context/stage09_context_pack.md
+- /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/docs/design/Audio_Direction.md
+- /home/node/.openclaw/workspace/386b9e33-8429-810b-b9f6-fe509ea46472/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621092508/project/docs/design/Audio_Haptics_Event_Map.md
+- Additional formal docs are available in Notion/Git; open only if compact context is missing a required detail.
 
 Do not start game-producer in this micro-stage.
