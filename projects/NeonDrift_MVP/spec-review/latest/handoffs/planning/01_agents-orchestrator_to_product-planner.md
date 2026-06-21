@@ -4,14 +4,14 @@ from_agent: agents-orchestrator
 to_agent: product-planner
 project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621052900
 project_channel_id: 386b9e33-8429-81f8-a049-ff681ccc7b90
-output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81c8-a969-d3f430999a9b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621053948/project/
+output_folder: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/
 requires_user_confirmation: true
 status: ready_for_user_confirmation
 do not start product-planner
 suggested_next_action: Confirm Stage 01 and start product-planner for Stage 02 from Notion.
 
 next_stage_input_policy: read this handoff first, then read status/context/stage01_context_pack.md.
-context_pack_path: /home/node/.openclaw/workspace/386b9e33-8429-81c8-a969-d3f430999a9b/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621053948/project/status/context/stage01_context_pack.md
+context_pack_path: /home/node/.openclaw/workspace/386b9e33-8429-81c9-958f-c5abdb8ec9b5/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621054113/project/status/context/stage01_context_pack.md
 
 ## Required public docs
 
