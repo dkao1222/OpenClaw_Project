@@ -1,7 +1,7 @@
 # Full QA Report
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260621172006
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260621174014
 - QA 結果: passed
 - Release candidate: ready
 - checks_total: 59
@@ -58,8 +58,8 @@
 | playmode_pause_retry_buttons_clickable_contract | UI/UX | PASS | PauseRetryButtonsClickable found in PlayMode XML. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml |
 | simulator_app_binary_arm64 | Build | PASS | /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64 | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/app_binary_file.txt |
 | simulator_appinfo_available | Install | PASS | appinfo contains CFBundleIdentifier. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/appinfo.txt |
-| simulator_launch_attempted | Launch | PASS | com.DefaultCompany.NeonDrift: 92919 | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt |
-| screenshot_nonblank | UI/UX | PASS | {'exists': True, 'bytes': 156819, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 230} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_initial_run.png |
+| simulator_launch_attempted | Launch | PASS | com.DefaultCompany.NeonDrift: 96076 | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt |
+| screenshot_nonblank | UI/UX | PASS | {'exists': True, 'bytes': 157304, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 231} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_initial_run.png |
 | runtime_log_no_fatal_exception | Runtime | PASS | No fatal signature found. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/logs/ios_simulator_runtime.log |
 | compact_iphone_safe_area_compatibility | Compatibility | PASS | screen=640x480, safeAreaApplied=True. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json |
 | hud_score_contract_present | UI/UX | PASS | hasScoreText=True, hasPulseText=True. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json |
