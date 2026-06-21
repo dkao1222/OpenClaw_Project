@@ -122,7 +122,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         Text[] texts = FindObjectsOfType<Text>(true);
         GameObject mainMenuPanel = FindObjectByNameIncludingInactive("Main Menu Panel");
         GameObject gameOverPanel = FindObjectByNameIncludingInactive("Game Over Panel");
-        GameSessionController session = GameSessionController.Instance;
+        GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
         bool hasPlayer = GameObject.Find("Player") != null;
         bool hasLeftZone = FindObjectByNameIncludingInactive("Left Control Zone") != null;
         bool hasRightZone = FindObjectByNameIncludingInactive("Right Control Zone") != null;
