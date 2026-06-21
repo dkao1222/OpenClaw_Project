@@ -1,11 +1,11 @@
 {
   "project_name": "NeonDrift_MVP",
-  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260621171618",
-  "delivery_status": "blocked",
-  "qa_overall_status": "failed",
-  "release_candidate_status": "blocked",
+  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260621172006",
+  "delivery_status": "ready",
+  "qa_overall_status": "passed",
+  "release_candidate_status": "ready",
   "checks_total": 59,
-  "checks_failed": 8,
+  "checks_failed": 0,
   "checks_blocked": 0,
   "bundle_id": "com.DefaultCompany.NeonDrift",
   "simulator_app": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app",
@@ -32,14 +32,5 @@
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_editmode_test_results.xml",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml"
   ],
-  "required_fixes": [
-    "runtime_probe_button_layout_verified: buttonLayoutVerified=False in runtime_probe.json.",
-    "runtime_probe_control_zone_size_verified: controlZoneSizeVerified=False in runtime_probe.json.",
-    "runtime_probe_controls_do_not_overlap: controlsDoNotOverlap=False in runtime_probe.json.",
-    "runtime_probe_core_gameplay_objects_verified: coreGameplayObjectsVerified=False in runtime_probe.json.",
-    "runtime_probe_scoring_system_verified: scoringSystemVerified=False in runtime_probe.json.",
-    "runtime_probe_pause_system_verified: pauseSystemVerified=False in runtime_probe.json.",
-    "playmode_button_position_size_contract: ButtonPositionsAndSizesAreVerified not found in PlayMode XML.",
-    "playmode_core_gameplay_function_contract: CoreGameplayFunctionsAreVerified not found in PlayMode XML."
-  ]
+  "required_fixes": []
 }

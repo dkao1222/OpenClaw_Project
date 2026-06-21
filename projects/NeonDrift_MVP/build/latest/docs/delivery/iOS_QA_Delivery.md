@@ -3,12 +3,12 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260621171618
-- 交付狀態: blocked
-- QA 狀態: failed
-- Release candidate: blocked
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260621172006
+- 交付狀態: ready
+- QA 狀態: passed
+- Release candidate: ready
 - checks_total: 59
-- checks_failed: 8
+- checks_failed: 0
 - checks_blocked: 0
 - bundle_id: com.DefaultCompany.NeonDrift
 
@@ -42,15 +42,8 @@ xcrun simctl launch booted com.DefaultCompany.NeonDrift
 
 ## Required Fixes
 
-- runtime_probe_button_layout_verified: buttonLayoutVerified=False in runtime_probe.json.
-- runtime_probe_control_zone_size_verified: controlZoneSizeVerified=False in runtime_probe.json.
-- runtime_probe_controls_do_not_overlap: controlsDoNotOverlap=False in runtime_probe.json.
-- runtime_probe_core_gameplay_objects_verified: coreGameplayObjectsVerified=False in runtime_probe.json.
-- runtime_probe_scoring_system_verified: scoringSystemVerified=False in runtime_probe.json.
-- runtime_probe_pause_system_verified: pauseSystemVerified=False in runtime_probe.json.
-- playmode_button_position_size_contract: ButtonPositionsAndSizesAreVerified not found in PlayMode XML.
-- playmode_core_gameplay_function_contract: CoreGameplayFunctionsAreVerified not found in PlayMode XML.
+- 無
 
 ## English Summary
 
-Delivery status is blocked. QA status is failed; release candidate status is blocked.
+Delivery status is ready. QA status is passed; release candidate status is ready.
