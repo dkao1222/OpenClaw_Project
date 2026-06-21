@@ -2,7 +2,7 @@
 
 agent_id: judge
 project_name: NeonDrift_MVP
-channel_id: 386b9e33-8429-81ba-ad07-da5d580a4b79
+channel_id: 386b9e33-8429-816f-89bf-dc593e216fba
 stage: spec_review
 status: completed
 handoff_to: game_development
