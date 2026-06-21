@@ -1,24 +1,31 @@
 # Game Build Validation Report
 
 - project_name: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-build-build-ios-20260621103121
-- stage_range: build-ios
-- source_output_folder: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81cf-b934-c921a1167a52/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621100917/project/
-- source_handoff_path: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81cf-b934-c921a1167a52/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621100917/project/handoffs/development/final_handoff.md
+- run_id: notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554
+- stage_range: build-ios-simulator
+- source_output_folder: /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/
+- source_handoff_path: /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/handoffs/development/final_handoff.md
 
 ## Source Development Delivery Gate
-- PASS source_output_folder_exists: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81cf-b934-c921a1167a52/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621100917/project/
-- PASS source_handoff_exists: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81cf-b934-c921a1167a52/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621100917/project/handoffs/development/final_handoff.md
+- PASS source_output_folder_exists: /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/
+- PASS source_handoff_exists: /home/node/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/handoffs/development/final_handoff.md
 - PASS handoff_marker_delivery_status__passed: delivery_status: passed
 - PASS handoff_marker_unity_project_path: unity_project_path:
 - PASS handoff_marker_context_policy__compressed_context_first: context_policy: compressed_context_first
 - PASS handoff_marker_context_pack_path__status_context_development_context_pack_md: context_pack_path: status/context/development_context_pack.md
+- PASS handoff_marker_qa_automation: qa_automation:
+- PASS handoff_marker_runtime_qa_probe_json: Runtime QA probe JSON:
 - PASS source_file_exists.unity/NeonDrift/Packages/manifest.json
 - PASS source_file_exists.unity/NeonDrift/ProjectSettings/ProjectVersion.txt
 - PASS source_file_exists.unity/NeonDrift/Assets/Scenes/Main.unity
 - PASS source_file_exists.unity/NeonDrift/Assets/Scripts/DriftPlayerController.cs
 - PASS source_file_exists.unity/NeonDrift/Assets/Scripts/HazardSpawner.cs
 - PASS source_file_exists.unity/NeonDrift/Assets/Scripts/GameSessionController.cs
+- PASS source_file_exists.unity/NeonDrift/Assets/Scripts/RuntimeQaProbe.cs
+- PASS source_file_exists.unity/NeonDrift/Assets/Tests/EditMode/NeonDriftEditModeTests.cs
+- PASS source_file_exists.unity/NeonDrift/Assets/Tests/EditMode/NeonDrift.EditModeTests.asmdef
+- PASS source_file_exists.unity/NeonDrift/Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs
+- PASS source_file_exists.unity/NeonDrift/Assets/Tests/PlayMode/NeonDrift.PlayModeTests.asmdef
 - PASS source_file_exists.unity/NeonDrift/Assets/Editor/BuildPipelineRunner.cs
 - PASS source_file_exists.unity/NeonDrift/Assets/Branding/AppIcon.png
 - PASS source_file_exists.unity/NeonDrift/Assets/Branding/AppIcon.svg
@@ -53,12 +60,16 @@
 - PASS source_file_exists.status/validation/development_full_validation.md
 
 ## Unity Platform Build Gate
-- PASS unity_project_exists: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81cf-b934-c921a1167a52/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621100917/project/unity/NeonDrift
+- PASS unity_project_exists: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-814a-a5ab-cf5e3e39660d/NeonDrift_MVP__development__notion-NeonDrift_MVP-development-dev-full-20260621144320/project/unity/NeonDrift
+- PASS unity_build_workspace_prepared: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/unity_build_workspace/NeonDrift
 - PASS unity_editor_detected: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/MacOS/Unity
+- PASS unity_project_version_detected: 2022.3.0f1
+- PASS unity_qa_evidence_tests: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/unity_runqaevidencetests.log; copied=/Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/unity_editmode_test_results.xml, /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/unity_playmode_test_results.xml, /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/qa/evidence/runtime_probe.json
 - PASS unity_platform_support_ValidateProject: no extra platform support required
-- PASS unity_batchmode_ValidateProject: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e9-85b7-ce6e24881102/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-webgl-20260621103121/project/status/validation/unity_validateproject.log
-- PASS unity_platform_support_BuildIOS: /Applications/Unity/Hub/Editor/6000.0.77f1/PlaybackEngines/iOSSupport
-- PASS unity_batchmode_BuildIOS: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e9-85b7-ce6e24881102/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-webgl-20260621103121/project/status/validation/unity_buildios.log
+- PASS unity_batchmode_ValidateProject: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/unity_validateproject.log
+- PASS unity_platform_support_BuildIOSSimulator: /Applications/Unity/Hub/Editor/6000.0.77f1/PlaybackEngines/iOSSupport
+- PASS unity_batchmode_BuildIOSSimulator: /Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/unity_buildiossimulator.log
+- PASS xcodebuild_ios_simulator: log=/Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/status/validation/xcodebuild_ios_simulator.log; app=/Users/dragonkao/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app
 
 ## Result
 - status: passed

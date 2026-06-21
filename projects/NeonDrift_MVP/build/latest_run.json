@@ -1,8 +1,8 @@
 {
   "project_name": "NeonDrift_MVP",
   "pipeline": "build",
-  "run_id": "notion-NeonDrift_MVP-build-build-webgl-20260621103121",
+  "run_id": "notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554",
   "status": "Passed",
-  "source_folder": "/home/node/.openclaw/workspace/386b9e33-8429-81e9-85b7-ce6e24881102/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-webgl-20260621103121/project",
-  "published_at": "2026-06-21T10:42:45.846Z"
+  "source_folder": "/home/node/.openclaw/workspace/386b9e33-8429-81e8-822b-f6239d850088/NeonDrift_MVP__build__notion-NeonDrift_MVP-build-build-ios-simulator-20260621144554/project",
+  "published_at": "2026-06-21T14:50:28.297Z"
 }
