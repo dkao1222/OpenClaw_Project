@@ -1,9 +1,9 @@
 {
-  "overall_status": "failed",
+  "overall_status": "passed",
   "checks_total": 59,
-  "checks_failed": 8,
+  "checks_failed": 0,
   "checks_blocked": 0,
-  "release_candidate_status": "blocked",
+  "release_candidate_status": "ready",
   "checks": [
     {
       "id": "build_validation_passed",
@@ -37,7 +37,7 @@
       "area": "Regression",
       "status": "PASS",
       "expected": "Unity PlayMode tests exist and have zero failures.",
-      "actual": "14 total, 0 failed.",
+      "actual": "16 total, 0 failed.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
@@ -215,11 +215,11 @@
     {
       "id": "runtime_probe_button_layout_verified",
       "area": "UI/UX",
-      "status": "FAIL",
+      "status": "PASS",
       "expected": "All required button/control positions and sizes are verified.",
-      "actual": "buttonLayoutVerified=False in runtime_probe.json.",
+      "actual": "buttonLayoutVerified=True in runtime_probe.json.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
-      "severity": "medium"
+      "severity": "none"
     },
     {
       "id": "runtime_probe_menu_button_size_verified",
@@ -242,11 +242,11 @@
     {
       "id": "runtime_probe_control_zone_size_verified",
       "area": "Interaction",
-      "status": "FAIL",
+      "status": "PASS",
       "expected": "Left/right control zones meet minimum gameplay touch size.",
-      "actual": "controlZoneSizeVerified=False in runtime_probe.json.",
+      "actual": "controlZoneSizeVerified=True in runtime_probe.json.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
-      "severity": "medium"
+      "severity": "none"
     },
     {
       "id": "runtime_probe_controls_inside_safe_area",
@@ -260,38 +260,38 @@
     {
       "id": "runtime_probe_controls_do_not_overlap",
       "area": "UI/UX",
-      "status": "FAIL",
+      "status": "PASS",
       "expected": "Required controls do not overlap each other.",
-      "actual": "controlsDoNotOverlap=False in runtime_probe.json.",
+      "actual": "controlsDoNotOverlap=True in runtime_probe.json.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
-      "severity": "medium"
+      "severity": "none"
     },
     {
       "id": "runtime_probe_core_gameplay_objects_verified",
       "area": "Runtime",
-      "status": "FAIL",
+      "status": "PASS",
       "expected": "Player, session, and hazard systems exist.",
-      "actual": "coreGameplayObjectsVerified=False in runtime_probe.json.",
+      "actual": "coreGameplayObjectsVerified=True in runtime_probe.json.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
-      "severity": "medium"
+      "severity": "none"
     },
     {
       "id": "runtime_probe_scoring_system_verified",
       "area": "Runtime",
-      "status": "FAIL",
+      "status": "PASS",
       "expected": "Scoring system and score HUD are wired.",
-      "actual": "scoringSystemVerified=False in runtime_probe.json.",
+      "actual": "scoringSystemVerified=True in runtime_probe.json.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
-      "severity": "medium"
+      "severity": "none"
     },
     {
       "id": "runtime_probe_pause_system_verified",
       "area": "Interaction",
-      "status": "FAIL",
+      "status": "PASS",
       "expected": "Pause system is wired to UI control.",
-      "actual": "pauseSystemVerified=False in runtime_probe.json.",
+      "actual": "pauseSystemVerified=True in runtime_probe.json.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
-      "severity": "medium"
+      "severity": "none"
     },
     {
       "id": "runtime_probe_failure_retry_system_verified",
@@ -359,20 +359,20 @@
     {
       "id": "playmode_button_position_size_contract",
       "area": "UI/UX",
-      "status": "FAIL",
+      "status": "PASS",
       "expected": "Button position, size, safe-area, and overlap contract passes.",
-      "actual": "ButtonPositionsAndSizesAreVerified not found in PlayMode XML.",
+      "actual": "ButtonPositionsAndSizesAreVerified found in PlayMode XML.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
-      "severity": "medium"
+      "severity": "none"
     },
     {
       "id": "playmode_core_gameplay_function_contract",
       "area": "UI/UX",
-      "status": "FAIL",
+      "status": "PASS",
       "expected": "Core gameplay object/scoring/pause/failure/retry contract passes.",
-      "actual": "CoreGameplayFunctionsAreVerified not found in PlayMode XML.",
+      "actual": "CoreGameplayFunctionsAreVerified found in PlayMode XML.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
-      "severity": "medium"
+      "severity": "none"
     },
     {
       "id": "playmode_safe_area_frame_pacing_contract",
@@ -433,7 +433,7 @@
       "area": "Launch",
       "status": "PASS",
       "expected": "Simulator launch command ran and returned launch information.",
-      "actual": "com.DefaultCompany.NeonDrift: 91188",
+      "actual": "com.DefaultCompany.NeonDrift: 92919",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt",
       "severity": "none"
     },
@@ -442,7 +442,7 @@
       "area": "UI/UX",
       "status": "PASS",
       "expected": "Initial simulator screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 155822, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 222}",
+      "actual": "{'exists': True, 'bytes': 156819, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 230}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_initial_run.png",
       "severity": "none"
     },
@@ -523,7 +523,7 @@
       "area": "UI/UX",
       "status": "PASS",
       "expected": "Left control zone rect is captured.",
-      "actual": "leftControlZoneRect='name=Left Control Zone; width=220.0; height=104.0; min=(246.0,314.0); max=(466.0,418.0)'.",
+      "actual": "leftControlZoneRect='name=Left Control Zone; width=220.0; height=140.0; min=(36.0,126.0); max=(256.0,266.0)'.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },
@@ -532,21 +532,12 @@
       "area": "UI/UX",
       "status": "PASS",
       "expected": "Right control zone rect is captured.",
-      "actual": "rightControlZoneRect='name=Right Control Zone; width=220.0; height=104.0; min=(174.0,314.0); max=(394.0,418.0)'.",
+      "actual": "rightControlZoneRect='name=Right Control Zone; width=220.0; height=140.0; min=(384.0,126.0); max=(604.0,266.0)'.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     }
   ],
-  "required_fixes": [
-    "runtime_probe_button_layout_verified: buttonLayoutVerified=False in runtime_probe.json.",
-    "runtime_probe_control_zone_size_verified: controlZoneSizeVerified=False in runtime_probe.json.",
-    "runtime_probe_controls_do_not_overlap: controlsDoNotOverlap=False in runtime_probe.json.",
-    "runtime_probe_core_gameplay_objects_verified: coreGameplayObjectsVerified=False in runtime_probe.json.",
-    "runtime_probe_scoring_system_verified: scoringSystemVerified=False in runtime_probe.json.",
-    "runtime_probe_pause_system_verified: pauseSystemVerified=False in runtime_probe.json.",
-    "playmode_button_position_size_contract: ButtonPositionsAndSizesAreVerified not found in PlayMode XML.",
-    "playmode_core_gameplay_function_contract: CoreGameplayFunctionsAreVerified not found in PlayMode XML."
-  ],
+  "required_fixes": [],
   "evidence_files": [
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/app_binary_file.txt",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/appinfo.txt",
