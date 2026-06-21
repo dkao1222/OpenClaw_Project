@@ -1,7 +1,7 @@
 # Stage 09 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302
-channel_id: 386b9e33-8429-8124-8e56-cc9bbf59a698
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435
+channel_id: 386b9e33-8429-81d3-9ecd-cb103dcf7fa9
 stage_agent: audio-designer
 next_agent: game-producer
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/status/context/stage09_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/handoffs/planning/09_audio-designer_to_game-producer.md
-- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/docs/design/Audio_Direction.md
-- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/docs/design/Audio_Haptics_Event_Map.md
-- /home/node/.openclaw/workspace/386b9e33-8429-8124-8e56-cc9bbf59a698/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302/project/status/agent_heartbeats/audio-designer.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/status/context/stage09_context_pack.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/handoffs/planning/09_audio-designer_to_game-producer.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/docs/design/Audio_Direction.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/docs/design/Audio_Haptics_Event_Map.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81d3-9ecd-cb103dcf7fa9/NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435/project/status/agent_heartbeats/audio-designer.md
