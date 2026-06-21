@@ -1,7 +1,7 @@
 # Stage 06 Context Pack
 
-project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621100302
-channel_id: 386b9e33-8429-8124-8e56-cc9bbf59a698
+project_name: NeonDrift_MVP__test__notion-NeonDrift_MVP-0-12-20260621125435
+channel_id: 386b9e33-8429-81d3-9ecd-cb103dcf7fa9
 stage_agent: level-designer
 next_agent: economy-liveops-designer
 policy: compressed context pack
@@ -25,8 +25,8 @@ policy: compressed context pack
 
 ## Source Paths
 
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/status/context/stage06_context_pack.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/handoffs/planning/06_level-designer_to_economy-liveops-designer.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/docs/design/Content_Design_Draft.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/docs/design/Level_and_Tutorial_Pacing.md
-- /home/node/.openclaw/workspace/386b9e33-8429-816f-8ac5-d849b73e286a/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621100900/project/status/agent_heartbeats/level-designer.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/status/context/stage06_context_pack.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/handoffs/planning/06_level-designer_to_economy-liveops-designer.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/docs/design/Content_Design_Draft.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/docs/design/Level_and_Tutorial_Pacing.md
+- /home/node/.openclaw/workspace/386b9e33-8429-81b6-9841-f0591bcbc61e/NeonDrift_MVP__spec-review__notion-NeonDrift_MVP-spec-review-review-full-20260621130126/project/status/agent_heartbeats/level-designer.md
