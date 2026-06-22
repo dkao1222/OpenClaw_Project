@@ -261,8 +261,8 @@ public static class BuildPipelineRunner
         var menuImage = menuPanel.AddComponent<Image>();
         menuImage.color = new Color(0f, 0f, 0f, 0.58f);
         SetRect(menuPanel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 70f), new Vector2(760f, 560f));
-        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, -14f), new Vector2(680f, 72f), new Color(0f, 0.95f, 1f));
-        titleText.fontSize = 48;
+        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, 48f), new Vector2(680f, 56f), new Color(0f, 0.95f, 1f));
+        titleText.fontSize = 42;
         CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, 28f), new Vector2(300f, 82f), new Color(0f, 0.55f, 0.85f, 0.86f));
         Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.MiddleCenter, new Vector2(0f, -86f), new Vector2(300f, 72f), new Color(0.14f, 0.12f, 0.28f, 0.9f));
         Text bestScoreText = CreateText(menuPanel.transform, "Best Score Text", font, "BEST 0000", TextAnchor.LowerCenter, new Vector2(0f, 38f), new Vector2(420f, 64f), new Color(0.96f, 0.92f, 0.55f));
