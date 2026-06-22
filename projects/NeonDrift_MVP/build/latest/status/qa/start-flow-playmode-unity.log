@@ -1,0 +1,172 @@
+Unity Editor version:    6000.4.11f1 (b0a1d6caadd2)
+Branch:                  6000.4/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 26.5.1 (Build 25F80)
+Darwin version:          25.5.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        65536 MB
+Date:                    2026-06-22T03:32:30Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao" at "2026-06-22T03:32:30.30317Z"
+Launching external process: /Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/Helpers/PackageManager/Server/UnityPackageManager
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/MacOS/Unity
+-batchmode
+-nographics
+-quit
+-projectPath
+/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity/NeonDrift
+-runTests
+-testPlatform
+PlayMode
+-testResults
+/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/start-flow-playmode-results.xml
+-logFile
+/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/start-flow-playmode-unity.log
+Successfully changed project path to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity/NeonDrift
+/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity/NeonDrift
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [8459132544]  Target information:
+
+Player connection [8459132544]  * "[IP] 192.168.1.101 [Port] 55505 [Flags] 2 [Guid] 182521497 [EditorId] 182521497 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8459132544]  * "[IP] 169.254.237.5 [Port] 55505 [Flags] 2 [Guid] 182521497 [EditorId] 182521497 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8459132544]  * "[IP] 192.168.0.102 [Port] 55505 [Flags] 2 [Guid] 182521497 [EditorId] 182521497 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8459132544] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8459132544] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-30001" after 0.1 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-dragonkao"
+[Licensing::IpcConnector] LicenseClient-dragonkao channel disconnected successfully.
+[Licensing::IpcConnector] Channel LicenseClient-dragonkao-6000.4.11 doesn't exist
+Launching external process: /Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/Helpers/UnityLicensingClient.app/Contents/MacOS/Unity.Licensing.Client
+[Licensing::Module] Successfully launched the LicensingClient (PId: 30023)
+[Licensing::Module] Error: Timed-out after 60.01s, waiting for Licensing to initialize
+Library Redirect Path: Library/
+Cannot upgrade database Library/ArtifactDB. Will delete the database and recreate content in the new format instead.[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.11f1 (b0a1d6caadd2)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity/NeonDrift/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56001
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.4.11f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000867 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.199 seconds
+Domain Reload Profiling: 446ms
+	BeginReloadAssembly (80ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (109ms)
+		LoadAssemblies (67ms)
+		AnalyzeDomain (104ms)
+			TypeCache.Refresh (103ms)
+				TypeCache.ScanAssembly (94ms)
+	FinalizeReload (200ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			BeforeProcessingInitializeOnLoad (42ms)
+			ProcessInitializeOnLoadAttributes (53ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::IpcConnector] Channel LicenseClient-dragonkao-6000.4.11 doesn't exist
+[Licensing::Module] Timed-out after 60.00s, waiting for channel: "LicenseClient-dragonkao-6000.4.11"
+[Licensing::Module] Error: Licensing initialization failed after 75.42s
+[Licensing::Module] Licensing is initialized (took 14.52s).
+[Licensing::Module] Error: The connection with the Unity Licensing Client has been lost. Attempting to reconnect.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao" at "2026-06-22T03:33:45.728347Z"
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-dragonkao"
+[Licensing::IpcConnector] LicenseClient-dragonkao channel disconnected successfully.
+[Licensing::IpcConnector] Channel LicenseClient-dragonkao-6000.4.11 doesn't exist
+Launching external process: /Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/Helpers/UnityLicensingClient.app/Contents/MacOS/Unity.Licensing.Client
+[Licensing::Module] Successfully launched the LicensingClient (PId: 30111)
+[Licensing::IpcConnector] Channel LicenseClient-dragonkao-6000.4.11 doesn't exist
+[Licensing::Module] Timed-out after 60.00s, waiting for channel: "LicenseClient-dragonkao-6000.4.11"
+[Licensing::Module] The re-connection attempt was UN-successful.
+[Licensing::Module] Error: 'com.unity.editor.headless' was not found.
+[Licensing::Module] Error: The connection with the Unity Licensing Client has been lost. Attempting to reconnect.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao" at "2026-06-22T03:35:00.899778Z"
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-dragonkao"
+[Licensing::IpcConnector] LicenseClient-dragonkao channel disconnected successfully.
+[Licensing::IpcConnector] Channel LicenseClient-dragonkao-6000.4.11 doesn't exist
+Launching external process: /Applications/Unity/Hub/Editor/6000.4.11f1/Unity.app/Contents/Helpers/UnityLicensingClient.app/Contents/MacOS/Unity.Licensing.Client
+[Licensing::Module] Successfully launched the LicensingClient (PId: 30197)

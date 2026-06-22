@@ -53,9 +53,24 @@ public static class BuildPipelineRunner
                 ("MenuButtonsClickable", RuntimeQaProbe.CaptureJson().Contains("\"startButtonClickable\": true") && RuntimeQaProbe.CaptureJson().Contains("\"settingsButtonClickable\": true")),
                 ("PauseRetryButtonsClickable", RuntimeQaProbe.CaptureJson().Contains("\"pauseButtonClickable\": true") && RuntimeQaProbe.CaptureJson().Contains("\"retryButtonClickable\": true")),
                 ("ButtonPositionsAndSizesAreVerified", RuntimeQaProbe.CaptureJson().Contains("\"buttonLayoutVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"startButtonRect\"") && RuntimeQaProbe.CaptureJson().Contains("\"rightControlZoneRect\"")),
-                ("CoreGameplayFunctionsAreVerified", RuntimeQaProbe.CaptureJson().Contains("\"coreGameplayObjectsVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"scoringSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"pauseSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"failureRetrySystemVerified\": true"))
+                ("CoreGameplayFunctionsAreVerified", RuntimeQaProbe.CaptureJson().Contains("\"coreGameplayObjectsVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"scoringSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"pauseSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"failureRetrySystemVerified\": true")),
+                ("InitialStateWaitsForStart", RuntimeQaProbe.CaptureJson().Contains("\"screenState\": \"menu\"") && RuntimeQaProbe.CaptureJson().Contains("\"hasStarted\": false") && RuntimeQaProbe.CaptureJson().Contains("\"score\": 0") && RuntimeQaProbe.CaptureJson().Contains("\"startFlowVerified\": true")),
+                ("StartButtonFlowVerified", VerifyStartButtonFlow())
             }
         );
+    }
+
+    private static bool VerifyStartButtonFlow()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        if (session == null || uiActions == null || session.HasStarted || GameSessionController.Score != 0)
+        {
+            return false;
+        }
+
+        uiActions.StartGame();
+        return session.HasStarted && Mathf.Approximately(Time.timeScale, 1f);
     }
 
     public static void BuildIOS()

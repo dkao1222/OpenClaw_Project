@@ -51,6 +51,40 @@ public sealed class NeonDriftPlayModeTests
     }
 
     [Test]
+    public void InitialStateWaitsForStart()
+    {
+        SceneManager.LoadScene("Main");
+        string json = InvokeRuntimeQaProbeCaptureJson();
+        Assert.That(json, Does.Contain("\"screenState\": \"menu\""));
+        Assert.That(json, Does.Contain("\"hasStarted\": false"));
+        Assert.That(json, Does.Contain("\"score\": 0"));
+        Assert.That(json, Does.Contain("\"startFlowVerified\": true"));
+    }
+
+    [Test]
+    public void StartButtonFlowVerified()
+    {
+        SceneManager.LoadScene("Main");
+        Type uiActionsType = FindType("NeonDriftUiActions");
+        Type sessionType = FindType("GameSessionController");
+        Assert.IsNotNull(uiActionsType);
+        Assert.IsNotNull(sessionType);
+
+        UnityEngine.Object uiActions = UnityEngine.Object.FindObjectOfType(uiActionsType);
+        UnityEngine.Object session = UnityEngine.Object.FindObjectOfType(sessionType);
+        Assert.IsNotNull(uiActions);
+        Assert.IsNotNull(session);
+
+        bool startedBefore = (bool)sessionType.GetProperty("HasStarted").GetValue(session);
+        Assert.IsFalse(startedBefore);
+
+        uiActionsType.GetMethod("StartGame").Invoke(uiActions, null);
+        bool startedAfter = (bool)sessionType.GetProperty("HasStarted").GetValue(session);
+        Assert.IsTrue(startedAfter);
+        Assert.AreEqual(1f, Time.timeScale);
+    }
+
+    [Test]
     public void CoreGameplayFunctionsAreVerified()
     {
         SceneManager.LoadScene("Main");
