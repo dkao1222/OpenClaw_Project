@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public sealed class NeonDriftUiActions : MonoBehaviour
@@ -13,6 +14,8 @@ public sealed class NeonDriftUiActions : MonoBehaviour
         BindButton("Settings Button", ShowSettingsFeedback);
         BindButton("Pause Button", TogglePause);
         BindButton("Retry Button", Retry);
+        BindSteerZone("Left Control Zone", -1f);
+        BindSteerZone("Right Control Zone", 1f);
         SetGameplayHudVisible(GameSessionController.Instance != null && GameSessionController.Instance.HasStarted);
     }
 
@@ -41,6 +44,54 @@ public sealed class NeonDriftUiActions : MonoBehaviour
             }
         }
         return null;
+    }
+
+    private void BindSteerZone(string buttonName, float direction)
+    {
+        Button button = FindButton(buttonName);
+        if (button == null)
+        {
+            Debug.LogError($"Required steering zone missing: {buttonName}");
+            return;
+        }
+
+        EventTrigger trigger = button.GetComponent<EventTrigger>();
+        if (trigger == null)
+        {
+            trigger = button.gameObject.AddComponent<EventTrigger>();
+        }
+        trigger.triggers.Clear();
+
+        AddTrigger(trigger, EventTriggerType.PointerDown, () => SetSteer(direction));
+        AddTrigger(trigger, EventTriggerType.PointerUp, ClearSteer);
+        AddTrigger(trigger, EventTriggerType.PointerExit, ClearSteer);
+        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(() => NudgeSteer(direction));
+    }
+
+    private void AddTrigger(EventTrigger trigger, EventTriggerType eventType, UnityEngine.Events.UnityAction action)
+    {
+        EventTrigger.Entry entry = new EventTrigger.Entry { eventID = eventType };
+        entry.callback.AddListener(_ => action());
+        trigger.triggers.Add(entry);
+    }
+
+    private void SetSteer(float direction)
+    {
+        DriftPlayerController player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
+        player?.SetUiSteer(direction);
+    }
+
+    private void ClearSteer()
+    {
+        DriftPlayerController player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
+        player?.ClearUiSteer();
+    }
+
+    private void NudgeSteer(float direction)
+    {
+        DriftPlayerController player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
+        player?.SimulateSteerStep(direction, 0.25f);
     }
 
     public void StartGame()

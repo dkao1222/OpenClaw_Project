@@ -31,6 +31,12 @@ public sealed class GameSessionController : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
+    private void OnEnable()
+    {
+        Instance = this;
+        Application.targetFrameRate = 60;
+    }
+
     private void Update()
     {
         if (!started)
@@ -91,6 +97,7 @@ public sealed class GameSessionController : MonoBehaviour
 
     public void StartGame()
     {
+        Instance = this;
         if (started)
         {
             return;
