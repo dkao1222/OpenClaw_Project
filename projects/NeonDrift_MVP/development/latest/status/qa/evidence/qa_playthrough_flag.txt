@@ -1,3 +1,3 @@
 QA playthrough flag targets:
-/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/1897F4AC-8DCF-4357-813C-404C0410698D/Documents/qa_playthrough.flag
-/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/1897F4AC-8DCF-4357-813C-404C0410698D/qa_playthrough.flag
+/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/65B03348-86C9-4CF8-B847-48D83AF272B6/Documents/qa_playthrough.flag
+/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/65B03348-86C9-4CF8-B847-48D83AF272B6/qa_playthrough.flag

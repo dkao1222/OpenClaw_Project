@@ -3,12 +3,12 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260622172613
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260622173109
 - 交付狀態: blocked
 - QA 狀態: failed
 - Release candidate: blocked
-- checks_total: 95
-- checks_failed: 2
+- checks_total: 96
+- checks_failed: 1
 - checks_blocked: 0
 - bundle_id: com.DefaultCompany.NeonDrift
 
@@ -42,8 +42,7 @@ xcrun simctl launch booted com.DefaultCompany.NeonDrift
 
 ## Required Fixes
 
-- playthrough_gameplay_to_game_over_changed: {'comparable': True, 'mean_abs_diff': 1.04, 'sample_count': 3000, 'changed': False}
-- playthrough_game_over_to_retry_changed: {'comparable': True, 'mean_abs_diff': 1.998, 'sample_count': 3000, 'changed': False}
+- playthrough_retry_screenshot_has_ui_variance: {'exists': True, 'bytes': 63858, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 12}
 
 ## English Summary
 

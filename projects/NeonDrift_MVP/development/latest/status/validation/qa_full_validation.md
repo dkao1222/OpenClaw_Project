@@ -1,6 +1,6 @@
 # Game QA Validation Report
 
-- session_id: notion-NeonDrift_MVP-qa-qa-full-20260622172613-qa-full
+- session_id: notion-NeonDrift_MVP-qa-qa-full-20260622173109-qa-full
 - output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 
 ## Checks
@@ -11,12 +11,12 @@
 - PASS file_exists.docs/delivery/iOS_QA_Delivery.md
 - PASS file_exists.status/agent_heartbeats/qa-playtester.md
 - PASS qa_result.valid_json
-- PASS qa_result.checks_present: 95
-- PASS qa_result.required_button_and_gameplay_checks_present: 54
+- PASS qa_result.checks_present: 96
+- PASS qa_result.required_button_and_gameplay_checks_present: 55
 - PASS qa_result.valid_check_statuses
-- PASS qa_result.evidence_paths_exist: 110 checked
-- PASS qa_result.checks_total_matches: 95
-- PASS qa_result.checks_failed_matches: 2
+- PASS qa_result.evidence_paths_exist: 111 checked
+- PASS qa_result.checks_total_matches: 96
+- PASS qa_result.checks_failed_matches: 1
 - PASS qa_result.checks_blocked_matches: 0
 - PASS qa_result.no_pass_with_fail_or_blocked
 - PASS process.deterministic_finalizer_complete
