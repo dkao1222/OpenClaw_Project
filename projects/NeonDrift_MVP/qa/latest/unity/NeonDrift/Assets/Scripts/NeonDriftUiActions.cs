@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public sealed class NeonDriftUiActions : MonoBehaviour
 {
     [SerializeField] private GameObject mainMenuPanel;
+    [SerializeField] private GameObject gameplayHudRoot;
     [SerializeField] private Text settingsButtonLabel;
 
     private void Awake()
@@ -12,6 +13,7 @@ public sealed class NeonDriftUiActions : MonoBehaviour
         BindButton("Settings Button", ShowSettingsFeedback);
         BindButton("Pause Button", TogglePause);
         BindButton("Retry Button", Retry);
+        SetGameplayHudVisible(GameSessionController.Instance != null && GameSessionController.Instance.HasStarted);
     }
 
     private void BindButton(string buttonName, UnityEngine.Events.UnityAction action)
@@ -47,8 +49,17 @@ public sealed class NeonDriftUiActions : MonoBehaviour
         {
             mainMenuPanel.SetActive(false);
         }
+        SetGameplayHudVisible(true);
         GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
         session?.StartGame();
+    }
+
+    private void SetGameplayHudVisible(bool visible)
+    {
+        if (gameplayHudRoot != null)
+        {
+            gameplayHudRoot.SetActive(visible);
+        }
     }
 
     public void ShowSettingsFeedback()

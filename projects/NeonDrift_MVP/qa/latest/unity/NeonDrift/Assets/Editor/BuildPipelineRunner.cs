@@ -54,7 +54,8 @@ public static class BuildPipelineRunner
                 ("PauseRetryButtonsClickable", RuntimeQaProbe.CaptureJson().Contains("\"pauseButtonClickable\": true") && RuntimeQaProbe.CaptureJson().Contains("\"retryButtonClickable\": true")),
                 ("ButtonPositionsAndSizesAreVerified", RuntimeQaProbe.CaptureJson().Contains("\"buttonLayoutVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"startButtonRect\"") && RuntimeQaProbe.CaptureJson().Contains("\"rightControlZoneRect\"")),
                 ("CoreGameplayFunctionsAreVerified", RuntimeQaProbe.CaptureJson().Contains("\"coreGameplayObjectsVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"scoringSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"pauseSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"failureRetrySystemVerified\": true")),
-                ("InitialStateWaitsForStart", RuntimeQaProbe.CaptureJson().Contains("\"screenState\": \"menu\"") && RuntimeQaProbe.CaptureJson().Contains("\"hasStarted\": false") && RuntimeQaProbe.CaptureJson().Contains("\"score\": 0") && RuntimeQaProbe.CaptureJson().Contains("\"startFlowVerified\": true")),
+                ("InitialStateWaitsForStart", RuntimeQaProbe.CaptureJson().Contains("\"screenState\": \"menu\"") && RuntimeQaProbe.CaptureJson().Contains("\"hasStarted\": false") && RuntimeQaProbe.CaptureJson().Contains("\"score\": 0") && RuntimeQaProbe.CaptureJson().Contains("\"startFlowVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayHudHiddenInMenu\": true")),
+                ("MenuLayoutIsReadable", RuntimeQaProbe.CaptureJson().Contains("\"menuLayoutVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"menuElementsDoNotOverlap\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayHudHiddenInMenu\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayControlsHiddenInMenu\": true")),
                 ("StartButtonFlowVerified", VerifyStartButtonFlow())
             }
         );
@@ -70,7 +71,8 @@ public static class BuildPipelineRunner
         }
 
         uiActions.StartGame();
-        return session.HasStarted && Mathf.Approximately(Time.timeScale, 1f);
+        string startedJson = RuntimeQaProbe.CaptureJson();
+        return session.HasStarted && Mathf.Approximately(Time.timeScale, 1f) && startedJson.Contains("\"screenState\": \"gameplay\"");
     }
 
     public static void BuildIOS()
@@ -235,26 +237,36 @@ public static class BuildPipelineRunner
         canvasObject.AddComponent<GraphicRaycaster>();
 
         var font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Font.CreateDynamicFontFromOSFont("Arial", 24);
-        Text scoreText = CreateText(canvasObject.transform, "Score Text", font, "SCORE 0000", TextAnchor.UpperLeft, new Vector2(38f, -34f), new Vector2(420f, 72f), new Color(0f, 0.95f, 1f));
-        Text pulseText = CreateText(canvasObject.transform, "Pulse Text", font, "PULSE 00%", TextAnchor.UpperRight, new Vector2(-38f, -34f), new Vector2(420f, 72f), new Color(1f, 0.25f, 0.9f));
-        Text hintText = CreateText(canvasObject.transform, "Control Hint", font, "TAP LEFT / RIGHT TO DRIFT", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(720f, 72f), new Color(0.86f, 0.92f, 1f));
-        hintText.fontSize = 28;
-        Text bestScoreText = CreateText(canvasObject.transform, "Best Score Text", font, "BEST 0000", TextAnchor.UpperCenter, new Vector2(0f, -104f), new Vector2(420f, 64f), new Color(0.96f, 0.92f, 0.55f));
-        bestScoreText.fontSize = 28;
 
-        CreateButton(canvasObject.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -112f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.16f, 0.88f));
-        CreateButton(canvasObject.transform, "Left Control Zone", font, "LEFT", TextAnchor.LowerLeft, new Vector2(36f, 126f), new Vector2(220f, 140f), new Color(0f, 0.55f, 0.85f, 0.24f));
-        CreateButton(canvasObject.transform, "Right Control Zone", font, "RIGHT", TextAnchor.LowerRight, new Vector2(-36f, 126f), new Vector2(220f, 140f), new Color(0.85f, 0f, 0.65f, 0.24f));
+        var gameplayHudRoot = new GameObject("Gameplay HUD Root");
+        gameplayHudRoot.transform.SetParent(canvasObject.transform, false);
+        var gameplayRootRect = gameplayHudRoot.AddComponent<RectTransform>();
+        gameplayRootRect.anchorMin = Vector2.zero;
+        gameplayRootRect.anchorMax = Vector2.one;
+        gameplayRootRect.offsetMin = Vector2.zero;
+        gameplayRootRect.offsetMax = Vector2.zero;
+
+        Text scoreText = CreateText(gameplayHudRoot.transform, "Score Text", font, "SCORE 0000", TextAnchor.UpperLeft, new Vector2(38f, -34f), new Vector2(420f, 72f), new Color(0f, 0.95f, 1f));
+        Text pulseText = CreateText(gameplayHudRoot.transform, "Pulse Text", font, "PULSE 00%", TextAnchor.UpperRight, new Vector2(-38f, -34f), new Vector2(420f, 72f), new Color(1f, 0.25f, 0.9f));
+        Text hintText = CreateText(gameplayHudRoot.transform, "Control Hint", font, "TAP LEFT / RIGHT TO DRIFT", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(720f, 72f), new Color(0.86f, 0.92f, 1f));
+        hintText.fontSize = 28;
+
+        CreateButton(gameplayHudRoot.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -112f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.16f, 0.88f));
+        CreateButton(gameplayHudRoot.transform, "Left Control Zone", font, "LEFT", TextAnchor.LowerLeft, new Vector2(36f, 126f), new Vector2(220f, 140f), new Color(0f, 0.55f, 0.85f, 0.24f));
+        CreateButton(gameplayHudRoot.transform, "Right Control Zone", font, "RIGHT", TextAnchor.LowerRight, new Vector2(-36f, 126f), new Vector2(220f, 140f), new Color(0.85f, 0f, 0.65f, 0.24f));
+        gameplayHudRoot.SetActive(false);
 
         var menuPanel = new GameObject("Main Menu Panel");
         menuPanel.transform.SetParent(canvasObject.transform, false);
         var menuImage = menuPanel.AddComponent<Image>();
-        menuImage.color = new Color(0f, 0f, 0f, 0.18f);
-        SetRect(menuPanel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 118f), new Vector2(720f, 390f));
-        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, -26f), new Vector2(650f, 82f), new Color(0f, 0.95f, 1f));
-        titleText.fontSize = 58;
-        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -18f), new Vector2(260f, 78f), new Color(0f, 0.55f, 0.85f, 0.8f));
-        Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(300f, 72f), new Color(0.14f, 0.12f, 0.28f, 0.82f));
+        menuImage.color = new Color(0f, 0f, 0f, 0.58f);
+        SetRect(menuPanel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 70f), new Vector2(760f, 560f));
+        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, 48f), new Vector2(680f, 56f), new Color(0f, 0.95f, 1f));
+        titleText.fontSize = 42;
+        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -42f), new Vector2(300f, 82f), new Color(0f, 0.55f, 0.85f, 0.86f));
+        Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.MiddleCenter, new Vector2(0f, -142f), new Vector2(300f, 72f), new Color(0.14f, 0.12f, 0.28f, 0.9f));
+        Text bestScoreText = CreateText(menuPanel.transform, "Best Score Text", font, "BEST 0000", TextAnchor.LowerCenter, new Vector2(0f, -20f), new Vector2(420f, 64f), new Color(0.96f, 0.92f, 0.55f));
+        bestScoreText.fontSize = 28;
 
         var panel = new GameObject("Game Over Panel");
         panel.transform.SetParent(canvasObject.transform, false);
@@ -277,6 +289,7 @@ public static class BuildPipelineRunner
         var uiActions = canvasObject.AddComponent<NeonDriftUiActions>();
         var uiActionsSerialized = new SerializedObject(uiActions);
         uiActionsSerialized.FindProperty("mainMenuPanel").objectReferenceValue = menuPanel;
+        uiActionsSerialized.FindProperty("gameplayHudRoot").objectReferenceValue = gameplayHudRoot;
         uiActionsSerialized.FindProperty("settingsButtonLabel").objectReferenceValue = settingsButton.GetComponentInChildren<Text>(true);
         uiActionsSerialized.ApplyModifiedPropertiesWithoutUndo();
     }
