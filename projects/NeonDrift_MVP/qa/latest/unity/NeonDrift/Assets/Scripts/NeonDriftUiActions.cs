@@ -29,7 +29,9 @@ public sealed class NeonDriftUiActions : MonoBehaviour
         BindButton("Retry Button", Retry);
         BindSteerZone("Left Control Zone", -1f);
         BindSteerZone("Right Control Zone", 1f);
-        SetGameplayHudVisible(GameSessionController.Instance != null && GameSessionController.Instance.HasStarted);
+        bool hasStarted = GameSessionController.Instance != null && GameSessionController.Instance.HasStarted;
+        SetMenuVisible(!hasStarted);
+        SetGameplayHudVisible(hasStarted);
     }
 
     private void BindButton(string buttonName, UnityEngine.Events.UnityAction action)
@@ -126,6 +128,14 @@ public sealed class NeonDriftUiActions : MonoBehaviour
         }
     }
 
+    private void SetMenuVisible(bool visible)
+    {
+        if (mainMenuPanel != null)
+        {
+            mainMenuPanel.SetActive(visible);
+        }
+    }
+
     public void ShowSettingsFeedback()
     {
         if (settingsButtonLabel != null)
@@ -142,5 +152,7 @@ public sealed class NeonDriftUiActions : MonoBehaviour
     public void Retry()
     {
         GameSessionController.Instance?.Retry();
+        SetMenuVisible(true);
+        SetGameplayHudVisible(false);
     }
 }

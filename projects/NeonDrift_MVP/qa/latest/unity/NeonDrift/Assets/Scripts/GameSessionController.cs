@@ -37,6 +37,14 @@ public sealed class GameSessionController : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
+    }
+
     private void Update()
     {
         if (!started)
@@ -114,7 +122,19 @@ public sealed class GameSessionController : MonoBehaviour
 
     public void Retry()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 0f;
+        Score = 0;
+        started = false;
+        paused = false;
+        gameOver = false;
+        scoreTimer = 0f;
+        gameplayTimer = 0f;
+
+        DriftPlayerController player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
+        if (player != null)
+        {
+            player.ClearUiSteer();
+            player.transform.position = new Vector3(0f, -3.6f, 0f);
+        }
     }
 }
