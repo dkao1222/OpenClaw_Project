@@ -18,7 +18,7 @@ public sealed class HazardSpawner : MonoBehaviour
 
     private void Update()
     {
-        GameSessionController session = GameSessionController.Instance;
+        GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
         if (session == null || !session.CanSpawnHazards)
         {
             timer = initialSpawnDelay;
@@ -47,7 +47,7 @@ public sealed class HazardSpawner : MonoBehaviour
 
     private float ChooseReadableSpawnX()
     {
-        GameSessionController session = GameSessionController.Instance;
+        GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
         if (session != null && session.GameplayTime < 8f)
         {
             return Random.value < 0.5f ? Random.Range(xRange.x, -1.35f) : Random.Range(1.35f, xRange.y);

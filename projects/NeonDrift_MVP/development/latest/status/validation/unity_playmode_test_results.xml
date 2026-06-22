@@ -1,5 +1,5 @@
-<test-run testcasecount="21" result="Passed" total="21" passed="21" failed="0">
-  <test-suite type="TestSuite" name="NeonDrift.PlayMode" result="Passed">
+<test-run testcasecount="23" result="Failed" total="23" passed="21" failed="2">
+  <test-suite type="TestSuite" name="NeonDrift.PlayMode" result="Failed">
     <test-case name="MainSceneHasCanvas" result="Passed" />
     <test-case name="MainSceneHasHudController" result="Passed" />
     <test-case name="MainSceneHasRuntimeQaProbe" result="Passed" />
@@ -19,6 +19,8 @@
     <test-case name="InitialStateWaitsForStart" result="Passed" />
     <test-case name="MenuLayoutIsReadable" result="Passed" />
     <test-case name="GameplayVisualsAreReadable" result="Passed" />
+    <test-case name="GameplayMotionIsVerified" result="Failed" />
+    <test-case name="PlayerSteeringMotionIsVerified" result="Failed" />
     <test-case name="StartButtonFlowVerified" result="Passed" />
     <test-case name="EarlyGameOverIsProtected" result="Passed" />
   </test-suite>

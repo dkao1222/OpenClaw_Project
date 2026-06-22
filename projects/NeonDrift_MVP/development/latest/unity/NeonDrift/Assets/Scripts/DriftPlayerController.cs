@@ -21,6 +21,11 @@ public sealed class DriftPlayerController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
     }
 
+    private void OnEnable()
+    {
+        Instance = this;
+    }
+
     private void OnDestroy()
     {
         if (Instance == this)
