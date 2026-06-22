@@ -92,6 +92,11 @@ public sealed class NeonDriftPlayModeTests
         string json = InvokeRuntimeQaProbeCaptureJson();
         Assert.That(json, Does.Contain("\"gameplayVisualsVerified\": true"));
         Assert.That(json, Does.Contain("\"gameplayVisualsHiddenInMenu\": true"));
+        Assert.That(json, Does.Contain("\"hasObjectiveText\": true"));
+        Assert.That(json, Does.Contain("\"hasAvoidInstructionText\": true"));
+        Assert.That(json, Does.Contain("\"hasPlayerLabel\": true"));
+        Assert.That(json, Does.Contain("\"hasHazardLabel\": true"));
+        Assert.That(json, Does.Contain("\"gameplayInstructionReadableVerified\": true"));
     }
 
     [Test]

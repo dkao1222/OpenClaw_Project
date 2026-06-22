@@ -16,6 +16,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool hasScoreText;
         public bool hasPulseText;
         public bool hasControlHint;
+        public bool hasObjectiveText;
+        public bool hasAvoidInstructionText;
+        public bool hasPlayerLabel;
+        public bool hasHazardLabel;
         public bool hasMainMenuPanel;
         public bool hasStartButton;
         public bool hasSettingsButton;
@@ -53,6 +57,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool gameplayControlsHiddenInMenu;
         public bool gameplayVisualsVerified;
         public bool gameplayVisualsHiddenInMenu;
+        public bool gameplayInstructionReadableVerified;
         public bool gameplayMotionVerified;
         public bool playerSteeringMotionVerified;
         public bool coreGameplayObjectsVerified;
@@ -169,6 +174,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         RectTransform trackRect = FindRectTransformByName("Track Playfield");
         RectTransform playerMarkerRect = FindRectTransformByName("Player Visual Marker");
         RectTransform hazardMarkerRect = FindRectTransformByName("Hazard Visual Marker");
+        RectTransform objectiveRect = FindRectTransformByName("Objective Text");
+        RectTransform avoidRect = FindRectTransformByName("Avoid Instruction Text");
+        RectTransform playerLabelRect = FindRectTransformByName("Player Label");
+        RectTransform hazardLabelRect = FindRectTransformByName("Hazard Label");
         bool hasRetry = retryButton != null;
         bool hasPause = pauseButton != null;
         bool hasEventSystem = FindObjectOfType<EventSystem>() != null;
@@ -190,6 +199,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         NeonDriftVisualSync visualSync = FindVisualSyncIncludingInactive();
         bool gameplayVisualsVerified = HasMinimumSize(trackRect, 180f, 520f) && HasMinimumSize(playerMarkerRect, 44f, 32f) && HasMinimumSize(hazardMarkerRect, 44f, 44f) && visualSync != null && visualSync.HasMotionContract;
         bool gameplayVisualsHiddenInMenu = !hasStarted && !IsActiveInHierarchy("Track Playfield") && !IsActiveInHierarchy("Player Visual Marker") && !IsActiveInHierarchy("Hazard Visual Marker");
+        bool gameplayInstructionReadableVerified = HasTextNamed(texts, "Objective Text") && HasTextNamed(texts, "Avoid Instruction Text") && HasTextNamed(texts, "Player Label") && HasTextNamed(texts, "Hazard Label") && HasMinimumSize(objectiveRect, 360f, 36f) && HasMinimumSize(avoidRect, 420f, 36f) && HasMinimumSize(playerLabelRect, 120f, 28f) && HasMinimumSize(hazardLabelRect, 140f, 28f);
         bool menuLayoutVerified = mainMenuVisible && menuElementsDoNotOverlap && gameplayHudHiddenInMenu && gameplayControlsHiddenInMenu && HasMinimumSize(startRect, 120f, 44f) && HasMinimumSize(settingsRect, 120f, 44f);
         bool startFlowVerified = session != null && !hasStarted && GameSessionController.Score == 0 && mainMenuVisible && startButton != null && IsClickable(startButton);
         return new ProbeSnapshot
@@ -202,6 +212,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             hasScoreText = HasTextNamed(texts, "Score Text"),
             hasPulseText = HasTextNamed(texts, "Pulse Text"),
             hasControlHint = HasTextNamed(texts, "Control Hint"),
+            hasObjectiveText = HasTextNamed(texts, "Objective Text"),
+            hasAvoidInstructionText = HasTextNamed(texts, "Avoid Instruction Text"),
+            hasPlayerLabel = HasTextNamed(texts, "Player Label"),
+            hasHazardLabel = HasTextNamed(texts, "Hazard Label"),
             hasMainMenuPanel = mainMenuPanel != null,
             hasStartButton = startButton != null,
             hasSettingsButton = settingsButton != null,
@@ -239,6 +253,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             gameplayControlsHiddenInMenu = gameplayControlsHiddenInMenu,
             gameplayVisualsVerified = gameplayVisualsVerified,
             gameplayVisualsHiddenInMenu = gameplayVisualsHiddenInMenu,
+            gameplayInstructionReadableVerified = gameplayInstructionReadableVerified,
             gameplayMotionVerified = gameplayMotionVerifiedForQa || (visualSync != null && visualSync.HasAnimated),
             playerSteeringMotionVerified = playerSteeringMotionVerifiedForQa || (visualSync != null && visualSync.HasPlayerResponse),
             coreGameplayObjectsVerified = coreGameplayObjectsVerified,
