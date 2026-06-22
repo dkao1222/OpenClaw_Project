@@ -253,7 +253,7 @@ public static class NeonDriftRuntimeBootstrap
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     public static void EnsureRuntimeScene()
     {
-        if (GameSessionController.Instance != null || GameObject.Find("NeonDrift Session") != null)
+        if (GameObject.Find("NeonDrift Session") != null)
         {
             return;
         }
