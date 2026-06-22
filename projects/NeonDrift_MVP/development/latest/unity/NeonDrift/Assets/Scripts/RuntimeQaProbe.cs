@@ -47,6 +47,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool controlZoneSizeVerified;
         public bool controlsInsideSafeArea;
         public bool controlsDoNotOverlap;
+        public bool menuLayoutVerified;
+        public bool menuElementsDoNotOverlap;
+        public bool gameplayHudHiddenInMenu;
+        public bool gameplayControlsHiddenInMenu;
         public bool coreGameplayObjectsVerified;
         public bool scoringSystemVerified;
         public bool pauseSystemVerified;
@@ -124,6 +128,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         Canvas canvas = FindObjectOfType<Canvas>();
         Text[] texts = FindObjectsOfType<Text>(true);
         GameObject mainMenuPanel = FindObjectByNameIncludingInactive("Main Menu Panel");
+        GameObject gameplayHudRoot = FindObjectByNameIncludingInactive("Gameplay HUD Root");
         GameObject gameOverPanel = FindObjectByNameIncludingInactive("Game Over Panel");
         GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
         bool hasPlayer = GameObject.Find("Player") != null;
@@ -139,6 +144,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         RectTransform pauseRect = pauseButton != null ? pauseButton.GetComponent<RectTransform>() : null;
         RectTransform leftRect = FindRectTransformByName("Left Control Zone");
         RectTransform rightRect = FindRectTransformByName("Right Control Zone");
+        RectTransform titleRect = FindRectTransformByName("Title Text");
+        RectTransform bestRect = FindRectTransformByName("Best Score Text");
         bool hasRetry = retryButton != null;
         bool hasPause = pauseButton != null;
         bool hasEventSystem = FindObjectOfType<EventSystem>() != null;
@@ -153,6 +160,11 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         bool coreGameplayObjectsVerified = hasPlayer && FindObjectOfType<HazardSpawner>() != null && session != null;
         bool hasStarted = session != null && session.HasStarted;
         bool mainMenuVisible = mainMenuPanel != null && mainMenuPanel.activeInHierarchy;
+        bool gameplayHudVisible = gameplayHudRoot != null && gameplayHudRoot.activeInHierarchy;
+        bool menuElementsDoNotOverlap = !RectsOverlap(titleRect, startRect) && !RectsOverlap(startRect, settingsRect) && !RectsOverlap(settingsRect, bestRect) && !RectsOverlap(titleRect, settingsRect) && !RectsOverlap(startRect, bestRect);
+        bool gameplayControlsHiddenInMenu = !hasStarted && !IsActiveInHierarchy("Left Control Zone") && !IsActiveInHierarchy("Right Control Zone") && !IsActiveInHierarchy("Pause Button");
+        bool gameplayHudHiddenInMenu = !hasStarted && !gameplayHudVisible;
+        bool menuLayoutVerified = mainMenuVisible && menuElementsDoNotOverlap && gameplayHudHiddenInMenu && gameplayControlsHiddenInMenu && HasMinimumSize(startRect, 120f, 44f) && HasMinimumSize(settingsRect, 120f, 44f);
         bool startFlowVerified = session != null && !hasStarted && GameSessionController.Score == 0 && mainMenuVisible && startButton != null && IsClickable(startButton);
         return new ProbeSnapshot
         {
@@ -195,6 +207,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             controlZoneSizeVerified = controlZoneSizeVerified,
             controlsInsideSafeArea = controlsInsideSafeArea,
             controlsDoNotOverlap = controlsDoNotOverlap,
+            menuLayoutVerified = menuLayoutVerified,
+            menuElementsDoNotOverlap = menuElementsDoNotOverlap,
+            gameplayHudHiddenInMenu = gameplayHudHiddenInMenu,
+            gameplayControlsHiddenInMenu = gameplayControlsHiddenInMenu,
             coreGameplayObjectsVerified = coreGameplayObjectsVerified,
             scoringSystemVerified = session != null && HasTextNamed(texts, "Score Text") && FindObjectOfType<DriftPlayerController>() != null,
             pauseSystemVerified = session != null && hasPause && IsClickable(pauseButton),
@@ -244,6 +260,12 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     private static bool IsClickable(Button button)
     {
         return button != null && button.interactable && button.targetGraphic != null;
+    }
+
+    private static bool IsActiveInHierarchy(string name)
+    {
+        GameObject target = FindObjectByNameIncludingInactive(name);
+        return target != null && target.activeInHierarchy;
     }
 
     private static RectTransform FindRectTransformByName(string name)
