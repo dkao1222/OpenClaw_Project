@@ -47,7 +47,8 @@ public sealed class NeonDriftUiActions : MonoBehaviour
         {
             mainMenuPanel.SetActive(false);
         }
-        GameSessionController.Instance?.StartGame();
+        GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        session?.StartGame();
     }
 
     public void ShowSettingsFeedback()

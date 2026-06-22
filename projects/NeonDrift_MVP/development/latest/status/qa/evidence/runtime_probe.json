@@ -1,5 +1,5 @@
 {
-    "screenState": "gameplay",
+    "screenState": "menu",
     "screenWidth": 640,
     "screenHeight": 480,
     "safeArea": "(x:0.00, y:0.00, width:640.00, height:480.00)",
@@ -42,6 +42,8 @@
     "scoringSystemVerified": true,
     "pauseSystemVerified": true,
     "failureRetrySystemVerified": true,
+    "startFlowVerified": true,
+    "startButtonStartsGameVerified": true,
     "pauseControlVerified": true,
     "retryControlVerified": true,
     "leftRightSteeringVerified": true,
@@ -51,6 +53,7 @@
     "score": 0,
     "isGameOver": false,
     "isPaused": false,
+    "hasStarted": false,
     "framesPerSecond": 60.0,
     "exceptionCount": 0
 }
