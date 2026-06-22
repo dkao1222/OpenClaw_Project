@@ -10,6 +10,19 @@ public sealed class NeonDriftUiActions : MonoBehaviour
 
     private void Awake()
     {
+        InitializeBindings();
+    }
+
+    public void Configure(GameObject menuPanel, GameObject hudRoot, Text settingsLabel)
+    {
+        mainMenuPanel = menuPanel;
+        gameplayHudRoot = hudRoot;
+        settingsButtonLabel = settingsLabel;
+        InitializeBindings();
+    }
+
+    private void InitializeBindings()
+    {
         BindButton("Start Button", StartGame);
         BindButton("Settings Button", ShowSettingsFeedback);
         BindButton("Pause Button", TogglePause);

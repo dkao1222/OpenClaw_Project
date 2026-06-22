@@ -10,6 +10,7 @@ public sealed class NeonDriftPlayModeTests
     public void MainSceneLoadsWithProbeAndHud()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
 
         Assert.IsNotNull(FindObjectByTypeName("GameSessionController"));
         Assert.IsNotNull(FindObjectByTypeName("NeonDriftHud"));
@@ -25,6 +26,7 @@ public sealed class NeonDriftPlayModeTests
     public void ProbeCapturesScreenAndSafeArea()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         string json = InvokeRuntimeQaProbeCaptureJson();
         Assert.That(json, Does.Contain("\"screenWidth\""));
         Assert.That(json, Does.Contain("\"screenHeight\""));
@@ -35,6 +37,7 @@ public sealed class NeonDriftPlayModeTests
     public void ButtonPositionsAndSizesAreVerified()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         string json = InvokeRuntimeQaProbeCaptureJson();
         Assert.That(json, Does.Contain("\"startButtonRect\""));
         Assert.That(json, Does.Contain("\"settingsButtonRect\""));
@@ -54,6 +57,7 @@ public sealed class NeonDriftPlayModeTests
     public void InitialStateWaitsForStart()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         string json = InvokeRuntimeQaProbeCaptureJson();
         Assert.That(json, Does.Contain("\"screenState\": \"menu\""));
         Assert.That(json, Does.Contain("\"hasStarted\": false"));
@@ -72,6 +76,7 @@ public sealed class NeonDriftPlayModeTests
     public void MenuLayoutIsReadable()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         string json = InvokeRuntimeQaProbeCaptureJson();
         Assert.That(json, Does.Contain("\"menuLayoutVerified\": true"));
         Assert.That(json, Does.Contain("\"menuElementsDoNotOverlap\": true"));
@@ -83,6 +88,7 @@ public sealed class NeonDriftPlayModeTests
     public void GameplayVisualsAreReadable()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         string json = InvokeRuntimeQaProbeCaptureJson();
         Assert.That(json, Does.Contain("\"gameplayVisualsVerified\": true"));
         Assert.That(json, Does.Contain("\"gameplayVisualsHiddenInMenu\": true"));
@@ -92,6 +98,7 @@ public sealed class NeonDriftPlayModeTests
     public void GameplayMotionIsVerified()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         Type uiActionsType = FindType("NeonDriftUiActions");
         Type visualSyncType = FindType("NeonDriftVisualSync");
         Assert.IsNotNull(uiActionsType);
@@ -111,6 +118,7 @@ public sealed class NeonDriftPlayModeTests
     public void PlayerSteeringMotionIsVerified()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         Type uiActionsType = FindType("NeonDriftUiActions");
         Type visualSyncType = FindType("NeonDriftVisualSync");
         Assert.IsNotNull(uiActionsType);
@@ -130,6 +138,7 @@ public sealed class NeonDriftPlayModeTests
     public void StartButtonFlowVerified()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         Type uiActionsType = FindType("NeonDriftUiActions");
         Type sessionType = FindType("GameSessionController");
         Assert.IsNotNull(uiActionsType);
@@ -153,6 +162,7 @@ public sealed class NeonDriftPlayModeTests
     public void EarlyGameOverIsProtected()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         Type uiActionsType = FindType("NeonDriftUiActions");
         Type sessionType = FindType("GameSessionController");
         UnityEngine.Object uiActions = UnityEngine.Object.FindObjectOfType(uiActionsType);
@@ -175,6 +185,7 @@ public sealed class NeonDriftPlayModeTests
     public void CoreGameplayFunctionsAreVerified()
     {
         SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
         string json = InvokeRuntimeQaProbeCaptureJson();
         Assert.That(json, Does.Contain("\"coreGameplayObjectsVerified\": true"));
         Assert.That(json, Does.Contain("\"scoringSystemVerified\": true"));
@@ -198,6 +209,15 @@ public sealed class NeonDriftPlayModeTests
         MethodInfo capture = probeType.GetMethod("CaptureJson", BindingFlags.Static | BindingFlags.Public);
         Assert.IsNotNull(capture);
         return (string)capture.Invoke(null, null);
+    }
+
+    private static void InvokeRuntimeBootstrap()
+    {
+        Type bootstrapType = FindType("NeonDriftRuntimeBootstrap");
+        Assert.IsNotNull(bootstrapType);
+        MethodInfo ensure = bootstrapType.GetMethod("EnsureRuntimeScene", BindingFlags.Static | BindingFlags.Public);
+        Assert.IsNotNull(ensure);
+        ensure.Invoke(null, null);
     }
 
     private static Type FindType(string typeName)
