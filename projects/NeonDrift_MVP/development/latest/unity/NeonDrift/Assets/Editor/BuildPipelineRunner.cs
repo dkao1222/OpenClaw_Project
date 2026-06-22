@@ -263,9 +263,9 @@ public static class BuildPipelineRunner
         SetRect(menuPanel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 70f), new Vector2(760f, 560f));
         Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, 48f), new Vector2(680f, 56f), new Color(0f, 0.95f, 1f));
         titleText.fontSize = 42;
-        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, 28f), new Vector2(300f, 82f), new Color(0f, 0.55f, 0.85f, 0.86f));
-        Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.MiddleCenter, new Vector2(0f, -86f), new Vector2(300f, 72f), new Color(0.14f, 0.12f, 0.28f, 0.9f));
-        Text bestScoreText = CreateText(menuPanel.transform, "Best Score Text", font, "BEST 0000", TextAnchor.LowerCenter, new Vector2(0f, 38f), new Vector2(420f, 64f), new Color(0.96f, 0.92f, 0.55f));
+        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -42f), new Vector2(300f, 82f), new Color(0f, 0.55f, 0.85f, 0.86f));
+        Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.MiddleCenter, new Vector2(0f, -142f), new Vector2(300f, 72f), new Color(0.14f, 0.12f, 0.28f, 0.9f));
+        Text bestScoreText = CreateText(menuPanel.transform, "Best Score Text", font, "BEST 0000", TextAnchor.LowerCenter, new Vector2(0f, -20f), new Vector2(420f, 64f), new Color(0.96f, 0.92f, 0.55f));
         bestScoreText.fontSize = 28;
 
         var panel = new GameObject("Game Over Panel");
