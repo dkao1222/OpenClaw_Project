@@ -48,6 +48,8 @@
     "failureRetrySystemVerified": true,
     "startFlowVerified": true,
     "startButtonStartsGameVerified": true,
+    "earlyGameOverProtected": true,
+    "readableHazardPacingVerified": true,
     "pauseControlVerified": true,
     "retryControlVerified": true,
     "leftRightSteeringVerified": true,
@@ -58,6 +60,8 @@
     "isGameOver": false,
     "isPaused": false,
     "hasStarted": false,
+    "gameplayTime": 0.0,
+    "minimumSurvivalSeconds": 6.0,
     "framesPerSecond": 60.0,
     "exceptionCount": 0
 }

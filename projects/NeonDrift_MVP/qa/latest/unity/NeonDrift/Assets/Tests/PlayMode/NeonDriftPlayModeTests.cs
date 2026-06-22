@@ -62,6 +62,8 @@ public sealed class NeonDriftPlayModeTests
         Assert.That(json, Does.Contain("\"menuLayoutVerified\": true"));
         Assert.That(json, Does.Contain("\"gameplayHudHiddenInMenu\": true"));
         Assert.That(json, Does.Contain("\"gameplayControlsHiddenInMenu\": true"));
+        Assert.That(json, Does.Contain("\"earlyGameOverProtected\": true"));
+        Assert.That(json, Does.Contain("\"readableHazardPacingVerified\": true"));
     }
 
     [Test]
@@ -96,6 +98,28 @@ public sealed class NeonDriftPlayModeTests
         bool startedAfter = (bool)sessionType.GetProperty("HasStarted").GetValue(session);
         Assert.IsTrue(startedAfter);
         Assert.AreEqual(1f, Time.timeScale);
+    }
+
+    [Test]
+    public void EarlyGameOverIsProtected()
+    {
+        SceneManager.LoadScene("Main");
+        Type uiActionsType = FindType("NeonDriftUiActions");
+        Type sessionType = FindType("GameSessionController");
+        UnityEngine.Object uiActions = UnityEngine.Object.FindObjectOfType(uiActionsType);
+        UnityEngine.Object session = UnityEngine.Object.FindObjectOfType(sessionType);
+        Assert.IsNotNull(uiActions);
+        Assert.IsNotNull(session);
+
+        uiActionsType.GetMethod("StartGame").Invoke(uiActions, null);
+        sessionType.GetMethod("GameOver").Invoke(session, null);
+        bool isGameOver = (bool)sessionType.GetProperty("IsGameOver").GetValue(session);
+        bool canSpawnHazards = (bool)sessionType.GetProperty("CanSpawnHazards").GetValue(session);
+        float minimumSurvivalSeconds = (float)sessionType.GetProperty("MinimumSurvivalSeconds").GetValue(session);
+
+        Assert.IsFalse(isGameOver);
+        Assert.IsFalse(canSpawnHazards);
+        Assert.GreaterOrEqual(minimumSurvivalSeconds, 6f);
     }
 
     [Test]
