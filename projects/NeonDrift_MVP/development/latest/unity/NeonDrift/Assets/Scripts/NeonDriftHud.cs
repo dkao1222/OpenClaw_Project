@@ -165,6 +165,7 @@ public sealed class NeonDriftVisualSync : MonoBehaviour
 
 public sealed class NeonDriftQaPlaythrough : MonoBehaviour
 {
+    private static bool triggerConsumed;
     private bool running;
 
     private void Start()
@@ -178,17 +179,39 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
 
     private bool ShouldRunQaPlaythrough()
     {
+        if (triggerConsumed)
+        {
+            return false;
+        }
+
         string[] args = Environment.GetCommandLineArgs();
         for (int index = 0; index < args.Length; index += 1)
         {
             if (args[index] == "-qaPlaythrough")
             {
+                triggerConsumed = true;
+                DeleteQaPlaythroughFlag();
                 return true;
             }
         }
 
         string flagPath = System.IO.Path.Combine(Application.persistentDataPath, "qa_playthrough.flag");
-        return System.IO.File.Exists(flagPath);
+        if (System.IO.File.Exists(flagPath))
+        {
+            triggerConsumed = true;
+            DeleteQaPlaythroughFlag();
+            return true;
+        }
+        return false;
+    }
+
+    private void DeleteQaPlaythroughFlag()
+    {
+        string flagPath = System.IO.Path.Combine(Application.persistentDataPath, "qa_playthrough.flag");
+        if (System.IO.File.Exists(flagPath))
+        {
+            System.IO.File.Delete(flagPath);
+        }
     }
 
     private IEnumerator RunPlaythrough()
@@ -199,7 +222,7 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
         }
         running = true;
 
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(3f);
         NeonDriftUiActions uiActions = FindObjectOfType<NeonDriftUiActions>();
         GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
         Debug.Log("QA_PLAYTHROUGH_START");

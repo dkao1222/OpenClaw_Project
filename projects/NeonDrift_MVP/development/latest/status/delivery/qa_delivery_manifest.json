@@ -1,11 +1,11 @@
 {
   "project_name": "NeonDrift_MVP",
-  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260622171008",
-  "delivery_status": "ready",
-  "qa_overall_status": "passed",
-  "release_candidate_status": "ready",
-  "checks_total": 91,
-  "checks_failed": 0,
+  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260622172127",
+  "delivery_status": "blocked",
+  "qa_overall_status": "failed",
+  "release_candidate_status": "blocked",
+  "checks_total": 95,
+  "checks_failed": 2,
   "checks_blocked": 0,
   "bundle_id": "com.DefaultCompany.NeonDrift",
   "simulator_app": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app",
@@ -37,5 +37,8 @@
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_editmode_test_results.xml",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml"
   ],
-  "required_fixes": []
+  "required_fixes": [
+    "playthrough_gameplay_to_game_over_changed: {'comparable': True, 'mean_abs_diff': 0.479, 'sample_count': 3000, 'changed': False}",
+    "playthrough_game_over_to_retry_changed: {'comparable': True, 'mean_abs_diff': 1.46, 'sample_count': 3000, 'changed': False}"
+  ]
 }
