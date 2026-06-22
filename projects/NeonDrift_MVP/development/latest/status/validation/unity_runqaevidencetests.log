@@ -8,7 +8,7 @@ Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        65536 MB
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao" at "2026-06-22T14:33:56.495389Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao" at "2026-06-22T14:37:44.995932Z"
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Resources/PackageManager/Server/UnityPackageManager
 
 COMMAND LINE ARGUMENTS:
@@ -60,11 +60,11 @@ Successfully changed project path to: /Users/dragonkao/.openclaw/workspace/382b9
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8459132544]  Target information:
 
-Player connection [8459132544]  * "[IP] 192.168.1.101 [Port] 55505 [Flags] 2 [Guid] 2293592448 [EditorId] 2293592448 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8459132544]  * "[IP] 192.168.1.101 [Port] 55505 [Flags] 2 [Guid] 1914597520 [EditorId] 1914597520 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8459132544]  * "[IP] 169.254.237.5 [Port] 55505 [Flags] 2 [Guid] 2293592448 [EditorId] 2293592448 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8459132544]  * "[IP] 169.254.237.5 [Port] 55505 [Flags] 2 [Guid] 1914597520 [EditorId] 1914597520 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8459132544]  * "[IP] 192.168.0.102 [Port] 55505 [Flags] 2 [Guid] 2293592448 [EditorId] 2293592448 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8459132544]  * "[IP] 192.168.0.102 [Port] 55505 [Flags] 2 [Guid] 1914597520 [EditorId] 1914597520 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8459132544] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8459132544] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -73,12 +73,12 @@ Input System module state changed to: Initialized.
 [Physics::Module] Id: 0xdecafbad
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              8a885536b4914cdaaff657b030c55be5
+  Session Id:              2d455aedea344c358e113a994c08f7d2
   Correlation Id:          a0d49acc4b7f7257555066953618c9cd
-  External correlation Id: 4538367017034753382
+  External correlation Id: 7254826975455562347
   Machine Id:              343h8f5nRUn5G/ld0aThqc7/4NA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-dragonkao" (connect: 0.00s, validation: 0.00s, handshake: 0.21s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao-notifications" at "2026-06-22T14:33:56.70495Z"
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-dragonkao" (connect: 0.00s, validation: 0.00s, handshake: 0.19s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao-notifications" at "2026-06-22T14:37:45.194689Z"
 [Licensing::Module] Error: Access token is unavailable; failed to update
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -88,8 +88,8 @@ Input System module state changed to: Initialized.
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 0.21s
-[Package Manager] Connected to IPC stream "Upm-5080" after 0.2 seconds.
+[Licensing::Module] Licensing Background thread has ended after 0.20s
+[Package Manager] Connected to IPC stream "Upm-7102" after 0.2 seconds.
 Library Redirect Path: Library/
 Rebuilding Library because the asset database could not be found!
 [Physics::Module] Selected backend.
@@ -113,7 +113,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56102
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 ImportWorker Server TCP listen port: 0
@@ -123,8 +123,8 @@ Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.77f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.003005 seconds.
-- Loaded All Assemblies, in  0.228 seconds
+Registered in 0.002929 seconds.
+- Loaded All Assemblies, in  0.164 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
@@ -132,9 +132,9 @@ Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.203 seconds
-Domain Reload Profiling: 431ms
-	BeginReloadAssembly (85ms)
+- Finished resetting the current domain, in  0.202 seconds
+Domain Reload Profiling: 366ms
+	BeginReloadAssembly (39ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -142,23 +142,23 @@ Domain Reload Profiling: 431ms
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (18ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (95ms)
-		LoadAssemblies (87ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (79ms)
+		LoadAssemblies (38ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (90ms)
-			TypeCache.Refresh (90ms)
-				TypeCache.ScanAssembly (82ms)
+		AnalyzeDomain (78ms)
+			TypeCache.Refresh (77ms)
+				TypeCache.ScanAssembly (70ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (204ms)
+	FinalizeReload (202ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (185ms)
+		SetupLoadedEditorAssemblies (183ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (55ms)
+			InitializePlatformSupportModulesInManaged (54ms)
 			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (32ms)
+			BeforeProcessingInitializeOnLoad (31ms)
 			ProcessInitializeOnLoadAttributes (69ms)
 			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (0ms)
@@ -176,7 +176,7 @@ The following packages were added:
 The following packages were updated:
   com.unity.test-framework from version 1.1.33 to 1.6.0
   com.unity.ugui from version 1.0.0 to 2.0.0
-[Package Manager] Done resolving packages in 1.88 seconds
+[Package Manager] Done resolving packages in 1.13 seconds
 [Licensing::Client] Successfully resolved entitlement details
 [Package Manager] Registered 15 packages:
   Built-in packages:
@@ -197,8 +197,8 @@ The following packages were updated:
     com.unity.ext.nunit@2.0.5 (location: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity_build_workspace/NeonDrift/Library/PackageCache/com.unity.ext.nunit@031a54704bff)
 [Subsystems] No new subsystems found in resolved package list.
 [Package Manager] Done registering packages in 0.00 seconds
-[API Updater] Processing imported assemblies took 19 ms (0/0 assembly(ies)).
-Assembly Updater Post Process Assets time: 0.021222s
+[API Updater] Processing imported assemblies took 20 ms (0/0 assembly(ies)).
+Assembly Updater Post Process Assets time: 0.021799s
 [ScriptCompilation] Requested script compilation because: Assembly Definition File(s) changed
 [ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
 [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
@@ -216,68 +216,68 @@ Assembly Updater Post Process Assets time: 0.021222s
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 20.0272ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 19.6044ms
 Starting: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/200b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity_build_workspace/NeonDrift
-ExitCode: 4 Duration: 0s16ms
+ExitCode: 4 Duration: 0s17ms
 [             ] Require frontend run.  Library/Bee/200b0aE.dag couldn't be loaded
 DisplayProgressbar: Compiling Scripts
 Starting: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Tools/netcorerun/netcorerun "/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe" "Library/Bee/200b0aE.dag.json" "Library/Bee/200b0aE-inputdata.json" "Library/Bee/buildprogram0.traceevents"
 WorkingDir: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity_build_workspace/NeonDrift
-ExitCode: 0 Duration: 0s372ms
+ExitCode: 0 Duration: 0s313ms
 Starting: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/200b0aE.dag" --continue-on-failure --dagfilejson="Library/Bee/200b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
 WorkingDir: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity_build_workspace/NeonDrift
-ExitCode: 3 Duration: 2s166ms
+ExitCode: 3 Duration: 2s728ms
 Finished compiling graph: 255 nodes, 2497 flattened edges (2313 ToBuild, 28 ToUse), maximum node priority 136
-[  1/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_975829D2252D3F41.mvfrm
-[  2/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GraphViewModule.dll_1B01A77AF96EC946.mvfrm
-[  3/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.BuildProfileModule.dll_870663C1E3F5601C.mvfrm
-[  4/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.EmbreeModule.dll_CAD8174468178EC9.mvfrm
-[  5/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.AccessibilityModule.dll_4DA460B61544DDA1.mvfrm
-[  6/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.AdaptivePerformanceModule.dll_CE47633A24BED2CD.mvfrm
-[  7/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.Common.dll_A6DCB9920F4D995D.mvfrm
+[  1/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.BuildProfileModule.dll_870663C1E3F5601C.mvfrm
+[  2/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_6539F9B99D695680.mvfrm
+[  3/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.CoreBusinessMetricsModule.dll_4E325CB44B0601C7.mvfrm
+[  4/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GIModule.dll_540DCFBF25E30923.mvfrm
+[  5/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_975829D2252D3F41.mvfrm
+[  6/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.EmbreeModule.dll_CAD8174468178EC9.mvfrm
+[  7/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.EditorToolbarModule.dll_83A076888EDA8EF1.mvfrm
 [  8/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.DiagnosticsModule.dll_B63EB01782DE394F.mvfrm
-[  9/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_6F9FF547036145E1.mvfrm
-[ 10/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_6539F9B99D695680.mvfrm
-[ 11/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.CoreBusinessMetricsModule.dll_4E325CB44B0601C7.mvfrm
-[ 12/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.Xcode.dll_53DBCA6672DD0D3F.mvfrm
-[ 13/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GIModule.dll_540DCFBF25E30923.mvfrm
-[ 14/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.EditorToolbarModule.dll_83A076888EDA8EF1.mvfrm
-[ 15/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Physics2DModule.dll_804722AB8F48E39C.mvfrm
-[ 16/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.MultiplayerModule.dll_FF19B113E4A9678D.mvfrm
-[ 17/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SceneViewModule.dll_59B18A82EE919654.mvfrm
-[ 18/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.ShaderFoundryModule.dll_E61FB789B076B5B7.mvfrm
-[ 19/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.QuickSearchModule.dll_414E3124DBB535A8.mvfrm
-[ 20/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PropertiesModule.dll_4029601C856EC074.mvfrm
-[ 21/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PresetsUIModule.dll_D667E05CFBC7214B.mvfrm
-[ 22/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.QuickInstallModule.dll_65E5B201257BCE4F.mvfrm
-[ 23/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GridAndSnapModule.dll_BFF796990642F63E.mvfrm
-[ 24/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GraphicsStateCollectionSerializerModule.dll_F67C7BA3CDCD2109.mvfrm
-[ 25/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PhysicsModule.dll_C95E924BEB2CAF2A.mvfrm
-[ 26/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GridModule.dll_42AB15A7B5BDEC77.mvfrm
+[  9/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.Xcode.dll_53DBCA6672DD0D3F.mvfrm
+[ 10/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.AdaptivePerformanceModule.dll_CE47633A24BED2CD.mvfrm
+[ 11/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GraphViewModule.dll_1B01A77AF96EC946.mvfrm
+[ 12/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.AccessibilityModule.dll_4DA460B61544DDA1.mvfrm
+[ 13/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_6F9FF547036145E1.mvfrm
+[ 14/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.Common.dll_A6DCB9920F4D995D.mvfrm
+[ 15/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.MultiplayerModule.dll_FF19B113E4A9678D.mvfrm
+[ 16/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Physics2DModule.dll_804722AB8F48E39C.mvfrm
+[ 17/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.QuickSearchModule.dll_414E3124DBB535A8.mvfrm
+[ 18/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SafeModeModule.dll_31BEC0F1FA35CB01.mvfrm
+[ 19/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GraphicsStateCollectionSerializerModule.dll_F67C7BA3CDCD2109.mvfrm
+[ 20/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GridAndSnapModule.dll_BFF796990642F63E.mvfrm
+[ 21/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GridModule.dll_42AB15A7B5BDEC77.mvfrm
+[ 22/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.ShaderFoundryModule.dll_E61FB789B076B5B7.mvfrm
+[ 23/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PhysicsModule.dll_C95E924BEB2CAF2A.mvfrm
+[ 24/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.QuickInstallModule.dll_65E5B201257BCE4F.mvfrm
+[ 25/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PropertiesModule.dll_4029601C856EC074.mvfrm
+[ 26/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PresetsUIModule.dll_D667E05CFBC7214B.mvfrm
 [ 27/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SceneTemplateModule.dll_A73FE7468DC73929.mvfrm
-[ 28/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SafeModeModule.dll_31BEC0F1FA35CB01.mvfrm
-[ 29/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreTextEngineModule.dll_1E9D4A127E5C111C.mvfrm
-[ 30/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TerrainModule.dll_E3A50DBAC0EAF818.mvfrm
-[ 31/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SpriteShapeModule.dll_98D2C1E1E184121F.mvfrm
-[ 32/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SpriteMaskModule.dll_FC1A936E33F2F1B2.mvfrm
-[ 33/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SubstanceModule.dll_C4E134548926A153.mvfrm
-[ 34/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SketchUpModule.dll_19D3A64245676718.mvfrm
-[ 35/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreFontEngineModule.dll_D6B513A0EED857FE.mvfrm
-[ 36/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIBuilderModule.dll_6F8A54976C27427A.mvfrm
-[ 37/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsModule.dll_6B065B38056715BC.mvfrm
-[ 38/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsSamplesModule.dll_553829516E9F3B71.mvfrm
-[ 39/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TreeModule.dll_C2E5EEC8252EEBBF.mvfrm
-[ 40/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIAutomationModule.dll_37A752B2806928DC.mvfrm
-[ 41/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TextRenderingModule.dll_F0E30981E023EA82.mvfrm
-[ 42/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TilemapModule.dll_82A1753BD8A7D921.mvfrm
+[ 28/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SceneViewModule.dll_59B18A82EE919654.mvfrm
+[ 29/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SpriteShapeModule.dll_98D2C1E1E184121F.mvfrm
+[ 30/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SubstanceModule.dll_C4E134548926A153.mvfrm
+[ 31/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SketchUpModule.dll_19D3A64245676718.mvfrm
+[ 32/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TilemapModule.dll_82A1753BD8A7D921.mvfrm
+[ 33/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TextRenderingModule.dll_F0E30981E023EA82.mvfrm
+[ 34/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SpriteMaskModule.dll_FC1A936E33F2F1B2.mvfrm
+[ 35/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreTextEngineModule.dll_1E9D4A127E5C111C.mvfrm
+[ 36/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreFontEngineModule.dll_D6B513A0EED857FE.mvfrm
+[ 37/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TerrainModule.dll_E3A50DBAC0EAF818.mvfrm
+[ 38/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TreeModule.dll_C2E5EEC8252EEBBF.mvfrm
+[ 39/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIAutomationModule.dll_37A752B2806928DC.mvfrm
+[ 40/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIBuilderModule.dll_6F8A54976C27427A.mvfrm
+[ 41/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsModule.dll_6B065B38056715BC.mvfrm
+[ 42/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsSamplesModule.dll_553829516E9F3B71.mvfrm
 [ 43/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UmbraModule.dll_128350A7A8A31EAC.mvfrm
 [ 44/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UnityConnectModule.dll_8240713808D94536.mvfrm
-[ 45/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.XRModule.dll_3CD60E69116FF98B.mvfrm
-[ 46/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.VFXModule.dll_6D9A989646BD8EEB.mvfrm
-[ 47/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.dll_64C64F06691B8B15.mvfrm
-[ 48/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.VideoModule.dll_BCB828F9DE0E8EDE.mvfrm
-[ 49/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_FA401840F5B154D4.mvfrm
+[ 45/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.VFXModule.dll_6D9A989646BD8EEB.mvfrm
+[ 46/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.VideoModule.dll_BCB828F9DE0E8EDE.mvfrm
+[ 47/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_FA401840F5B154D4.mvfrm
+[ 48/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.XRModule.dll_3CD60E69116FF98B.mvfrm
+[ 49/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.dll_64C64F06691B8B15.mvfrm
 [ 50/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_D9E552DD8E3D60C6.mvfrm
 [ 51/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ARModule.dll_B3B2DD4452CEB39D.mvfrm
 [ 52/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_9D04EC4394E84CC5.mvfrm
@@ -285,74 +285,74 @@ Finished compiling graph: 255 nodes, 2497 flattened edges (2313 ToBuild, 28 ToUs
 [ 54/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_01DCE64DBA6117FC.mvfrm
 [ 55/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_1E4DBD570C9E9287.mvfrm
 [ 56/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_885ACD0C456EC1AB.mvfrm
-[ 57/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_FAAB420A1E478E23.mvfrm
-[ 58/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_139C8E2614C77583.mvfrm
-[ 59/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GraphicsStateCollectionSerializerModule.dll_FF7048939ACC6A6E.mvfrm
-[ 60/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_65CBE8FA5DC357A2.mvfrm
-[ 61/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HierarchyCoreModule.dll_50FFEFB7FCEAB9BC.mvfrm
-[ 62/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_927C614E91603CEE.mvfrm
-[ 63/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_3226E4DBF06173A9.mvfrm
-[ 64/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_963B005A132B37BF.mvfrm
-[ 65/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_6ACFE1A9AEFEB96E.mvfrm
-[ 66/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_08F6E9F4170D04B9.mvfrm
-[ 67/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputForUIModule.dll_164EE83F74E8123F.mvfrm
-[ 68/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.IdentifiersModule.dll_5DC0EC0C0094B8B2.mvfrm
-[ 69/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_C45128A3C331C882.mvfrm
-[ 70/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_167C7F34D60DA08B.mvfrm
-[ 71/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_39FCDC198D78C150.mvfrm
-[ 72/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_4029B0A051DD0AF5.mvfrm
-[ 73/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InsightsModule.dll_C69C4C03087DF207.mvfrm
-[ 74/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.MarshallingModule.dll_2DA002AB224417EC.mvfrm
-[ 75/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_362D139474C89581.mvfrm
-[ 76/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_FCE7CA0EF60CC16A.mvfrm
-[ 77/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.MultiplayerModule.dll_04DF80A2F6E37812.mvfrm
-[ 78/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_EFCEF4F565A6884A.mvfrm
-[ 79/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_40D7CD6487B2D9BF.mvfrm
-[ 80/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_9E1C10F42353552A.mvfrm
-[ 81/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_9E989170F3BE22A4.mvfrm
-[ 82/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_FCC900B636370AFD.mvfrm
-[ 83/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.dll_976A95DEC78F17FA.mvfrm
-[ 84/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ShaderVariantAnalyticsModule.dll_672724525202D192.mvfrm
-[ 85/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_8D0828C98E3B0009.mvfrm
+[ 57/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_3226E4DBF06173A9.mvfrm
+[ 58/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_FAAB420A1E478E23.mvfrm
+[ 59/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_927C614E91603CEE.mvfrm
+[ 60/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_139C8E2614C77583.mvfrm
+[ 61/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GraphicsStateCollectionSerializerModule.dll_FF7048939ACC6A6E.mvfrm
+[ 62/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_65CBE8FA5DC357A2.mvfrm
+[ 63/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HierarchyCoreModule.dll_50FFEFB7FCEAB9BC.mvfrm
+[ 64/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_08F6E9F4170D04B9.mvfrm
+[ 65/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputForUIModule.dll_164EE83F74E8123F.mvfrm
+[ 66/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.IdentifiersModule.dll_5DC0EC0C0094B8B2.mvfrm
+[ 67/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_6ACFE1A9AEFEB96E.mvfrm
+[ 68/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_963B005A132B37BF.mvfrm
+[ 69/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_167C7F34D60DA08B.mvfrm
+[ 70/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_C45128A3C331C882.mvfrm
+[ 71/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InsightsModule.dll_C69C4C03087DF207.mvfrm
+[ 72/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_39FCDC198D78C150.mvfrm
+[ 73/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.MarshallingModule.dll_2DA002AB224417EC.mvfrm
+[ 74/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_FCE7CA0EF60CC16A.mvfrm
+[ 75/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_4029B0A051DD0AF5.mvfrm
+[ 76/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.MultiplayerModule.dll_04DF80A2F6E37812.mvfrm
+[ 77/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_362D139474C89581.mvfrm
+[ 78/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ShaderVariantAnalyticsModule.dll_672724525202D192.mvfrm
+[ 79/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_FCC900B636370AFD.mvfrm
+[ 80/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_40D7CD6487B2D9BF.mvfrm
+[ 81/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_EFCEF4F565A6884A.mvfrm
+[ 82/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_8D0828C98E3B0009.mvfrm
+[ 83/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_9E989170F3BE22A4.mvfrm
+[ 84/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_9E1C10F42353552A.mvfrm
+[ 85/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_7AC7253D6EA65338.mvfrm
 [ 86/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.Xcode.dll_4B4CDA3E3C59795E.mvfrm
-[ 87/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_7AC7253D6EA65338.mvfrm
+[ 87/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.dll_976A95DEC78F17FA.mvfrm
 [ 88/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.UnityAdditionalFile.txt
 [ 89/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.rsp2
 [ 90/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.dll.mvfrm.rsp
 [ 91/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.rsp
-[ 92/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_10FADF43C89A90C7.mvfrm
-[ 93/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_5B7634A43C525489.mvfrm
-[ 94/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_79BC3AE9B66D9CF0.mvfrm
+[ 92/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_5B7634A43C525489.mvfrm
+[ 93/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_79BC3AE9B66D9CF0.mvfrm
+[ 94/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_10FADF43C89A90C7.mvfrm
 [ 95/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.rsp2
 [ 96/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.UnityAdditionalFile.txt
-[ 97/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_1CA3C4D543DF8FD9.mvfrm
-[ 98/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConsentModule.dll_41458C73106BDC31.mvfrm
-[ 99/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Apple.Extensions.Common.dll_F957F467037C2CDA.mvfrm
-[100/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_F5B3B66E51F85A80.mvfrm
-[101/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_982687530FF55FC8.mvfrm
-[102/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_6BB4C88007AB2F07.mvfrm
-[103/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_9CFCC5659159CFE7.mvfrm
-[104/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_7D23FBA9591C6DA7.mvfrm
-[105/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_55148EF401D616C9.mvfrm
-[106/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.dll_4B7C4C1B43A63F78.mvfrm
-[107/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_5F43B403ED2D60B2.mvfrm
-[108/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_E98723A3D3CB9DEC.mvfrm
-[109/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.OSXStandalone.Extensions.dll_BEAD666AE0ED48CB.mvfrm
-[110/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_F8DDA27AE0003383.mvfrm
-[111/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_853764163E1BEA9A.mvfrm
-[112/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_C4C3BDEE271682C2.mvfrm
-[113/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_2CD583727E00A288.mvfrm
-[114/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.NVIDIAModule.dll_22E92F2BC5B4A977.mvfrm
-[115/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_4DBD8B568C5919B1.mvfrm
+[ 97/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_982687530FF55FC8.mvfrm
+[ 98/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_1CA3C4D543DF8FD9.mvfrm
+[ 99/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_F5B3B66E51F85A80.mvfrm
+[100/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_6BB4C88007AB2F07.mvfrm
+[101/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Apple.Extensions.Common.dll_F957F467037C2CDA.mvfrm
+[102/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConsentModule.dll_41458C73106BDC31.mvfrm
+[103/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_55148EF401D616C9.mvfrm
+[104/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_F8DDA27AE0003383.mvfrm
+[105/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_7D23FBA9591C6DA7.mvfrm
+[106/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_9CFCC5659159CFE7.mvfrm
+[107/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.dll_4B7C4C1B43A63F78.mvfrm
+[108/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.OSXStandalone.Extensions.dll_BEAD666AE0ED48CB.mvfrm
+[109/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_5F43B403ED2D60B2.mvfrm
+[110/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_E98723A3D3CB9DEC.mvfrm
+[111/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_C4C3BDEE271682C2.mvfrm
+[112/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_853764163E1BEA9A.mvfrm
+[113/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.NVIDIAModule.dll_22E92F2BC5B4A977.mvfrm
+[114/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_BBD94AF6503B966F.mvfrm
+[115/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_2CD583727E00A288.mvfrm
 [116/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_53E4899EA1E4EDB2.mvfrm
-[117/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_67766718047EF310.mvfrm
+[117/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_4DBD8B568C5919B1.mvfrm
 [118/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_D61FC66525F9DF5D.mvfrm
-[119/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_BBD94AF6503B966F.mvfrm
-[120/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.dll.mvfrm
-[121/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_4E383429A59C143E.mvfrm
-[122/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_751C2DE63DB6C066.mvfrm
+[119/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.dll.mvfrm
+[120/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_67766718047EF310.mvfrm
+[121/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_751C2DE63DB6C066.mvfrm
+[122/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_E94F440B4E868492.mvfrm
 [123/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.TestRunner.UnityAdditionalFile.txt
-[124/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_E94F440B4E868492.mvfrm
+[124/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_4E383429A59C143E.mvfrm
 [125/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.TestRunner.rsp2
 [126/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_6D5CFC2038806BAD.mvfrm
 [127/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.dll.mvfrm.rsp
@@ -371,514 +371,116 @@ Finished compiling graph: 255 nodes, 2497 flattened edges (2313 ToBuild, 28 ToUs
 [140/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.dll.mvfrm.rsp
 [141/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Common.dll.mvfrm.rsp
 [142/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.rsp
-[143/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Common.rsp
-[144/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.UnityAdditionalFile.txt
-[145/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.rsp2
-[146/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.UnityAdditionalFile.txt
+[143/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_74E41DED7C778C02.mvfrm
+[144/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Common.rsp
+[145/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.UnityAdditionalFile.txt
+[146/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.rsp2
 [147/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.rsp2
 [148/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.rsp2
 [149/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.UnityAdditionalFile.txt
+[149/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.dll (+2 others) [CacheHit 1a35aca2582041f064dcafdb5695ec1f00000000000000000000000000000004]
 [150/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.UnityAdditionalFile.txt
-[151/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.rsp2
-[152/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.dll.mvfrm.rsp
-[153/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm.rsp
-[154/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.dll.mvfrm.rsp
-[155/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm.rsp
-[156/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.rsp
-[157/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.rsp
-[158/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.rsp
-[159/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.rsp
-[160/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt
-[161/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp2
-[162/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp
-[163/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp
-[164/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.UnityAdditionalFile.txt
-[165/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.rsp2
-[166/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.dll.mvfrm.rsp
-[167/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.UnityAdditionalFile.txt
-[168/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.rsp2
-[169/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.dll.mvfrm.rsp
-[170/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt
-[171/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.rsp2
-[172/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp
-[173/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.rsp
-[174/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.rsp
-[175/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.rsp
-[176/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_74E41DED7C778C02.mvfrm
-[176/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.dll (+2 others) [CacheHit 1a35aca2582041f064dcafdb5695ec1f00000000000000000000000000000004]
-[177/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.dll (+2 others)
-[179/252    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-[180/252    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+[151/252   1782139068s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.dll (+2 others)
+[153/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.rsp2
+[154/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.UnityAdditionalFile.txt
+[155/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.dll.mvfrm.rsp
+[156/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm.rsp
+[157/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.dll.mvfrm.rsp
+[158/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm.rsp
+[159/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.rsp
+[160/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.rsp
+[161/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.rsp
+[162/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt
+[163/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp2
+[164/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.rsp
+[165/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp
+[166/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.UnityAdditionalFile.txt
+[167/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.rsp2
+[168/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp
+[169/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.dll.mvfrm.rsp
+[170/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.UnityAdditionalFile.txt
+[171/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.dll.mvfrm.rsp
+[172/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt
+[173/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.rsp2
+[174/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp
+[175/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.rsp
+[176/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.rsp
+[177/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.rsp
+[178/252    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+[179/252    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+[180/252    0s] WriteText Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.rsp2
 [181/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_1A95F19E22019F38.mvfrm
 [182/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_67BF0AC181198C53.mvfrm
 [183/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_A66D06A1A6369617.mvfrm
-[184/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_A4987CF1F82A7223.mvfrm
-[185/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_4885DCF3F3B2DFF8.mvfrm
-[186/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_FEA9A834D6A54014.mvfrm
-[187/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_7B449FF87CED2D56.mvfrm
-[188/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_82E4E55E0F8BBF83.mvfrm
-[189/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_D8B00D0BDA204F51.mvfrm
-[190/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AMDModule.dll_FA4DDF15B8CFB830.mvfrm
-[191/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.dll.mvfrm
-[190/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.dll (+2 others) [CacheHit 1c519696cb9434c7595914ff58258a7600000000000000000000000000000004]
-[192/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.dll (+2 others)
-[194/252    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.UI.pdb
+[184/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_4885DCF3F3B2DFF8.mvfrm
+[185/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_A4987CF1F82A7223.mvfrm
+[186/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_82E4E55E0F8BBF83.mvfrm
+[187/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_D8B00D0BDA204F51.mvfrm
+[188/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_FEA9A834D6A54014.mvfrm
+[189/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.dll.mvfrm
+[190/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_7B449FF87CED2D56.mvfrm
+[191/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AMDModule.dll_FA4DDF15B8CFB830.mvfrm
+[192/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TestRunner.ref.dll_AA3B5DF2776E59D2.mvfrm
+[191/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.dll (+2 others) [CacheHit 1c519696cb9434c7595914ff58258a7600000000000000000000000000000004]
+[193/252   1782139068s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.dll (+2 others)
 [195/252    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.UI.dll
-[196/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TestRunner.ref.dll_AA3B5DF2776E59D2.mvfrm
-[197/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UI.ref.dll_79746E5030301F94.mvfrm
-[198/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/UnityEditor.TestRunner.dll.mvfrm
+[196/252    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.UI.pdb
+[197/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/UnityEditor.TestRunner.dll.mvfrm
+[198/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UI.ref.dll_79746E5030301F94.mvfrm
 [196/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.TestRunner.dll (+2 others) [CacheHit 573355b805a11a0ae7226b35f1be448000000000000000000000000000000004]
-[199/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.TestRunner.dll (+2 others)
+[199/252   1782139068s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.TestRunner.dll (+2 others)
 [201/252    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
 [202/252    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.dll
 [203/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TestRunner.ref.dll_DE1D13444BAAFBE7.mvfrm
 [204/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.dll.mvfrm
 [201/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.dll (+2 others) [CacheHit a200d8f277f6a8324ce426f66c008c1e00000000000000000000000000000004]
-[205/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.dll (+2 others)
-[207/252    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.dll
-[208/252    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.pdb
+[205/252   1782139068s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.dll (+2 others)
+[207/252    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.pdb
+[208/252    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.dll
 [209/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UI.ref.dll_BD0E97F52A0DF729.mvfrm
 [210/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.dll.mvfrm
-[211/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm
-[212/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.dll.mvfrm
+[211/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.dll.mvfrm
+[212/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm
 [213/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Common.dll.mvfrm
 [214/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.dll.mvfrm
 [210/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Common.dll (+2 others) [CacheHit b4ebc2011fc047a5f10ba5b76da2097900000000000000000000000000000004]
-[215/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Common.dll (+2 others)
-[217/252    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll
-[218/252    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.pdb
+[215/252   1782139069s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Common.dll (+2 others)
+[217/252    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.pdb
+[218/252    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll
 [213/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.dll (+2 others) [CacheHit 4246bc3c7159e02ce8eadfb71e7efba600000000000000000000000000000004]
-[219/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.dll (+2 others)
+[219/252   1782139069s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.dll (+2 others)
 [221/252    0s] CopyFiles Library/ScriptAssemblies/Unity.2D.Sprite.Editor.pdb
 [222/252    0s] CopyFiles Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
 [216/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.dll (+2 others) [CacheHit 4d4e4f846ae88745009258a6c9bcdb2500000000000000000000000000000004]
-[223/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.dll (+2 others)
+[223/252   1782139069s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.dll (+2 others)
 [225/252    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.pdb
 [226/252    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.dll
 [227/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Multiplayer.Center.Common.ref.dll_70C63ADD63245F54.mvfrm
 [228/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.TextMeshPro.ref.dll_EA61D4CF7C90DCE7.mvfrm
 [229/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.2D.Sprite.Editor.ref.dll_A298F0F0964CDA5C.mvfrm
-[230/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.dll.mvfrm
-[231/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.dll.mvfrm
+[230/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.dll.mvfrm
+[231/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.dll.mvfrm
 [232/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm
 [225/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.dll (+2 others) [CacheHit 558d04a318eb246604b9bdca3c5e383600000000000000000000000000000004]
-[233/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.dll (+2 others)
+[233/252   1782139069s] Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.dll (+2 others)
 [235/252    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.Analytics.pdb
 [236/252    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.Analytics.dll
 [228/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.dll (+2 others) [CacheHit d0e8602f1c9a0bbbe98eb243462dcc8c00000000000000000000000000000004]
-[237/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.dll (+2 others)
-[229/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.dll (+2 others) [CacheHit 132a721d9558930441e97680a7d2496900000000000000000000000000000004]
-[239/252   1782138841s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.dll (+2 others)
-[241/252    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.pdb
-[242/252    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll
-[243/252    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-[244/252    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
-[245/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.TextMeshPro.Editor.ref.dll_C5B7873C632B963A.mvfrm
-[246/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Multiplayer.Center.Editor.ref.dll_6DAF32D8644B89D6.mvfrm
+[237/252   1782139069s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.dll (+2 others)
+[239/252    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.pdb
+[240/252    0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll
+[231/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.dll (+2 others) [CacheHit 132a721d9558930441e97680a7d2496900000000000000000000000000000004]
+[241/252   1782139069s] Csc Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.dll (+2 others)
+[243/252    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+[244/252    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+[245/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Multiplayer.Center.Editor.ref.dll_6DAF32D8644B89D6.mvfrm
+[246/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.TextMeshPro.Editor.ref.dll_C5B7873C632B963A.mvfrm
 [247/252    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UI.Analytics.ref.dll_EB7E26C292B13811.mvfrm
 [248/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll.mvfrm
 [249/252    0s] MovedFromExtractor-Combine Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm
-[250/252    1s] Csc Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.dll (+2 others)
-[251/252    0s] CopyFiles Library/ScriptAssemblies/NeonDrift.EditModeTests.dll
-[252/252    0s] CopyFiles Library/ScriptAssemblies/NeonDrift.EditModeTests.pdb
-[253/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll (+2 others)
-##### CommandLine
-"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetCoreRuntime/dotnet" exec "/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/DotNetSdkRoslyn/csc.dll" /nostdlib /noconfig /shared "@Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp" "@Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp2"
-##### Contents of Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp
--target:library
--out:"Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll"
--refout:"Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.ref.dll"
--define:UNITY_6000_0_77
--define:UNITY_6000_0
--define:UNITY_6000
--define:UNITY_5_3_OR_NEWER
--define:UNITY_5_4_OR_NEWER
--define:UNITY_5_5_OR_NEWER
--define:UNITY_5_6_OR_NEWER
--define:UNITY_2017_1_OR_NEWER
--define:UNITY_2017_2_OR_NEWER
--define:UNITY_2017_3_OR_NEWER
--define:UNITY_2017_4_OR_NEWER
--define:UNITY_2018_1_OR_NEWER
--define:UNITY_2018_2_OR_NEWER
--define:UNITY_2018_3_OR_NEWER
--define:UNITY_2018_4_OR_NEWER
--define:UNITY_2019_1_OR_NEWER
--define:UNITY_2019_2_OR_NEWER
--define:UNITY_2019_3_OR_NEWER
--define:UNITY_2019_4_OR_NEWER
--define:UNITY_2020_1_OR_NEWER
--define:UNITY_2020_2_OR_NEWER
--define:UNITY_2020_3_OR_NEWER
--define:UNITY_2021_1_OR_NEWER
--define:UNITY_2021_2_OR_NEWER
--define:UNITY_2021_3_OR_NEWER
--define:UNITY_2022_1_OR_NEWER
--define:UNITY_2022_2_OR_NEWER
--define:UNITY_2022_3_OR_NEWER
--define:UNITY_2023_1_OR_NEWER
--define:UNITY_2023_2_OR_NEWER
--define:UNITY_2023_3_OR_NEWER
--define:UNITY_6000_0_OR_NEWER
--define:PLATFORM_ARCH_64
--define:UNITY_64
--define:UNITY_INCLUDE_TESTS
--define:ENABLE_AR
--define:ENABLE_AUDIO
--define:ENABLE_CACHING
--define:ENABLE_CLOTH
--define:ENABLE_MICROPHONE
--define:ENABLE_MULTIPLE_DISPLAYS
--define:ENABLE_PHYSICS
--define:ENABLE_TEXTURE_STREAMING
--define:ENABLE_VIRTUALTEXTURING
--define:ENABLE_LZMA
--define:ENABLE_UNITYEVENTS
--define:ENABLE_VR
--define:ENABLE_WEBCAM
--define:ENABLE_UNITYWEBREQUEST
--define:ENABLE_WWW
--define:ENABLE_CLOUD_SERVICES
--define:ENABLE_CLOUD_SERVICES_ADS
--define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
--define:ENABLE_UNITY_CONSENT
--define:ENABLE_UNITY_CLOUD_IDENTIFIERS
--define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
--define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
--define:ENABLE_CLOUD_SERVICES_PURCHASING
--define:ENABLE_CLOUD_SERVICES_ANALYTICS
--define:ENABLE_CLOUD_SERVICES_BUILD
--define:ENABLE_EDITOR_GAME_SERVICES
--define:ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT
--define:ENABLE_CLOUD_LICENSE
--define:ENABLE_EDITOR_HUB_LICENSE
--define:ENABLE_WEBSOCKET_CLIENT
--define:ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API
--define:ENABLE_DIRECTOR_AUDIO
--define:ENABLE_DIRECTOR_TEXTURE
--define:ENABLE_MANAGED_JOBS
--define:ENABLE_MANAGED_TRANSFORM_JOBS
--define:ENABLE_MANAGED_ANIMATION_JOBS
--define:ENABLE_MANAGED_AUDIO_JOBS
--define:ENABLE_MANAGED_UNITYTLS
--define:INCLUDE_DYNAMIC_GI
--define:ENABLE_SCRIPTING_GC_WBARRIERS
--define:PLATFORM_SUPPORTS_MONO
--define:RENDER_SOFTWARE_CURSOR
--define:ENABLE_MARSHALLING_TESTS
--define:ENABLE_VIDEO
--define:ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK
--define:ENABLE_ACCELERATOR_CLIENT_DEBUGGING
--define:TEXTCORE_1_0_OR_NEWER
--define:EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED
--define:PLATFORM_STANDALONE_OSX
--define:PLATFORM_STANDALONE
--define:UNITY_STANDALONE_OSX
--define:UNITY_STANDALONE
--define:ENABLE_GAMECENTER
--define:ENABLE_RUNTIME_GI
--define:ENABLE_MOVIES
--define:ENABLE_NETWORK
--define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
--define:ENABLE_CLOUD_SERVICES_ENGINE_DIAGNOSTICS
--define:ENABLE_CLUSTER_SYNC
--define:ENABLE_CLUSTERINPUT
--define:ENABLE_SPATIALTRACKING
--define:PLATFORM_HAS_CUSTOM_MUTEX
--define:PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
--define:ENABLE_MONO
--define:NET_STANDARD_2_0
--define:NET_STANDARD
--define:NET_STANDARD_2_1
--define:NETSTANDARD
--define:NETSTANDARD2_1
--define:ENABLE_PROFILER
--define:DEBUG
--define:TRACE
--define:UNITY_ASSERTIONS
--define:UNITY_EDITOR
--define:UNITY_EDITOR_64
--define:UNITY_EDITOR_OSX
--define:ENABLE_UNITY_COLLECTIONS_CHECKS
--define:ENABLE_BURST_AOT
--define:UNITY_TEAM_LICENSE
--define:ENABLE_CUSTOM_RENDER_TEXTURE
--define:ENABLE_DIRECTOR
--define:ENABLE_LOCALIZATION
--define:ENABLE_SPRITES
--define:ENABLE_TERRAIN
--define:ENABLE_TILEMAP
--define:ENABLE_TIMELINE
--define:ENABLE_LEGACY_INPUT_MANAGER
--define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
--define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
--define:CSHARP_7_OR_LATER
--define:CSHARP_7_3_OR_NEWER
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/PlaybackEngines/iOSSupport/UnityEditor.Apple.Extensions.Common.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.BuildProfileModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreBusinessMetricsModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.EditorToolbarModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.EmbreeModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.GIModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.GraphViewModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.GraphicsStateCollectionSerializerModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.GridAndSnapModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.GridModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.MultiplayerModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.Physics2DModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.PhysicsModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.PresetsUIModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.PropertiesModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.QuickInstallModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.QuickSearchModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SafeModeModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SceneViewModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.ShaderFoundryModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SketchUpModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SpriteMaskModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SpriteShapeModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SubstanceModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.TerrainModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.TextCoreFontEngineModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.TextCoreTextEngineModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.TextRenderingModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.TilemapModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.TreeModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIAutomationModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIBuilderModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UmbraModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.VFXModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.VideoModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.XRModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ContentLoadModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GIModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GraphicsStateCollectionSerializerModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HierarchyCoreModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IdentifiersModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputForUIModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InsightsModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.MarshallingModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.MultiplayerModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PropertiesModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ShaderVariantAnalyticsModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreFontEngineModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreTextEngineModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsCommonModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConsentModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Data.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Drawing.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.IO.Compression.FileSystem.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Net.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Numerics.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Runtime.Serialization.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.ServiceModel.Web.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Transactions.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Web.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Windows.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Linq.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Serialization.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Xml.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.AppContext.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Buffers.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Concurrent.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.NonGeneric.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Specialized.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.Primitives.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Console.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Data.Common.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Contracts.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Debug.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Process.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tools.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tracing.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Drawing.Primitives.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Dynamic.Runtime.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Calendars.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Extensions.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.IsolatedStorage.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Pipes.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Expressions.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Parallel.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Queryable.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Memory.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Http.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NameResolution.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NetworkInformation.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Ping.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Primitives.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Requests.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Security.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Sockets.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.Client.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Numerics.Vectors.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ObjectModel.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.DispatchProxy.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.ILGeneration.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.Lightweight.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Extensions.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Primitives.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Reader.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.ResourceManager.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Writer.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Extensions.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Handles.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Numerics.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Claims.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Principal.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.SecureString.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Text.RegularExpressions.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Overlapped.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Extensions.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Thread.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.ThreadPool.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Timer.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ValueTuple.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.ReaderWriter.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XDocument.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll"
--r:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.iOS.Extensions.Xcode.dll"
--r:"Library/PackageCache/com.unity.ext.nunit@031a54704bff/net40/unity-custom/nunit.framework.dll"
--r:"Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
--r:"Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Common.ref.dll"
--r:"Library/Bee/artifacts/200b0aE.dag/Unity.Multiplayer.Center.Editor.ref.dll"
--r:"Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.Editor.ref.dll"
--r:"Library/Bee/artifacts/200b0aE.dag/Unity.TextMeshPro.ref.dll"
--r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.Analytics.ref.dll"
--r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
--r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
--analyzer:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
--analyzer:"/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Assets/Scripts/DriftPlayerController.cs"
-"Assets/Scripts/GameSessionController.cs"
-"Assets/Scripts/HazardSpawner.cs"
-"Assets/Scripts/NeonDriftHud.cs"
-"Assets/Scripts/NeonDriftUiActions.cs"
-"Assets/Scripts/RuntimeQaProbe.cs"
--langversion:9.0
-/deterministic
-/optimize+
-/debug:portable
-/nologo
-/RuntimeMetadataVersion:v4.0.30319
-/nowarn:0169
-/nowarn:0649
-/nowarn:0282
-/nowarn:1701
-/nowarn:1702
-/utf8output
-/preferreduilang:en-US
-/additionalfile:"Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt"
-##### Custom Environment Variables
-DOTNET_MULTILEVEL_LOOKUP=0
-##### ExitCode
-1
-##### Output
+[250/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll (+2 others)
 Assets/Scripts/NeonDriftHud.cs(176,25): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftHud.cs(189,13): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftHud.cs(205,9): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Consider adding a reference to that assembly.
-Assets/Scripts/NeonDriftHud.cs(205,47): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Consider adding a reference to that assembly.
-Assets/Scripts/NeonDriftHud.cs(219,9): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Consider adding a reference to that assembly.
-Assets/Scripts/NeonDriftHud.cs(219,59): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Consider adding a reference to that assembly.
 Assets/Scripts/HazardSpawner.cs(21,115): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftHud.cs(106,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftHud.cs(138,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
@@ -895,7 +497,30 @@ Assets/Scripts/NeonDriftUiActions.cs(94,114): warning CS0618: 'Object.FindObject
 Assets/Scripts/NeonDriftUiActions.cs(100,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftUiActions.cs(106,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftUiActions.cs(117,115): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-[254/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.dll (+2 others)
+[251/252    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[252/252    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[253/252    0s] Csc Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets/Editor/BuildPipelineRunner.cs(48,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(49,47): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(50,48): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(52,47): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(77,41): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(78,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(91,41): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(92,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(105,41): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(106,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(107,42): warning CS0618: 'Object.FindObjectOfType<T>(bool)' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(122,41): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(123,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(124,42): warning CS0618: 'Object.FindObjectOfType<T>(bool)' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(221,9): warning CS0162: Unreachable code detected
+[254/252    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[255/252    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[256/252    1s] Csc Library/Bee/artifacts/200b0aE.dag/NeonDrift.EditModeTests.dll (+2 others)
+[257/252    0s] CopyFiles Library/ScriptAssemblies/NeonDrift.EditModeTests.dll
+[258/252    0s] CopyFiles Library/ScriptAssemblies/NeonDrift.EditModeTests.pdb
+[259/252    1s] Csc Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.dll (+2 others)
 ##### CommandLine
 "/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetCoreRuntime/dotnet" exec "/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/DotNetSdkRoslyn/csc.dll" /nostdlib /noconfig /shared "@Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.rsp" "@Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.rsp2"
 ##### Contents of Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.rsp
@@ -1328,33 +953,7 @@ Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs(168,40): warning CS0618: 'Object
 Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs(169,38): warning CS0618: 'Object.FindObjectOfType(Type)' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs(188,9): error CS0103: The name 'NeonDriftRuntimeBootstrap' does not exist in the current context
 Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs(202,16): warning CS0618: 'Object.FindObjectOfType(Type)' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-*** Tundra build failed (2.15 seconds), 234 items updated, 252 evaluated
-## Script Compilation Error for: Csc Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll (+2 others)
-## CmdLine: "/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetCoreRuntime/dotnet" exec "/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/DotNetSdkRoslyn/csc.dll" /nostdlib /noconfig /shared "@Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp" "@Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp2"
-## Output:
-Assets/Scripts/NeonDriftHud.cs(176,25): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftHud.cs(189,13): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftHud.cs(205,9): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Consider adding a reference to that assembly.
-Assets/Scripts/NeonDriftHud.cs(205,47): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Consider adding a reference to that assembly.
-Assets/Scripts/NeonDriftHud.cs(219,9): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Consider adding a reference to that assembly.
-Assets/Scripts/NeonDriftHud.cs(219,59): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Consider adding a reference to that assembly.
-Assets/Scripts/HazardSpawner.cs(21,115): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftHud.cs(106,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftHud.cs(138,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/HazardSpawner.cs(50,115): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/RuntimeQaProbe.cs(148,25): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/RuntimeQaProbe.cs(149,24): warning CS0618: 'Object.FindObjectsOfType<T>(bool)' is obsolete: 'Object.FindObjectsOfType has been deprecated. Use Object.FindObjectsByType instead which lets you decide whether you need the results sorted or not.  FindObjectsOfType sorts the results by InstanceID but if you do not need this using FindObjectSortMode.None is considerably faster.'
-Assets/Scripts/RuntimeQaProbe.cs(153,115): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/RuntimeQaProbe.cs(174,31): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/RuntimeQaProbe.cs(176,29): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/RuntimeQaProbe.cs(183,57): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/RuntimeQaProbe.cs(216,32): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/RuntimeQaProbe.cs(245,93): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftUiActions.cs(94,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftUiActions.cs(100,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftUiActions.cs(106,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftUiActions.cs(117,115): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-
+*** Tundra build failed (2.72 seconds), 239 items updated, 252 evaluated
 ## Script Compilation Error for: Csc Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.dll (+2 others)
 ## CmdLine: "/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/NetCoreRuntime/dotnet" exec "/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/DotNetSdkRoslyn/csc.dll" /nostdlib /noconfig /shared "@Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.rsp" "@Library/Bee/artifacts/200b0aE.dag/NeonDrift.PlayModeTests.rsp2"
 ## Output:
@@ -1381,10 +980,6 @@ Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs(202,16): warning CS0618: 'Object
 
 Assets/Scripts/NeonDriftHud.cs(176,25): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftHud.cs(189,13): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-Assets/Scripts/NeonDriftHud.cs(205,9): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Enable the built in package 'Physics' in the Package Manager window to fix this error.
-Assets/Scripts/NeonDriftHud.cs(205,47): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Enable the built in package 'Physics' in the Package Manager window to fix this error.
-Assets/Scripts/NeonDriftHud.cs(219,9): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Enable the built in package 'Physics' in the Package Manager window to fix this error.
-Assets/Scripts/NeonDriftHud.cs(219,59): error CS1069: The type name 'BoxCollider' could not be found in the namespace 'UnityEngine'. This type has been forwarded to assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' Enable the built in package 'Physics' in the Package Manager window to fix this error.
 Assets/Scripts/HazardSpawner.cs(21,115): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftHud.cs(106,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftHud.cs(138,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
@@ -1398,6 +993,25 @@ Assets/Scripts/RuntimeQaProbe.cs(183,57): warning CS0618: 'Object.FindObjectOfTy
 Assets/Scripts/RuntimeQaProbe.cs(216,32): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/RuntimeQaProbe.cs(245,93): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftUiActions.cs(94,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Scripts/NeonDriftUiActions.cs(100,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Scripts/NeonDriftUiActions.cs(106,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Scripts/NeonDriftUiActions.cs(117,115): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(48,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(49,47): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(50,48): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(52,47): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(77,41): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(78,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(91,41): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(92,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(105,41): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(106,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(107,42): warning CS0618: 'Object.FindObjectOfType<T>(bool)' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(122,41): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(123,40): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(124,42): warning CS0618: 'Object.FindObjectOfType<T>(bool)' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/BuildPipelineRunner.cs(221,9): warning CS0162: Unreachable code detected
+tions.cs(94,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftUiActions.cs(100,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftUiActions.cs(106,114): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Scripts/NeonDriftUiActions.cs(117,115): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
@@ -1421,10 +1035,10 @@ Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs(168,40): warning CS0618: 'Object
 Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs(169,38): warning CS0618: 'Object.FindObjectOfType(Type)' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
 Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs(188,9): error CS0103: The name 'NeonDriftRuntimeBootstrap' does not exist in the current context
 Assets/Tests/PlayMode/NeonDriftPlayModeTests.cs(202,16): warning CS0618: 'Object.FindObjectOfType(Type)' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
-AssetDatabase: script compilation time: 2.898632s
+AssetDatabase: script compilation time: 3.414340s
 Total cache size 17653056
-Total cache size after purge 17653056, took 00:00:00.0213431
 Scripts have compiler errors.
+Total cache size after purge 17653056, took 00:00:00.0202123
 [Package Manager] Server process was shutdown
 AcceleratorClientConnectionCallback - disconnected - :0
 [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
