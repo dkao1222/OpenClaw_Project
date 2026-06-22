@@ -1,6 +1,6 @@
 {
   "overall_status": "passed",
-  "checks_total": 79,
+  "checks_total": 85,
   "checks_failed": 0,
   "checks_blocked": 0,
   "release_candidate_status": "ready",
@@ -37,7 +37,7 @@
       "area": "Regression",
       "status": "PASS",
       "expected": "Unity PlayMode tests exist and have zero failures.",
-      "actual": "23 total, 0 failed.",
+      "actual": "24 total, 0 failed.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
@@ -384,6 +384,51 @@
       "severity": "none"
     },
     {
+      "id": "runtime_probe_has_objective_text",
+      "area": "Gameplay",
+      "status": "PASS",
+      "expected": "Gameplay explains the objective.",
+      "actual": "hasObjectiveText=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_has_avoid_instruction_text",
+      "area": "Gameplay",
+      "status": "PASS",
+      "expected": "Gameplay explains what to avoid.",
+      "actual": "hasAvoidInstructionText=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_has_player_label",
+      "area": "Gameplay",
+      "status": "PASS",
+      "expected": "Player marker is labelled.",
+      "actual": "hasPlayerLabel=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_has_hazard_label",
+      "area": "Gameplay",
+      "status": "PASS",
+      "expected": "Hazard marker is labelled.",
+      "actual": "hasHazardLabel=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_gameplay_instruction_readable_verified",
+      "area": "Gameplay",
+      "status": "PASS",
+      "expected": "Gameplay instructions are visible and readable.",
+      "actual": "gameplayInstructionReadableVerified=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
       "id": "runtime_probe_gameplay_motion_verified",
       "area": "Gameplay",
       "status": "PASS",
@@ -519,6 +564,15 @@
       "severity": "none"
     },
     {
+      "id": "playmode_gameplay_instruction_readable_contract",
+      "area": "UI/UX",
+      "status": "PASS",
+      "expected": "Gameplay explains objective, avoid rule, player marker, and hazard marker.",
+      "actual": "GameplayInstructionReadable found in PlayMode XML.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
+      "severity": "none"
+    },
+    {
       "id": "playmode_gameplay_motion_contract",
       "area": "UI/UX",
       "status": "PASS",
@@ -613,7 +667,7 @@
       "area": "Launch",
       "status": "PASS",
       "expected": "Simulator launch command ran and returned launch information.",
-      "actual": "com.DefaultCompany.NeonDrift: 17319",
+      "actual": "com.DefaultCompany.NeonDrift: 34046",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt",
       "severity": "none"
     },
@@ -694,7 +748,7 @@
       "area": "UI/UX",
       "status": "PASS",
       "expected": "Retry button rect is captured.",
-      "actual": "retryButtonRect='name=Retry Button; width=260.0; height=72.0; min=(190.0,98.0); max=(450.0,170.0)'.",
+      "actual": "retryButtonRect='name=Retry Button; width=260.0; height=72.0; min=(190.0,239.0); max=(450.0,311.0)'.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
       "severity": "none"
     },

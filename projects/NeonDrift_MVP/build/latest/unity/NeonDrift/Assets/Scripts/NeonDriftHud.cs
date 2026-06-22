@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -161,6 +163,54 @@ public sealed class NeonDriftVisualSync : MonoBehaviour
     }
 }
 
+public sealed class NeonDriftQaPlaythrough : MonoBehaviour
+{
+    private bool running;
+
+    private void Start()
+    {
+        string[] args = Environment.GetCommandLineArgs();
+        for (int index = 0; index < args.Length; index += 1)
+        {
+            if (args[index] == "-qaPlaythrough")
+            {
+                StartCoroutine(RunPlaythrough());
+                return;
+            }
+        }
+    }
+
+    private IEnumerator RunPlaythrough()
+    {
+        if (running)
+        {
+            yield break;
+        }
+        running = true;
+
+        yield return new WaitForSecondsRealtime(1f);
+        NeonDriftUiActions uiActions = FindObjectOfType<NeonDriftUiActions>();
+        GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        uiActions?.StartGame();
+
+        yield return new WaitForSecondsRealtime(0.75f);
+        DriftPlayerController player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
+        player?.SetUiSteer(-1f);
+        yield return new WaitForSecondsRealtime(1.1f);
+        player?.SetUiSteer(1f);
+        yield return new WaitForSecondsRealtime(1.1f);
+        player?.ClearUiSteer();
+
+        yield return new WaitForSecondsRealtime(4.2f);
+        session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        session?.GameOver();
+
+        yield return new WaitForSecondsRealtime(1.6f);
+        uiActions = FindObjectOfType<NeonDriftUiActions>();
+        uiActions?.Retry();
+    }
+}
+
 public static class NeonDriftRuntimeBootstrap
 {
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -173,7 +223,7 @@ public static class NeonDriftRuntimeBootstrap
 
         Application.targetFrameRate = 60;
 
-        Camera camera = Object.FindObjectOfType<Camera>();
+        Camera camera = UnityEngine.Object.FindObjectOfType<Camera>();
         if (camera == null)
         {
             GameObject cameraObject = new GameObject("Main Camera");
@@ -186,7 +236,7 @@ public static class NeonDriftRuntimeBootstrap
         camera.orthographicSize = 5.8f;
         camera.transform.position = new Vector3(0f, 0f, -10f);
 
-        if (Object.FindObjectOfType<EventSystem>() == null)
+        if (UnityEngine.Object.FindObjectOfType<EventSystem>() == null)
         {
             GameObject eventSystemObject = new GameObject("EventSystem");
             eventSystemObject.AddComponent<EventSystem>();
@@ -196,6 +246,7 @@ public static class NeonDriftRuntimeBootstrap
         GameObject session = new GameObject("NeonDrift Session");
         session.AddComponent<GameSessionController>();
         session.AddComponent<RuntimeQaProbe>();
+        session.AddComponent<NeonDriftQaPlaythrough>();
         HazardSpawner spawner = session.AddComponent<HazardSpawner>();
 
         GameObject player = new GameObject("Player");
