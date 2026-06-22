@@ -198,28 +198,20 @@ public static class NeonDriftRuntimeBootstrap
         session.AddComponent<RuntimeQaProbe>();
         HazardSpawner spawner = session.AddComponent<HazardSpawner>();
 
-        GameObject player = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        GameObject player = new GameObject("Player");
         player.name = "Player";
         player.transform.position = new Vector3(0f, -3.6f, 0f);
         player.transform.localScale = new Vector3(0.55f, 0.35f, 0.18f);
-        BoxCollider box = player.GetComponent<BoxCollider>();
-        if (box != null) { Object.Destroy(box); }
-        Renderer playerRenderer = player.GetComponent<Renderer>();
-        if (playerRenderer != null) { playerRenderer.material.color = new Color(0f, 0.95f, 1f); }
         Rigidbody2D body = player.AddComponent<Rigidbody2D>();
         body.gravityScale = 0f;
         player.AddComponent<CircleCollider2D>();
         player.AddComponent<DriftPlayerController>();
 
-        GameObject hazardPrefab = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        GameObject hazardPrefab = new GameObject("Hazard Preview");
         hazardPrefab.name = "Hazard Preview";
         hazardPrefab.tag = "Hazard";
         hazardPrefab.transform.position = new Vector3(2.4f, 3.8f, 0f);
         hazardPrefab.transform.localScale = new Vector3(0.65f, 0.65f, 0.2f);
-        BoxCollider hazardBox = hazardPrefab.GetComponent<BoxCollider>();
-        if (hazardBox != null) { Object.Destroy(hazardBox); }
-        Renderer hazardRenderer = hazardPrefab.GetComponent<Renderer>();
-        if (hazardRenderer != null) { hazardRenderer.material.color = new Color(1f, 0.15f, 0.55f); }
         hazardPrefab.AddComponent<BoxCollider2D>();
         spawner.Configure(hazardPrefab);
 
