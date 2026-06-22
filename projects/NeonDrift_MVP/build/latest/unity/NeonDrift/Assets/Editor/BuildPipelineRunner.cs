@@ -54,9 +54,10 @@ public static class BuildPipelineRunner
                 ("PauseRetryButtonsClickable", RuntimeQaProbe.CaptureJson().Contains("\"pauseButtonClickable\": true") && RuntimeQaProbe.CaptureJson().Contains("\"retryButtonClickable\": true")),
                 ("ButtonPositionsAndSizesAreVerified", RuntimeQaProbe.CaptureJson().Contains("\"buttonLayoutVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"startButtonRect\"") && RuntimeQaProbe.CaptureJson().Contains("\"rightControlZoneRect\"")),
                 ("CoreGameplayFunctionsAreVerified", RuntimeQaProbe.CaptureJson().Contains("\"coreGameplayObjectsVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"scoringSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"pauseSystemVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"failureRetrySystemVerified\": true")),
-                ("InitialStateWaitsForStart", RuntimeQaProbe.CaptureJson().Contains("\"screenState\": \"menu\"") && RuntimeQaProbe.CaptureJson().Contains("\"hasStarted\": false") && RuntimeQaProbe.CaptureJson().Contains("\"score\": 0") && RuntimeQaProbe.CaptureJson().Contains("\"startFlowVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayHudHiddenInMenu\": true")),
+                ("InitialStateWaitsForStart", RuntimeQaProbe.CaptureJson().Contains("\"screenState\": \"menu\"") && RuntimeQaProbe.CaptureJson().Contains("\"hasStarted\": false") && RuntimeQaProbe.CaptureJson().Contains("\"score\": 0") && RuntimeQaProbe.CaptureJson().Contains("\"startFlowVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayHudHiddenInMenu\": true") && RuntimeQaProbe.CaptureJson().Contains("\"earlyGameOverProtected\": true")),
                 ("MenuLayoutIsReadable", RuntimeQaProbe.CaptureJson().Contains("\"menuLayoutVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"menuElementsDoNotOverlap\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayHudHiddenInMenu\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayControlsHiddenInMenu\": true")),
-                ("StartButtonFlowVerified", VerifyStartButtonFlow())
+                ("StartButtonFlowVerified", VerifyStartButtonFlow()),
+                ("EarlyGameOverIsProtected", VerifyEarlyGameOverProtection())
             }
         );
     }
@@ -73,6 +74,20 @@ public static class BuildPipelineRunner
         uiActions.StartGame();
         string startedJson = RuntimeQaProbe.CaptureJson();
         return session.HasStarted && Mathf.Approximately(Time.timeScale, 1f) && startedJson.Contains("\"screenState\": \"gameplay\"");
+    }
+
+    private static bool VerifyEarlyGameOverProtection()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        if (session == null || uiActions == null)
+        {
+            return false;
+        }
+
+        uiActions.StartGame();
+        session.GameOver();
+        return session.HasStarted && !session.IsGameOver && !session.CanSpawnHazards && session.MinimumSurvivalSeconds >= 6f;
     }
 
     public static void BuildIOS()
