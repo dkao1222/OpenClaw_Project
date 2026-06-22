@@ -5,7 +5,7 @@
 # Game Build Validation Report
 
 - project_name: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-build-build-ios-simulator-20260622145134
+- run_id: notion-NeonDrift_MVP-build-build-ios-simulator-20260622160448
 - stage_range: build-ios-simulator
 - source_output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 - source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/development/final_handoff.md
@@ -90,7 +90,7 @@
 
 ## Unity PlayMode Test Results
 ```xml
-<test-run testcasecount="23" result="Passed" total="23" passed="23" failed="0">
+<test-run testcasecount="24" result="Passed" total="24" passed="24" failed="0">
   <test-suite type="TestSuite" name="NeonDrift.PlayMode" result="Passed">
     <test-case name="MainSceneHasCanvas" result="Passed" />
     <test-case name="MainSceneHasHudController" result="Passed" />
@@ -111,6 +111,7 @@
     <test-case name="InitialStateWaitsForStart" result="Passed" />
     <test-case name="MenuLayoutIsReadable" result="Passed" />
     <test-case name="GameplayVisualsAreReadable" result="Passed" />
+    <test-case name="GameplayInstructionReadable" result="Passed" />
     <test-case name="GameplayMotionIsVerified" result="Passed" />
     <test-case name="PlayerSteeringMotionIsVerified" result="Passed" />
     <test-case name="StartButtonFlowVerified" result="Passed" />
@@ -131,6 +132,10 @@
     "hasScoreText": true,
     "hasPulseText": true,
     "hasControlHint": true,
+    "hasObjectiveText": true,
+    "hasAvoidInstructionText": true,
+    "hasPlayerLabel": true,
+    "hasHazardLabel": true,
     "hasMainMenuPanel": true,
     "hasStartButton": true,
     "hasSettingsButton": true,
@@ -153,7 +158,7 @@
     "startButtonRect": "name=Start Button; width=300.0; height=82.0; min=(170.0,227.0); max=(470.0,309.0)",
     "settingsButtonRect": "name=Settings Button; width=300.0; height=72.0; min=(170.0,132.0); max=(470.0,204.0)",
     "pauseButtonRect": "name=Pause Button; width=96.0; height=72.0; min=(506.0,296.0); max=(602.0,368.0)",
-    "retryButtonRect": "name=Retry Button; width=260.0; height=72.0; min=(190.0,98.0); max=(450.0,170.0)",
+    "retryButtonRect": "name=Retry Button; width=260.0; height=72.0; min=(190.0,239.0); max=(450.0,311.0)",
     "leftControlZoneRect": "name=Left Control Zone; width=220.0; height=140.0; min=(36.0,126.0); max=(256.0,266.0)",
     "rightControlZoneRect": "name=Right Control Zone; width=220.0; height=140.0; min=(384.0,126.0); max=(604.0,266.0)",
     "buttonLayoutVerified": true,
@@ -168,6 +173,7 @@
     "gameplayControlsHiddenInMenu": true,
     "gameplayVisualsVerified": true,
     "gameplayVisualsHiddenInMenu": true,
+    "gameplayInstructionReadableVerified": true,
     "gameplayMotionVerified": true,
     "playerSteeringMotionVerified": true,
     "coreGameplayObjectsVerified": true,
@@ -205,17 +211,17 @@
 ```text
 {
     ApplicationType = User;
-    Bundle = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/9FC65977-EBE3-42E6-83EF-A572B993A642/NeonDrift.app/";
-    BundleContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/9FC65977-EBE3-42E6-83EF-A572B993A642/";
+    Bundle = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/656D56CD-2ECE-492E-8E67-F6DE293D08C9/NeonDrift.app/";
+    BundleContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/656D56CD-2ECE-492E-8E67-F6DE293D08C9/";
     CFBundleDisplayName = NeonDrift;
     CFBundleExecutable = NeonDrift;
     CFBundleIdentifier = "com.DefaultCompany.NeonDrift";
     CFBundleName = NeonDrift;
     CFBundleVersion = 0;
-    DataContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/C05B8D7C-34AA-4509-9008-919783AA0533/";
+    DataContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/3A9B2A34-5BB2-45CE-96CF-5E781C275B3F/";
     GroupContainers =     {
     };
-    Path = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/9FC65977-EBE3-42E6-83EF-A572B993A642/NeonDrift.app";
+    Path = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/656D56CD-2ECE-492E-8E67-F6DE293D08C9/NeonDrift.app";
     SBAppTags =     (
     );
 }
@@ -224,7 +230,7 @@
 
 ## Launch
 ```text
-com.DefaultCompany.NeonDrift: 17319
+com.DefaultCompany.NeonDrift: 34046
 
 ```
 
@@ -239,80 +245,45 @@ com.DefaultCompany.NeonDrift: 17319
 ## Runtime Log Tail
 ```text
 Timestamp               Ty Process[PID:TID]
-2026-06-22 22:53:37.470 Df runningboardd[50195:642815] [com.apple.runningboard:process] Checking PreventLaunch: global:0 exPath:(null) predicates:{(
-    <RBSProcessPredicate <RBSProcessBundleIdentifierPredicate "com.DefaultCompany.NeonDrift">>
-)} allow:(null)
-2026-06-22 22:53:37.480 Df runningboardd[50195:642da3] [com.apple.runningboard:process] Checking PreventLaunch: global:0 exPath:(null) predicates:{(
-    <RBSProcessPredicate <RBSProcessBundleIdentifierPredicate "com.DefaultCompany.NeonDrift">>
-)} allow:(null)
-2026-06-22 22:54:26.483 Df runningboardd[16896:643cab] [com.apple.runningboard:process] Resolved pid 99815 to [anon<NeonDrift>:99815]
-2026-06-22 22:54:26.483 Df runningboardd[16896:643cab] [com.apple.runningboard:general] Full encoding handle [anon<NeonDrift>:99815], with data 5723d111000185e7, and pid 99815
-2026-06-22 22:54:26.483 Df runningboardd[16896:643cab] [com.apple.runningboard:process] [anon<NeonDrift>:99815] is not RunningBoard jetsam managed.
-2026-06-22 22:54:26.483 Df runningboardd[16896:643cab] [com.apple.runningboard:process] [anon<NeonDrift>:99815] This process will not be managed.
-2026-06-22 22:54:26.483 Df runningboardd[16896:643cab] [com.apple.runningboard:ttl] Now tracking process: [anon<NeonDrift>:99815]
-2026-06-22 22:54:26.483 Df runningboardd[16896:643cab] [com.apple.runningboard:ttl] Acquiring assertion targeting [anon<NeonDrift>:99815] from originator [osservice<com.apple.SpringBoard>:16891] with description <RBSAssertionDescriptor| "com.apple.frontboard.workspace.reconnect" ID:16896-16891-25 target:99815 attributes:[
-	<RBSDomainAttribute| domain:"com.apple.frontboard" name:"WorkspaceReconnect" sourceEnvironment:"(null)">
-	]>
-2026-06-22 22:54:26.483 Df runningboardd[16896:643cab] [com.apple.runningboard:ttl] Assertion 16896-16891-25 (target:[anon<NeonDrift>:99815]) will be created as active
-2026-06-22 22:54:26.483 Df runningboardd[16896:643caa] [com.apple.runningboard:process] [anon<NeonDrift>:99815] Ignoring jetsam update because this process is not memory-managed
-2026-06-22 22:54:26.483 Df runningboardd[16896:643caa] [com.apple.runningboard:process] [anon<NeonDrift>:99815] Ignoring suspend because this process is not lifecycle managed
-2026-06-22 22:54:26.484 Df runningboardd[16896:643caa] [com.apple.runningboard:process] [anon<NeonDrift>:99815] Ignoring role changes because this process is not role managed
-2026-06-22 22:54:26.484 Df runningboardd[16896:643caa] [com.apple.runningboard:process] [anon<NeonDrift>:99815] Ignoring GPU update because this process is not GPU managed
-2026-06-22 22:54:26.484 Df runningboardd[16896:643caa] [com.apple.runningboard:process] [anon<NeonDrift>:99815] Ignoring memory limit update because this process is not memory-managed
-2026-06-22 22:54:26.869 Sd runningboardd[16896:0] (8FCF1609-E151-3057-8E2C-8F6F0AE39DF8) RBSStateCaptureSet Segment 1
-<RBConnectionClient| 16945 name:osservice<com.apple.liveactivitiesd> entitlements:<RBEntitlements| [
-			com.apple.runningboard.sessionkitd,
-			com.apple.runningboard.process-state,
-			com.apple.assertiond.app-state-monitor
-			]> inheritanceManager:<RBClientInheritanceManager| >><RBAssertion| identifier:16896-16891-5 target:[osservice<com.apple.SpringBoard>:16891] explanation:"FBSystemShell" active originator:[osservice<com.apple.SpringBoard>:16891] transientState:<RBAssertionTransientState| policies:[
-	
-	] tags:[
-	SupportsBackgroundAudio> intransientState:<RBAssertionIntransientState| strt:Unspecified end:WarnOnly nvld:0.00 warn:0.00dreldom prevSus runningReason:10005 legRes:0 doms:com.apple.frontboard:SystemShell invOnConds:(null)> processState:<RBProcessState| role:UserInteractiveFocal> suspended: attributes:[
-	<RBSDomainAttribute| domain:"com.apple.frontboard" name:"SystemShell" sourceEnvironment:"(null)">
-	]><RBConnectionClient| 16917 name:osservice<com.apple.locationd> entitlements:<RBEntitlements| [
-			com.apple.backboard.client,
-			com.apple.private.applemediaservices,
-			com.apple.assertiond.app-state-monitor,
-			com.apple.runningboard.process-state,
-			com.apple.multitasking.unlimitedassertions,
-			com.apple.runningboard.assertions.locationd
-			]> inheritanceManager:<RBClientInheritanceManager| >><RBAssertion| identifier:16896-16896-2 target:[osservice<com.apple.SpringBoard>:16891] explanation:"RB Underlying Assertion" active originator:[osservice<com.apple.SpringBoard>:16891] transientState:<RBAssertionTransientState| policies:[
-	
-	]> intransientState:<RBAssertionIntransientState| strt:Unspecified end:WarnOnly nvld:0.00 warn:0.00dom prevSus runningReason:20209 legRes:0 doms:com.apple.underlying:UnderlyingDarwinRoleUI invOnConds:(null)> processState:<RBProcessState| role:UserInteractiveNonFocal> suspended: attributes:[
-	<RBSDomainAttribute| domain:"com.apple.underlying" name:"UnderlyingDarwinRoleUI" sourceEnvironment:"(null)">,
-	<RBSAcquisitionCompletionAttribute| policy:AfterApplication>
-	]><RBAssertion| identifier:16896-16891-25 target:[anon<NeonDrift>:99815] explanation:"com.apple.frontboard.workspace.reconnect" active originator:[osservice<com.apple.SpringBoard>:16891] transientState:<RBAssertionTransientState| policies:[
-	
-	] tags:[
-	SupportsBackgroundAudio> intransientState:<RBAssertionIntransientState| strt:Fixed end:Invalidate nvld:600.00 warn:0.00dom prevSus runningReason:20216 legRes:0 doms:com.apple.frontboard:WorkspaceReconnect invOnConds:(null)> processState:<RBProcessState| role:Background> suspended: attributes:[
-	<RBSDomainAttribute| domain:"com.apple.frontboard" name:"WorkspaceReconnect" sourceEnvironment:"(null)">
-	]><RBAssertion| identifier:16896-16891-63 target:[osservice<com.apple.SpringBoard>:16891] explanation:"Shared Background Assertion 0 for com.apple.springboard" originator:[osservice<com.apple.SpringBoard>:16891] intransientState:<RBAssertionIntransientState| strt:Delayed-Relative end:InvalidateAndTerminateProcess nvld:30.00 warn:5.00 prevSus runningReason:0 legRes:4 doms:(null) invOnConds:{
-    therm = 860;
-}> suspended: attributes:[
-	<RBSLegacyAttribute| requestedReason:FinishTask reason:FinishTask flags:( PreventTaskSuspend )>,
-	<RBSAcquisitionCompletionAttribute| policy:AfterValidation>
-	]><RBProcessMonitorObserver| qos:25 qos:<RBSProcessStateDescriptor| values:3> configs:{
-		3="M16891-3"
-		2="M16891-2"
-		1="M16891-1"
-		4="M16891-4"
-	}><RBConnectionClient| 16908 name:osservice<com.apple.mobiletimerd> entitlements:<RBEntitlements| [
-			com.apple.assertiond.app-state-monitor,
-			com.apple.runningboard.attributes.bannerrequest,
-			com.apple.runningboard.launchprocess
-			]> inheritanceManager:<RBClientInheritanceManager| >><RBConnectionClient| 16914 name:osservice<com.apple.backboardd> entitlements:<RBEntitlements| [
-			com.apple.backboard.client,
-			com.apple.runningboard.terminateprocess,
-			com.apple.runningboard.primitiveattribute,
-			com.apple.private.xpc.launchd.app-server,
-			com.apple.assertiond.app-state-monitor,
-			com.apple.runningboard.terminatemanagedprocesses
-			]> inheritanceManager:<RBClientInheritanceManager| >><RBConnectionClient| 16939 name:osservice<com.apple.pasteboard.pasted> entitlements:<RBEntitlements| [
-			com.apple.runningboard.assertions.pasteboard,
-			com.apple.assertiond.app-state-monitor,
-			com.apple.frontboard.disable-watchdog
-			]> inheritanceManager:<RBClientInheritanceManager| >><RBAssertion| identifier:16896-16891-65 target:[osservice<com.apple.SpringBoard>:16891] explanation:"app_launch_measurement: pageins recording enabled" active originator:[osservice<com.apple.SpringBoard>:16891] intransientState:<RBAssertionIntransientState| strt:Unspecified end:WarnOnly nvld:0.00 warn:0.00dom runningReason:20838 legRes:0 doms:com.apple.pagein-prefetching:LaunchPrefetch invOnConds:(null)> suspended: attributes:[
-	<RBSDomainAttribute| domain:"com.apple.pagein-prefetching" name:"LaunchPrefetch" sourceEnvironment:"(null)">
-	]><RBConnectionClient| 16951 name:osservice<com.apple.chronod> entitlements:<RBEntitlements| [
-			com.apple.runningboard.a
+2026-06-23 00:05:32.401 Df CoreSimulatorBridge[16923:677cc6] Request received for installation of file:///Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/ with options: {
+    PackageType = Developer;
+    SimulatorRootPath = "/Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot";
+    SimulatorUserPath = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data";
+}
+2026-06-23 00:05:32.401 Df CoreSimulatorBridge[16923:677cc6] [com.apple.installcoordination:framework] +[IXAppInstallCoordinator(IXSimpleInstaller) _beginInstallForURL:forPersonaUniqueString:consumeSource:options:progressBlock:completionWithIdentity:]: Beginning install for /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app consuming source:N options:{
+    IsUserInitiated = 1;
+    PackageType = Developer;
+} installationRequestorAuditToken: NULL
+2026-06-23 00:05:32.405 Df installcoordinationd[17029:670c09] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager registerPromise:]: Registered promise <IXSPlaceholder(0x103510000) Name:App Placeholder: NeonDrift (com.DefaultCompany.NeonDrift) Creator:InstallCoordination Simple SPI UUID:94049815-C18C-4B6B-8F00-850464D5BBF4 Location:[system-defined]> for UUID 94049815-C18C-4B6B-8F00-850464D5BBF4
+2026-06-23 00:05:32.406 Df installcoordinationd[17029:670c09] [com.apple.installcoordination:daemon] -[IXSPlaceholder setAttributes:]: <IXSPlaceholder(0x103510000) Name:App Placeholder: NeonDrift (com.DefaultCompany.NeonDrift) Creator:InstallCoordination Simple SPI UUID:94049815-C18C-4B6B-8F00-850464D5BBF4 Location:[system-defined]>: setting placeholder attributes to <IXPlaceholderAttributes<0x1034a5400> : {
+    CFBundleShortVersionString = "1.0";
+    CFBundleSupportedPlatforms =     (
+        iPhoneSimulator
+    );
+    CFBundleVersion = 0;
+    DTPlatformName = iphonesimulator;
+    LSRequiresIPhoneOS = 1;
+    MinimumOSVersion = "13.0";
+    UIDeviceFamily =     (
+        1,
+        2
+    );
+    UIRequiredDeviceCapabilities =     {
+        arm64 = 1;
+        metal = 1;
+    };
+}>
+2026-06-23 00:05:32.406 Df CoreSimulatorBridge[16923:6719b6] [com.apple.installcoordination:framework] +[IXPlaceholder _setEntitlementsFromBundleExecutableURL:withBundleID:client:onPlaceholder:location:error:]: Executable for com.DefaultCompany.NeonDrift at NeonDrift -- file:///Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/ had no entitlements
+2026-06-23 00:05:32.406 Df CoreSimulatorBridge[16923:6719b6] [com.apple.installcoordination:framework] +[IXPlaceholder _placeholderForBundle:client:withParent:installType:metadata:placeholderType:mayBeDeltaPackage:isFromSerializedPlaceholder:location:error:]: Using full fidelity icons for com.DefaultCompany.NeonDrift at /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app
+2026-06-23 00:05:32.407 Df installcoordinationd[17029:670c09] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager registerPromise:]: Registered promise <IXSPromisedTransferToPath(0x1034ed780) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:2C46DEDE-40CB-4186-BF99-51670E5E9E0B Location:[system-defined]> for UUID 2C46DEDE-40CB-4186-BF99-51670E5E9E0B
+2026-06-23 00:05:32.409 Df CoreSimulatorBridge[16923:6719b6] [com.apple.installcoordination:framework] -[IXPromisedTransferToPath setComplete:]: <IXPromisedTransferToPath<0x1037a8a00> name:"Icon resources for com.DefaultCompany.NeonDrift" uuid:2C46DEDE-40CB-4186-BF99-51670E5E9E0B creator:"InstallCoordination Simple SPI" location:[system-defined]> Move operation from /Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Shared/SystemGroup/systemgroup.com.apple.installcoordinationd/Library/InstallCoordination/PromiseStaging/2C46DEDE-40CB-4186-BF99-51670E5E9E0B/temp.KiqIrH to /Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Shared/SystemGroup/systemgroup.com.apple.installcoordinationd/Library/InstallCoordination/PromiseStaging/2C46DEDE-40CB-4186-BF99-51670E5E9E0B/temp.KiqIrH took 0.000041 seconds
+2026-06-23 00:05:32.410 Df installcoordinationd[17029:6789a3] [com.apple.installcoordination:daemon] -[IXSDataPromise _setPercentComplete:saveStateIfNeeded:]: Progress: <IXSPromisedTransferToPath(0x1034ed780) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:2C46DEDE-40CB-4186-BF99-51670E5E9E0B Location:[system-defined]>
+2026-06-23 00:05:32.411 Df installcoordinationd[17029:6789a3] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidBegin:]: Unowned promise began: <IXSPromisedTransferToPath(0x1034ed780) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:2C46DEDE-40CB-4186-BF99-51670E5E9E0B Location:[system-defined]>
+2026-06-23 00:05:32.411 Df installcoordinationd[17029:6789a3] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promise:didUpdateProgress:]: Unowned promise update progress to 1.000000 : <IXSPromisedTransferToPath(0x1034ed780) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:2C46DEDE-40CB-4186-BF99-51670E5E9E0B Location:[system-defined]>
+2026-06-23 00:05:32.411 Df installcoordinationd[17029:6789a3] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidComplete:]: Unowned promise completed: <IXSPromisedTransferToPath(0x1034ed780) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:2C46DEDE-40CB-4186-BF99-51670E5E9E0B Location:[system-defined]>
+2026-06-23 00:05:32.411 Df installcoordinationd[17029:670c09] [com.apple.installcoordination:daemon] -[IXSDataPromise _setPercentComplete:saveStateIfNeeded:]: Progress: <IXSPromisedInMemoryDictionary(0x1034eed00) Name:Info.plist icon content for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:CE0DAA5A-EE8E-479A-B0C4-872ADCE41C8D Location:[system-defined]>
+2026-06-23 00:05:32.414 Df installcoordinationd[17029:670c09] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager registerPromise:]: Registered promise <IXSPromisedInMemoryDictionary(0x1034eed00) Name:Info.plist icon content for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:CE0DAA5A-EE8E-479A-B0C4-872ADCE41C8D Location:[system-defined]> for UUID CE0DAA5A-EE8E-479A-B0C4-872ADCE41C8D
+2026-06-23 00:05:32.414 Df installcoordinationd[17029:6789a3] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidBegin:]: Unowned promise began: <IXSPromisedInMemoryDictionary(0x1034eed00) Name:Info.plist icon content for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:CE0DAA5A-EE8E-479A-B0C4-872ADCE41C8D Location:[system-defined]>
+2026-06-23 00:05:32.414 Df installcoordinationd[17029:6789a3] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promise:didUpdateProgress:]: Unowned promise update progress to 1.000000 : <IXSPromisedInMemoryDictionary(0x1034eed00) Name:Info.plist icon content for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:CE0DAA5A-EE8E-479A-B0C4-872ADCE41C8D Location:[system-defined]>
+2026-06-23 00:05:32.414 Df installcoordinationd[17029:6789a3] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidComplete:]: Unowned promise completed: <IXSP
 ```
