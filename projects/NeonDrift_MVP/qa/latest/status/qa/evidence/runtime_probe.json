@@ -42,6 +42,8 @@
     "menuElementsDoNotOverlap": true,
     "gameplayHudHiddenInMenu": true,
     "gameplayControlsHiddenInMenu": true,
+    "gameplayVisualsVerified": true,
+    "gameplayVisualsHiddenInMenu": true,
     "coreGameplayObjectsVerified": true,
     "scoringSystemVerified": true,
     "pauseSystemVerified": true,

@@ -1,6 +1,6 @@
 {
   "overall_status": "passed",
-  "checks_total": 72,
+  "checks_total": 75,
   "checks_failed": 0,
   "checks_blocked": 0,
   "release_candidate_status": "ready",
@@ -37,7 +37,7 @@
       "area": "Regression",
       "status": "PASS",
       "expected": "Unity PlayMode tests exist and have zero failures.",
-      "actual": "20 total, 0 failed.",
+      "actual": "21 total, 0 failed.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
@@ -366,6 +366,24 @@
       "severity": "none"
     },
     {
+      "id": "runtime_probe_gameplay_visuals_verified",
+      "area": "Gameplay",
+      "status": "PASS",
+      "expected": "Gameplay has visible track, player marker, and hazard marker.",
+      "actual": "gameplayVisualsVerified=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_gameplay_visuals_hidden_in_menu",
+      "area": "Gameplay",
+      "status": "PASS",
+      "expected": "Gameplay visual layer is hidden while main menu is active.",
+      "actual": "gameplayVisualsHiddenInMenu=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
       "id": "runtime_probe_early_game_over_protected",
       "area": "Gameplay",
       "status": "PASS",
@@ -474,6 +492,15 @@
       "severity": "none"
     },
     {
+      "id": "playmode_gameplay_visuals_readable_contract",
+      "area": "UI/UX",
+      "status": "PASS",
+      "expected": "Gameplay has visible track, player, and hazard markers.",
+      "actual": "GameplayVisualsAreReadable found in PlayMode XML.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
+      "severity": "none"
+    },
+    {
       "id": "playmode_start_button_flow_contract",
       "area": "UI/UX",
       "status": "PASS",
@@ -550,7 +577,7 @@
       "area": "Launch",
       "status": "PASS",
       "expected": "Simulator launch command ran and returned launch information.",
-      "actual": "com.DefaultCompany.NeonDrift: 83444",
+      "actual": "com.DefaultCompany.NeonDrift: 87963",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt",
       "severity": "none"
     },

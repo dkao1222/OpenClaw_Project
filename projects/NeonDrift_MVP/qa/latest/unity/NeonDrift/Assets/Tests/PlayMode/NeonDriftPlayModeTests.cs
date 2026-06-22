@@ -64,6 +64,8 @@ public sealed class NeonDriftPlayModeTests
         Assert.That(json, Does.Contain("\"gameplayControlsHiddenInMenu\": true"));
         Assert.That(json, Does.Contain("\"earlyGameOverProtected\": true"));
         Assert.That(json, Does.Contain("\"readableHazardPacingVerified\": true"));
+        Assert.That(json, Does.Contain("\"gameplayVisualsVerified\": true"));
+        Assert.That(json, Does.Contain("\"gameplayVisualsHiddenInMenu\": true"));
     }
 
     [Test]
@@ -75,6 +77,15 @@ public sealed class NeonDriftPlayModeTests
         Assert.That(json, Does.Contain("\"menuElementsDoNotOverlap\": true"));
         Assert.That(json, Does.Contain("\"gameplayHudHiddenInMenu\": true"));
         Assert.That(json, Does.Contain("\"gameplayControlsHiddenInMenu\": true"));
+    }
+
+    [Test]
+    public void GameplayVisualsAreReadable()
+    {
+        SceneManager.LoadScene("Main");
+        string json = InvokeRuntimeQaProbeCaptureJson();
+        Assert.That(json, Does.Contain("\"gameplayVisualsVerified\": true"));
+        Assert.That(json, Does.Contain("\"gameplayVisualsHiddenInMenu\": true"));
     }
 
     [Test]
