@@ -236,11 +236,19 @@ public static class NeonDriftRuntimeBootstrap
         gameplayRootRect.offsetMin = Vector2.zero;
         gameplayRootRect.offsetMax = Vector2.zero;
 
-        Image trackPlayfield = CreateUiBlock(gameplayHudRoot.transform, "Track Playfield", TextAnchor.MiddleCenter, new Vector2(0f, -90f), new Vector2(300f, 1180f), new Color(0.02f, 0.04f, 0.08f, 0.58f));
-        Image leftLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Left Lane Rail", TextAnchor.MiddleCenter, new Vector2(-155f, -90f), new Vector2(8f, 1180f), new Color(0f, 0.95f, 1f, 0.86f));
-        Image rightLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Right Lane Rail", TextAnchor.MiddleCenter, new Vector2(155f, -90f), new Vector2(8f, 1180f), new Color(1f, 0.1f, 0.9f, 0.86f));
+        Image trackPlayfield = CreateUiBlock(gameplayHudRoot.transform, "Track Playfield", TextAnchor.MiddleCenter, new Vector2(0f, -90f), new Vector2(340f, 1180f), new Color(0.07f, 0.13f, 0.19f, 0.82f));
+        Image leftLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Left Lane Rail", TextAnchor.MiddleCenter, new Vector2(-175f, -90f), new Vector2(10f, 1180f), new Color(0f, 0.95f, 1f, 0.96f));
+        Image rightLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Right Lane Rail", TextAnchor.MiddleCenter, new Vector2(175f, -90f), new Vector2(10f, 1180f), new Color(1f, 0.1f, 0.9f, 0.96f));
         Image playerMarker = CreateUiBlock(gameplayHudRoot.transform, "Player Visual Marker", TextAnchor.LowerCenter, new Vector2(0f, 260f), new Vector2(72f, 54f), new Color(0f, 0.95f, 1f, 0.96f));
         Image hazardMarker = CreateUiBlock(gameplayHudRoot.transform, "Hazard Visual Marker", TextAnchor.UpperCenter, new Vector2(0f, -360f), new Vector2(82f, 82f), new Color(1f, 0.12f, 0.52f, 0.94f));
+        Text objectiveText = CreateText(gameplayHudRoot.transform, "Objective Text", font, "AVOID PINK BLOCKS  •  SURVIVE TO SCORE", TextAnchor.UpperCenter, new Vector2(0f, -126f), new Vector2(760f, 48f), new Color(1f, 0.95f, 0.55f));
+        objectiveText.fontSize = 26;
+        Text avoidText = CreateText(gameplayHudRoot.transform, "Avoid Instruction Text", font, "LEFT / RIGHT moves the cyan ship. Do not touch pink hazards.", TextAnchor.LowerCenter, new Vector2(0f, 92f), new Vector2(860f, 48f), new Color(0.88f, 0.94f, 1f));
+        avoidText.fontSize = 24;
+        Text hazardLabel = CreateText(gameplayHudRoot.transform, "Hazard Label", font, "AVOID", TextAnchor.UpperCenter, new Vector2(0f, -458f), new Vector2(160f, 34f), new Color(1f, 0.55f, 0.8f));
+        hazardLabel.fontSize = 22;
+        Text playerLabel = CreateText(gameplayHudRoot.transform, "Player Label", font, "YOU", TextAnchor.LowerCenter, new Vector2(0f, 320f), new Vector2(140f, 34f), new Color(0.45f, 1f, 1f));
+        playerLabel.fontSize = 22;
 
         NeonDriftVisualSync visualSync = gameplayHudRoot.AddComponent<NeonDriftVisualSync>();
         visualSync.Configure(
@@ -276,13 +284,13 @@ public static class NeonDriftRuntimeBootstrap
         GameObject panel = new GameObject("Game Over Panel");
         panel.transform.SetParent(canvasObject.transform, false);
         Image panelImage = panel.AddComponent<Image>();
-        panelImage.color = new Color(0f, 0f, 0f, 0.72f);
-        SetRect(panel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(760f, 360f));
+        panelImage.color = new Color(0f, 0f, 0f, 0.62f);
+        SetRect(panel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 115f), new Vector2(620f, 300f));
         panel.SetActive(false);
 
-        Text gameOverText = CreateText(panel.transform, "Game Over Text", font, "DRIFT LOST\nTAP TO RETRY", TextAnchor.MiddleCenter, Vector2.zero, new Vector2(720f, 300f), Color.white);
-        gameOverText.fontSize = 54;
-        CreateButton(panel.transform, "Retry Button", font, "RETRY", TextAnchor.LowerCenter, new Vector2(0f, 38f), new Vector2(260f, 72f), new Color(0f, 0.55f, 0.85f, 0.85f));
+        Text gameOverText = CreateText(panel.transform, "Game Over Text", font, "DRIFT LOST\nAvoid pink blocks. Retry to restart.", TextAnchor.MiddleCenter, new Vector2(0f, 24f), new Vector2(560f, 190f), Color.white);
+        gameOverText.fontSize = 38;
+        CreateButton(panel.transform, "Retry Button", font, "RETRY", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(260f, 72f), new Color(0f, 0.55f, 0.85f, 0.88f));
 
         NeonDriftHud hud = canvasObject.AddComponent<NeonDriftHud>();
         hud.Configure(scoreText, pulseText, panel);
