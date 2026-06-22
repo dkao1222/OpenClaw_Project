@@ -169,15 +169,26 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
 
     private void Start()
     {
+        if (ShouldRunQaPlaythrough())
+        {
+            Debug.Log("QA_PLAYTHROUGH_TRIGGERED");
+            StartCoroutine(RunPlaythrough());
+        }
+    }
+
+    private bool ShouldRunQaPlaythrough()
+    {
         string[] args = Environment.GetCommandLineArgs();
         for (int index = 0; index < args.Length; index += 1)
         {
             if (args[index] == "-qaPlaythrough")
             {
-                StartCoroutine(RunPlaythrough());
-                return;
+                return true;
             }
         }
+
+        string flagPath = System.IO.Path.Combine(Application.persistentDataPath, "qa_playthrough.flag");
+        return System.IO.File.Exists(flagPath);
     }
 
     private IEnumerator RunPlaythrough()
@@ -191,6 +202,7 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         NeonDriftUiActions uiActions = FindObjectOfType<NeonDriftUiActions>();
         GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        Debug.Log("QA_PLAYTHROUGH_START");
         uiActions?.StartGame();
 
         yield return new WaitForSecondsRealtime(0.75f);
@@ -203,10 +215,12 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(4.2f);
         session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        Debug.Log("QA_PLAYTHROUGH_GAME_OVER");
         session?.GameOver();
 
         yield return new WaitForSecondsRealtime(1.6f);
         uiActions = FindObjectOfType<NeonDriftUiActions>();
+        Debug.Log("QA_PLAYTHROUGH_RETRY");
         uiActions?.Retry();
     }
 }
