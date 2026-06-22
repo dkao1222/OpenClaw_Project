@@ -223,7 +223,7 @@ public static class NeonDriftRuntimeBootstrap
 
         Application.targetFrameRate = 60;
 
-        Camera camera = Object.FindObjectOfType<Camera>();
+        Camera camera = UnityEngine.Object.FindObjectOfType<Camera>();
         if (camera == null)
         {
             GameObject cameraObject = new GameObject("Main Camera");
@@ -236,7 +236,7 @@ public static class NeonDriftRuntimeBootstrap
         camera.orthographicSize = 5.8f;
         camera.transform.position = new Vector3(0f, 0f, -10f);
 
-        if (Object.FindObjectOfType<EventSystem>() == null)
+        if (UnityEngine.Object.FindObjectOfType<EventSystem>() == null)
         {
             GameObject eventSystemObject = new GameObject("EventSystem");
             eventSystemObject.AddComponent<EventSystem>();
