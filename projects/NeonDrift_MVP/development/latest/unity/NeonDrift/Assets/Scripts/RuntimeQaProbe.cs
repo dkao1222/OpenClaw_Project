@@ -53,6 +53,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool gameplayControlsHiddenInMenu;
         public bool gameplayVisualsVerified;
         public bool gameplayVisualsHiddenInMenu;
+        public bool gameplayMotionVerified;
+        public bool playerSteeringMotionVerified;
         public bool coreGameplayObjectsVerified;
         public bool scoringSystemVerified;
         public bool pauseSystemVerified;
@@ -78,6 +80,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     }
 
     private static RuntimeQaProbe instance;
+    private static bool gameplayMotionVerifiedForQa;
+    private static bool playerSteeringMotionVerifiedForQa;
     private int frameCount;
     private float elapsed;
     private float fps;
@@ -122,6 +126,16 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     public ProbeSnapshot Capture()
     {
         return BuildSnapshot(exceptionCount, fps);
+    }
+
+    public static void RecordGameplayMotionVerified(bool verified)
+    {
+        gameplayMotionVerifiedForQa = gameplayMotionVerifiedForQa || verified;
+    }
+
+    public static void RecordPlayerSteeringMotionVerified(bool verified)
+    {
+        playerSteeringMotionVerifiedForQa = playerSteeringMotionVerifiedForQa || verified;
     }
 
     private static ProbeSnapshot CaptureWithoutInstance()
@@ -173,7 +187,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         bool menuElementsDoNotOverlap = !RectsOverlap(titleRect, startRect) && !RectsOverlap(startRect, settingsRect) && !RectsOverlap(settingsRect, bestRect) && !RectsOverlap(titleRect, settingsRect) && !RectsOverlap(startRect, bestRect);
         bool gameplayControlsHiddenInMenu = !hasStarted && !IsActiveInHierarchy("Left Control Zone") && !IsActiveInHierarchy("Right Control Zone") && !IsActiveInHierarchy("Pause Button");
         bool gameplayHudHiddenInMenu = !hasStarted && !gameplayHudVisible;
-        bool gameplayVisualsVerified = HasMinimumSize(trackRect, 180f, 520f) && HasMinimumSize(playerMarkerRect, 44f, 32f) && HasMinimumSize(hazardMarkerRect, 44f, 44f);
+        NeonDriftVisualSync visualSync = FindVisualSyncIncludingInactive();
+        bool gameplayVisualsVerified = HasMinimumSize(trackRect, 180f, 520f) && HasMinimumSize(playerMarkerRect, 44f, 32f) && HasMinimumSize(hazardMarkerRect, 44f, 44f) && visualSync != null && visualSync.HasMotionContract;
         bool gameplayVisualsHiddenInMenu = !hasStarted && !IsActiveInHierarchy("Track Playfield") && !IsActiveInHierarchy("Player Visual Marker") && !IsActiveInHierarchy("Hazard Visual Marker");
         bool menuLayoutVerified = mainMenuVisible && menuElementsDoNotOverlap && gameplayHudHiddenInMenu && gameplayControlsHiddenInMenu && HasMinimumSize(startRect, 120f, 44f) && HasMinimumSize(settingsRect, 120f, 44f);
         bool startFlowVerified = session != null && !hasStarted && GameSessionController.Score == 0 && mainMenuVisible && startButton != null && IsClickable(startButton);
@@ -224,6 +239,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             gameplayControlsHiddenInMenu = gameplayControlsHiddenInMenu,
             gameplayVisualsVerified = gameplayVisualsVerified,
             gameplayVisualsHiddenInMenu = gameplayVisualsHiddenInMenu,
+            gameplayMotionVerified = gameplayMotionVerifiedForQa || (visualSync != null && visualSync.HasAnimated),
+            playerSteeringMotionVerified = playerSteeringMotionVerifiedForQa || (visualSync != null && visualSync.HasPlayerResponse),
             coreGameplayObjectsVerified = coreGameplayObjectsVerified,
             scoringSystemVerified = session != null && HasTextNamed(texts, "Score Text") && FindObjectOfType<DriftPlayerController>() != null,
             pauseSystemVerified = session != null && hasPause && IsClickable(pauseButton),
@@ -289,6 +306,19 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     {
         GameObject target = FindObjectByNameIncludingInactive(name);
         return target != null ? target.GetComponent<RectTransform>() : null;
+    }
+
+    private static NeonDriftVisualSync FindVisualSyncIncludingInactive()
+    {
+        NeonDriftVisualSync[] syncs = Resources.FindObjectsOfTypeAll<NeonDriftVisualSync>();
+        foreach (NeonDriftVisualSync sync in syncs)
+        {
+            if (sync != null)
+            {
+                return sync;
+            }
+        }
+        return null;
     }
 
     private static bool HasMinimumSize(RectTransform rectTransform, float minWidth, float minHeight)

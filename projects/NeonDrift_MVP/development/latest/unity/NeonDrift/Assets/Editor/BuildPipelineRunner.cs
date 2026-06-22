@@ -19,6 +19,11 @@ public static class BuildPipelineRunner
         EnsureScene();
         Application.targetFrameRate = 60;
         Directory.CreateDirectory("TestResults");
+        bool startButtonFlowVerified = VerifyStartButtonFlow();
+        bool earlyGameOverIsProtected = VerifyEarlyGameOverProtection();
+        bool gameplayMotionVerified = VerifyGameplayMotion();
+        bool playerSteeringMotionVerified = VerifyPlayerSteeringMotion();
+        EnsureScene();
         string probeJson = RuntimeQaProbe.CaptureJson();
         File.WriteAllText("TestResults/runtime_probe.json", probeJson);
 
@@ -57,8 +62,10 @@ public static class BuildPipelineRunner
                 ("InitialStateWaitsForStart", RuntimeQaProbe.CaptureJson().Contains("\"screenState\": \"menu\"") && RuntimeQaProbe.CaptureJson().Contains("\"hasStarted\": false") && RuntimeQaProbe.CaptureJson().Contains("\"score\": 0") && RuntimeQaProbe.CaptureJson().Contains("\"startFlowVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayHudHiddenInMenu\": true") && RuntimeQaProbe.CaptureJson().Contains("\"earlyGameOverProtected\": true")),
                 ("MenuLayoutIsReadable", RuntimeQaProbe.CaptureJson().Contains("\"menuLayoutVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"menuElementsDoNotOverlap\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayHudHiddenInMenu\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayControlsHiddenInMenu\": true")),
                 ("GameplayVisualsAreReadable", RuntimeQaProbe.CaptureJson().Contains("\"gameplayVisualsVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayVisualsHiddenInMenu\": true")),
-                ("StartButtonFlowVerified", VerifyStartButtonFlow()),
-                ("EarlyGameOverIsProtected", VerifyEarlyGameOverProtection())
+                ("GameplayMotionIsVerified", gameplayMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"gameplayMotionVerified\": true")),
+                ("PlayerSteeringMotionIsVerified", playerSteeringMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"playerSteeringMotionVerified\": true")),
+                ("StartButtonFlowVerified", startButtonFlowVerified),
+                ("EarlyGameOverIsProtected", earlyGameOverIsProtected)
             }
         );
     }
@@ -89,6 +96,40 @@ public static class BuildPipelineRunner
         uiActions.StartGame();
         session.GameOver();
         return session.HasStarted && !session.IsGameOver && !session.CanSpawnHazards && session.MinimumSurvivalSeconds >= 6f;
+    }
+
+    private static bool VerifyGameplayMotion()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        NeonDriftVisualSync visualSync = GameObject.FindObjectOfType<NeonDriftVisualSync>(true);
+        if (session == null || uiActions == null || visualSync == null)
+        {
+            RuntimeQaProbe.RecordGameplayMotionVerified(false);
+            return false;
+        }
+
+        uiActions.StartGame();
+        bool verified = session.HasStarted && visualSync.VerifyMotionForQa();
+        RuntimeQaProbe.RecordGameplayMotionVerified(verified);
+        return verified;
+    }
+
+    private static bool VerifyPlayerSteeringMotion()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        NeonDriftVisualSync visualSync = GameObject.FindObjectOfType<NeonDriftVisualSync>(true);
+        if (session == null || uiActions == null || visualSync == null)
+        {
+            RuntimeQaProbe.RecordPlayerSteeringMotionVerified(false);
+            return false;
+        }
+
+        uiActions.StartGame();
+        bool verified = session.HasStarted && visualSync.VerifySteeringForQa();
+        RuntimeQaProbe.RecordPlayerSteeringMotionVerified(verified);
+        return verified;
     }
 
     public static void BuildIOS()
@@ -262,11 +303,20 @@ public static class BuildPipelineRunner
         gameplayRootRect.offsetMin = Vector2.zero;
         gameplayRootRect.offsetMax = Vector2.zero;
 
-        CreateUiBlock(gameplayHudRoot.transform, "Track Playfield", TextAnchor.MiddleCenter, new Vector2(0f, -90f), new Vector2(300f, 1180f), new Color(0.02f, 0.04f, 0.08f, 0.58f));
-        CreateUiBlock(gameplayHudRoot.transform, "Left Lane Rail", TextAnchor.MiddleCenter, new Vector2(-155f, -90f), new Vector2(8f, 1180f), new Color(0f, 0.95f, 1f, 0.86f));
-        CreateUiBlock(gameplayHudRoot.transform, "Right Lane Rail", TextAnchor.MiddleCenter, new Vector2(155f, -90f), new Vector2(8f, 1180f), new Color(1f, 0.1f, 0.9f, 0.86f));
-        CreateUiBlock(gameplayHudRoot.transform, "Player Visual Marker", TextAnchor.LowerCenter, new Vector2(0f, 260f), new Vector2(72f, 54f), new Color(0f, 0.95f, 1f, 0.96f));
-        CreateUiBlock(gameplayHudRoot.transform, "Hazard Visual Marker", TextAnchor.UpperCenter, new Vector2(0f, -360f), new Vector2(82f, 82f), new Color(1f, 0.12f, 0.52f, 0.94f));
+        Image trackPlayfield = CreateUiBlock(gameplayHudRoot.transform, "Track Playfield", TextAnchor.MiddleCenter, new Vector2(0f, -90f), new Vector2(300f, 1180f), new Color(0.02f, 0.04f, 0.08f, 0.58f));
+        Image leftLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Left Lane Rail", TextAnchor.MiddleCenter, new Vector2(-155f, -90f), new Vector2(8f, 1180f), new Color(0f, 0.95f, 1f, 0.86f));
+        Image rightLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Right Lane Rail", TextAnchor.MiddleCenter, new Vector2(155f, -90f), new Vector2(8f, 1180f), new Color(1f, 0.1f, 0.9f, 0.86f));
+        Image playerMarker = CreateUiBlock(gameplayHudRoot.transform, "Player Visual Marker", TextAnchor.LowerCenter, new Vector2(0f, 260f), new Vector2(72f, 54f), new Color(0f, 0.95f, 1f, 0.96f));
+        Image hazardMarker = CreateUiBlock(gameplayHudRoot.transform, "Hazard Visual Marker", TextAnchor.UpperCenter, new Vector2(0f, -360f), new Vector2(82f, 82f), new Color(1f, 0.12f, 0.52f, 0.94f));
+
+        var visualSync = gameplayHudRoot.AddComponent<NeonDriftVisualSync>();
+        var visualSyncSerialized = new SerializedObject(visualSync);
+        visualSyncSerialized.FindProperty("trackPlayfield").objectReferenceValue = trackPlayfield.GetComponent<RectTransform>();
+        visualSyncSerialized.FindProperty("leftLaneRail").objectReferenceValue = leftLaneRail.GetComponent<RectTransform>();
+        visualSyncSerialized.FindProperty("rightLaneRail").objectReferenceValue = rightLaneRail.GetComponent<RectTransform>();
+        visualSyncSerialized.FindProperty("playerMarker").objectReferenceValue = playerMarker.GetComponent<RectTransform>();
+        visualSyncSerialized.FindProperty("hazardMarker").objectReferenceValue = hazardMarker.GetComponent<RectTransform>();
+        visualSyncSerialized.ApplyModifiedPropertiesWithoutUndo();
 
         Text scoreText = CreateText(gameplayHudRoot.transform, "Score Text", font, "SCORE 0000", TextAnchor.UpperLeft, new Vector2(38f, -34f), new Vector2(420f, 72f), new Color(0f, 0.95f, 1f));
         Text pulseText = CreateText(gameplayHudRoot.transform, "Pulse Text", font, "PULSE 00%", TextAnchor.UpperRight, new Vector2(-38f, -34f), new Vector2(420f, 72f), new Color(1f, 0.25f, 0.9f));
