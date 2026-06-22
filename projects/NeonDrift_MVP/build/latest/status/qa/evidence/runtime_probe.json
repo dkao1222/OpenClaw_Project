@@ -44,6 +44,8 @@
     "gameplayControlsHiddenInMenu": true,
     "gameplayVisualsVerified": true,
     "gameplayVisualsHiddenInMenu": true,
+    "gameplayMotionVerified": true,
+    "playerSteeringMotionVerified": true,
     "coreGameplayObjectsVerified": true,
     "scoringSystemVerified": true,
     "pauseSystemVerified": true,

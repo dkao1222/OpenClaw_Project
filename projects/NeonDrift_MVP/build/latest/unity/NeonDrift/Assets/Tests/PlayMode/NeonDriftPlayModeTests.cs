@@ -89,6 +89,44 @@ public sealed class NeonDriftPlayModeTests
     }
 
     [Test]
+    public void GameplayMotionIsVerified()
+    {
+        SceneManager.LoadScene("Main");
+        Type uiActionsType = FindType("NeonDriftUiActions");
+        Type visualSyncType = FindType("NeonDriftVisualSync");
+        Assert.IsNotNull(uiActionsType);
+        Assert.IsNotNull(visualSyncType);
+
+        UnityEngine.Object uiActions = UnityEngine.Object.FindObjectOfType(uiActionsType);
+        UnityEngine.Object visualSync = UnityEngine.Object.FindObjectOfType(visualSyncType, true);
+        Assert.IsNotNull(uiActions);
+        Assert.IsNotNull(visualSync);
+
+        uiActionsType.GetMethod("StartGame").Invoke(uiActions, null);
+        bool verified = (bool)visualSyncType.GetMethod("VerifyMotionForQa").Invoke(visualSync, null);
+        Assert.IsTrue(verified);
+    }
+
+    [Test]
+    public void PlayerSteeringMotionIsVerified()
+    {
+        SceneManager.LoadScene("Main");
+        Type uiActionsType = FindType("NeonDriftUiActions");
+        Type visualSyncType = FindType("NeonDriftVisualSync");
+        Assert.IsNotNull(uiActionsType);
+        Assert.IsNotNull(visualSyncType);
+
+        UnityEngine.Object uiActions = UnityEngine.Object.FindObjectOfType(uiActionsType);
+        UnityEngine.Object visualSync = UnityEngine.Object.FindObjectOfType(visualSyncType, true);
+        Assert.IsNotNull(uiActions);
+        Assert.IsNotNull(visualSync);
+
+        uiActionsType.GetMethod("StartGame").Invoke(uiActions, null);
+        bool verified = (bool)visualSyncType.GetMethod("VerifySteeringForQa").Invoke(visualSync, null);
+        Assert.IsTrue(verified);
+    }
+
+    [Test]
     public void StartButtonFlowVerified()
     {
         SceneManager.LoadScene("Main");
