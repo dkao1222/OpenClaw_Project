@@ -57,6 +57,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool failureRetrySystemVerified;
         public bool startFlowVerified;
         public bool startButtonStartsGameVerified;
+        public bool earlyGameOverProtected;
+        public bool readableHazardPacingVerified;
         public bool pauseControlVerified;
         public bool retryControlVerified;
         public bool leftRightSteeringVerified;
@@ -67,6 +69,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool isGameOver;
         public bool isPaused;
         public bool hasStarted;
+        public float gameplayTime;
+        public float minimumSurvivalSeconds;
         public float framesPerSecond;
         public int exceptionCount;
     }
@@ -217,6 +221,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             failureRetrySystemVerified = gameOverPanel != null && hasRetry && IsClickable(retryButton),
             startFlowVerified = startFlowVerified,
             startButtonStartsGameVerified = startFlowVerified && hasUiActions,
+            earlyGameOverProtected = session != null && session.MinimumSurvivalSeconds >= 6f && !session.CanAcceptFailure,
+            readableHazardPacingVerified = session != null && !session.CanSpawnHazards && session.MinimumSurvivalSeconds >= 6f,
             pauseControlVerified = hasPause && IsClickable(pauseButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
             retryControlVerified = hasRetry && IsClickable(retryButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && gameOverPanel != null,
             leftRightSteeringVerified = hasLeftZone && hasRightZone && hasPlayer,
@@ -227,6 +233,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             isGameOver = session != null && session.IsGameOver,
             isPaused = session != null && session.IsPaused,
             hasStarted = hasStarted,
+            gameplayTime = session != null ? session.GameplayTime : 0f,
+            minimumSurvivalSeconds = session != null ? session.MinimumSurvivalSeconds : 0f,
             framesPerSecond = currentFps > 0f ? currentFps : Mathf.Max(0f, Application.targetFrameRate),
             exceptionCount = exceptions
         };

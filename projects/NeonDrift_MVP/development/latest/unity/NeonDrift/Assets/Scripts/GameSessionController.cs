@@ -10,10 +10,15 @@ public sealed class GameSessionController : MonoBehaviour
     private bool paused;
     private bool started;
     private float scoreTimer;
+    private float gameplayTimer;
 
     public bool IsGameOver => gameOver;
     public bool IsPaused => paused;
     public bool HasStarted => started;
+    public float GameplayTime => gameplayTimer;
+    public float MinimumSurvivalSeconds => 6f;
+    public bool CanSpawnHazards => started && !paused && !gameOver && gameplayTimer >= 2.5f;
+    public bool CanAcceptFailure => started && gameplayTimer >= MinimumSurvivalSeconds;
 
     private void Awake()
     {
@@ -52,6 +57,8 @@ public sealed class GameSessionController : MonoBehaviour
             return;
         }
 
+        gameplayTimer += Time.deltaTime;
+
         scoreTimer += Time.deltaTime;
         if (scoreTimer >= 0.1f)
         {
@@ -62,7 +69,7 @@ public sealed class GameSessionController : MonoBehaviour
 
     public void GameOver()
     {
-        if (!started || gameOver)
+        if (!CanAcceptFailure || gameOver)
         {
             return;
         }
@@ -93,6 +100,7 @@ public sealed class GameSessionController : MonoBehaviour
         paused = false;
         gameOver = false;
         scoreTimer = 0f;
+        gameplayTimer = 0f;
         Score = 0;
         Time.timeScale = 1f;
     }
