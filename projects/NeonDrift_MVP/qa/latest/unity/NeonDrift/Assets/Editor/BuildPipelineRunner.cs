@@ -237,7 +237,7 @@ public static class BuildPipelineRunner
         player.name = "Player";
         player.transform.position = new Vector3(0f, -3.6f, 0f);
         player.transform.localScale = new Vector3(0.55f, 0.35f, 0.18f);
-        Object.DestroyImmediate(player.GetComponent<BoxCollider>());
+        UnityEngine.Object.DestroyImmediate(player.GetComponent<BoxCollider>());
         player.GetComponent<Renderer>().sharedMaterial.color = new Color(0f, 0.95f, 1f);
         player.AddComponent<Rigidbody2D>().gravityScale = 0f;
         player.AddComponent<CircleCollider2D>();
@@ -248,7 +248,7 @@ public static class BuildPipelineRunner
         hazardPrefab.tag = "Hazard";
         hazardPrefab.transform.position = new Vector3(2.4f, 3.8f, 0f);
         hazardPrefab.transform.localScale = new Vector3(0.65f, 0.65f, 0.2f);
-        Object.DestroyImmediate(hazardPrefab.GetComponent<BoxCollider>());
+        UnityEngine.Object.DestroyImmediate(hazardPrefab.GetComponent<BoxCollider>());
         hazardPrefab.GetComponent<Renderer>().sharedMaterial.color = new Color(1f, 0.15f, 0.55f);
         hazardPrefab.AddComponent<BoxCollider2D>();
         spawner.Configure(hazardPrefab);
@@ -289,7 +289,7 @@ public static class BuildPipelineRunner
         quad.name = name;
         quad.transform.position = position;
         quad.transform.localScale = scale;
-        Object.DestroyImmediate(quad.GetComponent<BoxCollider>());
+        UnityEngine.Object.DestroyImmediate(quad.GetComponent<BoxCollider>());
         quad.GetComponent<Renderer>().sharedMaterial.color = color;
     }
 
