@@ -51,6 +51,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool scoringSystemVerified;
         public bool pauseSystemVerified;
         public bool failureRetrySystemVerified;
+        public bool startFlowVerified;
+        public bool startButtonStartsGameVerified;
         public bool pauseControlVerified;
         public bool retryControlVerified;
         public bool leftRightSteeringVerified;
@@ -60,6 +62,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public int score;
         public bool isGameOver;
         public bool isPaused;
+        public bool hasStarted;
         public float framesPerSecond;
         public int exceptionCount;
     }
@@ -148,9 +151,12 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         bool controlsInsideSafeArea = IsInsideSafeArea(startRect, canvas, safeArea) && IsInsideSafeArea(settingsRect, canvas, safeArea) && IsInsideSafeArea(pauseRect, canvas, safeArea) && IsInsideSafeArea(retryRect, canvas, safeArea) && IsInsideSafeArea(leftRect, canvas, safeArea) && IsInsideSafeArea(rightRect, canvas, safeArea);
         bool controlsDoNotOverlap = !RectsOverlap(startRect, settingsRect) && !RectsOverlap(leftRect, rightRect) && !RectsOverlap(pauseRect, retryRect);
         bool coreGameplayObjectsVerified = hasPlayer && FindObjectOfType<HazardSpawner>() != null && session != null;
+        bool hasStarted = session != null && session.HasStarted;
+        bool mainMenuVisible = mainMenuPanel != null && mainMenuPanel.activeInHierarchy;
+        bool startFlowVerified = session != null && !hasStarted && GameSessionController.Score == 0 && mainMenuVisible && startButton != null && IsClickable(startButton);
         return new ProbeSnapshot
         {
-            screenState = session != null && session.IsGameOver ? "game_over" : "gameplay",
+            screenState = session != null && session.IsGameOver ? "game_over" : hasStarted ? "gameplay" : "menu",
             screenWidth = Screen.width,
             screenHeight = Screen.height,
             safeArea = Screen.safeArea.ToString(),
@@ -193,6 +199,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             scoringSystemVerified = session != null && HasTextNamed(texts, "Score Text") && FindObjectOfType<DriftPlayerController>() != null,
             pauseSystemVerified = session != null && hasPause && IsClickable(pauseButton),
             failureRetrySystemVerified = gameOverPanel != null && hasRetry && IsClickable(retryButton),
+            startFlowVerified = startFlowVerified,
+            startButtonStartsGameVerified = startFlowVerified && hasUiActions,
             pauseControlVerified = hasPause && IsClickable(pauseButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
             retryControlVerified = hasRetry && IsClickable(retryButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && gameOverPanel != null,
             leftRightSteeringVerified = hasLeftZone && hasRightZone && hasPlayer,
@@ -202,6 +210,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             score = GameSessionController.Score,
             isGameOver = session != null && session.IsGameOver,
             isPaused = session != null && session.IsPaused,
+            hasStarted = hasStarted,
             framesPerSecond = currentFps > 0f ? currentFps : Mathf.Max(0f, Application.targetFrameRate),
             exceptionCount = exceptions
         };

@@ -47,7 +47,7 @@ public sealed class NeonDriftUiActions : MonoBehaviour
         {
             mainMenuPanel.SetActive(false);
         }
-        Time.timeScale = 1f;
+        GameSessionController.Instance?.StartGame();
     }
 
     public void ShowSettingsFeedback()
