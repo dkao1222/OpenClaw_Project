@@ -48,17 +48,17 @@
         "com.DefaultCompany.NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "ry/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/DB759D3A-94AF-4D5F-89C5-7F6F3ED14246/NeonDrift.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/DB759D3A-94AF-4D5F-89C5-7F6F3ED14246/\";\n    CFBundleDisplayName = NeonDrift;\n    CFBundleExecutable = NeonDrift;\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift\";\n    CFBundleName = NeonDrift;\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/65B03348-86C9-4CF8-B847-48D83AF272B6/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/DB759D3A-94AF-4D5F-89C5-7F6F3ED14246/NeonDrift.app\";\n    SBAppTags =     (\n    );\n}\n",
+      "stdout_tail": "ry/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/C67DF1DD-1B6D-4E15-9630-7435B05D3A13/NeonDrift.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/C67DF1DD-1B6D-4E15-9630-7435B05D3A13/\";\n    CFBundleDisplayName = NeonDrift;\n    CFBundleExecutable = NeonDrift;\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift\";\n    CFBundleName = NeonDrift;\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/5545BE6F-52FC-45A8-85BC-CF0507083F82/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/C67DF1DD-1B6D-4E15-9630-7435B05D3A13/NeonDrift.app\";\n    SBAppTags =     (\n    );\n}\n",
       "stderr_tail": ""
     },
     {
       "label": "installed_app_binary_file",
       "command": [
         "file",
-        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/DB759D3A-94AF-4D5F-89C5-7F6F3ED14246/NeonDrift.app/NeonDrift"
+        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/C67DF1DD-1B6D-4E15-9630-7435B05D3A13/NeonDrift.app/NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/DB759D3A-94AF-4D5F-89C5-7F6F3ED14246/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/C67DF1DD-1B6D-4E15-9630-7435B05D3A13/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
       "stderr_tail": ""
     },
     {
@@ -85,7 +85,7 @@
         "data"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/65B03348-86C9-4CF8-B847-48D83AF272B6\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/5545BE6F-52FC-45A8-85BC-CF0507083F82\n",
       "stderr_tail": ""
     },
     {
@@ -100,7 +100,7 @@
         "-qaPlaythrough"
       ],
       "exit_code": 0,
-      "stdout_tail": "com.DefaultCompany.NeonDrift: 76756\n",
+      "stdout_tail": "com.DefaultCompany.NeonDrift: 81741\n",
       "stderr_tail": ""
     },
     {
@@ -196,7 +196,7 @@
         "compact"
       ],
       "exit_code": 0,
-      "stdout_tail": "onSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] Deleting snapshot <XBApplicationSnapshot: 0x129cc2a00; …362AEAF8BD9E> [com.DefaultCompany.NeonDrift] for reason: _contentType: GeneratedDefault(1)\n2026-06-23 01:31:21.479 Df SpringBoard[16891:6d7d2b] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-23 01:31:22.577 Df SpringBoard[16891:6d7d2a] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-23 01:31:30.816 Df log[76845:0] [com.apple.log:] log run noninteractively, parent: 16886 (launchd_sim), args: 'log' 'show' '--last' '3m' '--predicate' 'process == \"com.DefaultCompany.NeonDrift\" OR process == \"NeonDrift\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift\" OR eventMessage CONTAINS \"Ne\n",
+      "stdout_tail": "onSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] Deleting snapshot <XBApplicationSnapshot: 0x10a76e4c0; …2F37E0397343> [com.DefaultCompany.NeonDrift] for reason: _contentType: GeneratedDefault(1)\n2026-06-23 01:36:38.574 Df SpringBoard[16891:6e0296] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-23 01:36:39.672 Df SpringBoard[16891:6e029a] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-23 01:36:47.820 Df log[81833:0] [com.apple.log:] log run noninteractively, parent: 16886 (launchd_sim), args: 'log' 'show' '--last' '3m' '--predicate' 'process == \"com.DefaultCompany.NeonDrift\" OR process == \"NeonDrift\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift\" OR eventMessage CONTAINS \"Ne\n",
       "stderr_tail": "getpwuid_r did not find a match for uid 501\n"
     }
   ],

@@ -1,6 +1,6 @@
 # Game QA Validation Report
 
-- session_id: notion-NeonDrift_MVP-qa-qa-full-20260622173109-qa-full
+- session_id: notion-NeonDrift_MVP-qa-qa-full-20260622173626-qa-full
 - output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 
 ## Checks
@@ -16,13 +16,13 @@
 - PASS qa_result.valid_check_statuses
 - PASS qa_result.evidence_paths_exist: 111 checked
 - PASS qa_result.checks_total_matches: 96
-- PASS qa_result.checks_failed_matches: 1
+- PASS qa_result.checks_failed_matches: 0
 - PASS qa_result.checks_blocked_matches: 0
-- PASS qa_result.no_pass_with_fail_or_blocked
+- PASS qa_result.overall_status_passed_when_all_pass
 - PASS process.deterministic_finalizer_complete
 
 ## Result
-- status: failed
-- qa_overall_status: failed
+- status: passed
+- qa_overall_status: passed
 - checks_total: 16
 - checks_failed: 0
