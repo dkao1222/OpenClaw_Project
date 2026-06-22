@@ -3,12 +3,12 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260622173109
-- 交付狀態: blocked
-- QA 狀態: failed
-- Release candidate: blocked
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260622173626
+- 交付狀態: ready
+- QA 狀態: passed
+- Release candidate: ready
 - checks_total: 96
-- checks_failed: 1
+- checks_failed: 0
 - checks_blocked: 0
 - bundle_id: com.DefaultCompany.NeonDrift
 
@@ -42,8 +42,8 @@ xcrun simctl launch booted com.DefaultCompany.NeonDrift
 
 ## Required Fixes
 
-- playthrough_retry_screenshot_has_ui_variance: {'exists': True, 'bytes': 63858, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 12}
+- 無
 
 ## English Summary
 
-Delivery status is blocked. QA status is failed; release candidate status is blocked.
+Delivery status is ready. QA status is passed; release candidate status is ready.
