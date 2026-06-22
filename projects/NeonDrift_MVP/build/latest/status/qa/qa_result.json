@@ -1,6 +1,6 @@
 {
   "overall_status": "passed",
-  "checks_total": 69,
+  "checks_total": 72,
   "checks_failed": 0,
   "checks_blocked": 0,
   "release_candidate_status": "ready",
@@ -37,7 +37,7 @@
       "area": "Regression",
       "status": "PASS",
       "expected": "Unity PlayMode tests exist and have zero failures.",
-      "actual": "19 total, 0 failed.",
+      "actual": "20 total, 0 failed.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
       "severity": "none"
     },
@@ -366,6 +366,24 @@
       "severity": "none"
     },
     {
+      "id": "runtime_probe_early_game_over_protected",
+      "area": "Gameplay",
+      "status": "PASS",
+      "expected": "Early gameplay cannot immediately fail before readable player response time.",
+      "actual": "earlyGameOverProtected=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
+      "id": "runtime_probe_readable_hazard_pacing_verified",
+      "area": "Gameplay",
+      "status": "PASS",
+      "expected": "Hazard pacing has a readable delay before threats begin.",
+      "actual": "readableHazardPacingVerified=True in runtime_probe.json.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
+      "severity": "none"
+    },
+    {
       "id": "runtime_probe_target_frame_rate",
       "area": "Performance",
       "status": "PASS",
@@ -465,6 +483,15 @@
       "severity": "none"
     },
     {
+      "id": "playmode_early_game_over_protection_contract",
+      "area": "UI/UX",
+      "status": "PASS",
+      "expected": "Early gameplay cannot immediately fail after Start.",
+      "actual": "EarlyGameOverIsProtected found in PlayMode XML.",
+      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
+      "severity": "none"
+    },
+    {
       "id": "playmode_safe_area_frame_pacing_contract",
       "area": "UI/UX",
       "status": "PASS",
@@ -523,7 +550,7 @@
       "area": "Launch",
       "status": "PASS",
       "expected": "Simulator launch command ran and returned launch information.",
-      "actual": "com.DefaultCompany.NeonDrift: 77100",
+      "actual": "com.DefaultCompany.NeonDrift: 83444",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt",
       "severity": "none"
     },

@@ -51,6 +51,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool menuElementsDoNotOverlap;
         public bool gameplayHudHiddenInMenu;
         public bool gameplayControlsHiddenInMenu;
+        public bool gameplayVisualsVerified;
+        public bool gameplayVisualsHiddenInMenu;
         public bool coreGameplayObjectsVerified;
         public bool scoringSystemVerified;
         public bool pauseSystemVerified;
@@ -150,6 +152,9 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         RectTransform rightRect = FindRectTransformByName("Right Control Zone");
         RectTransform titleRect = FindRectTransformByName("Title Text");
         RectTransform bestRect = FindRectTransformByName("Best Score Text");
+        RectTransform trackRect = FindRectTransformByName("Track Playfield");
+        RectTransform playerMarkerRect = FindRectTransformByName("Player Visual Marker");
+        RectTransform hazardMarkerRect = FindRectTransformByName("Hazard Visual Marker");
         bool hasRetry = retryButton != null;
         bool hasPause = pauseButton != null;
         bool hasEventSystem = FindObjectOfType<EventSystem>() != null;
@@ -168,6 +173,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         bool menuElementsDoNotOverlap = !RectsOverlap(titleRect, startRect) && !RectsOverlap(startRect, settingsRect) && !RectsOverlap(settingsRect, bestRect) && !RectsOverlap(titleRect, settingsRect) && !RectsOverlap(startRect, bestRect);
         bool gameplayControlsHiddenInMenu = !hasStarted && !IsActiveInHierarchy("Left Control Zone") && !IsActiveInHierarchy("Right Control Zone") && !IsActiveInHierarchy("Pause Button");
         bool gameplayHudHiddenInMenu = !hasStarted && !gameplayHudVisible;
+        bool gameplayVisualsVerified = HasMinimumSize(trackRect, 180f, 520f) && HasMinimumSize(playerMarkerRect, 44f, 32f) && HasMinimumSize(hazardMarkerRect, 44f, 44f);
+        bool gameplayVisualsHiddenInMenu = !hasStarted && !IsActiveInHierarchy("Track Playfield") && !IsActiveInHierarchy("Player Visual Marker") && !IsActiveInHierarchy("Hazard Visual Marker");
         bool menuLayoutVerified = mainMenuVisible && menuElementsDoNotOverlap && gameplayHudHiddenInMenu && gameplayControlsHiddenInMenu && HasMinimumSize(startRect, 120f, 44f) && HasMinimumSize(settingsRect, 120f, 44f);
         bool startFlowVerified = session != null && !hasStarted && GameSessionController.Score == 0 && mainMenuVisible && startButton != null && IsClickable(startButton);
         return new ProbeSnapshot
@@ -215,6 +222,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             menuElementsDoNotOverlap = menuElementsDoNotOverlap,
             gameplayHudHiddenInMenu = gameplayHudHiddenInMenu,
             gameplayControlsHiddenInMenu = gameplayControlsHiddenInMenu,
+            gameplayVisualsVerified = gameplayVisualsVerified,
+            gameplayVisualsHiddenInMenu = gameplayVisualsHiddenInMenu,
             coreGameplayObjectsVerified = coreGameplayObjectsVerified,
             scoringSystemVerified = session != null && HasTextNamed(texts, "Score Text") && FindObjectOfType<DriftPlayerController>() != null,
             pauseSystemVerified = session != null && hasPause && IsClickable(pauseButton),
