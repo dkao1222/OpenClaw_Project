@@ -59,6 +59,20 @@ public sealed class NeonDriftPlayModeTests
         Assert.That(json, Does.Contain("\"hasStarted\": false"));
         Assert.That(json, Does.Contain("\"score\": 0"));
         Assert.That(json, Does.Contain("\"startFlowVerified\": true"));
+        Assert.That(json, Does.Contain("\"menuLayoutVerified\": true"));
+        Assert.That(json, Does.Contain("\"gameplayHudHiddenInMenu\": true"));
+        Assert.That(json, Does.Contain("\"gameplayControlsHiddenInMenu\": true"));
+    }
+
+    [Test]
+    public void MenuLayoutIsReadable()
+    {
+        SceneManager.LoadScene("Main");
+        string json = InvokeRuntimeQaProbeCaptureJson();
+        Assert.That(json, Does.Contain("\"menuLayoutVerified\": true"));
+        Assert.That(json, Does.Contain("\"menuElementsDoNotOverlap\": true"));
+        Assert.That(json, Does.Contain("\"gameplayHudHiddenInMenu\": true"));
+        Assert.That(json, Does.Contain("\"gameplayControlsHiddenInMenu\": true"));
     }
 
     [Test]
