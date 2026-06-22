@@ -37,6 +37,14 @@ public sealed class GameSessionController : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
+    }
+
     private void Update()
     {
         if (!started)
