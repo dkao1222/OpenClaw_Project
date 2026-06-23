@@ -1,12 +1,12 @@
 # Initial Define Request
 
 project_name: NeonDrift_MVP
-define_page_id: 388b9e33-8429-813c-8dc5-d4c9a8f19504
-define_run_id: notion-NeonDrift_MVP-define-20260623143038
+define_page_id: 388b9e33-8429-818c-9524-cf33eaef8d95
+define_run_id: notion-NeonDrift_MVP-define-20260623143518
 
 ## Pipeline Request
 
-Start from Define and run the full OpenClaw game pipeline without Codex manually authoring agent deliverables. Define must normalize the request and pass to planning. Planning/spec review must use game_quality and game_system_design knowledge bases to specify gameplay depth, visual richness, system 5W1H, layer coverage, QA acceptance, and development readiness. Development should implement from spec review only. Build and QA should verify local Unity/iOS simulator evidence when available.
+Clean full rerun from Define after pipeline fixes. Do not let Codex manually patch agent deliverables during this run. Define must normalize the request and pass to planning. Planning/spec review must use game_quality and game_system_design knowledge bases to specify gameplay depth, visual richness, system 5W1H, layer coverage, QA acceptance, and development readiness. Development should implement from spec review only. Build and QA should verify local Unity/iOS simulator evidence when available.
 
 ## Raw Idea（原始想法）
 
