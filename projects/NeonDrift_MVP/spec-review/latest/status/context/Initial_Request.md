@@ -3,7 +3,7 @@
 pipeline: Game Spec Review
 project_name: NeonDrift_MVP
 source_project_name: NeonDrift_MVP
-run_id: notion-NeonDrift_MVP-spec-review-review-full-20260623143132
+run_id: notion-NeonDrift_MVP-spec-review-review-full-20260623143643
 stage_range: review-full
 source_output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/handoff_to_spec_review.md
@@ -11,7 +11,7 @@ source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60a
 ## Pipeline Request
 
 Start game spec review only after the completed planning run has passed.
-Planning run id: notion-NeonDrift_MVP-0-12-20260623143048
-Planning page id: 388b9e33-8429-81df-a554-f0975b37d3fa
+Planning run id: notion-NeonDrift_MVP-0-12-20260623143528
+Planning page id: 388b9e33-8429-819b-852b-e9cfadfac939
 Use the provided planning handoff as the source of truth.
 Do not start development in this stage.
