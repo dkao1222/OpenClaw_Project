@@ -22,6 +22,7 @@ public sealed class NeonDriftEditModeTests
         Assert.IsNotNull(sessionType);
         var sessionObject = new GameObject("Test Session");
         var session = sessionObject.AddComponent(sessionType);
+        sessionType.GetMethod("StartGame", BindingFlags.Instance | BindingFlags.Public)?.Invoke(session, null);
         sessionType.GetMethod("GameOver", BindingFlags.Instance | BindingFlags.Public)?.Invoke(session, null);
         object isGameOver = sessionType.GetProperty("IsGameOver", BindingFlags.Instance | BindingFlags.Public)?.GetValue(session);
         Assert.AreEqual(true, isGameOver);
