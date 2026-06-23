@@ -8,21 +8,61 @@ public sealed class GameSessionController : MonoBehaviour
 
     private bool gameOver;
     private bool paused;
+    private bool started;
     private float scoreTimer;
+    private float gameplayTimer;
+    private int combo;
+    private int wave = 1;
+    private float boostCharge;
 
     public bool IsGameOver => gameOver;
     public bool IsPaused => paused;
+    public bool HasStarted => started;
+    public float GameplayTime => gameplayTimer;
+    public float MinimumSurvivalSeconds => 6f;
+    public int Combo => combo;
+    public int Wave => wave;
+    public int Multiplier => Mathf.Clamp(1 + combo / 10 + Mathf.Max(0, wave - 1), 1, 5);
+    public float BoostCharge => boostCharge;
+    public bool ContentDepthVerified => Wave >= 1 && Multiplier >= 1 && BoostCharge >= 0f;
+    public bool CanSpawnHazards => started && !paused && !gameOver && gameplayTimer >= 2.5f;
+    public bool CanAcceptFailure => started && gameplayTimer >= MinimumSurvivalSeconds;
 
     private void Awake()
     {
         Instance = this;
         Score = 0;
-        Time.timeScale = 1f;
+        combo = 0;
+        wave = 1;
+        boostCharge = 0f;
+        started = false;
+        paused = false;
+        gameOver = false;
+        Time.timeScale = 0f;
         Application.targetFrameRate = 60;
+    }
+
+    private void OnEnable()
+    {
+        Instance = this;
+        Application.targetFrameRate = 60;
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
     }
 
     private void Update()
     {
+        if (!started)
+        {
+            return;
+        }
+
         if (gameOver)
         {
             if (Input.GetMouseButtonDown(0) || Input.touchCount > 0 || Input.GetKeyDown(KeyCode.Space))
@@ -42,17 +82,34 @@ public sealed class GameSessionController : MonoBehaviour
             return;
         }
 
+        gameplayTimer += Time.deltaTime;
+        wave = 1 + Mathf.FloorToInt(gameplayTimer / 15f);
+        boostCharge = Mathf.Clamp01(boostCharge + Time.deltaTime * 0.035f);
+
         scoreTimer += Time.deltaTime;
         if (scoreTimer >= 0.1f)
         {
-            Score += 1;
+            combo += 1;
+            Score += Multiplier;
             scoreTimer = 0f;
         }
     }
 
+    public void CollectBoostCell()
+    {
+        if (!started || paused || gameOver)
+        {
+            return;
+        }
+
+        boostCharge = Mathf.Clamp01(boostCharge + 0.25f);
+        combo += 5;
+        Score += 25 * Multiplier;
+    }
+
     public void GameOver()
     {
-        if (gameOver)
+        if (!CanAcceptFailure || gameOver)
         {
             return;
         }
@@ -63,7 +120,7 @@ public sealed class GameSessionController : MonoBehaviour
 
     public void TogglePause()
     {
-        if (gameOver)
+        if (!started || gameOver)
         {
             return;
         }
@@ -72,9 +129,44 @@ public sealed class GameSessionController : MonoBehaviour
         Time.timeScale = paused ? 0f : 1f;
     }
 
+    public void StartGame()
+    {
+        Instance = this;
+        if (started)
+        {
+            return;
+        }
+
+        started = true;
+        paused = false;
+        gameOver = false;
+        scoreTimer = 0f;
+        gameplayTimer = 0f;
+        combo = 0;
+        wave = 1;
+        boostCharge = 0f;
+        Score = 0;
+        Time.timeScale = 1f;
+    }
+
     public void Retry()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 0f;
+        Score = 0;
+        combo = 0;
+        wave = 1;
+        boostCharge = 0f;
+        started = false;
+        paused = false;
+        gameOver = false;
+        scoreTimer = 0f;
+        gameplayTimer = 0f;
+
+        DriftPlayerController player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
+        if (player != null)
+        {
+            player.ClearUiSteer();
+            player.transform.position = new Vector3(0f, -3.6f, 0f);
+        }
     }
 }
