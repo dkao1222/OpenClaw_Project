@@ -32,7 +32,7 @@ required keywords: game, design, document
 - 核心循環是 Start Run -> 左右操控漂移 -> 避開障礙與維持賽道線 -> 以存活時間、近距離閃避與穩定控制累積分數 -> failure -> Retry；Compatibility Matrix 必須涵蓋 iOS 15+、iPhone SE 2/3、iPhone 12/13 mini、iPhone 15/15 Pro、Android 10+ 代表機與 WebGL desktop browser。
 
 ### 交接重點
-- 玩法內容深度必須在 planning 鎖定：Wave Objective、Boost Cell、Combo Chain、Hazard Pattern、短局任務與失敗原因提示都要有規劃來源，development 不可自行臨時新增核心玩法。
+- 玩法內容深度必須在 planning 鎖定：Content Objective System、Wave Objective、Boost Cell、Combo Chain、Hazard Pattern、wave objective、boost cell、combo chain、hazard pattern、短局任務與失敗原因提示都要有規劃來源；視覺必須鎖定 neon arcade presentation、screen composition、safe area、touch target、visual readability、audio/haptics、aspect ratio、performance budget，development 不可自行臨時新增核心玩法或補設計債。
 
 ## English
 
@@ -45,4 +45,4 @@ required keywords: game, design, document
 - The core loop is Start Run -> steer drifting -> avoid hazards and stay readable on the racing line -> score through survival time, near misses, and control consistency -> failure -> Retry; the Compatibility Matrix must cover iOS 15+, iPhone SE 2/3, iPhone 12/13 mini, iPhone 15/15 Pro, representative Android 10+ devices, and WebGL desktop browsers.
 
 ### Handoff Notes
-- Gameplay content depth must be locked during planning: Wave Objective, Boost Cell, Combo Chain, Hazard Pattern, short-session missions, and failure reason hints need planning sources; development must not invent core gameplay ad hoc.
+- Gameplay content depth must be locked during planning: Content Objective System, Wave Objective, Boost Cell, Combo Chain, Hazard Pattern, wave objective, boost cell, combo chain, hazard pattern, short-session missions, and failure reason hints need planning sources; visual and implementation guardrails must lock neon arcade presentation, screen composition, safe area, touch target, visual readability, audio/haptics, aspect ratio, and performance budget, so development does not invent core gameplay or repay design debt ad hoc.
