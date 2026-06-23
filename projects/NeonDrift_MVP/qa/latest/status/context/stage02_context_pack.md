@@ -11,7 +11,7 @@ Players age 16-35 who want short high-feedback racing sessions, clear mastery si
 ## MVP scope
 
 - Core loop: launch race, steer, drift, score, finish or crash, restart within two taps.
-- Product surface: mobile UI, simple progression, local metrics hooks, Unity 6000.0.71f1 direction, and compatibility notes for mid-range devices.
+- Product surface: mobile UI, simple progression, local metrics hooks, Unity 6000.0.77f1 direction, and compatibility notes for mid-range devices.
 
 ## non-goals
 
@@ -20,7 +20,7 @@ Players age 16-35 who want short high-feedback racing sessions, clear mastery si
 
 ## locked decisions
 
-- Mobile-first Unity project direction is locked to Unity 6000.0.71f1.
+- Mobile-first Unity project direction is locked to Unity 6000.0.77f1.
 - The next planning owner must preserve short-session readability, touch-first controls, fast restart, and concrete downstream documents.
 - HIG-informed mobile UX, icon identity, device compatibility, privacy, ads, and local build readiness remain required review topics.
 

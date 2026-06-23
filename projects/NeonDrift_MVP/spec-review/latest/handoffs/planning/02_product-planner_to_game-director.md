@@ -6,7 +6,7 @@ project_name: NeonDrift_MVP
 project_channel_id: 382b9e3384298039b171c9b2a60ae644
 requires_user_confirmation: true
 product_goal: NeonDrift MVP is a mobile-first arcade drift game focused on short readable runs, one-finger control, scoring clarity, and instant restart.
-platform_direction: Unity 6000.0.71f1 mobile build for iOS and Android with touch-first UX, safe-area handling, performance budget, and device compatibility review.
+platform_direction: Unity 6000.0.77f1 mobile build for iOS and Android with touch-first UX, safe-area handling, performance budget, and device compatibility review.
 target_user: Mobile players age 16-35 who want fast neon racing sessions, immediate feedback, and visible mastery without simulator complexity.
 mvp_scope: Core drift loop, basic track set, scoring, restart flow, mobile UI, local metrics hooks, privacy and ads readiness notes, and local Unity build preparation.
 non_goals: Multiplayer, account system, live operations, large content pipeline, external controller support, and final store-submission assets.

@@ -38,7 +38,7 @@ Define source:
 - define_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/define/handoff_to_planning.md
 
 Locked define constraints:
-- platform_target: Unity 6000.0.71f1, iOS simulator first, iOS device/App Store later, Android and WebGL secondary.
+- platform_target: Unity 6000.0.77f1, iOS simulator first, iOS device/App Store later, Android and WebGL secondary.
 - monetization_direction: Rewarded ads first; interstitial ads only after retention and user experience review. AdMob account is available.
 - compatibility_target: iOS 15+, iPhone SE 2/3, iPhone 12/13 mini, iPhone 15/15 Pro; safe-area, touch targets, reduced motion, and readable contrast required.
 - output_expectation: Every pipeline stage must publish to Notion and Git under one project folder, with bounded documents, explicit gates, handoffs, build instructions, QA test plan, QA report, and recorded evidence requirements.

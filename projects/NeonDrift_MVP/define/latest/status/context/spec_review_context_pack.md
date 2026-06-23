@@ -8,7 +8,7 @@ policy: compressed context pack
 ## Decisions
 
 - Spec review is Passed; development starts only from handoffs/spec_review/handoff_to_game_development.md after user confirmation.
-- Scope: Unity 6000.0.71f1, iPhone-first NeonDrift MVP, short drift run, readable HUD, immediate retry, privacy/ads/store docs, local build readiness.
+- Scope: Unity 6000.0.77f1, iPhone-first NeonDrift MVP, short drift run, readable HUD, immediate retry, privacy/ads/store docs, local build readiness.
 
 ## Constraints
 

@@ -19,7 +19,7 @@ Mobile casual arcade players on iPhone who want short skill-based sessions, clea
 
 - Notion watcher controls pipeline progression.
 - Each downstream OpenClaw agent uses its configured model.
-- Unity 6000.0.71f1 mobile direction is locked for planning.
+- Unity 6000.0.77f1 mobile direction is locked for planning.
 
 ## open questions
 

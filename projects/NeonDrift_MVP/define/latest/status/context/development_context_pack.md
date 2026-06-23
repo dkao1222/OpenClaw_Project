@@ -15,7 +15,7 @@ policy: compressed context pack
 
 - Full docs are for Notion/Git human review; local build agents should use this compressed context pack plus handoffs/development/final_handoff.md.
 - Watcher must not launch Unity automatically. Build row remains not start until the user manually changes it to processing.
-- Preserve Unity 6000.0.71f1 direction, mobile safe area, immediate retry, readable HUD, privacy/ads compliance, and local build reports.
+- Preserve Unity 6000.0.77f1 direction, mobile safe area, immediate retry, readable HUD, privacy/ads compliance, and local build reports.
 
 ## Build Input
 

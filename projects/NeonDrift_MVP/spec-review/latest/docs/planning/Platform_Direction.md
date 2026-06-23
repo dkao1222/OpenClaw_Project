@@ -11,7 +11,7 @@
 - UI 必須保留 pause、retry、Start、Settings、Best Score 與清楚的分數/boost/combo HUD。
 
 ### 技術限制
-- Unity 6000.0.71f1 是鎖定方向；build gate 以本機 Unity batchmode、iOS simulator app、Xcode simulator build 與 deterministic QA evidence 為主。
+- Unity 6000.0.77f1 是鎖定方向；build gate 以本機 Unity batchmode、iOS simulator app、Xcode simulator build 與 deterministic QA evidence 為主。
 - 目標 frame pacing 為 60 FPS；必須處理 safe area、notch/Dynamic Island、窄螢幕與低階機效能預算。
 
 ## English
@@ -25,5 +25,5 @@
 - UI must preserve pause, retry, Start, Settings, Best Score, and readable score/boost/combo HUD.
 
 ### Technical Constraints
-- Unity 6000.0.71f1 is the locked direction; the build gate relies on local Unity batchmode, iOS simulator app, Xcode simulator build, and deterministic QA evidence.
+- Unity 6000.0.77f1 is the locked direction; the build gate relies on local Unity batchmode, iOS simulator app, Xcode simulator build, and deterministic QA evidence.
 - Target frame pacing is 60 FPS; safe area, notch/Dynamic Island, narrow screens, and low-end device performance budgets must be handled.

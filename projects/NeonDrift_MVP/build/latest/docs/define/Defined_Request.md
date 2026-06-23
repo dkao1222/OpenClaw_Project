@@ -26,7 +26,7 @@ Mobile casual arcade players on iPhone who want short skill-based sessions, clea
 
 ## Platform Target
 
-Unity 6000.0.71f1, iOS simulator first, iOS device/App Store later, Android and WebGL secondary.
+Unity 6000.0.77f1, iOS simulator first, iOS device/App Store later, Android and WebGL secondary.
 
 ## Monetization Direction
 
