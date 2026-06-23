@@ -48,17 +48,17 @@
         "com.DefaultCompany.NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "ry/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/5FB7A7A4-0279-44D2-B6E8-611C1F872FAA/NeonDrift.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/5FB7A7A4-0279-44D2-B6E8-611C1F872FAA/\";\n    CFBundleDisplayName = NeonDrift;\n    CFBundleExecutable = NeonDrift;\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift\";\n    CFBundleName = NeonDrift;\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/68086B51-0C0C-42B8-A82B-611ED98487AD/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/5FB7A7A4-0279-44D2-B6E8-611C1F872FAA/NeonDrift.app\";\n    SBAppTags =     (\n    );\n}\n",
+      "stdout_tail": "ry/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/56EC9DAC-F9D4-4532-95D3-3F1D3623906A/NeonDrift.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/56EC9DAC-F9D4-4532-95D3-3F1D3623906A/\";\n    CFBundleDisplayName = NeonDrift;\n    CFBundleExecutable = NeonDrift;\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift\";\n    CFBundleName = NeonDrift;\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/E0A55039-3D50-4040-A1FE-9A68DF4430A9/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/56EC9DAC-F9D4-4532-95D3-3F1D3623906A/NeonDrift.app\";\n    SBAppTags =     (\n    );\n}\n",
       "stderr_tail": ""
     },
     {
       "label": "installed_app_binary_file",
       "command": [
         "file",
-        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/5FB7A7A4-0279-44D2-B6E8-611C1F872FAA/NeonDrift.app/NeonDrift"
+        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/56EC9DAC-F9D4-4532-95D3-3F1D3623906A/NeonDrift.app/NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/5FB7A7A4-0279-44D2-B6E8-611C1F872FAA/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Bundle/Application/56EC9DAC-F9D4-4532-95D3-3F1D3623906A/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
       "stderr_tail": ""
     },
     {
@@ -85,7 +85,7 @@
         "data"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/68086B51-0C0C-42B8-A82B-611ED98487AD\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/E0A55039-3D50-4040-A1FE-9A68DF4430A9\n",
       "stderr_tail": ""
     },
     {
@@ -100,7 +100,7 @@
         "-qaPlaythrough"
       ],
       "exit_code": 0,
-      "stdout_tail": "com.DefaultCompany.NeonDrift: 45420\n",
+      "stdout_tail": "com.DefaultCompany.NeonDrift: 68090\n",
       "stderr_tail": ""
     },
     {
@@ -191,12 +191,12 @@
         "--last",
         "3m",
         "--predicate",
-        "process == \"com.DefaultCompany.NeonDrift\" OR process == \"NeonDrift\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift\" OR eventMessage CONTAINS \"NeonDrift\"",
+        "process == \"NeonDrift\" OR process == \"NeonDrift\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift\" OR eventMessage CONTAINS \"NeonDrift\"",
         "--style",
         "compact"
       ],
       "exit_code": 0,
-      "stdout_tail": "onSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] Deleting snapshot <XBApplicationSnapshot: 0x129c2f800; …6D6081447A0A> [com.DefaultCompany.NeonDrift] for reason: _contentType: GeneratedDefault(1)\n2026-06-24 00:31:43.930 Df SpringBoard[16891:95723a] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-24 00:31:45.028 Df SpringBoard[16891:957245] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-24 00:31:53.691 Df log[45511:0] [com.apple.log:] log run noninteractively, parent: 16886 (launchd_sim), args: 'log' 'show' '--last' '3m' '--predicate' 'process == \"com.DefaultCompany.NeonDrift\" OR process == \"NeonDrift\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift\" OR eventMessage CONTAINS \"Ne\n",
+      "stdout_tail": "invalid snapshot <XBApplicationSnapshot: 0x12615aa00; …329458ACC087> [com.DefaultCompany.NeonDrift]\n invalidReason: expired. expirationDate: 0001-01-01 00:00:00 +0000; how long ago (seconds): 63918005258.054764\n2026-06-24 01:27:38.054 Df SpringBoard[16891:98fa58] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] Deleting snapshot <XBApplicationSnapshot: 0x12615aa00; …329458ACC087> [com.DefaultCompany.NeonDrift] for reason: _contentType: GeneratedDefault(1)\n2026-06-24 01:27:38.055 Df SpringBoard[16891:98fa58] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-24 01:27:39.155 Df SpringBoard[16891:98fa4b] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10a777300> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n",
       "stderr_tail": "getpwuid_r did not find a match for uid 501\n"
     }
   ],
@@ -225,5 +225,7 @@
     "raw_evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/raw_evidence.json",
     "evidence_summary_json": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/evidence_summary.json",
     "evidence_summary_md": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/evidence_summary.md"
-  }
+  },
+  "executable_name": "NeonDrift",
+  "display_name": "NeonDrift"
 }
