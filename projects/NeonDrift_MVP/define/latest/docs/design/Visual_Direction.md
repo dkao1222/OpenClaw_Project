@@ -32,7 +32,7 @@ required keywords: visual, direction
 - 最低華麗度門檻是 neon arcade presentation：多層背景、發光賽道材質、cyan/magenta lane identity、可讀障礙輪廓、boost cell 高價值視覺、combo pulse、near-miss streak 與 failure flash。
 
 ### 交接重點
-- 必須列出 art asset list：background layers、track materials、vehicle silhouette、hazard shapes、boost cell、HUD frame、button/icon style、score typography、settings icon、pause icon、retry icon。
+- 必須列出 art asset list：background layers、track materials、vehicle silhouette、hazard shapes、boost cell、HUD frame、button/icon style、score typography、settings icon、pause icon、retry icon；並列出 reduced-motion fallback、iPhone SE 2/3 與 readability acceptance。
 
 ## English
 
@@ -45,4 +45,4 @@ required keywords: visual, direction
 - The minimum polish bar is neon arcade presentation: layered backgrounds, glowing track materials, cyan/magenta lane identity, readable hazard silhouettes, high-value boost cell visuals, combo pulse, near-miss streak, and failure flash.
 
 ### Handoff Notes
-- It must list an art asset list: background layers, track materials, vehicle silhouette, hazard shapes, boost cell, HUD frame, button/icon style, score typography, settings icon, pause icon, and retry icon.
+- It must list an art asset list: background layers, track materials, vehicle silhouette, hazard shapes, boost cell, HUD frame, button/icon style, score typography, settings icon, pause icon, retry icon, reduced-motion fallback, iPhone SE 2/3, and readability acceptance.
