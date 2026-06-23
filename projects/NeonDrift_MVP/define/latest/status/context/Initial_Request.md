@@ -1,8 +1,8 @@
 # Initial Define Request
 
 project_name: NeonDrift_MVP
-define_page_id: 388b9e33-8429-816d-b058-f5af86c7b7a9
-define_run_id: notion-NeonDrift_MVP-define-20260623142314
+define_page_id: 388b9e33-8429-8193-841a-cb7aca697968
+define_run_id: notion-NeonDrift_MVP-define-20260623142503
 
 ## Pipeline Request
 
