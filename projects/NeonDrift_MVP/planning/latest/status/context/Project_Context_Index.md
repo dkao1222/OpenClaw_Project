@@ -6,28 +6,16 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Product Vision and Purpose
 
-- snippet: 由 Raw Idea 正規化：建立一個 iOS first 的 Unity 手機遊戲 MVP，名稱 NeonDrift_MVP。
-核心是短局霓虹漂移/閃避操作，玩家用手機觸控控制飛行器或光軌在高可讀性的賽道中生存、收集、累積分數。
-需要從 raw idea 經 define、planning、spec review、development、local build、QA。
-設計要考慮 iOS Human Interface Guidelines、icon、字體、背景、特效、相容機種、廣告收益但不能破壞核心體驗。
-QA
+- snippet: 這款 App 旨在驗證一個 iOS-first Unity 快節奏霓虹漂移遊戲 MVP。產品目標是讓玩家在 10 秒內理解玩法、30 秒內感受到技巧成長，並透過短局重試、combo、boost、wave objective、hazard pattern 形成可反覆遊玩的核心循環。
 
 ## Target Audience
 
-- snippet: 由 Raw Idea 推導目標受眾；若原始想法未指定，先假設為 iOS 手機端使用者/玩家，並在 Define 階段標記需驗證。
+- snippet: 喜歡短局、街機、霓虹速度感、單手或雙手快速操作遊戲的手機玩家；也包含需要快速驗證 Unity iOS MVP pipeline 的開發/產品團隊。玩家可能只有零碎時間，因此需要立即開始、立即失敗原因、立即 retry。
 
 ## Core Value
 
-- snippet: 由 Raw Idea 提煉 1-3 個核心價值；初始假設是操作/使用流程清楚、短時間可驗證、iOS 交付可測。
+- snippet: 1. 可讀且有深度的短局漂移核心循環。 2. 視覺華麗但不犧牲 iPhone 小螢幕可讀性。 3. planning/spec review 必須先定義系統規則、5W1H、VFX/asset/polish budget、QA acceptance，development 不可自行補設計債。
 
 ## Development Request
 
-- snippet: Normalize this raw idea into canonical product definition for the OpenClaw pipeline.
-Preserve the original idea, infer only conservative assumptions, and mark unresolved items as open questions in Define outputs.
-Raw idea type: game
-Priority: high
-
-Raw idea:
-建立一個 iOS first 的 Unity 手機遊戲 MVP，名稱 NeonDrift_MVP。
-核心是短局霓虹漂移/閃避操作，玩家用手機觸控控制飛行器或光軌在高可讀性的賽道中生存、收集、累積分數。
-需要從 raw idea 經 define、planning、spec review、development、local
+- snippet: Start from Define and run the full OpenClaw game pipeline without Codex manually authoring agent deliverables. Define must normalize the request and pass to planning. Planning/spec review must use game_quality and game_system_design knowledge bases to specify gameplay depth, visual richness, system 5W1H, layer coverage, QA acceptance, and development readiness. Development should implement from spec review only. Buil
