@@ -6,16 +6,19 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Product Vision and Purpose
 
-- snippet: 這款 App 旨在驗證一個 iOS-first Unity 快節奏霓虹漂移遊戲 MVP。產品目標是讓玩家在 10 秒內理解玩法、30 秒內感受到技巧成長，並透過短局重試、combo、boost、wave objective、hazard pattern 形成可反覆遊玩的核心循環。
+- snippet: Deliver a fast mobile arcade drift MVP that proves a readable core loop, satisfying neon presentation, meaningful progression hooks, and store-ready iOS delivery path.
 
 ## Target Audience
 
-- snippet: 喜歡短局、街機、霓虹速度感、單手或雙手快速操作遊戲的手機玩家；也包含需要快速驗證 Unity iOS MVP pipeline 的開發/產品團隊。玩家可能只有零碎時間，因此需要立即開始、立即失敗原因、立即 retry。
+- snippet: Mobile casual arcade players on iPhone who want short skill-based sessions, clear controls, quick retry, and polished audiovisual feedback.
 
 ## Core Value
 
-- snippet: 1. 可讀且有深度的短局漂移核心循環。 2. 視覺華麗但不犧牲 iPhone 小螢幕可讀性。 3. planning/spec review 必須先定義系統規則、5W1H、VFX/asset/polish budget、QA acceptance，development 不可自行補設計債。
+- snippet: 1. Clear drift-control loop with readable hazards and scoring. 2. Visually rich neon arcade feedback with motion, effects, audio, and haptics. 3. QA-verifiable iOS simulator/local build path with evidence recording.
 
 ## Development Request
 
-- snippet: Clean full rerun from Define after pipeline fixes. Do not let Codex manually patch agent deliverables during this run. Define must normalize the request and pass to planning. Planning/spec review must use game_quality and game_system_design knowledge bases to specify gameplay depth, visual richness, system 5W1H, layer coverage, QA acceptance, and development readiness. Development should implement from spec review on
+- snippet: Start from Define and let the cron-driven OpenClaw watcher continue the full pipeline through planning, spec review, development, build handoff, and QA readiness. Do not rely on Codex manual project file edits. Build remains not start until Unity local build is manually confirmed.
+
+Raw idea source:
+Create an iOS-first Unity arcade drift game MVP. The game must be immediately understandable, visually rich, and deeper 
