@@ -1,14 +1,14 @@
 # Spec Review Planning Source Gate
 
 ## Checks
-- PASS source_output_folder_exists: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project
-- PASS required_planning_source_doc:status/context/stage12_context_pack.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage12_context_pack.md
+- PASS source_output_folder_exists: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project
+- PASS required_planning_source_doc:status/context/stage12_context_pack.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage12_context_pack.md
 - PASS planning_source_marker:status/context/stage12_context_pack.md:## Decisions: ## Decisions
 - PASS planning_source_marker:status/context/stage12_context_pack.md:## Constraints: ## Constraints
 - PASS planning_source_marker:status/context/stage12_context_pack.md:## Next Agent Input: ## Next Agent Input
 - PASS planning_source_marker:status/context/stage12_context_pack.md:## Source Paths: ## Source Paths
 - PASS planning_source_marker:status/context/stage12_context_pack.md:compressed context pack: compressed context pack
-- PASS required_planning_source_doc:docs/design/Operation_Flow_Diagram.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Operation_Flow_Diagram.md
+- PASS required_planning_source_doc:docs/design/Operation_Flow_Diagram.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Operation_Flow_Diagram.md
 - PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:player intent: player intent
 - PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:system response: system response
 - PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:feel target: feel target
@@ -19,7 +19,7 @@
 - PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:HIG cards read: HIG cards read
 - PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:platform assumptions: platform assumptions
 - PASS planning_source_marker:docs/design/Operation_Flow_Diagram.md:accessibility: accessibility
-- PASS required_planning_source_doc:docs/design/Prototype_Flow.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Prototype_Flow.md
+- PASS required_planning_source_doc:docs/design/Prototype_Flow.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Prototype_Flow.md
 - PASS planning_source_marker:docs/design/Prototype_Flow.md:canvas artifact: canvas artifact
 - PASS planning_source_marker:docs/design/Prototype_Flow.md:transition: transition
 - PASS planning_source_marker:docs/design/Prototype_Flow.md:start: start
@@ -30,7 +30,7 @@
 - PASS planning_source_marker:docs/design/Prototype_Flow.md:HIG cards read: HIG cards read
 - PASS planning_source_marker:docs/design/Prototype_Flow.md:platform assumptions: platform assumptions
 - PASS planning_source_marker:docs/design/Prototype_Flow.md:accessibility: accessibility
-- PASS required_planning_source_doc:docs/design/Prototype_Flow_Canvas.html: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Prototype_Flow_Canvas.html
+- PASS required_planning_source_doc:docs/design/Prototype_Flow_Canvas.html: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Prototype_Flow_Canvas.html
 - PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:<canvas: <canvas
 - PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:requestAnimationFrame: requestAnimationFrame
 - PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Start Run: Start Run
@@ -38,13 +38,20 @@
 - PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Boost: Boost
 - PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Crash: Crash
 - PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Retry: Retry
-- PASS required_planning_source_doc:docs/design/Game_Systems_Overview.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Systems_Overview.md
+- PASS required_planning_source_doc:docs/design/Game_Systems_Overview.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Systems_Overview.md
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Control System: Control System
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Game System Design Alignment: Game System Design Alignment
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Speed System: Speed System
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Hazard System: Hazard System
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Content Objective System: Content Objective System
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Scoring System: Scoring System
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Failure/Retry System: Failure/Retry System
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Feedback System: Feedback System
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:boost cell: boost cell
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:combo chain: combo chain
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:wave objective: wave objective
+- PASS planning_source_marker:docs/design/Game_Systems_Overview.md:hazard pattern: hazard pattern
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:input: input
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:state: state
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:rule: rule
@@ -52,47 +59,63 @@
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:dependency: dependency
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:UI/HUD: UI/HUD
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:acceptance: acceptance
-- PASS required_planning_source_doc:docs/design/Control_System_Spec.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Control_System_Spec.md
+- PASS required_planning_source_doc:docs/design/Control_System_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Control_System_Spec.md
 - PASS planning_source_marker:docs/design/Control_System_Spec.md:Control System: Control System
 - PASS planning_source_marker:docs/design/Control_System_Spec.md:input: input
 - PASS planning_source_marker:docs/design/Control_System_Spec.md:drift intent: drift intent
 - PASS planning_source_marker:docs/design/Control_System_Spec.md:44x44: 44x44
 - PASS planning_source_marker:docs/design/Control_System_Spec.md:safe area: safe area
 - PASS planning_source_marker:docs/design/Control_System_Spec.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Speed_System_Spec.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Speed_System_Spec.md
+- PASS required_planning_source_doc:docs/design/Speed_System_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Speed_System_Spec.md
 - PASS planning_source_marker:docs/design/Speed_System_Spec.md:Speed System: Speed System
 - PASS planning_source_marker:docs/design/Speed_System_Spec.md:speed tier: speed tier
 - PASS planning_source_marker:docs/design/Speed_System_Spec.md:boost: boost
 - PASS planning_source_marker:docs/design/Speed_System_Spec.md:readability: readability
 - PASS planning_source_marker:docs/design/Speed_System_Spec.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Hazard_System_Spec.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Hazard_System_Spec.md
+- PASS required_planning_source_doc:docs/design/Hazard_System_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Hazard_System_Spec.md
 - PASS planning_source_marker:docs/design/Hazard_System_Spec.md:Hazard System: Hazard System
 - PASS planning_source_marker:docs/design/Hazard_System_Spec.md:density: density
 - PASS planning_source_marker:docs/design/Hazard_System_Spec.md:reaction time: reaction time
 - PASS planning_source_marker:docs/design/Hazard_System_Spec.md:danger color: danger color
 - PASS planning_source_marker:docs/design/Hazard_System_Spec.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Scoring_System_Spec.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Scoring_System_Spec.md
+- PASS required_planning_source_doc:docs/design/Scoring_System_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Scoring_System_Spec.md
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:Scoring System: Scoring System
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:survival: survival
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:near miss: near miss
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:combo: combo
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:HUD: HUD
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Failure_Retry_System_Spec.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Failure_Retry_System_Spec.md
+- PASS required_planning_source_doc:docs/design/Failure_Retry_System_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Failure_Retry_System_Spec.md
 - PASS planning_source_marker:docs/design/Failure_Retry_System_Spec.md:Failure/Retry System: Failure/Retry System
 - PASS planning_source_marker:docs/design/Failure_Retry_System_Spec.md:failure reason: failure reason
 - PASS planning_source_marker:docs/design/Failure_Retry_System_Spec.md:Retry: Retry
 - PASS planning_source_marker:docs/design/Failure_Retry_System_Spec.md:result screen: result screen
 - PASS planning_source_marker:docs/design/Failure_Retry_System_Spec.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Feedback_System_Spec.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Feedback_System_Spec.md
+- PASS required_planning_source_doc:docs/design/Feedback_System_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Feedback_System_Spec.md
 - PASS planning_source_marker:docs/design/Feedback_System_Spec.md:Feedback System: Feedback System
 - PASS planning_source_marker:docs/design/Feedback_System_Spec.md:HUD: HUD
 - PASS planning_source_marker:docs/design/Feedback_System_Spec.md:SFX: SFX
 - PASS planning_source_marker:docs/design/Feedback_System_Spec.md:haptics: haptics
 - PASS planning_source_marker:docs/design/Feedback_System_Spec.md:reduced-motion: reduced-motion
 - PASS planning_source_marker:docs/design/Feedback_System_Spec.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Game_Design_Document.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Design_Document.md
+- PASS required_planning_source_doc:docs/design/Visual_Direction.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Visual_Direction.md
+- PASS planning_source_marker:docs/design/Visual_Direction.md:Visual Direction: Visual Direction
+- PASS planning_source_marker:docs/design/Visual_Direction.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/design/Visual_Direction.md:Game System Design Alignment: Game System Design Alignment
+- PASS planning_source_marker:docs/design/Visual_Direction.md:visual richness target: visual richness target
+- PASS planning_source_marker:docs/design/Visual_Direction.md:neon arcade presentation: neon arcade presentation
+- PASS planning_source_marker:docs/design/Visual_Direction.md:minimum polish bar: minimum polish bar
+- PASS planning_source_marker:docs/design/Visual_Direction.md:background layers: background layers
+- PASS planning_source_marker:docs/design/Visual_Direction.md:track materials: track materials
+- PASS planning_source_marker:docs/design/Visual_Direction.md:particle/VFX budget: particle/VFX budget
+- PASS planning_source_marker:docs/design/Visual_Direction.md:typography: typography
+- PASS planning_source_marker:docs/design/Visual_Direction.md:icon style: icon style
+- PASS planning_source_marker:docs/design/Visual_Direction.md:motion polish: motion polish
+- PASS planning_source_marker:docs/design/Visual_Direction.md:readability acceptance: readability acceptance
+- PASS required_planning_source_doc:docs/design/Game_Design_Document.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Design_Document.md
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:MVP: MVP
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Game System Design Alignment: Game System Design Alignment
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:iPhone-first: iPhone-first
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:core loop: core loop
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:Start Run: Start Run
@@ -100,6 +123,19 @@
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:score: score
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:failure: failure
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:Retry: Retry
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Wave Objective: Wave Objective
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Boost Cell: Boost Cell
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Combo Chain: Combo Chain
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:Hazard Pattern: Hazard Pattern
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:visual richness target: visual richness target
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:neon arcade presentation: neon arcade presentation
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:background layers: background layers
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:track materials: track materials
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:particle/VFX budget: particle/VFX budget
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:typography style: typography style
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:icon style: icon style
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:motion polish: motion polish
+- PASS planning_source_marker:docs/design/Game_Design_Document.md:minimum polish bar: minimum polish bar
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:HUD: HUD
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:safe area: safe area
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:touch target: touch target
@@ -114,40 +150,59 @@
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:aspect ratio: aspect ratio
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:performance budget: performance budget
 - PASS planning_source_marker:docs/design/Game_Design_Document.md:acceptance criteria: acceptance criteria
-- PASS required_planning_source_doc:docs/design/Game_Design_Overview.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Design_Overview.md
+- PASS required_planning_source_doc:docs/design/Game_Design_Overview.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Design_Overview.md
 - PASS planning_source_marker:docs/design/Game_Design_Overview.md:Game Design Overview: Game Design Overview
 - PASS planning_source_marker:docs/design/Game_Design_Overview.md:iPhone-first: iPhone-first
 - PASS planning_source_marker:docs/design/Game_Design_Overview.md:short-session: short-session
 - PASS planning_source_marker:docs/design/Game_Design_Overview.md:non-goals: non-goals
 - PASS planning_source_marker:docs/design/Game_Design_Overview.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Core_Loop_Spec.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Core_Loop_Spec.md
+- PASS required_planning_source_doc:docs/design/Core_Loop_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Core_Loop_Spec.md
 - PASS planning_source_marker:docs/design/Core_Loop_Spec.md:Core Loop Spec: Core Loop Spec
 - PASS planning_source_marker:docs/design/Core_Loop_Spec.md:Start Run: Start Run
 - PASS planning_source_marker:docs/design/Core_Loop_Spec.md:Failure: Failure
 - PASS planning_source_marker:docs/design/Core_Loop_Spec.md:Retry: Retry
 - PASS planning_source_marker:docs/design/Core_Loop_Spec.md:state: state
 - PASS planning_source_marker:docs/design/Core_Loop_Spec.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Mechanics_Rules.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Mechanics_Rules.md
+- PASS required_planning_source_doc:docs/design/Mechanics_Rules.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Mechanics_Rules.md
 - PASS planning_source_marker:docs/design/Mechanics_Rules.md:Mechanics Rules: Mechanics Rules
 - PASS planning_source_marker:docs/design/Mechanics_Rules.md:drift: drift
-- PASS planning_source_marker:docs/design/Mechanics_Rules.md:boost: boost
+- PASS planning_source_marker:docs/design/Mechanics_Rules.md:boost cell: boost cell
+- PASS planning_source_marker:docs/design/Mechanics_Rules.md:combo: combo
+- PASS planning_source_marker:docs/design/Mechanics_Rules.md:wave objective: wave objective
+- PASS planning_source_marker:docs/design/Mechanics_Rules.md:hazard pattern: hazard pattern
 - PASS planning_source_marker:docs/design/Mechanics_Rules.md:collision: collision
 - PASS planning_source_marker:docs/design/Mechanics_Rules.md:reset condition: reset condition
 - PASS planning_source_marker:docs/design/Mechanics_Rules.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Scoring_and_Failure_Spec.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Scoring_and_Failure_Spec.md
+- PASS required_planning_source_doc:docs/design/Scoring_and_Failure_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Scoring_and_Failure_Spec.md
 - PASS planning_source_marker:docs/design/Scoring_and_Failure_Spec.md:Scoring and Failure Spec: Scoring and Failure Spec
 - PASS planning_source_marker:docs/design/Scoring_and_Failure_Spec.md:score: score
 - PASS planning_source_marker:docs/design/Scoring_and_Failure_Spec.md:failure: failure
 - PASS planning_source_marker:docs/design/Scoring_and_Failure_Spec.md:result screen: result screen
 - PASS planning_source_marker:docs/design/Scoring_and_Failure_Spec.md:Retry: Retry
 - PASS planning_source_marker:docs/design/Scoring_and_Failure_Spec.md:Acceptance: Acceptance
-- PASS required_planning_source_doc:docs/design/Compatibility_and_Performance_Targets.md: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Compatibility_and_Performance_Targets.md
+- PASS required_planning_source_doc:docs/design/Compatibility_and_Performance_Targets.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Compatibility_and_Performance_Targets.md
 - PASS planning_source_marker:docs/design/Compatibility_and_Performance_Targets.md:Compatibility: Compatibility
 - PASS planning_source_marker:docs/design/Compatibility_and_Performance_Targets.md:iPhone SE: iPhone SE
 - PASS planning_source_marker:docs/design/Compatibility_and_Performance_Targets.md:iPhone 15: iPhone 15
 - PASS planning_source_marker:docs/design/Compatibility_and_Performance_Targets.md:Android 10+: Android 10+
 - PASS planning_source_marker:docs/design/Compatibility_and_Performance_Targets.md:WebGL: WebGL
 - PASS planning_source_marker:docs/design/Compatibility_and_Performance_Targets.md:performance budget: performance budget
+- PASS required_planning_source_doc:docs/design/Art_Audio_Direction.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Art_Audio_Direction.md
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:Art Audio Direction: Art Audio Direction
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:Game System Design Alignment: Game System Design Alignment
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:art direction: art direction
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:audio identity: audio identity
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:visual richness target: visual richness target
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:neon arcade presentation: neon arcade presentation
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:background layers: background layers
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:track materials: track materials
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:particle/VFX budget: particle/VFX budget
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:typography style: typography style
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:icon style: icon style
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:motion polish: motion polish
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:minimum polish bar: minimum polish bar
+- PASS planning_source_marker:docs/design/Art_Audio_Direction.md:performance budget: performance budget
 
 ## Result
 - status: passed
