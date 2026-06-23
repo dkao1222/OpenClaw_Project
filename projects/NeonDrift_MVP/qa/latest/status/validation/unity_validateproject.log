@@ -8,7 +8,7 @@ Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        65536 MB
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao" at "2026-06-22T17:48:47.781327Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao" at "2026-06-23T04:48:16.488938Z"
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Resources/PackageManager/Server/UnityPackageManager
 
 COMMAND LINE ARGUMENTS:
@@ -60,11 +60,11 @@ Successfully changed project path to: /Users/dragonkao/.openclaw/workspace/382b9
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8459132544]  Target information:
 
-Player connection [8459132544]  * "[IP] 192.168.1.101 [Port] 55505 [Flags] 2 [Guid] 3460286752 [EditorId] 3460286752 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8459132544]  * "[IP] 192.168.1.101 [Port] 55505 [Flags] 2 [Guid] 493142421 [EditorId] 493142421 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8459132544]  * "[IP] 169.254.237.5 [Port] 55505 [Flags] 2 [Guid] 3460286752 [EditorId] 3460286752 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8459132544]  * "[IP] 169.254.237.5 [Port] 55505 [Flags] 2 [Guid] 493142421 [EditorId] 493142421 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8459132544]  * "[IP] 192.168.0.102 [Port] 55505 [Flags] 2 [Guid] 3460286752 [EditorId] 3460286752 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8459132544]  * "[IP] 192.168.0.102 [Port] 55505 [Flags] 2 [Guid] 493142421 [EditorId] 493142421 [Version] 1048832 [Id] OSXEditor(0,DragondeMac-mini.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8459132544] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8459132544] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -73,12 +73,12 @@ Input System module state changed to: Initialized.
 [Physics::Module] Id: 0xdecafbad
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              19a62958108745f88b99767b5c9fc461
+  Session Id:              8cf4ad3300c547769b8db19f85afa9b9
   Correlation Id:          a0d49acc4b7f7257555066953618c9cd
-  External correlation Id: 2257126339648679239
+  External correlation Id: 6819662873990254572
   Machine Id:              343h8f5nRUn5G/ld0aThqc7/4NA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-dragonkao" (connect: 0.00s, validation: 0.00s, handshake: 0.20s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao-notifications" at "2026-06-22T17:48:47.982389Z"
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-dragonkao" (connect: 0.00s, validation: 0.00s, handshake: 0.19s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dragonkao-notifications" at "2026-06-23T04:48:16.683603Z"
 [Licensing::Module] Error: Access token is unavailable; failed to update
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -88,8 +88,8 @@ Input System module state changed to: Initialized.
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 0.21s
-[Package Manager] Connected to IPC stream "Upm-88289" after 0.2 seconds.
+[Licensing::Module] Licensing Background thread has ended after 0.20s
+[Package Manager] Connected to IPC stream "Upm-58154" after 0.2 seconds.
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -112,7 +112,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56289
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56154
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 ImportWorker Server TCP listen port: 0
@@ -122,8 +122,8 @@ Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.77f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.001269 seconds.
-- Loaded All Assemblies, in  0.157 seconds
+Registered in 0.001372 seconds.
+- Loaded All Assemblies, in  0.156 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
@@ -131,35 +131,35 @@ Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.198 seconds
-Domain Reload Profiling: 356ms
+- Finished resetting the current domain, in  0.202 seconds
+Domain Reload Profiling: 359ms
 	BeginReloadAssembly (36ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (18ms)
+	RebuildCommonClasses (17ms)
 	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (75ms)
+	LoadAllAssembliesAndSetupDomain (74ms)
 		LoadAssemblies (36ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (74ms)
-			TypeCache.Refresh (73ms)
-				TypeCache.ScanAssembly (66ms)
+		AnalyzeDomain (73ms)
+			TypeCache.Refresh (72ms)
+				TypeCache.ScanAssembly (65ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (199ms)
+	FinalizeReload (202ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (181ms)
+		SetupLoadedEditorAssemblies (184ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (58ms)
+			InitializePlatformSupportModulesInManaged (56ms)
 			SetLoadedEditorAssemblies (2ms)
 			BeforeProcessingInitializeOnLoad (31ms)
-			ProcessInitializeOnLoadAttributes (63ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
+			ProcessInitializeOnLoadAttributes (67ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -202,110 +202,110 @@ Application.AssetDatabase Initial Refresh Start
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 21.4674ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 19.0067ms
 Starting: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/200b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity_build_workspace/NeonDrift
 DisplayProgressbar: Compiling Scripts
-ExitCode: 0 Duration: 0s46ms
+ExitCode: 0 Duration: 0s44ms
 *** Tundra build success (0.03 seconds), 0 items updated, 252 evaluated
-AssetDatabase: script compilation time: 0.427575s
+AssetDatabase: script compilation time: 0.360079s
 Total cache size 17653056
-Total cache size after purge 17653056, took 00:00:00.0190906
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.164 seconds
+Total cache size after purge 17653056, took 00:00:00.0126604
+- Loaded All Assemblies, in  0.200 seconds
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.186 seconds
-Domain Reload Profiling: 349ms
-	BeginReloadAssembly (73ms)
+- Finished resetting the current domain, in  0.183 seconds
+Domain Reload Profiling: 383ms
+	BeginReloadAssembly (110ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
+		DisableScriptedObjects (50ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (15ms)
 	RebuildCommonClasses (17ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (10ms)
+	initialDomainReloadingComplete (9ms)
 	LoadAllAssembliesAndSetupDomain (58ms)
 		LoadAssemblies (70ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (16ms)
 			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (8ms)
+				TypeCache.ScanAssembly (9ms)
 			BuildScriptInfoCaches (3ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (186ms)
+	FinalizeReload (183ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (137ms)
+		SetupLoadedEditorAssemblies (132ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
+			InitializePlatformSupportModulesInManaged (19ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (55ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (52ms)
 			ProcessInitializeOnLoadMethodAttributes (10ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
-Asset Pipeline Refresh (id=c2aef363b9bd04585bcb589ed5f2e72c): Total: 0.900 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=40c3c61f34a73413d8ee72a5ca4b6364): Total: 0.854 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	Summary:
 		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=291 ms
-		Asset DB Callback time: managed=7 ms, native=4 ms
-		Scripting: domain reloads=1, domain reload time=164 ms, compile time=428 ms, other=4 ms
+		Asset DB Process Time: managed=0 ms, native=277 ms
+		Asset DB Callback time: managed=6 ms, native=3 ms
+		Scripting: domain reloads=1, domain reload time=200 ms, compile time=362 ms, other=3 ms
 		Project Asset Count: scripts=228, non-scripts=154
 		Asset File Changes: new=0, changed=0, moved=0, deleted=0
 		Scan Filter Count: 1
-	InvokeCustomDependenciesCallbacks: 0.001ms
-	InvokePackagesCallback: 5.055ms
-	ApplyChangesToAssetFolders: 0.094ms
-	Scan: 53.617ms
-	OnSourceAssetsModified: 0.000ms
-	CategorizeAssetsWithTransientArtifact: 2.437ms
-	ProcessAssetsWithTransientArtifactChanges: 4.767ms
-	CategorizeAssets: 2.449ms
-	ImportOutOfDateAssets: 186.467ms (-242.288ms without children)
-		CompileScripts: 428.496ms
+	InvokeCustomDependenciesCallbacks: 0.000ms
+	InvokePackagesCallback: 4.655ms
+	ApplyChangesToAssetFolders: 0.087ms
+	Scan: 40.209ms
+	OnSourceAssetsModified: 0.001ms
+	CategorizeAssetsWithTransientArtifact: 2.442ms
+	ProcessAssetsWithTransientArtifactChanges: 4.854ms
+	CategorizeAssets: 2.589ms
+	ImportOutOfDateAssets: 183.581ms (-178.869ms without children)
+		CompileScripts: 362.192ms
 		ReloadNativeAssets: 0.000ms
-		UnloadImportedAssets: 0.109ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.042ms
+		UnloadImportedAssets: 0.121ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.041ms
 		InitializingProgressBar: 0.000ms
-		OnDemandSchedulerStart: 0.107ms
-	PostProcessAllAssets: 7.070ms
+		OnDemandSchedulerStart: 0.096ms
+	PostProcessAllAssets: 6.569ms
 	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
-	UnloadStreamsBegin: 0.088ms
+	UnloadStreamsBegin: 0.090ms
 	PersistCurrentRevisions: 0.008ms
 	UnloadStreamsEnd: 0.000ms
-	GenerateScriptTypeHashes: 0.592ms
-	Untracked: 637.852ms
+	GenerateScriptTypeHashes: 0.675ms
+	Untracked: 609.129ms
 
 Application.AssetDatabase Initial Refresh End
-Scanning for USB devices : 0.208ms
+Scanning for USB devices : 0.221ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-NeonDrift
-2026-06-23 01:48:49.595 Unity[88289:7263852] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7d85a5d60 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2026-06-23 12:48:18.253 Unity[58154:8318106] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7360d9d60 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 861 unused Assets / (1.2 MB). Loaded Objects now: 1366.
-Memory consumption went from 100.7 MB to 99.5 MB.
-Total: 3.348041 ms (FindLiveObjects: 0.053750 ms CreateObjectMapping: 0.015125 ms MarkObjects: 2.873500 ms  DeleteObjects: 0.405458 ms)
+Unloading 861 unused Assets / (0.9 MB). Loaded Objects now: 1366.
+Memory consumption went from 100.6 MB to 99.7 MB.
+Total: 3.437625 ms (FindLiveObjects: 0.052417 ms CreateObjectMapping: 0.016250 ms MarkObjects: 2.886083 ms  DeleteObjects: 0.482500 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (1.0 MB). Loaded Objects now: 1372.
-Memory consumption went from 97.2 MB to 96.2 MB.
-Total: 2.608042 ms (FindLiveObjects: 0.019917 ms CreateObjectMapping: 0.008208 ms MarkObjects: 2.573042 ms  DeleteObjects: 0.006625 ms)
+Unloading 1 unused Assets / (0.8 MB). Loaded Objects now: 1372.
+Memory consumption went from 96.8 MB to 96.0 MB.
+Total: 2.481792 ms (FindLiveObjects: 0.020000 ms CreateObjectMapping: 0.007917 ms MarkObjects: 2.446416 ms  DeleteObjects: 0.007208 ms)
 
-Start importing Assets/Scenes/Main.unity using Guid(a26649f0c0ff34f74944f248118eb6c8) (DefaultImporter) -> (artifact id: '284404224973498f95284cc8140ec9c4') in 0.002370542 seconds
+Start importing Assets/Scenes/Main.unity using Guid(a26649f0c0ff34f74944f248118eb6c8) (DefaultImporter) -> (artifact id: '89fd76e02f566fbe60c2bdf299298d94') in 0.002359625 seconds
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=bd56944075bd3436b97539d10122c83f): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=5a1cbc0eb8ab54d9ba371ef2233790a5): Total: 0.031 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
 Batchmode quit successfully invoked - shutting down!
-Thread 0x176227000 may have been prematurely finalized
 Curl error 42: Callback aborted
+Thread 0x173047000 may have been prematurely finalized
 Input System module state changed to: ShutdownInProgress.
 Input System polling thread exited.
 Input System module state changed to: Shutdown.
@@ -313,8 +313,8 @@ Input System module state changed to: Shutdown.
 [Physics::Module] Id: 0xf2b8ea05
 [Licensing::IpcConnector] LicenseClient-dragonkao-notifications channel disconnected successfully.
 [Licensing::IpcConnector] LicenseClient-dragonkao channel disconnected successfully.
-Thread 0x16ef63000 may have been prematurely finalized
-Thread 0x16efef000 may have been prematurely finalized
+Thread 0x16c903000 may have been prematurely finalized
+Thread 0x16c98f000 may have been prematurely finalized
 AcceleratorClientConnectionCallback - disconnected - :0
 [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
