@@ -21,13 +21,18 @@ public sealed class NeonDriftHud : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = $"SCORE {GameSessionController.Score:0000}";
+            GameSessionController session = GameSessionController.Instance;
+            int wave = session != null ? session.Wave : 1;
+            int multiplier = session != null ? session.Multiplier : 1;
+            scoreText.text = $"SCORE {GameSessionController.Score:0000}  WAVE {wave}  x{multiplier}";
         }
 
         if (pulseText != null)
         {
-            float pulsePercent = Mathf.PingPong(Time.unscaledTime * 0.35f, 1f) * 100f;
-            pulseText.text = $"PULSE {pulsePercent:00}%";
+            GameSessionController session = GameSessionController.Instance;
+            float pulsePercent = session != null && session.HasStarted ? session.BoostCharge * 100f : Mathf.PingPong(Time.unscaledTime * 0.35f, 1f) * 100f;
+            int combo = session != null ? session.Combo : 0;
+            pulseText.text = $"BOOST {pulsePercent:00}%  COMBO {combo:00}";
         }
 
         if (gameOverPanel != null)
@@ -337,7 +342,7 @@ public static class NeonDriftRuntimeBootstrap
         Image rightLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Right Lane Rail", TextAnchor.MiddleCenter, new Vector2(195f, -120f), new Vector2(18f, 1200f), new Color(1f, 0.02f, 0.95f, 1f));
         Image playerMarker = CreateUiBlock(gameplayHudRoot.transform, "Player Visual Marker", TextAnchor.LowerCenter, new Vector2(0f, 260f), new Vector2(92f, 70f), new Color(0f, 1f, 1f, 1f));
         Image hazardMarker = CreateUiBlock(gameplayHudRoot.transform, "Hazard Visual Marker", TextAnchor.UpperCenter, new Vector2(0f, -390f), new Vector2(102f, 102f), new Color(1f, 0.02f, 0.5f, 1f));
-        Text objectiveText = CreateText(gameplayHudRoot.transform, "Objective Text", font, "AVOID PINK BLOCKS  •  SURVIVE TO SCORE", TextAnchor.UpperCenter, new Vector2(0f, -190f), new Vector2(820f, 52f), new Color(1f, 0.96f, 0.45f));
+        Text objectiveText = CreateText(gameplayHudRoot.transform, "Objective Text", font, "AVOID PINK BLOCKS  •  BUILD COMBO  •  SURVIVE WAVES", TextAnchor.UpperCenter, new Vector2(0f, -190f), new Vector2(900f, 52f), new Color(1f, 0.96f, 0.45f));
         objectiveText.fontSize = 28;
         Text avoidText = CreateText(gameplayHudRoot.transform, "Avoid Instruction Text", font, "LEFT / RIGHT moves the cyan ship. Do not touch pink hazards.", TextAnchor.LowerCenter, new Vector2(0f, 92f), new Vector2(860f, 48f), new Color(0.88f, 0.94f, 1f));
         avoidText.fontSize = 24;
@@ -355,8 +360,8 @@ public static class NeonDriftRuntimeBootstrap
             hazardMarker.GetComponent<RectTransform>()
         );
 
-        Text scoreText = CreateText(gameplayHudRoot.transform, "Score Text", font, "SCORE 0000", TextAnchor.UpperLeft, new Vector2(38f, -34f), new Vector2(420f, 72f), new Color(0f, 1f, 1f));
-        Text pulseText = CreateText(gameplayHudRoot.transform, "Pulse Text", font, "PULSE 00%", TextAnchor.UpperRight, new Vector2(-38f, -34f), new Vector2(420f, 72f), new Color(1f, 0.25f, 0.95f));
+        Text scoreText = CreateText(gameplayHudRoot.transform, "Score Text", font, "SCORE 0000  WAVE 1  x1", TextAnchor.UpperLeft, new Vector2(38f, -34f), new Vector2(560f, 72f), new Color(0f, 1f, 1f));
+        Text pulseText = CreateText(gameplayHudRoot.transform, "Pulse Text", font, "BOOST 00%  COMBO 00", TextAnchor.UpperRight, new Vector2(-38f, -34f), new Vector2(560f, 72f), new Color(1f, 0.25f, 0.95f));
         Text hintText = CreateText(gameplayHudRoot.transform, "Control Hint", font, "TAP LEFT / RIGHT TO DRIFT", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(720f, 72f), new Color(0.86f, 0.92f, 1f));
         hintText.fontSize = 28;
 

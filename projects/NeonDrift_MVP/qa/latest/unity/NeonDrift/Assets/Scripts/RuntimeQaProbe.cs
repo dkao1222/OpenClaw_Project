@@ -58,6 +58,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool gameplayVisualsVerified;
         public bool gameplayVisualsHiddenInMenu;
         public bool gameplayInstructionReadableVerified;
+        public bool contentDepthVerified;
         public bool gameplayMotionVerified;
         public bool playerSteeringMotionVerified;
         public bool coreGameplayObjectsVerified;
@@ -75,6 +76,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool framePacingConfigured;
         public int targetFrameRate;
         public int score;
+        public int wave;
+        public int combo;
+        public int multiplier;
+        public float boostCharge;
         public bool isGameOver;
         public bool isPaused;
         public bool hasStarted;
@@ -254,6 +259,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             gameplayVisualsVerified = gameplayVisualsVerified,
             gameplayVisualsHiddenInMenu = gameplayVisualsHiddenInMenu,
             gameplayInstructionReadableVerified = gameplayInstructionReadableVerified,
+            contentDepthVerified = session != null && session.ContentDepthVerified && HasTextNamed(texts, "Score Text") && HasTextNamed(texts, "Pulse Text"),
             gameplayMotionVerified = gameplayMotionVerifiedForQa || (visualSync != null && visualSync.HasAnimated),
             playerSteeringMotionVerified = playerSteeringMotionVerifiedForQa || (visualSync != null && visualSync.HasPlayerResponse),
             coreGameplayObjectsVerified = coreGameplayObjectsVerified,
@@ -271,6 +277,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             framePacingConfigured = Application.targetFrameRate >= 60,
             targetFrameRate = Application.targetFrameRate,
             score = GameSessionController.Score,
+            wave = session != null ? session.Wave : 0,
+            combo = session != null ? session.Combo : 0,
+            multiplier = session != null ? session.Multiplier : 0,
+            boostCharge = session != null ? session.BoostCharge : 0f,
             isGameOver = session != null && session.IsGameOver,
             isPaused = session != null && session.IsPaused,
             hasStarted = hasStarted,

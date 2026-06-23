@@ -11,12 +11,20 @@ public sealed class GameSessionController : MonoBehaviour
     private bool started;
     private float scoreTimer;
     private float gameplayTimer;
+    private int combo;
+    private int wave = 1;
+    private float boostCharge;
 
     public bool IsGameOver => gameOver;
     public bool IsPaused => paused;
     public bool HasStarted => started;
     public float GameplayTime => gameplayTimer;
     public float MinimumSurvivalSeconds => 6f;
+    public int Combo => combo;
+    public int Wave => wave;
+    public int Multiplier => Mathf.Clamp(1 + combo / 10 + Mathf.Max(0, wave - 1), 1, 5);
+    public float BoostCharge => boostCharge;
+    public bool ContentDepthVerified => Wave >= 1 && Multiplier >= 1 && BoostCharge >= 0f;
     public bool CanSpawnHazards => started && !paused && !gameOver && gameplayTimer >= 2.5f;
     public bool CanAcceptFailure => started && gameplayTimer >= MinimumSurvivalSeconds;
 
@@ -24,6 +32,9 @@ public sealed class GameSessionController : MonoBehaviour
     {
         Instance = this;
         Score = 0;
+        combo = 0;
+        wave = 1;
+        boostCharge = 0f;
         started = false;
         paused = false;
         gameOver = false;
@@ -72,13 +83,28 @@ public sealed class GameSessionController : MonoBehaviour
         }
 
         gameplayTimer += Time.deltaTime;
+        wave = 1 + Mathf.FloorToInt(gameplayTimer / 15f);
+        boostCharge = Mathf.Clamp01(boostCharge + Time.deltaTime * 0.035f);
 
         scoreTimer += Time.deltaTime;
         if (scoreTimer >= 0.1f)
         {
-            Score += 1;
+            combo += 1;
+            Score += Multiplier;
             scoreTimer = 0f;
         }
+    }
+
+    public void CollectBoostCell()
+    {
+        if (!started || paused || gameOver)
+        {
+            return;
+        }
+
+        boostCharge = Mathf.Clamp01(boostCharge + 0.25f);
+        combo += 5;
+        Score += 25 * Multiplier;
     }
 
     public void GameOver()
@@ -116,6 +142,9 @@ public sealed class GameSessionController : MonoBehaviour
         gameOver = false;
         scoreTimer = 0f;
         gameplayTimer = 0f;
+        combo = 0;
+        wave = 1;
+        boostCharge = 0f;
         Score = 0;
         Time.timeScale = 1f;
     }
@@ -124,6 +153,9 @@ public sealed class GameSessionController : MonoBehaviour
     {
         Time.timeScale = 0f;
         Score = 0;
+        combo = 0;
+        wave = 1;
+        boostCharge = 0f;
         started = false;
         paused = false;
         gameOver = false;
