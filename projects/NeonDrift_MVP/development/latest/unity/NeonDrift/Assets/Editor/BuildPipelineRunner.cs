@@ -303,6 +303,12 @@ public static class BuildPipelineRunner
 
         var font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Font.CreateDynamicFontFromOSFont("Arial", 24);
 
+        CreateUiBlock(canvasObject.transform, "Neon Backdrop", TextAnchor.MiddleCenter, Vector2.zero, new Vector2(1180f, 2180f), new Color(0.015f, 0.025f, 0.05f, 1f));
+        CreateUiBlock(canvasObject.transform, "Top Cyan Atmosphere", TextAnchor.UpperCenter, new Vector2(0f, -160f), new Vector2(920f, 320f), new Color(0f, 0.9f, 1f, 0.08f));
+        CreateUiBlock(canvasObject.transform, "Bottom Magenta Atmosphere", TextAnchor.LowerCenter, new Vector2(0f, 180f), new Vector2(960f, 420f), new Color(1f, 0.08f, 0.75f, 0.08f));
+        CreateUiBlock(canvasObject.transform, "Runway Glow Core", TextAnchor.MiddleCenter, new Vector2(0f, -80f), new Vector2(450f, 1320f), new Color(0f, 0.8f, 1f, 0.055f));
+        CreateUiBlock(canvasObject.transform, "Runway Glow Edge", TextAnchor.MiddleCenter, new Vector2(0f, -80f), new Vector2(560f, 1420f), new Color(1f, 0.05f, 0.75f, 0.04f));
+
         var gameplayHudRoot = new GameObject("Gameplay HUD Root");
         gameplayHudRoot.transform.SetParent(canvasObject.transform, false);
         var gameplayRootRect = gameplayHudRoot.AddComponent<RectTransform>();
@@ -311,13 +317,15 @@ public static class BuildPipelineRunner
         gameplayRootRect.offsetMin = Vector2.zero;
         gameplayRootRect.offsetMax = Vector2.zero;
 
-        Image trackPlayfield = CreateUiBlock(gameplayHudRoot.transform, "Track Playfield", TextAnchor.MiddleCenter, new Vector2(0f, -90f), new Vector2(340f, 1180f), new Color(0.07f, 0.13f, 0.19f, 0.82f));
-        Image leftLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Left Lane Rail", TextAnchor.MiddleCenter, new Vector2(-175f, -90f), new Vector2(10f, 1180f), new Color(0f, 0.95f, 1f, 0.96f));
-        Image rightLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Right Lane Rail", TextAnchor.MiddleCenter, new Vector2(175f, -90f), new Vector2(10f, 1180f), new Color(1f, 0.1f, 0.9f, 0.96f));
-        Image playerMarker = CreateUiBlock(gameplayHudRoot.transform, "Player Visual Marker", TextAnchor.LowerCenter, new Vector2(0f, 260f), new Vector2(72f, 54f), new Color(0f, 0.95f, 1f, 0.96f));
-        Image hazardMarker = CreateUiBlock(gameplayHudRoot.transform, "Hazard Visual Marker", TextAnchor.UpperCenter, new Vector2(0f, -360f), new Vector2(82f, 82f), new Color(1f, 0.12f, 0.52f, 0.94f));
-        Text objectiveText = CreateText(gameplayHudRoot.transform, "Objective Text", font, "AVOID PINK BLOCKS  •  SURVIVE TO SCORE", TextAnchor.UpperCenter, new Vector2(0f, -126f), new Vector2(760f, 48f), new Color(1f, 0.95f, 0.55f));
-        objectiveText.fontSize = 26;
+        CreateUiBlock(gameplayHudRoot.transform, "Track Outer Glow", TextAnchor.MiddleCenter, new Vector2(0f, -120f), new Vector2(420f, 1260f), new Color(0f, 0.95f, 1f, 0.09f));
+        Image trackPlayfield = CreateUiBlock(gameplayHudRoot.transform, "Track Playfield", TextAnchor.MiddleCenter, new Vector2(0f, -120f), new Vector2(350f, 1160f), new Color(0.035f, 0.08f, 0.13f, 0.9f));
+        CreateUiBlock(gameplayHudRoot.transform, "Track Center Shine", TextAnchor.MiddleCenter, new Vector2(0f, -120f), new Vector2(40f, 1160f), new Color(0.2f, 0.9f, 1f, 0.09f));
+        Image leftLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Left Lane Rail", TextAnchor.MiddleCenter, new Vector2(-185f, -120f), new Vector2(14f, 1180f), new Color(0f, 0.98f, 1f, 1f));
+        Image rightLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Right Lane Rail", TextAnchor.MiddleCenter, new Vector2(185f, -120f), new Vector2(14f, 1180f), new Color(1f, 0.08f, 0.9f, 1f));
+        Image playerMarker = CreateUiBlock(gameplayHudRoot.transform, "Player Visual Marker", TextAnchor.LowerCenter, new Vector2(0f, 260f), new Vector2(84f, 62f), new Color(0f, 0.98f, 1f, 1f));
+        Image hazardMarker = CreateUiBlock(gameplayHudRoot.transform, "Hazard Visual Marker", TextAnchor.UpperCenter, new Vector2(0f, -390f), new Vector2(92f, 92f), new Color(1f, 0.08f, 0.5f, 1f));
+        Text objectiveText = CreateText(gameplayHudRoot.transform, "Objective Text", font, "AVOID PINK BLOCKS  •  SURVIVE TO SCORE", TextAnchor.UpperCenter, new Vector2(0f, -190f), new Vector2(820f, 52f), new Color(1f, 0.96f, 0.45f));
+        objectiveText.fontSize = 28;
         Text avoidText = CreateText(gameplayHudRoot.transform, "Avoid Instruction Text", font, "LEFT / RIGHT moves the cyan ship. Do not touch pink hazards.", TextAnchor.LowerCenter, new Vector2(0f, 92f), new Vector2(860f, 48f), new Color(0.88f, 0.94f, 1f));
         avoidText.fontSize = 24;
         Text hazardLabel = CreateText(gameplayHudRoot.transform, "Hazard Label", font, "AVOID", TextAnchor.UpperCenter, new Vector2(0f, -458f), new Vector2(160f, 34f), new Color(1f, 0.55f, 0.8f));
@@ -334,26 +342,28 @@ public static class BuildPipelineRunner
         visualSyncSerialized.FindProperty("hazardMarker").objectReferenceValue = hazardMarker.GetComponent<RectTransform>();
         visualSyncSerialized.ApplyModifiedPropertiesWithoutUndo();
 
-        Text scoreText = CreateText(gameplayHudRoot.transform, "Score Text", font, "SCORE 0000", TextAnchor.UpperLeft, new Vector2(38f, -34f), new Vector2(420f, 72f), new Color(0f, 0.95f, 1f));
-        Text pulseText = CreateText(gameplayHudRoot.transform, "Pulse Text", font, "PULSE 00%", TextAnchor.UpperRight, new Vector2(-38f, -34f), new Vector2(420f, 72f), new Color(1f, 0.25f, 0.9f));
+        Text scoreText = CreateText(gameplayHudRoot.transform, "Score Text", font, "SCORE 0000", TextAnchor.UpperLeft, new Vector2(38f, -34f), new Vector2(420f, 72f), new Color(0f, 1f, 1f));
+        Text pulseText = CreateText(gameplayHudRoot.transform, "Pulse Text", font, "PULSE 00%", TextAnchor.UpperRight, new Vector2(-38f, -34f), new Vector2(420f, 72f), new Color(1f, 0.25f, 0.95f));
         Text hintText = CreateText(gameplayHudRoot.transform, "Control Hint", font, "TAP LEFT / RIGHT TO DRIFT", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(720f, 72f), new Color(0.86f, 0.92f, 1f));
         hintText.fontSize = 28;
 
-        CreateButton(gameplayHudRoot.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -112f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.16f, 0.88f));
-        CreateButton(gameplayHudRoot.transform, "Left Control Zone", font, "LEFT", TextAnchor.LowerLeft, new Vector2(36f, 126f), new Vector2(220f, 140f), new Color(0f, 0.55f, 0.85f, 0.24f));
-        CreateButton(gameplayHudRoot.transform, "Right Control Zone", font, "RIGHT", TextAnchor.LowerRight, new Vector2(-36f, 126f), new Vector2(220f, 140f), new Color(0.85f, 0f, 0.65f, 0.24f));
+        CreateButton(gameplayHudRoot.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -112f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.18f, 0.94f));
+        CreateButton(gameplayHudRoot.transform, "Left Control Zone", font, "LEFT", TextAnchor.LowerLeft, new Vector2(36f, 126f), new Vector2(240f, 150f), new Color(0f, 0.62f, 1f, 0.44f));
+        CreateButton(gameplayHudRoot.transform, "Right Control Zone", font, "RIGHT", TextAnchor.LowerRight, new Vector2(-36f, 126f), new Vector2(240f, 150f), new Color(1f, 0f, 0.75f, 0.44f));
         gameplayHudRoot.SetActive(false);
 
         var menuPanel = new GameObject("Main Menu Panel");
         menuPanel.transform.SetParent(canvasObject.transform, false);
         var menuImage = menuPanel.AddComponent<Image>();
-        menuImage.color = new Color(0f, 0f, 0f, 0.58f);
-        SetRect(menuPanel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 70f), new Vector2(760f, 560f));
-        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, 48f), new Vector2(680f, 56f), new Color(0f, 0.95f, 1f));
-        titleText.fontSize = 42;
-        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -42f), new Vector2(300f, 82f), new Color(0f, 0.55f, 0.85f, 0.86f));
-        Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.MiddleCenter, new Vector2(0f, -142f), new Vector2(300f, 72f), new Color(0.14f, 0.12f, 0.28f, 0.9f));
-        Text bestScoreText = CreateText(menuPanel.transform, "Best Score Text", font, "BEST 0000", TextAnchor.LowerCenter, new Vector2(0f, -20f), new Vector2(420f, 64f), new Color(0.96f, 0.92f, 0.55f));
+        menuImage.color = new Color(0.01f, 0.025f, 0.055f, 0.9f);
+        SetRect(menuPanel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 70f), new Vector2(790f, 620f));
+        CreateUiBlock(menuPanel.transform, "Menu Cyan Accent", TextAnchor.UpperCenter, new Vector2(0f, 6f), new Vector2(650f, 8f), new Color(0f, 1f, 1f, 0.82f));
+        CreateUiBlock(menuPanel.transform, "Menu Magenta Accent", TextAnchor.LowerCenter, new Vector2(0f, -6f), new Vector2(650f, 8f), new Color(1f, 0.08f, 0.75f, 0.76f));
+        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, 62f), new Vector2(700f, 70f), new Color(0f, 1f, 1f));
+        titleText.fontSize = 52;
+        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -36f), new Vector2(330f, 88f), new Color(0f, 0.62f, 1f, 0.96f));
+        Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.MiddleCenter, new Vector2(0f, -146f), new Vector2(330f, 76f), new Color(0.23f, 0.16f, 0.42f, 0.96f));
+        Text bestScoreText = CreateText(menuPanel.transform, "Best Score Text", font, "BEST 0000", TextAnchor.LowerCenter, new Vector2(0f, 8f), new Vector2(440f, 64f), new Color(1f, 0.93f, 0.38f));
         bestScoreText.fontSize = 28;
 
         var panel = new GameObject("Game Over Panel");
