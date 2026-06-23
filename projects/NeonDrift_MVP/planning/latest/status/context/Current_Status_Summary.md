@@ -7,19 +7,16 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Product Vision and Purpose
 
-NeonDrift MVP 是一款 iOS-first 的短局霓虹漂移遊戲，用 30-90 秒一局驗證手機端快速反應、左右漂移、風險回饋與重試循環。它要解決快遊戲原型常見的問題：玩法說不清、畫面空、按鈕不可用、失敗原因不明、沒有視覺回饋、QA 只看檔案不看真實體驗。商業目標是建立可用於 Apple App Store / Google Play 後續擴展的 MVP pipeline，初期收益方向以 rewarded ads 和可選付費去廣告為主。
+建立一個可在 iOS simulator 本機 build 並可 QA 驗證的 NeonDrift MVP，驗證 OpenClaw 可以把手機端/Notion 的需求轉成規劃、規格、Unity 專案、build、QA 與交付證據。
 
 ## Target Audience
 
-主要玩家是 13-35 歲喜歡短局、霓虹速度感、反覆挑戰高分的手機玩家；包含通勤、休息時間、短影音切換間隙想玩 1 分鐘遊戲的人。次要受眾是使用 OpenClaw 驗證 game planning-to-build pipeline 的開發者，需要能在 Notion、Git、Unity simulator 中看到可檢查、可重跑、可 QA 的交付結果。玩家痛點是新手不知道要做什麼、按了沒反應、畫面單調、失敗太突然、缺少爽感與成長感。
+喜歡短局、單手操作、霓虹視覺、快速重試 arcade 遊戲的手機玩家；也服務於需要快速驗證 game pipeline 的獨立開發者。
 
 ## Core Value
 
-1. 一眼看懂且立即可玩的 drift loop：清楚 Start/Retry、左右漂移、分數/Pulse/危險回饋。 2. 華麗但可讀的霓虹視覺與感官回饋：背景移動、跑道、玩家方塊、障礙/收集物、粒子、音效、haptics 都要有明確規格。 3. 可驗證的 pipeline 交付：planning/spec review 必須先定義遊戲深度、視覺標準、QA gates；development/build/QA 不能只補最低可執行版本。
+1. 一眼能懂的 drift 操作與立即重試。 2. 有視覺層次、特效、音效/震動與清楚 HUD 的短局體驗。 3. 全流程可追蹤：Notion、Git、Unity build、QA evidence 與 delivery manifest。
 
 ## Development Request
 
-Run the full OpenClaw game pipeline from Define to Planning, Spec Review, Development, Build, and QA without Codex hand-authoring deliverables. Each local/OpenClaw agent must use its configured model. Output must be bounded, richly detailed, Notion-readable, Git-published, and suitable for Unity iOS simulator validation. QA must include button interaction, gameplay function, visual motion, readable objective, retry/start flow, recording/screenshot evidence, and human-sensory review gates.
-
-Raw idea source:
-從頭測試 Ope
+Run full game planning from Define output. Requirements: iOS-first Unity 6000.0.77f1, auto Build later, visual richness planned before development, game depth planned before development, QA evidence for buttons and gameplay, Notion/Git delivery. Build must auto-start from not start when auto_build_allowed is present; do not require manual Build status change downstream.
