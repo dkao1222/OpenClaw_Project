@@ -90,4 +90,5 @@ public sealed class DriftPlayerController : MonoBehaviour
             GameSessionController.Instance?.GameOver();
         }
     }
+
 }

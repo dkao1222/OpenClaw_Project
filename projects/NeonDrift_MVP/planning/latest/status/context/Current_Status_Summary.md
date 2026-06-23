@@ -19,7 +19,7 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Development Request
 
-Start from Define and run the full OpenClaw game pipeline without Codex manually authoring agent deliverables. Define must normalize the request and pass to planning. Planning/spec review must use game_quality and game_system_design knowledge bases to specify gameplay depth, visual richness, system 5W1H, layer coverage, QA acceptance, and development readiness. Development should implement from spec review only. Build and QA should verify local Unity/iOS simulator evidence when available.
+Clean full rerun from Define after pipeline fixes. Do not let Codex manually patch agent deliverables during this run. Define must normalize the request and pass to planning. Planning/spec review must use game_quality and game_system_design knowledge bases to specify gameplay depth, visual richness, system 5W1H, layer coverage, QA acceptance, and development readiness. Development should implement from spec review only. Build and QA should verify local Unity/iOS simulator evidence when available.
 
 Raw idea source:
-Build an
+

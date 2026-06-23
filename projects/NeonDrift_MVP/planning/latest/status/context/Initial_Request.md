@@ -2,12 +2,12 @@
 
 project_name: NeonDrift_MVP
 workspace_key: 382b9e3384298039b171c9b2a60ae644
-run_id: notion-NeonDrift_MVP-0-12-20260623143048
+run_id: notion-NeonDrift_MVP-0-12-20260623143528
 stage_range: 0-12
 agent_model_policy: per-agent-config
 legacy_model_field_ignored: per-agent-config
 thinking: off
-requested_by: define:notion-NeonDrift_MVP-define-20260623143038
+requested_by: define:notion-NeonDrift_MVP-define-20260623143518
 
 ## Pipeline Execution Policy
 
@@ -27,13 +27,13 @@ The Notion watcher script is the pipeline controller. Each OpenClaw agent is a w
 
 ## Development Request
 
-Start from Define and run the full OpenClaw game pipeline without Codex manually authoring agent deliverables. Define must normalize the request and pass to planning. Planning/spec review must use game_quality and game_system_design knowledge bases to specify gameplay depth, visual richness, system 5W1H, layer coverage, QA acceptance, and development readiness. Development should implement from spec review only. Build and QA should verify local Unity/iOS simulator evidence when available.
+Clean full rerun from Define after pipeline fixes. Do not let Codex manually patch agent deliverables during this run. Define must normalize the request and pass to planning. Planning/spec review must use game_quality and game_system_design knowledge bases to specify gameplay depth, visual richness, system 5W1H, layer coverage, QA acceptance, and development readiness. Development should implement from spec review only. Build and QA should verify local Unity/iOS simulator evidence when available.
 
 Raw idea source:
 Build an iOS-first Unity mobile arcade drift game called NeonDrift. The player should understand the goal quickly, start a short run, steer left/right, chase score and mastery, avoid readable hazards, use boost/combo/wave objectives, fail with a clear reason, and retry immediately. The output must not be a plain flat background or a static block prototype; it needs planned gameplay depth, visual richness, and implementation-ready system design before development.
 
 Define source:
-- define_run_id: notion-NeonDrift_MVP-define-20260623143038
+- define_run_id: notion-NeonDrift_MVP-define-20260623143518
 - define_output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 - define_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/define/handoff_to_planning.md
 
@@ -41,4 +41,4 @@ Locked define constraints:
 - platform_target: Unity 6000.0.71f1, iOS-first, local iOS simulator build/QA first; Android and WebGL are secondary only after iOS path is stable.
 - monetization_direction: Rewarded ads first; interstitial ads only after retention and UX review. AdMob is available, but MVP gameplay and QA quality gates come first.
 - compatibility_target: iOS 15+, iPhone SE 2/3, iPhone 12/13 mini, iPhone 15/15 Pro, Android 10+ representative devices, WebGL desktop browser as secondary.
-- output_expectation: Full pipeline outputs under workspace/<workspace_key>/<output_folder>/project/ and Git project folder. Notion-readable docs must include Game Quality Alignment a
+- output_expectation: Full pipeline outputs under workspace/<workspace_key>/<output_folder>/project/ and Git project folder. Notion-readable docs must include Game Quality Ali
