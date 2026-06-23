@@ -13,6 +13,8 @@ required_public_documents:
   - /home/node/.openclaw/workspace/public_document/AGENT_HEARTBEATS.md
   - /home/node/.openclaw/workspace/public_document/GAME_PLANNING_DEPARTMENT.md
   - /home/node/.openclaw/workspace/public_document/GAME_SPEC_REVIEW_DEPARTMENT.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_quality/ROUTING.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/ROUTING.md
 source_documents:
   - docs/planning/Game_Proposal.md
   - docs/planning/One_Page_Game_Concept.md

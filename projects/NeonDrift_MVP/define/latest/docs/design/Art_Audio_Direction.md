@@ -32,7 +32,7 @@ required keywords: art, audio, direction
 - 視覺華麗度目標採 neon arcade presentation：background layers、track materials、particle/VFX budget、typography style、icon style、motion polish、screen composition 與 minimum polish bar 必須可交付。
 
 ### 交接重點
-- VFX/audio event pairing 至少涵蓋 start sting、drift trail、boost cell pickup、combo pulse、near-miss streak、score tick、collision hit、failure flash、retry transition。
+- VFX/audio event pairing 至少涵蓋 start sting、drift trail、boost cell pickup、combo pulse、near-miss streak、score tick、collision hit、failure flash、retry transition，並受 performance budget 管控。
 
 ## English
 
@@ -45,4 +45,4 @@ required keywords: art, audio, direction
 - The visual richness target uses neon arcade presentation: background layers, track materials, particle/VFX budget, typography style, icon style, motion polish, screen composition, and minimum polish bar must be deliverable.
 
 ### Handoff Notes
-- VFX/audio event pairing must cover start sting, drift trail, boost cell pickup, combo pulse, near-miss streak, score tick, collision hit, failure flash, and retry transition.
+- VFX/audio event pairing must cover start sting, drift trail, boost cell pickup, combo pulse, near-miss streak, score tick, collision hit, failure flash, retry transition, and the performance budget.
