@@ -100,6 +100,19 @@ public sealed class NeonDriftPlayModeTests
     }
 
     [Test]
+    public void ContentDepthIsVerified()
+    {
+        SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
+        string json = InvokeRuntimeQaProbeCaptureJson();
+        Assert.That(json, Does.Contain("\"contentDepthVerified\": true"));
+        Assert.That(json, Does.Contain("\"wave\": 1"));
+        Assert.That(json, Does.Contain("\"multiplier\": 1"));
+        Assert.That(json, Does.Contain("\"boostCharge\""));
+        Assert.That(json, Does.Contain("\"combo\""));
+    }
+
+    [Test]
     public void GameplayMotionIsVerified()
     {
         SceneManager.LoadScene("Main");
