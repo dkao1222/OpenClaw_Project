@@ -8,6 +8,10 @@ notion_delivery_target: page:382b9e3384298039b171c9b2a60ae644
 context_policy: compressed_context_first
 context_pack_path: status/context/spec_review_context_pack.md
 next_stage_input_policy: read this handoff first, then read the compact context pack. Open full source paths only if a required implementation detail is missing.
+required_public_documents:
+  - /home/node/.openclaw/workspace/public_document/GAME_DEVELOPMENT_DEPARTMENT.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_quality/ROUTING.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/ROUTING.md
 source_documents:
   - docs/review/Spec_Gap_Analysis.md
   - docs/review/Development_Ready_Spec_Package.md

@@ -7,6 +7,10 @@ project_channel_id: 382b9e3384298039b171c9b2a60ae644
 notion_delivery_target: page:382b9e3384298039b171c9b2a60ae644
 output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 target_department: GAME_DEVELOPMENT_DEPARTMENT.md
+required_public_documents:
+  - /home/node/.openclaw/workspace/public_document/GAME_DEVELOPMENT_DEPARTMENT.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_quality/ROUTING.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/ROUTING.md
 source_documents:
   - docs/planning/Game_Proposal.md
   - docs/product/MVP_PRD.md
@@ -32,6 +36,7 @@ source_documents:
   - docs/design/GDD_Mechanics_Draft.md
   - docs/design/Visual_Direction.md
   - docs/design/Audio_Direction.md
+  - docs/design/Art_Audio_Direction.md
   - docs/production/Development_Readiness_Report.md
 spec_review_recommended_first: true
 development_allowed: false
