@@ -2,12 +2,12 @@
 
 project_name: NeonDrift_MVP
 workspace_key: 382b9e3384298039b171c9b2a60ae644
-run_id: notion-NeonDrift_MVP-0-12-20260623144428
+run_id: notion-NeonDrift_MVP-0-12-20260623144725
 stage_range: 0-12
 agent_model_policy: per-agent-config
 legacy_model_field_ignored: per-agent-config
 thinking: off
-requested_by: define:notion-NeonDrift_MVP-define-20260623144410
+requested_by: define:notion-NeonDrift_MVP-define-20260623144710
 
 ## Pipeline Execution Policy
 
@@ -33,7 +33,7 @@ Raw idea source:
 Create an iOS-first Unity arcade drift game MVP. The game must be immediately understandable, visually rich, and deeper than a single-button prototype. Planning, spec review, development, build, and QA must be driven by Notion watcher/cron flow. QA should cover functional gameplay, button interaction, visual clarity, tutorial comprehension, failure/retry loop, and recorded evidence.
 
 Define source:
-- define_run_id: notion-NeonDrift_MVP-define-20260623144410
+- define_run_id: notion-NeonDrift_MVP-define-20260623144710
 - define_output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 - define_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/define/handoff_to_planning.md
 
