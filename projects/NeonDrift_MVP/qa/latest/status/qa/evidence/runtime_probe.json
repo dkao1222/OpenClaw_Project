@@ -52,6 +52,8 @@
     "contentDepthVerified": true,
     "gameplayMotionVerified": true,
     "playerSteeringMotionVerified": true,
+    "humanAgencyVerified": true,
+    "playerInputChangesOutcomeVerified": true,
     "coreGameplayObjectsVerified": true,
     "scoringSystemVerified": true,
     "pauseSystemVerified": true,
