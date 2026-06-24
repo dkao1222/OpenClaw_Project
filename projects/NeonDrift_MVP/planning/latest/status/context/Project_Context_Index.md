@@ -6,9 +6,9 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Product Vision and Purpose
 
-- snippet: 由 Raw Idea 正規化：建立 NeonDrift_MVP，一款 iOS-first Unity 霓虹 arcade drifting 手機遊戲，用來完整驗證 OpenClaw pipeline。
-需求必須從 Raw Idea 正規化到 Define，再進 Planning 0-12、Spec Review、Development、Local Unity iOS Simulator Build、QA、Delivery。
-Planning 與 Spec Review 必須先規劃遊戲深度與畫面華麗度，不能到 dev
+- snippet: 由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
+The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
+The game must be visually ric
 
 ## Target Audience
 
@@ -26,5 +26,5 @@ Raw idea type: game
 Priority: high
 
 Raw idea:
-建立 NeonDrift_MVP，一款 iOS-first Unity 霓虹 arcade drifting 手機遊戲，用來完整驗證 OpenClaw pipeline。
-需求必須從 Raw Idea 正規化到 Define，再進 Planning 0-12、Spec Review、Development、Local U
+Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
+The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development ->

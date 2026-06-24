@@ -2,12 +2,12 @@
 
 project_name: NeonDrift_MVP
 workspace_key: 382b9e3384298039b171c9b2a60ae644
-run_id: notion-NeonDrift_MVP-0-12-20260624122713
+run_id: notion-NeonDrift_MVP-0-12-20260624133331
 stage_range: 0-12
 agent_model_policy: per-agent-config
 legacy_model_field_ignored: per-agent-config
 thinking: off
-requested_by: define:notion-NeonDrift_MVP-define-20260624122653
+requested_by: define:notion-NeonDrift_MVP-define-20260624133302
 
 ## Pipeline Execution Policy
 
@@ -15,12 +15,11 @@ The Notion watcher script is the pipeline controller. Each OpenClaw agent is a w
 
 ## Product Vision and Purpose（產品願景與目的）
 
-由 Raw Idea 正規化：建立 NeonDrift_MVP，一款 iOS-first Unity 霓虹 arcade drifting 手機遊戲，用來完整驗證 OpenClaw pipeline。
-需求必須從 Raw Idea 正規化到 Define，再進 Planning 0-12、Spec Review、Development、Local Unity iOS Simulator Build、QA、Delivery。
-Planning 與 Spec Review 必須先規劃遊戲深度與畫面華麗度，不能到 development 才補。必須明確定義 icon、字體、背景、特效、音效、haptics、HUD、按鍵尺寸/位置/safe area、相容性機種與效能目標。
-Development 必須產出 Unity 6000.0.77f1 專案，支援 iOS simulator，本機 Unity batchmode 可以 build，不需要人工開 Unity Hub。
-QA 必須包含但不限於：按鍵是否可點、Start/Retry/Pause/Left/Right 功能、畫面是否可理解、遊戲物件是否有動態、玩家是否知道怎麼玩、早期 drift lost 是否合理、錄影/截圖/evidence、Unity Test Runner 結果。
-Build row 應由 watcher/host runner 自動從 not start 開始，不需要人工改成 processing。
+由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
+The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
+The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
+Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
+Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
 Define 階段需補齊痛點、服務目標、MVP 邊界與可驗證成功條件；若資訊不足，必須保留為 open questions。
 
 ## Target Audience（目標受眾）
@@ -39,26 +38,15 @@ Raw idea type: game
 Priority: high
 
 Raw idea:
-建立 NeonDrift_MVP，一款 iOS-first Unity 霓虹 arcade drifting 手機遊戲，用來完整驗證 OpenClaw pipeline。
-需求必須從 Raw Idea 正規化到 Define，再進 Planning 0-12、Spec Review、Development、Local Unity iOS Simulator Build、QA、Delivery。
-Planning 與 Spec Review 必須先規劃遊戲深度與畫面華麗度，不能到 development 才補。必須明確定義 icon、字體、背景、特效、音效、haptics、HUD、按鍵尺寸/位置/safe area、相容性機種與效能目標。
-Development 必須產出 Unity 6000.0.77f1 專案，支援 iOS simulator，本機 Unity batchmode 可以 build，不需要人工開 Unity Hub。
-QA 必須包含但不限於：按鍵是否可點、Start/Retry/Pause/Left/Right 功能、畫面是否可理解、遊戲物件是否有動態、玩家是否知道怎麼玩、早期 drift lost 是否合理、錄影/截圖/evidence、Unity Test Runner 結果。
-Build row 應由 watcher/host runner 自動從 not start 開始，不需要人工改成 processing。
+Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
+The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
+The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
+Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
+Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
 
 Raw idea source:
-建立 NeonDrift_MVP，一款 iOS-first Unity 霓虹 arcade drifting 手機遊戲，用來完整驗證 OpenClaw pipeline。
-需求必須從 Raw Idea 正規化到 Define，再進 Planning 0-12、Spec Review、Development、Local Unity iOS Simulator Build、QA、Delivery。
-Planning 與 Spec Review 必須先規劃遊戲深度與畫面華麗度，不能到 development 才補。必須明確定義 icon、字體、背景、特效、音效、haptics、HUD、按鍵尺寸/位置/safe area、相容性機種與效能目標。
-Development 必須產出 Unity 6000.0.77f1 專案，支援 iOS simulator，本機 Unity batchmode 可以 build，不需要人工開 Unity Hub。
-QA 必須包含但不限於：按鍵是否可點、Start/Retry/Pause/Left/Right 功能、畫面是否可理解、遊戲物件是否有動態、玩家是否知道怎麼玩、早期 drift lost 是否合理、錄影/截圖/evidence、Unity Test Runner 結果。
-Build row 應由 watcher/host runner 自動從 not start 開始，不需要人工改成 processing。
-
-Define source:
-- define_run_id: notion-NeonDrift_MVP-define-20260624122653
-- define_output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
-- define_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/define/handoff_to_planning.md
-
-Locked define constraints:
-- platform_target: Unity iOS first; Android/WebGL only as future scope unless explicitly requested.
-- 
+Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
+The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
+The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
+Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
+Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and e
