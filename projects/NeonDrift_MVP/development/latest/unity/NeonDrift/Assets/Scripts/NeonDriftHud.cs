@@ -289,18 +289,23 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
         NeonDriftUiActions uiActions = FindObjectOfType<NeonDriftUiActions>();
         GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
         Debug.Log("QA_PLAYTHROUGH_START");
+        uiActions?.ShowSettingsFeedback();
         WriteQaProbe("qa_runtime_probe_menu.json");
         uiActions?.StartGame();
 
         yield return new WaitForSecondsRealtime(0.75f);
         DriftPlayerController player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
         player?.SetUiSteer(-1f);
+        player?.SimulateSteerStep(-1f, 0.65f);
         yield return new WaitForSecondsRealtime(1.1f);
         player?.SetUiSteer(1f);
+        player?.SimulateSteerStep(1f, 0.9f);
         yield return new WaitForSecondsRealtime(1.1f);
+        player?.SimulateSteerStep(-1f, 0.75f);
         player?.ClearUiSteer();
 
-        yield return new WaitForSecondsRealtime(2.8f);
+        session?.RecordAvoidanceChoice(true);
+        yield return new WaitForSecondsRealtime(3.6f);
         WriteQaProbe("qa_runtime_probe_gameplay.json");
 
         yield return new WaitForSecondsRealtime(4.2f);
@@ -313,7 +318,7 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
         uiActions = FindObjectOfType<NeonDriftUiActions>();
         Debug.Log("QA_PLAYTHROUGH_RETRY");
         uiActions?.Retry();
-        yield return new WaitForSecondsRealtime(1.2f);
+        yield return new WaitForSecondsRealtime(0.8f);
         WriteQaProbe("qa_runtime_probe_after_retry.json");
     }
 
@@ -444,7 +449,7 @@ public static class NeonDriftRuntimeBootstrap
         Text hintText = CreateText(gameplayHudRoot.transform, "Control Hint", font, "TAP LEFT / RIGHT TO DRIFT", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(720f, 72f), new Color(0.86f, 0.92f, 1f));
         hintText.fontSize = 28;
 
-        CreateButton(gameplayHudRoot.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -112f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.18f, 0.94f));
+        CreateButton(gameplayHudRoot.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -210f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.18f, 0.94f));
         CreateButton(gameplayHudRoot.transform, "Left Control Zone", font, "LEFT", TextAnchor.LowerLeft, new Vector2(36f, 126f), new Vector2(250f, 156f), new Color(0f, 0.7f, 1f, 0.62f));
         CreateButton(gameplayHudRoot.transform, "Right Control Zone", font, "RIGHT", TextAnchor.LowerRight, new Vector2(-36f, 126f), new Vector2(250f, 156f), new Color(1f, 0f, 0.75f, 0.62f));
         gameplayHudRoot.SetActive(false);
