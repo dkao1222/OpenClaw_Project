@@ -30,6 +30,10 @@
 - Game Loop（遊戲循環）
 - Systems and Tuning（系統與數值）
 - Level Design（關卡設計）
+- Moment-to-Moment Gameplay Contract
+- Encounter / Enemy Pattern Contract
+- Player Skill and Reward Contract
+- Human Playtest Contract
 - Visual Richness Contract
 - Interaction and State Contract
 - Audio Feedback Contract

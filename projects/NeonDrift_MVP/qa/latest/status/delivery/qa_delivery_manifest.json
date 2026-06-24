@@ -1,10 +1,10 @@
 {
   "project_name": "NeonDrift_MVP",
-  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260624152259",
+  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260624160353",
   "delivery_status": "ready",
   "qa_overall_status": "passed",
   "release_candidate_status": "ready",
-  "checks_total": 111,
+  "checks_total": 120,
   "checks_failed": 0,
   "checks_blocked": 0,
   "bundle_id": "com.DefaultCompany.NeonDrift",

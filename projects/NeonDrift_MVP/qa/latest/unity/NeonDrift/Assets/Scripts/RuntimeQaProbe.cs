@@ -72,6 +72,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool startButtonStartsGameVerified;
         public bool earlyGameOverProtected;
         public bool readableHazardPacingVerified;
+        public bool tenSecondPlayabilityVerified;
+        public bool enemyPatternPressureVerified;
+        public bool skillRewardLoopVerified;
+        public bool humanPlaytestChecklistVerified;
         public bool pauseControlVerified;
         public bool retryControlVerified;
         public bool retryRestartsGameplayVerified;
@@ -101,6 +105,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     private static bool playerSteeringMotionVerifiedForQa;
     private static bool humanAgencyVerifiedForQa;
     private static bool playerInputChangesOutcomeVerifiedForQa;
+    private static bool tenSecondPlayabilityVerifiedForQa;
+    private static bool enemyPatternPressureVerifiedForQa;
+    private static bool skillRewardLoopVerifiedForQa;
+    private static bool humanPlaytestChecklistVerifiedForQa;
     private static bool soundToggleAudioVerifiedForQa;
     private static bool audioSourcePresentForQa;
     private int frameCount;
@@ -168,6 +176,14 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     {
         humanAgencyVerifiedForQa = humanAgencyVerifiedForQa || verified;
         playerInputChangesOutcomeVerifiedForQa = playerInputChangesOutcomeVerifiedForQa || verified;
+    }
+
+    public static void RecordGameQualityVerified(bool tenSecondPlayability, bool enemyPatternPressure, bool skillRewardLoop, bool humanPlaytestChecklist)
+    {
+        tenSecondPlayabilityVerifiedForQa = tenSecondPlayabilityVerifiedForQa || tenSecondPlayability;
+        enemyPatternPressureVerifiedForQa = enemyPatternPressureVerifiedForQa || enemyPatternPressure;
+        skillRewardLoopVerifiedForQa = skillRewardLoopVerifiedForQa || skillRewardLoop;
+        humanPlaytestChecklistVerifiedForQa = humanPlaytestChecklistVerifiedForQa || humanPlaytestChecklist;
     }
 
     public static void RecordSoundToggleAudioVerified(bool verified, bool audioSourcePresent)
@@ -302,6 +318,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             startButtonStartsGameVerified = startFlowVerified && hasUiActions,
             earlyGameOverProtected = session != null && session.MinimumSurvivalSeconds >= 6f && !session.CanAcceptFailure,
             readableHazardPacingVerified = session != null && !session.CanSpawnHazards && session.MinimumSurvivalSeconds >= 6f,
+            tenSecondPlayabilityVerified = tenSecondPlayabilityVerifiedForQa,
+            enemyPatternPressureVerified = enemyPatternPressureVerifiedForQa,
+            skillRewardLoopVerified = skillRewardLoopVerifiedForQa,
+            humanPlaytestChecklistVerified = humanPlaytestChecklistVerifiedForQa,
             pauseControlVerified = hasPause && IsClickable(pauseButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
             retryControlVerified = hasRetry && IsClickable(retryButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && gameOverPanel != null,
             retryRestartsGameplayVerified = uiActions != null && session != null && hasRetry,

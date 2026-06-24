@@ -13,11 +13,11 @@
 - PASS file.required_sections.docs/review/Planning_Final_Decision.md
 - PASS file.schema.docs/review/Planning_Final_Decision.md
 - PASS file.readable.handoffs/planning/handoff_to_spec_review.md
-- PASS file.size_limit.handoffs/planning/handoff_to_spec_review.md: 2463<=2500
+- PASS file.size_limit.handoffs/planning/handoff_to_spec_review.md: 2190<=2500
 - PASS file.no_prompt_constraints.handoffs/planning/handoff_to_spec_review.md
 - PASS file.schema.handoffs/planning/handoff_to_spec_review.md
 - PASS file.readable.handoffs/planning/handoff_to_development.md
-- PASS file.size_limit.handoffs/planning/handoff_to_development.md: 1922<=2500
+- PASS file.size_limit.handoffs/planning/handoff_to_development.md: 2093<=2500
 - PASS file.no_prompt_constraints.handoffs/planning/handoff_to_development.md
 - PASS file.schema.handoffs/planning/handoff_to_development.md
 - PASS file.readable.status/context/stage12_context_pack.md
