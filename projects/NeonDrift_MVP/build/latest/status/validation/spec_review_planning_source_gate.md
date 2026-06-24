@@ -2,6 +2,30 @@
 
 ## Checks
 - PASS source_output_folder_exists: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project
+- PASS required_planning_source_doc:docs/define/Defined_Request.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/define/Defined_Request.md
+- PASS planning_source_marker:docs/define/Defined_Request.md:Product Experience Contract: Product Experience Contract
+- PASS planning_source_marker:docs/define/Defined_Request.md:Game Design Foundation Contract: Game Design Foundation Contract
+- PASS planning_source_marker:docs/define/Defined_Request.md:Core Mechanics: Core Mechanics
+- PASS planning_source_marker:docs/define/Defined_Request.md:Game Loop: Game Loop
+- PASS planning_source_marker:docs/define/Defined_Request.md:Systems and Tuning: Systems and Tuning
+- PASS planning_source_marker:docs/define/Defined_Request.md:Level Design: Level Design
+- PASS planning_source_marker:docs/define/Defined_Request.md:Human Playability Contract: Human Playability Contract
+- PASS planning_source_marker:docs/define/Defined_Request.md:Visual Richness Contract: Visual Richness Contract
+- PASS planning_source_marker:docs/define/Defined_Request.md:Interaction and State Contract: Interaction and State Contract
+- PASS planning_source_marker:docs/define/Defined_Request.md:Audio Feedback Contract: Audio Feedback Contract
+- PASS planning_source_marker:docs/define/Defined_Request.md:Evidence Contract: Evidence Contract
+- PASS required_planning_source_doc:docs/define/Pipeline_Gates.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/define/Pipeline_Gates.md
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:Product Experience Contract: Product Experience Contract
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:Game Design Foundation Contract: Game Design Foundation Contract
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:Core Mechanics: Core Mechanics
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:Game Loop: Game Loop
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:Systems and Tuning: Systems and Tuning
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:Level Design: Level Design
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:QA cannot pass: QA cannot pass
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:Retry: Retry
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:audio feedback: audio feedback
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:visual richness: visual richness
+- PASS planning_source_marker:docs/define/Pipeline_Gates.md:human playability: human playability
 - PASS required_planning_source_doc:status/context/stage12_context_pack.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage12_context_pack.md
 - PASS planning_source_marker:status/context/stage12_context_pack.md:## Decisions: ## Decisions
 - PASS planning_source_marker:status/context/stage12_context_pack.md:## Constraints: ## Constraints

@@ -11,7 +11,12 @@ next_stage_input_policy: read this handoff first, then read the compact context 
 required_public_documents:
   - /home/node/.openclaw/workspace/public_document/GAME_DEVELOPMENT_DEPARTMENT.md
   - /home/node/.openclaw/workspace/public_document/knowledge_base/game_quality/ROUTING.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_quality/VISUAL_ART_REFERENCE.md
   - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/ROUTING.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/GAME_DEV_BLACK_BOOK_REFERENCE.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/GDD_STRUCTURE_REFERENCE.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/GAME_MECHANICS_REFERENCE.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/GAME_TERMINOLOGY_REFERENCE.md
 source_documents:
   - docs/review/Spec_Gap_Analysis.md
   - docs/review/Development_Ready_Spec_Package.md

@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/design/Core_Gameplay_Loop.md
-- PASS file.size_limit.docs/design/Core_Gameplay_Loop.md: 3079<=8000
+- PASS file.size_limit.docs/design/Core_Gameplay_Loop.md: 4003<=8000
 - PASS file.no_prompt_constraints.docs/design/Core_Gameplay_Loop.md
 - PASS file.bilingual_order.docs/design/Core_Gameplay_Loop.md
 - PASS file.bilingual_distinct.docs/design/Core_Gameplay_Loop.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/design/Core_Gameplay_Loop.md
 - PASS file.schema.docs/design/Core_Gameplay_Loop.md
 - PASS file.readable.docs/design/Game_Systems_Overview.md
-- PASS file.size_limit.docs/design/Game_Systems_Overview.md: 4115<=8000
+- PASS file.size_limit.docs/design/Game_Systems_Overview.md: 5039<=8000
 - PASS file.no_prompt_constraints.docs/design/Game_Systems_Overview.md
 - PASS file.bilingual_order.docs/design/Game_Systems_Overview.md
 - PASS file.bilingual_distinct.docs/design/Game_Systems_Overview.md
@@ -21,7 +21,7 @@
 - PASS file.required_sections.docs/design/Game_Systems_Overview.md
 - PASS file.schema.docs/design/Game_Systems_Overview.md
 - PASS file.readable.docs/design/Control_System_Spec.md
-- PASS file.size_limit.docs/design/Control_System_Spec.md: 3181<=8000
+- PASS file.size_limit.docs/design/Control_System_Spec.md: 4105<=8000
 - PASS file.no_prompt_constraints.docs/design/Control_System_Spec.md
 - PASS file.bilingual_order.docs/design/Control_System_Spec.md
 - PASS file.bilingual_distinct.docs/design/Control_System_Spec.md
@@ -29,7 +29,7 @@
 - PASS file.required_sections.docs/design/Control_System_Spec.md
 - PASS file.schema.docs/design/Control_System_Spec.md
 - PASS file.readable.docs/design/Speed_System_Spec.md
-- PASS file.size_limit.docs/design/Speed_System_Spec.md: 3089<=8000
+- PASS file.size_limit.docs/design/Speed_System_Spec.md: 4013<=8000
 - PASS file.no_prompt_constraints.docs/design/Speed_System_Spec.md
 - PASS file.bilingual_order.docs/design/Speed_System_Spec.md
 - PASS file.bilingual_distinct.docs/design/Speed_System_Spec.md
@@ -37,7 +37,7 @@
 - PASS file.required_sections.docs/design/Speed_System_Spec.md
 - PASS file.schema.docs/design/Speed_System_Spec.md
 - PASS file.readable.docs/design/Hazard_System_Spec.md
-- PASS file.size_limit.docs/design/Hazard_System_Spec.md: 3058<=8000
+- PASS file.size_limit.docs/design/Hazard_System_Spec.md: 3982<=8000
 - PASS file.no_prompt_constraints.docs/design/Hazard_System_Spec.md
 - PASS file.bilingual_order.docs/design/Hazard_System_Spec.md
 - PASS file.bilingual_distinct.docs/design/Hazard_System_Spec.md
@@ -45,7 +45,7 @@
 - PASS file.required_sections.docs/design/Hazard_System_Spec.md
 - PASS file.schema.docs/design/Hazard_System_Spec.md
 - PASS file.readable.docs/design/Scoring_System_Spec.md
-- PASS file.size_limit.docs/design/Scoring_System_Spec.md: 3061<=8000
+- PASS file.size_limit.docs/design/Scoring_System_Spec.md: 3985<=8000
 - PASS file.no_prompt_constraints.docs/design/Scoring_System_Spec.md
 - PASS file.bilingual_order.docs/design/Scoring_System_Spec.md
 - PASS file.bilingual_distinct.docs/design/Scoring_System_Spec.md
@@ -53,7 +53,7 @@
 - PASS file.required_sections.docs/design/Scoring_System_Spec.md
 - PASS file.schema.docs/design/Scoring_System_Spec.md
 - PASS file.readable.docs/design/Failure_Retry_System_Spec.md
-- PASS file.size_limit.docs/design/Failure_Retry_System_Spec.md: 3054<=8000
+- PASS file.size_limit.docs/design/Failure_Retry_System_Spec.md: 3978<=8000
 - PASS file.no_prompt_constraints.docs/design/Failure_Retry_System_Spec.md
 - PASS file.bilingual_order.docs/design/Failure_Retry_System_Spec.md
 - PASS file.bilingual_distinct.docs/design/Failure_Retry_System_Spec.md
@@ -61,7 +61,7 @@
 - PASS file.required_sections.docs/design/Failure_Retry_System_Spec.md
 - PASS file.schema.docs/design/Failure_Retry_System_Spec.md
 - PASS file.readable.docs/design/Feedback_System_Spec.md
-- PASS file.size_limit.docs/design/Feedback_System_Spec.md: 3170<=8000
+- PASS file.size_limit.docs/design/Feedback_System_Spec.md: 4094<=8000
 - PASS file.no_prompt_constraints.docs/design/Feedback_System_Spec.md
 - PASS file.bilingual_order.docs/design/Feedback_System_Spec.md
 - PASS file.bilingual_distinct.docs/design/Feedback_System_Spec.md
@@ -69,7 +69,7 @@
 - PASS file.required_sections.docs/design/Feedback_System_Spec.md
 - PASS file.schema.docs/design/Feedback_System_Spec.md
 - PASS file.readable.docs/design/GDD_Mechanics_Draft.md
-- PASS file.size_limit.docs/design/GDD_Mechanics_Draft.md: 3131<=8000
+- PASS file.size_limit.docs/design/GDD_Mechanics_Draft.md: 4055<=8000
 - PASS file.no_prompt_constraints.docs/design/GDD_Mechanics_Draft.md
 - PASS file.bilingual_order.docs/design/GDD_Mechanics_Draft.md
 - PASS file.bilingual_distinct.docs/design/GDD_Mechanics_Draft.md
