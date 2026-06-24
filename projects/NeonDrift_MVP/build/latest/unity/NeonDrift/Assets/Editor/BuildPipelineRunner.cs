@@ -26,6 +26,7 @@ public static class BuildPipelineRunner
         bool hazardApproachMotionVerified = VerifyHazardApproachMotion();
         bool playerSteeringMotionVerified = VerifyPlayerSteeringMotion();
         bool humanAgencyVerified = VerifyHumanAgency();
+        bool gameQualityContractVerified = VerifyGameQualityContract();
         bool retryRestartsGameplayVerified = VerifyRetryRestartsGameplay();
         bool soundToggleAudioVerified = VerifySoundToggleAudio();
         EnsureScene();
@@ -74,6 +75,10 @@ public static class BuildPipelineRunner
                 ("HazardApproachMotionIsVerified", hazardApproachMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"hazardApproachMotionVerified\": true")),
                 ("PlayerSteeringMotionIsVerified", playerSteeringMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"playerSteeringMotionVerified\": true")),
                 ("HumanAgencyChangesOutcome", humanAgencyVerified && RuntimeQaProbe.CaptureJson().Contains("\"humanAgencyVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"playerInputChangesOutcomeVerified\": true")),
+                ("TenSecondPlayabilityVerified", gameQualityContractVerified && RuntimeQaProbe.CaptureJson().Contains("\"tenSecondPlayabilityVerified\": true")),
+                ("EnemyPatternPressureVerified", gameQualityContractVerified && RuntimeQaProbe.CaptureJson().Contains("\"enemyPatternPressureVerified\": true")),
+                ("SkillRewardLoopVerified", gameQualityContractVerified && RuntimeQaProbe.CaptureJson().Contains("\"skillRewardLoopVerified\": true")),
+                ("HumanPlaytestChecklistVerified", gameQualityContractVerified && RuntimeQaProbe.CaptureJson().Contains("\"humanPlaytestChecklistVerified\": true")),
                 ("RetryRestartsGameplay", retryRestartsGameplayVerified && RuntimeQaProbe.CaptureJson().Contains("\"retryRestartsGameplayVerified\": true")),
                 ("SoundToggleAudioVerified", soundToggleAudioVerified && RuntimeQaProbe.CaptureJson().Contains("\"soundToggleAudioVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"audioSourcePresent\": true")),
                 ("StartButtonFlowVerified", startButtonFlowVerified),
@@ -183,6 +188,39 @@ public static class BuildPipelineRunner
             session.Retry();
         }
         RuntimeQaProbe.RecordHumanAgencyVerified(verified);
+        return verified;
+    }
+
+    private static bool VerifyGameQualityContract()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        NeonDriftVisualSync visualSync = GameObject.FindObjectOfType<NeonDriftVisualSync>(true);
+        if (session == null || uiActions == null || visualSync == null)
+        {
+            RuntimeQaProbe.RecordGameQualityVerified(false, false, false, false);
+            return false;
+        }
+
+        uiActions.StartGame();
+        bool tenSecondPlayability = session.HasStarted
+            && session.MinimumSurvivalSeconds >= 6f
+            && !session.IsGameOver
+            && visualSync.VerifyMotionForQa()
+            && visualSync.VerifySteeringForQa();
+        bool enemyPatternPressure = visualSync.VerifyHazardApproachForQa();
+        bool skillRewardLoop = visualSync.VerifyHumanAgencyForQa() && session.ContentDepthVerified;
+        bool humanPlaytestChecklist = tenSecondPlayability
+            && enemyPatternPressure
+            && skillRewardLoop
+            && RuntimeQaProbe.CaptureJson().Contains("\"gameplayInstructionReadableVerified\": true")
+            && RuntimeQaProbe.CaptureJson().Contains("\"hasRetryButton\": true");
+        bool verified = tenSecondPlayability && enemyPatternPressure && skillRewardLoop && humanPlaytestChecklist;
+        RuntimeQaProbe.RecordGameQualityVerified(tenSecondPlayability, enemyPatternPressure, skillRewardLoop, humanPlaytestChecklist);
+        if (verified)
+        {
+            session.Retry();
+        }
         return verified;
     }
 

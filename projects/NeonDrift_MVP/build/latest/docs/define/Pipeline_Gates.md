@@ -8,6 +8,9 @@
 - Development must finish with Validation Status = Passed before Build monitoring starts.
 - Build may auto-start when the licensed local Unity Editor is detected and the Build row is processing.
 - QA cannot pass if Retry, audio feedback, state isolation, visual richness, or human playability evidence is missing.
+- Planning cannot pass if it does not define a 10-second playability timeline, at least three enemy/encounter patterns, player skill/reward rules, and human playtest acceptance.
+- Spec Review cannot pass if those planning items are not converted into implementation-ready state/input/rule/output/feedback/QA acceptance.
+- Development cannot pass if runtime evidence does not prove meaningful player input, visible approaching threats, reward feedback, clear failure reason, and immediate retry.
 - Any product evidence showing static gameplay, no human interaction, debug-looking visuals, overlapping states, silent Sound On, or Retry returning to the wrong state must fail and return to Development.
 
 ## Locked Decisions
@@ -30,6 +33,10 @@ Game Design Foundation Contract:
 - Systems and Tuning（系統與數值）: Planning/Spec Review must define the core systems and numbers that make the game challenging and fair, including economy/reward rules where relevant, damage or failure calculation, growth/progression curve, probability/spawn balance, difficulty ramp, and fairness/readability limits.
 - Level Design（關卡設計）: Planning must define spatial layout and pacing rules that guide the player and create memorable play moments, including lanes/space, spawn rhythm, encounter pacing, tutorial/readability beats, safe windows, pressure peaks, and recovery moments.
 - Development and QA must reject outputs where these four foundations remain generic, missing, or not testable.
+- Moment-to-Moment Gameplay Contract: Planning must define the first 10 seconds of play as timestamped beats: player sees objective, player performs input, system creates pressure, enemy/hazard advances, feedback confirms action, reward or failure teaches the next attempt.
+- Encounter / Enemy Pattern Contract: Planning must define at least three concrete enemy or hazard patterns with spawn condition, movement/approach behavior, warning/readability cue, counterplay, reward/penalty, and QA reproduction step. A static or non-approaching threat fails.
+- Player Skill and Reward Contract: Planning must define how player skill changes outcome, including near miss, combo, boost/reward, score formula, risk/reward tradeoff, reset/break condition, HUD/VFX/SFX feedback, and mastery signal.
+- Human Playtest Contract: QA must verify from simulator video that a human can tell what the goal is, what is dangerous, what changed after input, why failure happened, and why retry is meaningful.
 
 Human Playability Contract:
 - The player must understand what to do within 3 seconds of the first playable screen.

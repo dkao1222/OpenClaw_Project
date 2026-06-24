@@ -12,6 +12,14 @@
 - PASS file.content_specificity.docs/design/Core_Gameplay_Loop.md
 - PASS file.required_sections.docs/design/Core_Gameplay_Loop.md
 - PASS file.schema.docs/design/Core_Gameplay_Loop.md
+- PASS file.readable.docs/design/Moment_to_Moment_Gameplay.md
+- PASS file.size_limit.docs/design/Moment_to_Moment_Gameplay.md: 4328<=8000
+- PASS file.no_prompt_constraints.docs/design/Moment_to_Moment_Gameplay.md
+- PASS file.bilingual_order.docs/design/Moment_to_Moment_Gameplay.md
+- PASS file.bilingual_distinct.docs/design/Moment_to_Moment_Gameplay.md
+- PASS file.content_specificity.docs/design/Moment_to_Moment_Gameplay.md
+- PASS file.required_sections.docs/design/Moment_to_Moment_Gameplay.md
+- PASS file.schema.docs/design/Moment_to_Moment_Gameplay.md
 - PASS file.readable.docs/design/Game_Systems_Overview.md
 - PASS file.size_limit.docs/design/Game_Systems_Overview.md: 5039<=8000
 - PASS file.no_prompt_constraints.docs/design/Game_Systems_Overview.md
@@ -44,6 +52,14 @@
 - PASS file.content_specificity.docs/design/Hazard_System_Spec.md
 - PASS file.required_sections.docs/design/Hazard_System_Spec.md
 - PASS file.schema.docs/design/Hazard_System_Spec.md
+- PASS file.readable.docs/design/Enemy_Pattern_Spec.md
+- PASS file.size_limit.docs/design/Enemy_Pattern_Spec.md: 4307<=8000
+- PASS file.no_prompt_constraints.docs/design/Enemy_Pattern_Spec.md
+- PASS file.bilingual_order.docs/design/Enemy_Pattern_Spec.md
+- PASS file.bilingual_distinct.docs/design/Enemy_Pattern_Spec.md
+- PASS file.content_specificity.docs/design/Enemy_Pattern_Spec.md
+- PASS file.required_sections.docs/design/Enemy_Pattern_Spec.md
+- PASS file.schema.docs/design/Enemy_Pattern_Spec.md
 - PASS file.readable.docs/design/Scoring_System_Spec.md
 - PASS file.size_limit.docs/design/Scoring_System_Spec.md: 3985<=8000
 - PASS file.no_prompt_constraints.docs/design/Scoring_System_Spec.md
@@ -52,6 +68,14 @@
 - PASS file.content_specificity.docs/design/Scoring_System_Spec.md
 - PASS file.required_sections.docs/design/Scoring_System_Spec.md
 - PASS file.schema.docs/design/Scoring_System_Spec.md
+- PASS file.readable.docs/design/Player_Skill_Reward_Spec.md
+- PASS file.size_limit.docs/design/Player_Skill_Reward_Spec.md: 4299<=8000
+- PASS file.no_prompt_constraints.docs/design/Player_Skill_Reward_Spec.md
+- PASS file.bilingual_order.docs/design/Player_Skill_Reward_Spec.md
+- PASS file.bilingual_distinct.docs/design/Player_Skill_Reward_Spec.md
+- PASS file.content_specificity.docs/design/Player_Skill_Reward_Spec.md
+- PASS file.required_sections.docs/design/Player_Skill_Reward_Spec.md
+- PASS file.schema.docs/design/Player_Skill_Reward_Spec.md
 - PASS file.readable.docs/design/Failure_Retry_System_Spec.md
 - PASS file.size_limit.docs/design/Failure_Retry_System_Spec.md: 3978<=8000
 - PASS file.no_prompt_constraints.docs/design/Failure_Retry_System_Spec.md
@@ -68,6 +92,14 @@
 - PASS file.content_specificity.docs/design/Feedback_System_Spec.md
 - PASS file.required_sections.docs/design/Feedback_System_Spec.md
 - PASS file.schema.docs/design/Feedback_System_Spec.md
+- PASS file.readable.docs/design/Human_Playtest_Scenarios.md
+- PASS file.size_limit.docs/design/Human_Playtest_Scenarios.md: 4238<=8000
+- PASS file.no_prompt_constraints.docs/design/Human_Playtest_Scenarios.md
+- PASS file.bilingual_order.docs/design/Human_Playtest_Scenarios.md
+- PASS file.bilingual_distinct.docs/design/Human_Playtest_Scenarios.md
+- PASS file.content_specificity.docs/design/Human_Playtest_Scenarios.md
+- PASS file.required_sections.docs/design/Human_Playtest_Scenarios.md
+- PASS file.schema.docs/design/Human_Playtest_Scenarios.md
 - PASS file.readable.docs/design/GDD_Mechanics_Draft.md
 - PASS file.size_limit.docs/design/GDD_Mechanics_Draft.md: 4055<=8000
 - PASS file.no_prompt_constraints.docs/design/GDD_Mechanics_Draft.md
@@ -77,7 +109,7 @@
 - PASS file.required_sections.docs/design/GDD_Mechanics_Draft.md
 - PASS file.schema.docs/design/GDD_Mechanics_Draft.md
 - PASS file.readable.status/context/stage05_context_pack.md
-- PASS file.size_limit.status/context/stage05_context_pack.md: 2461<=3000
+- PASS file.size_limit.status/context/stage05_context_pack.md: 2582<=3000
 - PASS file.no_prompt_constraints.status/context/stage05_context_pack.md
 - PASS file.schema.status/context/stage05_context_pack.md
 - PASS file.readable.status/agent_heartbeats/game-designer.md
@@ -85,14 +117,14 @@
 - PASS file.no_prompt_constraints.status/agent_heartbeats/game-designer.md
 - PASS file.schema.status/agent_heartbeats/game-designer.md
 - PASS file.readable.handoffs/planning/05_game-designer_to_level-designer.md
-- PASS file.size_limit.handoffs/planning/05_game-designer_to_level-designer.md: 1767<=2500
+- PASS file.size_limit.handoffs/planning/05_game-designer_to_level-designer.md: 1982<=2500
 - PASS file.no_prompt_constraints.handoffs/planning/05_game-designer_to_level-designer.md
 - PASS file.schema.handoffs/planning/05_game-designer_to_level-designer.md
 - PASS handoff.context_pack_path.status/context/stage05_context_pack.md
 - PASS handoff.source_path.docs/design/Core_Gameplay_Loop.md
+- PASS handoff.source_path.docs/design/Moment_to_Moment_Gameplay.md
 - PASS handoff.source_path.docs/design/Game_Systems_Overview.md
 - PASS handoff.source_path.docs/design/Control_System_Spec.md
-- PASS handoff.source_path.docs/design/Speed_System_Spec.md
 
 ## Result
 - status: passed
