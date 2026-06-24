@@ -24,6 +24,7 @@ public static class BuildPipelineRunner
         bool earlyGameOverIsProtected = VerifyEarlyGameOverProtection();
         bool gameplayMotionVerified = VerifyGameplayMotion();
         bool playerSteeringMotionVerified = VerifyPlayerSteeringMotion();
+        bool humanAgencyVerified = VerifyHumanAgency();
         EnsureScene();
         NeonDriftRuntimeBootstrap.EnsureRuntimeScene();
         string probeJson = RuntimeQaProbe.CaptureJson();
@@ -68,6 +69,7 @@ public static class BuildPipelineRunner
                 ("ContentDepthIsVerified", RuntimeQaProbe.CaptureJson().Contains("\"contentDepthVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"wave\": 1") && RuntimeQaProbe.CaptureJson().Contains("\"multiplier\": 1") && RuntimeQaProbe.CaptureJson().Contains("\"boostCharge\"") && RuntimeQaProbe.CaptureJson().Contains("\"combo\"")),
                 ("GameplayMotionIsVerified", gameplayMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"gameplayMotionVerified\": true")),
                 ("PlayerSteeringMotionIsVerified", playerSteeringMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"playerSteeringMotionVerified\": true")),
+                ("HumanAgencyChangesOutcome", humanAgencyVerified && RuntimeQaProbe.CaptureJson().Contains("\"humanAgencyVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"playerInputChangesOutcomeVerified\": true")),
                 ("StartButtonFlowVerified", startButtonFlowVerified),
                 ("EarlyGameOverIsProtected", earlyGameOverIsProtected)
             }
@@ -133,6 +135,23 @@ public static class BuildPipelineRunner
         uiActions.StartGame();
         bool verified = session.HasStarted && visualSync.VerifySteeringForQa();
         RuntimeQaProbe.RecordPlayerSteeringMotionVerified(verified);
+        return verified;
+    }
+
+    private static bool VerifyHumanAgency()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        NeonDriftVisualSync visualSync = GameObject.FindObjectOfType<NeonDriftVisualSync>(true);
+        if (session == null || uiActions == null || visualSync == null)
+        {
+            RuntimeQaProbe.RecordHumanAgencyVerified(false);
+            return false;
+        }
+
+        uiActions.StartGame();
+        bool verified = session.HasStarted && visualSync.VerifyHumanAgencyForQa();
+        RuntimeQaProbe.RecordHumanAgencyVerified(verified);
         return verified;
     }
 

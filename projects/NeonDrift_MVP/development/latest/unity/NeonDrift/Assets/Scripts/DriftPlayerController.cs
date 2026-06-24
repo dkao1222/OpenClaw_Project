@@ -68,8 +68,10 @@ public sealed class DriftPlayerController : MonoBehaviour
     public void SimulateSteerStep(float direction, float deltaTime)
     {
         Vector3 position = transform.position;
+        float startX = position.x;
         position.x = Mathf.Clamp(position.x + direction * acceleration * deltaTime * 0.12f, -xLimit, xLimit);
         transform.position = position;
+        GameSessionController.Instance?.RecordMeaningfulSteer(startX, position.x);
     }
 
     private void FixedUpdate()

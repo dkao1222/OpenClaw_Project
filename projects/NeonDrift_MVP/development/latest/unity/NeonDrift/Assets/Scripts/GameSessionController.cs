@@ -14,6 +14,8 @@ public sealed class GameSessionController : MonoBehaviour
     private int combo;
     private int wave = 1;
     private float boostCharge;
+    private int meaningfulSteerEvents;
+    private bool avoidanceChoiceVerified;
 
     public bool IsGameOver => gameOver;
     public bool IsPaused => paused;
@@ -24,7 +26,9 @@ public sealed class GameSessionController : MonoBehaviour
     public int Wave => wave;
     public int Multiplier => Mathf.Clamp(1 + combo / 10 + Mathf.Max(0, wave - 1), 1, 5);
     public float BoostCharge => boostCharge;
-    public bool ContentDepthVerified => Wave >= 1 && Multiplier >= 1 && BoostCharge >= 0f;
+    public bool PlayerInputChangesOutcomeVerified => meaningfulSteerEvents >= 2 && avoidanceChoiceVerified;
+    public bool HumanAgencyVerified => PlayerInputChangesOutcomeVerified;
+    public bool ContentDepthVerified => Wave >= 1 && Multiplier >= 1 && BoostCharge >= 0f && HumanAgencyVerified;
     public bool CanSpawnHazards => started && !paused && !gameOver && gameplayTimer >= 2.5f;
     public bool CanAcceptFailure => started && gameplayTimer >= MinimumSurvivalSeconds;
 
@@ -35,6 +39,8 @@ public sealed class GameSessionController : MonoBehaviour
         combo = 0;
         wave = 1;
         boostCharge = 0f;
+        meaningfulSteerEvents = 0;
+        avoidanceChoiceVerified = false;
         started = false;
         paused = false;
         gameOver = false;
@@ -107,6 +113,35 @@ public sealed class GameSessionController : MonoBehaviour
         Score += 25 * Multiplier;
     }
 
+    public void RecordMeaningfulSteer(float startX, float endX)
+    {
+        if (!started || paused || gameOver)
+        {
+            return;
+        }
+
+        if (Mathf.Abs(endX - startX) >= 0.45f)
+        {
+            meaningfulSteerEvents += 1;
+            combo += 1;
+        }
+    }
+
+    public void RecordAvoidanceChoice(bool avoidedThreat)
+    {
+        if (!started || paused || gameOver)
+        {
+            return;
+        }
+
+        avoidanceChoiceVerified = avoidanceChoiceVerified || avoidedThreat;
+        if (avoidedThreat)
+        {
+            boostCharge = Mathf.Clamp01(boostCharge + 0.1f);
+            Score += 5 * Multiplier;
+        }
+    }
+
     public void GameOver()
     {
         if (!CanAcceptFailure || gameOver)
@@ -145,6 +180,8 @@ public sealed class GameSessionController : MonoBehaviour
         combo = 0;
         wave = 1;
         boostCharge = 0f;
+        meaningfulSteerEvents = 0;
+        avoidanceChoiceVerified = false;
         Score = 0;
         Time.timeScale = 1f;
     }
@@ -156,6 +193,8 @@ public sealed class GameSessionController : MonoBehaviour
         combo = 0;
         wave = 1;
         boostCharge = 0f;
+        meaningfulSteerEvents = 0;
+        avoidanceChoiceVerified = false;
         started = false;
         paused = false;
         gameOver = false;
