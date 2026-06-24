@@ -1,7 +1,7 @@
 # Full QA Report
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260623173241
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260623173527
 - QA 結果: passed
 - Release candidate: ready
 - checks_total: 101
@@ -86,9 +86,9 @@
 | playmode_pause_retry_buttons_clickable_contract | UI/UX | PASS | PauseRetryButtonsClickable found in PlayMode XML. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml |
 | simulator_app_binary_arm64 | Build | PASS | /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64 | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/app_binary_file.txt |
 | simulator_appinfo_available | Install | PASS | appinfo contains CFBundleIdentifier. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/appinfo.txt |
-| simulator_launch_attempted | Launch | PASS | com.DefaultCompany.NeonDrift: 69988 | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt |
-| screenshot_nonblank | UI/UX | PASS | {'exists': True, 'bytes': 79036, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 45} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png |
-| playthrough_video_exists | Playthrough | PASS | {'exists': True, 'bytes': 2988558} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/simulator_playthrough.mp4 |
+| simulator_launch_attempted | Launch | PASS | com.DefaultCompany.NeonDrift: 71282 | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt |
+| screenshot_nonblank | UI/UX | PASS | {'exists': True, 'bytes': 78243, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 36} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png |
+| playthrough_video_exists | Playthrough | PASS | {'exists': True, 'bytes': 3018596} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/simulator_playthrough.mp4 |
 | playthrough_interaction_script_log_exists | Playthrough | PASS | QA playthrough script:
 1. write qa_playthrough.flag into simulator app data container
 2. launch app with -qaPlaythrough fallback arg
@@ -96,20 +96,20 @@
 4. app steers left/right
 5. app triggers game over after readable survival window
 6. app retries to menu
-qa_playthrough_flag_targets=['/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/40629F0E-808A-4B80-B3A3-7C5002B3967D/Documents/qa_playthrough.flag', '/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/40629F0E-808A-4B80-B3A3-7C5002B3967D/qa_playthrough.flag']
+qa_playthrough_flag_targets=['/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/4C91505D-799D-49FF-A948-2BE53C47842B/Documents/qa_playthrough.flag', '/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/4C91505D-799D-49FF-A948-2BE53C47842B/qa_playthrough.flag']
 menu_screenshot: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png
 gameplay_screenshot: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/s | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/interaction_script.log |
 | playthrough_trigger_flag_written | Playthrough | PASS | QA playthrough flag targets:
-/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/40629F0E-808A-4B80-B3A3-7C5002B3967D/Documents/qa_playthrough.flag
-/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/40629F0E-808A-4B80-B3A3-7C5002B3967D/qa_playthrough.flag
+/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/4C91505D-799D-49FF-A948-2BE53C47842B/Documents/qa_playthrough.flag
+/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/4C91505D-799D-49FF-A948-2BE53C47842B/qa_playthrough.flag
  | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_playthrough_flag.txt |
-| playthrough_menu_screenshot_nonblank | Playthrough | PASS | {'exists': True, 'bytes': 79036, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 45} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png |
-| playthrough_gameplay_screenshot_nonblank | Playthrough | PASS | {'exists': True, 'bytes': 113693, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 76} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png |
-| playthrough_game_over_screenshot_nonblank | Playthrough | PASS | {'exists': True, 'bytes': 137255, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 223} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png |
+| playthrough_menu_screenshot_nonblank | Playthrough | PASS | {'exists': True, 'bytes': 78243, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 36} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png |
+| playthrough_gameplay_screenshot_nonblank | Playthrough | PASS | {'exists': True, 'bytes': 112399, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 75} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png |
+| playthrough_game_over_screenshot_nonblank | Playthrough | PASS | {'exists': True, 'bytes': 137096, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 223} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png |
 | playthrough_retry_screenshot_nonblank | Playthrough | PASS | {'exists': True, 'bytes': 82834, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 150} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png |
 | playthrough_retry_screenshot_has_ui_variance | Playthrough | PASS | {'exists': True, 'bytes': 82834, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 150} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png |
-| playthrough_menu_to_gameplay_changed | Playthrough | PASS | {'comparable': True, 'mean_abs_diff': 20.206, 'changed_ratio': 0.0611, 'sample_count': 12000, 'changed': True} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png |
-| playthrough_gameplay_to_game_over_changed | Playthrough | PASS | {'comparable': True, 'mean_abs_diff': 2.187, 'changed_ratio': 0.0105, 'sample_count': 12000, 'changed': True} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png |
+| playthrough_menu_to_gameplay_changed | Playthrough | PASS | {'comparable': True, 'mean_abs_diff': 20.542, 'changed_ratio': 0.0579, 'sample_count': 12000, 'changed': True} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png |
+| playthrough_gameplay_to_game_over_changed | Playthrough | PASS | {'comparable': True, 'mean_abs_diff': 1.659, 'changed_ratio': 0.0077, 'sample_count': 12000, 'changed': True} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png |
 | playthrough_game_over_to_retry_changed | Playthrough | PASS | {'comparable': True, 'mean_abs_diff': 8.411, 'changed_ratio': 0.0558, 'sample_count': 12000, 'changed': True} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png |
 | runtime_log_no_fatal_exception | Runtime | PASS | No fatal signature found. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/logs/ios_simulator_runtime.log |
 | compact_iphone_safe_area_compatibility | Compatibility | PASS | screen=640x480, safeAreaApplied=True. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json |

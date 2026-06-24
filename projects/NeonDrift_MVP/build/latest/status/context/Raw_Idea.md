@@ -1,17 +1,17 @@
 # Raw Idea
 
-raw_idea_page_id: 386b9e33-8429-81a7-be3f-ee50b169816e
+raw_idea_page_id: 389b9e33-8429-81f9-aac9-eac820cdd704
 project_name: NeonDrift_MVP
 idea_type: game
 target_platform: Unity iOS
 priority: high
-requested_by: codex-restart-test
+requested_by: codex-clean-retry-from-raw
 
 ## Raw Idea（原始想法）
 
-建立一個 iOS first 的 Unity 手機遊戲 MVP，名稱 NeonDrift_MVP。
-核心是短局霓虹漂移/閃避操作，玩家用手機觸控控制飛行器或光軌在高可讀性的賽道中生存、收集、累積分數。
-需要從 raw idea 經 define、planning、spec review、development、local build、QA。
-設計要考慮 iOS Human Interface Guidelines、icon、字體、背景、特效、相容機種、廣告收益但不能破壞核心體驗。
-QA 必須包含按鍵位置、按鍵尺寸、可點擊性、安全區、控制不重疊、核心遊戲物件、分數、暫停、失敗與重試功能。
-最終交付要包含 Unity 專案、iOS simulator 可測 build、QA 報告、交付文件與 Notion 可讀文件。
+建立 NeonDrift_MVP，一款 iOS-first Unity 霓虹 arcade drifting 手機遊戲，用來完整驗證 OpenClaw pipeline。
+需求必須從 Raw Idea 正規化到 Define，再進 Planning 0-12、Spec Review、Development、Local Unity iOS Simulator Build、QA、Delivery。
+Planning 與 Spec Review 必須先規劃遊戲深度與畫面華麗度，不能到 development 才補。必須明確定義 icon、字體、背景、特效、音效、haptics、HUD、按鍵尺寸/位置/safe area、相容性機種與效能目標。
+Development 必須產出 Unity 6000.0.77f1 專案，支援 iOS simulator，本機 Unity batchmode 可以 build，不需要人工開 Unity Hub。
+QA 必須包含但不限於：按鍵是否可點、Start/Retry/Pause/Left/Right 功能、畫面是否可理解、遊戲物件是否有動態、玩家是否知道怎麼玩、早期 drift lost 是否合理、錄影/截圖/evidence、Unity Test Runner 結果。
+Build row 應由 watcher/host runner 自動從 not start 開始，不需要人工改成 processing。

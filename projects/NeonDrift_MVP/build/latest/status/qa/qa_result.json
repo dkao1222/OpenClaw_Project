@@ -685,7 +685,7 @@
       "area": "Launch",
       "status": "PASS",
       "expected": "Simulator launch command ran and returned launch information.",
-      "actual": "com.DefaultCompany.NeonDrift: 69988",
+      "actual": "com.DefaultCompany.NeonDrift: 71282",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt",
       "severity": "none"
     },
@@ -694,7 +694,7 @@
       "area": "UI/UX",
       "status": "PASS",
       "expected": "Initial simulator screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 79036, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 45}",
+      "actual": "{'exists': True, 'bytes': 78243, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 36}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png",
       "severity": "none"
     },
@@ -703,7 +703,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Simulator playthrough video exists and is large enough to contain real footage.",
-      "actual": "{'exists': True, 'bytes': 2988558}",
+      "actual": "{'exists': True, 'bytes': 3018596}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/simulator_playthrough.mp4",
       "severity": "none"
     },
@@ -712,7 +712,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Playthrough interaction script log exists.",
-      "actual": "QA playthrough script:\n1. write qa_playthrough.flag into simulator app data container\n2. launch app with -qaPlaythrough fallback arg\n3. app auto-starts after the menu has loaded\n4. app steers left/right\n5. app triggers game over after readable survival window\n6. app retries to menu\nqa_playthrough_flag_targets=['/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/40629F0E-808A-4B80-B3A3-7C5002B3967D/Documents/qa_playthrough.flag', '/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/40629F0E-808A-4B80-B3A3-7C5002B3967D/qa_playthrough.flag']\nmenu_screenshot: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png\ngameplay_screenshot: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/s",
+      "actual": "QA playthrough script:\n1. write qa_playthrough.flag into simulator app data container\n2. launch app with -qaPlaythrough fallback arg\n3. app auto-starts after the menu has loaded\n4. app steers left/right\n5. app triggers game over after readable survival window\n6. app retries to menu\nqa_playthrough_flag_targets=['/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/4C91505D-799D-49FF-A948-2BE53C47842B/Documents/qa_playthrough.flag', '/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/4C91505D-799D-49FF-A948-2BE53C47842B/qa_playthrough.flag']\nmenu_screenshot: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png\ngameplay_screenshot: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/s",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/interaction_script.log",
       "severity": "none"
     },
@@ -721,7 +721,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "QA playthrough trigger flag is written before simulator launch.",
-      "actual": "QA playthrough flag targets:\n/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/40629F0E-808A-4B80-B3A3-7C5002B3967D/Documents/qa_playthrough.flag\n/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/40629F0E-808A-4B80-B3A3-7C5002B3967D/qa_playthrough.flag\n",
+      "actual": "QA playthrough flag targets:\n/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/4C91505D-799D-49FF-A948-2BE53C47842B/Documents/qa_playthrough.flag\n/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CCB1E793-CED4-4FCD-BF73-321AAEA77AB9/data/Containers/Data/Application/4C91505D-799D-49FF-A948-2BE53C47842B/qa_playthrough.flag\n",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_playthrough_flag.txt",
       "severity": "none"
     },
@@ -730,7 +730,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Menu screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 79036, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 45}",
+      "actual": "{'exists': True, 'bytes': 78243, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 36}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png",
       "severity": "none"
     },
@@ -739,7 +739,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Gameplay screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 113693, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 76}",
+      "actual": "{'exists': True, 'bytes': 112399, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 75}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png",
       "severity": "none"
     },
@@ -748,7 +748,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Game-over screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 137255, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 223}",
+      "actual": "{'exists': True, 'bytes': 137096, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 223}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png",
       "severity": "none"
     },
@@ -775,7 +775,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Menu to gameplay screenshots must visibly differ after Start is triggered.",
-      "actual": "{'comparable': True, 'mean_abs_diff': 20.206, 'changed_ratio': 0.0611, 'sample_count': 12000, 'changed': True}",
+      "actual": "{'comparable': True, 'mean_abs_diff': 20.542, 'changed_ratio': 0.0579, 'sample_count': 12000, 'changed': True}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png",
       "severity": "none"
     },
@@ -784,7 +784,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Gameplay to game-over screenshots must visibly differ after failure is triggered.",
-      "actual": "{'comparable': True, 'mean_abs_diff': 2.187, 'changed_ratio': 0.0105, 'sample_count': 12000, 'changed': True}",
+      "actual": "{'comparable': True, 'mean_abs_diff': 1.659, 'changed_ratio': 0.0077, 'sample_count': 12000, 'changed': True}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png",
       "severity": "none"
     },
