@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/design/Game_Design_Document.md
-- PASS file.size_limit.docs/design/Game_Design_Document.md: 5072<=8000
+- PASS file.size_limit.docs/design/Game_Design_Document.md: 5333<=8000
 - PASS file.no_prompt_constraints.docs/design/Game_Design_Document.md
 - PASS file.bilingual_order.docs/design/Game_Design_Document.md
 - PASS file.bilingual_distinct.docs/design/Game_Design_Document.md

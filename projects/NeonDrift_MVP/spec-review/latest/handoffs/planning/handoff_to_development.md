@@ -20,6 +20,10 @@ knowledge_cards:
 source_documents:
   - docs/product/MVP_PRD.md
   - docs/design/Game_Design_Document.md
+  - docs/design/Moment_to_Moment_Gameplay.md
+  - docs/design/Enemy_Pattern_Spec.md
+  - docs/design/Player_Skill_Reward_Spec.md
+  - docs/design/Human_Playtest_Scenarios.md
   - docs/design/Core_Loop_Spec.md
   - docs/design/Mechanics_Rules.md
   - docs/design/GDD_Mechanics_Draft.md
