@@ -7,16 +7,27 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Product Vision and Purpose
 
-建立一個可在 iOS simulator 本機 build 並可 QA 驗證的 NeonDrift MVP，驗證 OpenClaw 可以把手機端/Notion 的需求轉成規劃、規格、Unity 專案、build、QA 與交付證據。
+由 Raw Idea 正規化：建立 NeonDrift_MVP，一款 iOS-first Unity 霓虹 arcade drifting 手機遊戲，用來完整驗證 OpenClaw pipeline。
+需求必須從 Raw Idea 正規化到 Define，再進 Planning 0-12、Spec Review、Development、Local Unity iOS Simulator Build、QA、Delivery。
+Planning 與 Spec Review 必須先規劃遊戲深度與畫面華麗度，不能到 development 才補。必須明確定義 icon、字體、背景、特效、音效、haptics、HUD、按鍵尺寸/位置/safe area、相容性機種與效能目標。
+Development 必須產出 Unity 6000.0.77f1 專案，支援 iOS simulator，本機 Unity batchmode 可以 build
 
 ## Target Audience
 
-喜歡短局、單手操作、霓虹視覺、快速重試 arcade 遊戲的手機玩家；也服務於需要快速驗證 game pipeline 的獨立開發者。
+由 Raw Idea 推導目標受眾；若原始想法未指定，先假設為 iOS 手機端使用者/玩家，並在 Define 階段標記需驗證。
 
 ## Core Value
 
-1. 一眼能懂的 drift 操作與立即重試。 2. 有視覺層次、特效、音效/震動與清楚 HUD 的短局體驗。 3. 全流程可追蹤：Notion、Git、Unity build、QA evidence 與 delivery manifest。
+由 Raw Idea 提煉 1-3 個核心價值；初始假設是操作/使用流程清楚、短時間可驗證、iOS 交付可測。
 
 ## Development Request
 
-Run full game planning from Define output. Requirements: iOS-first Unity 6000.0.77f1, auto Build later, visual richness planned before development, game depth planned before development, QA evidence for buttons and gameplay, Notion/Git delivery. Build must auto-start from not start when auto_build_allowed is present; do not require manual Build status change downstream.
+Normalize this raw idea into canonical product definition for the OpenClaw pipeline.
+Preserve the original idea, infer only conservative assumptions, and mark unresolved items as open questions in Define outputs.
+Raw idea type: game
+Priority: high
+
+Raw idea:
+建立 NeonDrift_MVP，一款 iOS-first Unity 霓虹 arcade drifting 手機遊戲，用來完整驗證 OpenClaw pipeline。
+需求必須從 Raw Idea 正規化到 Define，再進 Planning 0-12、Spec Review、Development、Local Unity iOS Simulator Build、QA、Delivery。
+Planning 與 Spec Review 必須先規劃遊戲深度與畫面華麗度，不能到 development 才補。必須明確
