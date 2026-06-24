@@ -293,11 +293,6 @@ public static class BuildPipelineRunner
         cameraObject.tag = "MainCamera";
         cameraObject.transform.position = new Vector3(0f, 0f, -10f);
 
-        EditorSceneManager.SaveScene(scene, ScenePath);
-        EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(ScenePath, true) };
-        AssetDatabase.SaveAssets();
-        return;
-
         CreateVisualQuad("Neon Backdrop", new Vector3(0f, 0f, 1f), new Vector3(7.2f, 12.6f, 1f), new Color(0.015f, 0.02f, 0.04f));
         CreateVisualQuad("Left Track Rail", new Vector3(-3.35f, 0f, 0f), new Vector3(0.04f, 12f, 1f), new Color(0.0f, 0.9f, 1f));
         CreateVisualQuad("Right Track Rail", new Vector3(3.35f, 0f, 0f), new Vector3(0.04f, 12f, 1f), new Color(1f, 0.1f, 0.9f));
