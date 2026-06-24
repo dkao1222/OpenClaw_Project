@@ -16,6 +16,7 @@
 
 ### 失敗後回流
 - 失敗後必須顯示原因、分數、最佳分數、combo peak、明確 retry button；retry 後 3 秒內重新出現第一個互動事件。
+- Retry 必須產生人眼可辨識的 after-retry visual delta：failure overlay 消失、score/timer/run state 重置、玩家或賽道重新動起來，且 retry 後截圖/影片需明顯不同於 game-over 畫面。
 - 如果玩家失敗時沒有按鍵或移動，系統要以 tutorial hint 告知需要左右漂移，不能只顯示泛用 Drift Lost。
 
 ## English
@@ -34,4 +35,5 @@
 
 ### Post-failure Return
 - Failure must show cause, score, best score, combo peak, and a clear retry button; retry must return to the first interaction event within 3 seconds.
+- Retry must create a human-visible after-retry visual delta: failure overlay removed, score/timer/run state reset, player or track motion resumes, and the after-retry screenshot/video differs clearly from the game-over frame.
 - If the player fails without input or visible movement, the system must show a tutorial hint about left/right drifting instead of only a generic Drift Lost message.

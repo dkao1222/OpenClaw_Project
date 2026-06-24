@@ -12,7 +12,7 @@
 
 ### 互動驗收
 - QA 需錄影驗證 Start、Retry、Pause、Left、Right、Settings/Sound toggle；每個功能要有前後狀態差異，而不是只有按鈕被點擊。
-- 對遊戲功能的驗收包含：敵人/障礙接近、玩家可躲避、boost 可收集、score 會變、失敗原因可理解、retry 後 gameplay 重新動起來。
+- 對遊戲功能的驗收包含：敵人/障礙接近、玩家可躲避、boost 可收集、score 會變、失敗原因可理解、retry 後 gameplay 重新動起來，且 game-over 到 after-retry 的視覺差異足以被影片判讀。
 
 ## English
 
@@ -26,4 +26,4 @@
 
 ### Interaction Acceptance
 - QA must record Start, Retry, Pause, Left, Right, and Settings/Sound toggle; every function needs a before/after state difference, not only a clicked button.
-- Gameplay acceptance includes approaching enemies/hazards, player avoidance, collectible boost, changing score, understandable failure cause, and gameplay restarting after retry.
+- Gameplay acceptance includes approaching enemies/hazards, player avoidance, collectible boost, changing score, understandable failure cause, gameplay restarting after retry, and a video-readable visual difference between game-over and after-retry frames.

@@ -21,5 +21,5 @@ The game must be visually ric
 ## Development Request
 
 - snippet: Product Experience Contract from Define.
-Required markers: game design foundation, core mechanics, game loop, systems and tuning, level design, game terminology, term table, user-centric reverse deduction, MDA, vision lock, content architecture, player journey, shipping plan, human playability, visual richness, retry, audio feedback, evidence contract.
-Required game-quality markers: moment-to-moment gameplay, 10-seco
+Required markers: game design foundation, core mechanics, game loop, systems and tuning, level design, game terminology, term table, user-centric reverse deduction, MDA, vision lock, content architecture, player journey, shipping plan, human playability, visual richness, retry, after-retry visual delta, audio feedback, evidence contract.
+Required game-quality markers: moment-t
