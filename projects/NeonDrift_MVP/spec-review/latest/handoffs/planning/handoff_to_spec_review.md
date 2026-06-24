@@ -14,7 +14,12 @@ required_public_documents:
   - /home/node/.openclaw/workspace/public_document/GAME_PLANNING_DEPARTMENT.md
   - /home/node/.openclaw/workspace/public_document/GAME_SPEC_REVIEW_DEPARTMENT.md
   - /home/node/.openclaw/workspace/public_document/knowledge_base/game_quality/ROUTING.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_quality/VISUAL_ART_REFERENCE.md
   - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/ROUTING.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/GAME_DEV_BLACK_BOOK_REFERENCE.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/GDD_STRUCTURE_REFERENCE.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/GAME_MECHANICS_REFERENCE.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/GAME_TERMINOLOGY_REFERENCE.md
 source_documents:
   - status/context/stage12_context_pack.md
   - docs/design/Game_Design_Document.md

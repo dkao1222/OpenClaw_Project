@@ -10,6 +10,7 @@
 - PASS compatibility_target_present: chars=117
 - PASS output_expectation_present: chars=138
 - PASS stage_range_supported: define-full
+- PASS product_experience_contract_defined: define watcher injects canonical game-foundation/playability/visual/audio/evidence contract
 
 ## Result
 - status: passed

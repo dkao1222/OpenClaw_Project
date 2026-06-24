@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/design/Audio_Direction.md
-- PASS file.size_limit.docs/design/Audio_Direction.md: 3183<=8000
+- PASS file.size_limit.docs/design/Audio_Direction.md: 4107<=8000
 - PASS file.no_prompt_constraints.docs/design/Audio_Direction.md
 - PASS file.bilingual_order.docs/design/Audio_Direction.md
 - PASS file.bilingual_distinct.docs/design/Audio_Direction.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/design/Audio_Direction.md
 - PASS file.schema.docs/design/Audio_Direction.md
 - PASS file.readable.docs/design/Audio_Haptics_Event_Map.md
-- PASS file.size_limit.docs/design/Audio_Haptics_Event_Map.md: 3265<=8000
+- PASS file.size_limit.docs/design/Audio_Haptics_Event_Map.md: 4189<=8000
 - PASS file.no_prompt_constraints.docs/design/Audio_Haptics_Event_Map.md
 - PASS file.bilingual_order.docs/design/Audio_Haptics_Event_Map.md
 - PASS file.bilingual_distinct.docs/design/Audio_Haptics_Event_Map.md
