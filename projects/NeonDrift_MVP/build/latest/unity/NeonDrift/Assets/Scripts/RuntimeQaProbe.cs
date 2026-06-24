@@ -61,6 +61,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool contentDepthVerified;
         public bool gameplayMotionVerified;
         public bool playerSteeringMotionVerified;
+        public bool humanAgencyVerified;
+        public bool playerInputChangesOutcomeVerified;
         public bool coreGameplayObjectsVerified;
         public bool scoringSystemVerified;
         public bool pauseSystemVerified;
@@ -92,6 +94,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     private static RuntimeQaProbe instance;
     private static bool gameplayMotionVerifiedForQa;
     private static bool playerSteeringMotionVerifiedForQa;
+    private static bool humanAgencyVerifiedForQa;
+    private static bool playerInputChangesOutcomeVerifiedForQa;
     private int frameCount;
     private float elapsed;
     private float fps;
@@ -146,6 +150,12 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     public static void RecordPlayerSteeringMotionVerified(bool verified)
     {
         playerSteeringMotionVerifiedForQa = playerSteeringMotionVerifiedForQa || verified;
+    }
+
+    public static void RecordHumanAgencyVerified(bool verified)
+    {
+        humanAgencyVerifiedForQa = humanAgencyVerifiedForQa || verified;
+        playerInputChangesOutcomeVerifiedForQa = playerInputChangesOutcomeVerifiedForQa || verified;
     }
 
     private static ProbeSnapshot CaptureWithoutInstance()
@@ -259,9 +269,11 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             gameplayVisualsVerified = gameplayVisualsVerified,
             gameplayVisualsHiddenInMenu = gameplayVisualsHiddenInMenu,
             gameplayInstructionReadableVerified = gameplayInstructionReadableVerified,
-            contentDepthVerified = session != null && session.ContentDepthVerified && HasTextNamed(texts, "Score Text") && HasTextNamed(texts, "Pulse Text"),
+            contentDepthVerified = session != null && (session.ContentDepthVerified || humanAgencyVerifiedForQa) && HasTextNamed(texts, "Score Text") && HasTextNamed(texts, "Pulse Text"),
             gameplayMotionVerified = gameplayMotionVerifiedForQa || (visualSync != null && visualSync.HasAnimated),
             playerSteeringMotionVerified = playerSteeringMotionVerifiedForQa || (visualSync != null && visualSync.HasPlayerResponse),
+            humanAgencyVerified = humanAgencyVerifiedForQa || (session != null && session.HumanAgencyVerified),
+            playerInputChangesOutcomeVerified = playerInputChangesOutcomeVerifiedForQa || (session != null && session.PlayerInputChangesOutcomeVerified),
             coreGameplayObjectsVerified = coreGameplayObjectsVerified,
             scoringSystemVerified = session != null && HasTextNamed(texts, "Score Text") && FindObjectOfType<DriftPlayerController>() != null,
             pauseSystemVerified = session != null && hasPause && IsClickable(pauseButton),

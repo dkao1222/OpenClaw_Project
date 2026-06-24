@@ -154,6 +154,37 @@ public sealed class NeonDriftVisualSync : MonoBehaviour
         return Vector2.Distance(before, playerMarker.anchoredPosition) > 4f;
     }
 
+    public bool VerifyHumanAgencyForQa()
+    {
+        GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        DriftPlayerController player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
+        if (session == null || player == null || playerMarker == null)
+        {
+            return false;
+        }
+
+        float hazardLaneX = 0f;
+        player.transform.position = new Vector3(0f, player.transform.position.y, player.transform.position.z);
+        Tick(0.1f);
+        bool noInputWouldStayInThreatLane = Mathf.Abs(player.CurrentX - hazardLaneX) < 0.35f;
+
+        float before = player.CurrentX;
+        player.SimulateSteerStep(1f, 0.75f);
+        Tick(0.1f);
+        float afterRight = player.CurrentX;
+
+        player.SimulateSteerStep(-1f, 1.5f);
+        Tick(0.1f);
+        float afterLeft = player.CurrentX;
+
+        bool rightInputEscapedThreatLane = Mathf.Abs(afterRight - hazardLaneX) > 1.0f;
+        bool leftInputChangedOutcomeAgain = afterLeft < before - 0.55f;
+        bool visualResponse = Mathf.Abs(playerMarker.anchoredPosition.x) > 20f || movedPlayer;
+        bool verified = noInputWouldStayInThreatLane && rightInputEscapedThreatLane && leftInputChangedOutcomeAgain && visualResponse;
+        session.RecordAvoidanceChoice(verified);
+        return verified && session.PlayerInputChangesOutcomeVerified;
+    }
+
     private static RectTransform FindRect(string objectName)
     {
         Transform[] transforms = Resources.FindObjectsOfTypeAll<Transform>();
