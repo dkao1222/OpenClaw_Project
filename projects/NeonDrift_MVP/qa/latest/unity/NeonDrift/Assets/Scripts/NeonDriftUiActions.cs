@@ -7,9 +7,19 @@ public sealed class NeonDriftUiActions : MonoBehaviour
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject gameplayHudRoot;
     [SerializeField] private Text settingsButtonLabel;
+    [SerializeField] private AudioSource audioSource;
+
+    private bool soundEnabled;
+    private bool audioFeedbackPlayed;
+    private AudioClip soundToggleClip;
+
+    public bool SoundEnabled => soundEnabled;
+    public bool AudioFeedbackPlayed => audioFeedbackPlayed;
+    public bool AudioSourcePresent => audioSource != null;
 
     private void Awake()
     {
+        EnsureAudioSystem();
         InitializeBindings();
     }
 
@@ -18,7 +28,45 @@ public sealed class NeonDriftUiActions : MonoBehaviour
         mainMenuPanel = menuPanel;
         gameplayHudRoot = hudRoot;
         settingsButtonLabel = settingsLabel;
+        EnsureAudioSystem();
         InitializeBindings();
+    }
+
+    private void EnsureAudioSystem()
+    {
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
+        }
+
+        audioSource.playOnAwake = false;
+        audioSource.loop = false;
+        audioSource.volume = 0.8f;
+        if (soundToggleClip == null)
+        {
+            soundToggleClip = CreateToneClip("SoundToggleTone", 880f, 0.12f);
+        }
+    }
+
+    private static AudioClip CreateToneClip(string clipName, float frequency, float duration)
+    {
+        int sampleRate = 44100;
+        int sampleCount = Mathf.CeilToInt(sampleRate * duration);
+        float[] samples = new float[sampleCount];
+        for (int index = 0; index < sampleCount; index += 1)
+        {
+            float t = index / (float)sampleRate;
+            float envelope = Mathf.Clamp01(1f - (t / duration));
+            samples[index] = Mathf.Sin(2f * Mathf.PI * frequency * t) * 0.35f * envelope;
+        }
+
+        AudioClip clip = AudioClip.Create(clipName, sampleCount, 1, sampleRate, false);
+        clip.SetData(samples, 0);
+        return clip;
     }
 
     private void InitializeBindings()
@@ -138,9 +186,17 @@ public sealed class NeonDriftUiActions : MonoBehaviour
 
     public void ShowSettingsFeedback()
     {
+        soundEnabled = !soundEnabled;
         if (settingsButtonLabel != null)
         {
-            settingsButtonLabel.text = "SOUND ON";
+            settingsButtonLabel.text = soundEnabled ? "SOUND ON" : "SOUND OFF";
+        }
+
+        EnsureAudioSystem();
+        if (soundEnabled && audioSource != null && soundToggleClip != null)
+        {
+            audioSource.PlayOneShot(soundToggleClip);
+            audioFeedbackPlayed = true;
         }
     }
 
@@ -151,8 +207,11 @@ public sealed class NeonDriftUiActions : MonoBehaviour
 
     public void Retry()
     {
-        GameSessionController.Instance?.Retry();
-        SetMenuVisible(true);
-        SetGameplayHudVisible(false);
+        GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        session?.Retry();
+        SetMenuVisible(false);
+        SetGameplayHudVisible(true);
+        session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        session?.StartGame();
     }
 }

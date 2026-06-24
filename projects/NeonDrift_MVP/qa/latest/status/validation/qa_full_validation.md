@@ -1,7 +1,7 @@
 # Game QA Validation Report
 
-- session_id: notion-NeonDrift_MVP-qa-qa-full-202606241416-hazard-approach-qa-full
-- output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
+- session_id: notion-NeonDrift_MVP-qa-qa-full-20260624152259-qa-full
+- output_folder: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 
 ## Checks
 - PASS file_exists.status/qa/full_qa_report.md
@@ -11,11 +11,11 @@
 - PASS file_exists.docs/delivery/iOS_QA_Delivery.md
 - PASS file_exists.status/agent_heartbeats/qa-playtester.md
 - PASS qa_result.valid_json
-- PASS qa_result.checks_present: 107
-- PASS qa_result.required_button_and_gameplay_checks_present: 64
+- PASS qa_result.checks_present: 111
+- PASS qa_result.required_button_and_gameplay_checks_present: 68
 - PASS qa_result.valid_check_statuses
-- PASS qa_result.evidence_paths_exist: 122 checked
-- PASS qa_result.checks_total_matches: 107
+- PASS qa_result.evidence_paths_exist: 126 checked
+- PASS qa_result.checks_total_matches: 111
 - PASS qa_result.checks_failed_matches: 0
 - PASS qa_result.checks_blocked_matches: 0
 - PASS qa_result.overall_status_passed_when_all_pass

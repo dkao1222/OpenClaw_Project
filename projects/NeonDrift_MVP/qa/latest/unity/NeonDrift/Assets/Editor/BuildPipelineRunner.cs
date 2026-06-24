@@ -26,6 +26,8 @@ public static class BuildPipelineRunner
         bool hazardApproachMotionVerified = VerifyHazardApproachMotion();
         bool playerSteeringMotionVerified = VerifyPlayerSteeringMotion();
         bool humanAgencyVerified = VerifyHumanAgency();
+        bool retryRestartsGameplayVerified = VerifyRetryRestartsGameplay();
+        bool soundToggleAudioVerified = VerifySoundToggleAudio();
         EnsureScene();
         NeonDriftRuntimeBootstrap.EnsureRuntimeScene();
         string probeJson = RuntimeQaProbe.CaptureJson();
@@ -72,6 +74,8 @@ public static class BuildPipelineRunner
                 ("HazardApproachMotionIsVerified", hazardApproachMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"hazardApproachMotionVerified\": true")),
                 ("PlayerSteeringMotionIsVerified", playerSteeringMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"playerSteeringMotionVerified\": true")),
                 ("HumanAgencyChangesOutcome", humanAgencyVerified && RuntimeQaProbe.CaptureJson().Contains("\"humanAgencyVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"playerInputChangesOutcomeVerified\": true")),
+                ("RetryRestartsGameplay", retryRestartsGameplayVerified && RuntimeQaProbe.CaptureJson().Contains("\"retryRestartsGameplayVerified\": true")),
+                ("SoundToggleAudioVerified", soundToggleAudioVerified && RuntimeQaProbe.CaptureJson().Contains("\"soundToggleAudioVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"audioSourcePresent\": true")),
                 ("StartButtonFlowVerified", startButtonFlowVerified),
                 ("EarlyGameOverIsProtected", earlyGameOverIsProtected)
             }
@@ -182,6 +186,36 @@ public static class BuildPipelineRunner
         return verified;
     }
 
+    private static bool VerifyRetryRestartsGameplay()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        if (session == null || uiActions == null)
+        {
+            return false;
+        }
+
+        uiActions.StartGame();
+        session.GameOver();
+        uiActions.Retry();
+        string json = RuntimeQaProbe.CaptureJson();
+        return session.HasStarted && !session.IsGameOver && Mathf.Approximately(Time.timeScale, 1f) && json.Contains("\"screenState\": \"gameplay\"");
+    }
+
+    private static bool VerifySoundToggleAudio()
+    {
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        if (uiActions == null)
+        {
+            return false;
+        }
+
+        uiActions.ShowSettingsFeedback();
+        bool verified = uiActions.SoundEnabled && uiActions.AudioFeedbackPlayed && uiActions.AudioSourcePresent;
+        RuntimeQaProbe.RecordSoundToggleAudioVerified(verified, uiActions.AudioSourcePresent);
+        return verified;
+    }
+
     public static void BuildIOS()
     {
         PlayerSettings.iOS.sdkVersion = iOSSdkVersion.DeviceSDK;
@@ -261,11 +295,6 @@ public static class BuildPipelineRunner
         cameraObject.tag = "MainCamera";
         cameraObject.transform.position = new Vector3(0f, 0f, -10f);
 
-        EditorSceneManager.SaveScene(scene, ScenePath);
-        EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(ScenePath, true) };
-        AssetDatabase.SaveAssets();
-        return;
-
         CreateVisualQuad("Neon Backdrop", new Vector3(0f, 0f, 1f), new Vector3(7.2f, 12.6f, 1f), new Color(0.015f, 0.02f, 0.04f));
         CreateVisualQuad("Left Track Rail", new Vector3(-3.35f, 0f, 0f), new Vector3(0.04f, 12f, 1f), new Color(0.0f, 0.9f, 1f));
         CreateVisualQuad("Right Track Rail", new Vector3(3.35f, 0f, 0f), new Vector3(0.04f, 12f, 1f), new Color(1f, 0.1f, 0.9f));
@@ -278,6 +307,7 @@ public static class BuildPipelineRunner
         var session = new GameObject("NeonDrift Session");
         session.AddComponent<GameSessionController>();
         session.AddComponent<RuntimeQaProbe>();
+        session.AddComponent<NeonDriftQaPlaythrough>();
         var spawner = session.AddComponent<HazardSpawner>();
 
         var player = GameObject.CreatePrimitive(PrimitiveType.Cube);

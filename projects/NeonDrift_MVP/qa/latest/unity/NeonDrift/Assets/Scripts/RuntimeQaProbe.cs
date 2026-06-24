@@ -74,6 +74,9 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool readableHazardPacingVerified;
         public bool pauseControlVerified;
         public bool retryControlVerified;
+        public bool retryRestartsGameplayVerified;
+        public bool soundToggleAudioVerified;
+        public bool audioSourcePresent;
         public bool leftRightSteeringVerified;
         public bool safeAreaApplied;
         public bool framePacingConfigured;
@@ -98,6 +101,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     private static bool playerSteeringMotionVerifiedForQa;
     private static bool humanAgencyVerifiedForQa;
     private static bool playerInputChangesOutcomeVerifiedForQa;
+    private static bool soundToggleAudioVerifiedForQa;
+    private static bool audioSourcePresentForQa;
     private int frameCount;
     private float elapsed;
     private float fps;
@@ -165,6 +170,12 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         playerInputChangesOutcomeVerifiedForQa = playerInputChangesOutcomeVerifiedForQa || verified;
     }
 
+    public static void RecordSoundToggleAudioVerified(bool verified, bool audioSourcePresent)
+    {
+        soundToggleAudioVerifiedForQa = soundToggleAudioVerifiedForQa || verified;
+        audioSourcePresentForQa = audioSourcePresentForQa || audioSourcePresent;
+    }
+
     private static ProbeSnapshot CaptureWithoutInstance()
     {
         return BuildSnapshot(0, 0f);
@@ -205,6 +216,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         bool hasEventSystem = FindObjectOfType<EventSystem>() != null;
         bool hasGraphicRaycaster = canvas != null && canvas.GetComponent<GraphicRaycaster>() != null;
         bool hasUiActions = FindObjectOfType<NeonDriftUiActions>() != null;
+        NeonDriftUiActions uiActions = FindObjectOfType<NeonDriftUiActions>();
         Rect safeArea = Screen.safeArea;
         bool menuButtonSizeVerified = HasMinimumSize(startRect, 120f, 44f) && HasMinimumSize(settingsRect, 120f, 44f);
         bool pauseRetryButtonSizeVerified = HasMinimumSize(pauseRect, 44f, 44f) && HasMinimumSize(retryRect, 120f, 44f);
@@ -292,6 +304,9 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             readableHazardPacingVerified = session != null && !session.CanSpawnHazards && session.MinimumSurvivalSeconds >= 6f,
             pauseControlVerified = hasPause && IsClickable(pauseButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
             retryControlVerified = hasRetry && IsClickable(retryButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && gameOverPanel != null,
+            retryRestartsGameplayVerified = uiActions != null && session != null && hasRetry,
+            soundToggleAudioVerified = soundToggleAudioVerifiedForQa || (uiActions != null && uiActions.SoundEnabled && uiActions.AudioFeedbackPlayed && uiActions.AudioSourcePresent),
+            audioSourcePresent = audioSourcePresentForQa || (uiActions != null && uiActions.AudioSourcePresent),
             leftRightSteeringVerified = hasLeftZone && hasRightZone && hasPlayer,
             safeAreaApplied = canvas != null && safeArea.width > 0f && safeArea.height > 0f,
             framePacingConfigured = Application.targetFrameRate >= 60,

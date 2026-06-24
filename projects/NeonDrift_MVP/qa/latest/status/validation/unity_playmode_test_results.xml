@@ -1,4 +1,4 @@
-<test-run testcasecount="27" result="Passed" total="27" passed="27" failed="0">
+<test-run testcasecount="29" result="Passed" total="29" passed="29" failed="0">
   <test-suite type="TestSuite" name="NeonDrift.PlayMode" result="Passed">
     <test-case name="MainSceneHasCanvas" result="Passed" />
     <test-case name="MainSceneHasHudController" result="Passed" />
@@ -25,6 +25,8 @@
     <test-case name="HazardApproachMotionIsVerified" result="Passed" />
     <test-case name="PlayerSteeringMotionIsVerified" result="Passed" />
     <test-case name="HumanAgencyChangesOutcome" result="Passed" />
+    <test-case name="RetryRestartsGameplay" result="Passed" />
+    <test-case name="SoundToggleAudioVerified" result="Passed" />
     <test-case name="StartButtonFlowVerified" result="Passed" />
     <test-case name="EarlyGameOverIsProtected" result="Passed" />
   </test-suite>

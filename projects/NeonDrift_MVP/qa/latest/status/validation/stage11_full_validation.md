@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/review/Planning_Gap_Review.md
-- PASS file.size_limit.docs/review/Planning_Gap_Review.md: 3224<=8000
+- PASS file.size_limit.docs/review/Planning_Gap_Review.md: 4148<=8000
 - PASS file.no_prompt_constraints.docs/review/Planning_Gap_Review.md
 - PASS file.bilingual_order.docs/review/Planning_Gap_Review.md
 - PASS file.bilingual_distinct.docs/review/Planning_Gap_Review.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/review/Planning_Gap_Review.md
 - PASS file.schema.docs/review/Planning_Gap_Review.md
 - PASS file.readable.docs/review/Planning_Risk_Register.md
-- PASS file.size_limit.docs/review/Planning_Risk_Register.md: 3251<=8000
+- PASS file.size_limit.docs/review/Planning_Risk_Register.md: 4175<=8000
 - PASS file.no_prompt_constraints.docs/review/Planning_Risk_Register.md
 - PASS file.bilingual_order.docs/review/Planning_Risk_Register.md
 - PASS file.bilingual_distinct.docs/review/Planning_Risk_Register.md

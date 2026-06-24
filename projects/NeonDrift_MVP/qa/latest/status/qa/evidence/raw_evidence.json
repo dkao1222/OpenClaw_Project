@@ -48,17 +48,17 @@
         "com.DefaultCompany.NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "ry/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/8646F9AE-2803-481E-A669-B6C7D8AC9BDE/NeonDrift.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/8646F9AE-2803-481E-A669-B6C7D8AC9BDE/\";\n    CFBundleDisplayName = NeonDrift;\n    CFBundleExecutable = NeonDrift;\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift\";\n    CFBundleName = NeonDrift;\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/E635FD26-721B-4262-AFB4-29CD600775AE/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/8646F9AE-2803-481E-A669-B6C7D8AC9BDE/NeonDrift.app\";\n    SBAppTags =     (\n    );\n}\n",
+      "stdout_tail": "ry/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/42E2F0D0-DB9C-4D3E-82DD-D63C82E793CC/NeonDrift.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/42E2F0D0-DB9C-4D3E-82DD-D63C82E793CC/\";\n    CFBundleDisplayName = NeonDrift;\n    CFBundleExecutable = NeonDrift;\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift\";\n    CFBundleName = NeonDrift;\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/F12119FD-F5F6-4102-9993-0BAF7895E4FE/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/42E2F0D0-DB9C-4D3E-82DD-D63C82E793CC/NeonDrift.app\";\n    SBAppTags =     (\n    );\n}\n",
       "stderr_tail": ""
     },
     {
       "label": "installed_app_binary_file",
       "command": [
         "file",
-        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/8646F9AE-2803-481E-A669-B6C7D8AC9BDE/NeonDrift.app/NeonDrift"
+        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/42E2F0D0-DB9C-4D3E-82DD-D63C82E793CC/NeonDrift.app/NeonDrift"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/8646F9AE-2803-481E-A669-B6C7D8AC9BDE/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/42E2F0D0-DB9C-4D3E-82DD-D63C82E793CC/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64\n",
       "stderr_tail": ""
     },
     {
@@ -85,7 +85,7 @@
         "data"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/E635FD26-721B-4262-AFB4-29CD600775AE\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/F12119FD-F5F6-4102-9993-0BAF7895E4FE\n",
       "stderr_tail": ""
     },
     {
@@ -100,7 +100,7 @@
         "-qaPlaythrough"
       ],
       "exit_code": 0,
-      "stdout_tail": "com.DefaultCompany.NeonDrift: 63500\n",
+      "stdout_tail": "com.DefaultCompany.NeonDrift: 86703\n",
       "stderr_tail": ""
     },
     {
@@ -196,7 +196,7 @@
         "compact"
       ],
       "exit_code": 0,
-      "stdout_tail": "onSnapshotManifestImpl: 0x10bf7b200> [com.DefaultCompany.NeonDrift] Deleting snapshot <XBApplicationSnapshot: 0x12917ad80; …C0C22D9D4B42> [com.DefaultCompany.NeonDrift] for reason: _contentType: GeneratedDefault(1)\n2026-06-24 22:18:32.444 Df SpringBoard[58151:10bca0] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10bf7b200> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-24 22:18:33.542 Df SpringBoard[58151:10bc98] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10bf7b200> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-24 22:18:41.776 Df log[63580:0] [com.apple.log:] log run noninteractively, parent: 58142 (launchd_sim), args: 'log' 'show' '--last' '3m' '--predicate' 'process == \"NeonDrift\" OR process == \"NeonDrift\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift\" OR eventMessage CONTAINS \"NeonDrift\"' '--style'\n",
+      "stdout_tail": "invalid snapshot <XBApplicationSnapshot: 0x12c977100; …BFBF6BEF9763> [com.DefaultCompany.NeonDrift]\n invalidReason: expired. expirationDate: 0001-01-01 00:00:00 +0000; how long ago (seconds): 63918084191.921234\n2026-06-24 23:23:11.919 Df SpringBoard[58151:155fc1] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10bf7b200> [com.DefaultCompany.NeonDrift] Deleting snapshot <XBApplicationSnapshot: 0x12c977100; …BFBF6BEF9763> [com.DefaultCompany.NeonDrift] for reason: _contentType: GeneratedDefault(1)\n2026-06-24 23:23:11.919 Df SpringBoard[58151:155fc1] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10bf7b200> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n2026-06-24 23:23:13.068 Df SpringBoard[58151:155fc2] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10bf7b200> [com.DefaultCompany.NeonDrift] We don't have any snapshots, so we're clearing our manifest data.\n",
       "stderr_tail": "getpwuid_r did not find a match for uid 501\n"
     }
   ],
