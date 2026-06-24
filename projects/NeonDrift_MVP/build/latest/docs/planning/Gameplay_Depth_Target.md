@@ -15,7 +15,7 @@
 - 每個節奏段要有可被截圖/影片辨識的視覺提示，避免玩家只看到同一張背景。
 
 ### 不可接受狀態
-- 不可出現敵人不前進、畫面無可互動物件、retry 後不動、sound on 無聲、失敗原因不明、Start 後沒有 gameplay 事件等狀態。
+- 不可出現敵人不前進、畫面無可互動物件、retry 後不動、retry 後畫面與 game-over 幾乎相同、sound on 無聲、失敗原因不明、Start 後沒有 gameplay 事件等狀態。
 - QA 若錄到 10 秒以上沒有新威脅、收集物、分數原因或操作回饋，整體應判定 fail，並回到 build/development 修正。
 
 ## English
@@ -33,5 +33,5 @@
 - Each pacing segment needs screenshot/video-visible cues so the player never sees the same background state for the whole run.
 
 ### Unacceptable States
-- Unacceptable states include enemies not approaching, no interactable object on screen, retry not moving, sound on with no sound, unclear fail cause, and no gameplay event after Start.
+- Unacceptable states include enemies not approaching, no interactable object on screen, retry not moving, retry looking nearly identical to game-over, sound on with no sound, unclear fail cause, and no gameplay event after Start.
 - If QA records more than 10 seconds without new threat, collectible, score reason, or input feedback, the whole stage should fail and return to build/development fixes.
