@@ -3,9 +3,9 @@ using UnityEngine;
 public sealed class HazardSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject hazardPrefab;
-    [SerializeField] private float spawnInterval = 1.35f;
-    [SerializeField] private float initialSpawnDelay = 2.5f;
-    [SerializeField] private float fallSpeed = 2.8f;
+    [SerializeField] private float spawnInterval = 1.05f;
+    [SerializeField] private float initialSpawnDelay = 1.2f;
+    [SerializeField] private float fallSpeed = 4.8f;
     [SerializeField] private Vector2 xRange = new Vector2(-2.8f, 2.8f);
 
     private float timer = 2.5f;
@@ -59,15 +59,19 @@ public sealed class HazardSpawner : MonoBehaviour
 public sealed class HazardMover : MonoBehaviour
 {
     private float speed;
+    private Vector3 baseScale;
 
     public void Initialize(float fallSpeed)
     {
         speed = fallSpeed;
+        baseScale = transform.localScale;
     }
 
     private void Update()
     {
         transform.position += Vector3.down * speed * Time.deltaTime;
+        float approach = Mathf.InverseLerp(6.2f, -3.6f, transform.position.y);
+        transform.localScale = baseScale * Mathf.Lerp(0.75f, 1.35f, approach);
         if (transform.position.y < -6.5f)
         {
             Destroy(gameObject);

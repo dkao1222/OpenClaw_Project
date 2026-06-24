@@ -3,11 +3,11 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260624135735-retry2-skipagent
+- run_id: notion-NeonDrift_MVP-qa-qa-full-202606241416-hazard-approach
 - 交付狀態: ready
 - QA 狀態: passed
 - Release candidate: ready
-- checks_total: 105
+- checks_total: 107
 - checks_failed: 0
 - checks_blocked: 0
 - bundle_id: com.DefaultCompany.NeonDrift

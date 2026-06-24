@@ -51,6 +51,7 @@
     "gameplayInstructionReadableVerified": true,
     "contentDepthVerified": true,
     "gameplayMotionVerified": true,
+    "hazardApproachMotionVerified": true,
     "playerSteeringMotionVerified": true,
     "humanAgencyVerified": true,
     "playerInputChangesOutcomeVerified": true,

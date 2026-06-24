@@ -60,6 +60,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool gameplayInstructionReadableVerified;
         public bool contentDepthVerified;
         public bool gameplayMotionVerified;
+        public bool hazardApproachMotionVerified;
         public bool playerSteeringMotionVerified;
         public bool humanAgencyVerified;
         public bool playerInputChangesOutcomeVerified;
@@ -93,6 +94,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
 
     private static RuntimeQaProbe instance;
     private static bool gameplayMotionVerifiedForQa;
+    private static bool hazardApproachMotionVerifiedForQa;
     private static bool playerSteeringMotionVerifiedForQa;
     private static bool humanAgencyVerifiedForQa;
     private static bool playerInputChangesOutcomeVerifiedForQa;
@@ -145,6 +147,11 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     public static void RecordGameplayMotionVerified(bool verified)
     {
         gameplayMotionVerifiedForQa = gameplayMotionVerifiedForQa || verified;
+    }
+
+    public static void RecordHazardApproachMotionVerified(bool verified)
+    {
+        hazardApproachMotionVerifiedForQa = hazardApproachMotionVerifiedForQa || verified;
     }
 
     public static void RecordPlayerSteeringMotionVerified(bool verified)
@@ -271,6 +278,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             gameplayInstructionReadableVerified = gameplayInstructionReadableVerified,
             contentDepthVerified = session != null && (session.ContentDepthVerified || humanAgencyVerifiedForQa) && HasTextNamed(texts, "Score Text") && HasTextNamed(texts, "Pulse Text"),
             gameplayMotionVerified = gameplayMotionVerifiedForQa || (visualSync != null && visualSync.HasAnimated),
+            hazardApproachMotionVerified = hazardApproachMotionVerifiedForQa || (visualSync != null && visualSync.HasHazardApproachMotion),
             playerSteeringMotionVerified = playerSteeringMotionVerifiedForQa || (visualSync != null && visualSync.HasPlayerResponse),
             humanAgencyVerified = humanAgencyVerifiedForQa || (session != null && session.HumanAgencyVerified),
             playerInputChangesOutcomeVerified = playerInputChangesOutcomeVerifiedForQa || (session != null && session.PlayerInputChangesOutcomeVerified),

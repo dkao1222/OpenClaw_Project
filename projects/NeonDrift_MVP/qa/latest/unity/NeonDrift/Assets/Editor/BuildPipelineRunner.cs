@@ -23,6 +23,7 @@ public static class BuildPipelineRunner
         bool startButtonFlowVerified = VerifyStartButtonFlow();
         bool earlyGameOverIsProtected = VerifyEarlyGameOverProtection();
         bool gameplayMotionVerified = VerifyGameplayMotion();
+        bool hazardApproachMotionVerified = VerifyHazardApproachMotion();
         bool playerSteeringMotionVerified = VerifyPlayerSteeringMotion();
         bool humanAgencyVerified = VerifyHumanAgency();
         EnsureScene();
@@ -68,6 +69,7 @@ public static class BuildPipelineRunner
                 ("GameplayInstructionReadable", RuntimeQaProbe.CaptureJson().Contains("\"hasObjectiveText\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasAvoidInstructionText\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasPlayerLabel\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasHazardLabel\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayInstructionReadableVerified\": true")),
                 ("ContentDepthIsVerified", RuntimeQaProbe.CaptureJson().Contains("\"contentDepthVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"wave\": 1") && RuntimeQaProbe.CaptureJson().Contains("\"multiplier\": 1") && RuntimeQaProbe.CaptureJson().Contains("\"boostCharge\"") && RuntimeQaProbe.CaptureJson().Contains("\"combo\"")),
                 ("GameplayMotionIsVerified", gameplayMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"gameplayMotionVerified\": true")),
+                ("HazardApproachMotionIsVerified", hazardApproachMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"hazardApproachMotionVerified\": true")),
                 ("PlayerSteeringMotionIsVerified", playerSteeringMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"playerSteeringMotionVerified\": true")),
                 ("HumanAgencyChangesOutcome", humanAgencyVerified && RuntimeQaProbe.CaptureJson().Contains("\"humanAgencyVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"playerInputChangesOutcomeVerified\": true")),
                 ("StartButtonFlowVerified", startButtonFlowVerified),
@@ -135,6 +137,27 @@ public static class BuildPipelineRunner
         uiActions.StartGame();
         bool verified = session.HasStarted && visualSync.VerifySteeringForQa();
         RuntimeQaProbe.RecordPlayerSteeringMotionVerified(verified);
+        return verified;
+    }
+
+    private static bool VerifyHazardApproachMotion()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        NeonDriftVisualSync visualSync = GameObject.FindObjectOfType<NeonDriftVisualSync>(true);
+        if (session == null || uiActions == null || visualSync == null)
+        {
+            RuntimeQaProbe.RecordHazardApproachMotionVerified(false);
+            return false;
+        }
+
+        uiActions.StartGame();
+        bool verified = session.HasStarted && visualSync.VerifyHazardApproachForQa();
+        if (verified)
+        {
+            session.Retry();
+        }
+        RuntimeQaProbe.RecordHazardApproachMotionVerified(verified);
         return verified;
     }
 
