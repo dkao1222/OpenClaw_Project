@@ -3,7 +3,7 @@
 ## Checks
 - PASS stage_range_supported: 0-12
 - PASS project_name_present: NeonDrift_MVP
-- PASS product_vision_present: chars=706
+- PASS product_vision_present: chars=956
 - PASS target_audience_present: chars=64
 - PASS core_value_present: chars=55
 
