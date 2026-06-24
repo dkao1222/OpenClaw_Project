@@ -289,6 +289,7 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
         NeonDriftUiActions uiActions = FindObjectOfType<NeonDriftUiActions>();
         GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
         Debug.Log("QA_PLAYTHROUGH_START");
+        WriteQaProbe("qa_runtime_probe_menu.json");
         uiActions?.StartGame();
 
         yield return new WaitForSecondsRealtime(0.75f);
@@ -299,15 +300,35 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
         yield return new WaitForSecondsRealtime(1.1f);
         player?.ClearUiSteer();
 
+        yield return new WaitForSecondsRealtime(2.8f);
+        WriteQaProbe("qa_runtime_probe_gameplay.json");
+
         yield return new WaitForSecondsRealtime(4.2f);
         session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
         Debug.Log("QA_PLAYTHROUGH_GAME_OVER");
         session?.GameOver();
+        WriteQaProbe("qa_runtime_probe_game_over.json");
 
         yield return new WaitForSecondsRealtime(1.6f);
         uiActions = FindObjectOfType<NeonDriftUiActions>();
         Debug.Log("QA_PLAYTHROUGH_RETRY");
         uiActions?.Retry();
+        yield return new WaitForSecondsRealtime(1.2f);
+        WriteQaProbe("qa_runtime_probe_after_retry.json");
+    }
+
+    private void WriteQaProbe(string fileName)
+    {
+        try
+        {
+            string path = System.IO.Path.Combine(Application.persistentDataPath, fileName);
+            System.IO.File.WriteAllText(path, RuntimeQaProbe.CaptureJson());
+            Debug.Log("QA_PROBE_WRITTEN " + path);
+        }
+        catch (Exception exception)
+        {
+            Debug.LogError("QA_PROBE_WRITE_FAILED " + fileName + " " + exception.Message);
+        }
     }
 }
 
