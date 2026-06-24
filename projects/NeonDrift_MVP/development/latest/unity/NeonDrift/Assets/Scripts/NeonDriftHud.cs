@@ -53,12 +53,14 @@ public sealed class NeonDriftVisualSync : MonoBehaviour
     private float hazardY = 470f;
     private float railPulse;
     private bool movedHazard;
+    private bool hazardApproachMotionVerified;
     private bool movedPlayer;
     private Vector2 lastHazardPosition;
     private Vector2 lastPlayerPosition;
 
     public bool HasMotionContract => trackPlayfield != null && leftLaneRail != null && rightLaneRail != null && playerMarker != null && hazardMarker != null;
     public bool HasAnimated => movedHazard;
+    public bool HasHazardApproachMotion => hazardApproachMotionVerified;
     public bool HasPlayerResponse => movedPlayer;
 
     public void Configure(RectTransform track, RectTransform leftRail, RectTransform rightRail, RectTransform player, RectTransform hazard)
@@ -97,16 +99,20 @@ public sealed class NeonDriftVisualSync : MonoBehaviour
         }
 
         railPulse += deltaTime * 3.5f;
-        hazardY -= deltaTime * 280f;
-        if (hazardY < -465f)
+        hazardY -= deltaTime * 520f;
+        if (hazardY < -520f)
         {
             hazardY = 470f;
         }
 
         if (hazardMarker != null)
         {
-            hazardMarker.anchoredPosition = new Vector2(Mathf.Sin(session.GameplayTime * 1.25f) * 72f, hazardY);
+            float approach = Mathf.InverseLerp(470f, -520f, hazardY);
+            hazardMarker.anchoredPosition = new Vector2(Mathf.Sin(session.GameplayTime * 1.25f) * 96f, hazardY);
+            float scale = Mathf.Lerp(0.72f, 1.55f, approach);
+            hazardMarker.localScale = new Vector3(scale, scale, 1f);
             movedHazard = movedHazard || Vector2.Distance(lastHazardPosition, hazardMarker.anchoredPosition) > 10f;
+            hazardApproachMotionVerified = hazardApproachMotionVerified || (hazardMarker.anchoredPosition.y < 210f && scale > 0.95f);
             lastHazardPosition = hazardMarker.anchoredPosition;
         }
 
@@ -138,6 +144,27 @@ public sealed class NeonDriftVisualSync : MonoBehaviour
         Vector2 before = hazardMarker.anchoredPosition;
         Tick(0.5f);
         return Vector2.Distance(before, hazardMarker.anchoredPosition) > 20f;
+    }
+
+    public bool VerifyHazardApproachForQa()
+    {
+        if (!HasMotionContract)
+        {
+            return false;
+        }
+
+        hazardY = 470f;
+        hazardMarker.anchoredPosition = new Vector2(0f, hazardY);
+        hazardMarker.localScale = Vector3.one * 0.72f;
+        float beforeY = hazardMarker.anchoredPosition.y;
+        float beforeScale = hazardMarker.localScale.x;
+        Tick(0.8f);
+        float afterY = hazardMarker.anchoredPosition.y;
+        float afterScale = hazardMarker.localScale.x;
+        bool movesTowardPlayer = beforeY - afterY >= 300f;
+        bool growsAsThreatApproaches = afterScale - beforeScale >= 0.25f;
+        hazardApproachMotionVerified = hazardApproachMotionVerified || (movesTowardPlayer && growsAsThreatApproaches);
+        return hazardApproachMotionVerified;
     }
 
     public bool VerifySteeringForQa()

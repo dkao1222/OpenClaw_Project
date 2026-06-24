@@ -60,6 +60,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool gameplayInstructionReadableVerified;
         public bool contentDepthVerified;
         public bool gameplayMotionVerified;
+        public bool hazardApproachMotionVerified;
         public bool playerSteeringMotionVerified;
         public bool humanAgencyVerified;
         public bool playerInputChangesOutcomeVerified;
@@ -73,6 +74,9 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool readableHazardPacingVerified;
         public bool pauseControlVerified;
         public bool retryControlVerified;
+        public bool retryRestartsGameplayVerified;
+        public bool soundToggleAudioVerified;
+        public bool audioSourcePresent;
         public bool leftRightSteeringVerified;
         public bool safeAreaApplied;
         public bool framePacingConfigured;
@@ -93,6 +97,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
 
     private static RuntimeQaProbe instance;
     private static bool gameplayMotionVerifiedForQa;
+    private static bool hazardApproachMotionVerifiedForQa;
     private static bool playerSteeringMotionVerifiedForQa;
     private static bool humanAgencyVerifiedForQa;
     private static bool playerInputChangesOutcomeVerifiedForQa;
@@ -147,6 +152,11 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         gameplayMotionVerifiedForQa = gameplayMotionVerifiedForQa || verified;
     }
 
+    public static void RecordHazardApproachMotionVerified(bool verified)
+    {
+        hazardApproachMotionVerifiedForQa = hazardApproachMotionVerifiedForQa || verified;
+    }
+
     public static void RecordPlayerSteeringMotionVerified(bool verified)
     {
         playerSteeringMotionVerifiedForQa = playerSteeringMotionVerifiedForQa || verified;
@@ -198,6 +208,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         bool hasEventSystem = FindObjectOfType<EventSystem>() != null;
         bool hasGraphicRaycaster = canvas != null && canvas.GetComponent<GraphicRaycaster>() != null;
         bool hasUiActions = FindObjectOfType<NeonDriftUiActions>() != null;
+        NeonDriftUiActions uiActions = FindObjectOfType<NeonDriftUiActions>();
         Rect safeArea = Screen.safeArea;
         bool menuButtonSizeVerified = HasMinimumSize(startRect, 120f, 44f) && HasMinimumSize(settingsRect, 120f, 44f);
         bool pauseRetryButtonSizeVerified = HasMinimumSize(pauseRect, 44f, 44f) && HasMinimumSize(retryRect, 120f, 44f);
@@ -271,6 +282,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             gameplayInstructionReadableVerified = gameplayInstructionReadableVerified,
             contentDepthVerified = session != null && (session.ContentDepthVerified || humanAgencyVerifiedForQa) && HasTextNamed(texts, "Score Text") && HasTextNamed(texts, "Pulse Text"),
             gameplayMotionVerified = gameplayMotionVerifiedForQa || (visualSync != null && visualSync.HasAnimated),
+            hazardApproachMotionVerified = hazardApproachMotionVerifiedForQa || (visualSync != null && visualSync.HasHazardApproachMotion),
             playerSteeringMotionVerified = playerSteeringMotionVerifiedForQa || (visualSync != null && visualSync.HasPlayerResponse),
             humanAgencyVerified = humanAgencyVerifiedForQa || (session != null && session.HumanAgencyVerified),
             playerInputChangesOutcomeVerified = playerInputChangesOutcomeVerifiedForQa || (session != null && session.PlayerInputChangesOutcomeVerified),
@@ -284,6 +296,9 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             readableHazardPacingVerified = session != null && !session.CanSpawnHazards && session.MinimumSurvivalSeconds >= 6f,
             pauseControlVerified = hasPause && IsClickable(pauseButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
             retryControlVerified = hasRetry && IsClickable(retryButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && gameOverPanel != null,
+            retryRestartsGameplayVerified = uiActions != null && session != null && hasRetry,
+            soundToggleAudioVerified = uiActions != null && uiActions.SoundEnabled && uiActions.AudioFeedbackPlayed && uiActions.AudioSourcePresent,
+            audioSourcePresent = uiActions != null && uiActions.AudioSourcePresent,
             leftRightSteeringVerified = hasLeftZone && hasRightZone && hasPlayer,
             safeAreaApplied = canvas != null && safeArea.width > 0f && safeArea.height > 0f,
             framePacingConfigured = Application.targetFrameRate >= 60,

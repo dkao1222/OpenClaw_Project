@@ -23,8 +23,11 @@ public static class BuildPipelineRunner
         bool startButtonFlowVerified = VerifyStartButtonFlow();
         bool earlyGameOverIsProtected = VerifyEarlyGameOverProtection();
         bool gameplayMotionVerified = VerifyGameplayMotion();
+        bool hazardApproachMotionVerified = VerifyHazardApproachMotion();
         bool playerSteeringMotionVerified = VerifyPlayerSteeringMotion();
         bool humanAgencyVerified = VerifyHumanAgency();
+        bool retryRestartsGameplayVerified = VerifyRetryRestartsGameplay();
+        bool soundToggleAudioVerified = VerifySoundToggleAudio();
         EnsureScene();
         NeonDriftRuntimeBootstrap.EnsureRuntimeScene();
         string probeJson = RuntimeQaProbe.CaptureJson();
@@ -68,8 +71,11 @@ public static class BuildPipelineRunner
                 ("GameplayInstructionReadable", RuntimeQaProbe.CaptureJson().Contains("\"hasObjectiveText\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasAvoidInstructionText\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasPlayerLabel\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasHazardLabel\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayInstructionReadableVerified\": true")),
                 ("ContentDepthIsVerified", RuntimeQaProbe.CaptureJson().Contains("\"contentDepthVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"wave\": 1") && RuntimeQaProbe.CaptureJson().Contains("\"multiplier\": 1") && RuntimeQaProbe.CaptureJson().Contains("\"boostCharge\"") && RuntimeQaProbe.CaptureJson().Contains("\"combo\"")),
                 ("GameplayMotionIsVerified", gameplayMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"gameplayMotionVerified\": true")),
+                ("HazardApproachMotionIsVerified", hazardApproachMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"hazardApproachMotionVerified\": true")),
                 ("PlayerSteeringMotionIsVerified", playerSteeringMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"playerSteeringMotionVerified\": true")),
                 ("HumanAgencyChangesOutcome", humanAgencyVerified && RuntimeQaProbe.CaptureJson().Contains("\"humanAgencyVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"playerInputChangesOutcomeVerified\": true")),
+                ("RetryRestartsGameplay", retryRestartsGameplayVerified && RuntimeQaProbe.CaptureJson().Contains("\"retryRestartsGameplayVerified\": true")),
+                ("SoundToggleAudioVerified", soundToggleAudioVerified && RuntimeQaProbe.CaptureJson().Contains("\"soundToggleAudioVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"audioSourcePresent\": true")),
                 ("StartButtonFlowVerified", startButtonFlowVerified),
                 ("EarlyGameOverIsProtected", earlyGameOverIsProtected)
             }
@@ -138,6 +144,27 @@ public static class BuildPipelineRunner
         return verified;
     }
 
+    private static bool VerifyHazardApproachMotion()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        NeonDriftVisualSync visualSync = GameObject.FindObjectOfType<NeonDriftVisualSync>(true);
+        if (session == null || uiActions == null || visualSync == null)
+        {
+            RuntimeQaProbe.RecordHazardApproachMotionVerified(false);
+            return false;
+        }
+
+        uiActions.StartGame();
+        bool verified = session.HasStarted && visualSync.VerifyHazardApproachForQa();
+        if (verified)
+        {
+            session.Retry();
+        }
+        RuntimeQaProbe.RecordHazardApproachMotionVerified(verified);
+        return verified;
+    }
+
     private static bool VerifyHumanAgency()
     {
         GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
@@ -151,8 +178,40 @@ public static class BuildPipelineRunner
 
         uiActions.StartGame();
         bool verified = session.HasStarted && visualSync.VerifyHumanAgencyForQa();
+        if (verified)
+        {
+            session.Retry();
+        }
         RuntimeQaProbe.RecordHumanAgencyVerified(verified);
         return verified;
+    }
+
+    private static bool VerifyRetryRestartsGameplay()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        if (session == null || uiActions == null)
+        {
+            return false;
+        }
+
+        uiActions.StartGame();
+        session.GameOver();
+        uiActions.Retry();
+        string json = RuntimeQaProbe.CaptureJson();
+        return session.HasStarted && !session.IsGameOver && Mathf.Approximately(Time.timeScale, 1f) && json.Contains("\"screenState\": \"gameplay\"");
+    }
+
+    private static bool VerifySoundToggleAudio()
+    {
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        if (uiActions == null)
+        {
+            return false;
+        }
+
+        uiActions.ShowSettingsFeedback();
+        return uiActions.SoundEnabled && uiActions.AudioFeedbackPlayed && uiActions.AudioSourcePresent;
     }
 
     public static void BuildIOS()

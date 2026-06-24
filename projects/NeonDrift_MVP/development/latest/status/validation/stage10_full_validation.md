@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/design/Game_Design_Document.md
-- PASS file.size_limit.docs/design/Game_Design_Document.md: 4148<=8000
+- PASS file.size_limit.docs/design/Game_Design_Document.md: 5072<=8000
 - PASS file.no_prompt_constraints.docs/design/Game_Design_Document.md
 - PASS file.bilingual_order.docs/design/Game_Design_Document.md
 - PASS file.bilingual_distinct.docs/design/Game_Design_Document.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/design/Game_Design_Document.md
 - PASS file.schema.docs/design/Game_Design_Document.md
 - PASS file.readable.docs/design/Game_Design_Overview.md
-- PASS file.size_limit.docs/design/Game_Design_Overview.md: 3155<=8000
+- PASS file.size_limit.docs/design/Game_Design_Overview.md: 4079<=8000
 - PASS file.no_prompt_constraints.docs/design/Game_Design_Overview.md
 - PASS file.bilingual_order.docs/design/Game_Design_Overview.md
 - PASS file.bilingual_distinct.docs/design/Game_Design_Overview.md
@@ -21,7 +21,7 @@
 - PASS file.required_sections.docs/design/Game_Design_Overview.md
 - PASS file.schema.docs/design/Game_Design_Overview.md
 - PASS file.readable.docs/design/Core_Loop_Spec.md
-- PASS file.size_limit.docs/design/Core_Loop_Spec.md: 3010<=8000
+- PASS file.size_limit.docs/design/Core_Loop_Spec.md: 3934<=8000
 - PASS file.no_prompt_constraints.docs/design/Core_Loop_Spec.md
 - PASS file.bilingual_order.docs/design/Core_Loop_Spec.md
 - PASS file.bilingual_distinct.docs/design/Core_Loop_Spec.md
@@ -29,7 +29,7 @@
 - PASS file.required_sections.docs/design/Core_Loop_Spec.md
 - PASS file.schema.docs/design/Core_Loop_Spec.md
 - PASS file.readable.docs/design/Mechanics_Rules.md
-- PASS file.size_limit.docs/design/Mechanics_Rules.md: 2992<=8000
+- PASS file.size_limit.docs/design/Mechanics_Rules.md: 3916<=8000
 - PASS file.no_prompt_constraints.docs/design/Mechanics_Rules.md
 - PASS file.bilingual_order.docs/design/Mechanics_Rules.md
 - PASS file.bilingual_distinct.docs/design/Mechanics_Rules.md
@@ -37,7 +37,7 @@
 - PASS file.required_sections.docs/design/Mechanics_Rules.md
 - PASS file.schema.docs/design/Mechanics_Rules.md
 - PASS file.readable.docs/design/Scoring_and_Failure_Spec.md
-- PASS file.size_limit.docs/design/Scoring_and_Failure_Spec.md: 2954<=8000
+- PASS file.size_limit.docs/design/Scoring_and_Failure_Spec.md: 3878<=8000
 - PASS file.no_prompt_constraints.docs/design/Scoring_and_Failure_Spec.md
 - PASS file.bilingual_order.docs/design/Scoring_and_Failure_Spec.md
 - PASS file.bilingual_distinct.docs/design/Scoring_and_Failure_Spec.md
@@ -45,7 +45,7 @@
 - PASS file.required_sections.docs/design/Scoring_and_Failure_Spec.md
 - PASS file.schema.docs/design/Scoring_and_Failure_Spec.md
 - PASS file.readable.docs/design/Compatibility_and_Performance_Targets.md
-- PASS file.size_limit.docs/design/Compatibility_and_Performance_Targets.md: 3185<=8000
+- PASS file.size_limit.docs/design/Compatibility_and_Performance_Targets.md: 4109<=8000
 - PASS file.no_prompt_constraints.docs/design/Compatibility_and_Performance_Targets.md
 - PASS file.bilingual_order.docs/design/Compatibility_and_Performance_Targets.md
 - PASS file.bilingual_distinct.docs/design/Compatibility_and_Performance_Targets.md
@@ -53,7 +53,7 @@
 - PASS file.required_sections.docs/design/Compatibility_and_Performance_Targets.md
 - PASS file.schema.docs/design/Compatibility_and_Performance_Targets.md
 - PASS file.readable.docs/design/Art_Audio_Direction.md
-- PASS file.size_limit.docs/design/Art_Audio_Direction.md: 3486<=8000
+- PASS file.size_limit.docs/design/Art_Audio_Direction.md: 4410<=8000
 - PASS file.no_prompt_constraints.docs/design/Art_Audio_Direction.md
 - PASS file.bilingual_order.docs/design/Art_Audio_Direction.md
 - PASS file.bilingual_distinct.docs/design/Art_Audio_Direction.md
@@ -61,7 +61,7 @@
 - PASS file.required_sections.docs/design/Art_Audio_Direction.md
 - PASS file.schema.docs/design/Art_Audio_Direction.md
 - PASS file.readable.docs/production/Development_Readiness_Report.md
-- PASS file.size_limit.docs/production/Development_Readiness_Report.md: 3305<=8000
+- PASS file.size_limit.docs/production/Development_Readiness_Report.md: 4229<=8000
 - PASS file.no_prompt_constraints.docs/production/Development_Readiness_Report.md
 - PASS file.bilingual_order.docs/production/Development_Readiness_Report.md
 - PASS file.bilingual_distinct.docs/production/Development_Readiness_Report.md
@@ -69,7 +69,7 @@
 - PASS file.required_sections.docs/production/Development_Readiness_Report.md
 - PASS file.schema.docs/production/Development_Readiness_Report.md
 - PASS file.readable.docs/production/Planning_Delivery_Checklist.md
-- PASS file.size_limit.docs/production/Planning_Delivery_Checklist.md: 3296<=8000
+- PASS file.size_limit.docs/production/Planning_Delivery_Checklist.md: 4220<=8000
 - PASS file.no_prompt_constraints.docs/production/Planning_Delivery_Checklist.md
 - PASS file.bilingual_order.docs/production/Planning_Delivery_Checklist.md
 - PASS file.bilingual_distinct.docs/production/Planning_Delivery_Checklist.md
