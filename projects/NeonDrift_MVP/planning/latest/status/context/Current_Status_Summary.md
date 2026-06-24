@@ -23,4 +23,4 @@ The game must be visually rich, immediately understandable, and deeper than a si
 
 Product Experience Contract from Define.
 Required markers: game design foundation, core mechanics, game loop, systems and tuning, level design, game terminology, term table, user-centric reverse deduction, MDA, vision lock, content architecture, player journey, shipping plan, human playability, visual richness, retry, audio feedback, evidence contract.
-Planning must read docs/define/Defined_Request.md, docs/define/Project_Input_Schema.md, docs/define/Pipeline_Gates.md, and handoffs/define/handoff_to_planning.md for
+Required game-quality markers: moment-to-moment gameplay, 10-second playability timeline, encounter pattern, enemy pattern, player skill, risk reward, feedback event

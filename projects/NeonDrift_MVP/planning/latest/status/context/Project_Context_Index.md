@@ -22,4 +22,4 @@ The game must be visually ric
 
 - snippet: Product Experience Contract from Define.
 Required markers: game design foundation, core mechanics, game loop, systems and tuning, level design, game terminology, term table, user-centric reverse deduction, MDA, vision lock, content architecture, player journey, shipping plan, human playability, visual richness, retry, audio feedback, evidence contract.
-Planning must read docs/define/Defined_Request.md, docs/define/Pr
+Required game-quality markers: moment-to-moment gameplay, 10-seco

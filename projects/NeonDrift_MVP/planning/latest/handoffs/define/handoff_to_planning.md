@@ -2,8 +2,8 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-define_page_id: 389b9e33-8429-8108-b91d-c027868c9377
-define_run_id: notion-NeonDrift_MVP-define-20260624151908
+define_page_id: 389b9e33-8429-8109-a567-f0c8e94c4549
+define_run_id: notion-NeonDrift_MVP-define-20260624155914
 output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 handoff_type: define_to_planning
 ready_for_planning: true
@@ -27,6 +27,10 @@ Game Design Foundation Contract:
 - Systems and Tuning（系統與數值）: Planning/Spec Review must define the core systems and numbers that make the game challenging and fair, including economy/reward rules where relevant, damage or failure calculation, growth/progression curve, probability/spawn balance, difficulty ramp, and fairness/readability limits.
 - Level Design（關卡設計）: Planning must define spatial layout and pacing rules that guide the player and create memorable play moments, including lanes/space, spawn rhythm, encounter pacing, tutorial/readability beats, safe windows, pressure peaks, and recovery moments.
 - Development and QA must reject outputs where these four foundations remain generic, missing, or not testable.
+- Moment-to-Moment Gameplay Contract: Planning must define the first 10 seconds of play as timestamped beats: player sees objective, player performs input, system creates pressure, enemy/hazard advances, feedback confirms action, reward or failure teaches the next attempt.
+- Encounter / Enemy Pattern Contract: Planning must define at least three concrete enemy or hazard patterns with spawn condition, movement/approach behavior, warning/readability cue, counterplay, reward/penalty, and QA reproduction step. A static or non-approaching threat fails.
+- Player Skill and Reward Contract: Planning must define how player skill changes outcome, including near miss, combo, boost/reward, score formula, risk/reward tradeoff, reset/break condition, HUD/VFX/SFX feedback, and mastery signal.
+- Human Playtest Contract: QA must verify from simulator video that a human can tell what the goal is, what is dangerous, what changed after input, why failure happened, and why retry is meaningful.
 
 Human Playability Contract:
 - The player must understand what to do within 3 seconds of the first playable screen.

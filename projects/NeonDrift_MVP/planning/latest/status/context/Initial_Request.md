@@ -2,12 +2,12 @@
 
 project_name: NeonDrift_MVP
 workspace_key: 382b9e3384298039b171c9b2a60ae644
-run_id: notion-NeonDrift_MVP-0-12-20260624151917
+run_id: notion-NeonDrift_MVP-0-12-20260624155922
 stage_range: 0-12
 agent_model_policy: per-agent-config
 legacy_model_field_ignored: per-agent-config
 thinking: off
-requested_by: define:notion-NeonDrift_MVP-define-20260624151908
+requested_by: define:notion-NeonDrift_MVP-define-20260624155914
 
 ## Pipeline Execution Policy
 
@@ -34,6 +34,7 @@ Define 階段需補齊痛點、服務目標、MVP 邊界與可驗證成功條件
 
 Product Experience Contract from Define.
 Required markers: game design foundation, core mechanics, game loop, systems and tuning, level design, game terminology, term table, user-centric reverse deduction, MDA, vision lock, content architecture, player journey, shipping plan, human playability, visual richness, retry, audio feedback, evidence contract.
+Required game-quality markers: moment-to-moment gameplay, 10-second playability timeline, encounter pattern, enemy pattern, player skill, risk reward, feedback event, human playtest.
 Planning must read docs/define/Defined_Request.md, docs/define/Project_Input_Schema.md, docs/define/Pipeline_Gates.md, and handoffs/define/handoff_to_planning.md for full bounded context.
 
 Normalize this raw idea into canonical product definition for the OpenClaw pipeline.
@@ -50,5 +51,4 @@ Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Edito
 
 Raw idea source:
 Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
-The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
-The game must be visually rich, immediately understandable, and deeper than a single
+The full OpenClaw pipeline must run Raw Idea -> Define 

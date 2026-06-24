@@ -9,8 +9,8 @@ policy: compressed context pack
 ## Decisions
 
 - Stage 05 deliverables stay inside approved NeonDrift MVP scope.
-- Required handoff topics: core loop rules, systems summary, success/failure conditions, player decision points, constraints for level/content design.
-- Deliverables index: docs/design/Core_Gameplay_Loop.md, docs/design/Game_Systems_Overview.md, docs/design/Control_System_Spec.md, docs/design/Speed_System_Spec.md, docs/design/Hazard_System_Spec.md, docs/design/Scoring_System_Spec.md, docs/design/Failure_Retry_System_Spec.md, docs/design/Feedback_System_Spec.md, plus 1 additional docs in Notion/Git.
+- Required handoff topics: core loop rules, 10-second playability timeline, enemy/encounter patterns, player skill and reward rules, human playtest scenarios, systems summary, success/failure conditions, player decision points, constraints for level/content design.
+- Deliverables index: docs/design/Core_Gameplay_Loop.md, docs/design/Moment_to_Moment_Gameplay.md, docs/design/Game_Systems_Overview.md, docs/design/Control_System_Spec.md, docs/design/Speed_System_Spec.md, docs/design/Hazard_System_Spec.md, docs/design/Enemy_Pattern_Spec.md, docs/design/Scoring_System_Spec.md, plus 5 additional docs in Notion/Git.
 
 ## Constraints
 
@@ -28,7 +28,7 @@ policy: compressed context pack
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage05_context_pack.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/05_game-designer_to_level-designer.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Core_Gameplay_Loop.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Moment_to_Moment_Gameplay.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Systems_Overview.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Control_System_Spec.md
-- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Speed_System_Spec.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/agent_heartbeats/game-designer.md
