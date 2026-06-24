@@ -3,8 +3,8 @@
 ## Canonical Fields
 
 - project_name: NeonDrift_MVP
-- define_page_id: 389b9e33-8429-8109-a567-f0c8e94c4549
-- define_run_id: notion-NeonDrift_MVP-define-20260624155914
+- define_page_id: 389b9e33-8429-8151-892f-ff8d5b9df73f
+- define_run_id: notion-NeonDrift_MVP-define-20260624162607
 - agent_model_policy: per-agent-config
 - thinking: off
 
