@@ -307,6 +307,7 @@ public static class BuildPipelineRunner
         var session = new GameObject("NeonDrift Session");
         session.AddComponent<GameSessionController>();
         session.AddComponent<RuntimeQaProbe>();
+        session.AddComponent<NeonDriftQaPlaythrough>();
         var spawner = session.AddComponent<HazardSpawner>();
 
         var player = GameObject.CreatePrimitive(PrimitiveType.Cube);
