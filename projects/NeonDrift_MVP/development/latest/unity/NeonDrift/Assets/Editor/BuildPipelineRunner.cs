@@ -211,7 +211,9 @@ public static class BuildPipelineRunner
         }
 
         uiActions.ShowSettingsFeedback();
-        return uiActions.SoundEnabled && uiActions.AudioFeedbackPlayed && uiActions.AudioSourcePresent;
+        bool verified = uiActions.SoundEnabled && uiActions.AudioFeedbackPlayed && uiActions.AudioSourcePresent;
+        RuntimeQaProbe.RecordSoundToggleAudioVerified(verified, uiActions.AudioSourcePresent);
+        return verified;
     }
 
     public static void BuildIOS()

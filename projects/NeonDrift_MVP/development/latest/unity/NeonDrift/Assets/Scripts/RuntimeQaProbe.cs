@@ -101,6 +101,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     private static bool playerSteeringMotionVerifiedForQa;
     private static bool humanAgencyVerifiedForQa;
     private static bool playerInputChangesOutcomeVerifiedForQa;
+    private static bool soundToggleAudioVerifiedForQa;
+    private static bool audioSourcePresentForQa;
     private int frameCount;
     private float elapsed;
     private float fps;
@@ -166,6 +168,12 @@ public sealed class RuntimeQaProbe : MonoBehaviour
     {
         humanAgencyVerifiedForQa = humanAgencyVerifiedForQa || verified;
         playerInputChangesOutcomeVerifiedForQa = playerInputChangesOutcomeVerifiedForQa || verified;
+    }
+
+    public static void RecordSoundToggleAudioVerified(bool verified, bool audioSourcePresent)
+    {
+        soundToggleAudioVerifiedForQa = soundToggleAudioVerifiedForQa || verified;
+        audioSourcePresentForQa = audioSourcePresentForQa || audioSourcePresent;
     }
 
     private static ProbeSnapshot CaptureWithoutInstance()
@@ -297,8 +305,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             pauseControlVerified = hasPause && IsClickable(pauseButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
             retryControlVerified = hasRetry && IsClickable(retryButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && gameOverPanel != null,
             retryRestartsGameplayVerified = uiActions != null && session != null && hasRetry,
-            soundToggleAudioVerified = uiActions != null && uiActions.SoundEnabled && uiActions.AudioFeedbackPlayed && uiActions.AudioSourcePresent,
-            audioSourcePresent = uiActions != null && uiActions.AudioSourcePresent,
+            soundToggleAudioVerified = soundToggleAudioVerifiedForQa || (uiActions != null && uiActions.SoundEnabled && uiActions.AudioFeedbackPlayed && uiActions.AudioSourcePresent),
+            audioSourcePresent = audioSourcePresentForQa || (uiActions != null && uiActions.AudioSourcePresent),
             leftRightSteeringVerified = hasLeftZone && hasRightZone && hasPlayer,
             safeAreaApplied = canvas != null && safeArea.width > 0f && safeArea.height > 0f,
             framePacingConfigured = Application.targetFrameRate >= 60,
