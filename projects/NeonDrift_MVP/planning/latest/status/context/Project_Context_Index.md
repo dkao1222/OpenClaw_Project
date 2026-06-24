@@ -20,11 +20,6 @@ The game must be visually ric
 
 ## Development Request
 
-- snippet: Normalize this raw idea into canonical product definition for the OpenClaw pipeline.
-Preserve the original idea, infer only conservative assumptions, and mark unresolved items as open questions in Define outputs.
-Raw idea type: game
-Priority: high
-
-Raw idea:
-Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
-The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development ->
+- snippet: Product Experience Contract from Define.
+Required markers: game design foundation, core mechanics, game loop, systems and tuning, level design, game terminology, term table, user-centric reverse deduction, MDA, vision lock, content architecture, player journey, shipping plan, human playability, visual richness, retry, audio feedback, evidence contract.
+Planning must read docs/define/Defined_Request.md, docs/define/Pr
