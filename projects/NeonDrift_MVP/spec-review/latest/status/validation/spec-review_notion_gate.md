@@ -2,7 +2,7 @@
 
 - status: passed
 - pipeline: spec-review
-- run_id: notion-NeonDrift_MVP-spec-review-review-full-20260624150529
+- run_id: notion-NeonDrift_MVP-spec-review-review-full-20260624150941
 - source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/handoff_to_spec_review.md
 - checks_total: 11
 - checks_failed: 0
