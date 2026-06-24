@@ -150,6 +150,7 @@ public sealed class GameSessionController : MonoBehaviour
         }
 
         gameOver = true;
+        SetGameOverPanelVisible(true);
         Time.timeScale = 0f;
     }
 
@@ -198,6 +199,7 @@ public sealed class GameSessionController : MonoBehaviour
         started = false;
         paused = false;
         gameOver = false;
+        SetGameOverPanelVisible(false);
         scoreTimer = 0f;
         gameplayTimer = 0f;
 
@@ -207,5 +209,27 @@ public sealed class GameSessionController : MonoBehaviour
             player.ClearUiSteer();
             player.transform.position = new Vector3(0f, -3.6f, 0f);
         }
+    }
+
+    private static void SetGameOverPanelVisible(bool visible)
+    {
+        GameObject panel = FindObjectByNameIncludingInactive("Game Over Panel");
+        if (panel != null)
+        {
+            panel.SetActive(visible);
+        }
+    }
+
+    private static GameObject FindObjectByNameIncludingInactive(string objectName)
+    {
+        Transform[] transforms = Resources.FindObjectsOfTypeAll<Transform>();
+        foreach (Transform transform in transforms)
+        {
+            if (transform != null && transform.name == objectName)
+            {
+                return transform.gameObject;
+            }
+        }
+        return null;
     }
 }
