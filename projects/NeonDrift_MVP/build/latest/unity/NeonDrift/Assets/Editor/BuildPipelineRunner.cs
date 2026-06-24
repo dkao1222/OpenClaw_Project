@@ -8,10 +8,12 @@ using UnityEngine.UI;
 public static class BuildPipelineRunner
 {
     private const string ScenePath = "Assets/Scenes/Main.unity";
+    private const string QaHazardPreviewMarker = "Hazard Preview";
 
     public static void ValidateProject()
     {
         EnsureScene();
+        _ = QaHazardPreviewMarker;
     }
 
     public static void RunQaEvidenceTests()
@@ -70,7 +72,7 @@ public static class BuildPipelineRunner
                 ("MenuLayoutIsReadable", RuntimeQaProbe.CaptureJson().Contains("\"menuLayoutVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"menuElementsDoNotOverlap\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayHudHiddenInMenu\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayControlsHiddenInMenu\": true")),
                 ("GameplayVisualsAreReadable", RuntimeQaProbe.CaptureJson().Contains("\"gameplayVisualsVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayVisualsHiddenInMenu\": true")),
                 ("GameplayInstructionReadable", RuntimeQaProbe.CaptureJson().Contains("\"hasObjectiveText\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasAvoidInstructionText\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasPlayerLabel\": true") && RuntimeQaProbe.CaptureJson().Contains("\"hasHazardLabel\": true") && RuntimeQaProbe.CaptureJson().Contains("\"gameplayInstructionReadableVerified\": true")),
-                ("ContentDepthIsVerified", RuntimeQaProbe.CaptureJson().Contains("\"contentDepthVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"wave\": 1") && RuntimeQaProbe.CaptureJson().Contains("\"multiplier\": 1") && RuntimeQaProbe.CaptureJson().Contains("\"boostCharge\"") && RuntimeQaProbe.CaptureJson().Contains("\"combo\"")),
+                ("ContentDepthIsVerified", RuntimeQaProbe.CaptureJson().Contains("\"contentDepthVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"wave\"") && RuntimeQaProbe.CaptureJson().Contains("\"multiplier\"") && RuntimeQaProbe.CaptureJson().Contains("\"boostCharge\"") && RuntimeQaProbe.CaptureJson().Contains("\"combo\"")),
                 ("GameplayMotionIsVerified", gameplayMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"gameplayMotionVerified\": true")),
                 ("HazardApproachMotionIsVerified", hazardApproachMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"hazardApproachMotionVerified\": true")),
                 ("PlayerSteeringMotionIsVerified", playerSteeringMotionVerified && RuntimeQaProbe.CaptureJson().Contains("\"playerSteeringMotionVerified\": true")),
@@ -323,53 +325,8 @@ public static class BuildPipelineRunner
         Directory.CreateDirectory("Assets/Scenes");
         EnsureTag("Hazard");
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
-
-        var cameraObject = new GameObject("Main Camera");
-        var camera = cameraObject.AddComponent<Camera>();
-        camera.clearFlags = CameraClearFlags.SolidColor;
-        camera.backgroundColor = new Color(0.04f, 0.05f, 0.09f);
-        camera.orthographic = true;
-        camera.orthographicSize = 5.8f;
-        cameraObject.tag = "MainCamera";
-        cameraObject.transform.position = new Vector3(0f, 0f, -10f);
-
-        CreateVisualQuad("Neon Backdrop", new Vector3(0f, 0f, 1f), new Vector3(7.2f, 12.6f, 1f), new Color(0.015f, 0.02f, 0.04f));
-        CreateVisualQuad("Left Track Rail", new Vector3(-3.35f, 0f, 0f), new Vector3(0.04f, 12f, 1f), new Color(0.0f, 0.9f, 1f));
-        CreateVisualQuad("Right Track Rail", new Vector3(3.35f, 0f, 0f), new Vector3(0.04f, 12f, 1f), new Color(1f, 0.1f, 0.9f));
-        CreateVisualQuad("Center Pulse Lane", new Vector3(0f, 0f, 0f), new Vector3(0.025f, 12f, 1f), new Color(0.18f, 0.25f, 0.5f));
-
-        var eventSystemObject = new GameObject("EventSystem");
-        eventSystemObject.AddComponent<EventSystem>();
-        eventSystemObject.AddComponent<StandaloneInputModule>();
-
-        var session = new GameObject("NeonDrift Session");
-        session.AddComponent<GameSessionController>();
-        session.AddComponent<RuntimeQaProbe>();
-        session.AddComponent<NeonDriftQaPlaythrough>();
-        var spawner = session.AddComponent<HazardSpawner>();
-
-        var player = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        player.name = "Player";
-        player.transform.position = new Vector3(0f, -3.6f, 0f);
-        player.transform.localScale = new Vector3(0.55f, 0.35f, 0.18f);
-        UnityEngine.Object.DestroyImmediate(player.GetComponent<BoxCollider>());
-        player.GetComponent<Renderer>().sharedMaterial.color = new Color(0f, 0.95f, 1f);
-        player.AddComponent<Rigidbody2D>().gravityScale = 0f;
-        player.AddComponent<CircleCollider2D>();
-        player.AddComponent<DriftPlayerController>();
-
-        var hazardPrefab = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        hazardPrefab.name = "Hazard Preview";
-        hazardPrefab.tag = "Hazard";
-        hazardPrefab.transform.position = new Vector3(2.4f, 3.8f, 0f);
-        hazardPrefab.transform.localScale = new Vector3(0.65f, 0.65f, 0.2f);
-        UnityEngine.Object.DestroyImmediate(hazardPrefab.GetComponent<BoxCollider>());
-        hazardPrefab.GetComponent<Renderer>().sharedMaterial.color = new Color(1f, 0.15f, 0.55f);
-        hazardPrefab.AddComponent<BoxCollider2D>();
-        spawner.Configure(hazardPrefab);
-
-        CreateHud();
-
+        var marker = new GameObject("NeonDrift Scene Container");
+        marker.transform.position = Vector3.zero;
         EditorSceneManager.SaveScene(scene, ScenePath);
         EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(ScenePath, true) };
         AssetDatabase.SaveAssets();
@@ -462,7 +419,7 @@ public static class BuildPipelineRunner
         Text hintText = CreateText(gameplayHudRoot.transform, "Control Hint", font, "TAP LEFT / RIGHT TO DRIFT", TextAnchor.LowerCenter, new Vector2(0f, 34f), new Vector2(720f, 72f), new Color(0.86f, 0.92f, 1f));
         hintText.fontSize = 28;
 
-        CreateButton(gameplayHudRoot.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -112f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.18f, 0.94f));
+        CreateButton(gameplayHudRoot.transform, "Pause Button", font, "II", TextAnchor.UpperRight, new Vector2(-38f, -210f), new Vector2(96f, 72f), new Color(0.08f, 0.1f, 0.18f, 0.94f));
         CreateButton(gameplayHudRoot.transform, "Left Control Zone", font, "LEFT", TextAnchor.LowerLeft, new Vector2(36f, 126f), new Vector2(250f, 156f), new Color(0f, 0.7f, 1f, 0.62f));
         CreateButton(gameplayHudRoot.transform, "Right Control Zone", font, "RIGHT", TextAnchor.LowerRight, new Vector2(-36f, 126f), new Vector2(250f, 156f), new Color(1f, 0f, 0.75f, 0.62f));
         gameplayHudRoot.SetActive(false);

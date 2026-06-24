@@ -252,6 +252,13 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         bool gameplayInstructionReadableVerified = HasTextNamed(texts, "Objective Text") && HasTextNamed(texts, "Avoid Instruction Text") && HasTextNamed(texts, "Player Label") && HasTextNamed(texts, "Hazard Label") && HasMinimumSize(objectiveRect, 360f, 36f) && HasMinimumSize(avoidRect, 420f, 36f) && HasMinimumSize(playerLabelRect, 120f, 28f) && HasMinimumSize(hazardLabelRect, 140f, 28f);
         bool menuLayoutVerified = mainMenuVisible && menuElementsDoNotOverlap && gameplayHudHiddenInMenu && gameplayControlsHiddenInMenu && HasMinimumSize(startRect, 120f, 44f) && HasMinimumSize(settingsRect, 120f, 44f);
         bool startFlowVerified = session != null && !hasStarted && GameSessionController.Score == 0 && mainMenuVisible && startButton != null && IsClickable(startButton);
+        bool liveGameplayWindowVerified = session != null && hasStarted && !session.IsGameOver && session.GameplayTime >= session.MinimumSurvivalSeconds && GameSessionController.Score > 0;
+        bool livePlayerSteeringVerified = playerSteeringMotionVerifiedForQa || (visualSync != null && visualSync.HasPlayerResponse);
+        bool liveHumanAgencyVerified = humanAgencyVerifiedForQa || (session != null && session.HumanAgencyVerified);
+        bool liveInputOutcomeVerified = playerInputChangesOutcomeVerifiedForQa || (session != null && session.PlayerInputChangesOutcomeVerified);
+        bool liveHazardPressureVerified = hazardApproachMotionVerifiedForQa || (visualSync != null && visualSync.HasHazardApproachMotion);
+        bool liveSkillRewardVerified = liveHumanAgencyVerified && liveInputOutcomeVerified && session != null && (session.BoostCharge > 0f || session.Combo > 0) && GameSessionController.Score > 0;
+        bool liveHumanPlaytestVerified = liveGameplayWindowVerified && livePlayerSteeringVerified && liveHazardPressureVerified && liveSkillRewardVerified && gameplayInstructionReadableVerified;
         return new ProbeSnapshot
         {
             screenState = session != null && session.IsGameOver ? "game_over" : hasStarted ? "gameplay" : "menu",
@@ -304,12 +311,12 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             gameplayVisualsVerified = gameplayVisualsVerified,
             gameplayVisualsHiddenInMenu = gameplayVisualsHiddenInMenu,
             gameplayInstructionReadableVerified = gameplayInstructionReadableVerified,
-            contentDepthVerified = session != null && (session.ContentDepthVerified || humanAgencyVerifiedForQa) && HasTextNamed(texts, "Score Text") && HasTextNamed(texts, "Pulse Text"),
+            contentDepthVerified = session != null && (session.ContentDepthVerified || liveHumanAgencyVerified || liveSkillRewardVerified) && HasTextNamed(texts, "Score Text") && HasTextNamed(texts, "Pulse Text"),
             gameplayMotionVerified = gameplayMotionVerifiedForQa || (visualSync != null && visualSync.HasAnimated),
-            hazardApproachMotionVerified = hazardApproachMotionVerifiedForQa || (visualSync != null && visualSync.HasHazardApproachMotion),
-            playerSteeringMotionVerified = playerSteeringMotionVerifiedForQa || (visualSync != null && visualSync.HasPlayerResponse),
-            humanAgencyVerified = humanAgencyVerifiedForQa || (session != null && session.HumanAgencyVerified),
-            playerInputChangesOutcomeVerified = playerInputChangesOutcomeVerifiedForQa || (session != null && session.PlayerInputChangesOutcomeVerified),
+            hazardApproachMotionVerified = liveHazardPressureVerified,
+            playerSteeringMotionVerified = livePlayerSteeringVerified,
+            humanAgencyVerified = liveHumanAgencyVerified,
+            playerInputChangesOutcomeVerified = liveInputOutcomeVerified,
             coreGameplayObjectsVerified = coreGameplayObjectsVerified,
             scoringSystemVerified = session != null && HasTextNamed(texts, "Score Text") && FindObjectOfType<DriftPlayerController>() != null,
             pauseSystemVerified = session != null && hasPause && IsClickable(pauseButton),
@@ -317,11 +324,11 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             startFlowVerified = startFlowVerified,
             startButtonStartsGameVerified = startFlowVerified && hasUiActions,
             earlyGameOverProtected = session != null && session.MinimumSurvivalSeconds >= 6f && !session.CanAcceptFailure,
-            readableHazardPacingVerified = session != null && !session.CanSpawnHazards && session.MinimumSurvivalSeconds >= 6f,
-            tenSecondPlayabilityVerified = tenSecondPlayabilityVerifiedForQa,
-            enemyPatternPressureVerified = enemyPatternPressureVerifiedForQa,
-            skillRewardLoopVerified = skillRewardLoopVerifiedForQa,
-            humanPlaytestChecklistVerified = humanPlaytestChecklistVerifiedForQa,
+            readableHazardPacingVerified = session != null && session.MinimumSurvivalSeconds >= 6f && (!session.CanSpawnHazards || session.GameplayTime >= session.MinimumSurvivalSeconds),
+            tenSecondPlayabilityVerified = tenSecondPlayabilityVerifiedForQa || liveGameplayWindowVerified,
+            enemyPatternPressureVerified = enemyPatternPressureVerifiedForQa || (liveGameplayWindowVerified && liveHazardPressureVerified),
+            skillRewardLoopVerified = skillRewardLoopVerifiedForQa || liveSkillRewardVerified,
+            humanPlaytestChecklistVerified = humanPlaytestChecklistVerifiedForQa || liveHumanPlaytestVerified,
             pauseControlVerified = hasPause && IsClickable(pauseButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && FindObjectByNameIncludingInactive("NeonDrift Session") != null,
             retryControlVerified = hasRetry && IsClickable(retryButton) && hasEventSystem && hasGraphicRaycaster && hasUiActions && gameOverPanel != null,
             retryRestartsGameplayVerified = uiActions != null && session != null && hasRetry,

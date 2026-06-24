@@ -13,6 +13,6 @@ non_goals: Multiplayer, account system, live operations, large content pipeline,
 locked_decisions: Use Stage 02 docs, this handoff, and the compact context pack as the source of truth for product scope and mobile platform direction.
 open_questions: Tune drift feel, scoring thresholds, frame-rate targets, supported device floor, ad placement timing, and App Store / Google Play compliance details.
 
-source_paths: docs/planning/Game_Proposal.md; docs/planning/One_Page_Game_Concept.md; docs/planning/MVP_Hypothesis.md; docs/planning/Platform_Direction.md; docs/product/MVP_PRD.md; status/agent_heartbeats/product-planner.md
+source_paths: docs/planning/Game_Proposal.md; docs/planning/Game_Objective.md; docs/planning/One_Page_Game_Concept.md; docs/planning/Core_Gameplay_Loop.md; docs/planning/Player_Interaction_Model.md; docs/planning/Gameplay_Depth_Target.md; docs/planning/Visual_Richness_Target.md; docs/planning/Planning_Output_Quality_Bar.md; docs/planning/MVP_Hypothesis.md; docs/planning/Platform_Direction.md; docs/product/MVP_PRD.md; status/agent_heartbeats/product-planner.md
 next_stage_input_policy: read this handoff first, then read the compact context pack. Open listed source paths only if a required detail is missing.
 context_pack_path: status/context/stage02_context_pack.md

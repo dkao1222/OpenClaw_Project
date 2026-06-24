@@ -21,18 +21,24 @@ Players age 16-35 who want short high-feedback racing sessions, clear mastery si
 ## locked decisions
 
 - Mobile-first Unity project direction is locked to Unity 6000.0.77f1.
-- The next planning owner must preserve short-session readability, touch-first controls, fast restart, and concrete downstream documents.
-- HIG-informed mobile UX, icon identity, device compatibility, privacy, ads, and local build readiness remain required review topics.
+- Preserve short-session readability, touch-first controls, fast restart, and concrete downstream documents.
+- Mobile UX, icons, device compatibility, privacy, ads, and local build readiness remain required review topics.
 
 ## open questions
 
-- Exact drift tuning, scoring thresholds, frame-rate target per device class, and final ad placement policy need downstream validation.
-- Spec review must confirm UI/icon sizes, readable contrast, safe areas, and platform compliance before development.
+- Downstream validation must tune drift, scoring, per-device frame targets, and ad timing.
+- Spec review must confirm UI/icon sizes, contrast, safe areas, and platform compliance.
 
 ## source paths
 
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Game_Proposal.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Game_Objective.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/One_Page_Game_Concept.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Core_Gameplay_Loop.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Player_Interaction_Model.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Gameplay_Depth_Target.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Visual_Richness_Target.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Planning_Output_Quality_Bar.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/MVP_Hypothesis.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Platform_Direction.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/product/MVP_PRD.md

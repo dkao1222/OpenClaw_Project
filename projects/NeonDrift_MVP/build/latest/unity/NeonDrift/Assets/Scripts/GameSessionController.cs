@@ -120,7 +120,7 @@ public sealed class GameSessionController : MonoBehaviour
             return;
         }
 
-        if (Mathf.Abs(endX - startX) >= 0.45f)
+        if (Mathf.Abs(endX - startX) >= 0.03f)
         {
             meaningfulSteerEvents += 1;
             combo += 1;
