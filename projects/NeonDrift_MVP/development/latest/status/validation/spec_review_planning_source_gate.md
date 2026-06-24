@@ -62,6 +62,17 @@
 - PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Boost: Boost
 - PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Crash: Crash
 - PASS planning_source_marker:docs/design/Prototype_Flow_Canvas.html:Retry: Retry
+- PASS required_planning_source_doc:docs/design/Moment_to_Moment_Gameplay.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Moment_to_Moment_Gameplay.md
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:Moment-to-moment gameplay: Moment-to-moment gameplay
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:0-10 second playability timeline: 0-10 second playability timeline
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:0-3 seconds: 0-3 seconds
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:3-6 seconds: 3-6 seconds
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:6-10 seconds: 6-10 seconds
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:player intent: player intent
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:system response: system response
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:risk/reward: risk/reward
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:failure reason: failure reason
+- PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:QA video evidence: QA video evidence
 - PASS required_planning_source_doc:docs/design/Game_Systems_Overview.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Systems_Overview.md
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Control System: Control System
 - PASS planning_source_marker:docs/design/Game_Systems_Overview.md:Game Quality Alignment: Game Quality Alignment
@@ -102,6 +113,17 @@
 - PASS planning_source_marker:docs/design/Hazard_System_Spec.md:reaction time: reaction time
 - PASS planning_source_marker:docs/design/Hazard_System_Spec.md:danger color: danger color
 - PASS planning_source_marker:docs/design/Hazard_System_Spec.md:Acceptance: Acceptance
+- PASS required_planning_source_doc:docs/design/Enemy_Pattern_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Enemy_Pattern_Spec.md
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:Enemy Pattern Spec: Enemy Pattern Spec
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:enemy pattern: enemy pattern
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:hazard pattern: hazard pattern
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:direct pressure: direct pressure
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:alternating weave: alternating weave
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:bait-then-block: bait-then-block
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:approach motion: approach motion
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:warning cue: warning cue
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:counterplay: counterplay
+- PASS planning_source_marker:docs/design/Enemy_Pattern_Spec.md:QA reproduction step: QA reproduction step
 - PASS required_planning_source_doc:docs/design/Scoring_System_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Scoring_System_Spec.md
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:Scoring System: Scoring System
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:survival: survival
@@ -109,6 +131,15 @@
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:combo: combo
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:HUD: HUD
 - PASS planning_source_marker:docs/design/Scoring_System_Spec.md:Acceptance: Acceptance
+- PASS required_planning_source_doc:docs/design/Player_Skill_Reward_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Player_Skill_Reward_Spec.md
+- PASS planning_source_marker:docs/design/Player_Skill_Reward_Spec.md:Player Skill Reward Spec: Player Skill Reward Spec
+- PASS planning_source_marker:docs/design/Player_Skill_Reward_Spec.md:player skill: player skill
+- PASS planning_source_marker:docs/design/Player_Skill_Reward_Spec.md:near miss: near miss
+- PASS planning_source_marker:docs/design/Player_Skill_Reward_Spec.md:combo chain: combo chain
+- PASS planning_source_marker:docs/design/Player_Skill_Reward_Spec.md:boost cell pickup: boost cell pickup
+- PASS planning_source_marker:docs/design/Player_Skill_Reward_Spec.md:score formula: score formula
+- PASS planning_source_marker:docs/design/Player_Skill_Reward_Spec.md:risk/reward tradeoff: risk/reward tradeoff
+- PASS planning_source_marker:docs/design/Player_Skill_Reward_Spec.md:QA acceptance: QA acceptance
 - PASS required_planning_source_doc:docs/design/Failure_Retry_System_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Failure_Retry_System_Spec.md
 - PASS planning_source_marker:docs/design/Failure_Retry_System_Spec.md:Failure/Retry System: Failure/Retry System
 - PASS planning_source_marker:docs/design/Failure_Retry_System_Spec.md:failure reason: failure reason
@@ -122,6 +153,15 @@
 - PASS planning_source_marker:docs/design/Feedback_System_Spec.md:haptics: haptics
 - PASS planning_source_marker:docs/design/Feedback_System_Spec.md:reduced-motion: reduced-motion
 - PASS planning_source_marker:docs/design/Feedback_System_Spec.md:Acceptance: Acceptance
+- PASS required_planning_source_doc:docs/design/Human_Playtest_Scenarios.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Human_Playtest_Scenarios.md
+- PASS planning_source_marker:docs/design/Human_Playtest_Scenarios.md:Human Playtest Scenarios: Human Playtest Scenarios
+- PASS planning_source_marker:docs/design/Human_Playtest_Scenarios.md:objective within three seconds: objective within three seconds
+- PASS planning_source_marker:docs/design/Human_Playtest_Scenarios.md:sees danger: sees danger
+- PASS planning_source_marker:docs/design/Human_Playtest_Scenarios.md:changes outcome through input: changes outcome through input
+- PASS planning_source_marker:docs/design/Human_Playtest_Scenarios.md:understands failure: understands failure
+- PASS planning_source_marker:docs/design/Human_Playtest_Scenarios.md:expected visual evidence: expected visual evidence
+- PASS planning_source_marker:docs/design/Human_Playtest_Scenarios.md:pass/fail rule: pass/fail rule
+- PASS planning_source_marker:docs/design/Human_Playtest_Scenarios.md:QA video/screenshot evidence: QA video/screenshot evidence
 - PASS required_planning_source_doc:docs/design/Visual_Direction.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Visual_Direction.md
 - PASS planning_source_marker:docs/design/Visual_Direction.md:Visual Direction: Visual Direction
 - PASS planning_source_marker:docs/design/Visual_Direction.md:Game Quality Alignment: Game Quality Alignment

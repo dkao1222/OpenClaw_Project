@@ -39,6 +39,15 @@
 - PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:MVP: MVP
 - PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:acceptance: acceptance
 - PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:Source gate: Source gate
+- PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:Game-quality implementation gate: Game-quality implementation gate
+- PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:Moment_to_Moment_Gameplay.md: Moment_to_Moment_Gameplay.md
+- PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:Enemy_Pattern_Spec.md: Enemy_Pattern_Spec.md
+- PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:Player_Skill_Reward_Spec.md: Player_Skill_Reward_Spec.md
+- PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:Human_Playtest_Scenarios.md: Human_Playtest_Scenarios.md
+- PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:10-second playability timeline: 10-second playability timeline
+- PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:enemy/hazard patterns: enemy/hazard patterns
+- PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:player skill/reward: player skill/reward
+- PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:human playtest: human playtest
 - PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:Define contract gate: Define contract gate
 - PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:Game Design Foundation Contract: Game Design Foundation Contract
 - PASS source_doc_marker:docs/review/Development_Ready_Spec_Package.md:Core Mechanics: Core Mechanics
@@ -172,6 +181,44 @@
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Boost: Boost
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Crash: Crash
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Retry: Retry
+- PASS required_source_doc:docs/design/Moment_to_Moment_Gameplay.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Moment_to_Moment_Gameplay.md
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:Moment-to-moment gameplay: Moment-to-moment gameplay
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:0-10 second playability timeline: 0-10 second playability timeline
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:0-3 seconds: 0-3 seconds
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:3-6 seconds: 3-6 seconds
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:6-10 seconds: 6-10 seconds
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:player intent: player intent
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:system response: system response
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:risk/reward: risk/reward
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:failure reason: failure reason
+- PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:QA video evidence: QA video evidence
+- PASS required_source_doc:docs/design/Enemy_Pattern_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Enemy_Pattern_Spec.md
+- PASS source_doc_marker:docs/design/Enemy_Pattern_Spec.md:Enemy Pattern Spec: Enemy Pattern Spec
+- PASS source_doc_marker:docs/design/Enemy_Pattern_Spec.md:enemy pattern: enemy pattern
+- PASS source_doc_marker:docs/design/Enemy_Pattern_Spec.md:hazard pattern: hazard pattern
+- PASS source_doc_marker:docs/design/Enemy_Pattern_Spec.md:direct pressure: direct pressure
+- PASS source_doc_marker:docs/design/Enemy_Pattern_Spec.md:alternating weave: alternating weave
+- PASS source_doc_marker:docs/design/Enemy_Pattern_Spec.md:bait-then-block: bait-then-block
+- PASS source_doc_marker:docs/design/Enemy_Pattern_Spec.md:approach motion: approach motion
+- PASS source_doc_marker:docs/design/Enemy_Pattern_Spec.md:counterplay: counterplay
+- PASS source_doc_marker:docs/design/Enemy_Pattern_Spec.md:QA reproduction step: QA reproduction step
+- PASS required_source_doc:docs/design/Player_Skill_Reward_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Player_Skill_Reward_Spec.md
+- PASS source_doc_marker:docs/design/Player_Skill_Reward_Spec.md:Player Skill Reward Spec: Player Skill Reward Spec
+- PASS source_doc_marker:docs/design/Player_Skill_Reward_Spec.md:player skill: player skill
+- PASS source_doc_marker:docs/design/Player_Skill_Reward_Spec.md:near miss: near miss
+- PASS source_doc_marker:docs/design/Player_Skill_Reward_Spec.md:combo chain: combo chain
+- PASS source_doc_marker:docs/design/Player_Skill_Reward_Spec.md:boost cell pickup: boost cell pickup
+- PASS source_doc_marker:docs/design/Player_Skill_Reward_Spec.md:score formula: score formula
+- PASS source_doc_marker:docs/design/Player_Skill_Reward_Spec.md:risk/reward tradeoff: risk/reward tradeoff
+- PASS source_doc_marker:docs/design/Player_Skill_Reward_Spec.md:QA acceptance: QA acceptance
+- PASS required_source_doc:docs/design/Human_Playtest_Scenarios.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Human_Playtest_Scenarios.md
+- PASS source_doc_marker:docs/design/Human_Playtest_Scenarios.md:Human Playtest Scenarios: Human Playtest Scenarios
+- PASS source_doc_marker:docs/design/Human_Playtest_Scenarios.md:objective within three seconds: objective within three seconds
+- PASS source_doc_marker:docs/design/Human_Playtest_Scenarios.md:sees danger: sees danger
+- PASS source_doc_marker:docs/design/Human_Playtest_Scenarios.md:changes outcome through input: changes outcome through input
+- PASS source_doc_marker:docs/design/Human_Playtest_Scenarios.md:understands failure: understands failure
+- PASS source_doc_marker:docs/design/Human_Playtest_Scenarios.md:expected visual evidence: expected visual evidence
+- PASS source_doc_marker:docs/design/Human_Playtest_Scenarios.md:QA video/screenshot evidence: QA video/screenshot evidence
 - PASS required_source_doc:docs/design/Game_Systems_Overview.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Systems_Overview.md
 - PASS source_doc_marker:docs/design/Game_Systems_Overview.md:Control System: Control System
 - PASS source_doc_marker:docs/design/Game_Systems_Overview.md:Speed System: Speed System
