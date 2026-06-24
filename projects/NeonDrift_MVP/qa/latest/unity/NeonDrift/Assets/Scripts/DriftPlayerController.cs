@@ -81,8 +81,13 @@ public sealed class DriftPlayerController : MonoBehaviour
         body.linearVelocity = velocity;
 
         Vector3 position = transform.position;
+        float startX = position.x;
         position.x = Mathf.Clamp(position.x, -xLimit, xLimit);
         transform.position = position;
+        if (Mathf.Abs(steer) > 0.01f)
+        {
+            GameSessionController.Instance?.RecordMeaningfulSteer(startX, position.x);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

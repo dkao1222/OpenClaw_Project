@@ -3,11 +3,11 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260624160353
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260624163035
 - 交付狀態: ready
 - QA 狀態: passed
 - Release candidate: ready
-- checks_total: 120
+- checks_total: 125
 - checks_failed: 0
 - checks_blocked: 0
 - bundle_id: com.DefaultCompany.NeonDrift
@@ -34,7 +34,7 @@ xcrun simctl launch booted com.DefaultCompany.NeonDrift
 ## Evidence
 
 - build_report: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/build_full_validation.md`
-- runtime_probe: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json`
+- runtime_probe: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_gameplay.json`
 - screenshot: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png`
 - runtime_log: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/logs/ios_simulator_runtime.log`
 - raw_evidence: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/raw_evidence.json`
