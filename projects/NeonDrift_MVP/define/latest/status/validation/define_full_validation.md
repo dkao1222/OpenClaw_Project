@@ -2,13 +2,13 @@
 
 ## Checks
 - PASS project_name_present: chars=13
-- PASS product_vision_present: chars=225
-- PASS target_audience_present: chars=217
-- PASS core_value_present: chars=220
-- PASS platform_target_present: chars=125
-- PASS monetization_direction_present: chars=158
-- PASS compatibility_target_present: chars=213
-- PASS output_expectation_present: chars=389
+- PASS product_vision_present: chars=706
+- PASS target_audience_present: chars=64
+- PASS core_value_present: chars=55
+- PASS platform_target_present: chars=80
+- PASS monetization_direction_present: chars=82
+- PASS compatibility_target_present: chars=117
+- PASS output_expectation_present: chars=138
 - PASS stage_range_supported: define-full
 
 ## Result

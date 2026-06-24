@@ -1,0 +1,125 @@
+{
+  "context": {
+    "projectPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Packages",
+    "unityVersion": "6000.0.77f1"
+  },
+  "inputs": [
+    "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Packages/manifest.json",
+    "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Packages/packages-lock.json",
+    "/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/BuiltInPackagesCombined.sha1"
+  ],
+  "outputs": {
+    "com.unity.2d.sprite@1.0.0": {
+      "name": "com.unity.2d.sprite",
+      "displayName": "2D Sprite",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.2d.sprite@0eb6ea2c7181",
+      "fingerprint": "0eb6ea2c718146fa2f1174818f27b25775a2d3c9",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.test-framework@1.6.0": {
+      "name": "com.unity.test-framework",
+      "displayName": "Test Framework",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.test-framework@082c24152fd4",
+      "fingerprint": "082c24152fd4906ea828826ae9d9773b8a56b3ff",
+      "editorCompatibility": "6000.0.44f1",
+      "version": "1.6.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.ugui@2.0.0": {
+      "name": "com.unity.ugui",
+      "displayName": "Unity UI",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.ugui@92256ab62536",
+      "fingerprint": "92256ab62536a9aaac2ef10765d26dc8dcfaf482",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "2.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.ai@1.0.0": {
+      "name": "com.unity.modules.ai",
+      "displayName": "AI",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.modules.ai",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.audio@1.0.0": {
+      "name": "com.unity.modules.audio",
+      "displayName": "Audio",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.modules.audio",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.imageconversion@1.0.0": {
+      "name": "com.unity.modules.imageconversion",
+      "displayName": "Image Conversion",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.modules.imageconversion",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.jsonserialize@1.0.0": {
+      "name": "com.unity.modules.jsonserialize",
+      "displayName": "JSONSerialize",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.modules.jsonserialize",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.physics2d@1.0.0": {
+      "name": "com.unity.modules.physics2d",
+      "displayName": "Physics 2D",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.modules.physics2d",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.ui@1.0.0": {
+      "name": "com.unity.modules.ui",
+      "displayName": "UI",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.modules.ui",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.uielements@1.0.0": {
+      "name": "com.unity.modules.uielements",
+      "displayName": "UIElements",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.modules.uielements",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.imgui@1.0.0": {
+      "name": "com.unity.modules.imgui",
+      "displayName": "IMGUI",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.modules.imgui",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.hierarchycore@1.0.0": {
+      "name": "com.unity.modules.hierarchycore",
+      "displayName": "Hierarchy Core",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.modules.hierarchycore",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.ext.nunit@2.0.5": {
+      "name": "com.unity.ext.nunit",
+      "displayName": "Custom NUnit",
+      "resolvedPath": "/Users/dragonkao/.openclaw/workspace/git/OpenClaw_Project/projects/NeonDrift_MVP/development/latest/unity/NeonDrift/Library/PackageCache/com.unity.ext.nunit@031a54704bff",
+      "fingerprint": "031a54704bffe39e6a0324909f8eaa4565bdebf2",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.5",
+      "source": "builtin",
+      "testable": false
+    }
+  }
+}

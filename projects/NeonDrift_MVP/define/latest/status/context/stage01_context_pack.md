@@ -5,15 +5,15 @@ channel_id: 382b9e3384298039b171c9b2a60ae644
 
 ## project goal
 
-Deliver a fast mobile arcade drift MVP that proves a readable core loop, satisfying neon presentation, meaningful progression hooks, and store-ready iOS delivery path.
+建立一個可在 iOS simulator 本機 build 並可 QA 驗證的 NeonDrift MVP，驗證 OpenClaw 可以把手機端/Notion 的需求轉成規劃、規格、Unity 專案、build、QA 與交付證據。
 
 ## target audience
 
-Mobile casual arcade players on iPhone who want short skill-based sessions, clear controls, quick retry, and polished audiovisual feedback.
+喜歡短局、單手操作、霓虹視覺、快速重試 arcade 遊戲的手機玩家；也服務於需要快速驗證 game pipeline 的獨立開發者。
 
 ## core value
 
-1. Clear drift-control loop with readable hazards and scoring. 2. Visually rich neon arcade feedback with motion, effects, audio, and haptics. 3. QA-verifiable iOS simulator/local build path with evidence recording.
+1. 一眼能懂的 drift 操作與立即重試。 2. 有視覺層次、特效、音效/震動與清楚 HUD 的短局體驗。 3. 全流程可追蹤：Notion、Git、Unity build、QA evidence 與 delivery manifest。
 
 ## locked decisions
 
