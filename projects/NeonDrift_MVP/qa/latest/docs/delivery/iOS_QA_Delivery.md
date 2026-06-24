@@ -3,7 +3,7 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260624163035
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260624175912
 - 交付狀態: ready
 - QA 狀態: passed
 - Release candidate: ready

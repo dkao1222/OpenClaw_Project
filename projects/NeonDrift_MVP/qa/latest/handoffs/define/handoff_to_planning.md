@@ -2,8 +2,8 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-define_page_id: 389b9e33-8429-8151-892f-ff8d5b9df73f
-define_run_id: notion-NeonDrift_MVP-define-20260624162607
+define_page_id: 389b9e33-8429-81fd-8d1c-e8293a643ae4
+define_run_id: notion-NeonDrift_MVP-define-20260624175522
 output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 handoff_type: define_to_planning
 ready_for_planning: true
@@ -37,6 +37,7 @@ Human Playability Contract:
 - The first run must show visible player motion, visible hazard motion, and at least one player input that changes risk/outcome.
 - The game may not be delivered as static rectangles, invisible controls, or a passive score timer.
 - Retry must restart directly into a fresh playable run within 0.3 seconds unless the defined product explicitly says otherwise.
+- Retry must create a human-visible state transition: failure overlay removed, score/timer/run state reset, player or track motion resumes, and the after-retry screenshot/video must differ clearly from the game-over screenshot.
 - Failure must explain the cause in human-readable language and preserve a clear retry action.
 
 Visual Richness Contract:
@@ -48,13 +49,14 @@ Interaction and State Contract:
 - Main Menu, Running, Paused, Failure, RetryTransition, and Settings must have mutually exclusive visible UI rules.
 - Menu UI cannot be hidden in the menu screenshot; gameplay controls cannot remain active over Failure unless intentionally listed as disabled background context.
 - Left/right input, pause, settings, sound toggle, and retry must each produce visible feedback.
+- RetryTransition must have observable feedback such as panel fade, countdown, track flash, player respawn pulse, or refreshed hazard layout; a probe boolean alone is insufficient evidence.
 
 Audio Feedback Contract:
 - Sound On must produce verifiable audio or runtime evidence for start, drift/input, boost/reward, collision/failure, and retry/settings feedback.
 - QA cannot pass audio by checking the existence of a Sound On label only.
 
 Evidence Contract:
-- Build/QA must provide simulator screenshots and playthrough video that prove menu readability, start action, gameplay motion, input effect, failure reason, retry restart, and sound feedback evidence.
+- Build/QA must provide simulator screenshots and playthrough video that prove menu readability, start action, gameplay motion, input effect, failure reason, retry restart, after-retry visual delta, and sound feedback evidence.
 
 ## Next Step
 

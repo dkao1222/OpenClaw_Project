@@ -3,8 +3,8 @@
 ## Canonical Fields
 
 - project_name: NeonDrift_MVP
-- define_page_id: 389b9e33-8429-8151-892f-ff8d5b9df73f
-- define_run_id: notion-NeonDrift_MVP-define-20260624162607
+- define_page_id: 389b9e33-8429-81fd-8d1c-e8293a643ae4
+- define_run_id: notion-NeonDrift_MVP-define-20260624175522
 - agent_model_policy: per-agent-config
 - thinking: off
 
@@ -14,6 +14,7 @@ Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
 The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
 The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
 Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
+Retry is accepted only when a human can see a clear transition from game-over to a fresh playable run: failure overlay removed, score/timer/run state reset, player/track motion resumes, and the after-retry screenshot/video differs from the game-over frame.
 Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
 
 ## Product Vision and Purpose（產品願景與目的）
@@ -22,6 +23,7 @@ Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Edito
 The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
 The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
 Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
+Retry is accepted only when a human can see a clear transition from game-over to a fresh playable run: failure overlay removed, score/timer/run state reset, player/track motion resumes, and the after-retry screenshot/video differs from the game-over frame.
 Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
 Define 階段需補齊痛點、服務目標、MVP 邊界與可驗證成功條件；若資訊不足，必須保留為 open questions。
 
@@ -71,6 +73,7 @@ Human Playability Contract:
 - The first run must show visible player motion, visible hazard motion, and at least one player input that changes risk/outcome.
 - The game may not be delivered as static rectangles, invisible controls, or a passive score timer.
 - Retry must restart directly into a fresh playable run within 0.3 seconds unless the defined product explicitly says otherwise.
+- Retry must create a human-visible state transition: failure overlay removed, score/timer/run state reset, player or track motion resumes, and the after-retry screenshot/video must differ clearly from the game-over screenshot.
 - Failure must explain the cause in human-readable language and preserve a clear retry action.
 
 Visual Richness Contract:
@@ -82,13 +85,14 @@ Interaction and State Contract:
 - Main Menu, Running, Paused, Failure, RetryTransition, and Settings must have mutually exclusive visible UI rules.
 - Menu UI cannot be hidden in the menu screenshot; gameplay controls cannot remain active over Failure unless intentionally listed as disabled background context.
 - Left/right input, pause, settings, sound toggle, and retry must each produce visible feedback.
+- RetryTransition must have observable feedback such as panel fade, countdown, track flash, player respawn pulse, or refreshed hazard layout; a probe boolean alone is insufficient evidence.
 
 Audio Feedback Contract:
 - Sound On must produce verifiable audio or runtime evidence for start, drift/input, boost/reward, collision/failure, and retry/settings feedback.
 - QA cannot pass audio by checking the existence of a Sound On label only.
 
 Evidence Contract:
-- Build/QA must provide simulator screenshots and playthrough video that prove menu readability, start action, gameplay motion, input effect, failure reason, retry restart, and sound feedback evidence.
+- Build/QA must provide simulator screenshots and playthrough video that prove menu readability, start action, gameplay motion, input effect, failure reason, retry restart, after-retry visual delta, and sound feedback evidence.
 
 ## Development Request
 
@@ -102,4 +106,5 @@ Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
 The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
 The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
 Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
+Retry is accepted only when a human can see a clear transition from game-over to a fresh playable run: failure overlay removed, score/timer/run state reset, player/track motion resumes, and the after-retry screenshot/video differs from the game-over frame.
 Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.

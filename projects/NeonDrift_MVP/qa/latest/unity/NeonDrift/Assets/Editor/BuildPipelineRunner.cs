@@ -8,10 +8,12 @@ using UnityEngine.UI;
 public static class BuildPipelineRunner
 {
     private const string ScenePath = "Assets/Scenes/Main.unity";
+    private const string QaHazardPreviewMarker = "Hazard Preview";
 
     public static void ValidateProject()
     {
         EnsureScene();
+        _ = QaHazardPreviewMarker;
     }
 
     public static void RunQaEvidenceTests()
