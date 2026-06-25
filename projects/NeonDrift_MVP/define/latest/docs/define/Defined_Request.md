@@ -3,18 +3,18 @@
 ## Canonical Fields
 
 - project_name: NeonDrift_MVP
-- define_page_id: 38ab9e33-8429-81b0-b7ac-f4608d919a81
-- define_run_id: notion-NeonDrift_MVP-define-20260625172051
+- define_page_id: 38ab9e33-8429-81ef-91b4-d803d700a41b
+- define_run_id: notion-NeonDrift_MVP-define-20260625174709
 - agent_model_policy: per-agent-config
 - thinking: off
 
 ## Raw Idea（原始想法）
 
-Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game and prove OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobile players age 13+ who like short-session reflex games, clear controls, readable danger, visible progression, and fast retry. Core Value: 1. left/right drift with visible player agency; 2. hazards, boost cells, combo, score, pulse feedback, and clear failure reason; 3. polished neon presentation with iconography, fonts, background layers, effects, sound/haptics, compatibility targets, and runtime QA evidence. Development Scope: stop after Development passed; do not run Build or QA in this test.
+Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. Every planning/spec/development document must define concrete player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, source paths, and downstream read policy. Core gameplay must include visible player motion, hazards, boost, combo, pulse, failure reason, pause, retry, after-retry visual delta, icon/font/background/VFX/audio guidance, device compatibility, and human product experience gates. Development must consume the split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
 
 ## Product Vision and Purpose（產品願景與目的）
 
-由 Raw Idea 正規化：Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game and prove OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobile players age 13+ who like short-session reflex games, clear controls, readable danger, visible progression, and fast retry. Core Value: 1. left/right drift with visible player agency; 2. hazards, boost cells, combo, score, pulse feedback, and clear failure reason; 3. polished neon presentation with iconography, fonts, background layers, effects, sound/haptics, compatibility targets, and runtime QA evidence. Development Scope: stop after Development passed; do not run Build or QA in this test.
+由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. Every planning/spec/development document must define concrete player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, source paths, and downstream read policy. Core gameplay must include visible player motion, hazards, boost, combo, pulse, failure reason, pause, retry, after-retry visual delta, icon/font/background/VFX/audio guidance, device compatibility, and human product experience gates. Development must consume the split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
 Define 階段需補齊痛點、服務目標、MVP 邊界與可驗證成功條件；若資訊不足，必須保留為 open questions。
 
 ## Target Audience（目標受眾）
@@ -92,4 +92,4 @@ Raw idea type: game
 Priority: high
 
 Raw idea:
-Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game and prove OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobile players age 13+ who like short-session reflex games, clear controls, readable danger, visible progression, and fast retry. Core Value: 1. left/right drift with visible player agency; 2. hazards, boost cells, combo, score, pulse feedback, and clear failure reason; 3. polished neon presentation with iconography, fonts, background layers, effects, sound/haptics, compatibility targets, and runtime QA evidence. Development Scope: stop after Development passed; do not run Build or QA in this test.
+Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. Every planning/spec/development document must define concrete player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, source paths, and downstream read policy. Core gameplay must include visible player motion, hazards, boost, combo, pulse, failure reason, pause, retry, after-retry visual delta, icon/font/background/VFX/audio guidance, device compatibility, and human product experience gates. Development must consume the split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
