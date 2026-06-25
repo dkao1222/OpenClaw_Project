@@ -2,7 +2,7 @@
 
 - status: passed
 - pipeline: qa
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260624181014
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260625022624
 - source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/build_full_validation.md
 - checks_total: 10
 - checks_failed: 0
