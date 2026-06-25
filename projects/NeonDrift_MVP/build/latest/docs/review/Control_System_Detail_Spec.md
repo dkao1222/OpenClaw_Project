@@ -37,10 +37,14 @@
 
 - Control System Detail Spec 只定義 touch input、drift intent、steering output、input smoothing 與失敗前控制回饋。
 - 輸入不得依賴不可見按鈕；left/right zones 需要在 onboarding 或首次 run 以視覺提示說明。
+- Player vehicle state 必須包含 current_lane、target_lane、lateral_velocity、drift_direction、trail_state、input_source、last_input_time_ms；left/right/touch/keyboard 都要映射到同一套 drift intent。
+- 控制規則需定義 tap、hold、release、快速反向、邊界碰撞、低幀率補償與視覺 trail 變化；每個規則需有 QA reproduction step。
 - Acceptance: 在 60fps 目標下，玩家操作與車體反應延遲需維持在可感知穩定範圍，且 readback QA 可重現。
 
 ## English
 
 - Control System Detail Spec defines only touch input, drift intent, steering output, input smoothing, and pre-failure control feedback.
 - Input cannot depend on invisible buttons; left/right zones need visual teaching in onboarding or the first run.
+- Player vehicle state must include current_lane, target_lane, lateral_velocity, drift_direction, trail_state, input_source, and last_input_time_ms; left/right/touch/keyboard all map to the same drift intent.
+- Control rules must define tap, hold, release, quick reversal, boundary collision, low-frame-rate compensation, and visual trail changes; each rule needs a QA reproduction step.
 - Acceptance: at a 60fps target, player input and vehicle response latency remain predictably stable and reproducible by QA.
