@@ -3,18 +3,18 @@
 ## Canonical Fields
 
 - project_name: NeonDrift_MVP
-- define_page_id: 38ab9e33-8429-81ef-91b4-d803d700a41b
-- define_run_id: notion-NeonDrift_MVP-define-20260625174709
+- define_page_id: 38ab9e33-8429-8173-9584-f67fd6e21124
+- define_run_id: notion-NeonDrift_MVP-define-20260625174839
 - agent_model_policy: per-agent-config
 - thinking: off
 
 ## Raw Idea（原始想法）
 
-Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. Every planning/spec/development document must define concrete player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, source paths, and downstream read policy. Core gameplay must include visible player motion, hazards, boost, combo, pulse, failure reason, pause, retry, after-retry visual delta, icon/font/background/VFX/audio guidance, device compatibility, and human product experience gates. Development must consume the split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
+Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. All major planning outputs should behave like Game_Proposal: index plus detailed source_paths/context cards when a topic is too broad. Core gameplay and MVP hypothesis must be split into cards with player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, source_paths, and downstream read policy. Development must consume those split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
 
 ## Product Vision and Purpose（產品願景與目的）
 
-由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. Every planning/spec/development document must define concrete player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, source paths, and downstream read policy. Core gameplay must include visible player motion, hazards, boost, combo, pulse, failure reason, pause, retry, after-retry visual delta, icon/font/background/VFX/audio guidance, device compatibility, and human product experience gates. Development must consume the split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
+由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. All major planning outputs should behave like Game_Proposal: index plus detailed source_paths/context cards when a topic is too broad. Core gameplay and MVP hypothesis must be split into cards with player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, source_paths, and downstream read policy. Development must consume those split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
 Define 階段需補齊痛點、服務目標、MVP 邊界與可驗證成功條件；若資訊不足，必須保留為 open questions。
 
 ## Target Audience（目標受眾）
@@ -92,4 +92,4 @@ Raw idea type: game
 Priority: high
 
 Raw idea:
-Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. Every planning/spec/development document must define concrete player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, source paths, and downstream read policy. Core gameplay must include visible player motion, hazards, boost, combo, pulse, failure reason, pause, retry, after-retry visual delta, icon/font/background/VFX/audio guidance, device compatibility, and human product experience gates. Development must consume the split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
+Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. All major planning outputs should behave like Game_Proposal: index plus detailed source_paths/context cards when a topic is too broad. Core gameplay and MVP hypothesis must be split into cards with player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, source_paths, and downstream read policy. Development must consume those split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
