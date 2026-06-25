@@ -5,20 +5,22 @@
 
 ## Checks
 - PASS file.readable.docs/business/Monetization_and_Retention_Draft.md
-- PASS file.size_limit.docs/business/Monetization_and_Retention_Draft.md: 5674<=8000
+- PASS file.size_limit.docs/business/Monetization_and_Retention_Draft.md: 3432<=8000
 - PASS file.no_prompt_constraints.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.bilingual_order.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.bilingual_distinct.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.content_specificity.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.required_sections.docs/business/Monetization_and_Retention_Draft.md
+- PASS file.detail_density.docs/business/Monetization_and_Retention_Draft.md: rewarded ads, AdMob, first-run, revive, ad_offer_shown, ad_accepted, ATT, privacy, retention loop, QA
 - PASS file.schema.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.readable.docs/business/Progression_and_Rewards_Draft.md
-- PASS file.size_limit.docs/business/Progression_and_Rewards_Draft.md: 5647<=8000
+- PASS file.size_limit.docs/business/Progression_and_Rewards_Draft.md: 2933<=8000
 - PASS file.no_prompt_constraints.docs/business/Progression_and_Rewards_Draft.md
 - PASS file.bilingual_order.docs/business/Progression_and_Rewards_Draft.md
 - PASS file.bilingual_distinct.docs/business/Progression_and_Rewards_Draft.md
 - PASS file.content_specificity.docs/business/Progression_and_Rewards_Draft.md
 - PASS file.required_sections.docs/business/Progression_and_Rewards_Draft.md
+- PASS file.detail_density.docs/business/Progression_and_Rewards_Draft.md: Best score, combo, boost, daily, reward, progression, session, retention, QA
 - PASS file.schema.docs/business/Progression_and_Rewards_Draft.md
 - PASS file.readable.status/context/stage07_context_pack.md
 - PASS file.size_limit.status/context/stage07_context_pack.md: 2041<=3000
