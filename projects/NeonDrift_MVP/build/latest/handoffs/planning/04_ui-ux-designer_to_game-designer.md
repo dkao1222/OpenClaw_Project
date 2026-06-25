@@ -11,7 +11,7 @@ operation flow path: docs/design/Operation_Flow_Diagram.md
 input-to-feedback flow: controls, HUD response, failure feedback, restart response
 screen-to-screen flow: start, run, pause, failure, retry
 prototype canvas artifact: docs/design/Prototype_Flow_Canvas.html
-HUD/control assumptions: keyboard steering, boost, restart, visible speed/readability HUD
+HUD/control assumptions: touch-first left/right steering zones, pause, restart, visible speed/readability HUD
 UI constraints that gameplay must obey: fair readable hazards, immediate input feedback, no hidden critical state
 suggested_next_action: Confirm Stage 04 and start game-designer for Stage 05 from Notion.
 
