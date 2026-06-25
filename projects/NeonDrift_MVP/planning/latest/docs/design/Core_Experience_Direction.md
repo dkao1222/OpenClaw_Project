@@ -43,3 +43,13 @@
 ### Experience Boundaries
 - Visual effects must not hide the lane, hazards, score, or state information.
 - UI must prioritize quick scanning and repeated play sessions.
+
+## Reasoning and Tradeoffs
+
+- selected approach: lock a short-session, touch-first drift loop before adding meta progression or content volume.
+- rejected alternatives: full racing simulation, deep garage upgrade, multiplayer race, and story mission structure are rejected for MVP scope.
+- why selected: Stage 02 positions the product around quick mobile replay, so the first playable arc must prove readability, control trust, and retry motivation.
+- acceptance evidence: QA must capture Start -> first input -> visible drift response -> score/risk feedback -> failure reason -> Retry in screenshot or video.
+- risks if wrong: if speed hides hazards or failure feels unexplained, later content depth cannot rescue the core loop.
+- downstream owner: ui-ux-designer owns operation clarity; game-designer owns rules and challenge pacing; QA owns video proof.
+- source_paths: docs/planning/Game_Proposal.md, docs/planning/One_Page_Game_Concept.md, docs/product/MVP_PRD.md, status/context/stage02_context_pack.md.
