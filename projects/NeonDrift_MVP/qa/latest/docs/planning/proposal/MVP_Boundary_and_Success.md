@@ -3,20 +3,28 @@
 ## 繁體中文
 
 ### MVP 邊界與成功條件
-- MVP Boundary 是驗證 iOS simulator 上可玩、可看、可測、可重試的 neon drift loop，不是完整商業遊戲。
+- MVP Boundary 是驗證 iOS simulator 上可玩、可看、可測、可重試的 neon drift loop，不是完整商業遊戲。成功不是只有 build success，而是 QA recording 能證明主要功能與遊戲可理解。
+- 最小成功條件：Start 可進入 gameplay、left/right 會影響 vehicle、hazard/boost 可見且有規則、score/combo/pulse 有因果變化、failure reason 正確、Retry 可重開一輪。
+
 ### 包含範圍
-- Included Scope：Start、Settings、Pause、Retry、Best score、left/right control、hazard spawn、boost pickup、score/combo/pulse、game-over reason、local iOS simulator build、QA video/recording evidence。
+- Product scope：Start、Settings、Pause、Retry、Best score、left/right control、hazard spawn、boost pickup、score/combo/pulse、game-over reason。
+- Technical scope：Unity 6000.0.77f1、iOS simulator build、safe area、iPhone SE readable HUD、runtime probe、screenshots、simulator_playthrough.mp4。
+- QA scope：每個主要功能都要有 test case；QA 影片要證明不是黑屏、不是空場景、不是被 overlay 擋住、不是無操作自動失敗。
+
 ### 排除範圍
-- Excluded Scope：multiplayer、leaderboard、cloud save、IAP、shop、gacha、large level editor、production ad implementation；ads 只保留 privacy/AdMob readiness 與 placement design。
+- Excluded Scope：multiplayer、leaderboard、cloud save、IAP、shop、gacha、large level editor、production ad implementation、正式 App Store submission package。
+- Ads 只保留 privacy/AdMob readiness 和 placement design，不在 MVP 內實作正式收益流程；若後續加入廣告，不能放在 first-run learning 前阻斷 Start/play/retry。
 
 ## English
 
 ### MVP Boundary and Success Criteria
-- MVP Boundary validates a playable, visible, testable, retryable neon drift loop on iOS simulator, not a full commercial game.
+- The MVP validates a playable, visible, testable, retryable neon drift loop on iOS simulator. Success requires QA recording evidence, not only build success.
+
 ### Included Scope
-- Included Scope: Start, Settings, Pause, Retry, Best score, left/right control, hazard spawn, boost pickup, score/combo/pulse, game-over reason, local iOS simulator build, and QA video/recording evidence.
+- Included scope covers Start, Settings, Pause, Retry, Best score, left/right control, hazard spawn, boost pickup, score/combo/pulse, game-over reason, Unity 6000.0.77f1 iOS simulator build, safe area, runtime probe, screenshots, and playthrough video.
+
 ### Excluded Scope
-- Excluded Scope: multiplayer, leaderboard, cloud save, IAP, shop, gacha, large level editor, and production ad implementation; ads keep only privacy/AdMob readiness and placement design.
+- Excluded scope covers multiplayer, leaderboard, cloud save, IAP, shop, gacha, large editor, production ads, and final store submission package.
 
 ## Game Quality Alignment
 
