@@ -9,8 +9,8 @@ policy: compressed context pack
 ## Decisions
 
 - Stage 08 deliverables stay inside approved NeonDrift MVP scope.
-- Required handoff topics: visual mood, readability constraints, VFX and feedback moments, performance budget assumptions, audio feedback opportunities.
-- Deliverables index: docs/design/Visual_Direction.md, docs/design/Readability_and_Performance_Risk.md.
+- Required handoff topics: visual mood, style frames, asset implementation matrix, readability constraints, VFX and feedback moments, performance budget assumptions, audio feedback opportunities.
+- Deliverables index: docs/design/Visual_Direction.md, docs/design/Style_Frames.md, docs/design/Art_Asset_Implementation_Matrix.md, docs/design/Readability_and_Performance_Risk.md.
 
 ## Constraints
 
@@ -28,5 +28,7 @@ policy: compressed context pack
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage08_context_pack.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/08_technical-artist_to_audio-designer.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Visual_Direction.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Style_Frames.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Art_Asset_Implementation_Matrix.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Readability_and_Performance_Risk.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/agent_heartbeats/technical-artist.md

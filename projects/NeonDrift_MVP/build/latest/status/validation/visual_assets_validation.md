@@ -15,6 +15,7 @@ generator: scripts/generate_game_visual_assets.py
 - PASS assets/fonts/typography_manifest.json
 - PASS assets/backgrounds/background_manifest.json
 - PASS assets/vfx/vfx_manifest.json
+- PASS docs/development/Style_Frame_Implementation_Report.md
 
 ## Result
 - status: passed
@@ -31,3 +32,4 @@ generator: scripts/generate_game_visual_assets.py
 - assets/fonts/typography_manifest.json
 - assets/backgrounds/background_manifest.json
 - assets/vfx/vfx_manifest.json
+- docs/development/Style_Frame_Implementation_Report.md
