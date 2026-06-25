@@ -14,6 +14,10 @@
 - Start、drift、boost pickup、near miss、hit、game over、retry 都需要對應 VFX/SFX/haptic 事件；Sound on 必須能聽到至少 UI click 與 gameplay cue。
 - 玩家車體與障礙要有持續運動，背景要有 parallax 或 scrolling cue，否則 QA 應判定畫面缺乏生命感。
 
+### 字體與 HUD
+- font 規格必須在 planning 鎖定：主字體使用 NeonDriftBitmap 或等效科技感 bitmap font，fallback 使用 iOS system sans；HUD score/pulse 不小於 28 px，按鈕文字不小於 24 px。
+- 字體不可只靠顏色辨識；score、pulse、start、retry、left/right 必須有固定字重、外光或背景遮罩，並在 iPhone SE 與 simulator 錄影中可讀。
+
 ### 可讀性限制
 - 視覺效果不能遮住車體、hazard、left/right 按鈕、pause、retry 或 score；notch/Dynamic Island 區域不可覆蓋必要資訊。
 - 每個 icon、按鈕、文字與 HUD 數字要在 iPhone SE 尺寸仍可讀，且顏色對比需能被影片判讀。
@@ -31,6 +35,10 @@
 ### Effects and Motion
 - Start, drift, boost pickup, near miss, hit, game over, and retry need matching VFX/SFX/haptic events; Sound on must produce at least UI click and gameplay cue.
 - Player vehicle and hazards need continuous motion, and the background needs parallax or scrolling cues; otherwise QA should mark the screen lifeless.
+
+### Font and HUD
+- The font decision must be locked during planning: primary type uses NeonDriftBitmap or an equivalent arcade bitmap font, with iOS system sans as fallback; HUD score/pulse must be at least 28 px and button labels at least 24 px.
+- Text cannot depend on color alone; score, pulse, start, retry, and left/right need fixed weight, glow, or backing plate and must stay readable in iPhone SE and simulator recordings.
 
 ### Readability Limits
 - Effects must not hide vehicle, hazard, left/right buttons, pause, retry, or score; notch/Dynamic Island areas must not cover required information.
