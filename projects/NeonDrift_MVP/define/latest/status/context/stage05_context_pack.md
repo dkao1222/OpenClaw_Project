@@ -1,0 +1,34 @@
+# Stage 05 Context Pack
+
+project_name: NeonDrift_MVP
+channel_id: 382b9e3384298039b171c9b2a60ae644
+stage_agent: game-designer
+next_agent: level-designer
+policy: compressed context pack
+
+## Decisions
+
+- Stage 05 deliverables stay inside approved NeonDrift MVP scope.
+- Required handoff topics: core loop rules, 10-second playability timeline, enemy/encounter patterns, player skill and reward rules, human playtest scenarios, systems summary, success/failure conditions, player decision points, constraints for level/content design.
+- Deliverables index: docs/design/Core_Gameplay_Loop.md, docs/design/Moment_to_Moment_Gameplay.md, docs/design/Game_Systems_Overview.md, docs/design/Control_System_Spec.md, docs/design/Speed_System_Spec.md, docs/design/Hazard_System_Spec.md, docs/design/Enemy_Pattern_Spec.md, docs/design/Scoring_System_Spec.md, plus 5 additional docs in Notion/Git.
+
+## Constraints
+
+- Full docs are for Notion/Git human review; agents should use this compressed context pack plus the current handoff for execution.
+- Do not copy full prior documents into downstream prompts. Open full source documents only if a specific missing detail is required.
+- Keep iPhone-first, short-session, retry, readable HUD, safe area, touch target, haptics/audio, compatibility, and performance assumptions visible.
+
+## Next Agent Input
+
+- Next agent must read handoffs/planning/05_game-designer_to_level-designer.md first and status/context/stage05_context_pack.md second. Open full source documents only if the compact pack or handoff is missing a required implementation detail.
+- Confirm remaining implementation details in spec review before development starts.
+
+## Source Paths
+
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/context/stage05_context_pack.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/05_game-designer_to_level-designer.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Core_Gameplay_Loop.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Moment_to_Moment_Gameplay.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Systems_Overview.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Control_System_Spec.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/agent_heartbeats/game-designer.md
