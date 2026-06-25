@@ -32,6 +32,12 @@ Players age 16-35 who want short high-feedback racing sessions, clear mastery si
 ## source paths
 
 - docs/planning/Game_Proposal.md
+- docs/planning/proposal/High_Concept.md
+- docs/planning/proposal/Game_Screen_Outline.md
+- docs/planning/proposal/First_10_Seconds.md
+- docs/planning/proposal/Primary_Objects_and_Rules.md
+- docs/planning/proposal/Failure_Retry_and_Progress.md
+- docs/planning/proposal/MVP_Boundary_and_Success.md
 - docs/planning/Game_Objective.md
 - docs/planning/One_Page_Game_Concept.md
 - docs/planning/Core_Gameplay_Loop.md
