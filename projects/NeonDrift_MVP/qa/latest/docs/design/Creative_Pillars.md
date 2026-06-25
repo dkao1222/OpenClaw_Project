@@ -27,3 +27,13 @@
 ### Instant Retry Confidence
 - Failure must feel fair, fast, and clear about what the player can improve next.
 - Retry flow must stay short so failure does not break motivation.
+
+## Reasoning and Tradeoffs
+
+- selected approach: use three pillars as production decision filters: speed readability, neon focus, and instant retry confidence.
+- rejected alternatives: pure visual spectacle, punishing arcade difficulty, and feature-count breadth are rejected because they do not prove mobile replay value.
+- why selected: each pillar maps to a visible player problem: reading the lane, understanding risk, and wanting one more run after failure.
+- acceptance evidence: each downstream spec must show at least one screenshot/video proof for readability, feedback clarity, and retry speed.
+- risks if wrong: if a pillar is only a slogan, later art, gameplay, and QA can all pass while the game still feels empty or unreadable.
+- downstream owner: visual designer owns neon focus; game-designer owns fairness and risk; QA owns evidence that pillars are observable.
+- source_paths: docs/planning/Game_Proposal.md, docs/planning/MVP_Hypothesis.md, docs/product/MVP_PRD.md, handoffs/planning/02_product-planner_to_game-director.md.
