@@ -1,4 +1,7 @@
 # Open Blockers
 
-- critical_blockers: none for Unity source package
-- platform_build_blocker: Unity Editor path not detected in this environment
+project_name: NeonDrift_MVP
+channel_id: 382b9e3384298039b171c9b2a60ae644
+status: clear
+blockers: none
+next_required_action: proceed to Stage 02 after validation passes and user confirms.
