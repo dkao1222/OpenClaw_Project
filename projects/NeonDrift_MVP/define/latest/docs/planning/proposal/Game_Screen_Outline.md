@@ -3,20 +3,34 @@
 ## 繁體中文
 
 ### 遊戲畫面輪廓
-- 直式畫面：top-left score/combo、top-right pulse/boost、Dynamic Island safe area、中央 dark track、cyan/magenta lane、bottom left/right controls。
+- 直式 iPhone 畫面以中央 dark track 為主體，左右邊緣用 cyan/magenta light strip 表示 lane limit，vehicle 位於下半部中央偏上，hazard/boost 從上方進入，bottom controls 固定為 LEFT/RIGHT。
+- HUD 放置：top-left 顯示 SCORE 與 combo，top-right 顯示 PULSE/boost charge，pause 在右上但避開 Dynamic Island/safe area，Best score 只在 menu 或 failure overlay 中顯示。
+- Start menu 不是遮住整個遊戲的黑盒；它必須讓玩家看得到 game title、Start、Settings，以及背景 track preview。Start 後 overlay 必須完全離場，不得殘留擋住 gameplay。
+
 ### 畫面層次
-- Screen Layers 至少包含 background、speed lines/parallax、track lane、vehicle/hazard/boost、HUD/modal；Start 後 overlay 消失並出現 gameplay objects。
+- Layer 1 background：深色但不可黑屏，需有 subtle grid、parallax streak 或 glow gradient，讓 QA 影片能看出場景存在。
+- Layer 2 track：中央可玩區域要有可辨識長條 track、左右 light border、safe lane cue；track 可以垂直流動或用 speed line 表示前進感。
+- Layer 3 gameplay objects：player vehicle、hazard、boost cell 要使用不同形狀與高對比色；不能只有同色方塊，不能與背景融合。
+- Layer 4 feedback/VFX：drift trail、pickup flash、hazard warning、collision flash、pulse warning 至少要覆蓋主要互動事件。
+- Layer 5 HUD/modal：HUD 不可被 notch、Dynamic Island、failure overlay 或 VFX 遮擋；modal 出現時仍要讓玩家看出背景與失敗原因。
+
 ### 可讀性邊界
-- iPhone SE 上 HUD 必須可讀；effects 不得遮住 vehicle、hazard、boost、buttons、failure reason；QA video 不可呈現黑屏、純色或空場景。
+- iPhone SE portrait 是最低可讀基準；score/pulse 字高、button touch area、failure text、retry button 必須可操作且不重疊。
+- Effects 不得遮住 vehicle、hazard、boost、buttons、failure reason；如果畫面錄影呈現黑屏、純色背景、沒有可動物件、Start overlay 疊在 gameplay 上，QA 必須判定失敗。
+
+### 下游取用規則
+- UI/UX、art、development 必須把這張卡當作第一畫面契約；若無法實作完整視覺華麗度，至少保留 five-layer readability、drift feedback、hazard/boost differentiation。
 
 ## English
 
 ### Game Screen Outline
-- Portrait screen: top-left score/combo, top-right pulse/boost, Dynamic Island safe area, central dark track, cyan/magenta lane, and bottom left/right controls.
+- Portrait iPhone screen uses a central dark track, cyan/magenta lane borders, lower-mid player vehicle, top-entering hazards/boosts, and fixed bottom LEFT/RIGHT controls.
+
 ### Screen Layers
-- Screen Layers include background, speed lines/parallax, track lane, vehicle/hazard/boost, and HUD/modal; after Start the overlay disappears and gameplay objects appear.
+- Required layers: visible dark background, readable track, differentiated gameplay objects, event feedback/VFX, and safe-area aware HUD/modal.
+
 ### Readability Boundaries
-- HUD must be readable on iPhone SE; effects cannot hide vehicle, hazard, boost, buttons, or failure reason; QA video cannot show black screen, flat color only, or empty scene.
+- iPhone SE portrait is the floor. QA fails black screen, flat-color-only scene, no moving objects, gameplay hidden by Start overlay, or unreadable controls.
 
 ## Game Quality Alignment
 

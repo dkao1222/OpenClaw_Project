@@ -1,0 +1,96 @@
+# Micro Validation Report: stage02a_game_proposal
+
+- stage: planning_stage_02a
+- agent_id: product-planner
+- session_id: notion-NeonDrift_MVP-0-12-20260625050615-stage02a_game_proposal
+- output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
+
+## Checks
+- PASS file.readable.docs/planning/Game_Proposal.md
+- PASS file.size_limit.docs/planning/Game_Proposal.md: 4539<=8000
+- PASS file.no_prompt_constraints.docs/planning/Game_Proposal.md
+- PASS file.content_specificity.docs/planning/Game_Proposal.md
+- PASS file.no_unsupported_generic_language.docs/planning/Game_Proposal.md
+- PASS file.bilingual_order.docs/planning/Game_Proposal.md
+- PASS file.bilingual_distinct.docs/planning/Game_Proposal.md
+- PASS file.length_contract.docs/planning/Game_Proposal.md: 4061
+- PASS file.key_terms.docs/planning/Game_Proposal.md
+- PASS file.detail_density.docs/planning/Game_Proposal.md: Proposal Index, Context Cards, source_paths, High_Concept.md, Game_Screen_Outline.md, First_10_Seconds.md, Downstream Read Policy
+- PASS file.knowledge_alignment_sections.docs/planning/Game_Proposal.md
+- PASS file.knowledge_source_markers.docs/planning/Game_Proposal.md
+- PASS file.readable.docs/planning/proposal/High_Concept.md
+- PASS file.size_limit.docs/planning/proposal/High_Concept.md: 3484<=8000
+- PASS file.no_prompt_constraints.docs/planning/proposal/High_Concept.md
+- PASS file.content_specificity.docs/planning/proposal/High_Concept.md
+- PASS file.no_unsupported_generic_language.docs/planning/proposal/High_Concept.md
+- PASS file.bilingual_order.docs/planning/proposal/High_Concept.md
+- PASS file.bilingual_distinct.docs/planning/proposal/High_Concept.md
+- PASS file.length_contract.docs/planning/proposal/High_Concept.md: 3037
+- PASS file.key_terms.docs/planning/proposal/High_Concept.md
+- PASS file.detail_density.docs/planning/proposal/High_Concept.md: High Concept, Player Promise, Core Feeling, left/right drift, hazard, boost, combo, pulse
+- PASS file.knowledge_alignment_sections.docs/planning/proposal/High_Concept.md
+- PASS file.knowledge_source_markers.docs/planning/proposal/High_Concept.md
+- PASS file.readable.docs/planning/proposal/Game_Screen_Outline.md
+- PASS file.size_limit.docs/planning/proposal/Game_Screen_Outline.md: 3459<=8000
+- PASS file.no_prompt_constraints.docs/planning/proposal/Game_Screen_Outline.md
+- PASS file.content_specificity.docs/planning/proposal/Game_Screen_Outline.md
+- PASS file.no_unsupported_generic_language.docs/planning/proposal/Game_Screen_Outline.md
+- PASS file.bilingual_order.docs/planning/proposal/Game_Screen_Outline.md
+- PASS file.bilingual_distinct.docs/planning/proposal/Game_Screen_Outline.md
+- PASS file.length_contract.docs/planning/proposal/Game_Screen_Outline.md: 3057
+- PASS file.key_terms.docs/planning/proposal/Game_Screen_Outline.md
+- PASS file.detail_density.docs/planning/proposal/Game_Screen_Outline.md: screen outline, Screen Layers, pulse/boost, Dynamic Island, parallax, iPhone SE
+- PASS file.knowledge_alignment_sections.docs/planning/proposal/Game_Screen_Outline.md
+- PASS file.knowledge_source_markers.docs/planning/proposal/Game_Screen_Outline.md
+- PASS file.readable.docs/planning/proposal/First_10_Seconds.md
+- PASS file.size_limit.docs/planning/proposal/First_10_Seconds.md: 3255<=8000
+- PASS file.no_prompt_constraints.docs/planning/proposal/First_10_Seconds.md
+- PASS file.content_specificity.docs/planning/proposal/First_10_Seconds.md
+- PASS file.no_unsupported_generic_language.docs/planning/proposal/First_10_Seconds.md
+- PASS file.bilingual_order.docs/planning/proposal/First_10_Seconds.md
+- PASS file.bilingual_distinct.docs/planning/proposal/First_10_Seconds.md
+- PASS file.length_contract.docs/planning/proposal/First_10_Seconds.md: 2843
+- PASS file.key_terms.docs/planning/proposal/First_10_Seconds.md
+- PASS file.detail_density.docs/planning/proposal/First_10_Seconds.md: First 10 Seconds, 0 to 3, 4 to 7, 8 to 10, Start, hazard preview, boost cell, QA
+- PASS file.knowledge_alignment_sections.docs/planning/proposal/First_10_Seconds.md
+- PASS file.knowledge_source_markers.docs/planning/proposal/First_10_Seconds.md
+- PASS file.readable.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS file.size_limit.docs/planning/proposal/Primary_Objects_and_Rules.md: 3524<=8000
+- PASS file.no_prompt_constraints.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS file.content_specificity.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS file.no_unsupported_generic_language.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS file.bilingual_order.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS file.bilingual_distinct.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS file.length_contract.docs/planning/proposal/Primary_Objects_and_Rules.md: 3101
+- PASS file.key_terms.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS file.detail_density.docs/planning/proposal/Primary_Objects_and_Rules.md: primary objects, Player vehicle, Hazard, Boost cell, Track lane, collision, score, fairness
+- PASS file.knowledge_alignment_sections.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS file.knowledge_source_markers.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS file.readable.docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS file.size_limit.docs/planning/proposal/Failure_Retry_and_Progress.md: 3051<=8000
+- PASS file.no_prompt_constraints.docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS file.content_specificity.docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS file.no_unsupported_generic_language.docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS file.bilingual_order.docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS file.bilingual_distinct.docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS file.length_contract.docs/planning/proposal/Failure_Retry_and_Progress.md: 2662
+- PASS file.key_terms.docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS file.detail_density.docs/planning/proposal/Failure_Retry_and_Progress.md: failure reason, hit hazard, pulse depleted, out of lane, Retry, after-retry visual delta, Best score
+- PASS file.knowledge_alignment_sections.docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS file.knowledge_source_markers.docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS file.readable.docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS file.size_limit.docs/planning/proposal/MVP_Boundary_and_Success.md: 3177<=8000
+- PASS file.no_prompt_constraints.docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS file.content_specificity.docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS file.no_unsupported_generic_language.docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS file.bilingual_order.docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS file.bilingual_distinct.docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS file.length_contract.docs/planning/proposal/MVP_Boundary_and_Success.md: 2816
+- PASS file.key_terms.docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS file.detail_density.docs/planning/proposal/MVP_Boundary_and_Success.md: MVP boundary, Included Scope, Excluded Scope, iOS simulator, recording evidence
+- PASS file.knowledge_alignment_sections.docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS file.knowledge_source_markers.docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS process.deterministic_writer
+
+## Result
+- status: passed
