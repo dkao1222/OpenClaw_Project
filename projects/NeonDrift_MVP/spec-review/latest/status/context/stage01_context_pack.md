@@ -5,7 +5,7 @@ channel_id: 382b9e3384298039b171c9b2a60ae644
 
 ## project goal
 
-由 Raw Idea 正規化：Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game and prove OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobi
+由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. All major planning outputs should behav
 
 ## target audience
 
