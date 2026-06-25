@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/review/Planning_Final_Decision.md
-- PASS file.size_limit.docs/review/Planning_Final_Decision.md: 5107<=8000
+- PASS file.size_limit.docs/review/Planning_Final_Decision.md: 5588<=8000
 - PASS file.no_prompt_constraints.docs/review/Planning_Final_Decision.md
 - PASS file.bilingual_order.docs/review/Planning_Final_Decision.md
 - PASS file.bilingual_distinct.docs/review/Planning_Final_Decision.md
