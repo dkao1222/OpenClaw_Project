@@ -138,6 +138,8 @@
 - PASS source_doc_marker:docs/review/Visual_Audio_Detail_Spec.md:particle/VFX budget: particle/VFX budget
 - PASS source_doc_marker:docs/review/Visual_Audio_Detail_Spec.md:audio identity: audio identity
 - PASS source_doc_marker:docs/review/Visual_Audio_Detail_Spec.md:readability gate: readability gate
+- PASS source_doc_marker:docs/review/Visual_Audio_Detail_Spec.md:license: license
+- PASS source_doc_marker:docs/review/Visual_Audio_Detail_Spec.md:store decision: store decision
 - PASS source_doc_marker:docs/review/Visual_Audio_Detail_Spec.md:Acceptance: Acceptance
 - PASS required_source_doc:docs/review/Visual_Style_Frame_Readiness.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/review/Visual_Style_Frame_Readiness.md
 - PASS source_doc_marker:docs/review/Visual_Style_Frame_Readiness.md:Style_Frames.md: Style_Frames.md
@@ -145,6 +147,8 @@
 - PASS source_doc_marker:docs/review/Visual_Style_Frame_Readiness.md:Visual_Target_Lock.md: Visual_Target_Lock.md
 - PASS source_doc_marker:docs/review/Visual_Style_Frame_Readiness.md:Unity screen state: Unity screen state
 - PASS source_doc_marker:docs/review/Visual_Style_Frame_Readiness.md:visual delta: visual delta
+- PASS source_doc_marker:docs/review/Visual_Style_Frame_Readiness.md:license: license
+- PASS source_doc_marker:docs/review/Visual_Style_Frame_Readiness.md:store decision: store decision
 - PASS source_doc_marker:docs/review/Visual_Style_Frame_Readiness.md:QA screenshot: QA screenshot
 - PASS source_doc_marker:docs/review/Visual_Style_Frame_Readiness.md:video: video
 - PASS required_source_doc:docs/review/Implementation_Readiness_Checklist.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/review/Implementation_Readiness_Checklist.md
@@ -281,6 +285,8 @@
 - PASS source_doc_marker:docs/design/Art_Asset_Implementation_Matrix.md:screen state: screen state
 - PASS source_doc_marker:docs/design/Art_Asset_Implementation_Matrix.md:trigger: trigger
 - PASS source_doc_marker:docs/design/Art_Asset_Implementation_Matrix.md:variation: variation
+- PASS source_doc_marker:docs/design/Art_Asset_Implementation_Matrix.md:license: license
+- PASS source_doc_marker:docs/design/Art_Asset_Implementation_Matrix.md:store decision: store decision
 - PASS source_doc_marker:docs/design/Art_Asset_Implementation_Matrix.md:QA evidence: QA evidence
 - PASS required_source_doc:docs/design/Visual_Target_Lock.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Visual_Target_Lock.md
 - PASS source_doc_marker:docs/design/Visual_Target_Lock.md:Visual Target Lock: Visual Target Lock

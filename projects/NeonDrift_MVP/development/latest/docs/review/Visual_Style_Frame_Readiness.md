@@ -6,6 +6,8 @@
 - Visual art reference used: visual communication, composition, asset language, motion art, and hierarchy are translated into implementation-ready fields.
 - Gameplay depth score: spec review target 3+; evidence must include trigger, state, rule, HUD feedback, QA acceptance, and implementation-ready feature boundaries.
 - Visual richness score: spec review target 3+; evidence must include asset list, VFX event table, typography/icon style, particle/VFX budget, reduced-motion fallback, and performance guardrail.
+- Asset sourcing cards read: asset_sourcing/ROUTING.md, OPENGAMEART_USAGE.md, LICENSE_DECISION_MATRIX.md, ASSET_ATTRIBUTION_REGISTER.md, and AUDIO_ASSET_CHECKLIST.md when external art/audio sources are referenced.
+- License readiness: third-party assets require exact license, attribution, store decision, implementation path, and QA evidence; GPL/LGPL/CC-BY-SA/unclear licenses are blocked by default for mobile store builds.
 - Current-stage minimum: gameplay depth 3+ and visual richness 3+.
 - Pass/fail: fail if the spec only says fun, polished, neon, challenging, or better visuals without concrete implementation fields.
 - Blockers: return to planning when depth or richness is missing from planning sources.
@@ -35,6 +37,7 @@
 
 - Visual Style Frame Readiness 只判斷 Style_Frames.md、Art_Asset_Implementation_Matrix.md 與 Visual_Target_Lock.md 是否足以讓 development 改變 Unity 畫面。
 - 每個 style frame 必須對應 Unity screen state、asset path、VFX trigger、typography/icon role、safe-area rule 與 QA screenshot/video evidence。
+- 若任何 style frame 或 asset path 來自 OpenGameArt、圖庫、音效庫或第三方素材，必須檢查 exact license、attribution、store decision 與 fallback。
 - 必須列出 main menu、gameplay、reward/boost、danger/near miss、failure/game-over、retry result 的 required visual delta；若缺少任一 frame，不可進入 development。
 - 必須列出禁止條件：單色背景、靜態方塊、沒有 player/threat/reward 身份、沒有 retry recovery cue、PNG/manifest 存在但 Unity 未使用。
 - Acceptance: development 完成後 QA 必須能用錄影和六張截圖比對 style frame implementation，否則 release candidate blocked。
@@ -43,6 +46,7 @@
 
 - Visual Style Frame Readiness only decides whether Style_Frames.md, Art_Asset_Implementation_Matrix.md, and Visual_Target_Lock.md are enough for development to change the Unity screen.
 - Every style frame must map to Unity screen state, asset path, VFX trigger, typography/icon role, safe-area rule, and QA screenshot/video evidence.
+- If any style frame or asset path comes from OpenGameArt, an image library, a sound library, or another third-party source, check exact license, attribution, store decision, and fallback.
 - It must list required visual delta for main menu, gameplay, reward/boost, danger/near miss, failure/game-over, and retry result; missing any frame blocks development.
 - It must list forbidden conditions: flat background, static blocks, no player/threat/reward identity, no retry recovery cue, or PNG/manifest assets that are not used by Unity.
 - Acceptance: after development, QA must compare style frame implementation through video and six screenshots, otherwise the release candidate is blocked.

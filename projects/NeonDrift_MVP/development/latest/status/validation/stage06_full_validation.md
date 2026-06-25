@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/design/Content_Design_Draft.md
-- PASS file.size_limit.docs/design/Content_Design_Draft.md: 5080<=8000
+- PASS file.size_limit.docs/design/Content_Design_Draft.md: 5561<=8000
 - PASS file.no_prompt_constraints.docs/design/Content_Design_Draft.md
 - PASS file.bilingual_order.docs/design/Content_Design_Draft.md
 - PASS file.bilingual_distinct.docs/design/Content_Design_Draft.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/design/Content_Design_Draft.md
 - PASS file.schema.docs/design/Content_Design_Draft.md
 - PASS file.readable.docs/design/Level_and_Tutorial_Pacing.md
-- PASS file.size_limit.docs/design/Level_and_Tutorial_Pacing.md: 5130<=8000
+- PASS file.size_limit.docs/design/Level_and_Tutorial_Pacing.md: 5611<=8000
 - PASS file.no_prompt_constraints.docs/design/Level_and_Tutorial_Pacing.md
 - PASS file.bilingual_order.docs/design/Level_and_Tutorial_Pacing.md
 - PASS file.bilingual_distinct.docs/design/Level_and_Tutorial_Pacing.md

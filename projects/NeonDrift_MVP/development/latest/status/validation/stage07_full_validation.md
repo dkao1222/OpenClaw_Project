@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/business/Monetization_and_Retention_Draft.md
-- PASS file.size_limit.docs/business/Monetization_and_Retention_Draft.md: 5193<=8000
+- PASS file.size_limit.docs/business/Monetization_and_Retention_Draft.md: 5674<=8000
 - PASS file.no_prompt_constraints.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.bilingual_order.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.bilingual_distinct.docs/business/Monetization_and_Retention_Draft.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.schema.docs/business/Monetization_and_Retention_Draft.md
 - PASS file.readable.docs/business/Progression_and_Rewards_Draft.md
-- PASS file.size_limit.docs/business/Progression_and_Rewards_Draft.md: 5166<=8000
+- PASS file.size_limit.docs/business/Progression_and_Rewards_Draft.md: 5647<=8000
 - PASS file.no_prompt_constraints.docs/business/Progression_and_Rewards_Draft.md
 - PASS file.bilingual_order.docs/business/Progression_and_Rewards_Draft.md
 - PASS file.bilingual_distinct.docs/business/Progression_and_Rewards_Draft.md
