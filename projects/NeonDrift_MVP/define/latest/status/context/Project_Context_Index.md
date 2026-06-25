@@ -6,9 +6,7 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Product Vision and Purpose
 
-- snippet: 由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
-The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
-The game must be visually ric
+- snippet: 由 Raw Idea 正規化：Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game that proves OpenClaw can run Raw Idea -> Define -> 
 
 ## Target Audience
 
