@@ -37,7 +37,10 @@
 
 - 核心循環是開始短局、左右控制漂移、避開障礙、累積分數、碰撞失敗、立即重試。
 - 玩法內容層必須來自 planning：wave objective、boost cell pickup、combo chain、hazard pattern 與短局任務都要有明確規則、HUD 顯示、失敗/成功條件與 QA 驗收。
+- Primary object contract 必須逐一轉成可實作規格：Player vehicle 需定義 current_lane、target_lane、lateral_velocity、drift_direction、trail_state；Hazard 需定義 spawn_lane、approach_speed、warning_state、hitbox_scale、time_to_react；Boost cell 需定義 pickup_window、value_type、pulse_restore、combo_extend。
+- 每個物件都要列出 visual identity、spawn/activation rule、state transition、collision/collection outcome、HUD feedback、audio/haptics cue、runtime probe field 與 QA acceptance，不可只描述概念。
 - 分數由存活時間、近距離閃避與連續控制穩定度組成；失敗必須清楚指出碰撞或離線原因。
+- runtime evidence 必須包含 score_delta_reason、last_collision_type、pulse_delta_reason、pickup_count、hazard_count、boost_count、combo_count、last_failure_reason；QA 需能從單局錄影與 probe JSON 對照。
 - 難度曲線以速度、障礙密度與視覺干擾逐步提高，但不得犧牲玩家對車體與障礙的可讀性。
 - 系統契約必須保留 Control System、Speed System、Hazard System、Content Objective System、Scoring System、Failure/Retry System、Feedback System；每個系統需要 input、state、rule、output、dependency 與 success/failure conditions。
 
@@ -45,6 +48,9 @@
 
 - The core loop is start run, steer drifting, avoid hazards, build score, fail on collision, and retry immediately.
 - Gameplay content layers must originate from planning: wave objective, boost cell pickup, combo chain, hazard pattern, and short-session missions all need explicit rules, HUD display, success/failure conditions, and QA acceptance.
+- The primary object contract must become implementation-ready: Player vehicle defines current_lane, target_lane, lateral_velocity, drift_direction, and trail_state; Hazard defines spawn_lane, approach_speed, warning_state, hitbox_scale, and time_to_react; Boost cell defines pickup_window, value_type, pulse_restore, and combo_extend.
+- Every object must list visual identity, spawn/activation rule, state transition, collision/collection outcome, HUD feedback, audio/haptics cue, runtime probe field, and QA acceptance; concept-only descriptions are not enough.
 - Score comes from survival time, near-miss avoidance, and control consistency; failure must clearly show collision or off-line cause.
+- Runtime evidence must include score_delta_reason, last_collision_type, pulse_delta_reason, pickup_count, hazard_count, boost_count, combo_count, and last_failure_reason; QA must cross-check these against one-run video and probe JSON.
 - Difficulty scales through speed, hazard density, and visual pressure without sacrificing readability of the vehicle and hazards.
 - The system contract must preserve Control System, Speed System, Hazard System, Content Objective System, Scoring System, Failure/Retry System, and Feedback System; each system needs input, state, rule, output, dependency, and success/failure conditions.

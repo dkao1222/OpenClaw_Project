@@ -113,6 +113,12 @@
 - PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:touch input: touch input
 - PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:drift intent: drift intent
 - PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:left/right zones: left/right zones
+- PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:current_lane: current_lane
+- PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:target_lane: target_lane
+- PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:lateral_velocity: lateral_velocity
+- PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:drift_direction: drift_direction
+- PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:trail_state: trail_state
+- PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:QA reproduction step: QA reproduction step
 - PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:60fps: 60fps
 - PASS source_doc_marker:docs/review/Control_System_Detail_Spec.md:Acceptance: Acceptance
 - PASS required_source_doc:docs/review/Speed_Hazard_Detail_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/review/Speed_Hazard_Detail_Spec.md
@@ -123,6 +129,14 @@
 - PASS required_source_doc:docs/review/Scoring_Failure_Retry_Detail_Spec.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/review/Scoring_Failure_Retry_Detail_Spec.md
 - PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:score events: score events
 - PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:failure reason: failure reason
+- PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:score_delta_reason: score_delta_reason
+- PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:pulse_delta_reason: pulse_delta_reason
+- PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:last_collision_type: last_collision_type
+- PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:last_failure_reason: last_failure_reason
+- PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:pickup_count: pickup_count
+- PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:hazard_count: hazard_count
+- PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:boost_count: boost_count
+- PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:combo_count: combo_count
 - PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:retry: retry
 - PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:QA: QA
 - PASS source_doc_marker:docs/review/Scoring_Failure_Retry_Detail_Spec.md:Acceptance: Acceptance

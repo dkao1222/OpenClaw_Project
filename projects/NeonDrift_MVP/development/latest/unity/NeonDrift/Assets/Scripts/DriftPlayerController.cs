@@ -13,6 +13,11 @@ public sealed class DriftPlayerController : MonoBehaviour
     private float uiSteer;
 
     public float CurrentX => transform.position.x;
+    public int CurrentLane => transform.position.x < -1.05f ? -1 : transform.position.x > 1.05f ? 1 : 0;
+    public int TargetLane => steer < -0.01f ? -1 : steer > 0.01f ? 1 : CurrentLane;
+    public float LateralVelocity => body != null ? body.linearVelocity.x : 0f;
+    public string DriftDirection => steer < -0.01f ? "left" : steer > 0.01f ? "right" : "neutral";
+    public string TrailState => Mathf.Abs(steer) > 0.01f || Mathf.Abs(LateralVelocity) > 0.1f ? "active" : "idle";
     public bool HasUiSteeringInput => Mathf.Abs(uiSteer) > 0.01f;
 
     private void Awake()
@@ -94,7 +99,7 @@ public sealed class DriftPlayerController : MonoBehaviour
     {
         if (collision.collider.CompareTag("Hazard"))
         {
-            GameSessionController.Instance?.GameOver();
+            GameSessionController.Instance?.GameOver("hazard_body");
         }
     }
 

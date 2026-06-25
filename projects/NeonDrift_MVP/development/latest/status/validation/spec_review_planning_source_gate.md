@@ -146,11 +146,21 @@
 - PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Game Quality Alignment: Game Quality Alignment
 - PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Game System Design Alignment: Game System Design Alignment
 - PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Player vehicle: Player vehicle
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:visual identity: visual identity
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:state fields: state fields
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:behavior rules: behavior rules
 - PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Hazard: Hazard
 - PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Boost cell: Boost cell
 - PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Track lane: Track lane
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:HUD: HUD
 - PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:score: score
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:score_delta_reason: score_delta_reason
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:last_collision_type: last_collision_type
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:pulse_delta_reason: pulse_delta_reason
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:pickup_count: pickup_count
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:combo_count: combo_count
 - PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:fairness: fairness
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:acceptance: acceptance
 - PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:make it fun: make it fun
 - PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:high quality: high quality
 - PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:engaging gameplay: engaging gameplay
