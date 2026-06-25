@@ -5,7 +5,7 @@ channel_id: 382b9e3384298039b171c9b2a60ae644
 
 ## project goal
 
-由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must produce detailed split context cards, not summary-only documents. All major planning outputs should behav
+由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must not produce summary-only documents. Every major planning output must behave like Game_Proposal: an index 
 
 ## target audience
 
