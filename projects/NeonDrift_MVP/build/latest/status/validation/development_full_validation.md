@@ -21,6 +21,7 @@
 - PASS docs/legal/App_Store_Privacy_Label.md
 - PASS docs/legal/Google_Play_Data_Safety.md
 - PASS docs/legal/Ad_Monetization_Compliance_Checklist.md
+- PASS docs/legal/Third_Party_Asset_License_Register.md
 - PASS docs/legal/SDK_Data_Inventory.md
 - PASS docs/legal/Permissions_and_Consent_Checklist.md
 - PASS docs/qa/MVP_QA_Test_Plan.md

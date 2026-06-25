@@ -6,6 +6,8 @@
 - Visual art reference used: visual communication, composition, asset language, motion art, and hierarchy are translated into implementation-ready fields.
 - Gameplay depth score: spec review target 3+; evidence must include trigger, state, rule, HUD feedback, QA acceptance, and implementation-ready feature boundaries.
 - Visual richness score: spec review target 3+; evidence must include asset list, VFX event table, typography/icon style, particle/VFX budget, reduced-motion fallback, and performance guardrail.
+- Asset sourcing cards read: asset_sourcing/ROUTING.md, OPENGAMEART_USAGE.md, LICENSE_DECISION_MATRIX.md, ASSET_ATTRIBUTION_REGISTER.md, and AUDIO_ASSET_CHECKLIST.md when external art/audio sources are referenced.
+- License readiness: third-party assets require exact license, attribution, store decision, implementation path, and QA evidence; GPL/LGPL/CC-BY-SA/unclear licenses are blocked by default for mobile store builds.
 - Current-stage minimum: gameplay depth 3+ and visual richness 3+.
 - Pass/fail: fail if the spec only says fun, polished, neon, challenging, or better visuals without concrete implementation fields.
 - Blockers: return to planning when depth or richness is missing from planning sources.
