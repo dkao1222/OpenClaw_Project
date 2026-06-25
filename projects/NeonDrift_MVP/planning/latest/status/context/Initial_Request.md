@@ -2,12 +2,12 @@
 
 project_name: NeonDrift_MVP
 workspace_key: 382b9e3384298039b171c9b2a60ae644
-run_id: notion-NeonDrift_MVP-0-12-20260625171917
+run_id: notion-NeonDrift_MVP-0-12-20260625172107
 stage_range: 0-12
 agent_model_policy: per-agent-config
 legacy_model_field_ignored: per-agent-config
 thinking: off
-requested_by: define:notion-NeonDrift_MVP-define-20260625171854
+requested_by: define:notion-NeonDrift_MVP-define-20260625172051
 
 ## Pipeline Execution Policy
 
@@ -15,7 +15,7 @@ The Notion watcher script is the pipeline controller. Each OpenClaw agent is a w
 
 ## Product Vision and Purpose（產品願景與目的）
 
-由 Raw Idea 正規化：Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game that proves OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobile players age 13+ who like short-session reflex games, clear controls, visible progression, readable danger, and fast retry. Core Value: 1. left/right drift with visible player agency; 2. hazards, boost cells, combo, score, pulse feedback, and clear failure reason; 3. polished neon presentation with iconography, fonts, background layers, effects, sound/haptics, compatibility targets, and runtime QA evidence. Development Scope: stop after Development passed; do not run Build or QA in this test.
+由 Raw Idea 正規化：Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game and prove OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobile players age 13+ who like short-session reflex games, clear controls, readable danger, visible progression, and fast retry. Core Value: 1. left/right drift with visible player agency; 2. hazards, boost cells, combo, score, pulse feedback, and clear failure reason; 3. polished neon presentation with iconography, fonts, background layers, effects, sound/haptics, compatibility targets, and runtime QA evidence. Development Scope: stop after Development passed; do not run Build or QA in this test.
 Define 階段需補齊痛點、服務目標、MVP 邊界與可驗證成功條件；若資訊不足，必須保留為 open questions。
 
 ## Target Audience（目標受眾）
@@ -39,7 +39,7 @@ Raw idea type: game
 Priority: high
 
 Raw idea:
-Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game that proves OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobile players age 13+ who like short-session reflex games, clear controls, visible progression, readable danger, and fast retry. Core Value: 1. left/right drift with visible player agency; 2. hazards, boost cells, combo, score, pulse feedback, and clear failure reason; 3. polished neon presentation with iconography, fonts, background layers, effects, sound/haptics, compatibility targets, and runtime QA evidence. Development Scope: stop after Development passed; do not run Build or QA in this test.
+Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game and prove OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobile players age 13+ who like short-session reflex games, clear controls, readable danger, visible progression, and fast retry. Core Value: 1. left/right drift with visible player agency; 2. hazards, boost cells, combo, score, pulse feedback, and clear failure reason; 3. polished neon presentation with iconography, fonts, background layers, effects, sound/haptics, compatibility targets, and runtime QA evidence. Development Scope: stop after Development passed; do not run Build or QA in this test.
 
 Raw idea source:
-Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deli
+Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: delive

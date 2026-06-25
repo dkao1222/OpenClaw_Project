@@ -7,7 +7,7 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Product Vision and Purpose
 
-由 Raw Idea 正規化：Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game that proves OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobile players age 13+ who like short-session reflex games, cl
+由 Raw Idea 正規化：Project Background and Goal: Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Product Vision and Purpose: deliver a visually rich, immediately understandable neon drift arcade game and prove OpenClaw can run Raw Idea -> Define -> Planning -> Spec Review -> Development without manual product-code intervention. Target Audience: mobile players age 13+ who like short-session reflex games, clea
 
 ## Target Audience
 
