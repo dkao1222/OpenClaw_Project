@@ -11,6 +11,7 @@
 - PASS file.bilingual_distinct.docs/design/Game_Design_Document.md
 - PASS file.content_specificity.docs/design/Game_Design_Document.md
 - PASS file.required_sections.docs/design/Game_Design_Document.md
+- PASS file.detail_density.docs/design/Game_Design_Document.md: Moment-to-moment, 0-10, Enemy Pattern, Player Skill, Human Playtest, visual richness, failure reason, QA
 - PASS file.schema.docs/design/Game_Design_Document.md
 - PASS file.readable.docs/design/Game_Design_Overview.md
 - PASS file.size_limit.docs/design/Game_Design_Overview.md: 4079<=8000
