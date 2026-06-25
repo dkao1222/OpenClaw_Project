@@ -42,7 +42,7 @@ required keywords: visual, target, lock
 - Visual Target Lock 彙整 Style_Frames.md、Art_Asset_Implementation_Matrix.md 與 Art_Audio_Direction.md，鎖定 development 不可忽略的畫面目標。
 
 ### 決策
-- Development 必須把 style frames 轉成 Unity 畫面狀態，並證明 main menu、gameplay、reward、danger、failure、retry 都有可見差異。
+- Development 必須把 style frames 轉成 Unity 畫面狀態，並證明 main menu、gameplay、reward、danger、failure、retry 都有可見差異；此差異以 visual delta 作為 spec review 與 QA 的固定驗收詞。
 
 ### 交接重點
 - 若 Unity 只使用單色背景、靜態方塊、未套用背景/VFX/字體/icon，或 QA video 看不出 frame 差異，build/QA 不可 passed。
@@ -55,7 +55,7 @@ required keywords: visual, target, lock
 - Visual Target Lock consolidates Style_Frames.md, Art_Asset_Implementation_Matrix.md, and Art_Audio_Direction.md into non-optional screen targets for development.
 
 ### Decisions
-- Development must convert style frames into Unity screen states and prove visible differences across main menu, gameplay, reward, danger, failure, and retry.
+- Development must convert style frames into Unity screen states and prove visual delta across main menu, gameplay, reward, danger, failure, and retry.
 
 ### Handoff Notes
 - If Unity uses only a flat background, static blocks, missing background/VFX/font/icon assets, or QA video cannot show frame differences, build/QA cannot pass.
