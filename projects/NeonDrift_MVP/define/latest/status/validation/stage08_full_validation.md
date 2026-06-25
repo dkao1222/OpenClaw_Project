@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/design/Visual_Direction.md
-- PASS file.size_limit.docs/design/Visual_Direction.md: 4511<=8000
+- PASS file.size_limit.docs/design/Visual_Direction.md: 5434<=8000
 - PASS file.no_prompt_constraints.docs/design/Visual_Direction.md
 - PASS file.bilingual_order.docs/design/Visual_Direction.md
 - PASS file.bilingual_distinct.docs/design/Visual_Direction.md
@@ -14,7 +14,7 @@
 - PASS file.detail_density.docs/design/Visual_Direction.md: background layers, track materials, icon, typography, VFX, motion, readability, iPhone, performance
 - PASS file.schema.docs/design/Visual_Direction.md
 - PASS file.readable.docs/design/Readability_and_Performance_Risk.md
-- PASS file.size_limit.docs/design/Readability_and_Performance_Risk.md: 4270<=8000
+- PASS file.size_limit.docs/design/Readability_and_Performance_Risk.md: 5193<=8000
 - PASS file.no_prompt_constraints.docs/design/Readability_and_Performance_Risk.md
 - PASS file.bilingual_order.docs/design/Readability_and_Performance_Risk.md
 - PASS file.bilingual_distinct.docs/design/Readability_and_Performance_Risk.md
