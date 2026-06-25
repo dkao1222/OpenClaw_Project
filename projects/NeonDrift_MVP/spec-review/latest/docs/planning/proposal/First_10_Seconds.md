@@ -3,20 +3,29 @@
 ## 繁體中文
 
 ### 開局 10 秒
-- First 10 Seconds 是 playable proof：Start 後看到 menu 消失、vehicle 出現、background movement、hazard preview、boost cell、score/pulse 變化。
+- First 10 Seconds 是 playable proof，不是教學文字。Start 後玩家必須看到 menu 消失、vehicle 出現、track/background motion、hazard preview、boost cell、score/pulse 變化。
+- 目標是讓第一次玩的玩家在 10 秒內知道：左右按鍵會改變 drift lane，magenta 物件要躲，cyan/yellow 物件可收集，pulse 下降會造成風險。
+
 ### 事件時間線
-- 0 到 3 秒：Start、overlay 消失、vehicle 與 first hazard preview/boost cell 出現。4 到 7 秒：left/right input 產生 button highlight、movement、trail change。8 到 10 秒：第二個 hazard 或 boost tradeoff 出現。
+- 0 到 3 秒：Start button 被點擊後，overlay 離場，vehicle 進入可玩區，track speed line 或 parallax 開始動，第一個 hazard preview 或 boost cell 進入畫面上方。
+- 4 到 7 秒：玩家 tap left/right 時，button highlight、vehicle lateral movement、trail direction、score/combo/pulse 至少兩項改變；若沒有輸入，畫面要出現 left/right drift hint 而不是直接 passive death。
+- 8 到 10 秒：第二個 hazard 或 boost tradeoff 出現，讓玩家做一次風險選擇；如果玩家撞到 hazard 或 pulse 太低，failure reason 必須與畫面事件一致。
+
 ### QA 證據
-- QA Evidence 需含 Start 前、gameplay、game over、retry 後；影片必須排除黑屏、空場景、無互動、passive pulse depletion。
+- QA video 至少要截到 Start 前、Start 後 3 秒、第一次 left/right input、第一次 hazard/boost interaction、game over、retry 後 3 秒。
+- QA log/runtime probe 需要能讀到 run_state、score、pulse、current_lane、hazard_count、boost_count、last_failure_reason。
+- 不合格條件：黑屏、空場景、純背景得分、按 Start 沒反應、按 left/right 無 visible delta、pulse 自動扣到 0 但玩家沒有可理解操作目標。
 
 ## English
 
 ### First 10 Seconds
-- First 10 Seconds is playable proof: after Start, menu disappears, vehicle appears, background moves, hazard preview, boost cell, and score/pulse change appear.
+- First 10 Seconds is playable proof: after Start the menu exits, the vehicle appears, track/background motion begins, hazards/boosts appear, and score/pulse changes are visible.
+
 ### Event Timeline
-- 0 to 3: Start, overlay gone, vehicle and first hazard preview/boost cell appear. 4 to 7: left/right input creates button highlight, movement, and trail change. 8 to 10: second hazard or boost tradeoff appears.
+- 0 to 3 seconds: Start, overlay exits, vehicle enters, motion begins, first hazard preview or boost appears. 4 to 7 seconds: left/right input changes button, vehicle, trail, score/combo, or pulse. 8 to 10 seconds: a hazard or boost tradeoff forces a decision.
+
 ### QA Evidence
-- QA Evidence covers before Start, gameplay, game over, and after retry; video must rule out black screen, empty scene, no interaction, and passive pulse depletion.
+- QA must record before Start, gameplay, first input, first interaction, game over, and after retry. Black screen, empty scene, static input, or passive death fails.
 
 ## Game Quality Alignment
 
