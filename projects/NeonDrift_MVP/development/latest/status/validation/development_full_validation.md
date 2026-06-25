@@ -73,6 +73,7 @@
 - PASS visual_metadata.assets/backgrounds/background_manifest.json
 - PASS visual_metadata.assets/vfx/vfx_manifest.json
 - PASS visual_metadata.docs/development/Visual_Assets_Generation_Report.md
+- PASS visual_metadata.docs/development/Style_Frame_Implementation_Report.md
 - PASS visual_metadata.status/validation/visual_assets_validation.md
 
 ## Unity Build Gate

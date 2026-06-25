@@ -8,6 +8,7 @@ output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/N
 requires_user_confirmation: true
 creative pillars: speed readability, neon focus, instant retry confidence
 player promise: every short run feels fast, readable, and worth retrying
+narrative experience: neon drift pilot on a collapsing city light-track; player vehicle, hazard shard, boost cell, combo pulse, failure flash, and retry surge must be visible identity cues
 core input promise: steering, drift, boost, and restart must feel immediate and predictable
 required operation flow scope: start, active run, scoring, failure, and fast retry
 experience boundaries: no UI layout ownership, no gameplay rule rewrite, no implementation backlog
@@ -21,6 +22,7 @@ context_pack_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae6
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Core_Experience_Direction.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Creative_Pillars.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Player_Promise.md
+- /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Narrative_Experience_Brief.md
 - /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/agent_heartbeats/game-director.md
 
 Do not start ui-ux-designer in this micro-stage.

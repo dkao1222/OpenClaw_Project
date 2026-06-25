@@ -34,7 +34,10 @@ source_documents:
   - docs/design/Operation_Flow_Diagram.md
   - docs/design/Game_Systems_Overview.md
   - docs/design/Visual_Direction.md
+  - docs/design/Style_Frames.md
+  - docs/design/Art_Asset_Implementation_Matrix.md
   - docs/design/Art_Audio_Direction.md
+  - docs/design/Visual_Target_Lock.md
   - docs/production/Development_Readiness_Report.md
 source_documents_policy: compact_context_first; full planning docs remain in output_folder and are validated by spec review source gate.
 decision: ready_for_spec_review
