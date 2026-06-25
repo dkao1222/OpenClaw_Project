@@ -61,6 +61,15 @@
 - PASS file.content_specificity.docs/design/Art_Audio_Direction.md
 - PASS file.required_sections.docs/design/Art_Audio_Direction.md
 - PASS file.schema.docs/design/Art_Audio_Direction.md
+- PASS file.readable.docs/design/Visual_Target_Lock.md
+- PASS file.size_limit.docs/design/Visual_Target_Lock.md: 5135<=8000
+- PASS file.no_prompt_constraints.docs/design/Visual_Target_Lock.md
+- PASS file.bilingual_order.docs/design/Visual_Target_Lock.md
+- PASS file.bilingual_distinct.docs/design/Visual_Target_Lock.md
+- PASS file.content_specificity.docs/design/Visual_Target_Lock.md
+- PASS file.required_sections.docs/design/Visual_Target_Lock.md
+- PASS file.detail_density.docs/design/Visual_Target_Lock.md: Style_Frames.md, Art_Asset_Implementation_Matrix.md, Art_Audio_Direction, visual delta, Unity, QA, video, screenshot
+- PASS file.schema.docs/design/Visual_Target_Lock.md
 - PASS file.readable.docs/production/Development_Readiness_Report.md
 - PASS file.size_limit.docs/production/Development_Readiness_Report.md: 5152<=8000
 - PASS file.no_prompt_constraints.docs/production/Development_Readiness_Report.md
@@ -78,7 +87,7 @@
 - PASS file.required_sections.docs/production/Planning_Delivery_Checklist.md
 - PASS file.schema.docs/production/Planning_Delivery_Checklist.md
 - PASS file.readable.status/context/stage10_context_pack.md
-- PASS file.size_limit.status/context/stage10_context_pack.md: 2440<=3000
+- PASS file.size_limit.status/context/stage10_context_pack.md: 2426<=3000
 - PASS file.no_prompt_constraints.status/context/stage10_context_pack.md
 - PASS file.schema.status/context/stage10_context_pack.md
 - PASS file.readable.status/agent_heartbeats/game-producer.md

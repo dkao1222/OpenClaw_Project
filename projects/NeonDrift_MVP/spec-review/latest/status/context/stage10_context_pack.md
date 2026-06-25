@@ -10,7 +10,7 @@ policy: compressed context pack
 
 - Stage 10 deliverables stay inside approved NeonDrift MVP scope.
 - Required handoff topics: assembled document list, readiness checklist, known dependencies, unresolved questions, validation evidence.
-- Deliverables index: docs/design/Game_Design_Document.md, docs/design/Game_Design_Overview.md, docs/design/Core_Loop_Spec.md, docs/design/Mechanics_Rules.md, docs/design/Scoring_and_Failure_Spec.md, docs/design/Compatibility_and_Performance_Targets.md, docs/design/Art_Audio_Direction.md, docs/production/Development_Readiness_Report.md, plus 1 additional docs in Notion/Git.
+- Deliverables index: docs/design/Game_Design_Document.md, docs/design/Game_Design_Overview.md, docs/design/Core_Loop_Spec.md, docs/design/Mechanics_Rules.md, docs/design/Scoring_and_Failure_Spec.md, docs/design/Compatibility_and_Performance_Targets.md, docs/design/Art_Audio_Direction.md, docs/design/Visual_Target_Lock.md, plus 2 additional docs in Notion/Git.
 
 ## Constraints
 

@@ -3,7 +3,7 @@
 - project_name: NeonDrift_MVP
 - project_channel_id: 382b9e3384298039b171c9b2a60ae644
 - status: passed
-- checked_at: 2026-06-25T14:10:30.170311+00:00
+- checked_at: 2026-06-25T16:15:46.319780+00:00
 
 ## Failed Checks
 - none
@@ -29,6 +29,12 @@
 - stage_03.file.no_prompt_constraints.docs/design/Player_Promise.md
 - stage_03.file.size_limit.docs/design/Player_Promise.md
 - stage_03.file.content_specificity.docs/design/Player_Promise.md
+- stage_03.file.exists.docs/design/Narrative_Experience_Brief.md
+- stage_03.file.readable.docs/design/Narrative_Experience_Brief.md
+- stage_03.file.no_placeholders.docs/design/Narrative_Experience_Brief.md
+- stage_03.file.no_prompt_constraints.docs/design/Narrative_Experience_Brief.md
+- stage_03.file.size_limit.docs/design/Narrative_Experience_Brief.md
+- stage_03.file.content_specificity.docs/design/Narrative_Experience_Brief.md
 - stage_03.file.exists.status/context/stage03_context_pack.md
 - stage_03.file.readable.status/context/stage03_context_pack.md
 - stage_03.file.no_placeholders.status/context/stage03_context_pack.md
@@ -62,6 +68,11 @@
 - stage_03.formal_doc.zh_before_english.docs/design/Player_Promise.md
 - stage_03.formal_doc.bilingual_distinct.docs/design/Player_Promise.md
 - stage_03.formal_doc.required_sections.docs/design/Player_Promise.md
+- stage_03.formal_doc.zh_heading.docs/design/Narrative_Experience_Brief.md
+- stage_03.formal_doc.english_heading.docs/design/Narrative_Experience_Brief.md
+- stage_03.formal_doc.zh_before_english.docs/design/Narrative_Experience_Brief.md
+- stage_03.formal_doc.bilingual_distinct.docs/design/Narrative_Experience_Brief.md
+- stage_03.formal_doc.required_sections.docs/design/Narrative_Experience_Brief.md
 - stage_03.heartbeat.agent_id
 - stage_03.heartbeat.project_name
 - stage_03.heartbeat.channel_id
@@ -83,4 +94,5 @@
 - stage_03.handoff.source_path.docs/design/Core_Experience_Direction.md
 - stage_03.handoff.source_path.docs/design/Creative_Pillars.md
 - stage_03.handoff.source_path.docs/design/Player_Promise.md
+- stage_03.handoff.source_path.docs/design/Narrative_Experience_Brief.md
 - stage_03.handoff.source_path.status/agent_heartbeats/game-director.md

@@ -38,6 +38,7 @@ source_documents:
   - docs/review/Scoring_Failure_Retry_Detail_Spec.md
   - docs/review/Feedback_Event_Detail_Spec.md
   - docs/review/Visual_Audio_Detail_Spec.md
+  - docs/review/Visual_Style_Frame_Readiness.md
   - docs/review/Implementation_Readiness_Checklist.md
 development_ready: true
 product_experience_review_required: true
