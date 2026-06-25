@@ -65,6 +65,141 @@
 - PASS planning_source_no_unsupported_generic_language:status/context/stage12_context_pack.md:immersive experience: immersive experience
 - PASS planning_source_no_unsupported_generic_language:status/context/stage12_context_pack.md:clear ui: clear ui
 - PASS planning_source_no_unsupported_generic_language:status/context/stage12_context_pack.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/planning/Game_Proposal.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Game_Proposal.md
+- PASS planning_source_marker:docs/planning/Game_Proposal.md:Proposal Index: Proposal Index
+- PASS planning_source_marker:docs/planning/Game_Proposal.md:Context Cards: Context Cards
+- PASS planning_source_marker:docs/planning/Game_Proposal.md:Downstream Read Policy: Downstream Read Policy
+- PASS planning_source_marker:docs/planning/Game_Proposal.md:source_paths: source_paths
+- PASS planning_source_marker:docs/planning/Game_Proposal.md:High_Concept.md: High_Concept.md
+- PASS planning_source_marker:docs/planning/Game_Proposal.md:First_10_Seconds.md: First_10_Seconds.md
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/planning/Game_Proposal.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/planning/proposal/High_Concept.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/proposal/High_Concept.md
+- PASS planning_source_marker:docs/planning/proposal/High_Concept.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/planning/proposal/High_Concept.md:Game System Design Alignment: Game System Design Alignment
+- PASS planning_source_marker:docs/planning/proposal/High_Concept.md:High Concept: High Concept
+- PASS planning_source_marker:docs/planning/proposal/High_Concept.md:Player Promise: Player Promise
+- PASS planning_source_marker:docs/planning/proposal/High_Concept.md:left/right: left/right
+- PASS planning_source_marker:docs/planning/proposal/High_Concept.md:hazard: hazard
+- PASS planning_source_marker:docs/planning/proposal/High_Concept.md:boost: boost
+- PASS planning_source_marker:docs/planning/proposal/High_Concept.md:combo: combo
+- PASS planning_source_marker:docs/planning/proposal/High_Concept.md:pulse: pulse
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/High_Concept.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/planning/proposal/Game_Screen_Outline.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/proposal/Game_Screen_Outline.md
+- PASS planning_source_marker:docs/planning/proposal/Game_Screen_Outline.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/planning/proposal/Game_Screen_Outline.md:Game System Design Alignment: Game System Design Alignment
+- PASS planning_source_marker:docs/planning/proposal/Game_Screen_Outline.md:Game Screen Outline: Game Screen Outline
+- PASS planning_source_marker:docs/planning/proposal/Game_Screen_Outline.md:Screen Layers: Screen Layers
+- PASS planning_source_marker:docs/planning/proposal/Game_Screen_Outline.md:safe area: safe area
+- PASS planning_source_marker:docs/planning/proposal/Game_Screen_Outline.md:background: background
+- PASS planning_source_marker:docs/planning/proposal/Game_Screen_Outline.md:iPhone SE: iPhone SE
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Game_Screen_Outline.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/planning/proposal/First_10_Seconds.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/proposal/First_10_Seconds.md
+- PASS planning_source_marker:docs/planning/proposal/First_10_Seconds.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/planning/proposal/First_10_Seconds.md:Game System Design Alignment: Game System Design Alignment
+- PASS planning_source_marker:docs/planning/proposal/First_10_Seconds.md:First 10 Seconds: First 10 Seconds
+- PASS planning_source_marker:docs/planning/proposal/First_10_Seconds.md:0 to 3: 0 to 3
+- PASS planning_source_marker:docs/planning/proposal/First_10_Seconds.md:4 to 7: 4 to 7
+- PASS planning_source_marker:docs/planning/proposal/First_10_Seconds.md:8 to 10: 8 to 10
+- PASS planning_source_marker:docs/planning/proposal/First_10_Seconds.md:QA: QA
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/First_10_Seconds.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/planning/proposal/Primary_Objects_and_Rules.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Game System Design Alignment: Game System Design Alignment
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Player vehicle: Player vehicle
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Hazard: Hazard
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Boost cell: Boost cell
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:Track lane: Track lane
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:score: score
+- PASS planning_source_marker:docs/planning/proposal/Primary_Objects_and_Rules.md:fairness: fairness
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Primary_Objects_and_Rules.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/planning/proposal/Failure_Retry_and_Progress.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/proposal/Failure_Retry_and_Progress.md
+- PASS planning_source_marker:docs/planning/proposal/Failure_Retry_and_Progress.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/planning/proposal/Failure_Retry_and_Progress.md:Game System Design Alignment: Game System Design Alignment
+- PASS planning_source_marker:docs/planning/proposal/Failure_Retry_and_Progress.md:failure reason: failure reason
+- PASS planning_source_marker:docs/planning/proposal/Failure_Retry_and_Progress.md:hit hazard: hit hazard
+- PASS planning_source_marker:docs/planning/proposal/Failure_Retry_and_Progress.md:pulse depleted: pulse depleted
+- PASS planning_source_marker:docs/planning/proposal/Failure_Retry_and_Progress.md:out of lane: out of lane
+- PASS planning_source_marker:docs/planning/proposal/Failure_Retry_and_Progress.md:after-retry visual delta: after-retry visual delta
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/Failure_Retry_and_Progress.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/planning/proposal/MVP_Boundary_and_Success.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/proposal/MVP_Boundary_and_Success.md
+- PASS planning_source_marker:docs/planning/proposal/MVP_Boundary_and_Success.md:Game Quality Alignment: Game Quality Alignment
+- PASS planning_source_marker:docs/planning/proposal/MVP_Boundary_and_Success.md:Game System Design Alignment: Game System Design Alignment
+- PASS planning_source_marker:docs/planning/proposal/MVP_Boundary_and_Success.md:MVP Boundary: MVP Boundary
+- PASS planning_source_marker:docs/planning/proposal/MVP_Boundary_and_Success.md:Included Scope: Included Scope
+- PASS planning_source_marker:docs/planning/proposal/MVP_Boundary_and_Success.md:Excluded Scope: Excluded Scope
+- PASS planning_source_marker:docs/planning/proposal/MVP_Boundary_and_Success.md:iOS simulator: iOS simulator
+- PASS planning_source_marker:docs/planning/proposal/MVP_Boundary_and_Success.md:recording evidence: recording evidence
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/planning/proposal/MVP_Boundary_and_Success.md:fast-paced: fast-paced
 - PASS required_planning_source_doc:docs/planning/Core_Gameplay_Loop.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Core_Gameplay_Loop.md
 - PASS planning_source_marker:docs/planning/Core_Gameplay_Loop.md:Game Quality Alignment: Game Quality Alignment
 - PASS planning_source_marker:docs/planning/Core_Gameplay_Loop.md:Game System Design Alignment: Game System Design Alignment
