@@ -27,3 +27,13 @@
 ### MVP Feeling
 - The MVP emphasizes speed, fair pressure, visible progress, and fast recovery after failure.
 - It does not chase content volume; it validates whether the short-run loop is replayable.
+
+## Reasoning and Tradeoffs
+
+- selected approach: promise an understandable one-hand mobile run with immediate feedback, clear failure, and fast retry.
+- rejected alternatives: promise broad modes, character collection, long-term economy, or advanced skill systems before the base loop is proven.
+- why selected: player trust comes from knowing what happened after every touch and why the run ended.
+- acceptance evidence: QA must record Start, touch input response, score/risk change, failure explanation, Retry, and a fresh second run.
+- risks if wrong: if the player cannot explain what to do in the first run, richer effects or more levels only add noise.
+- downstream owner: ui-ux-designer owns first-run comprehension; game-designer owns loop depth; build and QA own touch/simulator evidence.
+- source_paths: docs/planning/One_Page_Game_Concept.md, docs/product/MVP_PRD.md, status/context/stage02_context_pack.md.
