@@ -40,6 +40,9 @@ Players age 16-35 who want short high-feedback racing sessions, clear mastery si
 - docs/planning/proposal/MVP_Boundary_and_Success.md
 - docs/planning/Game_Objective.md
 - docs/planning/One_Page_Game_Concept.md
+- docs/planning/concept/Product_Vision_and_Audience.md
+- docs/planning/concept/Core_Value_and_MVP_Summary.md
+- docs/planning/concept/Experience_Promise.md
 - docs/planning/Core_Gameplay_Loop.md
 - docs/planning/core_loop/Loop_Timeline.md
 - docs/planning/core_loop/Player_Actions.md
@@ -55,4 +58,7 @@ Players age 16-35 who want short high-feedback racing sessions, clear mastery si
 - docs/planning/hypothesis/Success_Metrics.md
 - docs/planning/hypothesis/Decision_Rules.md
 - docs/planning/Platform_Direction.md
+- docs/planning/platform/Device_Compatibility_Targets.md
+- docs/planning/platform/Input_and_Safe_Area_Model.md
+- docs/planning/platform/Build_and_QA_Environment.md
 - docs/product/MVP_PRD.md
