@@ -33,7 +33,10 @@ source_documents:
   - docs/design/Mechanics_Rules.md
   - docs/design/GDD_Mechanics_Draft.md
   - docs/design/Visual_Direction.md
+  - docs/design/Style_Frames.md
+  - docs/design/Art_Asset_Implementation_Matrix.md
   - docs/design/Art_Audio_Direction.md
+  - docs/design/Visual_Target_Lock.md
   - docs/production/Development_Readiness_Report.md
 source_documents_policy: compact_index_only; full validated planning docs remain in output_folder and stage12_context_pack.md.
 spec_review_recommended_first: true
