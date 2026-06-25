@@ -19,6 +19,7 @@
 - PASS file.bilingual_distinct.docs/design/Moment_to_Moment_Gameplay.md
 - PASS file.content_specificity.docs/design/Moment_to_Moment_Gameplay.md
 - PASS file.required_sections.docs/design/Moment_to_Moment_Gameplay.md
+- PASS file.detail_density.docs/design/Moment_to_Moment_Gameplay.md: 0-10, player intent, input, system response, visual, audio, risk/reward, failure reason, QA
 - PASS file.schema.docs/design/Moment_to_Moment_Gameplay.md
 - PASS file.readable.docs/design/Game_Systems_Overview.md
 - PASS file.size_limit.docs/design/Game_Systems_Overview.md: 5039<=8000
@@ -27,6 +28,7 @@
 - PASS file.bilingual_distinct.docs/design/Game_Systems_Overview.md
 - PASS file.content_specificity.docs/design/Game_Systems_Overview.md
 - PASS file.required_sections.docs/design/Game_Systems_Overview.md
+- PASS file.detail_density.docs/design/Game_Systems_Overview.md: Control System, Speed System, Hazard System, Content Objective System, Scoring System, Failure, Retry, Feedback System, input, state, rule, output, dependency, acceptance
 - PASS file.schema.docs/design/Game_Systems_Overview.md
 - PASS file.readable.docs/design/Control_System_Spec.md
 - PASS file.size_limit.docs/design/Control_System_Spec.md: 4105<=8000
@@ -59,6 +61,7 @@
 - PASS file.bilingual_distinct.docs/design/Enemy_Pattern_Spec.md
 - PASS file.content_specificity.docs/design/Enemy_Pattern_Spec.md
 - PASS file.required_sections.docs/design/Enemy_Pattern_Spec.md
+- PASS file.detail_density.docs/design/Enemy_Pattern_Spec.md: spawn condition, approach motion, warning cue, counterplay, reward/penalty, difficulty ramp, QA
 - PASS file.schema.docs/design/Enemy_Pattern_Spec.md
 - PASS file.readable.docs/design/Scoring_System_Spec.md
 - PASS file.size_limit.docs/design/Scoring_System_Spec.md: 3985<=8000
@@ -75,6 +78,7 @@
 - PASS file.bilingual_distinct.docs/design/Player_Skill_Reward_Spec.md
 - PASS file.content_specificity.docs/design/Player_Skill_Reward_Spec.md
 - PASS file.required_sections.docs/design/Player_Skill_Reward_Spec.md
+- PASS file.detail_density.docs/design/Player_Skill_Reward_Spec.md: near miss, combo, boost, score, break condition, HUD, VFX, QA
 - PASS file.schema.docs/design/Player_Skill_Reward_Spec.md
 - PASS file.readable.docs/design/Failure_Retry_System_Spec.md
 - PASS file.size_limit.docs/design/Failure_Retry_System_Spec.md: 3978<=8000
@@ -83,6 +87,7 @@
 - PASS file.bilingual_distinct.docs/design/Failure_Retry_System_Spec.md
 - PASS file.content_specificity.docs/design/Failure_Retry_System_Spec.md
 - PASS file.required_sections.docs/design/Failure_Retry_System_Spec.md
+- PASS file.detail_density.docs/design/Failure_Retry_System_Spec.md: failure reason, Retry, score, best, QA
 - PASS file.schema.docs/design/Failure_Retry_System_Spec.md
 - PASS file.readable.docs/design/Feedback_System_Spec.md
 - PASS file.size_limit.docs/design/Feedback_System_Spec.md: 4094<=8000
@@ -99,6 +104,7 @@
 - PASS file.bilingual_distinct.docs/design/Human_Playtest_Scenarios.md
 - PASS file.content_specificity.docs/design/Human_Playtest_Scenarios.md
 - PASS file.required_sections.docs/design/Human_Playtest_Scenarios.md
+- PASS file.detail_density.docs/design/Human_Playtest_Scenarios.md: setup, steps, expected visual evidence, pass/fail, blocked, video, QA
 - PASS file.schema.docs/design/Human_Playtest_Scenarios.md
 - PASS file.readable.docs/design/GDD_Mechanics_Draft.md
 - PASS file.size_limit.docs/design/GDD_Mechanics_Draft.md: 4055<=8000
