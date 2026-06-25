@@ -11,6 +11,7 @@
 - PASS file.bilingual_distinct.docs/design/Visual_Direction.md
 - PASS file.content_specificity.docs/design/Visual_Direction.md
 - PASS file.required_sections.docs/design/Visual_Direction.md
+- PASS file.detail_density.docs/design/Visual_Direction.md: background layers, track materials, icon, typography, VFX, motion, readability, iPhone, performance
 - PASS file.schema.docs/design/Visual_Direction.md
 - PASS file.readable.docs/design/Readability_and_Performance_Risk.md
 - PASS file.size_limit.docs/design/Readability_and_Performance_Risk.md: 4270<=8000
