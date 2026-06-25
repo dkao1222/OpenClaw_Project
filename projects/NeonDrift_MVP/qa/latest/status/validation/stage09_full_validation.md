@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/design/Audio_Direction.md
-- PASS file.size_limit.docs/design/Audio_Direction.md: 4107<=8000
+- PASS file.size_limit.docs/design/Audio_Direction.md: 5030<=8000
 - PASS file.no_prompt_constraints.docs/design/Audio_Direction.md
 - PASS file.bilingual_order.docs/design/Audio_Direction.md
 - PASS file.bilingual_distinct.docs/design/Audio_Direction.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/design/Audio_Direction.md
 - PASS file.schema.docs/design/Audio_Direction.md
 - PASS file.readable.docs/design/Audio_Haptics_Event_Map.md
-- PASS file.size_limit.docs/design/Audio_Haptics_Event_Map.md: 4189<=8000
+- PASS file.size_limit.docs/design/Audio_Haptics_Event_Map.md: 5112<=8000
 - PASS file.no_prompt_constraints.docs/design/Audio_Haptics_Event_Map.md
 - PASS file.bilingual_order.docs/design/Audio_Haptics_Event_Map.md
 - PASS file.bilingual_distinct.docs/design/Audio_Haptics_Event_Map.md
@@ -29,7 +29,7 @@
 - PASS file.no_prompt_constraints.status/agent_heartbeats/audio-designer.md
 - PASS file.schema.status/agent_heartbeats/audio-designer.md
 - PASS file.readable.handoffs/planning/09_audio-designer_to_game-producer.md
-- PASS file.size_limit.handoffs/planning/09_audio-designer_to_game-producer.md: 1461<=2500
+- PASS file.size_limit.handoffs/planning/09_audio-designer_to_game-producer.md: 1461<=3200
 - PASS file.no_prompt_constraints.handoffs/planning/09_audio-designer_to_game-producer.md
 - PASS file.schema.handoffs/planning/09_audio-designer_to_game-producer.md
 - PASS handoff.context_pack_path.status/context/stage09_context_pack.md
