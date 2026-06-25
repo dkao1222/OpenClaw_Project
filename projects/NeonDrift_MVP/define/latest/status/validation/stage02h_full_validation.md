@@ -2,11 +2,25 @@
 
 - project_name: NeonDrift_MVP
 - project_channel_id: 382b9e3384298039b171c9b2a60ae644
-- status: passed
-- checked_at: 2026-06-25T10:01:08.608962+00:00
+- status: failed
+- checked_at: 2026-06-25T13:09:19.725624+00:00
 
 ## Failed Checks
-- none
+- stage_02.formal_doc.length_contract.docs/planning/Game_Proposal.md
+  - expected: 700 <= non-whitespace characters <= 4600
+  - actual: 4694 non-whitespace characters
+  - evidence: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Game_Proposal.md
+  - error: Formal document is too thin or too large for downstream context use.
+- stage_02.formal_doc.length_contract.docs/planning/proposal/High_Concept.md
+  - expected: 900 <= non-whitespace characters <= 3400
+  - actual: 3670 non-whitespace characters
+  - evidence: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/proposal/High_Concept.md
+  - error: Formal document is too thin or too large for downstream context use.
+- stage_02.formal_doc.length_contract.docs/planning/Planning_Output_Quality_Bar.md
+  - expected: 700 <= non-whitespace characters <= 3400
+  - actual: 3424 non-whitespace characters
+  - evidence: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/planning/Planning_Output_Quality_Bar.md
+  - error: Formal document is too thin or too large for downstream context use.
 
 ## Passed Checks
 - stage_02.output_folder.exists
@@ -156,7 +170,6 @@
 - stage_02.formal_doc.zh_before_english.docs/planning/Game_Proposal.md
 - stage_02.formal_doc.bilingual_distinct.docs/planning/Game_Proposal.md
 - stage_02.formal_doc.required_sections.docs/planning/Game_Proposal.md
-- stage_02.formal_doc.length_contract.docs/planning/Game_Proposal.md
 - stage_02.formal_doc.key_terms.docs/planning/Game_Proposal.md
 - stage_02.formal_doc.detail_density.docs/planning/Game_Proposal.md
 - stage_02.formal_doc.knowledge_alignment_sections.docs/planning/Game_Proposal.md
@@ -166,7 +179,6 @@
 - stage_02.formal_doc.zh_before_english.docs/planning/proposal/High_Concept.md
 - stage_02.formal_doc.bilingual_distinct.docs/planning/proposal/High_Concept.md
 - stage_02.formal_doc.required_sections.docs/planning/proposal/High_Concept.md
-- stage_02.formal_doc.length_contract.docs/planning/proposal/High_Concept.md
 - stage_02.formal_doc.key_terms.docs/planning/proposal/High_Concept.md
 - stage_02.formal_doc.detail_density.docs/planning/proposal/High_Concept.md
 - stage_02.formal_doc.knowledge_alignment_sections.docs/planning/proposal/High_Concept.md
@@ -282,7 +294,6 @@
 - stage_02.formal_doc.zh_before_english.docs/planning/Planning_Output_Quality_Bar.md
 - stage_02.formal_doc.bilingual_distinct.docs/planning/Planning_Output_Quality_Bar.md
 - stage_02.formal_doc.required_sections.docs/planning/Planning_Output_Quality_Bar.md
-- stage_02.formal_doc.length_contract.docs/planning/Planning_Output_Quality_Bar.md
 - stage_02.formal_doc.key_terms.docs/planning/Planning_Output_Quality_Bar.md
 - stage_02.formal_doc.detail_density.docs/planning/Planning_Output_Quality_Bar.md
 - stage_02.formal_doc.knowledge_alignment_sections.docs/planning/Planning_Output_Quality_Bar.md
