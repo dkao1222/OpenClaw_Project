@@ -1,5 +1,5 @@
 # Current Status Summary
 
-- status: spec_review_finished
-- validation_status: development_ready
-- next_step: wait for user confirmation before game development
+- status: development_finished
+- validation_status: passed
+- next_step: run Unity batchmode build gates for iOS Android WebGL
