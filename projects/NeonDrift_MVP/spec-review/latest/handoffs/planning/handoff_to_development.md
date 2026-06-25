@@ -10,9 +10,14 @@ target_department: GAME_DEVELOPMENT_DEPARTMENT.md
 required_public_documents:
   - /home/node/.openclaw/workspace/public_document/GAME_DEVELOPMENT_DEPARTMENT.md
   - /home/node/.openclaw/workspace/public_document/knowledge_base/game_quality/ROUTING.md
+  - /home/node/.openclaw/workspace/public_document/knowledge_base/product_experience/ROUTING.md
   - /home/node/.openclaw/workspace/public_document/knowledge_base/game_system_design/ROUTING.md
 knowledge_cards:
   - knowledge_base/game_quality/VISUAL_ART_REFERENCE.md
+  - knowledge_base/product_experience/PRODUCT_EXPERIENCE_RUBRIC.md
+  - knowledge_base/product_experience/FIRST_RUN_CLARITY.md
+  - knowledge_base/product_experience/FEEDBACK_AND_GAME_FEEL.md
+  - knowledge_base/product_experience/HUMAN_VISUAL_QA_GATES.md
   - knowledge_base/game_system_design/GAME_DEV_BLACK_BOOK_REFERENCE.md
   - knowledge_base/game_system_design/GDD_STRUCTURE_REFERENCE.md
   - knowledge_base/game_system_design/GAME_MECHANICS_REFERENCE.md

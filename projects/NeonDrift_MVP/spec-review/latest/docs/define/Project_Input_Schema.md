@@ -16,7 +16,7 @@
 ## Size Policy
 
 - Defined_Request.md must remain concise and downstream-readable.
-- Planning handoff max 2500 characters.
+- Planning handoff max 3200 characters.
 - Context packs max 3000 characters.
 - Formal planning docs max 8000 characters.
 - Raw Idea is source context only; downstream stages must use Defined_Request.md and bounded handoffs.
