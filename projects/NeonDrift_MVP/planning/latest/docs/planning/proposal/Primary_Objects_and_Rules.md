@@ -3,33 +3,35 @@
 ## 繁體中文
 
 ### 主要物件與規則
-- Player vehicle：cyan hover block 或 compact ship，必須有 lane position、drift direction、trail state、collision state。left/right drift 不是裝飾，必須改變 lane 或 lateral velocity。
-- Hazard：magenta obstacle，從 track 上方進入，需有 warning color/shape，碰撞後觸發 hit hazard failure 或扣 pulse；不得生成在玩家無法反應的位置。
-- Boost cell：cyan/yellow collectible，給 pulse recovery、combo sustain 或 score bonus；位置應形成 risk/reward，而不是永遠安全或永遠必死。
-- Track lane：中央 playable corridor，左右 light strip 標示邊界；out of lane 必須有 warning cue，不能玩家不知道原因就失敗。
-- HUD：score、best、pulse、combo、pause、retry 必須有清楚狀態來源；score 不可只靠時間增加而沒有互動分數來源。
+- Player vehicle：visual identity 是 cyan compact ship，不可只是未命名方塊；需要 nose/front direction、body glow、drift trail、hit flash。state fields 至少包含 current_lane、lateral_velocity、drift_direction、trail_state、is_invulnerable、collision_state。behavior rules：left/right input 在 0.1 秒內改變 lateral_velocity 或 target_lane，放開後回正，碰撞後進入 hit stun 或 failure。acceptance：QA 影片需看到 input 後車體位置與 trail 發生變化。
+- Hazard：visual identity 是 magenta shard/barrier，不可與 boost/player 同形同色；需要 spawn_lane、approach_speed、warning_state、hitbox_scale、pattern_id、time_to_react。behavior rules：從 track 上方進入，至少提前 0.7 秒可見，first 10 seconds 不得生成 unavoidable hazard；碰撞後設定 last_collision_type=hazard 並觸發 hit hazard 或 pulse loss。
+- Boost cell：visual identity 是 cyan/yellow energy cell，必須和 hazard 在形狀、色相、動態上可區分；state fields 包含 spawn_lane、value_type、pulse_restore、combo_extend、pickup_window。behavior rules：位置形成 risk/reward，不能永遠安全，也不能被 hazard 完全遮住；pickup 後要有 flash、score_delta_reason=boost_pickup、pickup_count 增加。
+- Track lane：中央 playable corridor 必須明確標出 safe lane、lane border、track center、speed cue；state fields 包含 lane_count、safe_bounds、scroll_speed、warning_side。behavior rules：出界前先 lane flash 或 warning cue，out_of_lane failure 只能在明確規則存在時使用。
+- HUD：score、best、pulse、combo、boost、pause、retry 都要有資料來源與更新條件。score 不可只有時間 tick；combo 必須來自 clean drift、near miss 或 boost pickup；pulse 必須顯示下降、警示、回補或扣減原因。
 
 ### 碰撞與分數
-- Score sources：survival tick 只能是基礎分；clean drift、near miss、boost pickup、combo chain 必須至少實作兩項，讓玩家操作和分數有因果關係。
-- Collision rules：vehicle hitbox 應小於視覺外框，hazard hitbox 不得超出可見圖形；first 10 seconds 不得出現 unavoidable hazard。
-- Pulse rules：pulse 可隨時間下降，但必須透過 boost、clean drift 或 combo 回補/減緩；若只是不操作也必死，畫面必須提前提示。
-- Runtime evidence：QA/runtime probe 需能讀到 score_delta_reason、last_collision_type、pickup_count、combo_count、pulse_delta_reason。
+- Score formula：survival_tick 是基礎分，每 0.5 到 1 秒小幅增加；clean_drift、near_miss、boost_pickup、combo_chain 至少實作兩項 skill-linked score source，且每項需要 score_delta_reason。
+- Collision formula：vehicle hitbox 應小於視覺外框 10-25%，hazard hitbox 不得超出可見圖形；collision 必須記錄 last_collision_type、last_failure_reason、collision_world_position、time_since_start。
+- Pulse formula：pulse 可隨時間下降，但 boost、clean drift 或 combo 至少一項能回補或減緩；pulse_delta_reason 必須可讀，pulse depleted 前需要 visible warning。
+- Runtime evidence：QA/runtime probe 必須能讀到 current_lane、target_lane、score_delta_reason、last_collision_type、pickup_count、combo_count、pulse_delta_reason、hazard_count、boost_count、last_failure_reason。缺少這些欄位時 spec/development 不得宣稱 gameplay verified。
 
 ### 公平性限制
-- 前 10 秒 hazard wave 要教會讀法，不能同時塞滿左右兩側；boost 不得生成在 hazard 後方造成必死引誘。
-- Button touch area 必須覆蓋底部左右大區塊；iOS simulator mouse click 和 touch 都要可觸發同一套 input path。
-- Failure overlay 不能遮住仍在運作的 gameplay objects 到不可讀；game over 後需要 freeze 或 dim background，讓玩家知道 run ended。
+- Spawn fairness：前 10 秒 hazard wave 要教會讀法，不能同時封死所有可走 lane；time_to_react 不得低於玩家可感知與操作門檻，boost 不得生成在 hazard 後方造成必死引誘。
+- Input fairness：button touch area 必須覆蓋底部左右大區塊，iOS simulator mouse click、touch、keyboard fallback 需要進入同一套 input path；按鍵 feedback 不得只改 UI 顏色，必須改變 vehicle state。
+- Failure fairness：failure overlay 不能遮住仍在運作的 gameplay objects 到不可讀；game over 後需要 freeze 或 dim background，顯示原因與 retry。無輸入失敗時要提示 left/right drift，不得只顯示泛用 Drift Lost。
+- Acceptance：Spec Review 必須把上列 fields 轉成 implementation checklist；Development 必須在 RuntimeQaProbe 或同等 QA schema 中輸出；QA 必須用影片證明 Start、input、hazard、boost、collision/failure、retry 至少各一次。
 
 ## English
 
 ### Primary Objects and Rules
-- Required objects are player vehicle, hazard, boost cell, track lane, and HUD. Each needs state, visual identity, and a rule that connects input to outcome.
+- Required objects are player vehicle, hazard, boost cell, track lane, and HUD. Each needs visual identity, state fields, behavior rules, numeric bounds, and acceptance evidence; abstract colored blocks are not enough.
+- Player exposes current_lane, lateral_velocity, drift_direction, trail_state, and collision_state. Hazard exposes spawn_lane, approach_speed, warning_state, hitbox_scale, pattern_id, and time_to_react. Boost exposes spawn_lane, value_type, pulse_restore, combo_extend, and pickup_window.
 
 ### Collision and Scoring
-- Score must come from survival plus at least two skill-linked events: clean drift, near miss, boost pickup, or combo chain. Collision, pulse, and pickup reasons must be inspectable by QA/runtime probe.
+- Score must include survival plus at least two skill-linked sources: clean_drift, near_miss, boost_pickup, or combo_chain. Runtime evidence must expose score_delta_reason, last_collision_type, pickup_count, combo_count, pulse_delta_reason, hazard_count, boost_count, and last_failure_reason.
 
 ### Fairness Limits
-- No unavoidable first-10-second hazard, no guaranteed-death boost, no tiny touch targets, and no unexplained failure. Simulator click and touch must reach the same input path.
+- No unavoidable first-10-second hazard, no guaranteed-death boost, no unexplained failure, no tiny touch targets, and no UI-only input feedback. QA video must prove Start, input, hazard, boost, failure/collision, and retry at least once.
 
 ## Game Quality Alignment
 
