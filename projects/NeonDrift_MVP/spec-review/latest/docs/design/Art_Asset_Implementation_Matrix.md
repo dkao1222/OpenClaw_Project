@@ -10,6 +10,8 @@ Document contract: this file records only the current stage decision surface for
 - Gameplay depth evidence: short-session objective, player decision, risk/reward, combo, boost, wave/phase, hazard pattern, failure reason, HUD feedback, and QA acceptance must be explicit before development.
 - Visual richness score: target 3 when this file owns visual direction, art/audio, feedback, GDD, or production readiness; otherwise inherited from upstream planning.
 - Visual richness evidence: visual richness target, minimum polish bar, background layers, track materials, typography style, icon style, motion polish, particle/VFX budget, reduced motion fallback, and performance target must be explicit before development.
+- Asset sourcing cards read: asset_sourcing/ROUTING.md, OPENGAMEART_USAGE.md, LICENSE_DECISION_MATRIX.md, ASSET_ATTRIBUTION_REGISTER.md when external art, sound, music, textures, fonts, icons, or OpenGameArt are referenced.
+- External asset sourcing status: third-party assets require title, author, URL, exact license, attribution text, modification flag, store compatibility decision, implementation path, and QA evidence; prefer self-generated or CC0 assets for mobile ad apps.
 - Current-stage minimum: planning final requires gameplay depth 3+ and visual richness 3+.
 - Blockers: fail the stage if depth/richness is described only as fun, polished, neon, or challenging without concrete rules, assets, event feedback, and acceptance criteria.
 
@@ -45,7 +47,7 @@ required keywords: art, asset, implementation, matrix
 - 至少要包含 background layers、track materials、player vehicle、hazard shard、boost cell、combo pulse、near-miss streak、failure flash、retry surge、HUD frame、button/icon style、score typography。
 
 ### 交接重點
-- 每個資產都要有 variation 或狀態差異；如果資產只存在於 PNG/manifest 但沒有進 Unity 畫面，development gate 必須失敗。
+- 每個外部素材都必須標示 source type、OpenGameArt URL 或來源 URL、exact license、attribution text、store decision；GPL/LGPL/CC-BY-SA/unclear license 預設不可進入 App Store build。
 
 ## English
 
@@ -58,4 +60,4 @@ required keywords: art, asset, implementation, matrix
 - It must include background layers, track materials, player vehicle, hazard shard, boost cell, combo pulse, near-miss streak, failure flash, retry surge, HUD frame, button/icon style, and score typography.
 
 ### Handoff Notes
-- Every asset needs variation or state difference; if an asset exists only as PNG/manifest and is not used in the Unity screen, the development gate fails.
+- Every external asset must include source type, OpenGameArt URL or source URL, exact license, attribution text, and store decision; GPL/LGPL/CC-BY-SA/unclear licenses are blocked by default for App Store builds.

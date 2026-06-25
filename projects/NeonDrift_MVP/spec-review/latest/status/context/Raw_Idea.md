@@ -1,11 +1,11 @@
 # Raw Idea
 
-raw_idea_page_id: 38ab9e33-8429-8113-b35d-dd6ebdcf6257
+raw_idea_page_id: 38ab9e33-8429-817b-ac1c-df0879286502
 project_name: NeonDrift_MVP
 idea_type: game
 target_platform: Unity iOS
 priority: high
-requested_by: full-clean-flow-local-agent-only-style-frame-unity-fix-20260626
+requested_by: full-clean-flow-local-agent-only-opengameart-asset-sourcing-kb-contract-fixed-20260626
 
 ## Raw Idea（原始想法）
 
