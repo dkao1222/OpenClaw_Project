@@ -3,20 +3,29 @@
 ## 繁體中文
 
 ### 失敗、重試與進度
-- Failure reason 只允許 hit hazard、pulse depleted、out of lane，且每個 reason 要對應畫面事件、HUD 變化或 QA evidence。
+- Failure reason 只允許 hit hazard、pulse depleted、out of lane；每個 reason 都要對應畫面事件、HUD 變化、runtime field 和 QA evidence。
+- Game over 不是單純顯示 retry button；必須說明 run 為什麼結束，顯示 final score、best score、retry CTA，並保持背景 dim/freeze 讓玩家理解前一輪結果。
+
 ### 失敗原因
-- hit hazard 需 flash/SFX/haptic；pulse depleted 必須在 HUD 可見；out of lane 需要 warning cue 或 lane flash。
+- hit hazard：需要 collision flash、short shake、SFX/haptic cue，並將 last_failure_reason 設為 hit hazard。
+- pulse depleted：HUD pulse 必須在失敗前可見下降或警示，失敗時顯示 pulse depleted，不得在玩家無可理解選擇時突然結束。
+- out of lane：需要 lane border warning 或 vehicle drift over-limit feedback；如果 MVP 沒有 out-of-lane 物理，則不得亂用這個 reason。
+
 ### 重試回流
-- Retry 重置 score/run state，移除 overlay，恢復 background/track motion，3 秒內出現 hazard 或 boost；after-retry visual delta 必須明顯，Best score 是唯一 MVP 持久進度。
+- Retry 必須重置 score、combo、pulse、hazard list、boost list、vehicle lane、run timer；Best score 只在新分數超越時更新。
+- Retry 後 3 秒內要看到 overlay 離場、track/background motion 恢復、vehicle 回到起始 lane、hazard 或 boost 再次出現；after-retry visual delta 必須可由錄影判斷。
+- Settings/Pause 不得破壞 retry state；pause resume 後 input、spawn、score、pulse 應恢復一致。
 
 ## English
 
 ### Failure, Retry, and Progress
-- Failure reason values are hit hazard, pulse depleted, and out of lane, each tied to screen event, HUD change, or QA evidence.
+- Allowed failure reasons are hit hazard, pulse depleted, and out of lane. Each must map to screen event, HUD change, runtime field, and QA evidence.
+
 ### Failure Reasons
-- hit hazard needs flash/SFX/haptic; pulse depleted must be visible in HUD; out of lane needs warning cue or lane flash.
+- hit hazard needs flash/shake/cue; pulse depleted needs visible HUD warning; out of lane needs lane warning and must not be used if the MVP has no out-of-lane rule.
+
 ### Retry Return
-- Retry resets score/run state, removes overlay, resumes background/track motion, and spawns hazard or boost within 3 seconds; after-retry visual delta must be obvious, and Best score is the only MVP persistent progress.
+- Retry resets run state and within 3 seconds shows overlay exit, restored motion, reset vehicle lane, and new hazard or boost. Best score is the MVP persistent progress.
 
 ## Game Quality Alignment
 
