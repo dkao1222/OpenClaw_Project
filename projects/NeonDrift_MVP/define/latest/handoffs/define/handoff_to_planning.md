@@ -2,8 +2,8 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-define_page_id: 389b9e33-8429-81e0-a89c-fd06bfa7eede
-define_run_id: notion-NeonDrift_MVP-define-20260624180637
+define_page_id: 38ab9e33-8429-8137-b463-f60378eaa97b
+define_run_id: notion-NeonDrift_MVP-define-20260625021830
 output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 handoff_type: define_to_planning
 ready_for_planning: true
