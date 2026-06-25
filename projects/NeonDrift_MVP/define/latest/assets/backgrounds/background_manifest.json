@@ -1,7 +1,0 @@
-{
-  "project": "NeonDrift_MVP",
-  "primary": "assets/backgrounds/neon_track_background_2048.png",
-  "unity": "unity/NeonDrift/Assets/Art/Backgrounds/NeonTrackBackground.png",
-  "style": "dark neon track, readable cyan lane, magenta edge accents",
-  "safe_use": "background must not obscure vehicle, hazards, HUD, or warning cues"
-}
