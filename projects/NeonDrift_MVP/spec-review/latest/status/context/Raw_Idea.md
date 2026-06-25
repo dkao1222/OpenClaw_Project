@@ -1,11 +1,11 @@
 # Raw Idea
 
-raw_idea_page_id: 38ab9e33-8429-81cf-ad5b-cf106572feff
+raw_idea_page_id: 38ab9e33-8429-81ed-8915-cbd7765db509
 project_name: NeonDrift_MVP
 idea_type: game
 target_platform: Unity iOS
 priority: high
-requested_by: codex-auto-watcher-rerun-no-manual-build
+requested_by: codex-final-auto-watcher-no-manual-intervention
 
 ## Raw Idea（原始想法）
 
