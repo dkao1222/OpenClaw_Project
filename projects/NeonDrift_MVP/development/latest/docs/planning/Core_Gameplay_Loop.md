@@ -2,41 +2,35 @@
 
 ## 繁體中文
 
-### 核心循環
-- 單局循環為 Start -> 觀察 lane / hazard / boost -> 按住或點擊 left/right 漂移 -> 避開障礙或收集 boost -> combo/score/pulse 回饋 -> 風險提高 -> 成功結算或失敗 retry。
-- 每 5 到 8 秒必須出現一個新的決策點，讓玩家感到自己正在主動控制節奏，而不是等待數字自然變化。
+### 循環索引
+- 本文件只作為 core loop index；完整內容拆成 Loop_Timeline、Player_Actions、Feedback_Rhythm、Failure_Return 四張 context cards。
+- 下游 agent 不應只讀本索引就實作 gameplay；game-designer、spec review、development 必須按任務讀取對應卡片，避免把 Start、left/right、hazard、boost、combo、score、failure、retry 簡化成單句摘要。
 
-### 重複動作
-- 基本動作是左右漂移、回正、搶 boost、躲 hazard、維持 combo；每個動作都需要可見車體偏移、軌跡變化、音效或 HUD 回饋。
-- 玩家應能在 3 局內理解：提早轉向更安全，連續 clean drift 會增加 combo，貪 boost 會提高撞擊風險。
+### 上下文卡片
+- Loop_Timeline.md：鎖定 0-3、4-7、8-10 秒事件、decision point、hazard wave、boost window、score/pulse 可見變化與 QA evidence。
+- Player_Actions.md：鎖定 tap/hold/left/right、current_lane、target_lane、lateral_velocity、drift_direction、trail_state 與可接受操作結果。
+- Feedback_Rhythm.md：鎖定 button highlight、vehicle movement、trail、score_delta_reason、pulse_delta_reason、VFX、SFX、haptic、reduced-motion fallback。
+- Failure_Return.md：鎖定 hit hazard、pulse depleted、out of lane、last_failure_reason、Retry reset、Best score 與 after-retry visual delta。
 
-### 回饋節奏
-- 即時回饋在 0.1 秒內出現：按鍵高亮、車體橫移、trail 顏色變化、score tick 或 pulse 變化。
-- 中期回饋每 10 到 15 秒出現：combo milestone、speed line、lane flash、危險警示或短音效，避免畫面長時間無事件。
-
-### 失敗後回流
-- 失敗後必須顯示原因、分數、最佳分數、combo peak、明確 retry button；retry 後 3 秒內重新出現第一個互動事件。
-- Retry 必須產生人眼可辨識的 after-retry visual delta：failure overlay 消失、score/timer/run state 重置、玩家或賽道重新動起來，且 retry 後截圖/影片需明顯不同於 game-over 畫面。
-- 如果玩家失敗時沒有按鍵或移動，系統要以 tutorial hint 告知需要左右漂移，不能只顯示泛用 Drift Lost。
+### 下游讀取規則
+- Game Director 先讀 Loop_Timeline 與 Player_Actions，再展開系統規則；UI/UX 先讀 Feedback_Rhythm 與 Failure_Return，再定義控制和 overlay。
+- Spec Review 必須逐卡檢查 source_paths、runtime evidence、QA video acceptance；缺任一卡不可進入 Development。
 
 ## English
 
-### Core Loop
-- The run loop is Start -> read lane/hazard/boost -> tap or hold left/right to drift -> dodge or collect -> receive combo/score/pulse feedback -> face higher risk -> finish or retry.
-- A new decision point must appear every 5 to 8 seconds so the player feels active control rather than waiting for numbers to change.
+### Loop Index
+- This file is the core loop index. Full detail is split into Loop_Timeline, Player_Actions, Feedback_Rhythm, and Failure_Return context cards.
+- Downstream agents must not implement gameplay from this index alone; each task reads the relevant card so Start, left/right, hazard, boost, combo, score, failure, and retry are not reduced to a one-line summary.
 
-### Repeatable Actions
-- Basic actions are drift left/right, recover center, grab boost, avoid hazards, and maintain combo; every action needs visible vehicle movement, trail change, audio, or HUD feedback.
-- Within 3 runs, the player should learn that earlier steering is safer, clean drift chains increase combo, and greedy boost collection raises collision risk.
+### Context Cards
+- Loop_Timeline.md locks 0-3, 4-7, 8-10 second events, decision point, hazard wave, boost window, score/pulse changes, and QA evidence.
+- Player_Actions.md locks tap/hold/left/right, current_lane, target_lane, lateral_velocity, drift_direction, trail_state, and accepted input results.
+- Feedback_Rhythm.md locks button highlight, vehicle movement, trail, score_delta_reason, pulse_delta_reason, VFX, SFX, haptic, and reduced-motion fallback.
+- Failure_Return.md locks hit hazard, pulse depleted, out of lane, last_failure_reason, Retry reset, Best score, and after-retry visual delta.
 
-### Feedback Rhythm
-- Immediate feedback appears within 0.1 seconds: button highlight, vehicle lateral movement, trail color change, score tick, or pulse change.
-- Medium feedback appears every 10 to 15 seconds: combo milestone, speed line, lane flash, danger warning, or short sound cue so the screen never stays eventless for long.
-
-### Post-failure Return
-- Failure must show cause, score, best score, combo peak, and a clear retry button; retry must return to the first interaction event within 3 seconds.
-- Retry must create a human-visible after-retry visual delta: failure overlay removed, score/timer/run state reset, player or track motion resumes, and the after-retry screenshot/video differs clearly from the game-over frame.
-- If the player fails without input or visible movement, the system must show a tutorial hint about left/right drifting instead of only a generic Drift Lost message.
+### Downstream Read Policy
+- Game Director reads Loop_Timeline and Player_Actions before expanding systems; UI/UX reads Feedback_Rhythm and Failure_Return before controls and overlays.
+- Spec Review must verify source_paths, runtime evidence, and QA video acceptance card by card; missing cards block Development.
 
 ## Game Quality Alignment
 
