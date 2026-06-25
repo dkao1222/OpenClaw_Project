@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/design/Content_Design_Draft.md
-- PASS file.size_limit.docs/design/Content_Design_Draft.md: 4157<=8000
+- PASS file.size_limit.docs/design/Content_Design_Draft.md: 5080<=8000
 - PASS file.no_prompt_constraints.docs/design/Content_Design_Draft.md
 - PASS file.bilingual_order.docs/design/Content_Design_Draft.md
 - PASS file.bilingual_distinct.docs/design/Content_Design_Draft.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/design/Content_Design_Draft.md
 - PASS file.schema.docs/design/Content_Design_Draft.md
 - PASS file.readable.docs/design/Level_and_Tutorial_Pacing.md
-- PASS file.size_limit.docs/design/Level_and_Tutorial_Pacing.md: 4207<=8000
+- PASS file.size_limit.docs/design/Level_and_Tutorial_Pacing.md: 5130<=8000
 - PASS file.no_prompt_constraints.docs/design/Level_and_Tutorial_Pacing.md
 - PASS file.bilingual_order.docs/design/Level_and_Tutorial_Pacing.md
 - PASS file.bilingual_distinct.docs/design/Level_and_Tutorial_Pacing.md
@@ -29,7 +29,7 @@
 - PASS file.no_prompt_constraints.status/agent_heartbeats/level-designer.md
 - PASS file.schema.status/agent_heartbeats/level-designer.md
 - PASS file.readable.handoffs/planning/06_level-designer_to_economy-liveops-designer.md
-- PASS file.size_limit.handoffs/planning/06_level-designer_to_economy-liveops-designer.md: 1546<=2500
+- PASS file.size_limit.handoffs/planning/06_level-designer_to_economy-liveops-designer.md: 1546<=3200
 - PASS file.no_prompt_constraints.handoffs/planning/06_level-designer_to_economy-liveops-designer.md
 - PASS file.schema.handoffs/planning/06_level-designer_to_economy-liveops-designer.md
 - PASS handoff.context_pack_path.status/context/stage06_context_pack.md
