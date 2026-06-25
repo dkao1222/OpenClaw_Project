@@ -14,13 +14,13 @@
 - PASS file.detail_density.docs/design/Visual_Direction.md: background layers, track materials, icon, typography, VFX, motion, readability, iPhone, performance
 - PASS file.schema.docs/design/Visual_Direction.md
 - PASS file.readable.docs/design/Style_Frames.md
-- PASS file.size_limit.docs/design/Style_Frames.md: 5343<=8000
+- PASS file.size_limit.docs/design/Style_Frames.md: 5265<=8000
 - PASS file.no_prompt_constraints.docs/design/Style_Frames.md
 - PASS file.bilingual_order.docs/design/Style_Frames.md
 - PASS file.bilingual_distinct.docs/design/Style_Frames.md
 - PASS file.content_specificity.docs/design/Style_Frames.md
 - PASS file.required_sections.docs/design/Style_Frames.md
-- PASS file.detail_density.docs/design/Style_Frames.md: main menu, gameplay, reward, danger, failure, retry, palette, typography, icon, motion, safe area, QA
+- PASS file.detail_density.docs/design/Style_Frames.md: main menu, gameplay, reward, danger, failure, retry, Unity, palette, typography, icon, motion, safe area, QA
 - PASS file.schema.docs/design/Style_Frames.md
 - PASS file.readable.docs/design/Art_Asset_Implementation_Matrix.md
 - PASS file.size_limit.docs/design/Art_Asset_Implementation_Matrix.md: 5304<=8000

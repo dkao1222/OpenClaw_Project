@@ -45,7 +45,7 @@ required keywords: style, frames
 - 每個 frame 必須列出 screen purpose、emotional tone、background layers、foreground gameplay objects、UI hierarchy、CTA priority、palette tokens、typography roles、icon sizes、motion/VFX notes、safe area 與 iPhone SE 可見條件。
 
 ### 交接重點
-- Style frame 不能只是 wireframe 或矩形；必須描述 player vehicle、hazard shard、boost cell、combo pulse、failure flash、retry surge 的材質、輪廓、發光與差異。
+- 每個 frame 必須標記 Unity screen state、Unity scene object、asset path 與 VFX trigger，讓 development 不能只交付文字或未使用的 PNG。
 
 ## English
 
@@ -58,4 +58,4 @@ required keywords: style, frames
 - Each frame must list screen purpose, emotional tone, background layers, foreground gameplay objects, UI hierarchy, CTA priority, palette tokens, typography roles, icon sizes, motion/VFX notes, safe area, and iPhone SE visibility.
 
 ### Handoff Notes
-- A style frame cannot be only a wireframe or rectangles; it must describe material, silhouette, glow, and difference for player vehicle, hazard shard, boost cell, combo pulse, failure flash, and retry surge.
+- Each frame must mark Unity screen state, Unity scene object, asset path, and VFX trigger so development cannot ship only text or unused PNG files.
