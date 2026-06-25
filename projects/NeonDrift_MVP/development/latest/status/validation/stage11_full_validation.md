@@ -5,7 +5,7 @@
 
 ## Checks
 - PASS file.readable.docs/review/Planning_Gap_Review.md
-- PASS file.size_limit.docs/review/Planning_Gap_Review.md: 4148<=8000
+- PASS file.size_limit.docs/review/Planning_Gap_Review.md: 5071<=8000
 - PASS file.no_prompt_constraints.docs/review/Planning_Gap_Review.md
 - PASS file.bilingual_order.docs/review/Planning_Gap_Review.md
 - PASS file.bilingual_distinct.docs/review/Planning_Gap_Review.md
@@ -13,7 +13,7 @@
 - PASS file.required_sections.docs/review/Planning_Gap_Review.md
 - PASS file.schema.docs/review/Planning_Gap_Review.md
 - PASS file.readable.docs/review/Planning_Risk_Register.md
-- PASS file.size_limit.docs/review/Planning_Risk_Register.md: 4175<=8000
+- PASS file.size_limit.docs/review/Planning_Risk_Register.md: 5098<=8000
 - PASS file.no_prompt_constraints.docs/review/Planning_Risk_Register.md
 - PASS file.bilingual_order.docs/review/Planning_Risk_Register.md
 - PASS file.bilingual_distinct.docs/review/Planning_Risk_Register.md
@@ -29,7 +29,7 @@
 - PASS file.no_prompt_constraints.status/agent_heartbeats/critic.md
 - PASS file.schema.status/agent_heartbeats/critic.md
 - PASS file.readable.handoffs/planning/11_critic_to_judge.md
-- PASS file.size_limit.handoffs/planning/11_critic_to_judge.md: 1454<=2500
+- PASS file.size_limit.handoffs/planning/11_critic_to_judge.md: 1454<=3200
 - PASS file.no_prompt_constraints.handoffs/planning/11_critic_to_judge.md
 - PASS file.schema.handoffs/planning/11_critic_to_judge.md
 - PASS handoff.context_pack_path.status/context/stage11_context_pack.md
