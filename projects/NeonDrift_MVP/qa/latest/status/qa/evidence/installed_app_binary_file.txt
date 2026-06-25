@@ -1,1 +1,1 @@
-/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Bundle/Application/23FF9C18-D6F0-4A8F-8B76-55CBC5CDFE3F/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64
+/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Bundle/Application/E20C05D3-F661-400E-8190-BD3E49616B56/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64

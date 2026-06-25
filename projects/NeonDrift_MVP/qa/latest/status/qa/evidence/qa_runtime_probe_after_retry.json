@@ -80,12 +80,12 @@
     "wave": 1,
     "combo": 7,
     "multiplier": 1,
-    "boostCharge": 0.028583304956555368,
+    "boostCharge": 0.02858322113752365,
     "isGameOver": false,
     "isPaused": false,
     "hasStarted": true,
-    "gameplayTime": 0.8166658878326416,
+    "gameplayTime": 0.816663384437561,
     "minimumSurvivalSeconds": 6.0,
-    "framesPerSecond": 60.00358963012695,
+    "framesPerSecond": 59.99856948852539,
     "exceptionCount": 0
 }
