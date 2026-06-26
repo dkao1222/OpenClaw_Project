@@ -16,8 +16,8 @@
 ## Locked Decisions
 
 - platform_target: Unity iOS first; Android/WebGL only as future scope unless explicitly requested.
-- monetization_direction: Raw Idea 未明確指定時，不預設付費牆；若是遊戲，先保留 rewarded ads 優先且不得破壞核心體驗，並由 Define/Spec Review 細化。
-- compatibility_target: iOS first: current iOS simulator/local build gate. Device targets and OS floor must be refined by Define/Spec Review.
+- monetization_direction: Rewarded ads may be considered only after failure/retry or future revive/bonus flows; ads must not interrupt the first run or core tutorial experience.
+- compatibility_target: iOS-first Unity 6000.0.77f1, local iOS simulator build, safe-area aware controls, readable on common iPhone portrait screens, performance suitable for mid-range iOS devices.
 - local_unity_build: manual start, watcher monitors only
 - git_publish: enabled when pipeline status is Passed
 
