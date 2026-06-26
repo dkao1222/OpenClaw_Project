@@ -1,7 +1,7 @@
 # Development To Build Evidence Gate
 
 - status: passed
-- checks_total: 12
+- checks_total: 13
 - checks_failed: 0
 
 ## Checks
@@ -16,6 +16,7 @@
 - PASS visual_richness_evidence: marker_found
 - PASS gameplay_function_evidence: marker_found
 - PASS runtime_qa_probe_evidence: marker_found
+- PASS repeated_qa_playthrough_evidence: marker_found
 - PASS non_placeholder_policy: marker_found
 - PASS unity_runtime_scripts_present: cs_files=6
 
