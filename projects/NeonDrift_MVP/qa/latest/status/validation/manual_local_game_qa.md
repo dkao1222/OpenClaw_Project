@@ -5,8 +5,8 @@ This QA row is controlled by Notion. When Status is `processing`, the watcher wa
 Runner command from `/Users/dragonkao/.openclaw`:
 
 ```bash
-python3 scripts/run_game_qa_pipeline.py --run-id notion-NeonDrift_MVP-qa-qa-full-20260626150059 --project-name NeonDrift_MVP --channel-id 382b9e3384298039b171c9b2a60ae644 --stage-range qa-full --source-output-folder /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/ --source-handoff-path /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/build_full_validation.md --output-folder /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/ --pipeline-request 'Start Game QA only after Game Build has passed.
-Game Build run id: notion-NeonDrift_MVP-build-build-ios-simulator-20260626145849
+python3 scripts/run_game_qa_pipeline.py --run-id notion-NeonDrift_MVP-qa-qa-full-20260626153652 --project-name NeonDrift_MVP --channel-id 382b9e3384298039b171c9b2a60ae644 --stage-range qa-full --source-output-folder /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/ --source-handoff-path /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/build_full_validation.md --output-folder /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/ --pipeline-request 'Start Game QA only after Game Build has passed.
+Game Build run id: notion-NeonDrift_MVP-build-build-ios-simulator-20260626153449
 Source pipeline: build
 Use the provided handoff as the source of truth.' --timeout 3600 --thinking off --skip-agent
 ```
