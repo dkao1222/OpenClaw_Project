@@ -1,16 +1,16 @@
 {
     ApplicationType = User;
-    Bundle = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/60DB0A34-B3BB-4A4D-B075-CFC8084764F2/NeonDrift.run.1782485533.82553.app/";
-    BundleContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/60DB0A34-B3BB-4A4D-B075-CFC8084764F2/";
-    CFBundleDisplayName = "NeonDrift.run.1782485533.82553";
-    CFBundleExecutable = "NeonDrift.run.1782485533.82553";
-    CFBundleIdentifier = "com.DefaultCompany.NeonDrift.run.1782485533.82553";
-    CFBundleName = "NeonDrift.run.1782485533.82553";
+    Bundle = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/3F1A1898-EEA2-4EBF-A66F-E1E90E2F4ACF/NeonDrift.app/";
+    BundleContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/3F1A1898-EEA2-4EBF-A66F-E1E90E2F4ACF/";
+    CFBundleDisplayName = NeonDrift;
+    CFBundleExecutable = NeonDrift;
+    CFBundleIdentifier = "com.DefaultCompany.NeonDrift";
+    CFBundleName = NeonDrift;
     CFBundleVersion = 0;
-    DataContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/EF1ED47B-33B9-46F7-9259-AC69DEEA4036/";
+    DataContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/03C2D92F-806F-418C-9228-8896F455F6D1/";
     GroupContainers =     {
     };
-    Path = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/60DB0A34-B3BB-4A4D-B075-CFC8084764F2/NeonDrift.run.1782485533.82553.app";
+    Path = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/3F1A1898-EEA2-4EBF-A66F-E1E90E2F4ACF/NeonDrift.app";
     SBAppTags =     (
     );
 }

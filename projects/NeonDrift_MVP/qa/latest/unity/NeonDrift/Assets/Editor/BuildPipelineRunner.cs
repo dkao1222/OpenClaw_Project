@@ -456,14 +456,16 @@ public static class BuildPipelineRunner
         var panel = new GameObject("Game Over Panel");
         panel.transform.SetParent(canvasObject.transform, false);
         var panelImage = panel.AddComponent<Image>();
-        panelImage.color = new Color(0.35f, 0.02f, 0.10f, 0.96f);
-        SetRect(panel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 115f), new Vector2(900f, 520f));
+        panelImage.color = new Color(0.72f, 0.02f, 0.18f, 0.98f);
+        SetRect(panel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 120f), new Vector2(1040f, 760f));
         panel.SetActive(false);
 
-        CreateUiBlock(panel.transform, "Game Over Alert Strip", TextAnchor.UpperCenter, new Vector2(0f, 20f), new Vector2(760f, 24f), new Color(1f, 0.14f, 0.08f, 1f));
-        CreateUiBlock(panel.transform, "Retry Glow Plate", TextAnchor.LowerCenter, new Vector2(0f, 84f), new Vector2(430f, 116f), new Color(0f, 0.95f, 1f, 0.82f));
-        Text gameOverText = CreateText(panel.transform, "Game Over Text", font, "DRIFT LOST\nPink hazard impact. Tap RETRY to restart.", TextAnchor.MiddleCenter, new Vector2(0f, 58f), new Vector2(760f, 250f), Color.white);
-        gameOverText.fontSize = 48;
+        CreateUiBlock(panel.transform, "Game Over Alert Strip", TextAnchor.UpperCenter, new Vector2(0f, 30f), new Vector2(900f, 34f), new Color(1f, 0.92f, 0f, 1f));
+        CreateUiBlock(panel.transform, "Game Over Cyan Impact Flash", TextAnchor.MiddleCenter, new Vector2(-315f, 8f), new Vector2(96f, 520f), new Color(0f, 0.95f, 1f, 0.88f));
+        CreateUiBlock(panel.transform, "Game Over Magenta Impact Flash", TextAnchor.MiddleCenter, new Vector2(315f, 8f), new Vector2(96f, 520f), new Color(1f, 0f, 0.8f, 0.88f));
+        CreateUiBlock(panel.transform, "Retry Glow Plate", TextAnchor.LowerCenter, new Vector2(0f, 96f), new Vector2(470f, 136f), new Color(0f, 0.95f, 1f, 0.92f));
+        Text gameOverText = CreateText(panel.transform, "Game Over Text", font, "DRIFT LOST\nPink hazard impact. Tap RETRY to restart.", TextAnchor.MiddleCenter, new Vector2(0f, 86f), new Vector2(880f, 310f), Color.white);
+        gameOverText.fontSize = 58;
         CreateButton(panel.transform, "Retry Button", font, "RETRY", TextAnchor.LowerCenter, new Vector2(0f, 58f), new Vector2(330f, 86f), new Color(0f, 0.62f, 1f, 1f));
 
         var hud = canvasObject.AddComponent<NeonDriftHud>();
