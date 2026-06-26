@@ -2,12 +2,13 @@
 
 project_name: NeonDrift_MVP
 workspace_key: 382b9e3384298039b171c9b2a60ae644
-run_id: notion-NeonDrift_MVP-0-12-20260626084124
+run_id: notion-NeonDrift_MVP-0-12-20260626122352
+chain_id: raw:NeonDrift_MVP:20260626122335
 stage_range: 0-12
 agent_model_policy: per-agent-config
 legacy_model_field_ignored: per-agent-config
 thinking: off
-requested_by: define:notion-NeonDrift_MVP-define-20260626084113
+requested_by: define:notion-NeonDrift_MVP-define-20260626122341
 
 ## Pipeline Execution Policy
 
@@ -25,7 +26,7 @@ Retry is accepted only when a human can see a clear transition from game-over to
 Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
 遊戲概念：Neon arcade drift runner: the player pilots a glowing hover car in a moving light tunnel, making quick left/right drift decisions under pressure.
 玩家目標：Survive the run, avoid hazard shards, collect boost cells, chain near misses/combo score, and beat the best score with fast retry.
-Define 階段只可整理已提交的遊戲概念、痛點、服務目標、MVP 邊界與可驗證成功條件；不可憑空補核心概念。
+必須包含：Start menu, Settings/Sound, best score, left/right touch controls, moving player vehicle, track/background motion, hazards, boost
 
 ## Target Audience（目標受眾）
 
@@ -38,6 +39,7 @@ Define 階段只可整理已提交的遊戲概念、痛點、服務目標、MVP 
 核心物件：Player hover car, neon track/lane rails, hazard shards, boost cells, score/combo/pulse HUD, pause, failure overlay with reason, retry button.
 視覺方向：High-contrast neon arcade style with moving background layers, visible vehicle silhouette, cyan/magenta hazard-reward language, glow trails, readable HUD, and safe-area aware controls.
 成功條件：QA must provide screenshots/video proving Start, moving gameplay, left/right control response, hazard, boost, score/pulse change, failure reason, retry reset, visual richness, and non-placeholder style frames.
+QA 要求：QA must include simulator screenshots, playthrough video, touch/button checks, every gameplay function check, human visual readability, product experience, style-frame evidence, retry recovery, and build artifacts.
 
 ## Development Request
 
