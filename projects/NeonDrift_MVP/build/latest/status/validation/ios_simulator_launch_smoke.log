@@ -13,6 +13,6 @@ Device already booted, nothing to do.
 $ xcrun simctl install 115FDF0C-5A2F-4686-909B-7F43F1450A28 /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app
 
 $ xcrun simctl launch --terminate-running-process 115FDF0C-5A2F-4686-909B-7F43F1450A28 com.DefaultCompany.NeonDrift
-com.DefaultCompany.NeonDrift: 8608
+com.DefaultCompany.NeonDrift: 26567
 
 Launch smoke passed for com.DefaultCompany.NeonDrift; app=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app
