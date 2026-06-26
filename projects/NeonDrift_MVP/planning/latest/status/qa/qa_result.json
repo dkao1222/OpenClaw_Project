@@ -1,7 +1,7 @@
 {
   "overall_status": "failed",
   "checks_total": 136,
-  "checks_failed": 6,
+  "checks_failed": 9,
   "checks_blocked": 0,
   "release_candidate_status": "blocked",
   "checks": [
@@ -613,7 +613,7 @@
       "area": "Runtime",
       "status": "PASS",
       "expected": "Runtime probe must expose non-negative object counters for pickups, hazards, boosts, and combo events.",
-      "actual": "pickupCount=0, hazardCount=4, boostCount=0, comboCount=86.",
+      "actual": "pickupCount=0, hazardCount=4, boostCount=0, comboCount=85.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_gameplay.json",
       "severity": "none"
     },
@@ -622,7 +622,7 @@
       "area": "Gameplay",
       "status": "PASS",
       "expected": "Runtime probe may only claim gameplay depth, motion, enemy pressure, skill/reward, or human agency after capturing a running gameplay state with score and elapsed play time.",
-      "actual": "screenState='gameplay', hasStarted=True, gameplayTime=6.616614818572998, score=273, claimed_flags=['contentDepthVerified', 'gameplayMotionVerified', 'hazardApproachMotionVerified', 'playerSteeringMotionVerified', 'humanAgencyVerified', 'playerInputChangesOutcomeVerified', 'tenSecondPlayabilityVerified', 'enemyPatternPressureVerified', 'skillRewardLoopVerified', 'humanPlaytestChecklistVerified'].",
+      "actual": "screenState='gameplay', hasStarted=True, gameplayTime=6.600958824157715, score=267, claimed_flags=['contentDepthVerified', 'gameplayMotionVerified', 'hazardApproachMotionVerified', 'playerSteeringMotionVerified', 'humanAgencyVerified', 'playerInputChangesOutcomeVerified', 'tenSecondPlayabilityVerified', 'enemyPatternPressureVerified', 'skillRewardLoopVerified', 'humanPlaytestChecklistVerified'].",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_gameplay.json",
       "severity": "none"
     },
@@ -865,7 +865,7 @@
       "area": "Build",
       "status": "PASS",
       "expected": "Simulator app binary exists and is arm64.",
-      "actual": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64",
+      "actual": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782462220.97664.app/NeonDrift.run.1782462220.97664: Mach-O 64-bit executable arm64",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/app_binary_file.txt",
       "severity": "none"
     },
@@ -883,7 +883,7 @@
       "area": "Launch",
       "status": "PASS",
       "expected": "Simulator launch command ran and returned launch information.",
-      "actual": "com.DefaultCompany.NeonDrift: 53989",
+      "actual": "com.DefaultCompany.NeonDrift.run.1782462220.97664: 3900",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt",
       "severity": "none"
     },
@@ -892,25 +892,25 @@
       "area": "UI/UX",
       "status": "PASS",
       "expected": "Initial simulator screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 80057, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 60}",
+      "actual": "{'exists': True, 'bytes': 77622, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 31}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png",
       "severity": "none"
     },
     {
       "id": "playthrough_video_exists",
       "area": "Playthrough",
-      "status": "PASS",
+      "status": "FAIL",
       "expected": "Simulator playthrough video exists and is large enough to contain real footage.",
-      "actual": "{'exists': True, 'bytes': 3882859}",
-      "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/simulator_playthrough.mp4",
-      "severity": "none"
+      "actual": "{'exists': False, 'bytes': 0}",
+      "evidence": "missing playthrough video evidence",
+      "severity": "high"
     },
     {
       "id": "playthrough_interaction_script_log_exists",
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Playthrough interaction script log exists.",
-      "actual": "QA playthrough script:\n1. write qa_playthrough.flag into simulator app data container\n2. launch app with -qaPlaythrough fallback arg\n3. app auto-starts after the menu has loaded\n4. app steers left/right\n5. app triggers game over after readable survival window\n6. app retries into a fresh playable run\nstale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/526EDA05-61A0-427D-BA88-40438D3E7925/Documents/qa_runtime_probe_menu.json\nstale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/526EDA05-61A0-427D-BA88-40438D3E7925/Documents/qa_runtime_probe_gameplay.json\nstale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/526EDA05-61A0-427D-BA88-40438D3E7925/Documents/qa_runtime_probe_game_over.json\nstale_probe_removed=/Users/",
+      "actual": "QA playthrough script:\n1. write qa_playthrough.flag into simulator app data container\n2. launch app with -qaPlaythrough fallback arg\n3. app auto-starts after the menu has loaded\n4. app steers left/right\n5. app triggers game over after readable survival window\n6. app retries into a fresh playable run\nstale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/D4DC6C5C-FCD6-46D8-85DF-BE1832FD48F4/Documents/qa_runtime_probe_menu.json\nstale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/D4DC6C5C-FCD6-46D8-85DF-BE1832FD48F4/Documents/qa_runtime_probe_gameplay.json\nstale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/D4DC6C5C-FCD6-46D8-85DF-BE1832FD48F4/Documents/qa_runtime_probe_game_over.json\nstale_probe_removed=/Users/",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/interaction_script.log",
       "severity": "none"
     },
@@ -919,7 +919,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "QA playthrough trigger flag is written before simulator launch.",
-      "actual": "QA playthrough flag targets:\n/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/526EDA05-61A0-427D-BA88-40438D3E7925/Documents/qa_playthrough.flag\n/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/526EDA05-61A0-427D-BA88-40438D3E7925/qa_playthrough.flag\n",
+      "actual": "QA playthrough flag targets:\n/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/D4DC6C5C-FCD6-46D8-85DF-BE1832FD48F4/Documents/qa_playthrough.flag\n/Users/dragonkao/Library/Developer/CoreSimulator/Devices/115FDF0C-5A2F-4686-909B-7F43F1450A28/data/Containers/Data/Application/D4DC6C5C-FCD6-46D8-85DF-BE1832FD48F4/qa_playthrough.flag\n",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_playthrough_flag.txt",
       "severity": "none"
     },
@@ -928,7 +928,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Menu screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 80057, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 60}",
+      "actual": "{'exists': True, 'bytes': 77622, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 31}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png",
       "severity": "none"
     },
@@ -937,7 +937,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Gameplay screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 114141, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 77}",
+      "actual": "{'exists': True, 'bytes': 114157, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 77}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png",
       "severity": "none"
     },
@@ -946,7 +946,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Game-over screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 137692, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 224}",
+      "actual": "{'exists': True, 'bytes': 113221, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 76}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png",
       "severity": "none"
     },
@@ -955,7 +955,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Post-retry screenshot exists and is nonblank.",
-      "actual": "{'exists': True, 'bytes': 113070, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 77}",
+      "actual": "{'exists': True, 'bytes': 114541, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 77}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png",
       "severity": "none"
     },
@@ -964,7 +964,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Post-retry screenshot must show real UI, not a blank reload frame.",
-      "actual": "{'exists': True, 'bytes': 113070, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 77}",
+      "actual": "{'exists': True, 'bytes': 114541, 'width': 1206, 'height': 2622, 'nonblank_estimate': 'nonblank', 'sample_unique_values': 77}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png",
       "severity": "none"
     },
@@ -973,25 +973,25 @@
       "area": "Visual",
       "status": "FAIL",
       "expected": "Main menu screenshot must be readable to a human, with visible title/CTA contrast and colored highlights; a dark nonblank screen is not enough.",
-      "actual": "menuVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 77.072, 'mean_luma': 28.534, 'dark_ratio': 0.7537, 'bright_ratio': 0.0, 'very_bright_ratio': 0.0, 'saturated_color_ratio': 0.0, 'color_bucket_count': 21}, menuHumanReadable=False.",
+      "actual": "menuVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 48.072, 'mean_luma': 29.852, 'dark_ratio': 0.7278, 'bright_ratio': 0.0, 'very_bright_ratio': 0.0, 'saturated_color_ratio': 0.0, 'color_bucket_count': 13}, menuHumanReadable=False.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png",
       "severity": "critical"
     },
     {
       "id": "qa_game_over_visual_state_gate",
       "area": "Visual",
-      "status": "PASS",
+      "status": "FAIL",
       "expected": "Game-over screenshot must visibly show the failure state, not only rely on runtime probe fields.",
-      "actual": "gameOverProbePresent=True, screenState='game_over', isGameOver=True, gameOverPanelVisible=True, gameplayToGameOver={'comparable': True, 'mean_abs_diff': 4.915, 'changed_ratio': 0.0216, 'sample_count': 12000, 'changed': True}, gameOverVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.413, 'dark_ratio': 0.7708, 'bright_ratio': 0.0336, 'very_bright_ratio': 0.0141, 'saturated_color_ratio': 0.0919, 'color_bucket_count': 123}, gameOverVisualStateVisible=True.",
+      "actual": "gameOverProbePresent=True, screenState='game_over', isGameOver=True, gameOverPanelVisible=True, gameplayToGameOver={'comparable': True, 'mean_abs_diff': 1.487, 'changed_ratio': 0.009, 'sample_count': 12000, 'changed': True}, gameOverVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.406, 'dark_ratio': 0.7649, 'bright_ratio': 0.027, 'very_bright_ratio': 0.0134, 'saturated_color_ratio': 0.086, 'color_bucket_count': 101}, gameOverVisualStateVisible=False.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png",
-      "severity": "none"
+      "severity": "critical"
     },
     {
       "id": "qa_retry_visual_recovery_gate",
       "area": "Visual",
       "status": "PASS",
       "expected": "After Retry, screenshot and runtime probe must visibly leave failure state within the recorded evidence.",
-      "actual": "retryProbePresent=True, screenState='gameplay', isGameOver=False, gameOverPanelVisible=False, gameOverToRetry={'comparable': True, 'mean_abs_diff': 4.842, 'changed_ratio': 0.0192, 'sample_count': 12000, 'changed': True}, retryVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.608, 'dark_ratio': 0.7648, 'bright_ratio': 0.0273, 'very_bright_ratio': 0.0136, 'saturated_color_ratio': 0.0915, 'color_bucket_count': 99}, retryVisualStateVisible=True.",
+      "actual": "retryProbePresent=True, screenState='gameplay', isGameOver=False, gameOverPanelVisible=False, gameOverToRetry={'comparable': True, 'mean_abs_diff': 1.087, 'changed_ratio': 0.0053, 'sample_count': 12000, 'changed': True}, retryVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.538, 'dark_ratio': 0.7643, 'bright_ratio': 0.0273, 'very_bright_ratio': 0.0135, 'saturated_color_ratio': 0.0892, 'color_bucket_count': 103}, retryVisualStateVisible=True.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png",
       "severity": "none"
     },
@@ -1000,7 +1000,7 @@
       "area": "Visual",
       "status": "FAIL",
       "expected": "Gameplay screenshot must exceed placeholder geometry: visible color richness, bright highlights, and enough visual variety are mandatory.",
-      "actual": "gameplayVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.553, 'dark_ratio': 0.7649, 'bright_ratio': 0.027, 'very_bright_ratio': 0.0133, 'saturated_color_ratio': 0.0914, 'color_bucket_count': 103}, gameplayNonPlaceholderVisuals=False.",
+      "actual": "gameplayVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.531, 'dark_ratio': 0.765, 'bright_ratio': 0.027, 'very_bright_ratio': 0.0133, 'saturated_color_ratio': 0.0911, 'color_bucket_count': 104}, gameplayNonPlaceholderVisuals=False.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png",
       "severity": "critical"
     },
@@ -1009,7 +1009,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Menu to gameplay screenshots must visibly differ after Start is triggered.",
-      "actual": "{'comparable': True, 'mean_abs_diff': 20.268, 'changed_ratio': 0.0675, 'sample_count': 12000, 'changed': True}",
+      "actual": "{'comparable': True, 'mean_abs_diff': 22.124, 'changed_ratio': 0.1594, 'sample_count': 12000, 'changed': True}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png",
       "severity": "none"
     },
@@ -1018,7 +1018,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Gameplay to game-over screenshots must visibly differ after failure is triggered.",
-      "actual": "{'comparable': True, 'mean_abs_diff': 4.915, 'changed_ratio': 0.0216, 'sample_count': 12000, 'changed': True}",
+      "actual": "{'comparable': True, 'mean_abs_diff': 1.487, 'changed_ratio': 0.009, 'sample_count': 12000, 'changed': True}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png",
       "severity": "none"
     },
@@ -1027,7 +1027,7 @@
       "area": "Playthrough",
       "status": "PASS",
       "expected": "Game-over to retry screenshots must visibly differ after Retry is triggered.",
-      "actual": "{'comparable': True, 'mean_abs_diff': 4.842, 'changed_ratio': 0.0192, 'sample_count': 12000, 'changed': True}",
+      "actual": "{'comparable': True, 'mean_abs_diff': 1.087, 'changed_ratio': 0.0053, 'sample_count': 12000, 'changed': True}",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png",
       "severity": "none"
     },
@@ -1133,11 +1133,11 @@
     {
       "id": "qa_actual_gameplay_quality_gate",
       "area": "Gameplay",
-      "status": "PASS",
+      "status": "FAIL",
       "expected": "The product must behave like a playable game: 10-second readability, visible enemy pressure, skill/reward loop, and human playtest evidence are all mandatory.",
-      "actual": "tenSecondPlayabilityVerified=True, enemyPatternPressureVerified=True, skillRewardLoopVerified=True, humanPlaytestChecklistVerified=True, TenSecondPlayabilityVerified=True, EnemyPatternPressureVerified=True, SkillRewardLoopVerified=True, HumanPlaytestChecklistVerified=True, video=True, gameplayScreenshot=True, menuToGameplayChanged=True.",
+      "actual": "tenSecondPlayabilityVerified=True, enemyPatternPressureVerified=True, skillRewardLoopVerified=True, humanPlaytestChecklistVerified=True, TenSecondPlayabilityVerified=True, EnemyPatternPressureVerified=True, SkillRewardLoopVerified=True, HumanPlaytestChecklistVerified=True, video=False, gameplayScreenshot=True, menuToGameplayChanged=True.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_gameplay.json",
-      "severity": "none"
+      "severity": "critical"
     },
     {
       "id": "qa_human_interaction_quality_gate",
@@ -1153,7 +1153,7 @@
       "area": "Visual",
       "status": "FAIL",
       "expected": "Visual richness covers readable background/track, player/hazard visibility, event feedback, VFX readability, typography/icon readability, and perceived motion after Start.",
-      "actual": "gameplayVisualsVerified=True, gameplayInstructionReadableVerified=True, videoExists=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=True, retryVisualStateVisible=True, GameplayVisualsAreReadable=True.",
+      "actual": "gameplayVisualsVerified=True, gameplayInstructionReadableVerified=True, videoExists=False, menuToGameplayChanged=True, gameplayToGameOverChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=False, retryVisualStateVisible=True, GameplayVisualsAreReadable=True.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/evidence_summary.json",
       "severity": "high"
     },
@@ -1207,7 +1207,7 @@
       "area": "Visual",
       "status": "FAIL",
       "expected": "QA must judge screenshots/video for human readability and state changes, not only object existence.",
-      "actual": "videoExists=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=True, retryVisualStateVisible=True, gameplayInstructionReadableVerified=True, gameplayVisualsVerified=True.",
+      "actual": "videoExists=False, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=False, retryVisualStateVisible=True, gameplayInstructionReadableVerified=True, gameplayVisualsVerified=True.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/evidence_summary.json",
       "severity": "critical"
     },
@@ -1216,7 +1216,7 @@
       "area": "Gameplay",
       "status": "FAIL",
       "expected": "Product experience must be understandable from human-facing screenshots/video: first-run clarity, objective/control/threat/reward visibility, readable buttons, isolated game states, clear failure/retry recovery, and visible state changes are mandatory.",
-      "actual": "menuLayoutVerified=True, menuElementsDoNotOverlap=True, gameplayHudHiddenInMenu=True, gameplayControlsHiddenInMenu=True, menuHumanReadable=False, hasObjectiveText=True, hasAvoidInstructionText=True, hasPlayerLabel=True, hasHazardLabel=True, hasScoreText=True, hasPulseText=True, gameplayInstructionReadableVerified=True, gameplayVisualsVerified=True, buttonLayoutVerified=True, menuButtonSizeVerified=True, pauseRetryButtonSizeVerified=True, controlZoneSizeVerified=True, controlsInsideSafeArea=True, controlsDoNotOverlap=True, failureRetrySystemVerified=True, retryRestartsGameplayVerified=True, retryProbePresent=True, retryIsGameOver=False, retryGameOverPanelVisible=False, videoExists=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=True, retryVisualStateVisible=True.",
+      "actual": "menuLayoutVerified=True, menuElementsDoNotOverlap=True, gameplayHudHiddenInMenu=True, gameplayControlsHiddenInMenu=True, menuHumanReadable=False, hasObjectiveText=True, hasAvoidInstructionText=True, hasPlayerLabel=True, hasHazardLabel=True, hasScoreText=True, hasPulseText=True, gameplayInstructionReadableVerified=True, gameplayVisualsVerified=True, buttonLayoutVerified=True, menuButtonSizeVerified=True, pauseRetryButtonSizeVerified=True, controlZoneSizeVerified=True, controlsInsideSafeArea=True, controlsDoNotOverlap=True, failureRetrySystemVerified=True, retryRestartsGameplayVerified=True, retryProbePresent=True, retryIsGameOver=False, retryGameOverPanelVisible=False, videoExists=False, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=False, retryVisualStateVisible=True.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/evidence_summary.json",
       "severity": "critical"
     },
@@ -1225,18 +1225,21 @@
       "area": "Visual",
       "status": "FAIL",
       "expected": "QA must prove style frame implementation with report plus video/screenshots for main menu, gameplay, reward/boost, danger/near miss, failure/game-over, and retry result.",
-      "actual": "styleFrameReport=True, missingStyleFrameMarkers=[], video=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=True, retryVisualStateVisible=True.",
+      "actual": "styleFrameReport=True, missingStyleFrameMarkers=[], video=False, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=False, retryVisualStateVisible=True.",
       "evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/development/Style_Frame_Implementation_Report.md",
       "severity": "critical"
     }
   ],
   "required_fixes": [
-    "qa_menu_human_readability_gate: menuVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 77.072, 'mean_luma': 28.534, 'dark_ratio': 0.7537, 'bright_ratio': 0.0, 'very_bright_ratio': 0.0, 'saturated_color_ratio': 0.0, 'color_bucket_count': 21}, menuHumanReadable=False.",
-    "qa_non_placeholder_visual_richness_gate: gameplayVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.553, 'dark_ratio': 0.7649, 'bright_ratio': 0.027, 'very_bright_ratio': 0.0133, 'saturated_color_ratio': 0.0914, 'color_bucket_count': 103}, gameplayNonPlaceholderVisuals=False.",
-    "qa_visual_richness_quality_gate: gameplayVisualsVerified=True, gameplayInstructionReadableVerified=True, videoExists=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=True, retryVisualStateVisible=True, GameplayVisualsAreReadable=True.",
-    "qa_human_visual_judgement_gate: videoExists=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=True, retryVisualStateVisible=True, gameplayInstructionReadableVerified=True, gameplayVisualsVerified=True.",
-    "qa_product_experience_gate: menuLayoutVerified=True, menuElementsDoNotOverlap=True, gameplayHudHiddenInMenu=True, gameplayControlsHiddenInMenu=True, menuHumanReadable=False, hasObjectiveText=True, hasAvoidInstructionText=True, hasPlayerLabel=True, hasHazardLabel=True, hasScoreText=True, hasPulseText=True, gameplayInstructionReadableVerified=True, gameplayVisualsVerified=True, buttonLayoutVerified=True, menuButtonSizeVerified=True, pauseRetryButtonSizeVerified=True, controlZoneSizeVerified=True, controlsInsideSafeArea=True, controlsDoNotOverlap=True, failureRetrySystemVerified=True, retryRestartsGameplayVerified=True, retryProbePresent=True, retryIsGameOver=False, retryGameOverPanelVisible=False, videoExists=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=True, retryVisualStateVisible=True.",
-    "qa_style_frame_implementation_gate: styleFrameReport=True, missingStyleFrameMarkers=[], video=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=True, retryVisualStateVisible=True."
+    "playthrough_video_exists: {'exists': False, 'bytes': 0}",
+    "qa_menu_human_readability_gate: menuVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 48.072, 'mean_luma': 29.852, 'dark_ratio': 0.7278, 'bright_ratio': 0.0, 'very_bright_ratio': 0.0, 'saturated_color_ratio': 0.0, 'color_bucket_count': 13}, menuHumanReadable=False.",
+    "qa_game_over_visual_state_gate: gameOverProbePresent=True, screenState='game_over', isGameOver=True, gameOverPanelVisible=True, gameplayToGameOver={'comparable': True, 'mean_abs_diff': 1.487, 'changed_ratio': 0.009, 'sample_count': 12000, 'changed': True}, gameOverVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.406, 'dark_ratio': 0.7649, 'bright_ratio': 0.027, 'very_bright_ratio': 0.0134, 'saturated_color_ratio': 0.086, 'color_bucket_count': 101}, gameOverVisualStateVisible=False.",
+    "qa_non_placeholder_visual_richness_gate: gameplayVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.531, 'dark_ratio': 0.765, 'bright_ratio': 0.027, 'very_bright_ratio': 0.0133, 'saturated_color_ratio': 0.0911, 'color_bucket_count': 104}, gameplayNonPlaceholderVisuals=False.",
+    "qa_actual_gameplay_quality_gate: tenSecondPlayabilityVerified=True, enemyPatternPressureVerified=True, skillRewardLoopVerified=True, humanPlaytestChecklistVerified=True, TenSecondPlayabilityVerified=True, EnemyPatternPressureVerified=True, SkillRewardLoopVerified=True, HumanPlaytestChecklistVerified=True, video=False, gameplayScreenshot=True, menuToGameplayChanged=True.",
+    "qa_visual_richness_quality_gate: gameplayVisualsVerified=True, gameplayInstructionReadableVerified=True, videoExists=False, menuToGameplayChanged=True, gameplayToGameOverChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=False, retryVisualStateVisible=True, GameplayVisualsAreReadable=True.",
+    "qa_human_visual_judgement_gate: videoExists=False, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=False, retryVisualStateVisible=True, gameplayInstructionReadableVerified=True, gameplayVisualsVerified=True.",
+    "qa_product_experience_gate: menuLayoutVerified=True, menuElementsDoNotOverlap=True, gameplayHudHiddenInMenu=True, gameplayControlsHiddenInMenu=True, menuHumanReadable=False, hasObjectiveText=True, hasAvoidInstructionText=True, hasPlayerLabel=True, hasHazardLabel=True, hasScoreText=True, hasPulseText=True, gameplayInstructionReadableVerified=True, gameplayVisualsVerified=True, buttonLayoutVerified=True, menuButtonSizeVerified=True, pauseRetryButtonSizeVerified=True, controlZoneSizeVerified=True, controlsInsideSafeArea=True, controlsDoNotOverlap=True, failureRetrySystemVerified=True, retryRestartsGameplayVerified=True, retryProbePresent=True, retryIsGameOver=False, retryGameOverPanelVisible=False, videoExists=False, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=False, retryVisualStateVisible=True.",
+    "qa_style_frame_implementation_gate: styleFrameReport=True, missingStyleFrameMarkers=[], video=False, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, menuHumanReadable=False, gameplayNonPlaceholderVisuals=False, gameOverVisualStateVisible=False, retryVisualStateVisible=True."
   ],
   "evidence_files": [
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/development/Style_Frame_Implementation_Report.md",
@@ -1246,7 +1249,6 @@
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/interaction_script.log",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch.txt",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_gameplay.json",
-    "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/simulator_playthrough.mp4",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/logs/ios_simulator_runtime.log",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png",

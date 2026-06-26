@@ -6,17 +6,18 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Product Vision and Purpose
 
-- snippet: 由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
-The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
-The game must be visually ric
+- snippet: 由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP: a neon arcade drift runner where the player pilots a hover car through a moving light tunnel.
+The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Deve
 
 ## Target Audience
 
-- snippet: 由 Raw Idea 推導目標受眾；若原始想法未指定，先假設為 iOS 手機端使用者/玩家，並在 Define 階段標記需驗證。
+- snippet: 由 Raw Idea 中已提交的概念與平台推導目標受眾；若原始想法未指定，只能標記 open question，不可把預設玩家輪廓當成確定需求。
 
 ## Core Value
 
-- snippet: 由 Raw Idea 提煉 1-3 個核心價值；初始假設是操作/使用流程清楚、短時間可驗證、iOS 交付可測。
+- snippet: 由 Raw Idea 提煉 1-3 個核心價值；核心價值必須回指已提交的 game concept/core gameplay/player goal。
+核心玩法：Tap/hold left or right to drift between lanes while the track scrolls. Hazards damage/end the run, boosts restore pulse and score, and retry must restart a fresh moving run.
+核心物件
 
 ## Development Request
 
