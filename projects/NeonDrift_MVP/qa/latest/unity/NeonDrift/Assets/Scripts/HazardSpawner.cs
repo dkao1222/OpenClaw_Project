@@ -42,6 +42,7 @@ public sealed class HazardSpawner : MonoBehaviour
 
         Vector3 position = new Vector3(ChooseReadableSpawnX(), 6.2f, 0f);
         GameObject hazard = Instantiate(hazardPrefab, position, Quaternion.identity);
+        GameSessionController.Instance?.RegisterHazardSpawn(position.x);
         hazard.AddComponent<HazardMover>().Initialize(fallSpeed);
     }
 

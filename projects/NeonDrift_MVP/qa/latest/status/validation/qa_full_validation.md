@@ -1,6 +1,6 @@
 # Game QA Validation Report
 
-- session_id: notion-NeonDrift_MVP-qa-qa-full-20260625164732-qa-full
+- session_id: notion-NeonDrift_MVP-qa-qa-full-20260626050052-qa-full
 - output_folder: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 
 ## Checks
@@ -11,12 +11,12 @@
 - PASS file_exists.docs/delivery/iOS_QA_Delivery.md
 - PASS file_exists.status/agent_heartbeats/qa-playtester.md
 - PASS qa_result.valid_json
-- PASS qa_result.checks_present: 127
+- PASS qa_result.checks_present: 132
 - PASS qa_result.required_button_and_gameplay_checks_present: 70
 - PASS qa_result.valid_check_statuses
-- PASS qa_result.evidence_paths_exist: 143 checked
+- PASS qa_result.evidence_paths_exist: 148 checked
 - PASS full_qa_report.human_visual_product_review_section
-- PASS qa_result.checks_total_matches: 127
+- PASS qa_result.checks_total_matches: 132
 - PASS qa_result.checks_failed_matches: 0
 - PASS qa_result.checks_blocked_matches: 0
 - PASS qa_result.overall_status_passed_when_all_pass

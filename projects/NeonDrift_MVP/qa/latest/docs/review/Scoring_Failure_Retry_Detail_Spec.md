@@ -38,6 +38,8 @@
 - Scoring Failure Retry Detail Spec 只定義分數事件、boost cell pickup、combo chain、wave objective clear、combo 中斷、失敗原因、result screen 與 retry flow。
 - boost cell 必須有 pickup trigger、score reward、boost charge reward、risk cost 與 HUD feedback；combo chain 必須有 break condition 與 multiplier cap。
 - failure reason 必須對應 collision、off-line 或 hazard impact，不能只有 Game Over。
+- 每次得分、扣分、boost、combo、失敗都必須寫入原因碼：score_delta_reason 可為 survival_tick、near_miss、boost_pickup、wave_clear、collision_penalty；pulse_delta_reason 可為 passive_charge、boost_pickup、near_miss_reward、collision_loss；last_collision_type 可為 none、hazard_body、track_edge、late_input。
+- runtime probe 必須輸出 pickup_count、hazard_count、boost_count、combo_count、score_delta_reason、pulse_delta_reason、last_collision_type、last_failure_reason，且 result screen 要顯示玩家能理解的失敗文案。
 - Acceptance: QA 能以單局測試 survival score、near miss、boost pickup、combo chain、wave objective、collision failure 與 retry transition。
 
 ## English
@@ -45,4 +47,6 @@
 - Scoring Failure Retry Detail Spec defines only score events, boost cell pickup, combo chain, wave objective clear, combo break, failure reason, result screen, and retry flow.
 - Boost cell needs pickup trigger, score reward, boost charge reward, risk cost, and HUD feedback; combo chain needs break condition and multiplier cap.
 - Failure reason must map to collision, off-line, or hazard impact instead of only showing Game Over.
+- Every score, penalty, boost, combo, and failure event must write reason codes: score_delta_reason can be survival_tick, near_miss, boost_pickup, wave_clear, or collision_penalty; pulse_delta_reason can be passive_charge, boost_pickup, near_miss_reward, or collision_loss; last_collision_type can be none, hazard_body, track_edge, or late_input.
+- The runtime probe must output pickup_count, hazard_count, boost_count, combo_count, score_delta_reason, pulse_delta_reason, last_collision_type, and last_failure_reason, and the result screen must show a failure message players can understand.
 - Acceptance: QA can test survival score, near miss, boost pickup, combo chain, wave objective, collision failure, and retry transition in one run.

@@ -90,6 +90,20 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public int combo;
         public int multiplier;
         public float boostCharge;
+        public int currentLane;
+        public int targetLane;
+        public float lateralVelocity;
+        public string driftDirection;
+        public string trailState;
+        public int pickupCount;
+        public int hazardCount;
+        public int boostCount;
+        public int comboCount;
+        public float lastHazardSpawnX;
+        public string scoreDeltaReason;
+        public string pulseDeltaReason;
+        public string lastCollisionType;
+        public string lastFailureReason;
         public bool isGameOver;
         public bool isPaused;
         public bool hasStarted;
@@ -205,6 +219,7 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         GameObject gameplayHudRoot = FindObjectByNameIncludingInactive("Gameplay HUD Root");
         GameObject gameOverPanel = FindObjectByNameIncludingInactive("Game Over Panel");
         GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        DriftPlayerController player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
         bool hasPlayer = GameObject.Find("Player") != null;
         bool hasLeftZone = FindObjectByNameIncludingInactive("Left Control Zone") != null;
         bool hasRightZone = FindObjectByNameIncludingInactive("Right Control Zone") != null;
@@ -343,6 +358,20 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             combo = session != null ? session.Combo : 0,
             multiplier = session != null ? session.Multiplier : 0,
             boostCharge = session != null ? session.BoostCharge : 0f,
+            currentLane = player != null ? player.CurrentLane : 0,
+            targetLane = player != null ? player.TargetLane : 0,
+            lateralVelocity = player != null ? player.LateralVelocity : 0f,
+            driftDirection = player != null ? player.DriftDirection : "unknown",
+            trailState = player != null ? player.TrailState : "unknown",
+            pickupCount = session != null ? session.PickupCount : 0,
+            hazardCount = session != null ? session.HazardCount : 0,
+            boostCount = session != null ? session.BoostCount : 0,
+            comboCount = session != null ? session.ComboCount : 0,
+            lastHazardSpawnX = session != null ? session.LastHazardSpawnX : 0f,
+            scoreDeltaReason = session != null ? session.ScoreDeltaReason : "unknown",
+            pulseDeltaReason = session != null ? session.PulseDeltaReason : "unknown",
+            lastCollisionType = session != null ? session.LastCollisionType : "unknown",
+            lastFailureReason = session != null ? session.LastFailureReason : "unknown",
             isGameOver = session != null && session.IsGameOver,
             isPaused = session != null && session.IsPaused,
             hasStarted = hasStarted,
