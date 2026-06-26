@@ -1,0 +1,93 @@
+{
+  "status": "failed",
+  "run_id": "notion-NeonDrift_MVP-dmaic-20260626093748",
+  "project_name": "NeonDrift_MVP",
+  "chain_id": "qa:NeonDrift_MVP:38bb9e33-842",
+  "source_pipeline": "qa",
+  "source_page_id": "38bb9e33-8429-81bb-953a-e80ea78f3e1a",
+  "project_folder": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project",
+  "checks_total": 9,
+  "checks_failed": 3,
+  "failed_checks": [
+    {
+      "label": "development_runtime_probe_present",
+      "passed": false,
+      "existing_paths": [
+        "unity/NeonDrift/Assets/Scripts/RuntimeQaProbe.cs"
+      ],
+      "missing_paths": [],
+      "missing_markers": [
+        "screenshot"
+      ],
+      "detail": "marker:screenshot"
+    },
+    {
+      "label": "qa_evidence_present",
+      "passed": false,
+      "existing_paths": [
+        "status/validation/qa_full_validation.md",
+        "status/qa/full_qa_report.md"
+      ],
+      "missing_paths": [],
+      "missing_markers": [
+        "product experience"
+      ],
+      "detail": "marker:product experience"
+    },
+    {
+      "label": "qa_hard_gates_present",
+      "passed": false,
+      "existing_paths": [
+        "status/qa/full_qa_report.md",
+        "status/qa/qa_result.json"
+      ],
+      "missing_paths": [],
+      "missing_markers": [
+        "recording"
+      ],
+      "detail": "marker:recording"
+    }
+  ],
+  "qa_failures": [
+    "- QA 結果: failed",
+    "- Release candidate: blocked",
+    "| unity_editmode_tests_passed | Regression | PASS | 3 total, 0 failed. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_editmode_test_results.xml |",
+    "| unity_playmode_tests_passed | Regression | PASS | 33 total, 0 failed. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml |",
+    "| playthrough_video_exists | Playthrough | FAIL | {'exists': False, 'bytes': 0} | missing playthrough video evidence |",
+    "| qa_menu_human_readability_gate | Visual | FAIL | menuVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 68.072, 'mean_luma': 29.014, 'dark_ratio': 0.7405, 'bright_ratio': 0.0,",
+    "| qa_game_over_visual_state_gate | Visual | FAIL | gameOverProbePresent=True, screenState='game_over', isGameOver=True, gameOverPanelVisible=True, gameplayToGameOver={'comparable': True, 'mean_abs_diff': 1.494, 'changed_ratio': 0.0092, 'sam",
+    "| qa_non_placeholder_visual_richness_gate | Visual | FAIL | gameplayVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 24.535, 'dark_ratio': 0.765, 'bright_r",
+    "| qa_actual_gameplay_quality_gate | Gameplay | FAIL | tenSecondPlayabilityVerified=True, enemyPatternPressureVerified=True, skillRewardLoopVerified=True, humanPlaytestChecklistVerified=True, TenSecondPlayabilityVerified=True, EnemyPatternPr",
+    "| qa_visual_richness_quality_gate | Visual | FAIL | gameplayVisualsVerified=True, gameplayInstructionReadableVerified=True, videoExists=False, menuToGameplayChanged=True, gameplayToGameOverChanged=True, menuHumanReadable=False, gameplayNonP",
+    "| qa_human_visual_judgement_gate | Visual | FAIL | videoExists=False, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryCh",
+    "| qa_product_experience_gate | Gameplay | FAIL | menuLayoutVerified=True, menuElementsDoNotOverlap=True, gameplayHudHiddenInMenu=True, gameplayControlsHiddenInMenu=True, menuHumanReadable=False, hasObjectiveText=True, hasAvoidInstructionTex",
+    "| qa_style_frame_implementation_gate | Visual | FAIL | styleFrameReport=True, missingStyleFrameMarkers=[], video=False, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, menuToGameplayChanged=True,",
+    "- qa_product_experience_gate: FAIL",
+    "- qa_human_visual_judgement_gate: FAIL",
+    "QA status is failed. 9 checks failed and 0 checks are blocked.",
+    "- status: failed",
+    "- qa_overall_status: failed",
+    "\"overall_status\": \"failed\",",
+    "\"release_candidate_status\": \"blocked\",",
+    "\"expected\": \"Build validation report status is passed with zero failed checks.\",",
+    "\"actual\": \"3 total, 0 failed.\",",
+    "\"actual\": \"33 total, 0 failed.\",",
+    "\"expected\": \"Early gameplay cannot immediately fail before readable player response time.\",",
+    "\"expected\": \"Early gameplay cannot immediately fail after Start.\",",
+    "\"status\": \"FAIL\",",
+    "\"evidence\": \"missing playthrough video evidence\",",
+    "\"status\": \"FAIL\",",
+    "\"status\": \"FAIL\",",
+    "\"status\": \"FAIL\",",
+    "\"status\": \"FAIL\",",
+    "\"status\": \"FAIL\",",
+    "\"status\": \"FAIL\",",
+    "\"status\": \"FAIL\",",
+    "\"status\": \"FAIL\","
+  ],
+  "recommendations": [
+    "Return to Development: generate Unity runtime probe, scene, scripts, and implementation evidence before Build can start.",
+    "Return to QA/Development loop: require simulator video, screenshots, product experience, human visual judgement, and every core gameplay function evidence."
+  ],
+  "created_at": "2026-06-26T11:23:12.174034+00:00"
+}
