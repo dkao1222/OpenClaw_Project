@@ -3,8 +3,9 @@
 ## Canonical Fields
 
 - project_name: NeonDrift_MVP
-- define_page_id: 38bb9e33-8429-819d-9d08-ced1f3cecc10
-- define_run_id: notion-NeonDrift_MVP-define-20260626084113
+- define_page_id: 38bb9e33-8429-81f1-b1f4-d262202e387f
+- define_run_id: notion-NeonDrift_MVP-define-20260626122103
+- chain_id: raw:NeonDrift_MVP:20260626122050
 - agent_model_policy: per-agent-config
 - thinking: off
 
@@ -31,7 +32,7 @@ Retry is accepted only when a human can see a clear transition from game-over to
 Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
 遊戲概念：Neon arcade drift runner: the player pilots a glowing hover car in a moving light tunnel, making quick left/right drift decisions under pressure.
 玩家目標：Survive the run, avoid hazard shards, collect boost cells, chain near misses/combo score, and beat the best score with fast retry.
-Define 階段只可整理已提交的遊戲概念、痛點、服務目標、MVP 邊界與可驗證成功條件；不可憑空補核心概念。
+必須包含：Start menu, Settings/Sound, best score, left/right touch controls, moving player vehicle, track/background motion, hazards, boost
 
 ## Target Audience（目標受眾）
 
@@ -44,6 +45,7 @@ Define 階段只可整理已提交的遊戲概念、痛點、服務目標、MVP 
 核心物件：Player hover car, neon track/lane rails, hazard shards, boost cells, score/combo/pulse HUD, pause, failure overlay with reason, retry button.
 視覺方向：High-contrast neon arcade style with moving background layers, visible vehicle silhouette, cyan/magenta hazard-reward language, glow trails, readable HUD, and safe-area aware controls.
 成功條件：QA must provide screenshots/video proving Start, moving gameplay, left/right control response, hazard, boost, score/pulse change, failure reason, retry reset, visual richness, and non-placeholder style frames.
+QA 要求：QA must include simulator screenshots, playthrough video, touch/button checks, every gameplay function check, human visual readability, product experience, style-frame evidence, retry recovery, and build artifacts.
 
 ## Platform Target
 
@@ -51,15 +53,17 @@ Unity iOS first; Android/WebGL only as future scope unless explicitly requested.
 
 ## Monetization Direction
 
-Raw Idea 未明確指定時，不預設付費牆；若是遊戲，先保留 rewarded ads 優先且不得破壞核心體驗，並由 Define/Spec Review 細化。
+Rewarded ads may be considered only after failure/retry or future revive/bonus flows; ads must not interrupt the first run or core tutorial experience.
 
 ## Compatibility Target
 
-iOS first: current iOS simulator/local build gate. Device targets and OS floor must be refined by Define/Spec Review.
+iOS-first Unity 6000.0.77f1, local iOS simulator build, safe-area aware controls, readable on common iPhone portrait screens, performance suitable for mid-range iOS devices.
 
 ## Output Expectation
 
 Define must produce canonical fields, open questions, bounded planning handoff, Notion-readable docs, and downstream-ready Planning input.
+References: Use OpenClaw knowledge bases for Apple HIG, product experience, game quality, game system design, visual richness, and OpenGameArt-compatible asset direction.
+QA Requirement: QA must include simulator screenshots, playthrough video, touch/button checks, every gameplay function check, human visual readability, product experience, style-frame evidence, retry recovery, and build artifacts.
 
 ## Product Experience Contract
 
