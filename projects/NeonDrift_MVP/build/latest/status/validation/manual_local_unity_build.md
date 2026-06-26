@@ -5,7 +5,7 @@ This build row is controlled by Notion. In host mode the watcher may launch the 
 Runner command from `/Users/dragonkao/.openclaw`:
 
 ```bash
-python3 scripts/run_game_build_pipeline.py --run-id notion-NeonDrift_MVP-build-build-ios-simulator-20260626081934 --project-name NeonDrift_MVP --channel-id 382b9e3384298039b171c9b2a60ae644 --stage-range build-ios-simulator --source-output-folder /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/ --source-handoff-path /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/development/final_handoff.md --output-folder /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
+python3 scripts/run_game_build_pipeline.py --run-id notion-NeonDrift_MVP-build-build-ios-simulator-20260626084322 --project-name NeonDrift_MVP --channel-id 382b9e3384298039b171c9b2a60ae644 --stage-range build-ios-simulator --source-output-folder /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/ --source-handoff-path /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/development/final_handoff.md --output-folder /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 ```
 
 Default host build Unity is `/Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/MacOS/Unity`. Optional: add `--unity-path /path/to/Unity` only when intentionally overriding it.

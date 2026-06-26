@@ -2,9 +2,9 @@
 
 ## Checks
 - PASS project_name_present: chars=13
-- PASS product_vision_present: chars=1213
-- PASS target_audience_present: chars=64
-- PASS core_value_present: chars=55
+- PASS product_vision_present: chars=1921
+- PASS target_audience_present: chars=72
+- PASS core_value_present: chars=807
 - PASS platform_target_present: chars=80
 - PASS monetization_direction_present: chars=82
 - PASS compatibility_target_present: chars=117
