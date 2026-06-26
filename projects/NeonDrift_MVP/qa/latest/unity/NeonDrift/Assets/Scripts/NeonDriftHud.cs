@@ -438,13 +438,17 @@ public static class NeonDriftRuntimeBootstrap
         CreateUiBlock(gameplayHudRoot.transform, "Warning Chevron Left", TextAnchor.MiddleCenter, new Vector2(-132f, -282f), new Vector2(98f, 48f), new Color(1f, 0.26f, 0.08f, 1f));
         CreateUiBlock(gameplayHudRoot.transform, "Warning Chevron Right", TextAnchor.MiddleCenter, new Vector2(132f, -282f), new Vector2(98f, 48f), new Color(1f, 0.26f, 0.08f, 1f));
         Image hazardMarker = CreateUiBlock(gameplayHudRoot.transform, "Hazard Visual Marker", TextAnchor.UpperCenter, new Vector2(0f, -390f), new Vector2(102f, 102f), new Color(1f, 0.02f, 0.5f, 1f));
-        Text objectiveText = CreateText(gameplayHudRoot.transform, "Objective Text", font, "AVOID PINK BLOCKS  •  BUILD COMBO  •  SURVIVE WAVES", TextAnchor.UpperCenter, new Vector2(0f, -190f), new Vector2(900f, 52f), new Color(1f, 0.96f, 0.45f));
+        Text trackMeaningText = CreateText(gameplayHudRoot.transform, "Track Meaning Text", font, "NEON TRACK: stay inside the lane", TextAnchor.UpperCenter, new Vector2(0f, -132f), new Vector2(880f, 44f), new Color(0.70f, 1f, 1f));
+        trackMeaningText.fontSize = 22;
+        Text objectiveText = CreateText(gameplayHudRoot.transform, "Objective Text", font, "GOAL: dodge pink blocks, collect glow, survive waves", TextAnchor.UpperCenter, new Vector2(0f, -190f), new Vector2(900f, 52f), new Color(1f, 0.96f, 0.45f));
         objectiveText.fontSize = 28;
-        Text avoidText = CreateText(gameplayHudRoot.transform, "Avoid Instruction Text", font, "LEFT / RIGHT moves the cyan ship. Do not touch pink hazards.", TextAnchor.LowerCenter, new Vector2(0f, 92f), new Vector2(860f, 48f), new Color(0.88f, 0.94f, 1f));
+        Text avoidText = CreateText(gameplayHudRoot.transform, "Avoid Instruction Text", font, "LEFT / RIGHT move your cyan ship between lanes. Pink blocks crash you.", TextAnchor.LowerCenter, new Vector2(0f, 92f), new Vector2(900f, 48f), new Color(0.88f, 0.94f, 1f));
         avoidText.fontSize = 24;
-        Text hazardLabel = CreateText(gameplayHudRoot.transform, "Hazard Label", font, "AVOID", TextAnchor.UpperCenter, new Vector2(0f, -458f), new Vector2(160f, 34f), new Color(1f, 0.55f, 0.8f));
+        Text controlMeaningText = CreateText(gameplayHudRoot.transform, "Control Meaning Text", font, "Tap LEFT to drift left. Tap RIGHT to drift right.", TextAnchor.LowerCenter, new Vector2(0f, 42f), new Vector2(900f, 42f), new Color(0.78f, 0.90f, 1f));
+        controlMeaningText.fontSize = 22;
+        Text hazardLabel = CreateText(gameplayHudRoot.transform, "Hazard Label", font, "PINK BLOCK = CRASH", TextAnchor.UpperCenter, new Vector2(0f, -458f), new Vector2(260f, 34f), new Color(1f, 0.55f, 0.8f));
         hazardLabel.fontSize = 22;
-        Text playerLabel = CreateText(gameplayHudRoot.transform, "Player Label", font, "YOU", TextAnchor.LowerCenter, new Vector2(0f, 320f), new Vector2(140f, 34f), new Color(0.45f, 1f, 1f));
+        Text playerLabel = CreateText(gameplayHudRoot.transform, "Player Label", font, "CYAN SHIP = YOU", TextAnchor.LowerCenter, new Vector2(0f, 320f), new Vector2(240f, 34f), new Color(0.45f, 1f, 1f));
         playerLabel.fontSize = 22;
 
         NeonDriftVisualSync visualSync = gameplayHudRoot.AddComponent<NeonDriftVisualSync>();
