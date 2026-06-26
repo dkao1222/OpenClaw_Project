@@ -1,0 +1,95 @@
+{
+  "status": "failed",
+  "run_id": "notion-NeonDrift_MVP-dmaic-20260626141332",
+  "project_name": "NeonDrift_MVP",
+  "chain_id": "spec-review:NeonDrift_MVP:38bb9e33-19189169",
+  "source_pipeline": "qa",
+  "source_page_id": "38bb9e33-8429-810f-a112-edfed9b92ae6",
+  "project_folder": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project",
+  "checks_total": 10,
+  "checks_failed": 2,
+  "failed_checks": [
+    {
+      "label": "qa_evidence_present",
+      "passed": false,
+      "existing_paths": [
+        "status/validation/qa_full_validation.md",
+        "status/qa/full_qa_report.md"
+      ],
+      "missing_paths": [],
+      "missing_markers": [
+        "product experience"
+      ],
+      "detail": "marker:product experience"
+    },
+    {
+      "label": "qa_hard_gates_present",
+      "passed": false,
+      "existing_paths": [
+        "status/qa/full_qa_report.md",
+        "status/qa/qa_result.json"
+      ],
+      "missing_paths": [],
+      "missing_markers": [
+        "recording"
+      ],
+      "detail": "marker:recording"
+    }
+  ],
+  "root_causes": [
+    {
+      "category": "qa_evidence_gap",
+      "target": "qa",
+      "reason": "QA evidence package is incomplete."
+    }
+  ],
+  "remediation_target": "qa",
+  "remediation_request": "DMAIC remediation target: qa\n\nRoot causes:\n- qa_evidence_gap: QA evidence package is incomplete.\n\nRequired correction:\n- Do not mark the remediation passed unless generated runtime/product evidence directly resolves the listed root causes.\n- Preserve the Chain ID and source DMAIC report for traceability.\n- If returning to Development, fix implementation, visual readability, gameplay playability, runtime QA probe/evidence, and retry/menu/gameplay states before Build.\n- If returning to QA, rerun simulator QA and produce screenshots, video/recording evidence, raw evidence JSON, and human product-experience checks.\n\nObserved QA failure signals:\n- - QA 結果: failed\n- - Release candidate: blocked\n- | unity_editmode_tests_passed | Regression | PASS | 3 total, 0 failed. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_editmode_test_results.xml |\n- | unity_playmode_tests_passed | Regression | PASS | 33 total, 0 failed. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml |\n- | simulator_live_gameplay_probe_present | Runtime | FAIL | runtime_probe=missing, build_runtime_probe=/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json. | /home/node/\n- | runtime_probe_has_pause_button | Interaction | PASS | hasPauseButton=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_has_retry_button | Interaction | PASS | hasRetryButton=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_has_left_control_zone | Interaction | PASS | hasLeftControlZone=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_has_right_control_zone | Interaction | PASS | hasRightControlZone=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_pause_control_verified | Interaction | PASS | pauseControlVerified=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_retry_control_verified | Interaction | PASS | retryControlVerified=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_left_right_steering_verified | Interaction | PASS | leftRightSteeringVerified=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_safe_area_applied | Compatibility | PASS | safeAreaApplied=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_frame_pacing_configured | Performance | PASS | framePacingConfigured=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_has_event_system | Interaction | PASS | hasEventSystem=True in missing runtime probe. | missing runtime_probe.json |\n- | runtime_probe_has_graphic_raycaster | Interaction | PASS | hasGraphicRaycaster=True in missing runtime probe. | missing runtime_probe.json |",
+  "qa_failures": [
+    "- QA 結果: failed",
+    "- Release candidate: blocked",
+    "| unity_editmode_tests_passed | Regression | PASS | 3 total, 0 failed. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_editmode_test_results.xml |",
+    "| unity_playmode_tests_passed | Regression | PASS | 33 total, 0 failed. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml |",
+    "| simulator_live_gameplay_probe_present | Runtime | FAIL | runtime_probe=missing, build_runtime_probe=/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json. | /home/node/",
+    "| runtime_probe_has_pause_button | Interaction | PASS | hasPauseButton=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_retry_button | Interaction | PASS | hasRetryButton=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_left_control_zone | Interaction | PASS | hasLeftControlZone=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_right_control_zone | Interaction | PASS | hasRightControlZone=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_pause_control_verified | Interaction | PASS | pauseControlVerified=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_retry_control_verified | Interaction | PASS | retryControlVerified=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_left_right_steering_verified | Interaction | PASS | leftRightSteeringVerified=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_safe_area_applied | Compatibility | PASS | safeAreaApplied=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_frame_pacing_configured | Performance | PASS | framePacingConfigured=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_event_system | Interaction | PASS | hasEventSystem=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_graphic_raycaster | Interaction | PASS | hasGraphicRaycaster=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_ui_actions | Interaction | PASS | hasUiActions=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_pause_button_clickable | Interaction | PASS | pauseButtonClickable=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_retry_button_clickable | Interaction | PASS | retryButtonClickable=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_pause_retry_button_size_verified | UI/UX | PASS | pauseRetryButtonSizeVerified=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_control_zone_size_verified | Interaction | PASS | controlZoneSizeVerified=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_core_gameplay_objects_verified | Runtime | PASS | coreGameplayObjectsVerified=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_scoring_system_verified | Runtime | PASS | scoringSystemVerified=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_pause_system_verified | Interaction | PASS | pauseSystemVerified=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_failure_retry_system_verified | Interaction | PASS | failureRetrySystemVerified=True in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_gameplay_visuals_verified | Gameplay | FAIL | gameplayVisualsVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_objective_text | Gameplay | FAIL | hasObjectiveText=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_avoid_instruction_text | Gameplay | FAIL | hasAvoidInstructionText=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_player_label | Gameplay | FAIL | hasPlayerLabel=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_has_hazard_label | Gameplay | FAIL | hasHazardLabel=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_gameplay_instruction_readable_verified | Gameplay | FAIL | gameplayInstructionReadableVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_content_depth_verified | Gameplay | FAIL | contentDepthVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_gameplay_motion_verified | Gameplay | FAIL | gameplayMotionVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_hazard_approach_motion_verified | Gameplay | FAIL | hazardApproachMotionVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_player_steering_motion_verified | Gameplay | FAIL | playerSteeringMotionVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_human_agency_verified | Gameplay | FAIL | humanAgencyVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_player_input_changes_outcome_verified | Gameplay | FAIL | playerInputChangesOutcomeVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_readable_hazard_pacing_verified | Gameplay | FAIL | readableHazardPacingVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_ten_second_playability_verified | Gameplay | FAIL | tenSecondPlayabilityVerified=None in missing runtime probe. | missing runtime_probe.json |",
+    "| runtime_probe_enemy_pattern_pressure_verified | Gameplay | FAIL | enemyPatternPressureVerified=None in missing runtime probe. | missing runtime_probe.json |"
+  ],
+  "recommendations": [
+    "Return to QA/Development loop: require simulator video, screenshots, product experience, human visual judgement, and every core gameplay function evidence.",
+    "Create remediation Notion row targeting qa; do not stop at reporting."
+  ],
+  "created_at": "2026-06-26T14:13:33.813649+00:00"
+}
