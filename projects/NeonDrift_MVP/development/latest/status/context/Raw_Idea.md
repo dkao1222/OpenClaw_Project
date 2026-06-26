@@ -1,11 +1,12 @@
 # Raw Idea
 
-raw_idea_page_id: 38bb9e33-8429-8151-9a58-d76c058753ce
+raw_idea_page_id: 38bb9e33-8429-8119-8491-f69a5461ba2a
+chain_id: raw:NeonDrift_MVP:20260626122335
 project_name: NeonDrift_MVP
 idea_type: game
 target_platform: Unity iOS
 priority: high
-requested_by: raw-idea-gate-rerun-20260626
+requested_by: codex-clean-retry-no-intervention
 
 ## Raw Idea（原始想法）
 
@@ -41,3 +42,27 @@ High-contrast neon arcade style with moving background layers, visible vehicle s
 ## Success Criteria（成功條件）
 
 QA must provide screenshots/video proving Start, moving gameplay, left/right control response, hazard, boost, score/pulse change, failure reason, retry reset, visual richness, and non-placeholder style frames.
+
+## Must Have（必須包含）
+
+Start menu, Settings/Sound, best score, left/right touch controls, moving player vehicle, track/background motion, hazards, boosts, score/combo/pulse HUD, pause, failure reason, retry, screenshots, and QA video.
+
+## Must Not（不可包含）
+
+No static empty screen, no flat-color-only background, no placeholder-only squares, no unclear failure, no retry without fresh gameplay state, no QA pass without visual/product evidence.
+
+## Reference（參考資料）
+
+Use OpenClaw knowledge bases for Apple HIG, product experience, game quality, game system design, visual richness, and OpenGameArt-compatible asset direction.
+
+## Monetization Direction（收益方向）
+
+Rewarded ads may be considered only after failure/retry or future revive/bonus flows; ads must not interrupt the first run or core tutorial experience.
+
+## Compatibility Target（相容性目標）
+
+iOS-first Unity 6000.0.77f1, local iOS simulator build, safe-area aware controls, readable on common iPhone portrait screens, performance suitable for mid-range iOS devices.
+
+## QA Requirement（QA 要求）
+
+QA must include simulator screenshots, playthrough video, touch/button checks, every gameplay function check, human visual readability, product experience, style-frame evidence, retry recovery, and build artifacts.
