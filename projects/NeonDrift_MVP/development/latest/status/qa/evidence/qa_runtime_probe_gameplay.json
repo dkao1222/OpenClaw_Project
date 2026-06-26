@@ -80,7 +80,7 @@
     "wave": 1,
     "combo": 85,
     "multiplier": 5,
-    "boostCharge": 0.3304145932197571,
+    "boostCharge": 0.33099791407585146,
     "currentLane": 0,
     "targetLane": 0,
     "lateralVelocity": 0.0000012300151865929366,
@@ -90,7 +90,7 @@
     "hazardCount": 4,
     "boostCount": 0,
     "comboCount": 85,
-    "lastHazardSpawnX": 2.0132968425750734,
+    "lastHazardSpawnX": 2.590583562850952,
     "scoreDeltaReason": "survival_tick",
     "pulseDeltaReason": "passive_charge",
     "lastCollisionType": "none",
@@ -98,8 +98,8 @@
     "isGameOver": false,
     "isPaused": false,
     "hasStarted": true,
-    "gameplayTime": 6.583274841308594,
+    "gameplayTime": 6.5999369621276859,
     "minimumSurvivalSeconds": 6.0,
-    "framesPerSecond": 60.00277328491211,
+    "framesPerSecond": 60.01371765136719,
     "exceptionCount": 0
 }
