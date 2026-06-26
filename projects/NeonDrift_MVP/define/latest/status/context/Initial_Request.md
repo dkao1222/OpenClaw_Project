@@ -1,8 +1,8 @@
 # Initial Define Request
 
 project_name: NeonDrift_MVP
-define_page_id: 38ab9e33-8429-814f-99d1-f571388852b0
-define_run_id: notion-NeonDrift_MVP-define-20260625180957
+define_page_id: 38bb9e33-8429-8196-adf7-e7b13b8a6d72
+define_run_id: notion-NeonDrift_MVP-define-20260626015050
 
 ## Pipeline Request
 
@@ -12,8 +12,18 @@ Raw idea type: game
 Priority: high
 
 Raw idea:
-Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must not produce summary-only documents. Every major planning output must behave like Game_Proposal: an index plus detailed source_paths/context cards when the topic is broad. One_Page_Game_Concept, Core_Gameplay_Loop, MVP_Hypothesis, Platform_Direction, visual richness, gameplay depth, product experience, compatibility, QA acceptance, and development handoff must all be split into concrete cards with player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, downstream read policy, and implementation constraints. Development must consume those split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
+Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
+The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
+The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
+Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
+Retry is accepted only when a human can see a clear transition from game-over to a fresh playable run: failure overlay removed, score/timer/run state reset, player/track motion resumes, and the after-retry screenshot/video differs from the game-over frame.
+Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
 
 ## Raw Idea（原始想法）
 
-Create an iOS-first Unity quick game MVP named NeonDrift_MVP. Run OpenClaw pipeline from Raw Idea -> Define -> Planning -> Spec Review -> Development only. Do not create or start Build or QA rows in this test. Planning and Spec Review must not produce summary-only documents. Every major planning output must behave like Game_Proposal: an index plus detailed source_paths/context cards when the topic is broad. One_Page_Game_Concept, Core_Gameplay_Loop, MVP_Hypothesis, Platform_Direction, visual richness, gameplay depth, product experience, compatibility, QA acceptance, and development handoff must all be split into concrete cards with player-visible behavior, gameplay depth, visual richness, runtime evidence, QA acceptance, downstream read policy, and implementation constraints. Development must consume those split cards and produce an implementation-ready Unity project, but this run stops after Development passed.
+Create an iOS-first Unity quick game MVP named NeonDrift_MVP.
+The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
+The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
+Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
+Retry is accepted only when a human can see a clear transition from game-over to a fresh playable run: failure overlay removed, score/timer/run state reset, player/track motion resumes, and the after-retry screenshot/video differs from the game-over frame.
+Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
