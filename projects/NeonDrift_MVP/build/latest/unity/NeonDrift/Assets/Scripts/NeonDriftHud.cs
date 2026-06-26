@@ -469,18 +469,18 @@ public static class NeonDriftRuntimeBootstrap
         GameObject menuPanel = new GameObject("Main Menu Panel");
         menuPanel.transform.SetParent(canvasObject.transform, false);
         Image menuImage = menuPanel.AddComponent<Image>();
-        menuImage.color = new Color(0.08f, 0.23f, 0.34f, 1f);
+        menuImage.color = new Color(0.92f, 0.98f, 1f, 1f);
         SetRect(menuPanel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 70f), new Vector2(880f, 700f));
-        CreateUiBlock(menuPanel.transform, "Menu Cyan Accent", TextAnchor.UpperCenter, new Vector2(0f, 10f), new Vector2(760f, 18f), new Color(0f, 1f, 1f, 1f));
-        CreateUiBlock(menuPanel.transform, "Menu Magenta Accent", TextAnchor.LowerCenter, new Vector2(0f, -10f), new Vector2(760f, 18f), new Color(1f, 0.06f, 0.78f, 1f));
-        CreateUiBlock(menuPanel.transform, "Menu Title Glow", TextAnchor.UpperCenter, new Vector2(0f, 94f), new Vector2(760f, 140f), new Color(0f, 1f, 1f, 0.78f));
-        CreateUiBlock(menuPanel.transform, "Menu CTA Glow", TextAnchor.MiddleCenter, new Vector2(0f, -42f), new Vector2(520f, 150f), new Color(1f, 0.90f, 0.05f, 0.72f));
-        CreateUiBlock(menuPanel.transform, "Menu White Readability Plate", TextAnchor.UpperCenter, new Vector2(0f, 94f), new Vector2(620f, 28f), new Color(1f, 1f, 1f, 0.86f));
-        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, 76f), new Vector2(780f, 98f), Color.white);
+        CreateUiBlock(menuPanel.transform, "Menu Cyan Accent", TextAnchor.UpperCenter, new Vector2(0f, 10f), new Vector2(760f, 24f), new Color(0f, 0.88f, 1f, 1f));
+        CreateUiBlock(menuPanel.transform, "Menu Magenta Accent", TextAnchor.LowerCenter, new Vector2(0f, -10f), new Vector2(760f, 24f), new Color(1f, 0.02f, 0.72f, 1f));
+        CreateUiBlock(menuPanel.transform, "Menu Title Glow", TextAnchor.UpperCenter, new Vector2(0f, 94f), new Vector2(760f, 150f), new Color(0f, 0.86f, 1f, 1f));
+        CreateUiBlock(menuPanel.transform, "Menu CTA Glow", TextAnchor.MiddleCenter, new Vector2(0f, -42f), new Vector2(540f, 160f), new Color(1f, 0.86f, 0f, 1f));
+        CreateUiBlock(menuPanel.transform, "Menu White Readability Plate", TextAnchor.UpperCenter, new Vector2(0f, 94f), new Vector2(660f, 46f), Color.white);
+        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, 76f), new Vector2(780f, 98f), new Color(0.01f, 0.04f, 0.08f));
         titleText.fontSize = 76;
-        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -42f), new Vector2(390f, 104f), new Color(0f, 0.72f, 1f, 1f));
-        Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.MiddleCenter, new Vector2(0f, -170f), new Vector2(390f, 90f), new Color(0.58f, 0.24f, 0.95f, 1f));
-        Text bestScoreText = CreateText(menuPanel.transform, "Best Score Text", font, "BEST 0000", TextAnchor.LowerCenter, new Vector2(0f, 14f), new Vector2(460f, 70f), new Color(1f, 0.98f, 0.42f));
+        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -42f), new Vector2(390f, 104f), new Color(0f, 0.42f, 1f, 1f));
+        Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.MiddleCenter, new Vector2(0f, -170f), new Vector2(390f, 90f), new Color(0.72f, 0f, 1f, 1f));
+        Text bestScoreText = CreateText(menuPanel.transform, "Best Score Text", font, "BEST 0000", TextAnchor.LowerCenter, new Vector2(0f, 14f), new Vector2(460f, 70f), new Color(0.04f, 0.04f, 0.02f));
         bestScoreText.fontSize = 32;
 
         GameObject panel = new GameObject("Game Over Panel");
