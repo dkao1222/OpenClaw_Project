@@ -1,12 +1,12 @@
 # Raw Idea
 
-raw_idea_page_id: 38bb9e33-8429-8113-a973-c26f03c0e843
-chain_id: raw:NeonDrift_MVP:20260626162600
+raw_idea_page_id: 38bb9e33-8429-8194-ad35-ffdd27285f2f
+chain_id: raw:NeonDrift_MVP:20260626162757
 project_name: NeonDrift_MVP
 idea_type: game
 target_platform: Unity iOS
 priority: high
-requested_by: local-agent-opdca-kb-clean-retry-20260627
+requested_by: scheduled-agent-opdca-kb-clean-retry-20260627
 
 ## Raw Idea（原始想法）
 
