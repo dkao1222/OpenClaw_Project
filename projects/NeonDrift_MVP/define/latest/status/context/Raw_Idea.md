@@ -1,7 +1,7 @@
 # Raw Idea
 
-raw_idea_page_id: 38bb9e33-8429-8146-9319-ceec1afa6e9b
-chain_id: raw:NeonDrift_MVP:20260626122050
+raw_idea_page_id: 38bb9e33-8429-8119-8491-f69a5461ba2a
+chain_id: raw:NeonDrift_MVP:20260626122335
 project_name: NeonDrift_MVP
 idea_type: game
 target_platform: Unity iOS
