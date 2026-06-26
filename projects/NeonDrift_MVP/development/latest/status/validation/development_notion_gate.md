@@ -2,7 +2,7 @@
 
 - status: passed
 - pipeline: development
-- run_id: notion-NeonDrift_MVP-development-dev-full-20260626133344
+- run_id: notion-NeonDrift_MVP-development-dev-full-20260626141000
 - source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/spec_review/handoff_to_game_development.md
 - checks_total: 25
 - checks_failed: 0

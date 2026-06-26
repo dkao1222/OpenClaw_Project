@@ -357,7 +357,7 @@ public static class NeonDriftRuntimeBootstrap
             cameraObject.tag = "MainCamera";
         }
         camera.clearFlags = CameraClearFlags.SolidColor;
-        camera.backgroundColor = new Color(0.04f, 0.05f, 0.09f);
+        camera.backgroundColor = new Color(0.015f, 0.07f, 0.12f);
         camera.orthographic = true;
         camera.orthographicSize = 5.8f;
         camera.transform.position = new Vector3(0f, 0f, -10f);
@@ -405,11 +405,14 @@ public static class NeonDriftRuntimeBootstrap
 
         Font font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Font.CreateDynamicFontFromOSFont("Arial", 24);
 
-        CreateUiBlock(canvasObject.transform, "Neon Backdrop", TextAnchor.MiddleCenter, Vector2.zero, new Vector2(1180f, 2180f), new Color(0.025f, 0.035f, 0.075f, 1f));
-        CreateUiBlock(canvasObject.transform, "Top Cyan Atmosphere", TextAnchor.UpperCenter, new Vector2(0f, -160f), new Vector2(980f, 360f), new Color(0f, 0.95f, 1f, 0.16f));
-        CreateUiBlock(canvasObject.transform, "Bottom Magenta Atmosphere", TextAnchor.LowerCenter, new Vector2(0f, 180f), new Vector2(1020f, 460f), new Color(1f, 0.08f, 0.75f, 0.15f));
-        CreateUiBlock(canvasObject.transform, "Runway Glow Core", TextAnchor.MiddleCenter, new Vector2(0f, -80f), new Vector2(490f, 1360f), new Color(0f, 0.86f, 1f, 0.105f));
-        CreateUiBlock(canvasObject.transform, "Runway Glow Edge", TextAnchor.MiddleCenter, new Vector2(0f, -80f), new Vector2(600f, 1460f), new Color(1f, 0.05f, 0.75f, 0.085f));
+        CreateUiBlock(canvasObject.transform, "Neon Backdrop", TextAnchor.MiddleCenter, Vector2.zero, new Vector2(1180f, 2180f), new Color(0.035f, 0.08f, 0.14f, 1f));
+        CreateUiBlock(canvasObject.transform, "Top Cyan Atmosphere", TextAnchor.UpperCenter, new Vector2(0f, -160f), new Vector2(980f, 360f), new Color(0f, 0.95f, 1f, 0.30f));
+        CreateUiBlock(canvasObject.transform, "Bottom Magenta Atmosphere", TextAnchor.LowerCenter, new Vector2(0f, 180f), new Vector2(1020f, 460f), new Color(1f, 0.08f, 0.75f, 0.28f));
+        CreateUiBlock(canvasObject.transform, "Runway Glow Core", TextAnchor.MiddleCenter, new Vector2(0f, -80f), new Vector2(490f, 1360f), new Color(0f, 0.86f, 1f, 0.24f));
+        CreateUiBlock(canvasObject.transform, "Runway Glow Edge", TextAnchor.MiddleCenter, new Vector2(0f, -80f), new Vector2(600f, 1460f), new Color(1f, 0.05f, 0.75f, 0.22f));
+        CreateUiBlock(canvasObject.transform, "Nebula Cyan Splash", TextAnchor.UpperLeft, new Vector2(110f, -250f), new Vector2(520f, 420f), new Color(0f, 0.82f, 1f, 0.22f));
+        CreateUiBlock(canvasObject.transform, "Nebula Gold Splash", TextAnchor.MiddleRight, new Vector2(-70f, 180f), new Vector2(300f, 620f), new Color(1f, 0.72f, 0.05f, 0.16f));
+        CreateUiBlock(canvasObject.transform, "Nebula Violet Splash", TextAnchor.LowerLeft, new Vector2(130f, 260f), new Vector2(460f, 520f), new Color(0.72f, 0.12f, 1f, 0.22f));
 
         GameObject gameplayHudRoot = new GameObject("Gameplay HUD Root");
         gameplayHudRoot.transform.SetParent(canvasObject.transform, false);
@@ -419,12 +422,20 @@ public static class NeonDriftRuntimeBootstrap
         gameplayRootRect.offsetMin = Vector2.zero;
         gameplayRootRect.offsetMax = Vector2.zero;
 
-        CreateUiBlock(gameplayHudRoot.transform, "Track Outer Glow", TextAnchor.MiddleCenter, new Vector2(0f, -120f), new Vector2(470f, 1310f), new Color(0f, 0.95f, 1f, 0.16f));
-        Image trackPlayfield = CreateUiBlock(gameplayHudRoot.transform, "Track Playfield", TextAnchor.MiddleCenter, new Vector2(0f, -120f), new Vector2(370f, 1180f), new Color(0.045f, 0.1f, 0.17f, 0.96f));
-        CreateUiBlock(gameplayHudRoot.transform, "Track Center Shine", TextAnchor.MiddleCenter, new Vector2(0f, -120f), new Vector2(52f, 1180f), new Color(0.24f, 0.95f, 1f, 0.15f));
+        CreateUiBlock(gameplayHudRoot.transform, "Track Outer Glow", TextAnchor.MiddleCenter, new Vector2(0f, -120f), new Vector2(470f, 1310f), new Color(0f, 0.95f, 1f, 0.36f));
+        Image trackPlayfield = CreateUiBlock(gameplayHudRoot.transform, "Track Playfield", TextAnchor.MiddleCenter, new Vector2(0f, -120f), new Vector2(370f, 1180f), new Color(0.04f, 0.18f, 0.29f, 0.98f));
+        CreateUiBlock(gameplayHudRoot.transform, "Track Center Shine", TextAnchor.MiddleCenter, new Vector2(0f, -120f), new Vector2(52f, 1180f), new Color(0.24f, 0.95f, 1f, 0.42f));
+        CreateUiBlock(gameplayHudRoot.transform, "Track Grid Cyan A", TextAnchor.MiddleCenter, new Vector2(-92f, -400f), new Vector2(110f, 10f), new Color(0f, 1f, 1f, 0.55f));
+        CreateUiBlock(gameplayHudRoot.transform, "Track Grid Cyan B", TextAnchor.MiddleCenter, new Vector2(92f, -160f), new Vector2(110f, 10f), new Color(0f, 1f, 1f, 0.45f));
+        CreateUiBlock(gameplayHudRoot.transform, "Track Grid Magenta A", TextAnchor.MiddleCenter, new Vector2(92f, 120f), new Vector2(110f, 10f), new Color(1f, 0.04f, 0.85f, 0.55f));
+        CreateUiBlock(gameplayHudRoot.transform, "Track Grid Gold B", TextAnchor.MiddleCenter, new Vector2(-92f, 360f), new Vector2(110f, 10f), new Color(1f, 0.85f, 0.05f, 0.50f));
         Image leftLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Left Lane Rail", TextAnchor.MiddleCenter, new Vector2(-195f, -120f), new Vector2(18f, 1200f), new Color(0f, 1f, 1f, 1f));
         Image rightLaneRail = CreateUiBlock(gameplayHudRoot.transform, "Right Lane Rail", TextAnchor.MiddleCenter, new Vector2(195f, -120f), new Vector2(18f, 1200f), new Color(1f, 0.02f, 0.95f, 1f));
+        CreateUiBlock(gameplayHudRoot.transform, "Player Glow Ring", TextAnchor.LowerCenter, new Vector2(0f, 260f), new Vector2(142f, 116f), new Color(0f, 1f, 1f, 0.38f));
         Image playerMarker = CreateUiBlock(gameplayHudRoot.transform, "Player Visual Marker", TextAnchor.LowerCenter, new Vector2(0f, 260f), new Vector2(92f, 70f), new Color(0f, 1f, 1f, 1f));
+        CreateUiBlock(gameplayHudRoot.transform, "Boost Pickup Marker", TextAnchor.MiddleCenter, new Vector2(-118f, 70f), new Vector2(62f, 62f), new Color(1f, 0.88f, 0.05f, 1f));
+        CreateUiBlock(gameplayHudRoot.transform, "Warning Chevron Left", TextAnchor.MiddleCenter, new Vector2(-132f, -282f), new Vector2(72f, 36f), new Color(1f, 0.2f, 0.08f, 0.95f));
+        CreateUiBlock(gameplayHudRoot.transform, "Warning Chevron Right", TextAnchor.MiddleCenter, new Vector2(132f, -282f), new Vector2(72f, 36f), new Color(1f, 0.2f, 0.08f, 0.95f));
         Image hazardMarker = CreateUiBlock(gameplayHudRoot.transform, "Hazard Visual Marker", TextAnchor.UpperCenter, new Vector2(0f, -390f), new Vector2(102f, 102f), new Color(1f, 0.02f, 0.5f, 1f));
         Text objectiveText = CreateText(gameplayHudRoot.transform, "Objective Text", font, "AVOID PINK BLOCKS  •  BUILD COMBO  •  SURVIVE WAVES", TextAnchor.UpperCenter, new Vector2(0f, -190f), new Vector2(900f, 52f), new Color(1f, 0.96f, 0.45f));
         objectiveText.fontSize = 28;
@@ -457,13 +468,15 @@ public static class NeonDriftRuntimeBootstrap
         GameObject menuPanel = new GameObject("Main Menu Panel");
         menuPanel.transform.SetParent(canvasObject.transform, false);
         Image menuImage = menuPanel.AddComponent<Image>();
-        menuImage.color = new Color(0.02f, 0.045f, 0.1f, 0.96f);
+        menuImage.color = new Color(0.045f, 0.13f, 0.21f, 0.98f);
         SetRect(menuPanel.GetComponent<RectTransform>(), new Vector2(0.5f, 0.5f), new Vector2(0f, 70f), new Vector2(820f, 650f));
         CreateUiBlock(menuPanel.transform, "Menu Cyan Accent", TextAnchor.UpperCenter, new Vector2(0f, 10f), new Vector2(700f, 12f), new Color(0f, 1f, 1f, 1f));
         CreateUiBlock(menuPanel.transform, "Menu Magenta Accent", TextAnchor.LowerCenter, new Vector2(0f, -10f), new Vector2(700f, 12f), new Color(1f, 0.06f, 0.78f, 0.94f));
-        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, 76f), new Vector2(740f, 88f), new Color(0.15f, 1f, 1f));
-        titleText.fontSize = 62;
-        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -34f), new Vector2(360f, 96f), new Color(0f, 0.72f, 1f, 1f));
+        CreateUiBlock(menuPanel.transform, "Menu Title Glow", TextAnchor.UpperCenter, new Vector2(0f, 88f), new Vector2(680f, 116f), new Color(0f, 1f, 1f, 0.28f));
+        CreateUiBlock(menuPanel.transform, "Menu CTA Glow", TextAnchor.MiddleCenter, new Vector2(0f, -34f), new Vector2(450f, 126f), new Color(1f, 0.88f, 0.05f, 0.32f));
+        Text titleText = CreateText(menuPanel.transform, "Title Text", font, "NEONDRIFT", TextAnchor.UpperCenter, new Vector2(0f, 76f), new Vector2(740f, 88f), new Color(0.65f, 1f, 1f));
+        titleText.fontSize = 70;
+        CreateButton(menuPanel.transform, "Start Button", font, "START", TextAnchor.MiddleCenter, new Vector2(0f, -34f), new Vector2(360f, 96f), new Color(0f, 0.9f, 1f, 1f));
         Button settingsButton = CreateButton(menuPanel.transform, "Settings Button", font, "SETTINGS", TextAnchor.MiddleCenter, new Vector2(0f, -152f), new Vector2(360f, 82f), new Color(0.42f, 0.22f, 0.72f, 1f));
         Text bestScoreText = CreateText(menuPanel.transform, "Best Score Text", font, "BEST 0000", TextAnchor.LowerCenter, new Vector2(0f, 14f), new Vector2(460f, 70f), new Color(1f, 0.98f, 0.42f));
         bestScoreText.fontSize = 32;
