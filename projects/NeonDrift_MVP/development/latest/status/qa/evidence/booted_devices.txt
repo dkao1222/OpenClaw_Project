@@ -1,6 +1,0 @@
-== Devices ==
--- iOS 26.2 --
--- iOS 26.4 --
-    iPhone 17 Pro (CC47DE7A-8196-4465-A5A5-BB852C9C6C82) (Booted) 
--- iOS 26.5 --
--- watchOS 26.2 --
