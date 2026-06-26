@@ -24,6 +24,13 @@
 - PASS status/context/Open_Blockers.md
 - PASS handoffs/spec_review/handoff_to_game_development.md
 - PASS status/agent_heartbeats/judge.md
+- PASS handoff.source_documents.docs/planning/concept/Experience_Promise.md
+- PASS handoff.source_documents.docs/planning/proposal/Primary_Objects_and_Rules.md
+- PASS handoff.source_documents.docs/planning/core_loop/Loop_Timeline.md
+- PASS handoff.source_documents.docs/planning/core_loop/Player_Actions.md
+- PASS handoff.source_documents.docs/planning/core_loop/Feedback_Rhythm.md
+- PASS handoff.source_documents.docs/planning/hypothesis/Validation_Methods.md
+- PASS handoff.source_documents.docs/planning/platform/Build_and_QA_Environment.md
 - PASS handoff.source_documents.docs/review/Spec_Gap_Analysis.md
 - PASS handoff.source_documents.docs/review/Development_Ready_Spec_Package.md
 - PASS handoff.source_documents.docs/review/UI_UX_Detail_Spec.md
