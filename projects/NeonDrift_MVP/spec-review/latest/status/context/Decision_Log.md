@@ -1,5 +1,4 @@
 # Decision Log
 
-- decision: development_ready
-- reason: required spec review documents and implementation checklist are present
-- boundary: development_allowed remains false until explicit user command
+- decision: phase1_unity_multiplatform_source_delivered
+- unity_build_gate: pending_editor_availability
