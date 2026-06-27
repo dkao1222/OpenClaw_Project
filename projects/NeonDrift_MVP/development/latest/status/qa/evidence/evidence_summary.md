@@ -5,7 +5,7 @@
 # Game Build Validation Report
 
 - project_name: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-build-build-ios-simulator-20260626163945
+- run_id: notion-NeonDrift_MVP-build-build-ios-simulator-20260626170910
 - stage_range: build-ios-simulator
 - source_output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 - source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/development/final_handoff.md
@@ -67,14 +67,14 @@
 
 ## Unity Platform Build Gate
 - PASS unity_project_exists: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity/NeonDrift (handoff unity_project_path)
-- PASS unity_build_workspace_prepared: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity_build_workspace/NeonDrift
+- PASS unity_build_workspace_prepared: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity_build_workspace/NeonDrift.run.1782493753.82761
 - PASS unity_editor_detected: /Applications/Unity/Hub/Editor/6000.0.77f1/Unity.app/Contents/MacOS/Unity
 - PASS unity_project_version_detected: 6000.0.77f1
 - PASS unity_qa_evidence_tests: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_runqaevidencetests.log; copied=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_editmode_test_results.xml, /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml, /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json
 - PASS unity_batchmode_ValidateProject: covered by unity_qa_evidence_tests
 - PASS unity_platform_support_BuildIOSSimulator: /Applications/Unity/Hub/Editor/6000.0.77f1/PlaybackEngines/iOSSupport
 - PASS unity_batchmode_BuildIOSSimulator: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_buildiossimulator.log
-- PASS xcodebuild_ios_simulator: log=/Users/dragonkao/.ope
+- PASS xcodebuild_ios_simulator: log=
 ```
 
 ## Unity EditMode Test Results
@@ -91,7 +91,7 @@
 
 ## Unity PlayMode Test Results
 ```xml
-<test-run testcasecount="33" result="Passed" total="33" passed="33" failed="0">
+<test-run testcasecount="34" result="Passed" total="34" passed="34" failed="0">
   <test-suite type="TestSuite" name="NeonDrift.PlayMode" result="Passed">
     <test-case name="MainSceneHasCanvas" result="Passed" />
     <test-case name="MainSceneHasHudController" result="Passed" />
@@ -113,6 +113,7 @@
     <test-case name="MenuLayoutIsReadable" result="Passed" />
     <test-case name="GameplayVisualsAreReadable" result="Passed" />
     <test-case name="GameplayInstructionReadable" result="Passed" />
+    <test-case name="FirstRunGameplayMeaningIsClear" result="Passed" />
     <test-case name="ContentDepthIsVerified" result="Passed" />
     <test-case name="GameplayMotionIsVerified" result="Passed" />
     <test-case name="HazardApproachMotionIsVerified" result="Passed" />
@@ -144,6 +145,8 @@
     "hasControlHint": true,
     "hasObjectiveText": true,
     "hasAvoidInstructionText": true,
+    "hasTrackMeaningText": true,
+    "hasControlMeaningText": true,
     "hasPlayerLabel": true,
     "hasHazardLabel": true,
     "hasMainMenuPanel": true,
@@ -184,6 +187,10 @@
     "gameplayVisualsVerified": true,
     "gameplayVisualsHiddenInMenu": true,
     "gameplayInstructionReadableVerified": true,
+    "trackPurposeReadableVerified": true,
+    "leftRightControlMeaningVerified": true,
+    "firstRunClarityVerified": true,
+    "humanReadableGameplayContractVerified": true,
     "contentDepthVerified": true,
     "gameplayMotionVerified": true,
     "hazardApproachMotionVerified": true,
@@ -242,7 +249,7 @@
 
 ## App Binary
 ```text
-/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/NeonDrift: Mach-O 64-bit executable arm64
+/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782493753.82761.app/NeonDrift.run.1782493753.82761: Mach-O 64-bit executable arm64
 
 ```
 
@@ -250,17 +257,17 @@
 ```text
 {
     ApplicationType = User;
-    Bundle = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/448E81BF-78EF-4D2A-B54B-A624201226B1/NeonDrift.app/";
-    BundleContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/448E81BF-78EF-4D2A-B54B-A624201226B1/";
-    CFBundleDisplayName = NeonDrift;
-    CFBundleExecutable = NeonDrift;
-    CFBundleIdentifier = "com.DefaultCompany.NeonDrift";
-    CFBundleName = NeonDrift;
+    Bundle = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/1D19FB4A-7F72-4B84-964E-8EB113904887/NeonDrift.run.1782493753.82761.app/";
+    BundleContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/1D19FB4A-7F72-4B84-964E-8EB113904887/";
+    CFBundleDisplayName = "NeonDrift.run.1782493753.82761";
+    CFBundleExecutable = "NeonDrift.run.1782493753.82761";
+    CFBundleIdentifier = "com.DefaultCompany.NeonDrift.run.1782493753.82761";
+    CFBundleName = "NeonDrift.run.1782493753.82761";
     CFBundleVersion = 0;
-    DataContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/BE6AB3B4-3800-45A4-9212-4DF9AB433482/";
+    DataContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/6C1D639D-5F57-4E6F-B264-B1380052AFAB/";
     GroupContainers =     {
     };
-    Path = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/448E81BF-78EF-4D2A-B54B-A624201226B1/NeonDrift.app";
+    Path = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/1D19FB4A-7F72-4B84-964E-8EB113904887/NeonDrift.run.1782493753.82761.app";
     SBAppTags =     (
     );
 }
@@ -269,7 +276,7 @@
 
 ## Launch
 ```text
-com.DefaultCompany.NeonDrift: 64674
+com.DefaultCompany.NeonDrift.run.1782493753.82761: 85007
 
 ```
 
@@ -284,17 +291,17 @@ com.DefaultCompany.NeonDrift: 64674
 ## Runtime Log Tail
 ```text
 Timestamp               Ty Process[PID:TID]
-2026-06-27 00:41:05.298 Df CoreSimulatorBridge[57126:93b870] Request received for installation of file:///Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/ with options: {
+2026-06-27 01:10:09.668 Df CoreSimulatorBridge[64415:951829] Request received for installation of file:///Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782493753.82761.app/ with options: {
     PackageType = Developer;
     SimulatorRootPath = "/Library/Developer/CoreSimulator/Volumes/iOS_23E254a/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.4.simruntime/Contents/Resources/RuntimeRoot";
     SimulatorUserPath = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data";
 }
-2026-06-27 00:41:05.299 Df CoreSimulatorBridge[57126:93b870] [com.apple.installcoordination:framework] +[IXAppInstallCoordinator(IXSimpleInstaller) _beginInstallForURL:forPersonaUniqueString:consumeSource:options:progressBlock:completionWithIdentity:]: Beginning install for /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app consuming source:N options:{
+2026-06-27 01:10:09.669 Df CoreSimulatorBridge[64415:951829] [com.apple.installcoordination:framework] +[IXAppInstallCoordinator(IXSimpleInstaller) _beginInstallForURL:forPersonaUniqueString:consumeSource:options:progressBlock:completionWithIdentity:]: Beginning install for /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782493753.82761.app consuming source:N options:{
     IsUserInitiated = 1;
     PackageType = Developer;
 } installationRequestorAuditToken: NULL
-2026-06-27 00:41:05.305 Df installcoordinationd[57289:9359bb] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager registerPromise:]: Registered promise <IXSPlaceholder(0x102124500) Name:App Placeholder: NeonDrift (com.DefaultCompany.NeonDrift) Creator:InstallCoordination Simple SPI UUID:A77C5EB9-F20E-48D1-9658-10633F57DDBB Location:[system-defined]> for UUID A77C5EB9-F20E-48D1-9658-10633F57DDBB
-2026-06-27 00:41:05.306 Df installcoordinationd[57289:9359bb] [com.apple.installcoordination:daemon] -[IXSPlaceholder setAttributes:]: <IXSPlaceholder(0x102124500) Name:App Placeholder: NeonDrift (com.DefaultCompany.NeonDrift) Creator:InstallCoordination Simple SPI UUID:A77C5EB9-F20E-48D1-9658-10633F57DDBB Location:[system-defined]>: setting placeholder attributes to <IXPlaceholderAttributes<0x1020c8aa0> : {
+2026-06-27 01:10:09.672 Df installcoordinationd[64557:941925] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager registerPromise:]: Registered promise <IXSPlaceholder(0x101d243c0) Name:App Placeholder: NeonDrift.run.1782493753.82761 (com.DefaultCompany.NeonDrift.run.1782493753.82761) Creator:InstallCoordination Simple SPI UUID:0B5E2711-1224-4573-8536-66907A7FA2DE Location:[system-defined]> for UUID 0B5E2711-1224-4573-8536-66907A7FA2DE
+2026-06-27 01:10:09.673 Df installcoordinationd[64557:941925] [com.apple.installcoordination:daemon] -[IXSPlaceholder setAttributes:]: <IXSPlaceholder(0x101d243c0) Name:App Placeholder: NeonDrift.run.1782493753.82761 (com.DefaultCompany.NeonDrift.run.1782493753.82761) Creator:InstallCoordination Simple SPI UUID:0B5E2711-1224-4573-8536-66907A7FA2DE Location:[system-defined]>: setting placeholder attributes to <IXPlaceholderAttributes<0x101cc8960> : {
     CFBundleShortVersionString = "1.0";
     CFBundleSupportedPlatforms =     (
         iPhoneSimulator
@@ -312,17 +319,16 @@ Timestamp               Ty Process[PID:TID]
         metal = 1;
     };
 }>
-2026-06-27 00:41:05.306 Df CoreSimulatorBridge[57126:940283] [com.apple.installcoordination:framework] +[IXPlaceholder _setEntitlementsFromBundleExecutableURL:withBundleID:client:onPlaceholder:location:error:]: Executable for com.DefaultCompany.NeonDrift at NeonDrift -- file:///Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app/ had no entitlements
-2026-06-27 00:41:05.306 Df CoreSimulatorBridge[57126:940283] [com.apple.installcoordination:framework] +[IXPlaceholder _placeholderForBundle:client:withParent:installType:metadata:placeholderType:mayBeDeltaPackage:isFromSerializedPlaceholder:location:error:]: Using full fidelity icons for com.DefaultCompany.NeonDrift at /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app
-2026-06-27 00:41:05.307 Df installcoordinationd[57289:9359bb] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager registerPromise:]: Registered promise <IXSPromisedTransferToPath(0x1020f9900) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:CA6D2FE8-4E97-4FAD-8D3A-FEE0959F9722 Location:[system-defined]> for UUID CA6D2FE8-4E97-4FAD-8D3A-FEE0959F9722
-2026-06-27 00:41:05.310 Df CoreSimulatorBridge[57126:940283] [com.apple.installcoordination:framework] -[IXPromisedTransferToPath setComplete:]: <IXPromisedTransferToPath<0x104091a80> name:"Icon resources for com.DefaultCompany.NeonDrift" uuid:CA6D2FE8-4E97-4FAD-8D3A-FEE0959F9722 creator:"InstallCoordination Simple SPI" location:[system-defined]> Move operation from /Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Shared/SystemGroup/systemgroup.com.apple.installcoordinationd/Library/InstallCoordination/PromiseStaging/CA6D2FE8-4E97-4FAD-8D3A-FEE0959F9722/temp.Dxn4GE to /Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Shared/SystemGroup/systemgroup.com.apple.installcoordinationd/Library/InstallCoordination/PromiseStaging/CA6D2FE8-4E97-4FAD-8D3A-FEE0959F9722/temp.Dxn4GE took 0.000043 seconds
-2026-06-27 00:41:05.311 Df installcoordinationd[57289:9359bb] [com.apple.installcoordination:daemon] -[IXSDataPromise _setPercentComplete:saveStateIfNeeded:]: Progress: <IXSPromisedTransferToPath(0x1020f9900) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:CA6D2FE8-4E97-4FAD-8D3A-FEE0959F9722 Location:[system-defined]>
-2026-06-27 00:41:05.311 Df installcoordinationd[57289:940284] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidBegin:]: Unowned promise began: <IXSPromisedTransferToPath(0x1020f9900) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:CA6D2FE8-4E97-4FAD-8D3A-FEE0959F9722 Location:[system-defined]>
-2026-06-27 00:41:05.311 Df installcoordinationd[57289:940284] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promise:didUpdateProgress:]: Unowned promise update progress to 1.000000 : <IXSPromisedTransferToPath(0x1020f9900) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:CA6D2FE8-4E97-4FAD-8D3A-FEE0959F9722 Location:[system-defined]>
-2026-06-27 00:41:05.312 Df installcoordinationd[57289:940284] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidComplete:]: Unowned promise completed: <IXSPromisedTransferToPath(0x1020f9900) Name:Icon resources for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:CA6D2FE8-4E97-4FAD-8D3A-FEE0959F9722 Location:[system-defined]>
-2026-06-27 00:41:05.312 Df installcoordinationd[57289:9359bb] [com.apple.installcoordination:daemon] -[IXSDataPromise _setPercentComplete:saveStateIfNeeded:]: Progress: <IXSPromisedInMemoryDictionary(0x1020f9100) Name:Info.plist icon content for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:B528BE9E-2ED8-4587-8CF0-9642517D55C7 Location:[system-defined]>
-2026-06-27 00:41:05.313 Df installcoordinationd[57289:9359bb] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager registerPromise:]: Registered promise <IXSPromisedInMemoryDictionary(0x1020f9100) Name:Info.plist icon content for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:B528BE9E-2ED8-4587-8CF0-9642517D55C7 Location:[system-defined]> for UUID B528BE9E-2ED8-4587-8CF0-9642517D55C7
-2026-06-27 00:41:05.313 Df installcoordinationd[57289:940284] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidBegin:]: Unowned promise began: <IXSPromisedInMemoryDictionary(0x1020f9100) Name:Info.plist icon content for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:B528BE9E-2ED8-4587-8CF0-9642517D55C7 Location:[system-defined]>
-2026-06-27 00:41:05.313 Df installcoordinationd[57289:940284] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promise:didUpdateProgress:]: Unowned promise update progress to 1.000000 : <IXSPromisedInMemoryDictionary(0x1020f9100) Name:Info.plist icon content for com.DefaultCompany.NeonDrift Creator:InstallCoordination Simple SPI UUID:B528BE9E-2ED8-4587-8CF0-9642517D55C7 Location:[system-defined]>
-2026-06-27 00:41:05.313 Df installcoordinationd[57289:940284] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidComplete:]: Unowned promise completed: <IX
+2026-06-27 01:10:09.674 Df CoreSimulatorBridge[64415:95180e] [com.apple.installcoordination:framework] +[IXPlaceholder _setEntitlementsFromBundleExecutableURL:withBundleID:client:onPlaceholder:location:error:]: Executable for com.DefaultCompany.NeonDrift.run.1782493753.82761 at NeonDrift.run.1782493753.82761 -- file:///Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782493753.82761.app/ had no entitlements
+2026-06-27 01:10:09.674 Df CoreSimulatorBridge[64415:95180e] [com.apple.installcoordination:framework] +[IXPlaceholder _placeholderForBundle:client:withParent:installType:metadata:placeholderType:mayBeDeltaPackage:isFromSerializedPlaceholder:location:error:]: Using full fidelity icons for com.DefaultCompany.NeonDrift.run.1782493753.82761 at /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782493753.82761.app
+2026-06-27 01:10:09.674 Df installcoordinationd[64557:941925] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager registerPromise:]: Registered promise <IXSPromisedTransferToPath(0x101cf9900) Name:Icon resources for com.DefaultCompany.NeonDrift.run.1782493753.82761 Creator:InstallCoordination Simple SPI UUID:57C968AC-138B-464C-B492-D5B7B09A13AA Location:[system-defined]> for UUID 57C968AC-138B-464C-B492-D5B7B09A13AA
+2026-06-27 01:10:09.677 Df CoreSimulatorBridge[64415:95180e] [com.apple.installcoordination:framework] -[IXPromisedTransferToPath setComplete:]: <IXPromisedTransferToPath<0x105893200> name:"Icon resources for com.DefaultCompany.NeonDrift.run.1782493753.82761" uuid:57C968AC-138B-464C-B492-D5B7B09A13AA creator:"InstallCoordination Simple SPI" location:[system-defined]> Move operation from /Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Shared/SystemGroup/systemgroup.com.apple.installcoordinationd/Library/InstallCoordination/PromiseStaging/57C968AC-138B-464C-B492-D5B7B09A13AA/temp.Z6aKWr to /Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Shared/SystemGroup/systemgroup.com.apple.installcoordinationd/Library/InstallCoordination/PromiseStaging/57C968AC-138B-464C-B492-D5B7B09A13AA/temp.Z6aKWr took 0.000044 seconds
+2026-06-27 01:10:09.678 Df installcoordinationd[64557:941925] [com.apple.installcoordination:daemon] -[IXSDataPromise _setPercentComplete:saveStateIfNeeded:]: Progress: <IXSPromisedTransferToPath(0x101cf9900) Name:Icon resources for com.DefaultCompany.NeonDrift.run.1782493753.82761 Creator:InstallCoordination Simple SPI UUID:57C968AC-138B-464C-B492-D5B7B09A13AA Location:[system-defined]>
+2026-06-27 01:10:09.678 Df installcoordinationd[64557:963325] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidBegin:]: Unowned promise began: <IXSPromisedTransferToPath(0x101cf9900) Name:Icon resources for com.DefaultCompany.NeonDrift.run.1782493753.82761 Creator:InstallCoordination Simple SPI UUID:57C968AC-138B-464C-B492-D5B7B09A13AA Location:[system-defined]>
+2026-06-27 01:10:09.678 Df installcoordinationd[64557:963325] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promise:didUpdateProgress:]: Unowned promise update progress to 1.000000 : <IXSPromisedTransferToPath(0x101cf9900) Name:Icon resources for com.DefaultCompany.NeonDrift.run.1782493753.82761 Creator:InstallCoordination Simple SPI UUID:57C968AC-138B-464C-B492-D5B7B09A13AA Location:[system-defined]>
+2026-06-27 01:10:09.679 Df installcoordinationd[64557:941925] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidComplete:]: Unowned promise completed: <IXSPromisedTransferToPath(0x101cf9900) Name:Icon resources for com.DefaultCompany.NeonDrift.run.1782493753.82761 Creator:InstallCoordination Simple SPI UUID:57C968AC-138B-464C-B492-D5B7B09A13AA Location:[system-defined]>
+2026-06-27 01:10:09.679 Df installcoordinationd[64557:963325] [com.apple.installcoordination:daemon] -[IXSDataPromise _setPercentComplete:saveStateIfNeeded:]: Progress: <IXSPromisedInMemoryDictionary(0x101cf8c00) Name:Info.plist icon content for com.DefaultCompany.NeonDrift.run.1782493753.82761 Creator:InstallCoordination Simple SPI UUID:CD522168-5E89-4BF6-AD24-2AC5FA6B8928 Location:[system-defined]>
+2026-06-27 01:10:09.680 Df installcoordinationd[64557:963325] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager registerPromise:]: Registered promise <IXSPromisedInMemoryDictionary(0x101cf8c00) Name:Info.plist icon content for com.DefaultCompany.NeonDrift.run.1782493753.82761 Creator:InstallCoordination Simple SPI UUID:CD522168-5E89-4BF6-AD24-2AC5FA6B8928 Location:[system-defined]> for UUID CD522168-5E89-4BF6-AD24-2AC5FA6B8928
+2026-06-27 01:10:09.680 Df installcoordinationd[64557:941925] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promiseDidBegin:]: Unowned promise began: <IXSPromisedInMemoryDictionary(0x101cf8c00) Name:Info.plist icon content for com.DefaultCompany.NeonDrift.run.1782493753.82761 Creator:InstallCoordination Simple SPI UUID:CD522168-5E89-4BF6-AD24-2AC5FA6B8928 Location:[system-defined]>
+2026-06-27 01:10:09.680 Df installcoordinationd[64557:941925] [com.apple.installcoordination:daemon] -[IXSDataPromiseManager promise:didUpdateProgress:]: Unowned promise u
 ```
