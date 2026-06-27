@@ -9,6 +9,8 @@
     "hasControlHint": true,
     "hasObjectiveText": true,
     "hasAvoidInstructionText": true,
+    "hasTrackMeaningText": true,
+    "hasControlMeaningText": true,
     "hasPlayerLabel": true,
     "hasHazardLabel": true,
     "hasMainMenuPanel": true,
@@ -49,6 +51,10 @@
     "gameplayVisualsVerified": true,
     "gameplayVisualsHiddenInMenu": true,
     "gameplayInstructionReadableVerified": true,
+    "trackPurposeReadableVerified": true,
+    "leftRightControlMeaningVerified": true,
+    "firstRunClarityVerified": true,
+    "humanReadableGameplayContractVerified": true,
     "contentDepthVerified": false,
     "gameplayMotionVerified": false,
     "hazardApproachMotionVerified": false,
@@ -100,6 +106,6 @@
     "hasStarted": false,
     "gameplayTime": 0.0,
     "minimumSurvivalSeconds": 6.0,
-    "framesPerSecond": 59.999141693115237,
+    "framesPerSecond": 60.09427261352539,
     "exceptionCount": 0
 }
