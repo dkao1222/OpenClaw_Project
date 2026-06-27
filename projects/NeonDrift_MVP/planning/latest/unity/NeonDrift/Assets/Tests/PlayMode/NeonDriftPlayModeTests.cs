@@ -94,9 +94,23 @@ public sealed class NeonDriftPlayModeTests
         Assert.That(json, Does.Contain("\"gameplayVisualsHiddenInMenu\": true"));
         Assert.That(json, Does.Contain("\"hasObjectiveText\": true"));
         Assert.That(json, Does.Contain("\"hasAvoidInstructionText\": true"));
+        Assert.That(json, Does.Contain("\"hasTrackMeaningText\": true"));
+        Assert.That(json, Does.Contain("\"hasControlMeaningText\": true"));
         Assert.That(json, Does.Contain("\"hasPlayerLabel\": true"));
         Assert.That(json, Does.Contain("\"hasHazardLabel\": true"));
         Assert.That(json, Does.Contain("\"gameplayInstructionReadableVerified\": true"));
+    }
+
+    [Test]
+    public void FirstRunGameplayMeaningIsClear()
+    {
+        SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
+        string json = InvokeRuntimeQaProbeCaptureJson();
+        Assert.That(json, Does.Contain("\"trackPurposeReadableVerified\": true"));
+        Assert.That(json, Does.Contain("\"leftRightControlMeaningVerified\": true"));
+        Assert.That(json, Does.Contain("\"firstRunClarityVerified\": true"));
+        Assert.That(json, Does.Contain("\"humanReadableGameplayContractVerified\": true"));
     }
 
     [Test]

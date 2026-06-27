@@ -6,8 +6,7 @@ source_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Neo
 
 ## Product Vision and Purpose
 
-- snippet: 由 Raw Idea 正規化：Create an iOS-first Unity quick game MVP named NeonDrift_MVP: a neon arcade drift runner where the player pilots a hover car through a moving light tunnel.
-The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Deve
+- snippet: 由 Raw Idea 正規化：Create an iOS-first Unity 6000.0.77f1 arcade game MVP named NeonDrift_MVP. The player is a rookie courier piloting a cyan hover ship through a collapsing neon data highway inside a cyber-city. The center playfield must read as a dangerous moving
 
 ## Target Audience
 
@@ -16,8 +15,7 @@ The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Revie
 ## Core Value
 
 - snippet: 由 Raw Idea 提煉 1-3 個核心價值；核心價值必須回指已提交的 game concept/core gameplay/player goal。
-核心玩法：Tap/hold left or right to drift between lanes while the track scrolls. Hazards damage/end the run, boosts restore pulse and score, and retry must restart a fresh moving run.
-核心物件
+核心玩法：Tap LEFT to drift one lane left; tap RIGHT to drift one lane right. The track scrolls toward the player. Pink hazard shards approach in readable patterns. Gold/green pickups rest
 
 ## Development Request
 
