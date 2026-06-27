@@ -18,6 +18,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool hasControlHint;
         public bool hasObjectiveText;
         public bool hasAvoidInstructionText;
+        public bool hasTrackMeaningText;
+        public bool hasControlMeaningText;
         public bool hasPlayerLabel;
         public bool hasHazardLabel;
         public bool hasMainMenuPanel;
@@ -58,6 +60,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         public bool gameplayVisualsVerified;
         public bool gameplayVisualsHiddenInMenu;
         public bool gameplayInstructionReadableVerified;
+        public bool trackPurposeReadableVerified;
+        public bool leftRightControlMeaningVerified;
+        public bool firstRunClarityVerified;
+        public bool humanReadableGameplayContractVerified;
         public bool contentDepthVerified;
         public bool gameplayMotionVerified;
         public bool hazardApproachMotionVerified;
@@ -240,6 +246,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         RectTransform hazardMarkerRect = FindRectTransformByName("Hazard Visual Marker");
         RectTransform objectiveRect = FindRectTransformByName("Objective Text");
         RectTransform avoidRect = FindRectTransformByName("Avoid Instruction Text");
+        RectTransform trackMeaningRect = FindRectTransformByName("Track Meaning Text");
+        RectTransform controlMeaningRect = FindRectTransformByName("Control Meaning Text");
         RectTransform playerLabelRect = FindRectTransformByName("Player Label");
         RectTransform hazardLabelRect = FindRectTransformByName("Hazard Label");
         bool hasRetry = retryButton != null;
@@ -264,7 +272,14 @@ public sealed class RuntimeQaProbe : MonoBehaviour
         NeonDriftVisualSync visualSync = FindVisualSyncIncludingInactive();
         bool gameplayVisualsVerified = HasMinimumSize(trackRect, 180f, 520f) && HasMinimumSize(playerMarkerRect, 44f, 32f) && HasMinimumSize(hazardMarkerRect, 44f, 44f) && visualSync != null && visualSync.HasMotionContract;
         bool gameplayVisualsHiddenInMenu = !hasStarted && !IsActiveInHierarchy("Track Playfield") && !IsActiveInHierarchy("Player Visual Marker") && !IsActiveInHierarchy("Hazard Visual Marker");
-        bool gameplayInstructionReadableVerified = HasTextNamed(texts, "Objective Text") && HasTextNamed(texts, "Avoid Instruction Text") && HasTextNamed(texts, "Player Label") && HasTextNamed(texts, "Hazard Label") && HasMinimumSize(objectiveRect, 360f, 36f) && HasMinimumSize(avoidRect, 420f, 36f) && HasMinimumSize(playerLabelRect, 120f, 28f) && HasMinimumSize(hazardLabelRect, 140f, 28f);
+        bool trackPurposeReadableVerified = TextContainsAll(texts, "Track Meaning Text", "track", "lane") && HasMinimumSize(trackMeaningRect, 360f, 32f);
+        bool leftRightControlMeaningVerified = TextContainsAll(texts, "Control Meaning Text", "left", "right", "drift") && TextContainsAll(texts, "Avoid Instruction Text", "left", "right", "cyan", "pink") && HasMinimumSize(controlMeaningRect, 420f, 32f);
+        bool playerMeaningVerified = TextContainsAll(texts, "Player Label", "cyan", "you") && HasMinimumSize(playerLabelRect, 180f, 28f);
+        bool hazardMeaningVerified = TextContainsAll(texts, "Hazard Label", "pink", "crash") && HasMinimumSize(hazardLabelRect, 220f, 28f);
+        bool goalMeaningVerified = TextContainsAll(texts, "Objective Text", "goal", "dodge", "survive") && HasMinimumSize(objectiveRect, 520f, 36f);
+        bool gameplayInstructionReadableVerified = goalMeaningVerified && leftRightControlMeaningVerified && trackPurposeReadableVerified && playerMeaningVerified && hazardMeaningVerified && HasMinimumSize(avoidRect, 620f, 36f);
+        bool firstRunClarityVerified = gameplayInstructionReadableVerified && gameplayVisualsVerified && hasLeftZone && hasRightZone;
+        bool humanReadableGameplayContractVerified = firstRunClarityVerified && TextContainsAny(texts, "Objective Text", "collect", "score", "survive") && TextContainsAny(texts, "Avoid Instruction Text", "crash", "avoid", "pink");
         bool menuLayoutVerified = mainMenuVisible && menuElementsDoNotOverlap && gameplayHudHiddenInMenu && gameplayControlsHiddenInMenu && HasMinimumSize(startRect, 120f, 44f) && HasMinimumSize(settingsRect, 120f, 44f);
         bool startFlowVerified = session != null && !hasStarted && GameSessionController.Score == 0 && mainMenuVisible && startButton != null && IsClickable(startButton);
         bool liveGameplayWindowVerified = session != null && hasStarted && !session.IsGameOver && session.GameplayTime >= session.MinimumSurvivalSeconds && GameSessionController.Score > 0;
@@ -286,6 +301,8 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             hasControlHint = HasTextNamed(texts, "Control Hint"),
             hasObjectiveText = HasTextNamed(texts, "Objective Text"),
             hasAvoidInstructionText = HasTextNamed(texts, "Avoid Instruction Text"),
+            hasTrackMeaningText = HasTextNamed(texts, "Track Meaning Text"),
+            hasControlMeaningText = HasTextNamed(texts, "Control Meaning Text"),
             hasPlayerLabel = HasTextNamed(texts, "Player Label"),
             hasHazardLabel = HasTextNamed(texts, "Hazard Label"),
             hasMainMenuPanel = mainMenuPanel != null,
@@ -326,6 +343,10 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             gameplayVisualsVerified = gameplayVisualsVerified,
             gameplayVisualsHiddenInMenu = gameplayVisualsHiddenInMenu,
             gameplayInstructionReadableVerified = gameplayInstructionReadableVerified,
+            trackPurposeReadableVerified = trackPurposeReadableVerified,
+            leftRightControlMeaningVerified = leftRightControlMeaningVerified,
+            firstRunClarityVerified = firstRunClarityVerified,
+            humanReadableGameplayContractVerified = humanReadableGameplayContractVerified,
             contentDepthVerified = session != null && (session.ContentDepthVerified || liveHumanAgencyVerified || liveSkillRewardVerified) && HasTextNamed(texts, "Score Text") && HasTextNamed(texts, "Pulse Text"),
             gameplayMotionVerified = gameplayMotionVerifiedForQa || (visualSync != null && visualSync.HasAnimated),
             hazardApproachMotionVerified = liveHazardPressureVerified,
@@ -392,6 +413,54 @@ public sealed class RuntimeQaProbe : MonoBehaviour
             }
         }
         return false;
+    }
+
+    private static bool TextContainsAll(Text[] texts, string name, params string[] requiredFragments)
+    {
+        string value = TextValue(texts, name);
+        if (string.IsNullOrEmpty(value))
+        {
+            return false;
+        }
+        string normalized = value.ToLowerInvariant();
+        foreach (string fragment in requiredFragments)
+        {
+            if (string.IsNullOrEmpty(fragment) || !normalized.Contains(fragment.ToLowerInvariant()))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static bool TextContainsAny(Text[] texts, string name, params string[] fragments)
+    {
+        string value = TextValue(texts, name);
+        if (string.IsNullOrEmpty(value))
+        {
+            return false;
+        }
+        string normalized = value.ToLowerInvariant();
+        foreach (string fragment in fragments)
+        {
+            if (!string.IsNullOrEmpty(fragment) && normalized.Contains(fragment.ToLowerInvariant()))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static string TextValue(Text[] texts, string name)
+    {
+        foreach (Text text in texts)
+        {
+            if (text != null && text.name == name)
+            {
+                return text.text ?? "";
+            }
+        }
+        return "";
     }
 
     private static Button FindButtonByName(string name)
