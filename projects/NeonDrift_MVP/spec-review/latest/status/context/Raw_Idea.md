@@ -1,59 +1,52 @@
 # Raw Idea
 
-raw_idea_page_id: 38bb9e33-8429-815e-89d0-d789c9e1ca24
-chain_id: raw:NeonDrift_MVP:20260626170630
+raw_idea_page_id: 38cb9e33-8429-819c-b792-c2bc94bb235d
+chain_id: raw:NeonDrift_MVP:20260627151214
 project_name: NeonDrift_MVP
 idea_type: game
 target_platform: Unity iOS
 priority: high
-requested_by: cron-clean-retry-first-run-clarity
+requested_by: codex-rich-raw-idea-retry
 
 ## Raw Idea（原始想法）
 
-Create an iOS-first Unity quick game MVP named NeonDrift_MVP: a neon arcade drift runner where the player pilots a hover car through a moving light tunnel.
-The full OpenClaw pipeline must run Raw Idea -> Define -> Planning -> Spec Review -> Development -> Build -> QA without manual product-code intervention.
-The player goal is to survive as long as possible, collect boost cells, avoid hazard shards, build combo/near-miss score, and retry quickly for a better best score.
-The core gameplay is left/right drift control with visible vehicle movement, track motion, hazard approach, boost pickup, pulse drain, failure reason, pause, and retry.
-The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
-Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
-Retry is accepted only when a human can see a clear transition from game-over to a fresh playable run: failure overlay removed, score/timer/run state reset, player/track motion resumes, and the after-retry screenshot/video differs from the game-over frame.
-Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
+Create an iOS-first Unity 6000.0.77f1 arcade game MVP named NeonDrift_MVP. The player is a rookie courier piloting a cyan hover ship through a collapsing neon data highway inside a cyber-city. The center playfield must read as a dangerous moving lane/track, not an abstract rectangle. The player must immediately understand: cyan ship = me, neon track = survival lane, pink shards = crash threat, gold/green glow cells = reward/boost, LEFT/RIGHT = drift between lanes. The first 10 seconds must teach by screen composition and motion, not a long tutorial. The game should feel richer than a single dodge prototype: lane drift, hazard waves, near-miss scoring, boost pickups, combo multiplier, pulse drain, short wave pacing, failure reason, retry reset, pause, sound toggle, and visible best score. Planning and Spec Review must define each system in separate detailed files so Development has no need to invent core behavior. Visual design must include layered moving background, luminous track rails, player trail, hazard warning, pickup pulse, score feedback, failure overlay, and clear typography. QA must include simulator video across at least 3 complete runs, screenshots for menu/gameplay/game-over/retry, runtime probe JSON, PlayMode test evidence, product experience review, first-run comprehension gate, visual richness gate, and gameplay function gate. Build must auto-run locally on Unity 6000.0.77f1 when available; no manual product-code intervention is allowed.
 
 ## Game Concept（遊戲概念）
 
-Neon arcade drift runner: the player pilots a glowing hover car in a moving light tunnel, making quick left/right drift decisions under pressure.
+Neon courier drift runner: a cyan hover ship survives a collapsing cyber data highway by drifting left/right between lanes, dodging pink crash shards, collecting glow cells, and chaining near misses for combo score.
 
 ## Player Goal（玩家目標）
 
-Survive the run, avoid hazard shards, collect boost cells, chain near misses/combo score, and beat the best score with fast retry.
+Survive 60-second-style short runs as long as possible, keep pulse above zero, dodge hazards, collect boost cells, build combo/near-miss score, beat best score, and retry quickly after a visible failure reason.
 
 ## Core Gameplay（核心玩法）
 
-Tap/hold left or right to drift between lanes while the track scrolls. Hazards damage/end the run, boosts restore pulse and score, and retry must restart a fresh moving run.
+Tap LEFT to drift one lane left; tap RIGHT to drift one lane right. The track scrolls toward the player. Pink hazard shards approach in readable patterns. Gold/green pickups restore pulse or increase combo. Near misses increase multiplier. Collision or pulse depletion triggers Drift Lost with reason and Retry.
 
 ## Core Objects（核心物件）
 
-Player hover car, neon track/lane rails, hazard shards, boost cells, score/combo/pulse HUD, pause, failure overlay with reason, retry button.
+Cyan player hover ship, neon data track/lane rails, moving background light tunnel, pink hazard shards, gold boost cells, green combo cells, score HUD, pulse meter, combo/multiplier HUD, wave indicator, pause button, sound/settings, failure overlay, retry button, best score.
 
 ## Visual Direction（視覺方向）
 
-High-contrast neon arcade style with moving background layers, visible vehicle silhouette, cyan/magenta hazard-reward language, glow trails, readable HUD, and safe-area aware controls.
+High-polish neon arcade look: dark cyber-city depth, cyan/magenta/gold color language, animated lane rails, parallax light tunnel, player glow trail, hazard warning chevrons, pickup pulse rings, readable iPhone portrait HUD, large touch zones, safe-area support, no flat placeholder-only scene.
 
 ## Success Criteria（成功條件）
 
-QA must provide screenshots/video proving Start, moving gameplay, left/right control response, hazard, boost, score/pulse change, failure reason, retry reset, visual richness, and non-placeholder style frames.
+A first-time player can explain what the track is, what they control, what LEFT/RIGHT do, what to avoid, what to collect, why they failed, and what Retry does from screenshots/video alone. QA passes only with video, screenshots, runtime probes, PlayMode tests, first-run comprehension, visual richness, gameplay depth, and retry recovery evidence.
 
 ## Must Have（必須包含）
 
-Start menu, Settings/Sound, best score, left/right touch controls, moving player vehicle, track/background motion, hazards, boosts, score/combo/pulse HUD, pause, failure reason, retry, screenshots, and QA video.
+Detailed planning proposal split into sections; spec review with gameplay/control/HUD/visual/audio/QA acceptance details; Unity iOS simulator project; local Unity build; 3-run simulator QA video; screenshots; runtime probe; OPDCA + DMAIC control monitoring; no missing chain id; Notion docs synced.
 
 ## Must Not（不可包含）
 
-No static empty screen, no flat-color-only background, no placeholder-only squares, no unclear failure, no retry without fresh gameplay state, no QA pass without visual/product evidence.
+No vague planning docs, no abstract rectangle track without meaning, no unclear LEFT/RIGHT behavior, no static or blank-looking screen, no placeholder-only squares, no QA pass based only on JSON, no single-run QA, no retry that leaves the player in a passive or unclear state.
 
 ## Reference（參考資料）
 
-Use OpenClaw knowledge bases for Apple HIG, product experience, game quality, game system design, visual richness, and OpenGameArt-compatible asset direction.
+Use OpenClaw knowledge bases: Apple HIG, product experience first-run clarity, game quality visual richness, game system design, narrative visual storytelling, OpenGameArt asset sourcing and license register, OPDCA_DMAIC_CYCLE.
 
 ## Monetization Direction（收益方向）
 
@@ -65,4 +58,4 @@ iOS-first Unity 6000.0.77f1, local iOS simulator build, safe-area aware controls
 
 ## QA Requirement（QA 要求）
 
-QA must include simulator screenshots, playthrough video, touch/button checks, every gameplay function check, human visual readability, product experience, style-frame evidence, retry recovery, and build artifacts.
+QA must hard fail unless product experience, human visual judgement, first-run gameplay comprehension, gameplay function playability, visual richness, three-run recording, screenshots, runtime probes, PlayMode XML, retry recovery, and delivery files are all present and Passed.
