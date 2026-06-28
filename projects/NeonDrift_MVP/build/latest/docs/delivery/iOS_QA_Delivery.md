@@ -3,24 +3,24 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260628093053
-- 交付狀態: blocked
-- QA 狀態: failed
-- Release candidate: blocked
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260628100533
+- 交付狀態: ready
+- QA 狀態: passed
+- Release candidate: ready
 - checks_total: 147
-- checks_failed: 5
+- checks_failed: 0
 - checks_blocked: 0
-- bundle_id: com.DefaultCompany.NeonDrift
+- bundle_id: com.DefaultCompany.NeonDrift.run.1782641020.54193
 
 ## iOS Simulator App
 
-- app_path: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app`
+- app_path: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782641020.54193.app`
 
 ## Install And Launch
 
 ```bash
-xcrun simctl install booted /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app
-xcrun simctl launch booted com.DefaultCompany.NeonDrift
+xcrun simctl install booted /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782641020.54193.app
+xcrun simctl launch booted com.DefaultCompany.NeonDrift.run.1782641020.54193
 ```
 
 ## 必交付檔案
@@ -42,12 +42,8 @@ xcrun simctl launch booted com.DefaultCompany.NeonDrift
 
 ## Required Fixes
 
-- runtime_probe_ten_second_playability_verified: tenSecondPlayabilityVerified=False in qa_runtime_probe_gameplay.json.
-- runtime_probe_enemy_pattern_pressure_verified: enemyPatternPressureVerified=False in qa_runtime_probe_gameplay.json.
-- runtime_probe_human_playtest_checklist_verified: humanPlaytestChecklistVerified=False in qa_runtime_probe_gameplay.json.
-- runtime_probe_gameplay_claims_require_running_state: screenState='game_over', hasStarted=True, gameplayTime=6.550021171569824, score=266, claimed_flags=['contentDepthVerified', 'gameplayMotionVerified', 'hazardApproachMotionVerified', 'playerSteeringMotionVerified', 'humanAgencyVerified', 'playerInputChangesOutcomeVerified', 'skillRewardLoopVerified'].
-- qa_actual_gameplay_quality_gate: tenSecondPlayabilityVerified=False, enemyPatternPressureVerified=False, skillRewardLoopVerified=True, humanPlaytestChecklistVerified=False, TenSecondPlayabilityVerified=True, EnemyPatternPressureVerified=True, SkillRewardLoopVerified=True, HumanPlaytestChecklistVerified=True, video=True, gameplayScreenshot=True, menuToGameplayChanged=True.
+- 無
 
 ## English Summary
 
-Delivery status is blocked. QA status is failed; release candidate status is blocked.
+Delivery status is ready. QA status is passed; release candidate status is ready.
