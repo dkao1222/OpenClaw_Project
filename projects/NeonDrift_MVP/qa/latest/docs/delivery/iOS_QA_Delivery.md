@@ -3,24 +3,24 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260628100533
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260628124309
 - 交付狀態: ready
 - QA 狀態: passed
 - Release candidate: ready
 - checks_total: 147
 - checks_failed: 0
 - checks_blocked: 0
-- bundle_id: com.DefaultCompany.NeonDrift.run.1782641020.54193
+- bundle_id: com.DefaultCompany.NeonDrift.run.1782650479.26426
 
 ## iOS Simulator App
 
-- app_path: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782641020.54193.app`
+- app_path: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782650479.26426.app`
 
 ## Install And Launch
 
 ```bash
-xcrun simctl install booted /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782641020.54193.app
-xcrun simctl launch booted com.DefaultCompany.NeonDrift.run.1782641020.54193
+xcrun simctl install booted /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782650479.26426.app
+xcrun simctl launch booted com.DefaultCompany.NeonDrift.run.1782650479.26426
 ```
 
 ## 必交付檔案
