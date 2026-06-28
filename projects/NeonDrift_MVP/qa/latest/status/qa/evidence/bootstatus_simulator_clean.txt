@@ -1,15 +1,33 @@
 Monitoring boot status for iPhone 17 Pro (CC47DE7A-8196-4465-A5A5-BB852C9C6C82).
-[2026-06-27 15:17:07 +0000] Status=2, isTerminal=NO, Elapsed=00:01.
+[2026-06-28 09:19:51 +0000] Status=2, isTerminal=NO, Elapsed=00:01.
 	Waiting on Data Migration
 		Reason:(null)
 		Migration Elapsed:00:00 seconds
 
-[2026-06-27 15:17:08 +0000] Status=4, isTerminal=NO, Elapsed=00:02.
+[2026-06-28 09:19:51 +0000] Status=4, isTerminal=NO, Elapsed=00:01.
 	Waiting on System App
 
-[2026-06-27 15:17:09 +0000] Status=4, isTerminal=NO, Elapsed=00:03.
+[2026-06-28 09:19:52 +0000] Status=4, isTerminal=NO, Elapsed=00:02.
 	Waiting on System App
 
-[2026-06-27 15:17:10 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:04.
+[2026-06-28 09:19:53 +0000] Status=4, isTerminal=NO, Elapsed=00:03.
+	Waiting on System App
+
+[2026-06-28 09:19:54 +0000] Status=4, isTerminal=NO, Elapsed=00:04.
+	Waiting on System App
+
+[2026-06-28 09:19:55 +0000] Status=4, isTerminal=NO, Elapsed=00:05.
+	Waiting on System App
+
+[2026-06-28 09:19:56 +0000] Status=4, isTerminal=NO, Elapsed=00:06.
+	Waiting on System App
+
+[2026-06-28 09:19:57 +0000] Status=4, isTerminal=NO, Elapsed=00:07.
+	Waiting on System App
+
+[2026-06-28 09:19:58 +0000] Status=4, isTerminal=NO, Elapsed=00:08.
+	Waiting on System App
+
+[2026-06-28 09:19:59 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:09.
 	Finished
 
