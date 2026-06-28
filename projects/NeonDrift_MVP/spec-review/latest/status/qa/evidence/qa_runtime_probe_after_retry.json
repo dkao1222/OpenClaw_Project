@@ -86,10 +86,10 @@
     "wave": 1,
     "combo": 7,
     "multiplier": 1,
-    "boostCharge": 0.0280523169785738,
+    "boostCharge": 0.028002137318253518,
     "currentLane": 0,
     "targetLane": 0,
-    "lateralVelocity": 1.0885942500752548e-15,
+    "lateralVelocity": 1.0904057359120766e-15,
     "driftDirection": "neutral",
     "trailState": "idle",
     "pickupCount": 0,
@@ -104,8 +104,8 @@
     "isGameOver": false,
     "isPaused": false,
     "hasStarted": true,
-    "gameplayTime": 0.8014947772026062,
+    "gameplayTime": 0.800061047077179,
     "minimumSurvivalSeconds": 6.0,
-    "framesPerSecond": 59.920841217041019,
+    "framesPerSecond": 60.00114822387695,
     "exceptionCount": 0
 }

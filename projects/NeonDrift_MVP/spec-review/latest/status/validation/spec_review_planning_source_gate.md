@@ -741,6 +741,108 @@
 - PASS planning_source_no_unsupported_generic_language:docs/design/Prototype_Flow_Canvas.html:immersive experience: immersive experience
 - PASS planning_source_no_unsupported_generic_language:docs/design/Prototype_Flow_Canvas.html:clear ui: clear ui
 - PASS planning_source_no_unsupported_generic_language:docs/design/Prototype_Flow_Canvas.html:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/prototype/Full_Flow_Prototype_Index.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Full_Flow_Prototype_Index.md
+- PASS planning_source_marker:docs/prototype/Full_Flow_Prototype_Index.md:Full Flow Visual Prototype: Full Flow Visual Prototype
+- PASS planning_source_marker:docs/prototype/Full_Flow_Prototype_Index.md:required_frames: required_frames
+- PASS planning_source_marker:docs/prototype/Full_Flow_Prototype_Index.md:13: 13
+- PASS planning_source_marker:docs/prototype/Full_Flow_Prototype_Index.md:Spec Review: Spec Review
+- PASS planning_source_marker:docs/prototype/Full_Flow_Prototype_Index.md:Development: Development
+- PASS planning_source_marker:docs/prototype/Full_Flow_Prototype_Index.md:QA: QA
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Full_Flow_Prototype_Index.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/prototype/Prototype_State_Map.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Prototype_State_Map.md
+- PASS planning_source_marker:docs/prototype/Prototype_State_Map.md:Prototype State Map: Prototype State Map
+- PASS planning_source_marker:docs/prototype/Prototype_State_Map.md:Frame: Frame
+- PASS planning_source_marker:docs/prototype/Prototype_State_Map.md:State: State
+- PASS planning_source_marker:docs/prototype/Prototype_State_Map.md:Required Review: Required Review
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_State_Map.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/prototype/Prototype_Interaction_Map.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Prototype_Interaction_Map.md
+- PASS planning_source_marker:docs/prototype/Prototype_Interaction_Map.md:Prototype Interaction Map: Prototype Interaction Map
+- PASS planning_source_marker:docs/prototype/Prototype_Interaction_Map.md:Start: Start
+- PASS planning_source_marker:docs/prototype/Prototype_Interaction_Map.md:Settings: Settings
+- PASS planning_source_marker:docs/prototype/Prototype_Interaction_Map.md:Left / Right: Left / Right
+- PASS planning_source_marker:docs/prototype/Prototype_Interaction_Map.md:Boost / Reward: Boost / Reward
+- PASS planning_source_marker:docs/prototype/Prototype_Interaction_Map.md:Retry: Retry
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Interaction_Map.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/prototype/Prototype_Visual_Lock.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Prototype_Visual_Lock.md
+- PASS planning_source_marker:docs/prototype/Prototype_Visual_Lock.md:Prototype Visual Lock: Prototype Visual Lock
+- PASS planning_source_marker:docs/prototype/Prototype_Visual_Lock.md:QA: QA
+- PASS planning_source_marker:docs/prototype/Prototype_Visual_Lock.md:simulator screenshots: simulator screenshots
+- PASS planning_source_marker:docs/prototype/Prototype_Visual_Lock.md:cannot pass: cannot pass
+- PASS planning_source_marker:docs/prototype/Prototype_Visual_Lock.md:placeholder: placeholder
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Visual_Lock.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/prototype/Prototype_Implementation_Handoff.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Prototype_Implementation_Handoff.md
+- PASS planning_source_marker:docs/prototype/Prototype_Implementation_Handoff.md:Prototype Implementation Handoff: Prototype Implementation Handoff
+- PASS planning_source_marker:docs/prototype/Prototype_Implementation_Handoff.md:Required Frames: Required Frames
+- PASS planning_source_marker:docs/prototype/Prototype_Implementation_Handoff.md:Development Rule: Development Rule
+- PASS planning_source_marker:docs/prototype/Prototype_Implementation_Handoff.md:QA Rule: QA Rule
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/Prototype_Implementation_Handoff.md:fast-paced: fast-paced
+- PASS required_planning_source_doc:docs/prototype/prototype_manifest.json: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/prototype_manifest.json
+- PASS planning_source_marker:docs/prototype/prototype_manifest.json:frames: frames
+- PASS planning_source_marker:docs/prototype/prototype_manifest.json:00_app_launch: 00_app_launch
+- PASS planning_source_marker:docs/prototype/prototype_manifest.json:01_main_menu: 01_main_menu
+- PASS planning_source_marker:docs/prototype/prototype_manifest.json:05_normal_gameplay: 05_normal_gameplay
+- PASS planning_source_marker:docs/prototype/prototype_manifest.json:12_pause_resume: 12_pause_resume
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:make it fun: make it fun
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:high quality: high quality
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:engaging gameplay: engaging gameplay
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:engaging loop: engaging loop
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:polished visual: polished visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:polished visuals: polished visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:rich visual: rich visual
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:rich visuals: rich visuals
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:immersive experience: immersive experience
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:clear ui: clear ui
+- PASS planning_source_no_unsupported_generic_language:docs/prototype/prototype_manifest.json:fast-paced: fast-paced
 - PASS required_planning_source_doc:docs/design/Moment_to_Moment_Gameplay.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Moment_to_Moment_Gameplay.md
 - PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:Moment-to-moment gameplay: Moment-to-moment gameplay
 - PASS planning_source_marker:docs/design/Moment_to_Moment_Gameplay.md:0-10 second playability timeline: 0-10 second playability timeline
