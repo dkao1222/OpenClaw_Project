@@ -1,4 +1,5 @@
 # Open Blockers
 
-- critical_blockers: none for Unity source package
-- platform_build_blocker: Unity Editor path not detected in this environment
+- critical_blockers: none
+- non_critical_risks: tune readability, input feel, and feedback timing during development
+- requires_user_confirmation: true
