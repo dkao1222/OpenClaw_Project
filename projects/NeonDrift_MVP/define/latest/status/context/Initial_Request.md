@@ -1,14 +1,17 @@
 # Initial Define Request
 
 project_name: NeonDrift_MVP
-define_page_id: 38db9e33-8429-81b5-b897-e761b8e74734
-define_run_id: notion-NeonDrift_MVP-define-20260628092633
-chain_id: raw:NeonDrift_MVP:20260628092620
+define_page_id: 38db9e33-8429-8178-8df4-c6c88acfc59c
+define_run_id: notion-NeonDrift_MVP-define-20260628123232
+chain_id: raw:NeonDrift_MVP:20260628123217
 
 ## Pipeline Request
 
 Normalize this raw idea into canonical product definition for the OpenClaw pipeline.
-Preserve the original idea. Do not invent a missing game concept; if a required product/game concept is unclear, keep the Define run blocked instead of allowing Planning to guess.
+Preserve the original idea. Do not invent a missing game concept as a confirmed fact; if a required product/game concept is unclear, keep it labeled as open question or candidate instead of allowing Planning to guess.
+Define may expand the idea, but only as Interpretation, Expansion Candidate, Assumption, or Recommended-not-confirmed direction.
+Every Expansion Candidate must include source cue, proposed direction, gameplay impact, visual/experience impact, risk, and decision status.
+Planning must compare or select candidates with rationale; candidates must not become confirmed requirements without user approval or explicit downstream decision evidence.
 Raw idea type: game
 Priority: high
 
@@ -19,11 +22,7 @@ The player goal is to survive as long as possible, collect boost cells, avoid ha
 The core gameplay is left/right drift control with visible vehicle movement, track motion, hazard approach, boost pickup, pulse drain, failure reason, pause, and retry.
 The game must be visually rich, immediately understandable, and deeper than a single static tap loop: clear objective, movement, scoring, hazards, boost/combo feedback, failure reason, pause, retry, and visible progression hooks.
 Planning and Spec Review must define visual richness, gameplay depth, iconography, fonts, background layers, effects, compatibility targets, QA gates, and local iOS simulator delivery before Development starts.
-Retry is accepted only when a human can see a clear transition from game-over to a fresh playable run: failure overlay removed, score/timer/run state reset, player/track motion resumes, and the after-retry screenshot/video differs from the game-over frame.
-Build must auto-start with Unity 6000.0.77f1 when the licensed local Unity Editor is available. QA must include simulator screenshots, playthrough video, button/touch layout checks, and every core gameplay function check.
-
-Game concept fields:
-Game Concept: Neon arcade drift runner: the player pilots a glowing hover car in a moving light tunnel,
+Retry is accepted only when a human can see a clear transition from game-over to a fresh playable run: failure overlay remo
 
 ## Raw Idea（原始想法）
 

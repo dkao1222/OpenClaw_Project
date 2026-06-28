@@ -11,6 +11,7 @@
 - PASS output_expectation_present: chars=540
 - PASS stage_range_supported: define-full
 - PASS product_experience_contract_defined: define watcher injects canonical game-foundation/playability/visual/audio/evidence contract
+- PASS idea_expansion_governance_defined: define watcher separates raw facts from candidate expansion and recommended-not-confirmed direction
 
 ## Result
 - status: passed
