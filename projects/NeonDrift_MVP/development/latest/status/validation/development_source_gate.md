@@ -338,6 +338,42 @@
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Boost: Boost
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Crash: Crash
 - PASS source_doc_marker:docs/design/Prototype_Flow_Canvas.html:Retry: Retry
+- PASS required_source_doc:docs/prototype/Full_Flow_Prototype_Index.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Full_Flow_Prototype_Index.md
+- PASS source_doc_marker:docs/prototype/Full_Flow_Prototype_Index.md:Full Flow Visual Prototype: Full Flow Visual Prototype
+- PASS source_doc_marker:docs/prototype/Full_Flow_Prototype_Index.md:required_frames: required_frames
+- PASS source_doc_marker:docs/prototype/Full_Flow_Prototype_Index.md:13: 13
+- PASS source_doc_marker:docs/prototype/Full_Flow_Prototype_Index.md:Spec Review: Spec Review
+- PASS source_doc_marker:docs/prototype/Full_Flow_Prototype_Index.md:Development: Development
+- PASS source_doc_marker:docs/prototype/Full_Flow_Prototype_Index.md:QA: QA
+- PASS required_source_doc:docs/prototype/Prototype_State_Map.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Prototype_State_Map.md
+- PASS source_doc_marker:docs/prototype/Prototype_State_Map.md:Prototype State Map: Prototype State Map
+- PASS source_doc_marker:docs/prototype/Prototype_State_Map.md:Frame: Frame
+- PASS source_doc_marker:docs/prototype/Prototype_State_Map.md:State: State
+- PASS source_doc_marker:docs/prototype/Prototype_State_Map.md:Required Review: Required Review
+- PASS required_source_doc:docs/prototype/Prototype_Interaction_Map.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Prototype_Interaction_Map.md
+- PASS source_doc_marker:docs/prototype/Prototype_Interaction_Map.md:Prototype Interaction Map: Prototype Interaction Map
+- PASS source_doc_marker:docs/prototype/Prototype_Interaction_Map.md:Start: Start
+- PASS source_doc_marker:docs/prototype/Prototype_Interaction_Map.md:Settings: Settings
+- PASS source_doc_marker:docs/prototype/Prototype_Interaction_Map.md:Left / Right: Left / Right
+- PASS source_doc_marker:docs/prototype/Prototype_Interaction_Map.md:Boost / Reward: Boost / Reward
+- PASS source_doc_marker:docs/prototype/Prototype_Interaction_Map.md:Retry: Retry
+- PASS required_source_doc:docs/prototype/Prototype_Visual_Lock.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Prototype_Visual_Lock.md
+- PASS source_doc_marker:docs/prototype/Prototype_Visual_Lock.md:Prototype Visual Lock: Prototype Visual Lock
+- PASS source_doc_marker:docs/prototype/Prototype_Visual_Lock.md:QA: QA
+- PASS source_doc_marker:docs/prototype/Prototype_Visual_Lock.md:simulator screenshots: simulator screenshots
+- PASS source_doc_marker:docs/prototype/Prototype_Visual_Lock.md:cannot pass: cannot pass
+- PASS source_doc_marker:docs/prototype/Prototype_Visual_Lock.md:placeholder: placeholder
+- PASS required_source_doc:docs/prototype/Prototype_Implementation_Handoff.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/Prototype_Implementation_Handoff.md
+- PASS source_doc_marker:docs/prototype/Prototype_Implementation_Handoff.md:Prototype Implementation Handoff: Prototype Implementation Handoff
+- PASS source_doc_marker:docs/prototype/Prototype_Implementation_Handoff.md:Required Frames: Required Frames
+- PASS source_doc_marker:docs/prototype/Prototype_Implementation_Handoff.md:Development Rule: Development Rule
+- PASS source_doc_marker:docs/prototype/Prototype_Implementation_Handoff.md:QA Rule: QA Rule
+- PASS required_source_doc:docs/prototype/prototype_manifest.json: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/prototype/prototype_manifest.json
+- PASS source_doc_marker:docs/prototype/prototype_manifest.json:frames: frames
+- PASS source_doc_marker:docs/prototype/prototype_manifest.json:00_app_launch: 00_app_launch
+- PASS source_doc_marker:docs/prototype/prototype_manifest.json:01_main_menu: 01_main_menu
+- PASS source_doc_marker:docs/prototype/prototype_manifest.json:05_normal_gameplay: 05_normal_gameplay
+- PASS source_doc_marker:docs/prototype/prototype_manifest.json:12_pause_resume: 12_pause_resume
 - PASS required_source_doc:docs/design/Moment_to_Moment_Gameplay.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Moment_to_Moment_Gameplay.md
 - PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:Moment-to-moment gameplay: Moment-to-moment gameplay
 - PASS source_doc_marker:docs/design/Moment_to_Moment_Gameplay.md:0-10 second playability timeline: 0-10 second playability timeline
