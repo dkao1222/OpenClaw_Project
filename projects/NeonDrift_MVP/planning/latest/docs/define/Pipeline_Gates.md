@@ -3,6 +3,8 @@
 ## Gate Rules
 
 - Define must finish with Validation Status = Passed before Planning starts.
+- Define cannot pass if invented product facts are mixed into Confirmed Requirements without being labeled as Interpretation, Assumption, Candidate, or Recommended-not-confirmed.
+- Define can pass with creative expansion only when each expansion is listed under Expansion Candidates with source cue, impact, risk, and decision status.
 - Planning must finish with Validation Status = Passed before Spec Review starts.
 - Spec Review must finish with Validation Status = Passed before Development starts.
 - Development must finish with Validation Status = Passed before Build monitoring starts.
@@ -20,6 +22,16 @@
 - compatibility_target: iOS-first Unity 6000.0.77f1, local iOS simulator build, safe-area aware controls, readable on common iPhone portrait screens, performance suitable for mid-range iOS devices.
 - local_unity_build: manual start, watcher monitors only
 - git_publish: enabled when pipeline status is Passed
+
+## Idea Expansion Governance
+
+Define Idea Expansion Governance:
+- Define may expand a raw idea only as labeled interpretation, assumption, candidate, or recommended-not-confirmed direction.
+- Define must not promote invented gameplay, genre, story, platform, monetization, visual direction, success metric, or target audience into Confirmed Requirements unless the Raw Idea explicitly states it.
+- Every Expansion Candidate must include: source cue from Raw Idea, proposed product/game direction, why it fits, gameplay impact, visual/experience impact, risk, and decision status.
+- Recommended Direction is allowed, but it must be labeled Recommended, not confirmed.
+- Planning may use candidates for comparison and synthesis, but must keep the candidate provenance visible in planning documents and handoffs.
+- If Raw Idea is too thin, Define should still provide candidate directions, but Planning must mark the selected direction as assumption-backed instead of confirmed.
 
 ## Product Experience Contract
 
