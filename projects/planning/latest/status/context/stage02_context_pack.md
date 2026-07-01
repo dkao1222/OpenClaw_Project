@@ -1,0 +1,64 @@
+# Stage 02 Context Pack
+
+## product goal
+
+NeonDrift MVP targets a mobile-first arcade drift loop: enter a short neon track, steer with one-finger touch, drift through readable turns, score clean lines, and restart immediately after failure or finish.
+
+## target user
+
+Players age 16-35 who want short high-feedback racing sessions, clear mastery signals, stylish neon presentation, and controls that feel usable within the first minute on iPhone and Android phones.
+
+## MVP scope
+
+- Core loop: launch race, steer, drift, score, finish or crash, restart within two taps.
+- Product surface: mobile UI, simple progression, local metrics hooks, Unity 6000.0.77f1 direction, and compatibility notes for mid-range devices.
+
+## non-goals
+
+- Multiplayer, account system, live operations, large car roster, external controller support, and long narrative campaign.
+- Final monetization tuning, store submission copy, and production art pipeline beyond planning handoff requirements.
+
+## locked decisions
+
+- Mobile-first Unity project direction is locked to Unity 6000.0.77f1.
+- Preserve short-session readability, touch-first controls, fast restart, and concrete downstream documents.
+- Mobile UX, icons, device compatibility, privacy, ads, and local build readiness remain required review topics.
+
+## open questions
+
+- Downstream validation must tune drift, scoring, per-device frame targets, and ad timing.
+- Spec review must confirm UI/icon sizes, contrast, safe areas, and platform compliance.
+
+## source paths
+
+- docs/planning/Game_Proposal.md
+- docs/planning/proposal/High_Concept.md
+- docs/planning/proposal/Game_Screen_Outline.md
+- docs/planning/proposal/First_10_Seconds.md
+- docs/planning/proposal/Primary_Objects_and_Rules.md
+- docs/planning/proposal/Failure_Retry_and_Progress.md
+- docs/planning/proposal/MVP_Boundary_and_Success.md
+- docs/planning/Game_Objective.md
+- docs/planning/One_Page_Game_Concept.md
+- docs/planning/concept/Product_Vision_and_Audience.md
+- docs/planning/concept/Core_Value_and_MVP_Summary.md
+- docs/planning/concept/Experience_Promise.md
+- docs/planning/Core_Gameplay_Loop.md
+- docs/planning/core_loop/Loop_Timeline.md
+- docs/planning/core_loop/Player_Actions.md
+- docs/planning/core_loop/Feedback_Rhythm.md
+- docs/planning/core_loop/Failure_Return.md
+- docs/planning/Player_Interaction_Model.md
+- docs/planning/Gameplay_Depth_Target.md
+- docs/planning/Visual_Richness_Target.md
+- docs/planning/Planning_Output_Quality_Bar.md
+- docs/planning/MVP_Hypothesis.md
+- docs/planning/hypothesis/Risk_Hypotheses.md
+- docs/planning/hypothesis/Validation_Methods.md
+- docs/planning/hypothesis/Success_Metrics.md
+- docs/planning/hypothesis/Decision_Rules.md
+- docs/planning/Platform_Direction.md
+- docs/planning/platform/Device_Compatibility_Targets.md
+- docs/planning/platform/Input_and_Safe_Area_Model.md
+- docs/planning/platform/Build_and_QA_Environment.md
+- docs/product/MVP_PRD.md

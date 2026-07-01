@@ -1,0 +1,82 @@
+{
+  "frames": [
+    {
+      "id": "00_app_launch",
+      "title": "App Launch",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/00_app_launch.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/00_app_launch.svg"
+    },
+    {
+      "id": "01_main_menu",
+      "title": "Main Menu",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/01_main_menu.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/01_main_menu.svg"
+    },
+    {
+      "id": "02_settings",
+      "title": "Settings",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/02_settings.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/02_settings.svg"
+    },
+    {
+      "id": "03_first_run_tutorial",
+      "title": "First Run Tutorial",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/03_first_run_tutorial.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/03_first_run_tutorial.svg"
+    },
+    {
+      "id": "04_gameplay_start",
+      "title": "Gameplay Start",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/04_gameplay_start.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/04_gameplay_start.svg"
+    },
+    {
+      "id": "05_normal_gameplay",
+      "title": "Normal Gameplay",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/05_normal_gameplay.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/05_normal_gameplay.svg"
+    },
+    {
+      "id": "06_boost_reward",
+      "title": "Boost / Reward",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/06_boost_reward.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/06_boost_reward.svg"
+    },
+    {
+      "id": "07_danger_near_miss",
+      "title": "Danger / Near Miss",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/07_danger_near_miss.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/07_danger_near_miss.svg"
+    },
+    {
+      "id": "08_collision_failure",
+      "title": "Collision / Failure",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/08_collision_failure.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/08_collision_failure.svg"
+    },
+    {
+      "id": "09_game_over",
+      "title": "Game Over",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/09_game_over.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/09_game_over.svg"
+    },
+    {
+      "id": "10_retry",
+      "title": "Retry",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/10_retry.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/10_retry.svg"
+    },
+    {
+      "id": "11_post_retry_gameplay",
+      "title": "Post-Retry Gameplay",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/11_post_retry_gameplay.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/11_post_retry_gameplay.svg"
+    },
+    {
+      "id": "12_pause_resume",
+      "title": "Pause / Resume",
+      "png": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames/12_pause_resume.png",
+      "svg": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/Untitled_Project/project/docs/prototype/frames_svg/12_pause_resume.svg"
+    }
+  ]
+}
