@@ -3,24 +3,24 @@
 ## 繁體中文
 
 - 專案: NeonDrift_MVP
-- run_id: notion-NeonDrift_MVP-qa-qa-full-20260711070530
-- 交付狀態: blocked
-- QA 狀態: failed
-- Release candidate: blocked
+- run_id: notion-NeonDrift_MVP-qa-qa-full-20260711071316
+- 交付狀態: ready
+- QA 狀態: passed
+- Release candidate: ready
 - checks_total: 151
-- checks_failed: 2
+- checks_failed: 0
 - checks_blocked: 0
-- bundle_id: com.DefaultCompany.NeonDrift.run.1783753443.20835
+- bundle_id: com.DefaultCompany.NeonDrift.run.1783753904.26332
 
 ## iOS Simulator App
 
-- app_path: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753443.20835.app`
+- app_path: `/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753904.26332.app`
 
 ## Install And Launch
 
 ```bash
-xcrun simctl install booted /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753443.20835.app
-xcrun simctl launch booted com.DefaultCompany.NeonDrift.run.1783753443.20835
+xcrun simctl install booted /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753904.26332.app
+xcrun simctl launch booted com.DefaultCompany.NeonDrift.run.1783753904.26332
 ```
 
 ## 必交付檔案
@@ -42,9 +42,8 @@ xcrun simctl launch booted com.DefaultCompany.NeonDrift.run.1783753443.20835
 
 ## Required Fixes
 
-- qa_retry_restarts_gameplay_gate: retryRestartsGameplayVerified=True, RetryRestartsGameplay=True, RawRetryRestartsMovingGameplay=False, gameOverToRetryChanged=True, retryVisualStateVisible=True.
-- qa_common_sense_veto_gate: commonSenseVetoFailures=qa_retry_restarts_gameplay_gate=FAIL; dependencyStatuses={'qa_menu_human_readability_gate': 'PASS', 'qa_game_over_visual_state_gate': 'PASS', 'qa_retry_visual_recovery_gate': 'PASS', 'qa_retry_live_motion_after_retry_gate': 'PASS', 'qa_non_placeholder_visual_richness_gate': 'PASS', 'qa_gameplay_depth_quality_gate': 'PASS', 'qa_actual_gameplay_quality_gate': 'PASS', 'qa_human_interaction_quality_gate': 'PASS', 'qa_visual_richness_quality_gate': 'PASS', 'qa_first_run_gameplay_comprehension_gate': 'PASS', 'qa_game_system_design_gate': 'PASS', 'qa_retry_restarts_gameplay_gate': 'FAIL', 'qa_audio_feedback_gate': 'PASS', 'qa_ui_state_isolation_gate': 'PASS', 'qa_human_visual_judgement_gate': 'PASS', 'qa_product_experience_gate': 'PASS', 'qa_style_frame_implementation_gate': 'PASS'}.
+- 無
 
 ## English Summary
 
-Delivery status is blocked. QA status is failed; release candidate status is blocked.
+Delivery status is ready. QA status is passed; release candidate status is ready.

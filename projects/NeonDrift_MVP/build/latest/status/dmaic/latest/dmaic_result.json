@@ -1,63 +1,33 @@
 {
-  "status": "failed",
-  "run_id": "notion-NeonDrift_MVP-dmaic-20260711070759",
+  "status": "passed",
+  "run_id": "notion-NeonDrift_MVP-dmaic-20260711072051",
   "project_name": "NeonDrift_MVP",
   "chain_id": "raw:NeonDrift_MVP:20260711061938",
   "source_pipeline": "qa",
-  "source_page_id": "39ab9e33-8429-8194-870e-f7f5343e47b3",
-  "project_folder": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project",
+  "source_page_id": "39ab9e33-8429-810d-8ba8-de29df66fd58",
+  "project_folder": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project",
   "checks_total": 12,
-  "checks_failed": 1,
-  "failed_checks": [
-    {
-      "label": "qa_failure_signals_resolved",
-      "passed": false,
-      "existing_paths": [
-        "status/qa/full_qa_report.md",
-        "status/validation/qa_full_validation.md",
-        "status/qa/qa_result.json"
-      ],
-      "missing_paths": [],
-      "missing_markers": [],
-      "detail": "5 QA failure signals require remediation"
-    }
-  ],
+  "checks_failed": 0,
+  "failed_checks": [],
   "opdca_cycle": {
     "observe": "Collect completed pipeline state, generated files, Notion row metadata, QA evidence, and validation reports.",
-    "plan": "Route to DMAIC root-cause analysis because one or more OPDCA checks failed.",
+    "plan": "Keep the completed pipeline under Control monitoring; no corrective row is required.",
     "do": "Run OPDCA evidence checks and DMAIC quality analysis for source pipeline 'qa'.",
-    "check": "1 failed checks detected.",
-    "act": "Create remediation row targeting development and require concrete runtime/product evidence before passing."
+    "check": "All OPDCA/DMAIC checks passed.",
+    "act": "Close the loop as control monitoring; do not create remediation."
   },
   "root_causes": [
     {
-      "category": "product_experience_gap",
-      "target": "development",
-      "reason": "Runtime product experience is not human-readable enough; this requires implementation changes, not only QA rerun."
-    },
-    {
-      "category": "retry_runtime_motion_gap",
-      "target": "development",
-      "reason": "Retry leaves failure state but does not provide verified live gameplay motion after retry."
-    },
-    {
-      "category": "human_product_experience_gate_failed",
-      "target": "development",
-      "reason": "QA common-sense/product-experience gates failed; implementation and evidence must be improved before release."
+      "category": "control_monitoring",
+      "target": "control",
+      "reason": "No failed DMAIC checks; keep monitoring regression signals."
     }
   ],
-  "remediation_target": "development",
-  "remediation_request": "DMAIC remediation target: development\n\nRoot causes:\n- product_experience_gap: Runtime product experience is not human-readable enough; this requires implementation changes, not only QA rerun.\n- retry_runtime_motion_gap: Retry leaves failure state but does not provide verified live gameplay motion after retry.\n- human_product_experience_gate_failed: QA common-sense/product-experience gates failed; implementation and evidence must be improved before release.\n\nRequired correction:\n- Do not mark the remediation passed unless generated runtime/product evidence directly resolves the listed root causes.\n- Preserve the Chain ID and source DMAIC report for traceability.\n- If returning to Development, fix implementation, visual readability, gameplay playability, runtime QA probe/evidence, and retry/menu/gameplay states before Build.\n- If returning to QA, rerun simulator QA and produce screenshots, video/recording evidence, raw evidence JSON, and human product-experience checks.\n\nObserved QA failure signals:\n- | qa_retry_restarts_gameplay_gate | Gameplay | FAIL | retryRestartsGameplayVerified=True, RetryRestartsGameplay=True, RawRetryRestartsMovingGameplay=False, gameOverToRetryChanged=True, retryVisualStateVisible=True. | /home/node/.openclaw/wo\n- | qa_common_sense_veto_gate | UI/UX | FAIL | commonSenseVetoFailures=qa_retry_restarts_gameplay_gate=FAIL; dependencyStatuses={'qa_menu_human_readability_gate': 'PASS', 'qa_game_over_visual_state_gate': 'PASS', 'qa_retry_visual_recovery_gat\n- - status: failed\n- - qa_overall_status: failed\n- \"expected\": \"QA must fail whenever the product feels unreasonable to a human: confusing gameplay, inert motion, unclear objective, unclear controls, weak visual feedback, overlapping states, placeholder visuals, missing audio/feedback evide",
-  "qa_failures": [
-    "| qa_retry_restarts_gameplay_gate | Gameplay | FAIL | retryRestartsGameplayVerified=True, RetryRestartsGameplay=True, RawRetryRestartsMovingGameplay=False, gameOverToRetryChanged=True, retryVisualStateVisible=True. | /home/node/.openclaw/wo",
-    "| qa_common_sense_veto_gate | UI/UX | FAIL | commonSenseVetoFailures=qa_retry_restarts_gameplay_gate=FAIL; dependencyStatuses={'qa_menu_human_readability_gate': 'PASS', 'qa_game_over_visual_state_gate': 'PASS', 'qa_retry_visual_recovery_gat",
-    "- status: failed",
-    "- qa_overall_status: failed",
-    "\"expected\": \"QA must fail whenever the product feels unreasonable to a human: confusing gameplay, inert motion, unclear objective, unclear controls, weak visual feedback, overlapping states, placeholder visuals, missing audio/feedback evide"
-  ],
+  "remediation_target": "none",
+  "remediation_request": "No remediation row required. Continue OPDCA Control monitoring.",
+  "qa_failures": [],
   "recommendations": [
-    "Return to QA/Development loop: require simulator video, screenshots, product experience, human visual judgement, and every core gameplay function evidence.",
-    "Create remediation Notion row targeting development; do not stop at reporting."
+    "Keep OPDCA Act/Control monitoring active: monitor future rows for regressions, duplicate queue rows, missing chain IDs, and QA evidence gaps."
   ],
-  "created_at": "2026-07-11T07:08:00.993165+00:00"
+  "created_at": "2026-07-11T07:20:51.760637+00:00"
 }
