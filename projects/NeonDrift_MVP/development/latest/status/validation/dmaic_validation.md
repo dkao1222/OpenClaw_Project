@@ -17,4 +17,4 @@
 - PASS qa_hard_gates_present: passed
 - PASS qa_runtime_evidence_artifacts_present: passed
 - PASS pipeline_chain_continuity: passed
-- FAIL qa_failure_signals_resolved: 12 QA failure signals require remediation
+- FAIL qa_failure_signals_resolved: 5 QA failure signals require remediation
