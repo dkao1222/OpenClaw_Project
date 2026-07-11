@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "run_id": "notion-NeonDrift_MVP-dmaic-20260630165657",
+  "project_name": "NeonDrift_MVP",
+  "chain_id": "raw:NeonDrift_MVP:20260630164903",
+  "source_pipeline": "qa",
+  "source_page_id": "38fb9e33-8429-81a3-a903-cb32ce91c5b1",
+  "project_folder": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project",
+  "checks_total": 11,
+  "checks_failed": 0,
+  "failed_checks": [],
+  "opdca_cycle": {
+    "observe": "Collect completed pipeline state, generated files, Notion row metadata, QA evidence, and validation reports.",
+    "plan": "Keep the completed pipeline under Control monitoring; no corrective row is required.",
+    "do": "Run OPDCA evidence checks and DMAIC quality analysis for source pipeline 'qa'.",
+    "check": "All OPDCA/DMAIC checks passed.",
+    "act": "Close the loop as control monitoring; do not create remediation."
+  },
+  "root_causes": [
+    {
+      "category": "control_monitoring",
+      "target": "control",
+      "reason": "No failed DMAIC checks; keep monitoring regression signals."
+    }
+  ],
+  "remediation_target": "none",
+  "remediation_request": "No remediation row required. Continue OPDCA Control monitoring.",
+  "qa_failures": [
+    "| qa_retry_live_motion_after_retry_gate | Gameplay | FAIL | retryProbePresent=True, retryLiveProbePresent=False, retryScreenState='gameplay', retryLiveScreenState=None, retryGameplayTime=0.8160363435745239, retryLiveGameplayTime=None, retry",
+    "| qa_retry_restarts_gameplay_gate | Gameplay | FAIL | retryRestartsGameplayVerified=True, RetryRestartsGameplay=True, RawRetryRestartsMovingGameplay=False, gameOverToRetryChanged=True, retryVisualStateVisible=True. | /home/node/.openclaw/wo",
+    "| qa_human_visual_judgement_gate | Visual | FAIL | videoExists=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, retryLiveScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChange",
+    "| qa_product_experience_gate | Gameplay | FAIL | menuLayoutVerified=True, menuElementsDoNotOverlap=True, gameplayHudHiddenInMenu=True, gameplayControlsHiddenInMenu=True, menuHumanReadable=True, hasObjectiveText=True, hasAvoidInstructionText",
+    "| qa_common_sense_veto_gate | UI/UX | FAIL | commonSenseVetoFailures=qa_retry_live_motion_after_retry_gate=FAIL, qa_retry_restarts_gameplay_gate=FAIL, qa_human_visual_judgement_gate=FAIL, qa_product_experience_gate=FAIL; dependencyStatuses=",
+    "- status: failed",
+    "- qa_overall_status: failed",
+    "\"expected\": \"QA must fail whenever the product feels unreasonable to a human: confusing gameplay, inert motion, unclear objective, unclear controls, weak visual feedback, overlapping states, placeholder visuals, missing audio/feedback evide"
+  ],
+  "recommendations": [
+    "Return to QA/Development loop: require simulator video, screenshots, product experience, human visual judgement, and every core gameplay function evidence."
+  ],
+  "created_at": "2026-06-30T16:56:58.160695+00:00"
+}

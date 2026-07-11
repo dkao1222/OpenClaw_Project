@@ -2,6 +2,7 @@
 
 project_name: NeonDrift_MVP
 generator: scripts/generate_game_icon_assets.py
+image_generation_model: x/z-image-turbo
 
 ## Checks
 - PASS assets/icons/app_icon_1024.png: 1024x1024

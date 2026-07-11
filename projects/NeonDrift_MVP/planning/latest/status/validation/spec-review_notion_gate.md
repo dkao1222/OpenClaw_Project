@@ -2,9 +2,9 @@
 
 - status: passed
 - pipeline: spec-review
-- run_id: notion-NeonDrift_MVP-spec-review-review-full-20260628092710
+- run_id: notion-NeonDrift_MVP-spec-review-review-full-20260711060953
 - source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/planning/handoff_to_spec_review.md
-- checks_total: 11
+- checks_total: 15
 - checks_failed: 0
 
 ## Checks
@@ -20,3 +20,7 @@
 - PASS required_source_doc_docs_design_Prototype_Flow_Canvas.html: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Prototype_Flow_Canvas.html
 - PASS required_source_doc_docs_design_Game_Systems_Overview.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Systems_Overview.md
 - PASS required_source_doc_docs_design_Game_Design_Document.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/design/Game_Design_Document.md
+- PASS source_evidence_source_card_id_present: source_card_id required when research/external references are used
+- PASS source_evidence_license_terms_present: license_or_terms required when research/external references are used
+- PASS source_evidence_usage_risk_present: usage_risk required when research/external references are used
+- PASS source_evidence_do_not_use_directly_present: do_not_use_directly required to prevent copying unverified sources/assets
