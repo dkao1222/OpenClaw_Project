@@ -191,6 +191,38 @@ public sealed class NeonDriftPlayModeTests
     }
 
     [Test]
+    public void RawRetryRestartsMovingGameplay()
+    {
+        SceneManager.LoadScene("Main");
+        InvokeRuntimeBootstrap();
+        Type uiActionsType = FindType("NeonDriftUiActions");
+        Type sessionType = FindType("GameSessionController");
+        Type probeType = FindType("RuntimeQaProbe");
+        Assert.IsNotNull(uiActionsType);
+        Assert.IsNotNull(sessionType);
+        Assert.IsNotNull(probeType);
+
+        UnityEngine.Object uiActions = UnityEngine.Object.FindObjectOfType(uiActionsType);
+        UnityEngine.Object session = UnityEngine.Object.FindObjectOfType(sessionType);
+        Assert.IsNotNull(uiActions);
+        Assert.IsNotNull(session);
+
+        uiActionsType.GetMethod("StartGame").Invoke(uiActions, null);
+        sessionType.GetMethod("GameOver").Invoke(session, new object[] { "qa_retry_test" });
+        uiActionsType.GetMethod("Retry").Invoke(uiActions, null);
+
+        bool started = (bool)sessionType.GetProperty("HasStarted").GetValue(session);
+        bool gameOver = (bool)sessionType.GetProperty("IsGameOver").GetValue(session);
+        string json = (string)probeType.GetMethod("CaptureJson", BindingFlags.Static | BindingFlags.Public).Invoke(null, null);
+
+        Assert.IsTrue(started);
+        Assert.IsFalse(gameOver);
+        Assert.AreEqual(1f, Time.timeScale);
+        Assert.That(json, Does.Contain("\"screenState\": \"gameplay\""));
+        Assert.That(json, Does.Contain("\"retryRestartsGameplayVerified\": true"));
+    }
+
+    [Test]
     public void EarlyGameOverIsProtected()
     {
         SceneManager.LoadScene("Main");
