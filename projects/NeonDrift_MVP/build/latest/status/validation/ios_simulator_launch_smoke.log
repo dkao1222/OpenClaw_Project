@@ -1,44 +1,18 @@
-Selected simulator: iPhone 17 Pro (CC47DE7A-8196-4465-A5A5-BB852C9C6C82) state=Shutdown
+Selected simulator: iPhone 17 Pro (CC47DE7A-8196-4465-A5A5-BB852C9C6C82) state=Booted
 $ xcrun simctl boot CC47DE7A-8196-4465-A5A5-BB852C9C6C82
+
+STDERR:
+An error was encountered processing the command (domain=com.apple.CoreSimulator.SimError, code=405):
+Unable to boot device in current state: Booted
 
 $ xcrun simctl bootstatus CC47DE7A-8196-4465-A5A5-BB852C9C6C82 -b
 Monitoring boot status for iPhone 17 Pro (CC47DE7A-8196-4465-A5A5-BB852C9C6C82).
-[2026-07-11 06:24:02 +0000] Status=2, isTerminal=NO, Elapsed=00:01.
-	Waiting on Data Migration
-		Reason:(null)
-		Migration Elapsed:00:00 seconds
-
-[2026-07-11 06:24:02 +0000] Status=4, isTerminal=NO, Elapsed=00:01.
-	Waiting on System App
-
-[2026-07-11 06:24:02 +0000] Status=4, isTerminal=NO, Elapsed=00:02.
-	Waiting on System App
-
-[2026-07-11 06:24:03 +0000] Status=4, isTerminal=NO, Elapsed=00:03.
-	Waiting on System App
-
-[2026-07-11 06:24:04 +0000] Status=4, isTerminal=NO, Elapsed=00:04.
-	Waiting on System App
-
-[2026-07-11 06:24:05 +0000] Status=4, isTerminal=NO, Elapsed=00:05.
-	Waiting on System App
-
-[2026-07-11 06:24:06 +0000] Status=4, isTerminal=NO, Elapsed=00:06.
-	Waiting on System App
-
-[2026-07-11 06:24:07 +0000] Status=4, isTerminal=NO, Elapsed=00:07.
-	Waiting on System App
-
-[2026-07-11 06:24:08 +0000] Status=4, isTerminal=NO, Elapsed=00:08.
-	Waiting on System App
-
-[2026-07-11 06:24:09 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:09.
-	Finished
+Device already booted, nothing to do.
 
 
-$ xcrun simctl install CC47DE7A-8196-4465-A5A5-BB852C9C6C82 /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app
+$ xcrun simctl install CC47DE7A-8196-4465-A5A5-BB852C9C6C82 /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753118.17777.app
 
-$ xcrun simctl launch --terminate-running-process CC47DE7A-8196-4465-A5A5-BB852C9C6C82 com.DefaultCompany.NeonDrift
-com.DefaultCompany.NeonDrift: 66642
+$ xcrun simctl launch --terminate-running-process CC47DE7A-8196-4465-A5A5-BB852C9C6C82 com.DefaultCompany.NeonDrift.run.1783753118.17777
+com.DefaultCompany.NeonDrift.run.1783753118.17777: 18568
 
-Launch smoke passed for com.DefaultCompany.NeonDrift; app=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app
+Launch smoke passed for com.DefaultCompany.NeonDrift.run.1783753118.17777; app=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753118.17777.app

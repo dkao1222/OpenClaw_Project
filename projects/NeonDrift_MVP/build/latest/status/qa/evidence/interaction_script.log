@@ -1,0 +1,37 @@
+QA playthrough script:
+1. write qa_playthrough.flag into simulator app data container
+2. launch app with -qaPlaythrough fallback arg
+3. record at least 3 complete playthrough cycles
+4. each cycle duration budget is 20.0s based on design/runtime evidence
+5. each cycle captures menu, gameplay, game-over, after-retry, and after-retry-live evidence
+6. QA cannot pass if only the first 10 seconds or a single attempt is recorded
+stale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/3F957276-4B2D-4BD8-82CA-91E75FF456AD/Documents/qa_runtime_probe_menu.json
+stale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/3F957276-4B2D-4BD8-82CA-91E75FF456AD/Documents/qa_runtime_probe_gameplay.json
+stale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/3F957276-4B2D-4BD8-82CA-91E75FF456AD/Documents/qa_runtime_probe_game_over.json
+stale_probe_removed=/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/3F957276-4B2D-4BD8-82CA-91E75FF456AD/Documents/qa_runtime_probe_after_retry.json
+qa_playthrough_flag_targets=['/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/3F957276-4B2D-4BD8-82CA-91E75FF456AD/Documents/qa_playthrough.flag', '/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/3F957276-4B2D-4BD8-82CA-91E75FF456AD/qa_playthrough.flag']
+cycle_1: launch_exit=0
+cycle_1_menu: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png
+cycle_1_menu_screenshot_readability_retry: exit=0, metrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 84.593, 'dark_ratio': 0.3721, 'bright_ratio': 0.3847, 'very_bright_ratio': 0.1904, 'saturated_color_ratio': 0.4756, 'color_bucket_count': 59}
+cycle_1_gameplay: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png
+cycle_1_game_over: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png
+cycle_1_after_retry: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png
+cycle_1_after_retry_live: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry_live.png
+cycle_2: launch_exit=0
+cycle_2_menu: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_menu.png
+cycle_2_menu_screenshot_readability_retry: exit=0, metrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 84.593, 'dark_ratio': 0.3721, 'bright_ratio': 0.3847, 'very_bright_ratio': 0.1904, 'saturated_color_ratio': 0.4756, 'color_bucket_count': 59}
+cycle_2_gameplay: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_gameplay.png
+cycle_2_game_over: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_game_over.png
+cycle_2_after_retry: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry.png
+cycle_2_after_retry_live: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry_live.png
+cycle_3: launch_exit=0
+cycle_3_menu: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_menu.png
+cycle_3_menu_screenshot_readability_retry: exit=0, metrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 84.593, 'dark_ratio': 0.3721, 'bright_ratio': 0.3847, 'very_bright_ratio': 0.1904, 'saturated_color_ratio': 0.4756, 'color_bucket_count': 59}
+cycle_3_gameplay: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_gameplay.png
+cycle_3_game_over: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_game_over.png
+cycle_3_after_retry: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry.png
+cycle_3_after_retry_live: exit=0, path=/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry_live.png
+record_video_recovery: ok=True, detail=target_video_ok bytes=12401732
+runtime_probe_menu: copied fresh probe /Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/3F957276-4B2D-4BD8-82CA-91E75FF456AD/Documents/qa_runtime_probe_menu.json -> /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_menu.json mtime=1783752754.672
+runtime_probe: copied fresh probe /Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/3F957276-4B2D-4BD8-82CA-91E75FF456AD/Documents/qa_runtime_probe_gameplay.json -> /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_gameplay.json mtime=1783752761.272
+runtime_probe_game_over: copied fresh probe /Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/3F957276-4B2D-4BD8-82CA-91E75FF456AD/Documents/qa_runtime_probe_game_over.json -> /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_game_over.json mtime=1783752765.488
