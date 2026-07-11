@@ -1,193 +1,70 @@
 {
   "status": "failed",
-  "run_id": "notion-NeonDrift_MVP-dmaic-20260711061905",
+  "run_id": "notion-NeonDrift_MVP-dmaic-20260711065421",
   "project_name": "NeonDrift_MVP",
-  "chain_id": "raw:NeonDrift_MVP:20260711060852",
-  "source_pipeline": "development",
-  "source_page_id": "39ab9e33-8429-81fe-8f9a-f37d15ab6549",
+  "chain_id": "raw:NeonDrift_MVP:20260711061938",
+  "source_pipeline": "qa",
+  "source_page_id": "39ab9e33-8429-8176-a802-fc17ec83bb5b",
   "project_folder": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project",
   "checks_total": 12,
-  "checks_failed": 10,
+  "checks_failed": 1,
   "failed_checks": [
     {
-      "label": "raw_idea_defined",
+      "label": "qa_failure_signals_resolved",
       "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
-        "status/context/Raw_Idea.md"
-      ],
-      "missing_markers": [
-        "Game Concept",
-        "Core Gameplay",
-        "Success Criteria"
-      ],
-      "detail": "status/context/Raw_Idea.md; marker:Game Concept; marker:Core Gameplay; marker:Success Criteria"
-    },
-    {
-      "label": "define_contract_present",
-      "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
-        "docs/define/Defined_Request.md"
-      ],
-      "missing_markers": [
-        "Product Experience Contract",
-        "Human Playability",
-        "Visual Richness"
-      ],
-      "detail": "docs/define/Defined_Request.md; marker:Product Experience Contract; marker:Human Playability; marker:Visual Richness"
-    },
-    {
-      "label": "planning_depth_present",
-      "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
-        "docs/planning/Game_Proposal.md",
-        "docs/planning/proposal/Primary_Objects_and_Rules.md"
-      ],
-      "missing_markers": [
-        "First 10",
-        "hazard",
-        "boost",
-        "retry"
-      ],
-      "detail": "docs/planning/Game_Proposal.md; docs/planning/proposal/Primary_Objects_and_Rules.md; marker:First 10; marker:hazard; marker:boost; marker:retry"
-    },
-    {
-      "label": "spec_review_actionable",
-      "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
-        "docs/review/Gameplay_Detail_Spec.md",
-        "docs/review/Control_System_Detail_Spec.md"
-      ],
-      "missing_markers": [
-        "input",
-        "state",
-        "QA",
-        "acceptance"
-      ],
-      "detail": "docs/review/Gameplay_Detail_Spec.md; docs/review/Control_System_Detail_Spec.md; marker:input; marker:state; marker:QA; marker:acceptance"
-    },
-    {
-      "label": "development_unity_project_present",
-      "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
-        "unity/NeonDrift/ProjectSettings/ProjectVersion.txt",
-        "unity/NeonDrift/Assets/Scenes/Main.unity"
-      ],
-      "missing_markers": [],
-      "detail": "unity/NeonDrift/ProjectSettings/ProjectVersion.txt; unity/NeonDrift/Assets/Scenes/Main.unity"
-    },
-    {
-      "label": "development_runtime_probe_present",
-      "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
-        "unity/NeonDrift/Assets/Scripts/RuntimeQaProbe.cs"
-      ],
-      "missing_markers": [
-        "qa",
-        "probe"
-      ],
-      "detail": "unity/NeonDrift/Assets/Scripts/RuntimeQaProbe.cs; marker:qa; marker:probe"
-    },
-    {
-      "label": "build_evidence_present",
-      "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
-        "status/validation/build_full_validation.md"
-      ],
-      "missing_markers": [
-        "status: passed"
-      ],
-      "detail": "status/validation/build_full_validation.md; marker:status: passed"
-    },
-    {
-      "label": "qa_evidence_present",
-      "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
-        "status/validation/qa_full_validation.md",
-        "status/qa/full_qa_report.md"
-      ],
-      "missing_markers": [
-        "product_experience",
-        "visual",
-        "playthrough",
-        "video"
-      ],
-      "detail": "status/validation/qa_full_validation.md; status/qa/full_qa_report.md; marker:product_experience; marker:visual; marker:playthrough; marker:video"
-    },
-    {
-      "label": "qa_hard_gates_present",
-      "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
+      "existing_paths": [
         "status/qa/full_qa_report.md",
+        "status/validation/qa_full_validation.md",
         "status/qa/qa_result.json"
       ],
-      "missing_markers": [
-        "human",
-        "gameplay",
-        "visual",
-        "playthrough_video"
-      ],
-      "detail": "status/qa/full_qa_report.md; status/qa/qa_result.json; marker:human; marker:gameplay; marker:visual; marker:playthrough_video"
-    },
-    {
-      "label": "qa_runtime_evidence_artifacts_present",
-      "passed": false,
-      "existing_paths": [],
-      "missing_paths": [
-        "status/qa/evidence/raw_evidence.json",
-        "status/qa/screenshots/ios_simulator_menu.png",
-        "status/qa/screenshots/ios_simulator_gameplay.png"
-      ],
+      "missing_paths": [],
       "missing_markers": [],
-      "detail": "status/qa/evidence/raw_evidence.json; status/qa/screenshots/ios_simulator_menu.png; status/qa/screenshots/ios_simulator_gameplay.png"
+      "detail": "12 QA failure signals require remediation"
     }
   ],
   "opdca_cycle": {
     "observe": "Collect completed pipeline state, generated files, Notion row metadata, QA evidence, and validation reports.",
     "plan": "Route to DMAIC root-cause analysis because one or more OPDCA checks failed.",
-    "do": "Run OPDCA evidence checks and DMAIC quality analysis for source pipeline 'development'.",
-    "check": "10 failed checks detected.",
-    "act": "Create remediation row targeting spec-review and require concrete runtime/product evidence before passing."
+    "do": "Run OPDCA evidence checks and DMAIC quality analysis for source pipeline 'qa'.",
+    "check": "1 failed checks detected.",
+    "act": "Create remediation row targeting development and require concrete runtime/product evidence before passing."
   },
   "root_causes": [
     {
-      "category": "upstream_spec_gap",
-      "target": "planning_or_spec_review",
-      "reason": "Planning or Spec Review lacks actionable gameplay, state, QA, or implementation detail."
-    },
-    {
-      "category": "development_evidence_gap",
+      "category": "visual_richness_gap",
       "target": "development",
-      "reason": "Unity project or runtime QA probe source evidence is missing or incomplete."
+      "reason": "Runtime visuals are still too placeholder/dark/static for release quality."
     },
     {
-      "category": "build_evidence_gap",
-      "target": "build",
-      "reason": "Build validation evidence is missing or not passed."
+      "category": "retry_runtime_motion_gap",
+      "target": "development",
+      "reason": "Retry leaves failure state but does not provide verified live gameplay motion after retry."
     },
     {
-      "category": "qa_evidence_gap",
-      "target": "qa",
-      "reason": "QA evidence package is incomplete."
+      "category": "human_product_experience_gate_failed",
+      "target": "development",
+      "reason": "QA common-sense/product-experience gates failed; implementation and evidence must be improved before release."
     }
   ],
-  "remediation_target": "spec-review",
-  "remediation_request": "DMAIC remediation target: spec-review\n\nRoot causes:\n- upstream_spec_gap: Planning or Spec Review lacks actionable gameplay, state, QA, or implementation detail.\n- development_evidence_gap: Unity project or runtime QA probe source evidence is missing or incomplete.\n- build_evidence_gap: Build validation evidence is missing or not passed.\n- qa_evidence_gap: QA evidence package is incomplete.\n\nRequired correction:\n- Do not mark the remediation passed unless generated runtime/product evidence directly resolves the listed root causes.\n- Preserve the Chain ID and source DMAIC report for traceability.\n- If returning to Development, fix implementation, visual readability, gameplay playability, runtime QA probe/evidence, and retry/menu/gameplay states before Build.\n- If returning to QA, rerun simulator QA and produce screenshots, video/recording evidence, raw evidence JSON, and human product-experience checks.\n\nObserved QA failure signals:",
-  "qa_failures": [],
-  "recommendations": [
-    "Improve Planning and Spec Review cards: require concrete first-10-second gameplay, object rules, state transitions, QA acceptance, and downstream file references.",
-    "Return to Development: generate Unity runtime probe, scene, scripts, and implementation evidence before Build can start.",
-    "Return to QA/Development loop: require simulator video, screenshots, product experience, human visual judgement, and every core gameplay function evidence.",
-    "Build watcher must rerun local Unity build and publish build_full_validation.md before QA.",
-    "Create remediation Notion row targeting spec-review; do not stop at reporting."
+  "remediation_target": "development",
+  "remediation_request": "DMAIC remediation target: development\n\nRoot causes:\n- visual_richness_gap: Runtime visuals are still too placeholder/dark/static for release quality.\n- retry_runtime_motion_gap: Retry leaves failure state but does not provide verified live gameplay motion after retry.\n- human_product_experience_gate_failed: QA common-sense/product-experience gates failed; implementation and evidence must be improved before release.\n\nRequired correction:\n- Do not mark the remediation passed unless generated runtime/product evidence directly resolves the listed root causes.\n- Preserve the Chain ID and source DMAIC report for traceability.\n- If returning to Development, fix implementation, visual readability, gameplay playability, runtime QA probe/evidence, and retry/menu/gameplay states before Build.\n- If returning to QA, rerun simulator QA and produce screenshots, video/recording evidence, raw evidence JSON, and human product-experience checks.\n\nObserved QA failure signals:\n- | qa_retry_visual_recovery_gate | Visual | FAIL | retryProbePresent=False, screenState=None, isGameOver=None, gameOverPanelVisible=None, gameOverToRetry={'comparable': True, 'mean_abs_diff': 1.975, 'changed_ratio': 0.0085, 'sample_count': 1\n- | qa_retry_live_motion_after_retry_gate | Gameplay | FAIL | retryProbePresent=False, retryLiveProbePresent=False, retryScreenState=None, retryLiveScreenState=None, retryGameplayTime=None, retryLiveGameplayTime=None, retryScore=None, retryLi\n- | playthrough_retry_to_retry_live_changed | Playthrough | FAIL | {'comparable': True, 'mean_abs_diff': 0.05, 'changed_ratio': 0.0004, 'sample_count': 12000, 'changed': False} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644\n- | qa_visual_richness_quality_gate | Visual | FAIL | gameplayVisualsVerified=True, gameplayInstructionReadableVerified=True, humanReadableGameplayContractVerified=True, videoExists=True, menuToGameplayChanged=True, gameplayToGameOverChanged=\n- | qa_retry_restarts_gameplay_gate | Gameplay | FAIL | retryRestartsGameplayVerified=True, RetryRestartsGameplay=True, RawRetryRestartsMovingGameplay=False, gameOverToRetryChanged=True, retryVisualStateVisible=False. | /home/node/.openclaw/w\n- | qa_retry_live_probe_leaves_failure_state | Gameplay | FAIL | screenState=None, isGameOver=None, gameOverPanelVisible=None. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_s\n- | qa_human_visual_judgement_gate | Visual | FAIL | videoExists=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, retryLiveScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChange\n- | qa_product_experience_gate | Gameplay | FAIL | menuLayoutVerified=True, menuElementsDoNotOverlap=True, gameplayHudHiddenInMenu=True, gameplayControlsHiddenInMenu=True, menuHumanReadable=True, hasObjectiveText=True, hasAvoidInstructionText\n- | qa_common_sense_veto_gate | UI/UX | FAIL | commonSenseVetoFailures=qa_retry_visual_recovery_gate=FAIL, qa_retry_live_motion_after_retry_gate=FAIL, qa_visual_richness_quality_gate=FAIL, qa_retry_restarts_gameplay_gate=FAIL, qa_human_visual\n- - status: failed\n- - qa_overall_status: failed\n- \"expected\": \"QA must fail whenever the product feels unreasonable to a human: confusing gameplay, inert motion, unclear objective, unclear controls, weak visual feedback, overlapping states, placeholder visuals, missing audio/feedback evide",
+  "qa_failures": [
+    "| qa_retry_visual_recovery_gate | Visual | FAIL | retryProbePresent=False, screenState=None, isGameOver=None, gameOverPanelVisible=None, gameOverToRetry={'comparable': True, 'mean_abs_diff': 1.975, 'changed_ratio': 0.0085, 'sample_count': 1",
+    "| qa_retry_live_motion_after_retry_gate | Gameplay | FAIL | retryProbePresent=False, retryLiveProbePresent=False, retryScreenState=None, retryLiveScreenState=None, retryGameplayTime=None, retryLiveGameplayTime=None, retryScore=None, retryLi",
+    "| playthrough_retry_to_retry_live_changed | Playthrough | FAIL | {'comparable': True, 'mean_abs_diff': 0.05, 'changed_ratio': 0.0004, 'sample_count': 12000, 'changed': False} | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644",
+    "| qa_visual_richness_quality_gate | Visual | FAIL | gameplayVisualsVerified=True, gameplayInstructionReadableVerified=True, humanReadableGameplayContractVerified=True, videoExists=True, menuToGameplayChanged=True, gameplayToGameOverChanged=",
+    "| qa_retry_restarts_gameplay_gate | Gameplay | FAIL | retryRestartsGameplayVerified=True, RetryRestartsGameplay=True, RawRetryRestartsMovingGameplay=False, gameOverToRetryChanged=True, retryVisualStateVisible=False. | /home/node/.openclaw/w",
+    "| qa_retry_live_probe_leaves_failure_state | Gameplay | FAIL | screenState=None, isGameOver=None, gameOverPanelVisible=None. | /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_s",
+    "| qa_human_visual_judgement_gate | Visual | FAIL | videoExists=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, retryLiveScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChange",
+    "| qa_product_experience_gate | Gameplay | FAIL | menuLayoutVerified=True, menuElementsDoNotOverlap=True, gameplayHudHiddenInMenu=True, gameplayControlsHiddenInMenu=True, menuHumanReadable=True, hasObjectiveText=True, hasAvoidInstructionText",
+    "| qa_common_sense_veto_gate | UI/UX | FAIL | commonSenseVetoFailures=qa_retry_visual_recovery_gate=FAIL, qa_retry_live_motion_after_retry_gate=FAIL, qa_visual_richness_quality_gate=FAIL, qa_retry_restarts_gameplay_gate=FAIL, qa_human_visual",
+    "- status: failed",
+    "- qa_overall_status: failed",
+    "\"expected\": \"QA must fail whenever the product feels unreasonable to a human: confusing gameplay, inert motion, unclear objective, unclear controls, weak visual feedback, overlapping states, placeholder visuals, missing audio/feedback evide"
   ],
-  "created_at": "2026-07-11T06:19:07.022155+00:00"
+  "recommendations": [
+    "Return to QA/Development loop: require simulator video, screenshots, product experience, human visual judgement, and every core gameplay function evidence.",
+    "Create remediation Notion row targeting development; do not stop at reporting."
+  ],
+  "created_at": "2026-07-11T06:54:21.643743+00:00"
 }
