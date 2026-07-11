@@ -12,6 +12,8 @@
 - Compatibility Target
 - Output Expectation
 - Product Experience Contract
+- Research Knowledge Capture Contract
+- Research Source Cards
 - Idea Expansion Governance
 - Confirmed Requirements（已確認需求）
 - Interpretation（Define 解讀）
@@ -28,6 +30,8 @@
 - Formal planning docs max 8000 characters.
 - Raw Idea is source context only; downstream stages must use Defined_Request.md and bounded handoffs.
 - Product Experience Contract is mandatory downstream context; do not drop it during compression.
+- Research Knowledge Capture Contract is mandatory downstream context when external references, web research, asset sourcing, platform policy, or product benchmarks are used.
+- Downstream agents must cite source_card_id or bounded internal knowledge-base paths for research-based claims.
 - Idea Expansion Governance is mandatory downstream context; compression must preserve Confirmed / Assumption / Candidate / Open Question labels.
 - Expansion Candidates must remain candidates until explicit user approval or downstream decision evidence exists.
 
@@ -57,3 +61,16 @@ Define Idea Expansion Governance:
 - Interaction and State Contract
 - Audio Feedback Contract
 - Evidence Contract
+
+## Research Capture Contract Sections
+
+- Research_Source_Cards.md
+- Research_Synthesis.md
+- Research_License_Risk_Register.md
+- source_card_id
+- source_url
+- accessed_at
+- license_or_terms
+- usage_risk
+- design_implication
+- do_not_use_directly

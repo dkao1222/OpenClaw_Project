@@ -12,6 +12,7 @@
 - PASS stage_range_supported: define-full
 - PASS product_experience_contract_defined: define watcher injects canonical game-foundation/playability/visual/audio/evidence contract
 - PASS idea_expansion_governance_defined: define watcher separates raw facts from candidate expansion and recommended-not-confirmed direction
+- PASS research_knowledge_capture_contract_defined: define watcher injects bounded external-research source-card and license-risk contract
 
 ## Result
 - status: passed

@@ -1,8 +1,8 @@
 # OPDCA + DMAIC Validation
 
-- status: passed
-- checks_total: 11
-- checks_failed: 0
+- status: failed
+- checks_total: 12
+- checks_failed: 1
 
 ## Checks
 
@@ -17,3 +17,4 @@
 - PASS qa_hard_gates_present: passed
 - PASS qa_runtime_evidence_artifacts_present: passed
 - PASS pipeline_chain_continuity: passed
+- FAIL qa_failure_signals_resolved: 8 QA failure signals require remediation

@@ -2,9 +2,9 @@
 
 - status: passed
 - pipeline: build
-- run_id: notion-NeonDrift_MVP-build-build-ios-simulator-20260628100318
+- run_id: notion-NeonDrift_MVP-build-build-ios-simulator-20260711060251
 - source_handoff_path: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/handoffs/development/final_handoff.md
-- checks_total: 22
+- checks_total: 26
 - checks_failed: 0
 
 ## Checks
@@ -31,3 +31,7 @@
 - PASS required_source_doc_unity_NeonDrift_Assets_Tests_PlayMode_NeonDrift.PlayModeTests.asmdef: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity/NeonDrift/Assets/Tests/PlayMode/NeonDrift.PlayModeTests.asmdef
 - PASS required_source_doc_unity_NeonDrift_Assets_Editor_BuildPipelineRunner.cs: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/unity/NeonDrift/Assets/Editor/BuildPipelineRunner.cs
 - PASS required_source_doc_status_validation_development_full_validation.md: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/development_full_validation.md
+- PASS source_evidence_source_card_id_present: source_card_id required when research/external references are used
+- PASS source_evidence_license_terms_present: license_or_terms required when research/external references are used
+- PASS source_evidence_usage_risk_present: usage_risk required when research/external references are used
+- PASS source_evidence_do_not_use_directly_present: do_not_use_directly required to prevent copying unverified sources/assets
