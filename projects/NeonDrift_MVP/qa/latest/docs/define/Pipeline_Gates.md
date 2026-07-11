@@ -75,3 +75,15 @@ Audio Feedback Contract:
 
 Evidence Contract:
 - Build/QA must provide simulator screenshots and playthrough video that prove menu readability, start action, gameplay motion, input effect, failure reason, retry restart, after-retry visual delta, and sound feedback evidence.
+
+## Research Knowledge Capture Contract
+
+Research Knowledge Capture Contract:
+- External research is allowed only through bounded source cards. Agents must not paste full web pages, copied article text, competitor screenshots, or unverified claims into downstream context.
+- Preferred owners: ux-researcher for player/product/gameplay references; evidence-collector for source-card evidence, attribution, and license risk; technical-artist for asset feasibility; product-experience-reviewer for product-experience synthesis.
+- Required knowledge base reads when research is used: research_capture/ROUTING.md, research_capture/SOURCE_CARD_SCHEMA.md, research_capture/VALIDATION_GATES.md, and research_capture/LICENSE_AND_ATTRIBUTION.md.
+- Required project outputs when external research is used: docs/research/Research_Source_Cards.md, docs/research/Research_Synthesis.md, docs/research/Research_License_Risk_Register.md, and status/context/research_context_pack.md.
+- Each source card must include source_card_id, source_title, source_url, publisher_or_author, accessed_at, source_type, license_or_terms, usage_risk, recommended_for_stage, usable_summary, design_implication, do_not_use_directly, and open_questions.
+- Planning and Spec Review must cite source card ids or bounded internal knowledge-base paths for research-based claims.
+- Development may directly use external assets only when a source card marks usage_risk=low and direct_asset_use_allowed=true.
+- QA must fail if a product claim, asset, platform rule, or product-experience benchmark depends on external research but no source card or license risk record exists.

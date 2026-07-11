@@ -1,15 +1,15 @@
 {
   "host_capture_status": "launch_attempted",
-  "bundle_id": "com.DefaultCompany.NeonDrift.run.1782650479.26426",
+  "bundle_id": "com.DefaultCompany.NeonDrift.run.1783753904.26332",
   "commands": [
     {
       "label": "app_binary_file",
       "command": [
         "file",
-        "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782650479.26426.app/NeonDrift.run.1782650479.26426"
+        "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753904.26332.app/NeonDrift.run.1783753904.26332"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782650479.26426.app/NeonDrift.run.1782650479.26426: Mach-O 64-bit executable arm64\n",
+      "stdout_tail": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753904.26332.app/NeonDrift.run.1783753904.26332: Mach-O 64-bit executable arm64\n",
       "stderr_tail": ""
     },
     {
@@ -104,7 +104,7 @@
         "-b"
       ],
       "exit_code": 0,
-      "stdout_tail": "Monitoring boot status for iPhone 17 Pro (CC47DE7A-8196-4465-A5A5-BB852C9C6C82).\n[2026-06-28 12:43:17 +0000] Status=2, isTerminal=NO, Elapsed=00:01.\n\tWaiting on Data Migration\n\t\tReason:(null)\n\t\tMigration Elapsed:00:00 seconds\n\n[2026-06-28 12:43:18 +0000] Status=4, isTerminal=NO, Elapsed=00:02.\n\tWaiting on System App\n\n[2026-06-28 12:43:19 +0000] Status=4, isTerminal=NO, Elapsed=00:03.\n\tWaiting on System App\n\n[2026-06-28 12:43:20 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:04.\n\tFinished\n\n",
+      "stdout_tail": "196-4465-A5A5-BB852C9C6C82).\n[2026-07-11 07:13:38 +0000] Status=2, isTerminal=NO, Elapsed=00:01.\n\tWaiting on Data Migration\n\t\tReason:(null)\n\t\tMigration Elapsed:00:00 seconds\n\n[2026-07-11 07:13:38 +0000] Status=4, isTerminal=NO, Elapsed=00:01.\n\tWaiting on System App\n\n[2026-07-11 07:13:39 +0000] Status=4, isTerminal=NO, Elapsed=00:02.\n\tWaiting on System App\n\n[2026-07-11 07:13:40 +0000] Status=4, isTerminal=NO, Elapsed=00:03.\n\tWaiting on System App\n\n[2026-07-11 07:13:41 +0000] Status=4, isTerminal=NO, Elapsed=00:04.\n\tWaiting on System App\n\n[2026-07-11 07:13:42 +0000] Status=4, isTerminal=NO, Elapsed=00:05.\n\tWaiting on System App\n\n[2026-07-11 07:13:43 +0000] Status=4, isTerminal=NO, Elapsed=00:06.\n\tWaiting on System App\n\n[2026-07-11 07:13:44 +0000] Status=4, isTerminal=NO, Elapsed=00:07.\n\tWaiting on System App\n\n[2026-07-11 07:13:45 +0000] Status=4, isTerminal=NO, Elapsed=00:08.\n\tWaiting on System App\n\n[2026-07-11 07:13:46 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:09.\n\tFinished\n\n",
       "stderr_tail": ""
     },
     {
@@ -127,7 +127,7 @@
         "simctl",
         "install",
         "booted",
-        "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782650479.26426.app"
+        "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753904.26332.app"
       ],
       "exit_code": 0,
       "stdout_tail": "",
@@ -140,20 +140,20 @@
         "simctl",
         "appinfo",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426"
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332"
       ],
       "exit_code": 0,
-      "stdout_tail": "4A3FA5C3BAA/NeonDrift.run.1782650479.26426.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/4378454D-36F1-4277-8479-54A3FA5C3BAA/\";\n    CFBundleDisplayName = \"NeonDrift.run.1782650479.26426\";\n    CFBundleExecutable = \"NeonDrift.run.1782650479.26426\";\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift.run.1782650479.26426\";\n    CFBundleName = \"NeonDrift.run.1782650479.26426\";\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/9658DCCE-3AF4-472E-B964-AB1D134282EF/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/4378454D-36F1-4277-8479-54A3FA5C3BAA/NeonDrift.run.1782650479.26426.app\";\n    SBAppTags =     (\n    );\n}\n",
+      "stdout_tail": "53F09D9DC82/NeonDrift.run.1783753904.26332.app/\";\n    BundleContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/2502186A-4E3D-4FAC-8D2F-A53F09D9DC82/\";\n    CFBundleDisplayName = \"NeonDrift.run.1783753904.26332\";\n    CFBundleExecutable = \"NeonDrift.run.1783753904.26332\";\n    CFBundleIdentifier = \"com.DefaultCompany.NeonDrift.run.1783753904.26332\";\n    CFBundleName = \"NeonDrift.run.1783753904.26332\";\n    CFBundleVersion = 0;\n    DataContainer = \"file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/B2DDB0CE-607F-481E-9711-F11020A7267B/\";\n    GroupContainers =     {\n    };\n    Path = \"/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/2502186A-4E3D-4FAC-8D2F-A53F09D9DC82/NeonDrift.run.1783753904.26332.app\";\n    SBAppTags =     (\n    );\n}\n",
       "stderr_tail": ""
     },
     {
       "label": "installed_app_binary_file",
       "command": [
         "file",
-        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/4378454D-36F1-4277-8479-54A3FA5C3BAA/NeonDrift.run.1782650479.26426.app/NeonDrift.run.1782650479.26426"
+        "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/2502186A-4E3D-4FAC-8D2F-A53F09D9DC82/NeonDrift.run.1783753904.26332.app/NeonDrift.run.1783753904.26332"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/4378454D-36F1-4277-8479-54A3FA5C3BAA/NeonDrift.run.1782650479.26426.app/NeonDrift.run.1782650479.26426: Mach-O 64-bit executable arm64\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/2502186A-4E3D-4FAC-8D2F-A53F09D9DC82/NeonDrift.run.1783753904.26332.app/NeonDrift.run.1783753904.26332: Mach-O 64-bit executable arm64\n",
       "stderr_tail": ""
     },
     {
@@ -163,11 +163,11 @@
         "simctl",
         "terminate",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426"
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332"
       ],
       "exit_code": 3,
       "stdout_tail": "",
-      "stderr_tail": "An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):\nSimulator device failed to terminate com.DefaultCompany.NeonDrift.run.1782650479.26426.\nfound nothing to terminate\nUnderlying error (domain=NSPOSIXErrorDomain, code=3):\n\tThe request to terminate \"com.DefaultCompany.NeonDrift.run.1782650479.26426\" failed. found nothing to terminate\n\tfound nothing to terminate\n"
+      "stderr_tail": "An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):\nSimulator device failed to terminate com.DefaultCompany.NeonDrift.run.1783753904.26332.\nfound nothing to terminate\nUnderlying error (domain=NSPOSIXErrorDomain, code=3):\n\tThe request to terminate \"com.DefaultCompany.NeonDrift.run.1783753904.26332\" failed. found nothing to terminate\n\tfound nothing to terminate\n"
     },
     {
       "label": "app_data_container",
@@ -176,11 +176,11 @@
         "simctl",
         "get_app_container",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426",
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332",
         "data"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/9658DCCE-3AF4-472E-B964-AB1D134282EF\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/B2DDB0CE-607F-481E-9711-F11020A7267B\n",
       "stderr_tail": ""
     },
     {
@@ -238,11 +238,11 @@
         "simctl",
         "terminate",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426"
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332"
       ],
       "exit_code": 3,
       "stdout_tail": "",
-      "stderr_tail": "An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):\nSimulator device failed to terminate com.DefaultCompany.NeonDrift.run.1782650479.26426.\nfound nothing to terminate\nUnderlying error (domain=NSPOSIXErrorDomain, code=3):\n\tThe request to terminate \"com.DefaultCompany.NeonDrift.run.1782650479.26426\" failed. found nothing to terminate\n\tfound nothing to terminate\n"
+      "stderr_tail": "An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):\nSimulator device failed to terminate com.DefaultCompany.NeonDrift.run.1783753904.26332.\nfound nothing to terminate\nUnderlying error (domain=NSPOSIXErrorDomain, code=3):\n\tThe request to terminate \"com.DefaultCompany.NeonDrift.run.1783753904.26332\" failed. found nothing to terminate\n\tfound nothing to terminate\n"
     },
     {
       "label": "launch",
@@ -251,12 +251,12 @@
         "simctl",
         "launch",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426",
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332",
         "--args",
         "-qaPlaythrough"
       ],
       "exit_code": 0,
-      "stdout_tail": "com.DefaultCompany.NeonDrift.run.1782650479.26426: 28732\n",
+      "stdout_tail": "com.DefaultCompany.NeonDrift.run.1783753904.26332: 27932\n",
       "stderr_tail": ""
     },
     {
@@ -272,7 +272,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png\n"
     },
     {
       "label": "cycle_1_menu_screenshot_readability_retry",
@@ -287,7 +287,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png\n",
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png\n",
       "metrics": {
         "exists": true,
         "width": 1206,
@@ -316,7 +316,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png\n"
     },
     {
       "label": "game_over_screenshot",
@@ -331,7 +331,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png\n"
     },
     {
       "label": "retry_screenshot",
@@ -346,7 +346,22 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png\n"
+    },
+    {
+      "label": "retry_live_screenshot",
+      "command": [
+        "xcrun",
+        "simctl",
+        "io",
+        "booted",
+        "screenshot",
+        "--type=png",
+        "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry_live.png"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "",
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry_live.png\n"
     },
     {
       "label": "terminate_before_cycle_2",
@@ -355,7 +370,7 @@
         "simctl",
         "terminate",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426"
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332"
       ],
       "exit_code": 0,
       "stdout_tail": "",
@@ -368,12 +383,12 @@
         "simctl",
         "launch",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426",
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332",
         "--args",
         "-qaPlaythrough"
       ],
       "exit_code": 0,
-      "stdout_tail": "com.DefaultCompany.NeonDrift.run.1782650479.26426: 28853\n",
+      "stdout_tail": "com.DefaultCompany.NeonDrift.run.1783753904.26332: 28040\n",
       "stderr_tail": ""
     },
     {
@@ -389,7 +404,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_menu.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_menu.png\n"
     },
     {
       "label": "cycle_2_menu_screenshot_readability_retry",
@@ -404,7 +419,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_menu.png\n",
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_menu.png\n",
       "metrics": {
         "exists": true,
         "width": 1206,
@@ -433,7 +448,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_gameplay.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_gameplay.png\n"
     },
     {
       "label": "playthrough_cycle_2_game_over_screenshot",
@@ -448,7 +463,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_game_over.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_game_over.png\n"
     },
     {
       "label": "playthrough_cycle_2_after_retry_screenshot",
@@ -463,7 +478,22 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry.png\n"
+    },
+    {
+      "label": "playthrough_cycle_2_after_retry_live_screenshot",
+      "command": [
+        "xcrun",
+        "simctl",
+        "io",
+        "booted",
+        "screenshot",
+        "--type=png",
+        "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry_live.png"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "",
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry_live.png\n"
     },
     {
       "label": "terminate_before_cycle_3",
@@ -472,7 +502,7 @@
         "simctl",
         "terminate",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426"
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332"
       ],
       "exit_code": 0,
       "stdout_tail": "",
@@ -485,12 +515,12 @@
         "simctl",
         "launch",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426",
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332",
         "--args",
         "-qaPlaythrough"
       ],
       "exit_code": 0,
-      "stdout_tail": "com.DefaultCompany.NeonDrift.run.1782650479.26426: 28988\n",
+      "stdout_tail": "com.DefaultCompany.NeonDrift.run.1783753904.26332: 28196\n",
       "stderr_tail": ""
     },
     {
@@ -506,7 +536,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_menu.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_menu.png\n"
     },
     {
       "label": "cycle_3_menu_screenshot_readability_retry",
@@ -521,7 +551,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_menu.png\n",
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_menu.png\n",
       "metrics": {
         "exists": true,
         "width": 1206,
@@ -550,7 +580,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_gameplay.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_gameplay.png\n"
     },
     {
       "label": "playthrough_cycle_3_game_over_screenshot",
@@ -565,7 +595,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_game_over.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_game_over.png\n"
     },
     {
       "label": "playthrough_cycle_3_after_retry_screenshot",
@@ -580,7 +610,22 @@
       ],
       "exit_code": 0,
       "stdout_tail": "",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry.png\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry.png\n"
+    },
+    {
+      "label": "playthrough_cycle_3_after_retry_live_screenshot",
+      "command": [
+        "xcrun",
+        "simctl",
+        "io",
+        "booted",
+        "screenshot",
+        "--type=png",
+        "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry_live.png"
+      ],
+      "exit_code": 0,
+      "stdout_tail": "",
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nWrote screenshot to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry_live.png\n"
     },
     {
       "label": "record_video",
@@ -596,7 +641,7 @@
       ],
       "exit_code": 0,
       "stdout_tail": "Recording completed. Writing to disk.\n\nWrote video to: /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/simulator_playthrough.mp4\n",
-      "stderr_tail": "Note: No display specified. Defaulting to display: D2A4DA6B-1AA6-4C25-AD84-54288DF6375E (screenID: 1, name: LCD)\nRecording started\n"
+      "stderr_tail": "Note: No display specified. Defaulting to display: 3124A615-53EA-4D75-8079-19D7FFF553D9 (screenID: 1, name: LCD)\nRecording started\n"
     },
     {
       "label": "record_video_recovery",
@@ -605,7 +650,7 @@
         "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/simulator_playthrough.mp4"
       ],
       "exit_code": 0,
-      "stdout_tail": "target_video_ok bytes=13558710",
+      "stdout_tail": "target_video_ok bytes=13658643",
       "stderr_tail": ""
     },
     {
@@ -615,11 +660,11 @@
         "simctl",
         "get_app_container",
         "booted",
-        "com.DefaultCompany.NeonDrift.run.1782650479.26426",
+        "com.DefaultCompany.NeonDrift.run.1783753904.26332",
         "data"
       ],
       "exit_code": 0,
-      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/9658DCCE-3AF4-472E-B964-AB1D134282EF\n",
+      "stdout_tail": "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/B2DDB0CE-607F-481E-9711-F11020A7267B\n",
       "stderr_tail": ""
     },
     {
@@ -634,12 +679,12 @@
         "--last",
         "3m",
         "--predicate",
-        "process == \"NeonDrift.run.1782650479.26426\" OR process == \"NeonDrift.run.1782650479.26426\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift.run.1782650479.26426\" OR eventMessage CONTAINS \"NeonDrift.run.1782650479.26426\"",
+        "process == \"NeonDrift.run.1783753904.26332\" OR process == \"NeonDrift.run.1783753904.26332\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift.run.1783753904.26332\" OR eventMessage CONTAINS \"NeonDrift.run.1783753904.26332\"",
         "--style",
         "compact"
       ],
       "exit_code": 0,
-      "stdout_tail": " running-active-Visible\n2026-06-28 20:44:10.835 A  NeonDrift.run.1782650479.26426[28988:dfa85c] (RunningBoardServices) didChangeInheritances\n2026-06-28 20:44:10.836 Df locationd[28472:dfa281] [com.apple.runningboard:monitor] Received state update for 28988 (app<com.DefaultCompany.NeonDrift.run.1782650479.26426((null))>, running-active-Visible\n2026-06-28 20:44:10.836 Df mediaremoted[28455:dfa30d] [com.apple.runningboard:monitor] Received state update for 28988 (app<com.DefaultCompany.NeonDrift.run.1782650479.26426((null))>, running-active-Visible\n2026-06-28 20:44:10.845 Df SpringBoard[28445:df94b2] [com.apple.SpringBoard:StatusBarish] Verify background audio activity for com.DefaultCompany.NeonDrift.run.1782650479.26426, Recording: 0\n2026-06-28 20:44:11.534 Df SpringBoard[28445:dfa80a] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10c7af480> [com.DefaultCompany.NeonDrift.run.1782650479.26426] We don't have any snapshots, so we're clearing our manifest data.\n",
+      "stdout_tail": "2((null))>, running-active-Visible\n2026-07-11 15:14:33.130 Df mediaremoted[27652:3788d] [com.apple.runningboard:monitor] Received state update for 28196 (app<com.DefaultCompany.NeonDrift.run.1783753904.26332((null))>, running-active-Visible\n2026-07-11 15:14:33.133 Df SpringBoard[27802:3655e] [com.apple.SpringBoard:StatusBarish] Verify background audio activity for com.DefaultCompany.NeonDrift.run.1783753904.26332, Recording: 0\n2026-07-11 15:14:33.769 Df SpringBoard[27802:379b8] [com.apple.SplashBoard:FileManifest] <XBApplicationSnapshotManifestImpl: 0x10cba7a80> [com.DefaultCompany.NeonDrift.run.1783753904.26332] We don't have any snapshots, so we're clearing our manifest data.\n2026-07-11 15:14:51.954 Df log[28459:0] [com.apple.log:] log run noninteractively, parent: 27642 (launchd_sim), args: 'log' 'show' '--last' '3m' '--predicate' 'process == \"NeonDrift.run.1783753904.26332\" OR process == \"NeonDrift.run.1783753904.26332\" OR eventMessage CONTAINS \"com.DefaultCompany.NeonDrift.run.17\n",
       "stderr_tail": "getpwuid_r did not find a match for uid 501\n"
     }
   ],
@@ -649,7 +694,7 @@
     "unity_playmode_test_results": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml",
     "build_runtime_probe": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/runtime_probe.json",
     "style_frame_implementation_report": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/development/Style_Frame_Implementation_Report.md",
-    "simulator_app": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782650479.26426.app",
+    "simulator_app": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1783753904.26332.app",
     "app_binary_file": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/app_binary_file.txt",
     "shutdown_all_before_capture": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/shutdown_all_before_capture.txt",
     "boot_simulator_clean": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/boot_simulator_clean.txt",
@@ -665,16 +710,19 @@
     "gameplay_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png",
     "game_over_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png",
     "retry_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png",
+    "retry_live_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry_live.png",
     "launch_cycle_2": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch_cycle_2.txt",
     "playthrough_cycle_2_menu_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_menu.png",
     "playthrough_cycle_2_gameplay_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_gameplay.png",
     "playthrough_cycle_2_game_over_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_game_over.png",
     "playthrough_cycle_2_after_retry_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry.png",
+    "playthrough_cycle_2_after_retry_live_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry_live.png",
     "launch_cycle_3": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/launch_cycle_3.txt",
     "playthrough_cycle_3_menu_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_menu.png",
     "playthrough_cycle_3_gameplay_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_gameplay.png",
     "playthrough_cycle_3_game_over_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_game_over.png",
     "playthrough_cycle_3_after_retry_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry.png",
+    "playthrough_cycle_3_after_retry_live_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry_live.png",
     "initial_screenshot": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png",
     "interaction_script_log": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/interaction_script.log",
     "playthrough_video": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/simulator_playthrough.mp4",
@@ -683,6 +731,7 @@
     "runtime_probe": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_gameplay.json",
     "runtime_probe_game_over": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_game_over.json",
     "runtime_probe_after_retry": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_after_retry.json",
+    "runtime_probe_after_retry_live": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/qa_runtime_probe_after_retry_live.json",
     "runtime_log": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/logs/ios_simulator_runtime.log",
     "raw_evidence": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/raw_evidence.json",
     "evidence_summary_json": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/evidence_summary.json",
@@ -691,8 +740,8 @@
   "qa_playthrough_required_runs": 3,
   "qa_single_run_seconds": 20.0,
   "qa_minimum_recording_seconds": 60.0,
-  "executable_name": "NeonDrift.run.1782650479.26426",
-  "display_name": "NeonDrift.run.1782650479.26426",
+  "executable_name": "NeonDrift.run.1783753904.26332",
+  "display_name": "NeonDrift.run.1783753904.26332",
   "selected_simulator": "iPhone 17 Pro (CC47DE7A-8196-4465-A5A5-BB852C9C6C82) state=Shutdown",
   "qa_playthrough_runs": [
     {
@@ -702,9 +751,10 @@
         "menu": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_menu.png",
         "gameplay": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_gameplay.png",
         "game_over": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_game_over.png",
-        "after_retry": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png"
+        "after_retry": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png",
+        "after_retry_live": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry_live.png"
       },
-      "elapsed_seconds": 20.01
+      "elapsed_seconds": 20.004
     },
     {
       "cycle": 2,
@@ -713,9 +763,10 @@
         "menu": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_menu.png",
         "gameplay": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_gameplay.png",
         "game_over": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_game_over.png",
-        "after_retry": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry.png"
+        "after_retry": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry.png",
+        "after_retry_live": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry_live.png"
       },
-      "elapsed_seconds": 20.01
+      "elapsed_seconds": 20.005
     },
     {
       "cycle": 3,
@@ -724,10 +775,11 @@
         "menu": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_menu.png",
         "gameplay": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_gameplay.png",
         "game_over": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_game_over.png",
-        "after_retry": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry.png"
+        "after_retry": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry.png",
+        "after_retry_live": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry_live.png"
       },
-      "elapsed_seconds": 20.005
+      "elapsed_seconds": 20.004
     }
   ],
-  "qa_recording_elapsed_seconds": 60.025
+  "qa_recording_elapsed_seconds": 60.013
 }
