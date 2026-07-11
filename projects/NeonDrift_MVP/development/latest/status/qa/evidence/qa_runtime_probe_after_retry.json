@@ -86,7 +86,7 @@
     "wave": 1,
     "combo": 3,
     "multiplier": 1,
-    "boostCharge": 0.012837627902626992,
+    "boostCharge": 0.012306812219321728,
     "currentLane": 0,
     "targetLane": 0,
     "lateralVelocity": 6.2708267364300269e-15,
@@ -104,8 +104,8 @@
     "isGameOver": false,
     "isPaused": false,
     "hasStarted": true,
-    "gameplayTime": 0.3667893707752228,
+    "gameplayTime": 0.3516232371330261,
     "minimumSurvivalSeconds": 6.0,
-    "framesPerSecond": 59.98869323730469,
+    "framesPerSecond": 60.037479400634769,
     "exceptionCount": 0
 }
