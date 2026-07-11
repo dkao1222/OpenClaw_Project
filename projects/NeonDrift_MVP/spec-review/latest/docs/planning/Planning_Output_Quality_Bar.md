@@ -3,8 +3,8 @@
 ## 繁體中文
 
 ### 輸出長度規則
-- 每個 planning 子文件必須聚焦單一目的；一般文件非空白字元低於 900 代表過短，高於 4200 代表過長，應拆成下一層規格文件。
-- Game Objective 必須維持 900 到 1800 非空白字元，因為它是後續 game-director、spec review、development 與 QA 的最小契約。
+- 每個 planning 子文件必須聚焦單一目的；一般文件非空白字元低於 900 代表過短，高於 5200 代表過長，應拆成下一層規格文件。
+- Game Objective 必須維持 900 到 5200 非空白字元，因為它是後續 game-director、spec review、development 與 QA 的最小契約，也要容納知識庫與 research source-card 對齊資訊。
 
 ### 內容具體度規則
 - 每個文件都要回答：玩家看到什麼、玩家做什麼、系統如何回應、失敗如何產生、QA 如何驗證；不能只寫有趣、華麗、清楚、沉浸等抽象詞。
@@ -17,8 +17,8 @@
 ## English
 
 ### Output Length Rule
-- Every planning sub-document must focus on one purpose; below 900 non-whitespace characters is too thin, above 4200 is too large and should be split into the next specification layer.
-- Game Objective must stay between 900 and 1800 non-whitespace characters because it is the smallest contract for game-director, spec review, development, and QA.
+- Every planning sub-document must focus on one purpose; below 900 non-whitespace characters is too thin, above 5200 is too large and should be split into the next specification layer.
+- Game Objective must stay between 900 and 5200 non-whitespace characters because it is the smallest contract for game-director, spec review, development, and QA while also carrying knowledge-base and research source-card alignment.
 
 ### Specificity Rule
 - Every file must answer what the player sees, what the player does, how the system responds, how failure happens, and how QA verifies it; abstract words like fun, rich, clear, or immersive are not enough.
@@ -48,3 +48,4 @@
 - GAME_DEV_BLACK_BOOK_REFERENCE.md used: user-centric reverse deduction, MDA mapping, player agency, FTUE, sensory validation, MVP loop, and QA evidence are preserved.
 - GDD_STRUCTURE_REFERENCE.md used: Vision Lock, Core Loop, Systems Design, Content Architecture, Player Journey, and Shipping Plan are converted into bounded planning commitments.
 - Implementation readiness: downstream agents must receive enough player action, input/state/rule/output, feedback, risk, reset, and acceptance detail to avoid inventing core gameplay during development.
+- Research capture cards read: research_capture/ROUTING.md, SOURCE_CARD_SCHEMA.md, VALIDATION_GATES.md, Research_Source_Cards.md, source_card_id, license_or_terms, usage_risk, and do_not_use_directly. External references may influence planning only through bounded source cards and license-risk records.

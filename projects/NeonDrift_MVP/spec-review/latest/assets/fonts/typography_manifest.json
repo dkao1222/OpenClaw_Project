@@ -1,5 +1,6 @@
 {
   "project": "NeonDrift_MVP",
+  "image_generation_model": "x/z-image-turbo",
   "font_family": "NeonDriftBitmap",
   "fallbacks": [
     "Inter",

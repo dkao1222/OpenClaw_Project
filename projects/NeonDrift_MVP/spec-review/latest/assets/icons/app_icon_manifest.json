@@ -1,6 +1,7 @@
 {
   "project": "NeonDrift_MVP",
   "generator": "scripts/generate_game_icon_assets.py",
+  "image_generation_model": "x/z-image-turbo",
   "style": "deterministic neon drift mark",
   "platforms": {
     "ios": "App Store 1024 plus iPhone notification/settings/home sizes",

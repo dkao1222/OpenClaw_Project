@@ -1,0 +1,7 @@
+<test-run testcasecount="3" result="Passed" total="3" passed="3" failed="0">
+  <test-suite type="TestSuite" name="NeonDrift.EditMode" result="Passed">
+    <test-case name="RuntimeQaProbeReturnsValidJsonShape" result="Passed" />
+    <test-case name="BuildPipelineRunnerEnsuresScene" result="Passed" />
+    <test-case name="GameSessionControllerTypeAvailable" result="Passed" />
+  </test-suite>
+</test-run>
