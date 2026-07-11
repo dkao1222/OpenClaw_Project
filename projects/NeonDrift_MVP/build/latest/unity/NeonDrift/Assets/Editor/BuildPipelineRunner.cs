@@ -30,6 +30,7 @@ public static class BuildPipelineRunner
         bool humanAgencyVerified = VerifyHumanAgency();
         bool gameQualityContractVerified = VerifyGameQualityContract();
         bool retryRestartsGameplayVerified = VerifyRetryRestartsGameplay();
+        bool rawRetryRestartsMovingGameplayVerified = VerifyRawRetryRestartsMovingGameplay();
         bool soundToggleAudioVerified = VerifySoundToggleAudio();
         EnsureScene();
         NeonDriftRuntimeBootstrap.EnsureRuntimeScene();
@@ -83,6 +84,7 @@ public static class BuildPipelineRunner
                 ("SkillRewardLoopVerified", gameQualityContractVerified && RuntimeQaProbe.CaptureJson().Contains("\"skillRewardLoopVerified\": true")),
                 ("HumanPlaytestChecklistVerified", gameQualityContractVerified && RuntimeQaProbe.CaptureJson().Contains("\"humanPlaytestChecklistVerified\": true")),
                 ("RetryRestartsGameplay", retryRestartsGameplayVerified && RuntimeQaProbe.CaptureJson().Contains("\"retryRestartsGameplayVerified\": true")),
+                ("RawRetryRestartsMovingGameplay", rawRetryRestartsMovingGameplayVerified && RuntimeQaProbe.CaptureJson().Contains("\"retryRestartsGameplayVerified\": true")),
                 ("SoundToggleAudioVerified", soundToggleAudioVerified && RuntimeQaProbe.CaptureJson().Contains("\"soundToggleAudioVerified\": true") && RuntimeQaProbe.CaptureJson().Contains("\"audioSourcePresent\": true")),
                 ("StartButtonFlowVerified", startButtonFlowVerified),
                 ("EarlyGameOverIsProtected", earlyGameOverIsProtected)
@@ -242,6 +244,28 @@ public static class BuildPipelineRunner
         uiActions.Retry();
         string json = RuntimeQaProbe.CaptureJson();
         return session.HasStarted && !session.IsGameOver && Mathf.Approximately(Time.timeScale, 1f) && json.Contains("\"screenState\": \"gameplay\"");
+    }
+
+    private static bool VerifyRawRetryRestartsMovingGameplay()
+    {
+        GameSessionController session = GameObject.FindObjectOfType<GameSessionController>();
+        NeonDriftUiActions uiActions = GameObject.FindObjectOfType<NeonDriftUiActions>();
+        NeonDriftVisualSync visualSync = GameObject.FindObjectOfType<NeonDriftVisualSync>(true);
+        if (session == null || uiActions == null || visualSync == null)
+        {
+            return false;
+        }
+
+        uiActions.StartGame();
+        session.GameOver("qa_retry_test");
+        uiActions.Retry();
+        string json = RuntimeQaProbe.CaptureJson();
+        return session.HasStarted
+            && !session.IsGameOver
+            && Mathf.Approximately(Time.timeScale, 1f)
+            && json.Contains("\"screenState\": \"gameplay\"")
+            && json.Contains("\"retryRestartsGameplayVerified\": true")
+            && visualSync.VerifyMotionForQa();
     }
 
     private static bool VerifySoundToggleAudio()
