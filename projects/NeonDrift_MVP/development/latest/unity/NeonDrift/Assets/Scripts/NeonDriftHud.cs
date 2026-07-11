@@ -230,6 +230,8 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
 {
     private static bool triggerConsumed;
     private bool running;
+    private bool pendingAfterRetryLiveProbe;
+    private float afterRetryLiveProbeAt;
 
     private void Start()
     {
@@ -237,6 +239,21 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
         {
             Debug.Log("QA_PLAYTHROUGH_TRIGGERED");
             StartCoroutine(RunPlaythrough());
+        }
+    }
+
+    private void Update()
+    {
+        if (!pendingAfterRetryLiveProbe || Time.realtimeSinceStartup < afterRetryLiveProbeAt)
+        {
+            return;
+        }
+
+        GameSessionController session = GameSessionController.Instance != null ? GameSessionController.Instance : FindObjectOfType<GameSessionController>();
+        if (session != null && session.HasStarted && !session.IsGameOver && !session.IsPaused)
+        {
+            pendingAfterRetryLiveProbe = false;
+            WriteQaProbe("qa_runtime_probe_after_retry_live.json");
         }
     }
 
@@ -318,13 +335,16 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
         uiActions = FindObjectOfType<NeonDriftUiActions>();
         Debug.Log("QA_PLAYTHROUGH_RETRY");
         uiActions?.Retry();
-        yield return new WaitForSecondsRealtime(0.8f);
+        pendingAfterRetryLiveProbe = true;
+        afterRetryLiveProbeAt = Time.realtimeSinceStartup + 1.15f;
+        yield return new WaitForSecondsRealtime(0.35f);
         WriteQaProbe("qa_runtime_probe_after_retry.json");
         player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
         player?.SetUiSteer(1f);
-        player?.SimulateSteerStep(1f, 0.75f);
-        yield return new WaitForSecondsRealtime(1.15f);
+        player?.SimulateSteerStep(1f, 0.9f);
+        yield return new WaitForSecondsRealtime(1.05f);
         player?.ClearUiSteer();
+        pendingAfterRetryLiveProbe = false;
         WriteQaProbe("qa_runtime_probe_after_retry_live.json");
     }
 
