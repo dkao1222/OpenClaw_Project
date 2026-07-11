@@ -3,9 +3,9 @@
 ## Canonical Fields
 
 - project_name: NeonDrift_MVP
-- define_page_id: 39ab9e33-8429-81de-9641-e01757cf18cc
-- define_run_id: notion-NeonDrift_MVP-define-20260711060915
-- chain_id: raw:NeonDrift_MVP:20260711060852
+- define_page_id: 39ab9e33-8429-81b7-af3c-f3bf79c32b58
+- define_run_id: notion-NeonDrift_MVP-define-20260711060933
+- chain_id: raw:NeonDrift_MVP:20260711060757
 - agent_model_policy: per-agent-config
 - thinking: off
 

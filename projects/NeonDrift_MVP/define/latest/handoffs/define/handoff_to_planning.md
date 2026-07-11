@@ -2,9 +2,9 @@
 
 ```yaml
 project_name: NeonDrift_MVP
-define_page_id: 39ab9e33-8429-81de-9641-e01757cf18cc
-define_run_id: notion-NeonDrift_MVP-define-20260711060915
-chain_id: raw:NeonDrift_MVP:20260711060852
+define_page_id: 39ab9e33-8429-81b7-af3c-f3bf79c32b58
+define_run_id: notion-NeonDrift_MVP-define-20260711060933
+chain_id: raw:NeonDrift_MVP:20260711060757
 output_folder: /home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/
 handoff_type: define_to_planning
 ready_for_planning: true
