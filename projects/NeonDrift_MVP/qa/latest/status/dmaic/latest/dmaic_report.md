@@ -5,7 +5,7 @@
 - status: passed
 - project_name: NeonDrift_MVP
 - chain_id: raw:NeonDrift_MVP:20260711061938
-- run_id: notion-NeonDrift_MVP-dmaic-20260711072051
+- run_id: notion-NeonDrift_MVP-dmaic-20260711072614
 - source_pipeline: qa
 - checks_total: 12
 - checks_failed: 0

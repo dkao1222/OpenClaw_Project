@@ -1,16 +1,16 @@
 {
     ApplicationType = User;
-    Bundle = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/E618AAE5-C3A6-486B-A7E0-3FD774DB0226/NeonDrift.run.1783754458.32146.app/";
-    BundleContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/E618AAE5-C3A6-486B-A7E0-3FD774DB0226/";
+    Bundle = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/948ED43D-BCB0-4298-A21A-E948724FA90B/NeonDrift.run.1783754458.32146.app/";
+    BundleContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/948ED43D-BCB0-4298-A21A-E948724FA90B/";
     CFBundleDisplayName = "NeonDrift.run.1783754458.32146";
     CFBundleExecutable = "NeonDrift.run.1783754458.32146";
     CFBundleIdentifier = "com.DefaultCompany.NeonDrift.run.1783754458.32146";
     CFBundleName = "NeonDrift.run.1783754458.32146";
     CFBundleVersion = 0;
-    DataContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/6B474965-5C65-4F65-BD41-F67D9F51E214/";
+    DataContainer = "file:///Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Data/Application/F53A0BE1-48FE-4431-AEB7-2396870F76C1/";
     GroupContainers =     {
     };
-    Path = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/E618AAE5-C3A6-486B-A7E0-3FD774DB0226/NeonDrift.run.1783754458.32146.app";
+    Path = "/Users/dragonkao/Library/Developer/CoreSimulator/Devices/CC47DE7A-8196-4465-A5A5-BB852C9C6C82/data/Containers/Bundle/Application/948ED43D-BCB0-4298-A21A-E948724FA90B/NeonDrift.run.1783754458.32146.app";
     SBAppTags =     (
     );
 }
