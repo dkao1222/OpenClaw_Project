@@ -2,7 +2,7 @@
 
 - status: failed
 - checks_total: 12
-- checks_failed: 1
+- checks_failed: 2
 
 ## Checks
 
@@ -16,5 +16,5 @@
 - PASS qa_evidence_present: passed
 - PASS qa_hard_gates_present: passed
 - PASS qa_runtime_evidence_artifacts_present: passed
-- PASS pipeline_chain_continuity: passed
+- FAIL pipeline_chain_continuity: expected=raw:NeonDrift_MVP:20260711060852 observed=['raw:NeonDrift_MVP:20260711060757'] mismatched=['raw:NeonDrift_MVP:20260711060757']
 - FAIL qa_failure_signals_resolved: 8 QA failure signals require remediation
