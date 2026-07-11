@@ -3,6 +3,7 @@
 ## 繁體中文
 
 - project: NeonDrift_MVP
+- image_generation_model: `x/z-image-turbo`
 - style frame implementation source: docs/design/Style_Frames.md, docs/design/Art_Asset_Implementation_Matrix.md, docs/design/Visual_Target_Lock.md, docs/review/Visual_Style_Frame_Readiness.md
 - Unity implementation must not rely on flat background or static blocks only; visible player/threat/reward/failure/retry identity is required.
 

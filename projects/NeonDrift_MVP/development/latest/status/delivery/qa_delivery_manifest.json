@@ -1,24 +1,24 @@
 {
   "project_name": "NeonDrift_MVP",
-  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260628100533",
-  "delivery_status": "ready",
-  "qa_overall_status": "passed",
-  "release_candidate_status": "ready",
-  "checks_total": 147,
-  "checks_failed": 0,
+  "run_id": "notion-NeonDrift_MVP-qa-qa-full-20260711055637",
+  "delivery_status": "blocked",
+  "qa_overall_status": "failed",
+  "release_candidate_status": "blocked",
+  "checks_total": 151,
+  "checks_failed": 5,
   "checks_blocked": 0,
-  "bundle_id": "com.DefaultCompany.NeonDrift.run.1782641020.54193",
-  "simulator_app": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782641020.54193.app",
-  "install_command": "xcrun simctl install booted /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.run.1782641020.54193.app",
-  "launch_command": "xcrun simctl launch booted com.DefaultCompany.NeonDrift.run.1782641020.54193",
-  "source_build_output_folder": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/",
-  "qa_output_folder": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/",
+  "bundle_id": "com.DefaultCompany.NeonDrift",
+  "simulator_app": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app",
+  "install_command": "xcrun simctl install booted /Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/xcode_derived_data/Build/Products/Release-iphonesimulator/NeonDrift.app",
+  "launch_command": "xcrun simctl launch booted com.DefaultCompany.NeonDrift",
+  "source_build_output_folder": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/",
+  "qa_output_folder": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/",
   "handoff_files": {
-    "qa_result": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/qa_result.json",
-    "full_qa_report": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/full_qa_report.md",
-    "qa_validation": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/qa_full_validation.md",
-    "evidence_index": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence_index.md",
-    "delivery_notes": "/Users/dragonkao/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/delivery/iOS_QA_Delivery.md"
+    "qa_result": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/qa_result.json",
+    "full_qa_report": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/full_qa_report.md",
+    "qa_validation": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/qa_full_validation.md",
+    "evidence_index": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence_index.md",
+    "delivery_notes": "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/delivery/iOS_QA_Delivery.md"
   },
   "evidence_files": [
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/docs/development/Style_Frame_Implementation_Report.md",
@@ -31,11 +31,14 @@
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/evidence/simulator_playthrough.mp4",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/logs/ios_simulator_runtime.log",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry.png",
+    "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_after_retry_live.png",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry.png",
+    "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_after_retry_live.png",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_game_over.png",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_gameplay.png",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_2_menu.png",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry.png",
+    "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_after_retry_live.png",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_game_over.png",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_gameplay.png",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/qa/screenshots/ios_simulator_cycle_3_menu.png",
@@ -46,5 +49,11 @@
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_editmode_test_results.xml",
     "/home/node/.openclaw/workspace/382b9e3384298039b171c9b2a60ae644/NeonDrift_MVP/project/status/validation/unity_playmode_test_results.xml"
   ],
-  "required_fixes": []
+  "required_fixes": [
+    "qa_retry_live_motion_after_retry_gate: retryProbePresent=True, retryLiveProbePresent=False, retryScreenState='gameplay', retryLiveScreenState=None, retryGameplayTime=0.8161578178405762, retryLiveGameplayTime=None, retryScore=7, retryLiveScore=None, retryLiveFps=None, retryLiveIsGameOver=None, retryLiveIsPaused=None, retryLiveGameOverPanelVisible=None, retryToRetryLive={'comparable': True, 'mean_abs_diff': 38.033, 'changed_ratio': 0.2454, 'sample_count': 12000, 'changed': True}, retryLiveVisualMetrics={'exists': True, 'width': 1206, 'height': 2622, 'sample_count': 40000, 'min_luma': 0.0, 'max_luma': 255.0, 'mean_luma': 59.385, 'dark_ratio': 0.3094, 'bright_ratio': 0.2583, 'very_bright_ratio': 0.0605, 'saturated_color_ratio': 0.6403, 'color_bucket_count': 171}, retryLiveMotionVerified=False.",
+    "qa_retry_restarts_gameplay_gate: retryRestartsGameplayVerified=True, RetryRestartsGameplay=True, RawRetryRestartsMovingGameplay=False, gameOverToRetryChanged=True, retryVisualStateVisible=True.",
+    "qa_human_visual_judgement_gate: videoExists=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, retryLiveScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, retryToRetryLiveChanged=True, menuHumanReadable=True, gameplayNonPlaceholderVisuals=True, gameOverVisualStateVisible=True, retryVisualStateVisible=True, retryLiveMotionVerified=False, gameplayInstructionReadableVerified=True, humanReadableGameplayContractVerified=True, firstRunClarityVerified=True, gameplayVisualsVerified=True.",
+    "qa_product_experience_gate: menuLayoutVerified=True, menuElementsDoNotOverlap=True, gameplayHudHiddenInMenu=True, gameplayControlsHiddenInMenu=True, menuHumanReadable=True, hasObjectiveText=True, hasAvoidInstructionText=True, hasTrackMeaningText=True, hasControlMeaningText=True, hasPlayerLabel=True, hasHazardLabel=True, hasScoreText=True, hasPulseText=True, gameplayInstructionReadableVerified=True, trackPurposeReadableVerified=True, leftRightControlMeaningVerified=True, firstRunClarityVerified=True, humanReadableGameplayContractVerified=True, gameplayVisualsVerified=True, buttonLayoutVerified=True, menuButtonSizeVerified=True, pauseRetryButtonSizeVerified=True, controlZoneSizeVerified=True, controlsInsideSafeArea=True, controlsDoNotOverlap=True, failureRetrySystemVerified=True, retryRestartsGameplayVerified=True, retryProbePresent=True, retryIsGameOver=False, retryGameOverPanelVisible=False, retryLiveMotionVerified=False, videoExists=True, menuScreenshot=True, gameplayScreenshot=True, gameOverScreenshot=True, retryScreenshot=True, retryLiveScreenshot=True, menuToGameplayChanged=True, gameplayToGameOverChanged=True, gameOverToRetryChanged=True, retryToRetryLiveChanged=True, gameplayNonPlaceholderVisuals=True, gameOverVisualStateVisible=True, retryVisualStateVisible=True.",
+    "qa_common_sense_veto_gate: commonSenseVetoFailures=qa_retry_live_motion_after_retry_gate=FAIL, qa_retry_restarts_gameplay_gate=FAIL, qa_human_visual_judgement_gate=FAIL, qa_product_experience_gate=FAIL; dependencyStatuses={'qa_menu_human_readability_gate': 'PASS', 'qa_game_over_visual_state_gate': 'PASS', 'qa_retry_visual_recovery_gate': 'PASS', 'qa_retry_live_motion_after_retry_gate': 'FAIL', 'qa_non_placeholder_visual_richness_gate': 'PASS', 'qa_gameplay_depth_quality_gate': 'PASS', 'qa_actual_gameplay_quality_gate': 'PASS', 'qa_human_interaction_quality_gate': 'PASS', 'qa_visual_richness_quality_gate': 'PASS', 'qa_first_run_gameplay_comprehension_gate': 'PASS', 'qa_game_system_design_gate': 'PASS', 'qa_retry_restarts_gameplay_gate': 'FAIL', 'qa_audio_feedback_gate': 'PASS', 'qa_ui_state_isolation_gate': 'PASS', 'qa_human_visual_judgement_gate': 'FAIL', 'qa_product_experience_gate': 'FAIL', 'qa_style_frame_implementation_gate': 'PASS'}."
+  ]
 }
