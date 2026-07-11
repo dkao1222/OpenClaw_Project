@@ -1,5 +1,6 @@
 {
   "project": "NeonDrift_MVP",
+  "image_generation_model": "x/z-image-turbo",
   "spritesheet": "assets/vfx/neon_drift_vfx_sheet.png",
   "unity": "unity/NeonDrift/Assets/Art/VFX/NeonDriftVfxSheet.png",
   "events": [

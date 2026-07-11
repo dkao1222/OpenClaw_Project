@@ -2,6 +2,7 @@
 
 project_name: NeonDrift_MVP
 generator: scripts/generate_game_visual_assets.py
+image_generation_model: x/z-image-turbo
 
 ## Checks
 - PASS assets/fonts/neondrift_bitmap_font.png: 512x256

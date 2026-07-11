@@ -320,6 +320,12 @@ public sealed class NeonDriftQaPlaythrough : MonoBehaviour
         uiActions?.Retry();
         yield return new WaitForSecondsRealtime(0.8f);
         WriteQaProbe("qa_runtime_probe_after_retry.json");
+        player = DriftPlayerController.Instance != null ? DriftPlayerController.Instance : FindObjectOfType<DriftPlayerController>();
+        player?.SetUiSteer(1f);
+        player?.SimulateSteerStep(1f, 0.75f);
+        yield return new WaitForSecondsRealtime(1.15f);
+        player?.ClearUiSteer();
+        WriteQaProbe("qa_runtime_probe_after_retry_live.json");
     }
 
     private void WriteQaProbe(string fileName)
